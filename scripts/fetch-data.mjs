@@ -7,8 +7,12 @@
  *   operators.json         以 charId 为键的干员表（仅 5★/6★）
  *                          含 scReleaseDate（国服实装日）/ enReleaseDate / tcReleaseDate
  *   banners_<server>.json  以卡池 ID 为键的卡池表，按服务器分文件（当前只产出 sc）
- *   banner-categories.json 寻访类型 -> 大类（与服务器无关，各服共用）
  *   metadata.json          元信息（含服务器列表）
+ *
+ * ⚠️ 不再输出 `banner-categories.json`：type → 大类的映射已移入站点侧
+ *    `akGachaData/src/lib/constants.js` 的 `BANNER_CATEGORIES`。
+ *
+ * 限定寻访会细分为 limcel（庆典）/ limspr（春节）/ limsum（夏季），见 `limitedSubtype()`。
  */
 
 import fs from 'node:fs/promises';
@@ -373,17 +377,12 @@ const SEQ_PREFIX = {
   mainfes: '前路回响',
 };
 
-const CATEGORIES = {
-  double: '标准寻访',
-  joint: '标准寻访',
-  stdfes: '标准寻访',
-  mainfes: '标准寻访',
-  single: '标准寻访',
-  five: '标准寻访',
-  limited: '限定寻访',
-  classic: '中坚寻访',
-  clafes: '中坚寻访',
-};
+/**
+ * ⚠️ 以前这里有个 `CATEGORIES`（type → 大类）并输出成 `banner-categories.json`。
+ * 现已删除：该映射与服务器无关、也不随数据更新，没必要当数据文件分发，
+ * 已并入站点侧的 `akGachaData/src/lib/constants.js` 的 `BANNER_CATEGORIES`。
+ * **别再把它加回来** —— 否则跟站点常量会两处维护、容易走样。
+ */
 
 /** 由各卡池页面构建卡池列表
  *  @param opMeta (name) => { stars, scReleaseDate } —— 用于判断「首次 UP」（实装日期 == 卡池开始日期） */
@@ -731,7 +730,6 @@ async function main() {
   await fs.mkdir(OUT_DIR, { recursive: true });
   await writeJson(path.join(OUT_DIR, 'operators.json'), operators);
   await writeJson(path.join(OUT_DIR, `banners_${DEFAULT_SERVER}.json`), banners);
-  await writeJson(path.join(OUT_DIR, 'banner-categories.json'), CATEGORIES);
   await writeJson(path.join(OUT_DIR, 'metadata.json'), meta);
 
   if (warnings.length) {

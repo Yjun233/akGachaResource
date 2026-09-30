@@ -2,3 +2,7 @@ node_modules/
 *.log
 .DS_Store
 Thumbs.db
+
+# 内部文档（docs/资源仓库说明.md）—— 只在本机看，不提交到 GitHub。
+# 对外只需要根目录那份简版 README。
+docs/
