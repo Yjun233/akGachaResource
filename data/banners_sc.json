@@ -18570,5 +18570,85 @@
         "isShop": true
       }
     ]
+  },
+  "20260929_stdfes_0008": {
+    "name": "定向甄选8",
+    "type": "stdfes",
+    "startDate": "2026-09-29",
+    "endDate": "2026-10-13",
+    "upOperators": [
+      {
+        "name": "Mon3tr",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "圣聆初雪",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "贝洛内",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "真言",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "锏",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "烛煌",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "明椒",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "渡桥",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "寻澜",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "吉星",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "响石",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "复奏",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }

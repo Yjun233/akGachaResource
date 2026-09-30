@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-29",
+  "generatedAt": "2026-09-30",
   "defaultServer": "sc",
   "servers": [
     {
       "id": "sc",
       "label": "国服",
       "available": true,
-      "bannerCount": 430,
+      "bannerCount": 431,
       "earliestBanner": "2019-04-30",
-      "latestBanner": "2026-09-24"
+      "latestBanner": "2026-09-29"
     },
     {
       "id": "en",
