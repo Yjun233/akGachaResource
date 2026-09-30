@@ -85,10 +85,19 @@ async function requestJson(params, { tries = 5, method = 'GET' } = {}) {
       return json;
     } catch (e) {
       lastErr = e;
+      /* ⚠️ undici 抛的 "fetch failed" 本身毫无信息量，真正的原因在 e.cause
+         （ECONNRESET / ENOTFOUND / TLS 握手失败 / Cloudflare 拦截 …）。
+         在 CI 里排查网络问题时这一行是关键，别删。 */
+      const c = e && e.cause;
+      const detail = c ? `${c.code || c.name || ''} ${c.message || ''}`.trim() : '';
+      console.error(`  · 第 ${i + 1}/${tries} 次请求失败: ${e.message}${detail ? ' ← ' + detail : ''}`);
       await sleep(1200 * (i + 1));
     }
   }
-  throw new Error(`请求失败 (${method} ${JSON.stringify(params).slice(0, 160)}): ${lastErr && lastErr.message}`);
+  const c = lastErr && lastErr.cause;
+  const tail = c ? `${c.code || c.name || ''} ${c.message || ''}`.trim() : '';
+  throw new Error(`请求失败 (${method} ${JSON.stringify(params).slice(0, 160)}): `
+    + `${lastErr && lastErr.message}${tail ? ' ← ' + tail : ''}`);
 }
 
 /** Cargo 查询（自动分页） */
