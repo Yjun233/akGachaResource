@@ -12,7 +12,8 @@
  * ⚠️ 不再输出 `banner-categories.json`：type → 大类的映射已移入站点侧
  *    `akGachaData/src/lib/constants.js` 的 `BANNER_CATEGORIES`。
  *
- * 限定寻访会细分为 limcel（庆典）/ limspr（春节）/ limsum（夏季），见 `limitedSubtype()`。
+ * 限定寻访会细分为 limcel（庆典）/ limspr（春节）/ limsum（夏季），见 `limitedSubtype()`；
+ * **ID 里的类型段与 `type` 一致**（2026-10-01 起，此前限定池的 ID 一律写 `limited`）。
  */
 
 import fs from 'node:fs/promises';
@@ -510,10 +511,13 @@ function buildBanners(pages, opMeta) {
         if (!name.includes('限定寻访')) continue;
         const bannerName = name.replace(/【[^】]*】/g, '').trim() || name;
         const initials = pinyinInitials(bannerName);
+        /* 类型段与 type 保持一致（limcel / limspr / limsum）——
+           2026-10-01 之前这里一律写 `limited`，与细分后的 type 不一致，容易误判。 */
+        const type = limitedSubtype(rowText, startDate);
         banners.push({
-          id: `${datePart}_limited_${initials}`,
+          id: `${datePart}_${type}_${initials}`,
           name: bannerName,
-          type: limitedSubtype(rowText, startDate),
+          type,
           startDate,
           endDate,
           rawOps: pickOps(cells, 2, 3),
