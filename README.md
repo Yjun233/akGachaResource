@@ -10,10 +10,10 @@
 ## 直接用这些数据
 
 ```bash
-# 干员表（230 位 5★/6★，以 charId 为键）
+# 干员表（标准寻访、中坚寻访和限定寻访会出现的5★/6★干员，以 charId 为键）
 https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/operators.json
 
-# 卡池表（430 个，以卡池 ID 为键）
+# 卡池表（以卡池 ID 为键，不含联动寻访、跨年欢庆寻访、新人和回归寻访）
 https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/banners_sc.json
 
 # 元信息（生成时间、服务器列表）
@@ -34,7 +34,7 @@ https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/avatars/char_306_leizi.
 
 ```
 data/       operators.json / banners_sc.json / metadata.json
-avatars/    230 张 <charId>.png（96×96）
+avatars/    <charId>.png（96×96）
 scripts/    fetch-data.mjs（爬虫）· fetch-avatars.mjs（抓头像）
 ```
 
