@@ -73,12 +73,12 @@ jobs:
           git commit -m "data: $(date +%Y-%m-%d) 快照"
           git push
 
-      # 站点在浏览器里经 jsDelivr CDN 读这些文件，不刷缓存会一直拿到旧的
+      # 站点在浏览器里经 jsDelivr CDN 读这些文件，不刷缓存会一直拿到旧的。
+      # ⚠️ purge 接口是 **GET**，不是 POST —— 用 POST 会一律返回 405（实测）。
       - name: 刷新 jsDelivr 缓存
         if: steps.diff.outputs.changed == 'true'
         run: |
           for f in operators.json banners_sc.json metadata.json; do
-            code=$(curl -s -o /dev/null -w '%{http_code}' -X POST \
-              "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo 000)
-            echo "purge data/$f -> HTTP $code"
+            body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
+            echo "purge data/$f -> $(echo "$body" | head -c 120)"
           done
