@@ -727,10 +727,57 @@ async function main() {
 
   validate(operators, banners, meta);
 
+  /* ---- 只在内容真的变了才写盘 ----
+     为什么要这样：GitHub Actions 每周定时跑一次。若数据没更新却照样写文件，
+     `generatedAt` 就会白跳一天，还会产生一堆「内容其实没变」的空提交 ——
+     而站点把 `generatedAt` 当作**参考日期的初始值**，乱跳会直接影响统计口径。
+     所以：内容一致 → 不写盘、沿用旧的 generatedAt → git 看不到改动 → 工作流不提交。 */
   await fs.mkdir(OUT_DIR, { recursive: true });
-  await writeJson(path.join(OUT_DIR, 'operators.json'), operators);
-  await writeJson(path.join(OUT_DIR, `banners_${DEFAULT_SERVER}.json`), banners);
-  await writeJson(path.join(OUT_DIR, 'metadata.json'), meta);
+
+  const bannerFile = `banners_${DEFAULT_SERVER}.json`;
+  const readOld = async (name) => {
+    try { return await fs.readFile(path.join(OUT_DIR, name), 'utf8'); } catch { return null; }
+  };
+  const stab = (v) => JSON.stringify(v, null, 2) + '\n';
+  /** 内容一致就不写；返回是否真的写了 */
+  const put = async (name, text) => {
+    if (await readOld(name) === text) return false;
+    await fs.writeFile(path.join(OUT_DIR, name), text, 'utf8');
+    return true;
+  };
+
+  const nextOps = stab(operators);
+  const nextBanners = stab(banners);
+
+  /* 元信息要**先剔掉 generatedAt 再比对** —— 否则只因为日期变了就永远“有变化” */
+  const metaNoDate = { ...meta };
+  delete metaNoDate.generatedAt;
+  const prevMetaRaw = await readOld('metadata.json');
+  let prevGeneratedAt = null;
+  let prevMetaNoDate = null;
+  if (prevMetaRaw) {
+    try {
+      prevMetaNoDate = JSON.parse(prevMetaRaw);
+      prevGeneratedAt = prevMetaNoDate.generatedAt || null;
+      delete prevMetaNoDate.generatedAt;
+    } catch { prevMetaNoDate = null; } // 旧文件坏了就当成“有变化”
+  }
+
+  const dataChanged = prevMetaRaw === null
+    || (await readOld('operators.json')) !== nextOps
+    || (await readOld(bannerFile)) !== nextBanners
+    || stab(metaNoDate) !== (prevMetaNoDate === null ? null : stab(prevMetaNoDate));
+
+  /* 没变化 → 沿用旧的快照日；有变化 → 今天 */
+  const generatedAt = dataChanged ? todayBeijing() : (prevGeneratedAt || todayBeijing());
+  /* 展开时 generatedAt 已在 meta 里，覆盖它不会改变 key 的顺序（否则又会“看起来变了”） */
+  const finalMeta = { ...meta, generatedAt };
+
+  const wrote = [
+    (await put('operators.json', nextOps)) && 'operators.json',
+    (await put(bannerFile, nextBanners)) && bannerFile,
+    (await put('metadata.json', stab(finalMeta))) && 'metadata.json',
+  ].filter(Boolean);
 
   if (warnings.length) {
     console.warn(`\n⚠ 共 ${warnings.length} 条警告：`);
@@ -738,9 +785,16 @@ async function main() {
     if (warnings.length > 40) console.warn(`  ... 其余 ${warnings.length - 40} 条已省略`);
   }
 
+  if (!wrote.length) {
+    console.log('\n✓ 数据无变化（干员 / 卡池 / 元信息都与上次一致）');
+    console.log(`  未写盘，generatedAt 保持 ${generatedAt}`);
+    return;
+  }
   console.log('\n✓ 数据生成完成');
   console.log(`  干员 ${meta.operatorCount} 位 / 卡池 ${bannerCount} 个`);
   console.log(`  卡池时间范围 ${dates[0] || '—'} ~ ${dates[dates.length - 1] || '—'}`);
+  console.log(`  本次实际写入：${wrote.join('、')}`);
+  console.log(`  generatedAt ${generatedAt}${dataChanged ? '' : '（沿用）'}`);
   console.log(`  输出目录 ${path.relative(ROOT, OUT_DIR)}`);
 }
 

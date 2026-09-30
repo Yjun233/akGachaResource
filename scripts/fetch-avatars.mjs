@@ -37,13 +37,19 @@ const DATA = path.join(ROOT, 'data', 'operators.json');
 const REPO = 'yuanyan3060/ArknightsGameResource';
 const BRANCH = 'main';
 
-/** 反代列表：按顺序尝试，第一个能用的会被优先复用 */
-const MIRRORS = [
-  'https://ghproxy.net',
-  'https://ghfast.top',
-  'https://gh-proxy.com',
-];
+/**
+ * 反代列表（可用 `AVATAR_MIRRORS` 环境变量覆盖，逗号分隔）。
+ * **最后会再试一次直连** `raw.githubusercontent.com` —— GitHub Actions 里直连最快；
+ * 国内通常连不上，但它失败得很快（连接直接被重置），不会拖慢整体。
+ */
+const MIRRORS = (process.env.AVATAR_MIRRORS
+  ?? 'https://ghproxy.net,https://ghfast.top,https://gh-proxy.com')
+  .split(',').map((s) => s.trim()).filter(Boolean);
+const CANDIDATES = [...MIRRORS, '']; // '' = 直连
+
 const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/avatar`;
+/** m 为空串时直连 */
+const urlOf = (m, charId) => (m ? `${m}/${RAW}/${charId}.png` : `${RAW}/${charId}.png`);
 
 const argv = process.argv.slice(2);
 const opt = (name, def) => {
@@ -63,9 +69,9 @@ async function download(charId) {
   const dest = path.join(OUT_DIR, `${charId}.png`);
   let lastErr;
   for (let round = 0; round < 2; round++) {
-    for (const m of MIRRORS) {
+    for (const m of CANDIDATES) {
       try {
-        const res = await fetch(`${m}/${RAW}/${charId}.png`, {
+        const res = await fetch(urlOf(m, charId), {
           signal: AbortSignal.timeout(45000),
         });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);

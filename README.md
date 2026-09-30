@@ -27,6 +27,9 @@ https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/avatars/char_306_leizi.
 > raw.githubusercontent.com（国内网络下会取不到），而 JSON 又是正常的。
 > `gcore.jsdelivr.net` 也可用。
 
+数据由 GitHub Actions **每周二 / 周四 / 周五 北京时间 18:00** 自动更新，
+没有更新时不产生提交。
+
 ## 目录
 
 ```
