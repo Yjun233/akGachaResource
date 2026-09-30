@@ -28,16 +28,20 @@ npm run build:avatars       # 补齐头像 → avatars/（只拉缺失的）
 ## 浏览器怎么引用
 
 ```
-https://fastly.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/operators.json
-https://fastly.jsdelivr.net/gh/Yjun233/akGachaResource@main/avatars/char_306_leizi.png
+https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/operators.json
+https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@0b22f39b40a829da7255280e18e87e4de9b04993/avatars/char_306_leizi.png
 ```
 
 **缓存策略**：jsDelivr 对 `@main` 的缓存很长（最长 7 天），所以
 
-- **头像**：用 **commit sha 固定**（`@<sha>`）—— 几乎不变，可永久缓存；
-  在站点里改 `src/lib/resource.js` 的 `AVATARS_SHA` 即可换版本。
+- **头像**：用 **commit sha 固定**（`@<sha>`）—— jsDelivr 对 sha 版本返回
+  `max-age=31536000, immutable`（一年不可变），且**没有冷启动 301**。
+  在站点里改 `src/lib/resource.js` 的 `AVATARS_SHA` 即可换版本（当前
+  `0b22f39b40a829da7255280e18e87e4de9b04993`）。
 - **数据 JSON**：每次 `build:data` 推送后调用 jsDelivr 的 purge 接口刷掉缓存，
   几分钟内生效（详见下方）。
+- ⚠️ **用 `cdn.jsdelivr.net`，不要用 `fastly.jsdelivr.net`**：实测 fastly 端点对本仓库的
+  PNG 恒 301 跳回 raw（国内裂图），JSON 却正常。`gcore.jsdelivr.net` 也可用。
 
 ```bash
 # 推送后刷新 jsDelivr 缓存（对 @main 生效）

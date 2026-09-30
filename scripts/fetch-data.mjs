@@ -43,6 +43,22 @@ const HEADERS = {
   Origin: 'https://prts.wiki',
 };
 
+/* 限定寻访细分为三类（用户要求）：
+   庆典 limcel / 春节 limspr / 夏季 limsum
+   依据是 wiki 链接文案里的【限定寻访·庆典】这类标记（rowText 里拿得到），
+   统计结果：庆典 13 / 春节 8 / 夏季 6。
+   万一以后 wiki 改版没了标记，就按起始月份兜底（5、11 月 = 庆典，1-2 月 = 春节，8 月 = 夏季）。 */
+const LIM_SUBTYPE = { 庆典: 'limcel', 春节: 'limspr', 夏季: 'limsum' };
+
+function limitedSubtype(rowText, startDate) {
+  const m = String(rowText).match(/限定寻访[·・](庆典|春节|夏季)/);
+  if (m) return LIM_SUBTYPE[m[1]];
+  const mm = Number(String(startDate).slice(5, 7));
+  if (mm === 1 || mm === 2) return 'limspr';
+  if (mm === 8) return 'limsum';
+  return 'limcel';
+}
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function requestJson(params, { tries = 5, method = 'GET' } = {}) {
@@ -489,7 +505,7 @@ function buildBanners(pages, opMeta) {
         banners.push({
           id: `${datePart}_limited_${initials}`,
           name: bannerName,
-          type: 'limited',
+          type: limitedSubtype(rowText, startDate),
           startDate,
           endDate,
           rawOps: pickOps(cells, 2, 3),

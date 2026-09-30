@@ -1077,7 +1077,7 @@
   },
   "20200116_limited_dswj": {
     "name": "地生五金",
-    "type": "limited",
+    "type": "limspr",
     "startDate": "2020-01-16",
     "endDate": "2020-01-30",
     "upOperators": [
@@ -1485,7 +1485,7 @@
   },
   "20200501_limited_yyyh": {
     "name": "遗愿焰火",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2020-05-01",
     "endDate": "2020-05-15",
     "upOperators": [
@@ -2347,7 +2347,7 @@
   },
   "20201101_limited_www": {
     "name": "勿忘我",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2020-11-01",
     "endDate": "2020-11-15",
     "upOperators": [
@@ -2709,7 +2709,7 @@
   },
   "20210119_limited_dswjfk": {
     "name": "地生五金 复刻",
-    "type": "limited",
+    "type": "limspr",
     "startDate": "2021-01-19",
     "endDate": "2021-02-02",
     "upOperators": [
@@ -2811,7 +2811,7 @@
   },
   "20210205_limited_yyhm": {
     "name": "月隐晦明",
-    "type": "limited",
+    "type": "limspr",
     "startDate": "2021-02-05",
     "endDate": "2021-02-19",
     "upOperators": [
@@ -3117,7 +3117,7 @@
   },
   "20210501_limited_sd": {
     "name": "深悼",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2021-05-01",
     "endDate": "2021-05-15",
     "upOperators": [
@@ -3543,7 +3543,7 @@
   },
   "20210803_limited_sxxx": {
     "name": "盛夏新星",
-    "type": "limited",
+    "type": "limsum",
     "startDate": "2021-08-03",
     "endDate": "2021-08-17",
     "upOperators": [
@@ -3939,7 +3939,7 @@
   },
   "20211101_limited_xgdt": {
     "name": "循光道途",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2021-11-01",
     "endDate": "2021-11-15",
     "upOperators": [
@@ -4313,7 +4313,7 @@
   },
   "20220125_limited_zjcx": {
     "name": "浊酒澄心",
-    "type": "limited",
+    "type": "limspr",
     "startDate": "2022-01-25",
     "endDate": "2022-02-08",
     "upOperators": [
@@ -4709,7 +4709,7 @@
   },
   "20220501_limited_hs": {
     "name": "海蚀",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2022-05-01",
     "endDate": "2022-05-15",
     "upOperators": [
@@ -5121,7 +5121,7 @@
   },
   "20220811_limited_jfybj": {
     "name": "巨斧与笔尖",
-    "type": "limited",
+    "type": "limsum",
     "startDate": "2022-08-11",
     "endDate": "2022-08-25",
     "upOperators": [
@@ -5539,7 +5539,7 @@
   },
   "20221101_limited_zjpl": {
     "name": "斩荆辟路",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2022-11-01",
     "endDate": "2022-11-15",
     "upOperators": [
@@ -5875,7 +5875,7 @@
   },
   "20230117_limited_wxld": {
     "name": "万象伶仃",
-    "type": "limited",
+    "type": "limspr",
     "startDate": "2023-01-17",
     "endDate": "2023-01-31",
     "upOperators": [
@@ -6471,7 +6471,7 @@
   },
   "20230501_limited_zljr": {
     "name": "真理孑然",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2023-05-01",
     "endDate": "2023-05-15",
     "upOperators": [
@@ -7349,7 +7349,7 @@
   },
   "20230801_limited_yjqxm": {
     "name": "云间清醒梦",
-    "type": "limited",
+    "type": "limsum",
     "startDate": "2023-08-01",
     "endDate": "2023-08-15",
     "upOperators": [
@@ -8219,7 +8219,7 @@
   },
   "20231101_limited_sy": {
     "name": "宿愿",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2023-11-01",
     "endDate": "2023-11-15",
     "upOperators": [
@@ -9071,7 +9071,7 @@
   },
   "20240201_limited_qqys": {
     "name": "千秋一粟",
-    "type": "limited",
+    "type": "limspr",
     "startDate": "2024-02-01",
     "endDate": "2024-02-15",
     "upOperators": [
@@ -9945,7 +9945,7 @@
   },
   "20240501_limited_hyww": {
     "name": "何以为我",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2024-05-01",
     "endDate": "2024-05-15",
     "upOperators": [
@@ -11089,7 +11089,7 @@
   },
   "20240801_limited_zlssky": {
     "name": "在流沙上刻印",
-    "type": "limited",
+    "type": "limsum",
     "startDate": "2024-08-01",
     "endDate": "2024-08-15",
     "upOperators": [
@@ -11741,7 +11741,7 @@
   },
   "20241101_limited_erll": {
     "name": "恶人寥寥",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2024-11-01",
     "endDate": "2024-11-15",
     "upOperators": [
@@ -12453,7 +12453,7 @@
   },
   "20250122_limited_cwsp": {
     "name": "炽吾生平",
-    "type": "limited",
+    "type": "limspr",
     "startDate": "2025-01-22",
     "endDate": "2025-02-05",
     "upOperators": [
@@ -13487,7 +13487,7 @@
   },
   "20250501_limited_bdzy": {
     "name": "布道自由",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2025-05-01",
     "endDate": "2025-05-15",
     "upOperators": [
@@ -14351,7 +14351,7 @@
   },
   "20250802_limited_bghh": {
     "name": "不归花火",
-    "type": "limited",
+    "type": "limsum",
     "startDate": "2025-08-02",
     "endDate": "2025-08-16",
     "upOperators": [
@@ -15325,7 +15325,7 @@
   },
   "20251101_limited_yfxws": {
     "name": "以风雪为誓",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2025-11-01",
     "endDate": "2025-11-15",
     "upOperators": [
@@ -16189,7 +16189,7 @@
   },
   "20260210_limited_jjgj": {
     "name": "劫尽古今",
-    "type": "limited",
+    "type": "limspr",
     "startDate": "2026-02-10",
     "endDate": "2026-02-24",
     "upOperators": [
@@ -17083,7 +17083,7 @@
   },
   "20260501_limited_cn": {
     "name": "承诺",
-    "type": "limited",
+    "type": "limcel",
     "startDate": "2026-05-01",
     "endDate": "2026-05-15",
     "upOperators": [
@@ -17989,7 +17989,7 @@
   },
   "20260801_limited_czyfdgs": {
     "name": "车辙与风的归所",
-    "type": "limited",
+    "type": "limsum",
     "startDate": "2026-08-01",
     "endDate": "2026-08-15",
     "upOperators": [
