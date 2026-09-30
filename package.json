@@ -1,0 +1,15 @@
+{
+  "name": "akgacharesource",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "明日方舟寻访数据站的静态资源仓库：卡池 / 干员 JSON 数据 + 干员头像。由 akGachaData 站点通过 jsDelivr CDN 直接引用，数据与图片都不进站点主仓库。",
+  "scripts": {
+    "build:data": "node scripts/fetch-data.mjs",
+    "build:avatars": "node scripts/fetch-avatars.mjs",
+    "build": "node scripts/fetch-data.mjs && node scripts/fetch-avatars.mjs"
+  },
+  "dependencies": {
+    "pinyin-pro": "^3.29.4"
+  }
+}

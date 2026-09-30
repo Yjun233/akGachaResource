@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-09-29",
+  "defaultServer": "sc",
+  "servers": [
+    {
+      "id": "sc",
+      "label": "国服",
+      "available": true,
+      "bannerCount": 430,
+      "earliestBanner": "2019-04-30",
+      "latestBanner": "2026-09-24"
+    },
+    {
+      "id": "en",
+      "label": "国际服",
+      "available": false,
+      "bannerCount": 0,
+      "earliestBanner": null,
+      "latestBanner": null
+    },
+    {
+      "id": "tc",
+      "label": "繁中服",
+      "available": false,
+      "bannerCount": 0,
+      "earliestBanner": null,
+      "latestBanner": null
+    }
+  ],
+  "source": "https://prts.wiki",
+  "sourcePages": [
+    "卡池一览/常驻标准寻访",
+    "卡池一览/常驻中坚寻访&中坚甄选",
+    "卡池一览/限时寻访",
+    "寻访规则"
+  ],
+  "operatorCount": 230
+}

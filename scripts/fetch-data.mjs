@@ -1,0 +1,773 @@
+#!/usr/bin/env node
+/**
+ * fetch-data.mjs
+ * 从 PRTS Wiki 抓取明日方舟寻访（卡池）数据，解析 wikitext 并生成静态 JSON。
+ *
+ * 输出（data/，本仓库根目录下的 data 目录）：
+ *   operators.json         以 charId 为键的干员表（仅 5★/6★）
+ *                          含 scReleaseDate（国服实装日）/ enReleaseDate / tcReleaseDate
+ *   banners_<server>.json  以卡池 ID 为键的卡池表，按服务器分文件（当前只产出 sc）
+ *   banner-categories.json 寻访类型 -> 大类（与服务器无关，各服共用）
+ *   metadata.json          元信息（含服务器列表）
+ */
+
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { pinyin } from 'pinyin-pro';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, '..');
+const OUT_DIR = path.join(ROOT, 'data');
+
+/* 服务器：PRTS Wiki 只提供国服数据，en / tc 待后续接入其他数据源。
+   卡池按服务器分文件（banners_sc.json / banners_en.json / banners_tc.json），
+   干员表共用一份，靠 *ReleaseDate 字段区分各服实装日。 */
+const DEFAULT_SERVER = 'sc';
+const SERVERS = [
+  { id: 'sc', label: '国服', available: true },
+  { id: 'en', label: '国际服', available: false },
+  { id: 'tc', label: '繁中服', available: false },
+];
+
+const API = 'https://prts.wiki/api.php';
+
+// ---------------------------------------------------------------- 通用请求
+
+const HEADERS = {
+  'User-Agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+  Accept: 'application/json, text/plain, */*',
+  'Accept-Language': 'zh-CN,zh;q=0.9',
+  Referer: 'https://prts.wiki/',
+  Origin: 'https://prts.wiki',
+};
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function requestJson(params, { tries = 5, method = 'GET' } = {}) {
+  let lastErr;
+  for (let i = 0; i < tries; i++) {
+    try {
+      let res;
+      if (method === 'POST') {
+        res = await fetch(API, {
+          method: 'POST',
+          headers: { ...HEADERS, 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(params),
+        });
+      } else {
+        res = await fetch(`${API}?${new URLSearchParams(params)}`, { headers: HEADERS });
+      }
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const json = await res.json();
+      if (json.error) throw new Error(`API error: ${json.error.info || JSON.stringify(json.error)}`);
+      return json;
+    } catch (e) {
+      lastErr = e;
+      await sleep(1200 * (i + 1));
+    }
+  }
+  throw new Error(`请求失败 (${method} ${JSON.stringify(params).slice(0, 160)}): ${lastErr && lastErr.message}`);
+}
+
+/** Cargo 查询（自动分页） */
+async function cargoQuery({ tables, fields, join_on, where }) {
+  const rows = [];
+  const limit = 500;
+  for (let offset = 0; ; offset += limit) {
+    const params = { action: 'cargoquery', tables, fields, format: 'json', limit, offset };
+    if (join_on) params.join_on = join_on;
+    if (where) params.where = where;
+    const json = await requestJson(params);
+    const page = (json.cargoquery || []).map((r) => r.title);
+    rows.push(...page);
+    if (page.length < limit) break;
+    if (offset > 10000) break; // 安全阀
+  }
+  return rows;
+}
+
+/** 取页面 wikitext */
+async function fetchWikitext(titles) {
+  const json = await requestJson({
+    action: 'query',
+    prop: 'revisions',
+    titles: Array.isArray(titles) ? titles.join('|') : titles,
+    rvprop: 'content',
+    rvslots: 'main',
+    format: 'json',
+    formatversion: 2,
+  });
+  const out = {};
+  for (const p of json.query.pages) {
+    if (p.revisions) out[p.title] = p.revisions[0].slots.main.content;
+    else console.warn(`  ! 页面不存在: ${p.title}`);
+  }
+  return out;
+}
+
+// ---------------------------------------------------------------- 工具函数
+
+const BEIJING_OFFSET_MS = 8 * 60 * 60 * 1000;
+
+/** 北京时间下的今天 YYYY-MM-DD */
+function todayBeijing() {
+  const t = new Date(Date.now() + BEIJING_OFFSET_MS);
+  return t.toISOString().slice(0, 10);
+}
+
+/** 只取 YYYY-MM-DD */
+function toDate(str) {
+  const m = /(\d{4}-\d{2}-\d{2})/.exec(str || '');
+  return m ? m[1] : null;
+}
+
+/** 从时间区间文本里取出 [start, end] */
+function parseTimeRange(text) {
+  const dates = [...String(text).matchAll(/(\d{4}-\d{2}-\d{2})/g)].map((m) => m[1]);
+  if (dates.length === 0) return [null, null];
+  return [dates[0], dates[1] || dates[0]];
+}
+
+/** 汉字 -> 拼音首字母，过滤掉非汉字字符 */
+function pinyinInitials(str) {
+  const han = String(str).replace(/[^\u4e00-\u9fa5]/g, '');
+  if (!han) return '';
+  return pinyin(han, { pattern: 'first', toneType: 'none', type: 'array' }).join('').toLowerCase();
+}
+
+const pad4 = (n) => String(n).padStart(4, '0');
+
+// ---------------------------------------------------------------- wikitext 解析
+
+/** 把一个 wikitext 表格拆成「行」（忽略嵌套表格里的 |-） */
+function parseTableRows(content) {
+  const lines = content.split('\n');
+  const rows = [];
+  let depth = 0;
+  let base = null;
+  let cur = null;
+  for (const line of lines) {
+    const t = line.trim();
+    if (t.startsWith('{|')) {
+      depth += 1;
+      if (base === null) base = depth;
+      if (cur) cur.push(line);
+      continue;
+    }
+    if (t.startsWith('|}')) {
+      depth -= 1;
+      if (cur) cur.push(line);
+      continue;
+    }
+    if (base !== null && depth === base && t.startsWith('|-')) {
+      if (cur) rows.push(cur);
+      cur = [];
+      continue;
+    }
+    if (cur) cur.push(line);
+  }
+  if (cur) rows.push(cur);
+  return rows.filter((r) => r.length > 0);
+}
+
+/** 把一行的原始文本拆成单元格 */
+function parseCells(rowLines) {
+  const cells = [];
+  let depth = 0;
+  for (const line of rowLines) {
+    const t = line.trim();
+    if (t.startsWith('{|')) {
+      depth += 1;
+      if (cells.length) cells[cells.length - 1].push(line);
+      continue;
+    }
+    if (t.startsWith('|}')) {
+      depth -= 1;
+      if (cells.length) cells[cells.length - 1].push(line);
+      continue;
+    }
+    if (depth === 0 && t.startsWith('|') && !t.startsWith('|-')) {
+      let body = t.slice(1);
+      const p = body.indexOf('|');
+      if (p !== -1 && body.slice(0, p).includes('=')) body = body.slice(p + 1);
+      cells.push([body]);
+      continue;
+    }
+    if (cells.length) cells[cells.length - 1].push(line);
+  }
+  return cells.map((c) => c.join('\n'));
+}
+
+const AVATAR_RE = /\{\{\s*干员头像\s*\|([^}]*)\}\}/g;
+
+/** 从一个单元格里抽取 {{干员头像|名字|参数}} */
+function extractAvatars(cellText) {
+  const result = [];
+  for (const m of String(cellText).matchAll(AVATAR_RE)) {
+    const parts = m[1].split('|').map((s) => s.trim());
+    const name = parts.shift();
+    if (!name) continue;
+    const args = {};
+    for (const p of parts) {
+      if (!p) continue;
+      const eq = p.indexOf('=');
+      if (eq === -1) args[p] = true;
+      else args[p.slice(0, eq).trim()] = p.slice(eq + 1).trim();
+    }
+    result.push({ name, args });
+  }
+  return result;
+}
+
+const isShopArg = (args) => Boolean(args.shop || args.shop2);
+
+/** 取单元格里最后一个 [[链接]] 的显示名 */
+function lastLinkText(cellText) {
+  const links = [...String(cellText).matchAll(/\[\[([^\[\]]+)\]\]/g)].map((m) => m[1]);
+  if (!links.length) return null;
+  const last = links[links.length - 1];
+  const idx = last.indexOf('|');
+  return (idx === -1 ? last : last.slice(idx + 1)).trim();
+}
+
+/** 把 wikitext 标题归一化：去掉命名空间前缀与图片扩展名 */
+function baseTitle(t) {
+  const s = String(t).trim();
+  const cut = Math.max(s.lastIndexOf('/'), s.lastIndexOf(':'));
+  const base = cut === -1 ? s : s.slice(cut + 1);
+  return base.replace(/\.(jpg|jpeg|png|gif|webp)$/i, '');
+}
+
+/**
+ * 从卡池单元格里提取「真实序号」。
+ * 依次尝试：链接目标 / 显示文本 / link= 参数 / 文件名的末尾数字。
+ * 例：[[文件:一周年联合行动.jpg|…|link=寻访模拟/联合行动02]] → 02
+ */
+function serialFromCell(cellText) {
+  const titles = [];
+  for (const m of String(cellText).matchAll(/\[\[([^\[\]]+)\]\]/g)) {
+    const raw = m[1];
+    const idx = raw.indexOf('|');
+    titles.push(idx === -1 ? raw : raw.slice(0, idx));
+    if (idx !== -1) titles.push(raw.slice(idx + 1));
+  }
+  for (const m of String(cellText).matchAll(/link=([^|\]\n]+)/g)) titles.push(m[1]);
+  for (const t of titles) {
+    const digits = /(\d+)$/.exec(baseTitle(t));
+    if (digits) return digits[1];
+  }
+  return null;
+}
+
+/** 从甄选/跨年这类嵌套表格里拆出 6★ 与 5★ 候选列表 */
+function parseSelectionCell(rowText) {
+  const idx6 = rowText.indexOf('可甄选6★干员');
+  const idx5 = rowText.indexOf('可甄选5★干员');
+  if (idx6 === -1 || idx5 === -1) return { six: [], five: [] };
+  return {
+    six: extractAvatars(rowText.slice(idx6, idx5)),
+    five: extractAvatars(rowText.slice(idx5)),
+  };
+}
+
+// ---------------------------------------------------------------- 数据抓取
+
+/** 干员：char_obtain 关联 chara */
+async function fetchOperators() {
+  console.log('· 抓取干员列表 ...');
+  const rows = await cargoQuery({
+    tables: 'char_obtain=CO,chara=C',
+    fields:
+      'CO._pageName=page,CO.cnOnlineTime=cnOnlineTime,CO.obtainMethod=obtainMethod,C.charId=charId,C.rarity=rarity',
+    join_on: 'CO._pageName=C._pageName',
+  });
+
+  // 干员姓名 -> 实际星级（全部稀有度，用于卡池解析时识别 4★）
+  const allChara = await cargoQuery({
+    tables: 'chara=C',
+    fields: 'C._pageName=name,C.charId=charId,C.rarity=rarity',
+  });
+
+  return { rows, allChara };
+}
+
+/** 进入中坚寻访的日期（寻访规则 第 5 节） */
+async function fetchClassicDates() {
+  console.log('· 抓取寻访规则（中坚移出批次）...');
+  const json = await requestJson({
+    action: 'parse',
+    page: '寻访规则',
+    prop: 'wikitext',
+    section: 5,
+    format: 'json',
+    formatversion: 2,
+  });
+  const wikitext = json.parse.wikitext;
+  const map = new Map();
+
+  // 每个批次：移出时间 + 6★/5★ 列表
+  const blocks = wikitext.split(/\{\|/).filter((b) => b.includes('移出时间'));
+  for (const block of blocks) {
+    const date = toDate(/移出时间：?\s*([\d-]+)/.exec(block)?.[1] || '');
+    if (!date) continue;
+    for (const m of block.matchAll(/[\u2605]{5,6}\s*\n\|([^\n]+)/g)) {
+      for (const name of m[1].split('/').map((s) => s.trim())) {
+        if (name) map.set(name, date);
+      }
+    }
+  }
+  console.log(`  → 批次干员 ${map.size} 位`);
+  return map;
+}
+
+/** 卡池页：index -> 各年度子页 */
+async function fetchBannerPages() {
+  console.log('· 抓取卡池页面 ...');
+  const out = {};
+
+  const indexPages = ['卡池一览/常驻标准寻访', '卡池一览/常驻中坚寻访&中坚甄选'];
+  const index = await fetchWikitext(indexPages);
+  const subPages = [];
+  for (const [title, content] of Object.entries(index)) {
+    const names = [...content.matchAll(/pageName=([^|}\n]*)/g)]
+      .map((m) => m[1].trim())
+      .filter(Boolean);
+    out[title] = { isIndex: true, subPages: names };
+    subPages.push(...names);
+  }
+
+  // 年度子页分两批抓取，避免单次请求过长
+  for (let i = 0; i < subPages.length; i += 4) {
+    Object.assign(out, await fetchWikitext(subPages.slice(i, i + 4)));
+    await sleep(250);
+  }
+
+  Object.assign(out, await fetchWikitext('卡池一览/限时寻访'));
+  return out;
+}
+
+// ---------------------------------------------------------------- 组装卡池
+
+/** 带真实序号的固定系列卡池，展示名用「系列名 + 序号（不补零）」 */
+const SEQ_PREFIX = {
+  joint: '联合行动',
+  stdfes: '定向甄选',
+  mainfes: '前路回响',
+};
+
+const CATEGORIES = {
+  double: '标准寻访',
+  joint: '标准寻访',
+  stdfes: '标准寻访',
+  mainfes: '标准寻访',
+  single: '标准寻访',
+  five: '标准寻访',
+  limited: '限定寻访',
+  classic: '中坚寻访',
+  clafes: '中坚寻访',
+};
+
+/** 由各卡池页面构建卡池列表
+ *  @param opMeta (name) => { stars, scReleaseDate } —— 用于判断「首次 UP」（实装日期 == 卡池开始日期） */
+function buildBanners(pages, opMeta) {
+  const banners = [];
+  const warnings = [];
+
+  const metaOf = (n) => (opMeta ? opMeta(n) : { stars: 0, scReleaseDate: null });
+
+  /** 5★ 恰好两位、且都在本卡池首次 UP（即实装日期 == 卡池开始日期）→「双五寻访」 */
+  const isDoubleNewFive = (rawOps, startDate) => {
+    const fives = rawOps.filter((a) => metaOf(a.name).stars === 5);
+    return fives.length === 2 && fives.every((a) => metaOf(a.name).scReleaseDate === startDate);
+  };
+
+  const pickOps = (cells, sixIdx, fiveIdx) => {
+    const six = extractAvatars(cells[sixIdx] || '');
+    const five = extractAvatars(cells[fiveIdx] || '');
+    return [...six, ...five].map((a) => ({ ...a, col: six.includes(a) ? 6 : 5 }));
+  };
+
+  // ---- 常驻标准寻访 -> double
+  const stdIndex = pages['卡池一览/常驻标准寻访'];
+  for (const sub of stdIndex.subPages) {
+    const content = pages[sub];
+    if (!content) continue;
+    for (const row of parseTableRows(content)) {
+      const cells = parseCells(row);
+      if (cells.length < 5) continue;
+      const serial = cells[0].replace(/\s+/g, '');
+      if (!/^\d+$/.test(serial)) continue;
+      const [startDate, endDate] = parseTimeRange(cells[2]);
+      if (!startDate) continue;
+      banners.push({
+        id: `${startDate.replace(/-/g, '')}_double_${pad4(serial)}`,
+        name: `常驻标准寻访${Number(serial)}`,
+        type: 'double',
+        startDate,
+        endDate,
+        rawOps: pickOps(cells, 3, 4),
+      });
+    }
+  }
+
+  // ---- 常驻中坚寻访 & 中坚甄选 -> classic / clafes
+  const clIndex = pages['卡池一览/常驻中坚寻访&中坚甄选'];
+  for (const sub of clIndex.subPages) {
+    const content = pages[sub];
+    if (!content) continue;
+    for (const row of parseTableRows(content)) {
+      const cells = parseCells(row);
+      if (cells.length < 5) continue;
+      const serialCell = cells[0].replace(/\s+/g, '');
+      const [startDate, endDate] = parseTimeRange(cells[2]);
+      if (!startDate) continue;
+      const rowText = row.join('\n');
+      const isSelection = rowText.includes('可甄选6★干员');
+      let type;
+      let num;
+      if (isSelection) {
+        type = 'clafes';
+        num = /(\d+)/.exec(serialCell)?.[1] ?? '0';
+      } else if (/^\d+$/.test(serialCell)) {
+        type = 'classic';
+        num = serialCell;
+      } else {
+        warnings.push(`中坚寻访表头无法识别: ${serialCell}`);
+        continue;
+      }
+      const prefix = type === 'clafes' ? '中坚甄选' : '常驻中坚寻访';
+      const datePart = startDate.replace(/-/g, '');
+      const rawOps = isSelection
+        ? (() => {
+            const sel = parseSelectionCell(rowText);
+            return [
+              ...sel.six.map((a) => ({ ...a, col: 6 })),
+              ...sel.five.map((a) => ({ ...a, col: 5 })),
+            ];
+          })()
+        : pickOps(cells, 3, 4).map((a) => ({ ...a, col: a.col === 6 ? 6 : 5 }));
+      banners.push({
+        id: `${datePart}_${type}_${pad4(num)}`,
+        name: `${prefix}${Number(num)}`,
+        type,
+        startDate,
+        endDate,
+        rawOps,
+      });
+    }
+  }
+
+  // ---- 限时寻访 -> limited / joint / stdfes / mainfes / single / five
+  const limitedContent = pages['卡池一览/限时寻访'];
+  if (!limitedContent) throw new Error('缺少 卡池一览/限时寻访 页面');
+
+  const sections = splitSections(limitedContent);
+  for (const [sectionName, content] of sections) {
+    const isNonStandard = sectionName.includes('非标准寻访');
+    for (const row of parseTableRows(content)) {
+      const cells = parseCells(row);
+      if (cells.length < 3) continue;
+      const linkCell = cells[0];
+      const [startDate, endDate] = parseTimeRange(cells[1]);
+      if (!startDate) continue;
+      const name = lastLinkText(linkCell);
+      if (!name) {
+        warnings.push(`限时寻访缺少名称: ${linkCell.slice(0, 60)}`);
+        continue;
+      }
+      const rowText = row.join('\n');
+      const isSelection = rowText.includes('可甄选6★干员');
+      const datePart = startDate.replace(/-/g, '');
+
+      if (isNonStandard) {
+        // 限定寻访以外（联动 / 跨年欢庆）一律排除
+        if (!name.includes('限定寻访')) continue;
+        const bannerName = name.replace(/【[^】]*】/g, '').trim() || name;
+        const initials = pinyinInitials(bannerName);
+        banners.push({
+          id: `${datePart}_limited_${initials}`,
+          name: bannerName,
+          type: 'limited',
+          startDate,
+          endDate,
+          rawOps: pickOps(cells, 2, 3),
+        });
+      } else {
+        const sel = isSelection ? parseSelectionCell(rowText) : null;
+        const rawOps = isSelection
+          ? [
+              ...sel.six.map((a) => ({ ...a, col: 6 })),
+              ...sel.five.map((a) => ({ ...a, col: 5 })),
+            ]
+          : pickOps(cells, 2, 3);
+        const sixCount = rawOps.filter((a) => a.col === 6).length;
+
+        // 带序号的固定系列：序号取卡池页面名里的「真实序号」（不补零用于展示，补零用于 ID）
+        const seqType = name.includes('联合行动')
+          ? 'joint'
+          : name.includes('定向甄选')
+            ? 'stdfes'
+            : name.includes('前路回响')
+              ? 'mainfes'
+              : null;
+
+        let type;
+        let serial = null;
+        if (seqType) {
+          type = seqType;
+          const fromCell = serialFromCell(linkCell);
+          const fromName = /(\d+)/.exec(name)?.[1] ?? null;
+          serial = Number(fromCell ?? fromName ?? 0);
+        } else if (isDoubleNewFive(rawOps, startDate)) {
+          // 双五寻访：两位 5★ 均为本池首次 UP
+          type = 'five';
+        } else if (sixCount === 1) {
+          // 单六寻访：仅 1 个六星 UP
+          type = 'single';
+        } else if (sixCount === 0) {
+          type = 'five';
+        } else {
+          warnings.push(`限时寻访标准池类型未识别（${sixCount} 个六星）: ${name} ${startDate}`);
+          type = 'joint';
+          serial = 0;
+        }
+
+        const isSeq = type === 'joint' || type === 'stdfes' || type === 'mainfes';
+        const suffix = isSeq ? pad4(serial) : pinyinInitials(name);
+        banners.push({
+          id: `${datePart}_${type}_${suffix}`,
+          name: isSeq ? `${SEQ_PREFIX[type]}${serial}` : name,
+          type,
+          startDate,
+          endDate,
+          rawOps,
+        });
+      }
+    }
+  }
+
+  // 去重 & 排序
+  const seen = new Map();
+  for (const b of banners) {
+    if (seen.has(b.id)) {
+      warnings.push(`卡池 ID 重复（已跳过）: ${b.id} / ${b.name} / ${b.startDate}`);
+      continue;
+    }
+    seen.set(b.id, b);
+  }
+  const list = [...seen.values()].sort((a, b) =>
+    a.startDate === b.startDate ? a.id.localeCompare(b.id) : a.startDate.localeCompare(b.startDate),
+  );
+  return { list, warnings };
+}
+
+/** 按 ==标题== 切分页面内容 */
+function splitSections(content) {
+  const lines = content.split('\n');
+  const sections = [];
+  let title = '__lead__';
+  let buf = [];
+  for (const line of lines) {
+    const m = /^==\s*([^=]+?)\s*==\s*$/.exec(line.trim());
+    if (m) {
+      sections.push([title, buf.join('\n')]);
+      title = m[1];
+      buf = [];
+      continue;
+    }
+    buf.push(line);
+  }
+  sections.push([title, buf.join('\n')]);
+  return sections;
+}
+
+// ---------------------------------------------------------------- 主流程
+
+async function main() {
+  const [operatorData, classicMap, pages] = await Promise.all([
+    fetchOperators(),
+    fetchClassicDates(),
+    fetchBannerPages(),
+  ]);
+
+  // 全量 姓名 -> 星级
+  const rarityByName = new Map();
+  const nameByCharId = new Map();
+  for (const c of operatorData.allChara) {
+    const stars = Number(c.rarity || 0) + 1;
+    if (!rarityByName.has(c.name)) rarityByName.set(c.name, stars);
+    if (c.charId) nameByCharId.set(c.charId, c.name);
+  }
+  console.log(`· 全量干员星级表 ${rarityByName.size} 条`);
+
+  // 干员表：obtainMethod 命中三类寻访且星级 >= 5
+  const operators = {};
+  const obtainByChar = new Map();
+  for (const row of operatorData.rows) {
+    if (!row.charId) continue;
+    if (!obtainByChar.has(row.charId)) obtainByChar.set(row.charId, row);
+  }
+  let skippedNoRarity = 0;
+  for (const [charId, row] of obtainByChar) {
+    const obtainMethod = row.obtainMethod || '';
+    if (!/标准寻访|中坚寻访|限定寻访/.test(obtainMethod)) continue;
+    const stars = Number(row.rarity || 0) + 1;
+    if (stars < 5) continue;
+    const scReleaseDate = toDate(row.cnOnlineTime);
+    if (!scReleaseDate) {
+      skippedNoRarity += 1;
+      continue;
+    }
+    operators[charId] = {
+      name: row.page,
+      charId,
+      rarity: stars,
+      scReleaseDate,          // 国服实装日
+      enReleaseDate: null,    // 国际服实装日（数据源待接入，暂留空）
+      tcReleaseDate: null,    // 繁中服实装日（数据源待接入，暂留空）
+      obtainMethod,
+      isLimited: /限定寻访/.test(obtainMethod),
+      classicDate: classicMap.get(row.page) || null,
+    };
+  }
+  console.log(
+    `· 干员 ${Object.keys(operators).length} 位（跳过无日期 ${skippedNoRarity}）`,
+  );
+
+  const opByName = new Map(Object.values(operators).map((o) => [o.name, o]));
+
+  /** 供卡池解析使用：任意干员的星级 + 国服实装日（4★ 无日期，但本规则只关心 5★） */
+  const opMeta = (name) => {
+    const op = opByName.get(name);
+    return {
+      stars: rarityByName.get(name) ?? (op ? op.rarity : 0),
+      scReleaseDate: op ? op.scReleaseDate : null,
+    };
+  };
+
+  // 组装卡池 + 解析 UP 干员
+  const { list, warnings } = buildBanners(pages, opMeta);
+  const banners = {};
+  let dropped = 0;
+  for (const b of list) {
+    const upOperators = [];
+    const dedup = new Set();
+    for (const a of b.rawOps) {
+      const rarity = rarityByName.get(a.name) ?? (a.col === 6 ? 6 : 5);
+      if (rarity < 5) {
+        dropped += 1;
+        continue; // 4★ 不纳入范围
+      }
+      const known = opByName.get(a.name);
+      if (!known) warnings.push(`卡池 ${b.id} 出现未知干员: ${a.name}`);
+      const key = `${a.name}|${isShopArg(a.args)}`;
+      if (dedup.has(key)) continue;
+      dedup.add(key);
+      upOperators.push({
+        name: a.name,
+        rarity,
+        isLimited: known ? known.isLimited : Boolean(a.args.limited),
+        isShop: isShopArg(a.args),
+      });
+    }
+    // 确保 6★ 在前、5★ 在后，便于展示
+    upOperators.sort((x, y) => (y.rarity - x.rarity) || Number(x.isShop) - Number(y.isShop));
+    banners[b.id] = {
+      name: b.name,
+      type: b.type,
+      startDate: b.startDate,
+      endDate: b.endDate,
+      upOperators,
+    };
+  }
+  console.log(`· 卡池 ${Object.keys(banners).length} 个（剔除 4★ 记录 ${dropped} 条）`);
+
+  // 校验
+  const dates = Object.values(banners).map((b) => b.startDate).sort();
+  const bannerCount = Object.keys(banners).length;
+  const meta = {
+    generatedAt: todayBeijing(),
+    defaultServer: DEFAULT_SERVER,
+    /* 服务器列表：前端据此渲染「服务器」下拉框（只列 available 的项）。
+       卡池规模按服务器统计；干员表各服共用一份 operators.json，靠 *ReleaseDate 区分。 */
+    servers: SERVERS.map((s) => ({
+      id: s.id,
+      label: s.label,
+      available: s.available,
+      bannerCount: s.id === DEFAULT_SERVER ? bannerCount : 0,
+      earliestBanner: s.id === DEFAULT_SERVER ? dates[0] || null : null,
+      latestBanner: s.id === DEFAULT_SERVER ? dates[dates.length - 1] || null : null,
+    })),
+    source: 'https://prts.wiki',
+    sourcePages: [
+      '卡池一览/常驻标准寻访',
+      '卡池一览/常驻中坚寻访&中坚甄选',
+      '卡池一览/限时寻访',
+      '寻访规则',
+    ],
+    operatorCount: Object.keys(operators).length,
+  };
+
+  validate(operators, banners, meta);
+
+  await fs.mkdir(OUT_DIR, { recursive: true });
+  await writeJson(path.join(OUT_DIR, 'operators.json'), operators);
+  await writeJson(path.join(OUT_DIR, `banners_${DEFAULT_SERVER}.json`), banners);
+  await writeJson(path.join(OUT_DIR, 'banner-categories.json'), CATEGORIES);
+  await writeJson(path.join(OUT_DIR, 'metadata.json'), meta);
+
+  if (warnings.length) {
+    console.warn(`\n⚠ 共 ${warnings.length} 条警告：`);
+    for (const w of warnings.slice(0, 40)) console.warn('  - ' + w);
+    if (warnings.length > 40) console.warn(`  ... 其余 ${warnings.length - 40} 条已省略`);
+  }
+
+  console.log('\n✓ 数据生成完成');
+  console.log(`  干员 ${meta.operatorCount} 位 / 卡池 ${bannerCount} 个`);
+  console.log(`  卡池时间范围 ${dates[0] || '—'} ~ ${dates[dates.length - 1] || '—'}`);
+  console.log(`  输出目录 ${path.relative(ROOT, OUT_DIR)}`);
+}
+
+function validate(operators, banners, meta) {
+  const problems = [];
+  const sc = meta.servers.find((s) => s.id === meta.defaultServer) || {};
+  if (meta.operatorCount < 50) problems.push(`干员数量异常偏少: ${meta.operatorCount}`);
+  if ((sc.bannerCount || 0) < 50) problems.push(`卡池数量异常偏少: ${sc.bannerCount}`);
+  for (const [id, b] of Object.entries(banners)) {
+    for (const f of ['name', 'type', 'startDate', 'endDate']) {
+      if (!b[f]) problems.push(`卡池 ${id} 缺少字段 ${f}`);
+    }
+    if (!Array.isArray(b.upOperators) || b.upOperators.length === 0) {
+      problems.push(`卡池 ${id} 没有 UP 干员`);
+    }
+    for (const op of b.upOperators) {
+      for (const f of ['name', 'rarity', 'isLimited', 'isShop']) {
+        if (op[f] === undefined) problems.push(`卡池 ${id} 的 UP 干员缺少字段 ${f}`);
+      }
+    }
+  }
+  for (const [cid, op] of Object.entries(operators)) {
+    for (const f of ['name', 'charId', 'rarity', 'scReleaseDate', 'enReleaseDate', 'tcReleaseDate', 'obtainMethod', 'isLimited']) {
+      if (op[f] === undefined) problems.push(`干员 ${cid} 缺少字段 ${f}`);
+    }
+    if (!op.scReleaseDate) problems.push(`干员 ${cid} 缺少国服实装日`);
+    if (![5, 6].includes(op.rarity)) problems.push(`干员 ${cid} 星级异常: ${op.rarity}`);
+  }
+  if (problems.length) {
+    console.error('\n✗ 数据校验未通过：');
+    for (const p of problems.slice(0, 30)) console.error('  - ' + p);
+    throw new Error(`数据校验失败，共 ${problems.length} 个问题`);
+  }
+  console.log('· 数据校验通过');
+}
+
+async function writeJson(file, data) {
+  await fs.writeFile(file, JSON.stringify(data, null, 2) + '\n', 'utf8');
+}
+
+main().catch((e) => {
+  console.error('\n✗ 构建失败: ' + e.message);
+  process.exit(1);
+});
