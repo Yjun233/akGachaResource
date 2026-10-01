@@ -42,8 +42,14 @@ jobs:
           pip install pillow
 
       # 数据没更新时脚本**不会写盘**、也不会动 generatedAt（见 fetch-data.mjs）
-      - name: 抓取卡池 / 干员数据
+      - name: 抓取卡池 / 干员数据（国服）
         run: npm run build:data
+
+      # 国际服（wiki.gg）。必须在国服之后：它要读国服的 operators.json / banners_sc.json
+      # 来对齐 charId、中文名与「双五寻访」，并把 enName / enReleaseDate / enClassicDate
+      # 写回 operators.json。同样只在内容变化时写盘。
+      - name: 抓取卡池 / 干员数据（国际服）
+        run: npm run build:data:en
 
       # 只补缺失的头像。CI 里能直连 raw.githubusercontent.com，
       # 所以把镜像列表置空、只走直连（本地跑时才用反代）。
@@ -78,7 +84,7 @@ jobs:
       - name: 刷新 jsDelivr 缓存
         if: steps.diff.outputs.changed == 'true'
         run: |
-          for f in operators.json banners_sc.json metadata.json; do
+          for f in operators.json banners_sc.json banners_en.json metadata.json; do
             body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
             echo "purge data/$f -> $(echo "$body" | head -c 120)"
           done

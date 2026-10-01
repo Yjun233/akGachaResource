@@ -7,9 +7,12 @@
   "scripts": {
     "build:data": "node scripts/fetch-data.mjs",
     "build:avatars": "node scripts/fetch-avatars.mjs",
-    "build": "node scripts/fetch-data.mjs && node scripts/fetch-avatars.mjs"
+    "build": "npm run build:data && npm run build:data:en && npm run build:avatars",
+    "build:data:en": "node scripts/fetch-data-en.mjs",
+    "build:data:tc": "node scripts/fetch-data-tc.mjs"
   },
   "dependencies": {
-    "pinyin-pro": "^3.29.4"
+    "pinyin-pro": "^3.29.4",
+    "xlsx": "^0.18.5"
   }
 }

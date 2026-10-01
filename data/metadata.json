@@ -1,30 +1,32 @@
 {
-  "generatedAt": "2026-09-30",
+  "generatedAt": "2026-10-01",
+  "enGeneratedAt": "2026-10-01",
+  "tcGeneratedAt": "2026-10-01",
   "defaultServer": "sc",
   "servers": [
     {
       "id": "sc",
       "label": "国服",
       "available": true,
-      "bannerCount": 431,
+      "bannerCount": 432,
       "earliestBanner": "2019-04-30",
-      "latestBanner": "2026-09-29"
+      "latestBanner": "2026-10-01"
     },
     {
       "id": "en",
       "label": "国际服",
-      "available": false,
-      "bannerCount": 0,
-      "earliestBanner": null,
-      "latestBanner": null
+      "available": true,
+      "bannerCount": 388,
+      "earliestBanner": "2020-01-16",
+      "latestBanner": "2026-09-24"
     },
     {
       "id": "tc",
       "label": "繁中服",
-      "available": false,
-      "bannerCount": 0,
-      "earliestBanner": null,
-      "latestBanner": null
+      "available": true,
+      "bannerCount": 370,
+      "earliestBanner": "2020-06-29",
+      "latestBanner": "2026-10-22"
     }
   ],
   "source": "https://prts.wiki",
@@ -32,7 +34,9 @@
     "卡池一览/常驻标准寻访",
     "卡池一览/常驻中坚寻访&中坚甄选",
     "卡池一览/限时寻访",
-    "寻访规则"
+    "寻访规则",
+    "繁中-卡池记录-整合版.xlsx（本地表格）",
+    "arknights.wiki.gg"
   ],
   "operatorCount": 230
 }

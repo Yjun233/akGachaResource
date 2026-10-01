@@ -7,6 +7,11 @@
  *   operators.json         以 charId 为键的干员表（仅 5★/6★）
  *                          含 scReleaseDate（国服实装日）/ enReleaseDate / tcReleaseDate
  *   banners_<server>.json  以卡池 ID 为键的卡池表，按服务器分文件（当前只产出 sc）
+ *                          每个卡池都有 `name` / `scName` / `enName` 三个名字字段：
+ *                          `scName` = 国服中文名（本脚本的 name 就是它）；
+ *                          `enName` = 国际服英文名，按干员集合反查 banners_en.json，
+ *                                     没有英文名的（带序号的池子三服同名）为 null。
+ *                          详见 scripts/lib/banner-names.mjs
  *   metadata.json          元信息（含服务器列表）
  *
  * ⚠️ 不再输出 `banner-categories.json`：type → 大类的映射已移入站点侧
@@ -20,12 +25,15 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { pinyin } from 'pinyin-pro';
+import { metaStable, orderMeta } from './lib/meta.mjs';
+import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data');
 
-/* 服务器：PRTS Wiki 只提供国服数据，en / tc 待后续接入其他数据源。
+/* 服务器：本脚本只负责**国服**（PRTS Wiki）。国际服见 fetch-data-en.mjs（wiki.gg）、
+   繁中服见 fetch-data-tc.mjs（本地表格）。
    卡池按服务器分文件（banners_sc.json / banners_en.json / banners_tc.json），
    干员表共用一份，靠 *ReleaseDate 字段区分各服实装日。 */
 const DEFAULT_SERVER = 'sc';
@@ -33,6 +41,14 @@ const SERVERS = [
   { id: 'sc', label: '国服', available: true },
   { id: 'en', label: '国际服', available: false },
   { id: 'tc', label: '繁中服', available: false },
+];
+
+/** 国服这三个数据来源页（写进 metadata.sourcePages）；其余来源由各自脚本追加 */
+const CN_SOURCE_PAGES = [
+  '卡池一览/常驻标准寻访',
+  '卡池一览/常驻中坚寻访&中坚甄选',
+  '卡池一览/限时寻访',
+  '寻访规则',
 ];
 
 const API = 'https://prts.wiki/api.php';
@@ -620,6 +636,17 @@ async function main() {
     fetchBannerPages(),
   ]);
 
+  /* ---- 读旧文件：本脚本**不负责**国际服字段 ----
+     国际服数据由 `fetch-data-en.mjs` 产出（enName / enReleaseDate / enClassicDate
+     以及 banners_en.json）。本脚本只重建国服部分，所以要把这些**原样保留**，
+     否则跑一次 build:data 就会把国际服数据抹掉。
+     同理 metadata 里非默认服务器的 available / bannerCount 也由 en 脚本负责。 */
+  const readPrev = async (name) => {
+    try { return JSON.parse(await fs.readFile(path.join(OUT_DIR, name), 'utf8')); } catch { return null; }
+  };
+  const prevOperators = (await readPrev('operators.json')) || {};
+  const prevMeta = (await readPrev('metadata.json')) || { servers: [] };
+
   // 全量 姓名 -> 星级
   const rarityByName = new Map();
   const nameByCharId = new Map();
@@ -648,16 +675,20 @@ async function main() {
       skippedNoRarity += 1;
       continue;
     }
+    const prev = prevOperators[charId] || {};
     operators[charId] = {
       name: row.page,
+      enName: prev.enName ?? null,            // 国际服名字（由 fetch-data-en.mjs 填）
       charId,
       rarity: stars,
-      scReleaseDate,          // 国服实装日
-      enReleaseDate: null,    // 国际服实装日（数据源待接入，暂留空）
-      tcReleaseDate: null,    // 繁中服实装日（数据源待接入，暂留空）
+      scReleaseDate,                          // 国服实装日
+      enReleaseDate: prev.enReleaseDate ?? null,  // 国际服实装日（同上）
+      tcReleaseDate: prev.tcReleaseDate ?? null,  // 繁中服实装日（由 fetch-data-tc.mjs 填）
       obtainMethod,
       isLimited: /限定寻访/.test(obtainMethod),
       classicDate: classicMap.get(row.page) || null,
+      enClassicDate: prev.enClassicDate ?? null,  // 国际服进入中坚寻访的日期（同上）
+      tcClassicDate: prev.tcClassicDate ?? null,  // 繁中服进入中坚寻访的日期（同上）
     };
   }
   console.log(
@@ -677,6 +708,7 @@ async function main() {
 
   // 组装卡池 + 解析 UP 干员
   const { list, warnings } = buildBanners(pages, opMeta);
+
   const banners = {};
   let dropped = 0;
   for (const b of list) {
@@ -704,6 +736,8 @@ async function main() {
     upOperators.sort((x, y) => (y.rarity - x.rarity) || Number(x.isShop) - Number(y.isShop));
     banners[b.id] = {
       name: b.name,
+      scName: b.name,       // 国服中文名（与 name 相同，保留一列便于跨服对齐）
+      enName: null,         // 国际服英文名，第二遍回填
       type: b.type,
       startDate: b.startDate,
       endDate: b.endDate,
@@ -712,28 +746,80 @@ async function main() {
   }
   console.log(`· 卡池 ${Object.keys(banners).length} 个（剔除 4★ 记录 ${dropped} 条）`);
 
+  /* ---- 卡池的英文名（enName）----
+     `banners_en.json` 是国际服脚本的地盘，本脚本**只读**。按干员集合把同一批池子对起来
+     （只有限定 / 单六 / 双五三类有英文名，见 lib/banner-names.mjs）。
+     ⚠️ 必须**按开始日升序**逐个查（banners 就是按 list 的顺序插入的）—— 复刻池与首跑池
+        干员集合相同，靠「第 N 次出现」配对；`ownCounts` 用来处理国服特有的「返场」池。
+     ⚠️ 国际服比国服慢，最新的几个池子对不上属正常 —— 不计入 warnings，只报个数。
+     ⚠️ CI 里国际服那步在国服之后，所以这里读到的是**上一轮**的 banners_en.json；
+        名字极少变，滞后一轮无影响，而且下一轮就自动补上。 */
+  let enNameHits = 0;
+  const enNameMiss = [];
+  const prevEnBanners = await readPrev('banners_en.json');
+  if (prevEnBanners) {
+    const matchEnName = createNameMatcher(buildNameIndex(prevEnBanners), {
+      overflow: false,
+      ownCounts: countNameGroups(banners),
+    });
+    for (const [id, b] of Object.entries(banners)) {
+      if (!nameGroupOf(b.type)) continue;
+      const hit = matchEnName(b);
+      if (hit) {
+        /* 优先取对方明确给出的英文名；旧版 banners_en.json 还没这个字段，
+           那时它的 `name` 就是英文名，所以退一步用它（过渡期用得上）。 */
+        b.enName = hit.enName || hit.name || null;
+        enNameHits += 1;
+      } else {
+        enNameMiss.push(`${id} ${b.name}（${b.startDate}）`);
+      }
+    }
+  }
+  const enNameTotal = Object.values(banners).filter((b) => b.enName).length;
+  console.log(`· 卡池英文名：${enNameTotal} 个有 enName / ${enNameMiss.length} 个限定·单六·双五池暂时对不上国际服`
+    + `${prevEnBanners ? '' : '（banners_en.json 不存在，全部留空）'}`);
+
   // 校验
   const dates = Object.values(banners).map((b) => b.startDate).sort();
   const bannerCount = Object.keys(banners).length;
   const meta = {
     generatedAt: todayBeijing(),
+    /* 另外两个服务器的「数据更新日」由各自的脚本维护，这里原样沿用：
+       enGeneratedAt 由 fetch-data-en.mjs 在**它自己的产出有变化**时更新；
+       tcGeneratedAt 由 fetch-data-tc.mjs 填成本地表格的最后修改日。 */
+    enGeneratedAt: prevMeta.enGeneratedAt ?? null,
+    tcGeneratedAt: prevMeta.tcGeneratedAt ?? null,
     defaultServer: DEFAULT_SERVER,
     /* 服务器列表：前端据此渲染「服务器」下拉框（只列 available 的项）。
        卡池规模按服务器统计；干员表各服共用一份 operators.json，靠 *ReleaseDate 区分。 */
-    servers: SERVERS.map((s) => ({
-      id: s.id,
-      label: s.label,
-      available: s.available,
-      bannerCount: s.id === DEFAULT_SERVER ? bannerCount : 0,
-      earliestBanner: s.id === DEFAULT_SERVER ? dates[0] || null : null,
-      latestBanner: s.id === DEFAULT_SERVER ? dates[dates.length - 1] || null : null,
-    })),
+    /* 默认服务器的数字由本脚本算；其余服务器（国际服 / 繁中服）的
+       available / bannerCount / 日期区间由各自的脚本负责
+       （见 fetch-data-en.mjs / fetch-data-tc.mjs），
+       这里原样沿用旧文件，免得把别的服务器的状态覆盖掉。 */
+    servers: SERVERS.map((s) => {
+      if (s.id === DEFAULT_SERVER) {
+        return {
+          id: s.id,
+          label: s.label,
+          available: true,
+          bannerCount,
+          earliestBanner: dates[0] || null,
+          latestBanner: dates[dates.length - 1] || null,
+        };
+      }
+      const prev = (prevMeta.servers || []).find((x) => x.id === s.id);
+      return prev
+        ? { ...prev, label: s.label }
+        : { id: s.id, label: s.label, available: s.available, bannerCount: 0, earliestBanner: null, latestBanner: null };
+    }),
     source: 'https://prts.wiki',
+    /* ⚠️ 国服自己的 4 个来源页 + **沿用旧文件里别人追加的**（国际服写 arknights.wiki.gg、
+       繁中服写本地表格）。写成并集、别写死 —— 否则每跑一次国服脚本就会把
+       另两个脚本追加的来源项抹掉，它们再跑又加回来，来回都是“有变化”，
+       在 CI 里就是一堆空提交。 */
     sourcePages: [
-      '卡池一览/常驻标准寻访',
-      '卡池一览/常驻中坚寻访&中坚甄选',
-      '卡池一览/限时寻访',
-      '寻访规则',
+      ...CN_SOURCE_PAGES,
+      ...((prevMeta.sourcePages || []).filter((p) => !CN_SOURCE_PAGES.includes(p))),
     ],
     operatorCount: Object.keys(operators).length,
   };
@@ -762,17 +848,17 @@ async function main() {
   const nextOps = stab(operators);
   const nextBanners = stab(banners);
 
-  /* 元信息要**先剔掉 generatedAt 再比对** —— 否则只因为日期变了就永远“有变化” */
-  const metaNoDate = { ...meta };
-  delete metaNoDate.generatedAt;
+  /* 元信息要**先剔掉三个「更新日」再比对** —— 否则只因为日期变了就永远“有变化”。
+     （enGeneratedAt / tcGeneratedAt 由另外两个脚本维护，这里也要一起剔，
+       不然每次跑都会把对方写的日期看成“变化”，凭空产生一次提交。） */
+  const metaNoDate = metaStable(meta);
   const prevMetaRaw = await readOld('metadata.json');
   let prevGeneratedAt = null;
   let prevMetaNoDate = null;
   if (prevMetaRaw) {
     try {
-      prevMetaNoDate = JSON.parse(prevMetaRaw);
-      prevGeneratedAt = prevMetaNoDate.generatedAt || null;
-      delete prevMetaNoDate.generatedAt;
+      prevMetaNoDate = metaStable(JSON.parse(prevMetaRaw));
+      prevGeneratedAt = JSON.parse(prevMetaRaw).generatedAt || null;
     } catch { prevMetaNoDate = null; } // 旧文件坏了就当成“有变化”
   }
 
@@ -783,8 +869,9 @@ async function main() {
 
   /* 没变化 → 沿用旧的快照日；有变化 → 今天 */
   const generatedAt = dataChanged ? todayBeijing() : (prevGeneratedAt || todayBeijing());
-  /* 展开时 generatedAt 已在 meta 里，覆盖它不会改变 key 的顺序（否则又会“看起来变了”） */
-  const finalMeta = { ...meta, generatedAt };
+  /* 展开时 generatedAt 已在 meta 里，覆盖它不会改变 key 的顺序（否则又会“看起来变了”）；
+     再过一遍 orderMeta 统一键序，避免与另外两个脚本写出的键序不同而互相看成“改过了”。 */
+  const finalMeta = orderMeta({ ...meta, generatedAt });
 
   const wrote = [
     (await put('operators.json', nextOps)) && 'operators.json',
@@ -817,9 +904,13 @@ function validate(operators, banners, meta) {
   if (meta.operatorCount < 50) problems.push(`干员数量异常偏少: ${meta.operatorCount}`);
   if ((sc.bannerCount || 0) < 50) problems.push(`卡池数量异常偏少: ${sc.bannerCount}`);
   for (const [id, b] of Object.entries(banners)) {
-    for (const f of ['name', 'type', 'startDate', 'endDate']) {
+    for (const f of ['name', 'scName', 'type', 'startDate', 'endDate']) {
       if (!b[f]) problems.push(`卡池 ${id} 缺少字段 ${f}`);
     }
+    /* enName 可以为 null（带序号的池子三服同名、国际服还没出的池子也还没英文名），
+       但这个字段本身必须存在，否则站点侧没法区分「没有英文名」和「忘了写」。 */
+    if (!('enName' in b)) problems.push(`卡池 ${id} 缺少字段 enName`);
+    if (b.name !== b.scName) problems.push(`卡池 ${id} 的 name 与 scName 不一致: ${b.name} / ${b.scName}`);
     if (!Array.isArray(b.upOperators) || b.upOperators.length === 0) {
       problems.push(`卡池 ${id} 没有 UP 干员`);
     }

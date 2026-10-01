@@ -3,7 +3,8 @@
 「[明日方舟寻访数据站](https://github.com/Yjun233/akGachaData)」的**静态资源仓库**：
 存放卡池 / 干员数据与干员头像，供站点（以及任何人）通过 **jsDelivr CDN** 直接读取。
 
-- 📊 卡池与干员数据：抓取自 [PRTS Wiki](https://prts.wiki/)，目前只有国服
+- 📊 卡池与干员数据：**国服**来自 [PRTS Wiki](https://prts.wiki/)，**国际服**来自
+  [arknights.wiki.gg](https://arknights.wiki.gg/)，**繁中服**由人工维护的卡池记录表生成
 - 🖼 干员头像：来自 [ArknightsGameResource](https://github.com/yuanyan3060/ArknightsGameResource)，
   已压缩到 96×96
 
@@ -11,10 +12,14 @@
 
 ```bash
 # 干员表（标准寻访、中坚寻访和限定寻访会出现的5★/6★干员，以 charId 为键）
+#   各服共用一份，用 scReleaseDate / enReleaseDate / tcReleaseDate 区分实装日
 https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/operators.json
 
 # 卡池表（以卡池 ID 为键，不含联动寻访、跨年欢庆寻访、新人和回归寻访）
-https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/banners_sc.json
+#   按服务器分文件：
+https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/banners_sc.json   # 国服
+https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/banners_en.json   # 国际服
+https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/banners_tc.json   # 繁中服
 
 # 元信息（生成时间、服务器列表）
 https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/metadata.json
@@ -27,15 +32,17 @@ https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/avatars/char_306_leizi.
 > raw.githubusercontent.com（国内网络下会取不到），而 JSON 又是正常的。
 > `gcore.jsdelivr.net` 也可用。
 
-数据由 GitHub Actions **每周二 / 周四 / 周五 北京时间 18:00** 自动更新，
-没有更新时不产生提交。
+**国服 / 国际服**数据由 GitHub Actions **每周二 / 周四 / 周五 北京时间 18:00** 自动更新，
+没有更新时不产生提交。**繁中服**的数据源是本地人工维护的表格，不在自动更新范围内。
 
 ## 目录
 
 ```
-data/       operators.json / banners_sc.json / metadata.json
+data/       operators.json · metadata.json
+            banners_sc.json（国服）· banners_en.json（国际服）· banners_tc.json（繁中服）
 avatars/    <charId>.png（96×96）
-scripts/    fetch-data.mjs（爬虫）· fetch-avatars.mjs（抓头像）
+scripts/    fetch-data.mjs（国服）· fetch-data-en.mjs（国际服）· fetch-data-tc.mjs（繁中服）
+            fetch-avatars.mjs（抓头像）· lib/（三个数据脚本共用的小工具）
 ```
 
 ## 卡池类型
@@ -50,7 +57,9 @@ scripts/    fetch-data.mjs（爬虫）· fetch-avatars.mjs（抓头像）
 
 ```bash
 npm install
-npm run build:data       # 从 PRTS Wiki 重爬数据 → data/
+npm run build:data       # 从 PRTS Wiki 重爬**国服**数据 → data/
+npm run build:data:en    # 从 arknights.wiki.gg 抓**国际服**数据 → data/
+npm run build:data:tc    # 从**本地表格**生成**繁中服**数据（表格不在仓库里，需自备）
 npm run build:avatars    # 补齐头像 → avatars/（只拉缺失的）
 ```
 
@@ -59,4 +68,4 @@ npm run build:avatars    # 补齐头像 → avatars/（只拉缺失的）
 ## 声明
 
 本仓库是个人非商业的数据整理项目。《明日方舟》相关素材与数据的著作权归
-上海鹰角网络科技有限公司所有，卡池数据来源为 PRTS Wiki。
+上海鹰角网络科技有限公司所有，卡池数据来源为 PRTS Wiki 与 arknights.wiki.gg。
