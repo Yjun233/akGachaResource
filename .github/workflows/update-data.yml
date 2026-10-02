@@ -51,6 +51,29 @@ jobs:
       - name: 抓取卡池 / 干员数据（国际服）
         run: npm run build:data:en
 
+      # 繁中服的数据源是**金山文档在线表格**，靠 AirScript webhook 读（不再是本地 xlsx）。
+      # 需要 AIRSCRIPT_TOKEN（脚本令牌，**半年过期**，到金山「脚本编辑器 → 脚本信息」里延期）。
+      # 排在国服 / 国际服之后：它要读 banners_sc.json 反查中文名与卡池类型、读 banners_en.json 补 enName。
+      # ⚠️ 令牌没配好时**跳过而不是失败** —— 否则每天的定时任务会一直红，
+      #    真正要报警的「数据抓取失败」反而被淹没。
+      - name: 检查繁中服令牌是否已配置
+        id: tc_ready
+        env:
+          HAS_TC_TOKEN: ${{ secrets.AIRSCRIPT_TOKEN }}
+        run: |
+          if [ -n "$HAS_TC_TOKEN" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::未配置 AIRSCRIPT_TOKEN，本轮跳过繁中服（金山文档）数据"
+          fi
+
+      - name: 抓取卡池数据（繁中服 · 金山文档）
+        if: steps.tc_ready.outputs.ready == 'true'
+        env:
+          AIRSCRIPT_TOKEN: ${{ secrets.AIRSCRIPT_TOKEN }}
+        run: npm run build:data:tc
+
       # 只补缺失的头像。CI 里能直连 raw.githubusercontent.com，
       # 所以把镜像列表置空、只走直连（本地跑时才用反代）。
       - name: 补齐干员头像
@@ -84,7 +107,7 @@ jobs:
       - name: 刷新 jsDelivr 缓存
         if: steps.diff.outputs.changed == 'true'
         run: |
-          for f in operators.json banners_sc.json banners_en.json metadata.json; do
+          for f in operators.json banners_sc.json banners_en.json banners_tc.json metadata.json; do
             body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
             echo "purge data/$f -> $(echo "$body" | head -c 120)"
           done

@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
  * fetch-data-tc.mjs
- * 从**本地人工维护的表格**生成**繁中服（台服 / TW）**数据。
+ * 从**金山文档在线表格**（AirScript webhook）生成**繁中服（台服 / TW）**数据。
  *
- * 繁中服没有 PRTS / wiki.gg 那样的数据站，所以这个脚本**不联网**，
- * 数据源是本仓库里人工整理的 `docs/繁中-卡池记录-整合版.xlsx`
- * （⚠️ 该文件在 `docs/` 下，已 gitignore，不会进仓库）。
+ * 繁中服没有 PRTS / wiki.gg 那样的数据站，数据源是人工维护的金山在线表格。
+ * 本脚本通过 AirScript webhook **联网**逐格读取三张表 —— **不再经过 xlsx**
+ * （导出会把日期型单元格整列吞掉，那是旧方案的根因；细节见 scripts/lib/airscript.mjs）。
  *
  * 产出：
  *   data/banners_tc.json        繁中服卡池表
@@ -18,8 +18,12 @@
  * 反查规则见 scripts/lib/banner-names.mjs。
  *
  * 用法：
- *   node scripts/fetch-data-tc.mjs           # 生成并写盘（内容没变则不写）
- *   node scripts/fetch-data-tc.mjs --dry     # 只解析与统计，不写盘
+ *   node scripts/fetch-data-tc.mjs           # 读表 + 生成并写盘（内容没变则不写）
+ *   node scripts/fetch-data-tc.mjs --dry     # 只读表、解析与统计，不写盘
+ *
+ * 凭证（脚本令牌 / file_id / script_id）的解析顺序见 scripts/lib/airscript.mjs：
+ * `AIRSCRIPT_TOKEN` 是**密钥**，本地放已 gitignore 的 `scripts/.airscript_token`，
+ * CI 走 GitHub Secrets；file_id / script_id 只是文档标识，允许内置默认值。
  *
  * ---------------------------------------------------------------- 表格结构
  *
@@ -58,19 +62,20 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { pinyin } from 'pinyin-pro';
-import XLSX from 'xlsx';
 import { orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
+import { readSheets as readAirScriptSheets, resolveConfig } from './lib/airscript.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data');
-const XLSX_PATH = path.join(ROOT, 'docs', '繁中-卡池记录-整合版.xlsx');
 
 const SERVER = 'tc';
+/* 三张工作表在**云端表格里**的名字（改名后要同步这三个常量） */
 const SHEET_ROT = '繁中轮换记录';
 const SHEET_MID = '繁中中坚记录';
 const SHEET_SEL = '繁中中坚甄选记录';
+const SHEET_NAMES = [SHEET_ROT, SHEET_MID, SHEET_SEL];
 
 /** 序号类（展示名 = 类名 + 序号，ID 名称段 = 补零 4 位） */
 const SEQ_LABEL = {
@@ -87,15 +92,19 @@ const s = (v) => (v === null || v === undefined ? '' : String(v).trim());
 
 // ---------------------------------------------------------------- 工具
 
-/** Excel 单元格 → YYYY-MM-DD。
- *  ⚠️ 日期要用 SSF.parse_date_code 解析序列号，**别开 cellDates** ——
- *  那个会把 Excel 的“墙上时间”按某个时区转成 Date，跨时区会差一天。 */
+/** 单元格文本 → YYYY-MM-DD。
+ *  数据源是金山 AirScript，返回的是**显示文本**（`2020/6/29`，斜杠、不补零），
+ *  走下面的字符串分支。
+ *  ⚠️ 数字分支是**兜底**：万一上游哪天又变成 xlsx 序列号（旧路），也能算对，
+ *  而不是静默返回 '' —— 那会让整条记录被 `if (!start) continue` 悄悄丢掉。
+ *  换算以 UTC 1899-12-30 为原点：Excel 1900 系统误以为 1900 是闰年，
+ *  用这个原点正好把那个错抵掉（对序列号 ≥ 1 都成立）。 */
 function cellDate(v) {
   if (v === null || v === undefined || v === '') return '';
   if (typeof v === 'number' && v > 1000) {
-    const p = XLSX.SSF.parse_date_code(v);
-    if (!p) return '';
-    return `${p.y}-${String(p.m).padStart(2, '0')}-${String(p.d).padStart(2, '0')}`;
+    const d = new Date(Date.UTC(1899, 11, 30) + Math.round(v) * 86_400_000);
+    if (Number.isNaN(d.getTime())) return '';
+    return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}-${String(d.getUTCDate()).padStart(2, '0')}`;
   }
   const m = /(\d{4})[/-](\d{1,2})[/-](\d{1,2})/.exec(String(v));
   return m ? `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}` : '';
@@ -114,14 +123,15 @@ const setKeyOf = (names) => [...new Set(names)].sort().join('|');
 
 // ---------------------------------------------------------------- 读表
 
-function readSheets() {
-  const wb = XLSX.readFile(XLSX_PATH);
-  const out = {};
-  for (const name of wb.SheetNames) {
-    out[name] = XLSX.utils.sheet_to_json(wb.Sheets[name], { header: 1, raw: true, defval: '' });
-  }
-  return out;
-}
+/**
+ * 三张表 → `{ 表名: 二维数组 }`，直接喂给下面的 parseRotation / parseMid / parseSelection
+ * —— 它们吃的就是「表名 → 行数组」，所以**解析逻辑一行都不用改**。
+ *
+ * 走金山文档 AirScript webhook（不是读本地 xlsx）。云端网格由 lib 的 `normalizeGrid()`
+ * 做过「去尾空行 + 每行补齐列数」，单元格一律是**显示文本**，与旧方案
+ * `sheet_to_json(..., { header: 1, raw: true, defval: '' })` 的语义等价。
+ */
+const readSheets = (config) => readAirScriptSheets(SHEET_NAMES, config);
 
 /** 轮换记录 → 常驻标准寻访列表 + 限时寻访列表 */
 function parseRotation(rows, warnings) {
@@ -242,12 +252,13 @@ const buildCnIndex = (cnBanners) => buildNameIndex(cnBanners);
 async function main() {
   const dry = process.argv.includes('--dry');
 
-  let stat;
+  /* 凭证（脚本令牌 / file_id / script_id）—— 缺失时 lib 会抛**带操作指引**的错误，
+     因为第一次配置最容易卡在这一步（token 在哪生成、本地放哪、CI 放哪）。 */
+  let config;
   try {
-    stat = await fs.stat(XLSX_PATH);
-  } catch {
-    console.error(`✗ 找不到表格 ${XLSX_PATH}`);
-    console.error('  繁中服数据来自人工维护的本地表格，请先确认 docs/繁中-卡池记录-整合版.xlsx 存在。');
+    config = await resolveConfig();
+  } catch (e) {
+    console.error(`✗ ${e.message}`);
     process.exit(1);
   }
 
@@ -265,10 +276,11 @@ async function main() {
   } catch { /* 没有 banners_en.json 就全部留空 */ }
 
   const warnings = [];
-  const sheets = readSheets();
-  for (const need of [SHEET_ROT, SHEET_MID, SHEET_SEL]) {
-    if (!sheets[need]) {
-      console.error(`✗ 表格里找不到工作表「${need}」`);
+  console.log(`· 读取金山表格（file_id ${config.fileId} / script_id ${config.scriptId}）：`);
+  const sheets = await readSheets(config);
+  for (const need of SHEET_NAMES) {
+    if (!sheets[need] || !sheets[need].length) {
+      console.error(`✗ 云端表格里读不到工作表「${need}」（或读出来是空的）`);
       process.exit(1);
     }
   }
@@ -507,7 +519,7 @@ async function main() {
     op.tcClassicDate = firstClassic.get(op.name) || null;
   }
 
-  // ---- metadata ----
+  // ---- metadata（tcGeneratedAt 要等「写盘了没有」出来才定，见下） ----
   const meta = JSON.parse(await fs.readFile(path.join(OUT_DIR, 'metadata.json'), 'utf8'));
   const dates = list.map((b) => b.startDate).sort();
   const tcEntry = (meta.servers || []).find((x) => x.id === SERVER);
@@ -519,12 +531,13 @@ async function main() {
   } else {
     warnings.push('metadata.servers 里没有 tc 这一项，未写入繁中服信息');
   }
-  /* tcGeneratedAt = **表格的最后修改时间**（用户口径）：繁中服数据没有抓取时间，
-     表格什么时候动的，数据就是什么时候更新的。 */
-  const tcGeneratedAt = `${stat.mtime.getFullYear()}-${String(stat.mtime.getMonth() + 1).padStart(2, '0')}-${String(stat.mtime.getDate()).padStart(2, '0')}`;
-  meta.tcGeneratedAt = tcGeneratedAt;
-  const srcNote = '繁中-卡池记录-整合版.xlsx（本地表格）';
-  if (Array.isArray(meta.sourcePages) && !meta.sourcePages.includes(srcNote)) meta.sourcePages.push(srcNote);
+  /* 数据来源页：**替换**掉旧方案留下的那条（不是追加），否则两代来源会一起留在数组里 */
+  const srcNote = '金山文档·繁中卡池统计表（AirScript 云端读取）';
+  const LEGACY_SRC = '繁中-卡池记录-整合版.xlsx（本地表格）';
+  if (Array.isArray(meta.sourcePages)) {
+    meta.sourcePages = meta.sourcePages.filter((x) => x !== LEGACY_SRC);
+    if (!meta.sourcePages.includes(srcNote)) meta.sourcePages.push(srcNote);
+  }
 
   // ---- 输出（内容一致就不写） ----
   const stab = (v) => JSON.stringify(v, null, 2) + '\n';
@@ -537,9 +550,21 @@ async function main() {
     return true;
   };
 
+  /* tcGeneratedAt = **banners_tc.json 的修改日**（用户口径：繁中服的数据没有抓取时间，
+     就用产出文件的「最后修改日」代表这批数据是什么时候更新的）。
+     ⚠️ **不能真的去 stat 文件 mtime**：CI 每次 checkout 都会把文件 mtime 重置成运行时刻，
+        那样它天天是「今天」、metadata 每天产生一次空提交。
+        所以用等价口径 —— **本次运行真的改写了 banners_tc.json 才推进日期**；
+        没写盘（内容无变化）就沿用 metadata 里的旧值。本地手动跑时两者完全一致。 */
+  const wroteBanners = await put(`banners_${SERVER}.json`, stab(out));
+  const now = new Date();
+  const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  const tcGeneratedAt = wroteBanners ? todayStr : (meta.tcGeneratedAt || todayStr);
+  meta.tcGeneratedAt = tcGeneratedAt;
+
   const nextMeta = orderMeta(meta);
   const wrote = [
-    (await put(`banners_${SERVER}.json`, stab(out))) && `banners_${SERVER}.json`,
+    wroteBanners && `banners_${SERVER}.json`,
     (await put('operators.json', stab(cnOperators))) && 'operators.json',
     (await put('metadata.json', stab(nextMeta))) && 'metadata.json',
   ].filter(Boolean);
@@ -552,7 +577,7 @@ async function main() {
   console.log(`✓ 繁中服卡池 ${list.length} 个`);
   console.log(`  时间范围 ${dates[0] || '—'} ~ ${dates[dates.length - 1] || '—'}`);
   console.log(`  各类型 ${ord.filter((t) => byType[t]).map((t) => `${t}×${byType[t]}`).join('  ')}`);
-  console.log(`  tcGeneratedAt（表格修改日）${tcGeneratedAt}`);
+  console.log(`  tcGeneratedAt（数据更新日）${tcGeneratedAt}`);
   console.log(`  干员：tcReleaseDate ${[...firstSeen].length} 个 / tcClassicDate ${firstClassic.size} 个`);
   const noRel = Object.values(cnOperators).filter((o) => !o.tcReleaseDate).map((o) => o.name);
   if (noRel.length) console.log(`  繁中服尚未实装的干员（无 tcReleaseDate）${noRel.length} 位：${noRel.join('、')}`);

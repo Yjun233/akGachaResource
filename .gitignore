@@ -7,7 +7,8 @@ Thumbs.db
 # 对外只需要根目录那份简版 README。
 docs/
 
-# 本地私密配置（不提交；脚本会优先读对应环境变量，回退到这些本地文件）
-scripts/.airscript_token          # 金山 AirScript 脚本令牌（密钥）
-scripts/.tc_kdocs_file_id         # 金山文档 file_id
-docs/.tc_sync_marker              # 繁中服「数据更新日」marker（touch 取 mtime）
+# 本地私密配置（不提交；脚本会优先读对应环境变量，回退到下面这些本地文件）
+# ⚠️ 下面两行**不能写行内注释** —— git 不支持，整行会被当成模式、规则直接失效。
+#    （2026-10-02 踩过：就是因此差点把 .airscript_token 提交进 public 仓库。）
+scripts/.airscript_token
+scripts/.tc_kdocs_file_id

@@ -33,7 +33,7 @@ const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data');
 
 /* 服务器：本脚本只负责**国服**（PRTS Wiki）。国际服见 fetch-data-en.mjs（wiki.gg）、
-   繁中服见 fetch-data-tc.mjs（本地表格）。
+   繁中服见 fetch-data-tc.mjs（金山文档 AirScript）。
    卡池按服务器分文件（banners_sc.json / banners_en.json / banners_tc.json），
    干员表共用一份，靠 *ReleaseDate 字段区分各服实装日。 */
 const DEFAULT_SERVER = 'sc';
@@ -786,7 +786,7 @@ async function main() {
     generatedAt: todayBeijing(),
     /* 另外两个服务器的「数据更新日」由各自的脚本维护，这里原样沿用：
        enGeneratedAt 由 fetch-data-en.mjs 在**它自己的产出有变化**时更新；
-       tcGeneratedAt 由 fetch-data-tc.mjs 填成本地表格的最后修改日。 */
+       tcGeneratedAt 由 fetch-data-tc.mjs 填成 banners_tc.json 的修改日。 */
     enGeneratedAt: prevMeta.enGeneratedAt ?? null,
     tcGeneratedAt: prevMeta.tcGeneratedAt ?? null,
     defaultServer: DEFAULT_SERVER,
@@ -814,7 +814,7 @@ async function main() {
     }),
     source: 'https://prts.wiki',
     /* ⚠️ 国服自己的 4 个来源页 + **沿用旧文件里别人追加的**（国际服写 arknights.wiki.gg、
-       繁中服写本地表格）。写成并集、别写死 —— 否则每跑一次国服脚本就会把
+       繁中服写金山文档）。写成并集、别写死 —— 否则每跑一次国服脚本就会把
        另两个脚本追加的来源项抹掉，它们再跑又加回来，来回都是“有变化”，
        在 CI 里就是一堆空提交。 */
     sourcePages: [
