@@ -11152,14 +11152,20 @@
     "endDate": "2025-02-28",
     "upOperators": [
       {
-        "name": "远牙",
+        "name": "琳琅诗怀雅",
         "rarity": 6,
         "isLimited": false,
         "isShop": false
       },
       {
-        "name": "琳琅诗怀雅",
+        "name": "远牙",
         "rarity": 6,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "name": "阿罗玛",
+        "rarity": 5,
         "isLimited": false,
         "isShop": false
       },
@@ -11168,12 +11174,6 @@
         "rarity": 5,
         "isLimited": false,
         "isShop": false
-      },
-      {
-        "name": "阿罗玛",
-        "rarity": 5,
-        "isLimited": false,
-        "isShop": true
       },
       {
         "name": "灰毫",
