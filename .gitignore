@@ -6,3 +6,8 @@ Thumbs.db
 # 内部文档（docs/资源仓库说明.md）—— 只在本机看，不提交到 GitHub。
 # 对外只需要根目录那份简版 README。
 docs/
+
+# 本地私密配置（不提交；脚本会优先读对应环境变量，回退到这些本地文件）
+scripts/.airscript_token          # 金山 AirScript 脚本令牌（密钥）
+scripts/.tc_kdocs_file_id         # 金山文档 file_id
+docs/.tc_sync_marker              # 繁中服「数据更新日」marker（touch 取 mtime）

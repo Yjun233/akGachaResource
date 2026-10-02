@@ -8,7 +8,7 @@ name: 更新数据与头像
 #    某些严格的解析器会因此取不到键。GitHub 自己两种都认，但加上更稳。
 "on":
   schedule:
-    - cron: '0 10 * * 2,4,5'   # 周二=2 周四=4 周五=5
+    - cron: '17 10 * * 2,4,5'   # 周二=2 周四=4 周五=5
   workflow_dispatch:            # 也支持在网页上手动触发
 
 permissions:

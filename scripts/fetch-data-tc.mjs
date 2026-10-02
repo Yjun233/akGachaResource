@@ -23,18 +23,18 @@
  *
  * ---------------------------------------------------------------- 表格结构
  *
- * 【轮换记录】两类记录**横着并排**，同一行的两边日期互不相干，必须当成两个独立列表：
+ * 【繁中轮换记录】两类记录**横着并排**，同一行的两边日期互不相干，必须当成两个独立列表：
  *   · 常驻标准寻访（B~H 列）：B 开始 / C 结束 / D 六星进店 / E 六星陪跑 /
  *     F 五星进店 / G、H 五星陪跑        → 2 六星 + 3 五星，进店标记 =「六星进店」「五星进店」
  *   · 限时寻访（K~X 列）：K 开始 / L 结束 / M~R 六星（最多 6 个）/ S~X 五星（最多 6 个）
  *     J 列若写「联动」→ 整行跳过（联动卡池本站不收）
  *
- * 【中坚记录】B~H 列同「常驻标准寻访」的排法。其中 D~H 列写着
- *   「中坚甄选池」的行**不是**常驻中坚寻访，而是中坚甄选（干员要去【中坚甄选记录】查）；
+ * 【繁中中坚记录】B~H 列同「常驻标准寻访」的排法。其中 D~H 列写着
+ *   「中坚甄选池」的行**不是**常驻中坚寻访，而是中坚甄选（干员要去【繁中中坚甄选记录】查）；
  *   写着「中坚必NEW池」的行本站不收（见下）。
  *
- * 【中坚甄选记录】「第一期」~「第十二期」12 个列（D~O 列），行分 6 星块与 5 星块，
- *   单元格写 1 表示该干员在这一期里。12 期与【中坚记录】里 12 个「中坚甄选池」行**按时间顺序一一对应**。
+ * 【繁中中坚甄选记录】「第一期」~「第十二期」12 个列（D~O 列），行分 6 星块与 5 星块，
+ *   单元格写 1 表示该干员在这一期里。12 期与【繁中中坚记录】里 12 个「中坚甄选池」行**按时间顺序一一对应**。
  *
  * 【Sheet5】人工算的实装/首次轮换时间差，仅供人看，脚本不读。
  *
@@ -68,9 +68,9 @@ const OUT_DIR = path.join(ROOT, 'data');
 const XLSX_PATH = path.join(ROOT, 'docs', '繁中-卡池记录-整合版.xlsx');
 
 const SERVER = 'tc';
-const SHEET_ROT = '轮换记录';
-const SHEET_MID = '中坚记录';
-const SHEET_SEL = '中坚甄选记录';
+const SHEET_ROT = '繁中轮换记录';
+const SHEET_MID = '繁中中坚记录';
+const SHEET_SEL = '繁中中坚甄选记录';
 
 /** 序号类（展示名 = 类名 + 序号，ID 名称段 = 补零 4 位） */
 const SEQ_LABEL = {
@@ -209,7 +209,7 @@ function parseSelection(rows, warnings) {
     if (r.slice(3, 15).some((v) => s(v).includes('第一期'))) hdr.push(i);
   }
   if (hdr.length < 2) {
-    warnings.push(`[中坚甄选记录] 只找到 ${hdr.length} 个期次表头，应为 2 个（6 星块 + 5 星块）`);
+    warnings.push(`[繁中中坚甄选记录] 只找到 ${hdr.length} 个期次表头，应为 2 个（6 星块 + 5 星块）`);
     return [];
   }
   const [h6, h5] = hdr;
@@ -226,7 +226,7 @@ function parseSelection(rows, warnings) {
     periods.push({ six, five });
   }
   const counts = periods.map((p, i) => `第${i + 1}期 ${p.six.length}+${p.five.length}`);
-  console.log(`· 中坚甄选记录：12 期（${counts.join('、')}）`);
+  console.log(`· 繁中中坚甄选记录：12 期（${counts.join('、')}）`);
   return periods;
 }
 
@@ -277,8 +277,8 @@ async function main() {
   const { classic, selRows, ignored } = parseMid(sheets[SHEET_MID], warnings);
   const periods = parseSelection(sheets[SHEET_SEL], warnings);
 
-  console.log(`· 轮换记录：常驻标准寻访 ${doubles.length} 条 / 限时寻访 ${limits.length} 条`);
-  console.log(`· 中坚记录：常驻中坚寻访 ${classic.length} 条 / 中坚甄选 ${selRows.length} 条 / 跳过必NEW ${ignored.length} 条`);
+  console.log(`· 繁中轮换记录：常驻标准寻访 ${doubles.length} 条 / 限时寻访 ${limits.length} 条`);
+  console.log(`· 繁中中坚记录：常驻中坚寻访 ${classic.length} 条 / 中坚甄选 ${selRows.length} 条 / 跳过必NEW ${ignored.length} 条`);
 
   if (selRows.length !== periods.length) {
     warnings.push(`中坚甄选行数（${selRows.length}）与记录表期数（${periods.length}）不一致，按较少的一方配对`);

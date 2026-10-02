@@ -16592,6 +16592,12 @@
         "rarity": 5,
         "isLimited": false,
         "isShop": false
+      },
+      {
+        "name": "明椒",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
       }
     ]
   },
