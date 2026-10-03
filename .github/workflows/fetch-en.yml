@@ -1,0 +1,64 @@
+name: 抓取国际服数据（手动）
+
+# 仅在 GitHub 网页上手动触发，不自动跑。
+# 入口：仓库 → Actions → 「抓取国际服数据（手动）」→ Run workflow
+"on":
+  workflow_dispatch:
+
+permissions:
+  contents: write               # 需要用 GITHUB_TOKEN 推送
+
+# 三个单服工作流共用一个并发组，互相串行，避免同时 push 冲突。
+concurrency:
+  group: data-single-fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch-en:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai         # 让提交信息里的日期是北京时间
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 安装依赖
+        run: npm install
+
+      # 国际服（wiki.gg）。必须排在国服数据之后：它要读仓库里已有的
+      # operators.json / banners_sc.json 来对齐 charId、中文名与「双五寻访」，
+      # 并把 enName / enReleaseDate / enClassicDate 写回 operators.json。
+      - name: 抓取卡池 / 干员数据（国际服 · wiki.gg）
+        run: npm run build:data:en
+
+      - name: 判断有没有实际变化
+        id: diff
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::国际服数据无更新，不提交"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::检测到更新："
+            git status --short
+          fi
+
+      - name: 提交并推送
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "data(en): $(date +%Y-%m-%d) 快照"
+          git push
+
+      - name: 刷新 jsDelivr 缓存
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          for f in operators.json banners_sc.json banners_en.json banners_tc.json metadata.json; do
+            body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
+            echo "purge data/$f -> $(echo "$body" | head -c 120)"
+          done

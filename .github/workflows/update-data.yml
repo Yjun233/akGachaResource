@@ -45,6 +45,14 @@ jobs:
       - name: 抓取卡池 / 干员数据（国服）
         run: npm run build:data
 
+      # 头像跟国服放一起：国服的 operators.json 一落盘就顺手补齐缺失头像。
+      # 只补缺失的头像。CI 里能直连 raw.githubusercontent.com，
+      # 所以把镜像列表置空、只走直连（本地跑时才用反代）。
+      - name: 补齐干员头像
+        env:
+          AVATAR_MIRRORS: ''
+        run: npm run build:avatars
+
       # 国际服（wiki.gg）。必须在国服之后：它要读国服的 operators.json / banners_sc.json
       # 来对齐 charId、中文名与「双五寻访」，并把 enName / enReleaseDate / enClassicDate
       # 写回 operators.json。同样只在内容变化时写盘。
@@ -54,8 +62,9 @@ jobs:
       # 繁中服的数据源是**金山文档在线表格**，靠 AirScript webhook 读（不再是本地 xlsx）。
       # 需要 AIRSCRIPT_TOKEN（脚本令牌，**半年过期**，到金山「脚本编辑器 → 脚本信息」里延期）。
       # 排在国服 / 国际服之后：它要读 banners_sc.json 反查中文名与卡池类型、读 banners_en.json 补 enName。
-      # ⚠️ 令牌没配好时**跳过而不是失败** —— 否则每天的定时任务会一直红，
-      #    真正要报警的「数据抓取失败」反而被淹没。
+      # ⚠️ 令牌没配好时**跳过而不是失败**；即便令牌配了但抓取失败（金山配额打爆 / 令牌过期 /
+      # 网络抖动），也用 `continue-on-error` 放行 —— 不让它连累后续的提交、推送与缓存刷新，
+      # 否则 tc 一挂，国服 / 国际服 + 头像抓到的新数据也不会被提交。
       - name: 检查繁中服令牌是否已配置
         id: tc_ready
         env:
@@ -70,16 +79,10 @@ jobs:
 
       - name: 抓取卡池数据（繁中服 · 金山文档）
         if: steps.tc_ready.outputs.ready == 'true'
+        continue-on-error: true
         env:
           AIRSCRIPT_TOKEN: ${{ secrets.AIRSCRIPT_TOKEN }}
         run: npm run build:data:tc
-
-      # 只补缺失的头像。CI 里能直连 raw.githubusercontent.com，
-      # 所以把镜像列表置空、只走直连（本地跑时才用反代）。
-      - name: 补齐干员头像
-        env:
-          AVATAR_MIRRORS: ''
-        run: npm run build:avatars
 
       - name: 判断有没有实际变化
         id: diff
