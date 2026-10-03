@@ -68,10 +68,12 @@ jobs:
           git commit -m "data(sc): $(date +%Y-%m-%d) 快照"
           git push
 
+      # 单服抓取只刷新「本服会改动」的 json：国服产 operators.json / banners_sc.json / metadata.json。
+      # 其它服的 json 不在本工作流产出范围，刷它们的缓存既无意义也可能误导，故不刷。
       - name: 刷新 jsDelivr 缓存
         if: steps.diff.outputs.changed == 'true'
         run: |
-          for f in operators.json banners_sc.json banners_en.json banners_tc.json metadata.json; do
+          for f in operators.json banners_sc.json metadata.json; do
             body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
             echo "purge data/$f -> $(echo "$body" | head -c 120)"
           done
