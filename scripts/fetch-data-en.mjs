@@ -47,6 +47,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
+import './lib/http.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');

@@ -65,6 +65,7 @@ import { pinyin } from 'pinyin-pro';
 import { orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
 import { readSheets as readAirScriptSheets, resolveConfig } from './lib/airscript.mjs';
+import './lib/http.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');

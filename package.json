@@ -12,6 +12,7 @@
     "build:data:tc": "node scripts/fetch-data-tc.mjs"
   },
   "dependencies": {
-    "pinyin-pro": "^3.29.4"
+    "pinyin-pro": "^3.29.4",
+    "undici": "^8.11.2"
   }
 }
