@@ -3,7 +3,9 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# 内部文档（docs/资源仓库说明.md）—— 只在本机看，不提交到 GitHub。
+# 内部文档（资源仓库说明.md）**已挪到独立仓库 akGachaDocs**（同级目录，纯本地、不配 remote，
+# 见其 README）—— 本仓库里已经没有 docs/ 了。
+# 下面这条**保留作兜底**：万一以后又顺手往这里放文档，不会被误提交到 GitHub。
 # 对外只需要根目录那份简版 README。
 docs/
 
