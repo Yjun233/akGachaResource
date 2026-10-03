@@ -26,13 +26,17 @@
  *                       5 倍权重的往期限定，wiki.gg 却把它们和真正的 UP 并排写在
  *                       `operators` 里。**必须剔掉** —— 否则限定寻访会多出 2~3 个
  *                       六星，站点侧（限定干员一律排除）和「双五/单六」的集合反查都会错。
- *   3. 干员页里的 `|filename = char_401_elysm`（charId）与 `|cnname = 极境`（中文名），
- *      用来建 **charId ↔ 英文名 ↔ 中文名** 的映射 —— 卡池数据里只有英文名，
- *      而站点一律用中文名索引，所以这个映射是关键。
+ *   3. charId 映射：`Operators ⋈ OperatorFiles` **一次查齐**（英文名 + 星级 + F.id），
+ *      卡池数据里只有英文名，而站点一律用中文名索引，所以这个映射是关键。
+ *      （此前是「Operators 清单 + 分批抓干员页 wikitext」，仅映射就要 ~9 次请求，已合并。）
  *   4. 卡池名：限定寻访 / 单六寻访 / 双五寻访的 `|name` 是**英文名**，
  *      写成 `enName`；`name` / `scName` 用**国服中文名**（按干员集合反查 banners_sc.json，
  *      见 lib/banner-names.mjs）。带序号的池子（常驻 / 中坚 / 联合行动…）三服同名，
  *      `enName` 为 null。ID 里的名称段仍是**英文名首字母**，不随改名变动（ID 要保持稳定）。
+ *   5. `enReleaseDate`（国际服上线日）：来自 wiki.gg 的 cargoquery，join
+ *      `Operators` / `OperatorFiles` / `EventServerDetails` 三表，取该干员登场事件在
+ *      global 服的 startTime（同一干员可能命中多个事件，取最早）。取不到的
+ *      （少数没挂 event 的干员）退化为「首次出现在国际服卡池」的日期。
  *
  * 用法：
  *   node scripts/fetch-data-en.mjs            # 抓取并写盘（内容没变则不写）
@@ -217,60 +221,45 @@ function normKey(str) {
 
 // ---------------------------------------------------------------- 干员映射
 
-/** Cargo `Operators` 表 → 全部干员页标题（英文名） */
-async function fetchOperatorTitles() {
-  console.log('· 抓取 wiki.gg 干员清单 ...');
-  const titles = [];
-  for (let offset = 0; offset < 2000; offset += 500) {
+/**
+ * 一次 cargoquery 拿齐干员映射（Operators ⋈ OperatorFiles）：
+ *   英文名（O._pageName）+ 星级（O.rarity）+ charId（F.id）。
+ * 取代原先「Operators 全量清单 + 分批抓干员页 wikitext」两步（后者要 ~9 次请求）。
+ *
+ * ⚠️ 行粒度**不是**一干员一行：多形态干员（阿米娅本体/升变、精英干员的
+ *    ac / Stronghold Protocol 变体）在 OperatorFiles 里有多个 charId 的行，
+ *    还有空页名（正义骑士号这类没有干员页的）与空 charId（新公布未实装）的杂行。
+ *    所以：byCharId 收**所有**有 charId 的行（4★ 靠它识别星级、静默剔除）；
+ *    调用方建「英文名 → charId」映射时必须让**本体行**（charId 在 operators.json
+ *    里）优先占位，变体行只补空位 —— 否则阿米娅会解析到升变形态的 charId
+ *    （2026-10-03 实测 482 行）。
+ */
+async function fetchOperatorMap(cnOperators) {
+  console.log('· 抓取 wiki.gg 干员映射（Operators ⋈ OperatorFiles）...');
+  const byCharId = new Map();
+  for (let offset = 0; offset < 4000; offset += 500) {
     const json = await api({
       action: 'cargoquery',
-      tables: 'Operators',
-      fields: '_pageName=page,rarity',
+      tables: 'Operators=O,OperatorFiles=F',
+      fields: 'O._pageName=page,O.rarity=rarity,F.id=charId',
+      join_on: 'F.name=O.name',
       limit: 500,
       offset,
     });
     const rows = json.cargoquery || [];
     if (!rows.length) break;
-    for (const r of rows) titles.push({ title: r.title.page, rarity: Number(r.title.rarity) });
-    if (rows.length < 500) break;
-  }
-  console.log(`  → ${titles.length} 位干员`);
-  return titles;
-}
-
-/** 批量取干员页内容 → charId ↔ 英文名 / 中文名 / 星级 */
-async function fetchOperatorInfo(rows) {
-  console.log('· 抓取干员页（拿 charId 与中文名）...');
-  const byCharId = new Map();
-  const rarityByEnName = new Map();
-  for (const r of rows) rarityByEnName.set(normKey(r.title), r.rarity);
-
-  const titles = rows.map((r) => r.title);
-  for (let i = 0; i < titles.length; i += 40) {
-    const batch = titles.slice(i, i + 40);
-    const json = await api({
-      action: 'query',
-      prop: 'revisions',
-      rvslots: 'main',
-      rvprop: 'content',
-      titles: batch.join('|'),
-    });
-    for (const p of json.query?.pages || []) {
-      const text = p.revisions?.[0]?.slots?.main?.content;
-      if (!text) continue;
-      const charId = /\|\s*filename\s*=\s*(char_[A-Za-z0-9_]+)/.exec(text)?.[1];
-      const cnName = /\|\s*cnname\s*=\s*([^\n|]+)/.exec(text)?.[1]?.trim();
-      if (!charId) continue;
+    for (const r of rows) {
+      const { page, rarity, charId } = r.title;
+      if (!page || !charId || byCharId.has(charId)) continue;
       byCharId.set(charId, {
-        enName: p.title,
-        cnName: cnName || null,
-        rarity: rarityByEnName.get(normKey(p.title)) ?? null,
+        enName: page,
+        rarity: rarity === '' ? null : Number(rarity),
       });
     }
-    if (i % 200 === 0) console.log(`  已处理 ${Math.min(i + 40, titles.length)}/${titles.length}`);
+    if (rows.length < 500) break;
   }
-  console.log(`  → 拿到 ${byCharId.size} 条 charId 映射`);
-  return { byCharId, rarityByEnName };
+  console.log(`  → ${byCharId.size} 条 charId 映射`);
+  return byCharId;
 }
 
 // ---------------------------------------------------------------- 卡池
@@ -286,6 +275,48 @@ async function fetchBannerPages() {
     console.log(`  ${y}: ${text.length} 字符`);
   }
   return pages;
+}
+
+// ---------------------------------------------------------------- 国际服上线日期
+
+/**
+ * 国际服（global）上线日期：来自 wiki.gg 的 cargoquery，join
+ * `Operators` / `OperatorFiles` / `EventServerDetails` 三表，
+ * 取该干员**登场事件**在 global 服的 startTime。
+ *
+ * ⚠️ `Operators.event` 是多值字段，一个干员会关联多个 event（首登 + 复刻 / 剧情），
+ *    所以同一 charId 会命中多条 startTime —— 取**最早**那条当上线日。
+ * 服务端过滤：只查 5★/6★（wiki.gg 的 rarity 就是星级本身），并排除 eventObtain 非空的
+ * 「活动赠送」干员（2026-10-03 实测：这 64 个干员国服 obtainMethod 均为「活动获取」类，
+ * 进不了 operators.json，enReleaseDate 本来就不会被计算，过滤对输出零影响）。
+ * 取不到的（少数没挂 event 的干员）由调用方退化到「首次出现在国际服卡池」的日期。
+ */
+async function fetchEnReleaseDates() {
+  console.log('· 抓取 wiki.gg 国际服上线日期（登场事件 startTime）...');
+  const map = {}; // charId → 最早 startTime (YYYY-MM-DD)
+  for (let offset = 0; offset < 2000; offset += 500) {
+    const json = await api({
+      action: 'cargoquery',
+      tables: 'Operators=O,OperatorFiles=F,EventServerDetails=S',
+      fields: 'S.startTime=start,F.id=charId,O.name=name', // name 代码没用到，便于人工核对
+      join_on: 'O.event=S.event,F.name=O.name',
+      where: "F.id IS NOT NULL AND S.startTime IS NOT NULL AND S.server LIKE 'global' "
+        + "AND O.rarity IN (5,6) AND (O.eventObtain IS NULL OR O.eventObtain = '')",
+      limit: 500,
+      offset,
+    });
+    const rows = json.cargoquery || [];
+    if (!rows.length) break;
+    for (const r of rows) {
+      const cid = r.title.charId;
+      const d = toDate(r.title.start);
+      if (!cid || !d) continue;
+      if (!map[cid] || d < map[cid]) map[cid] = d;
+    }
+    if (rows.length < 500) break;
+  }
+  console.log(`  → ${Object.keys(map).length} 个干员有国际服上线日`);
+  return map;
 }
 
 // ---------------------------------------------------------------- 主流程
@@ -321,12 +352,19 @@ async function main() {
   console.log(`· 国服数据：干员 ${Object.keys(cnOperators).length} / 卡池 ${Object.keys(cnBanners).length}`);
   console.log(`  国服「双五寻访」共 ${cnFiveSets.size} 个：${cnFiveNames.join('、')}`);
 
-  const { byCharId } = await fetchOperatorInfo(await fetchOperatorTitles());
-  /** 英文名 → charId */
+  const byCharId = await fetchOperatorMap(cnOperators);
+  /** 英文名 → charId（本体行 —— charId 在 operators.json 里 —— 优先占位，变体行只补空位） */
   const byEnName = new Map();
-  for (const [charId, v] of byCharId) byEnName.set(normKey(v.enName), charId);
+  for (const [charId, v] of byCharId) {
+    if (cnOperators[charId]) byEnName.set(normKey(v.enName), charId);
+  }
+  for (const [charId, v] of byCharId) {
+    const key = normKey(v.enName);
+    if (!byEnName.has(key)) byEnName.set(key, charId);
+  }
 
   const pages = await fetchBannerPages();
+  const enReleaseDates = await fetchEnReleaseDates();
 
   const warnings = [];
   const skippedTypes = new Map();
@@ -548,29 +586,18 @@ async function main() {
     }
   }
 
-  /* enReleaseDate：优先用 akgcc-extra-data 的 operator_release_dates.json（含 onlineTime
-     = 国际服上线时间，charId 为键）；取不到则退化为「第一次出现在国际服卡池的日期」。 */
-  let globalDates = {};
-  try {
-    const res = await fetch(
-      'https://cdn.jsdelivr.net/gh/akgcc/akgcc-extra-data@main/json/operator_release_dates.json',
-      { headers: { 'User-Agent': HEADERS['User-Agent'] } },
-    );
-    if (res.ok) globalDates = await res.json();
-    console.log(`· akgcc 干员上线表：${Object.keys(globalDates).length} 条`);
-  } catch (e) {
-    console.warn(`  ⚠ 取 akgcc 上线表失败（退化用卡池日期）: ${e.message}`);
-  }
-
-  let enReleaseFromTable = 0;
+  /* enReleaseDate：来自 wiki.gg 登场事件的 global 服 startTime（见 fetchEnReleaseDates，
+     已是「最早事件」口径）。取不到的（少数没挂 event 的干员）退化为
+     「第一次出现在国际服卡池」的日期。 */
+  let enReleaseFromWiki = 0;
   let enReleaseFromBanner = 0;
   for (const [cid, op] of Object.entries(cnOperators)) {
     const info = byCharId.get(cid);
     op.enName = info?.enName ?? null;
-    const fromTable = toDate(globalDates[cid]?.onlineTime);
+    const fromWiki = enReleaseDates[cid] || null;
     const fallback = firstBannerDate.get(cid) || null;
-    op.enReleaseDate = fromTable || fallback;
-    if (fromTable) enReleaseFromTable += 1;
+    op.enReleaseDate = fromWiki || fallback;
+    if (fromWiki) enReleaseFromWiki += 1;
     else if (fallback) enReleaseFromBanner += 1;
     op.enClassicDate = enClassicDate.get(cid) || null;
   }
@@ -627,7 +654,7 @@ async function main() {
     for (const x of cnUnresolved) console.log(`    ${x}`);
   }
   console.log(`  干员：enName ${Object.values(cnOperators).filter((o) => o.enName).length} 个 / `
-    + `enReleaseDate ${enReleaseFromTable} 个来自上线表 + ${enReleaseFromBanner} 个来自卡池 / `
+    + `enReleaseDate ${enReleaseFromWiki} 个来自 wiki.gg + ${enReleaseFromBanner} 个来自卡池 / `
     + `enClassicDate ${enClassicDate.size} 个`);
   const withShop = list.filter((b) => b.upOperators.some((o) => o.isShop)).length;
   const storePools = list.filter((b) => b.type === 'double' || b.type === 'classic').length;

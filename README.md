@@ -59,6 +59,8 @@ scripts/    fetch-data.mjs（国服）· fetch-data-en.mjs（国际服）· fetc
 
 ```bash
 npm install
+npm run build            # 一键全量：国服 → 国际服 → 繁中服 → 头像
+                         #   （繁中服需要 AIRSCRIPT_TOKEN，没配的话跑不通会中断）
 npm run build:data       # 从 PRTS Wiki 重爬**国服**数据 → data/
 npm run build:data:en    # 从 arknights.wiki.gg 抓**国际服**数据 → data/
 npm run build:data:tc    # 从**金山在线表格**（AirScript webhook）生成繁中服数据

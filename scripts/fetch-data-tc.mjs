@@ -72,6 +72,14 @@ const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data');
 
 const SERVER = 'tc';
+
+/* ---- 开服锚定 ----
+ * 繁中服（港澳台，龙成网络）2020-06-29 开服，开服干员集合与国服开服一致
+ * （scReleaseDate 全部 = 2019-04-30，2026-10-03 数据实测 35 位，一个不差）。
+ * 「首次出现」口径对这批干员是错的 —— 他们的首次出现是开服后的某次普通轮换
+ * （实测错标到了 2020-07 ~ 2020-10），实装日应为繁中开服日。 */
+const TC_LAUNCH_DATE = '2020-06-29';
+const CN_LAUNCH_DATE = '2019-04-30';
 /* 三张工作表在**云端表格里**的名字（改名后要同步这三个常量）。
    ⚠️ 数组顺序 = 金山表格的**标签页顺序**（1-based）：索引 0 → 第 1 张表、1 → 第 2 张、2 → 第 3 张。
    readSheets 按此顺序发 argv.sheet=1/2/3，脚本回传真实表名当键，名字对不上会立即告警。 */
@@ -519,6 +527,12 @@ async function main() {
   }
   for (const op of Object.values(cnOperators)) {
     op.tcReleaseDate = firstSeen.get(op.name) || null;
+    /* 开服干员：国服开服当天就在 roster 里 → 繁中实装日 = 繁中开服日。
+       scReleaseDate 是 PRTS 权威数据且必然存在，不依赖 enReleaseDate 的准确性
+       （实测盘上 enReleaseDate 曾整批滞后，见上方常量注释）。 */
+    if (op.scReleaseDate && op.scReleaseDate <= CN_LAUNCH_DATE) {
+      op.tcReleaseDate = TC_LAUNCH_DATE;
+    }
     op.tcClassicDate = firstClassic.get(op.name) || null;
   }
 

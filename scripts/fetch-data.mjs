@@ -6,7 +6,8 @@
  * 输出（data/，本仓库根目录下的 data 目录）：
  *   operators.json         以 charId 为键的干员表（仅 5★/6★）
  *                          含 scReleaseDate（国服实装日）/ enReleaseDate / tcReleaseDate
- *   banners_<server>.json  以卡池 ID 为键的卡池表，按服务器分文件（当前只产出 sc）
+ *   banners_sc.json        国服卡池表（以卡池 ID 为键；en / tc 两个分文件
+ *                          由各自的脚本产出，本脚本只读 banners_en.json 用于反查英文名）
  *                          每个卡池都有 `name` / `scName` / `enName` 三个名字字段：
  *                          `scName` = 国服中文名（本脚本的 name 就是它）；
  *                          `enName` = 国际服英文名，按干员集合反查 banners_en.json，
@@ -321,7 +322,14 @@ function parseSelectionCell(rowText) {
 
 // ---------------------------------------------------------------- 数据抓取
 
-/** 干员：char_obtain 关联 chara */
+/** 干员：char_obtain 关联 chara。
+ *  星级只查到 4★（rarity 0 起：3=4★、4=5★、5=6★）—— 同一份 rows 既出干员表
+ *  （obtainMethod 命中三类寻访 + 5/6★），也当卡池解析的星级表用（剔 4★ / opMeta 兜底），
+ *  不再单独查全稀有度的 chara 表。
+ *  ⚠️ obtainMethod 条件覆盖到 4★ 才安全：2026-10-03 实测，出现在卡池单元格里的
+ *     53 条 4★ 记录 obtainMethod 全是「公开招募 标准寻访 中坚寻访」，LIKE 均命中。
+ *     万一将来有不匹配的 4★ 进了单元格，它查不到星级、会按列位置 fallback 成 5/6★
+ *     留下，并触发「出现未知干员」警告 —— 看到这条警告就回来放宽这里的 where。 */
 async function fetchOperators() {
   console.log('· 抓取干员列表 ...');
   const rows = await cargoQuery({
@@ -329,15 +337,11 @@ async function fetchOperators() {
     fields:
       'CO._pageName=page,CO.cnOnlineTime=cnOnlineTime,CO.obtainMethod=obtainMethod,C.charId=charId,C.rarity=rarity',
     join_on: 'CO._pageName=C._pageName',
+    where: "C.rarity IN (3,4,5) AND (CO.obtainMethod LIKE '%标准寻访%' "
+      + "OR CO.obtainMethod LIKE '%限定寻访%' OR CO.obtainMethod LIKE '%中坚寻访%')",
   });
 
-  // 干员姓名 -> 实际星级（全部稀有度，用于卡池解析时识别 4★）
-  const allChara = await cargoQuery({
-    tables: 'chara=C',
-    fields: 'C._pageName=name,C.charId=charId,C.rarity=rarity',
-  });
-
-  return { rows, allChara };
+  return { rows };
 }
 
 /** 进入中坚寻访的日期（寻访规则 第 5 节） */
@@ -648,15 +652,17 @@ async function main() {
   const prevOperators = (await readPrev('operators.json')) || {};
   const prevMeta = (await readPrev('metadata.json')) || { servers: [] };
 
-  // 全量 姓名 -> 星级
+  // 姓名 -> 星级（4-6★）：供卡池解析剔 4★ / opMeta 兜底。
+  // 与干员列表同源（rows，注意中文名字段是 page 不是 name），
+  // 1-3★ 不查 —— 它们永远不会出现在卡池单元格里。
   const rarityByName = new Map();
-  const nameByCharId = new Map();
-  for (const c of operatorData.allChara) {
+  const obtainByName = new Map();
+  for (const c of operatorData.rows) {
     const stars = Number(c.rarity || 0) + 1;
-    if (!rarityByName.has(c.name)) rarityByName.set(c.name, stars);
-    if (c.charId) nameByCharId.set(c.charId, c.name);
+    if (!rarityByName.has(c.page)) rarityByName.set(c.page, stars);
+    if (!obtainByName.has(c.page)) obtainByName.set(c.page, c.obtainMethod || '');
   }
-  console.log(`· 全量干员星级表 ${rarityByName.size} 条`);
+  console.log(`· 干员星级表（4-6★）${rarityByName.size} 条`);
 
   // 干员表：obtainMethod 命中三类寻访且星级 >= 5
   const operators = {};
@@ -712,6 +718,7 @@ async function main() {
 
   const banners = {};
   let dropped = 0;
+  const droppedNames = [];
   for (const b of list) {
     const upOperators = [];
     const dedup = new Set();
@@ -719,6 +726,7 @@ async function main() {
       const rarity = rarityByName.get(a.name) ?? (a.col === 6 ? 6 : 5);
       if (rarity < 5) {
         dropped += 1;
+        droppedNames.push(`${a.name}（${obtainByName.get(a.name) || '无记录'}）`);
         continue; // 4★ 不纳入范围
       }
       const known = opByName.get(a.name);
@@ -746,6 +754,10 @@ async function main() {
     };
   }
   console.log(`· 卡池 ${Object.keys(banners).length} 个（剔除 4★ 记录 ${dropped} 条）`);
+  if (droppedNames.length) {
+    console.log(`  被剔除的 4★（含 obtainMethod，用于核对筛选口径）: `
+      + droppedNames.slice(0, 30).join('、'));
+  }
 
   /* ---- 卡池的英文名（enName）----
      `banners_en.json` 是国际服脚本的地盘，本脚本**只读**。按干员集合把同一批池子对起来
@@ -934,10 +946,6 @@ function validate(operators, banners, meta) {
     throw new Error(`数据校验失败，共 ${problems.length} 个问题`);
   }
   console.log('· 数据校验通过');
-}
-
-async function writeJson(file, data) {
-  await fs.writeFile(file, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 
 main().catch((e) => {
