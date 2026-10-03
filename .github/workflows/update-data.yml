@@ -48,7 +48,10 @@ jobs:
       # 头像跟国服放一起：国服的 operators.json 一落盘就顺手补齐缺失头像。
       # 只补缺失的头像。CI 里能直连 raw.githubusercontent.com，
       # 所以把镜像列表置空、只走直连（本地跑时才用反代）。
+      # ⚠️ 头像失败不算致命（不影响数据正确性），用 continue-on-error 放行，
+      #    不连累后续的国际服 / 提交 / 缓存刷新。
       - name: 补齐干员头像
+        continue-on-error: true
         env:
           AVATAR_MIRRORS: ''
         run: npm run build:avatars
@@ -56,7 +59,9 @@ jobs:
       # 国际服（wiki.gg）。必须在国服之后：它要读国服的 operators.json / banners_sc.json
       # 来对齐 charId、中文名与「双五寻访」，并把 enName / enReleaseDate / enClassicDate
       # 写回 operators.json。同样只在内容变化时写盘。
+      # ⚠️ 即便国际服抓取失败，国服 + 头像的数据仍可正常提交，故用 continue-on-error 放行。
       - name: 抓取卡池 / 干员数据（国际服）
+        continue-on-error: true
         run: npm run build:data:en
 
       # 繁中服的数据源是**金山文档在线表格**，靠 AirScript webhook 读（不再是本地 xlsx）。
