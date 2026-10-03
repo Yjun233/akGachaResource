@@ -14,31 +14,31 @@
  *   POST https://www.kdocs.cn/api/v3/ide/file/<file_id>/script/<script_id>/sync_task
  *   Headers: Content-Type: application/json
  *            AirScript-Token: <脚本令牌>
- *   Body:    {"Context":{"argv":{}}}
+ *   Body:    {"Context":{"argv":{"sheet": N}}}   # N = 1/2/3，选第几张表
  *
- * ⚠️ **body 传不进脚本**（2026-10-02 实测）：`Context.sheet_name`、顶层 `sheet_name`、
- *    `Context.argv.sheet_name`、`Context.args.sheet_name` 等形态全试过，脚本里**一律取不到**
- *    —— 数据永远是工作簿的**第一张表**（响应里的 `sheet` 字段可自证）。
- *    所以金山侧脚本改成**一次返回整本工作簿**，由 Node 侧按表名挑（见 `readSheets`）。
- *    **别再试图「按参数选表」，那条路已证伪。**
+ * ⚠️ 选表通道（2026-10-03 实测，重要）：
+ *    `Context.sheet_name` 会被平台**丢弃**（脚本里永远取不到），但 `Context.argv.<任意键>`
+ *    **完整透传**。所以选表只能用 `argv.sheet`（1/2/3 索引），不要用 sheet_name。
+ *    另外：金山侧脚本**一次只读一张表**，由 Node 侧分三次调用（每次 argv.sheet 不同）
+ *    拼回三张表 —— 因为一次读整本工作簿（3 表）会被平台以顶层
+ *    `{"errno":10000,"result":"Unavailable"}` 拒绝（脚本根本没开始执行）。
  *
  * ---------------------------------------------------------------- 响应结构
  *
- * 外层（实测；⚠️ 比说明文档多包了一层 `data`）：
+ * 外层（实测；比说明文档多包了一层 `data`）：
  *
  *   { "data": { "logs": [ … ], "result": { … } }, "error": "", "status": "finished" }
  *
- * `result` 就是金山脚本的返回值：
+ * `result` 就是金山脚本的返回值（单张表）：
  *
- *   { "sheets": [ { "sheet": "繁中轮换记录", "rowCount": 200, "colCount": 24, "data": [[…]] }, … ] }
+ *   { "sheet": "繁中轮换记录", "rowCount": 171, "colCount": 24, "data": [[…]] }
  *
  * `data` 是整张表的二维数组，元素是单元格的**显示文本**（空单元格为 ""），
  * 日期形如 `2020/6/29`（斜杠、不补零）—— 交给 fetch 脚本 `cellDate()` 的字符串分支。
  *
- * ⚠️ 三处与说明文档不符，`parsePayload` 都做了兼容：
- *    ① 外层还有一层 `data`（文档写的是 `{logs, result}`）；
- *    ② `result` 实测**已经是对象**（文档说是「一段 JSON 字符串」，要 parse 两次）；
- *    ③ 返回值是**多张表的数组**（文档只写了单张 `{sheet, rowCount, colCount, data}`）。
+ * ⚠️ 两处与说明文档不符，`parsePayload` 都做了兼容：
+ *    ① 外层还包了一层 `data`；
+ *    ② `result` 实测**已经是对象**（文档说是「一段 JSON 字符串」，要 parse 两次）。
  *
  * ⚠️ 金山侧那段脚本在 `scripts/airscript-sheet-reader.js` —— **它不是 Node 脚本**，
  *    要整段粘到金山文档的 AirScript 编辑器里。里面记了几个必须照做的坑（必须显式
@@ -63,9 +63,10 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SCRIPTS_DIR = path.resolve(__dirname, '..');
 
-/* 文档标识（非机密）。script_id 见金山文档「脚本编辑器 → 脚本信息」里的 URL。 */
+/* 文档标识（非机密）。script_id 见金山文档「脚本编辑器 → 脚本信息」里的 URL。
+   当前单表脚本（V2-1DyxN7k0uf7VnzHgtSWHAx）：每次 webhook 调一张表，由 Node 分三次调用。 */
 export const DEFAULT_FILE_ID = 'cjQ8xxeQp18c';
-export const DEFAULT_SCRIPT_ID = 'V2-2uxe1JvtcjeHvzUmkI0vsu';
+export const DEFAULT_SCRIPT_ID = 'V2-1DyxN7k0uf7VnzHgtSWHAx';
 
 const DEFAULT_API_BASE = 'https://www.kdocs.cn/api/v3/ide';
 
@@ -158,16 +159,23 @@ function parsePayload(text) {
 }
 
 /**
- * 调一次 webhook，读回**整本工作簿**。网络失败 / 非 2xx / 解析不出表都会重试（指数退避）。
+ * 调一次 webhook，读回**单张表**（由 `argv.sheet` 指定第几张）。
+ * 网络失败 / 非 2xx / 解析不出表都会重试（指数退避）。
+ * @param {object} opts
+ * @param {number} [opts.sheetIndex] 要读的工作表序号（1/2/3），不传则读第一张。
  * @returns {Promise<Record<string, {sheet:string, rowCount:number, colCount:number, data:any[][]}>>}
+ *          键是脚本返回的表名（单张调用通常只有一个键）。
  */
 export async function fetchWorkbook({
   token, fileId, scriptId, apiBase,
+  sheetIndex,
   retries = 3,
   timeoutMs = 120_000,
 }) {
   const base = apiBase || DEFAULT_API_BASE;
   const url = `${base}/file/${encodeURIComponent(fileId)}/script/${encodeURIComponent(scriptId)}/sync_task`;
+  /* 选表走 argv.sheet（平台只透传 Context.argv，sheet_name 通道被丢弃，见文件头）。 */
+  const body = JSON.stringify({ Context: { argv: sheetIndex ? { sheet: sheetIndex } : {} } });
   let lastErr = '';
 
   for (let i = 1; i <= retries; i++) {
@@ -178,15 +186,14 @@ export async function fetchWorkbook({
           'Content-Type': 'application/json',
           'AirScript-Token': token,
         },
-        /* ⚠️ body 传不进脚本（见文件头），但格式仍按平台约定发 */
-        body: JSON.stringify({ Context: { argv: {} } }),
+        body,
         signal: AbortSignal.timeout(timeoutMs),
       });
-      const body = await res.text();
+      const text = await res.text();
       if (!res.ok) {
-        lastErr = `HTTP ${res.status}：${body.slice(0, 200)}`;
+        lastErr = `HTTP ${res.status}：${text.slice(0, 200)}`;
       } else {
-        const { payload, reason } = parsePayload(body);
+        const { payload, reason } = parsePayload(text);
         if (payload) return payload;
         lastErr = reason;
       }
@@ -219,13 +226,16 @@ export function normalizeGrid(grid) {
 
 /**
  * 取需要的几张表 → `{ 表名: 二维数组 }`（读不到的表对应项为 `null`，由调用方决定怎么办）。
- * ⚠️ **只调一次 webhook** —— 金山侧脚本一次返回整本工作簿，这里只是按表名挑。
+ * ⚠️ **每张表各调一次 webhook**：金山侧是「单表脚本」，靠 `argv.sheet`（1/2/3）选第几张，
+ *    这里按传入 `names` 的顺序依次发 `sheet = 1/2/3…`。`names[i]` 必须与实际表名一一对应
+ *    （脚本会回传真实表名当键，名字对不上立即告警，不会静默错配）。
  * 每张表的行数 / 列数会打印出来，方便排查上游改了表结构。
  */
 export async function readSheets(names, config, { quiet = false } = {}) {
-  const book = await fetchWorkbook(config);
   const out = {};
-  for (const name of names) {
+  for (let i = 0; i < names.length; i++) {
+    const name = names[i];
+    const book = await fetchWorkbook({ ...config, sheetIndex: i + 1 });
     const s = book[name];
     if (!s) {
       out[name] = null;

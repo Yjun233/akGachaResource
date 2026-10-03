@@ -71,7 +71,9 @@ const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data');
 
 const SERVER = 'tc';
-/* 三张工作表在**云端表格里**的名字（改名后要同步这三个常量） */
+/* 三张工作表在**云端表格里**的名字（改名后要同步这三个常量）。
+   ⚠️ 数组顺序 = 金山表格的**标签页顺序**（1-based）：索引 0 → 第 1 张表、1 → 第 2 张、2 → 第 3 张。
+   readSheets 按此顺序发 argv.sheet=1/2/3，脚本回传真实表名当键，名字对不上会立即告警。 */
 const SHEET_ROT = '繁中轮换记录';
 const SHEET_MID = '繁中中坚记录';
 const SHEET_SEL = '繁中中坚甄选记录';
