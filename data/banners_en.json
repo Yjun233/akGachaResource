@@ -14683,6 +14683,76 @@
       }
     ]
   },
+  "20260123_joint_0019": {
+    "name": "联合行动19",
+    "scName": "联合行动19",
+    "enName": null,
+    "type": "joint",
+    "startDate": "2026-01-23",
+    "endDate": "2026-02-06",
+    "upOperators": [
+      {
+        "name": "隐德来希",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "死芒",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "妮芙",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "仇白",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "阿兰娜",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "阿罗玛",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "聆音",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "明椒",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "刺玫",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "掠风",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
+  },
   "20260127_clafes_0010": {
     "name": "中坚甄选10",
     "scName": "中坚甄选10",
