@@ -21,6 +21,9 @@
  *  6. **只存年月日**，丢掉时分。
  *  7. 密录：把 `stories` **按时间分组**，同一时间的一组算「一批」，组内名字用 `|` 连成 `name`。
  *  8. 模组：按批次 `time` 升序给每位干员编号（`seq` = 第几个）。
+ *  9. **「合作款」（`isCrossover`）按皮肤所在的系列页判定** —— 即 `时装回廊/合作款`，
+ *     不是拿 `series` 去比对品牌名清单（实测 25 个系列页互不重叠，故无歧义；
+ *     这样以后新增联动品牌也不用改代码）。
  *
  * ⚠️ 数据源是**人工维护**的 wiki，会有笔误（实测 4 处「结束日早于开始日」）。
  *    本脚本**只记 warning、保留原样，不自动「修」** —— 发现疑似写错报给用户（他有 PRTS 编辑权限）。
@@ -38,6 +41,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data');
 const DRY = process.argv.includes('--dry');
+
+/* 「合作款」在 PRTS 里是**时装回廊下的一个系列页**（不是从「时装组名称」派生的分类）。
+   实测：25 个系列页互不重叠（合计 520 套、无一套出现在两页）→ 按「皮肤所在页面」判定无歧义。
+   该页里都是联动皮肤（肯德基 / 彩虹六号：围攻 / 三丽鸥家族 / 小马宝莉 / 女神异闻录３ …）。
+   ⚠️ 别改成按 series 白名单硬编码 —— 以后新增联动品牌就要改代码。 */
+const CROSSOVER_PAGE = '时装回廊/合作款';
 
 const API = 'https://prts.wiki/api.php';
 const HEADERS = {
@@ -237,7 +246,13 @@ async function main() {
     if (appeared !== blocks.length) {
       warn(`[皮肤] ${page}：原文出现 ${appeared} 个 {{干员时装}}，只解析出 ${blocks.length} 个`);
     }
-    for (const b of blocks) rawSkins.push(parseParams(b));
+    for (const b of blocks) {
+      const params = parseParams(b);
+      /* 记下**来自哪个系列页** —— 目前只用于判定「合作款」（见 CROSSOVER_PAGE）。
+         落盘时不会输出 `__page`（输出对象是显式构造的）。 */
+      params.__page = page;
+      rawSkins.push(params);
+    }
     await sleep(120);
   }
 
@@ -296,6 +311,8 @@ async function main() {
       name: plain(p['时装名']),
       group,
       series: group ? group.split('/')[0] : null,
+      /* 是否「合作款」（联动皮肤）：以**位于时装回廊/合作款页**为准，不靠 series 猜品牌名 */
+      isCrossover: p.__page === CROSSOVER_PAGE,
       obtain,
       obtainRaw,
       firstPrice: Number.isFinite(priceNum) ? priceNum : null,
@@ -361,6 +378,7 @@ async function main() {
   console.log(`  ├ 全量剔除：回顾 ${stat.all.dropped['回顾']} / 凭证交易所·记录修复 ${stat.all.dropped['凭证交易所/记录修复']} / 危机合约长窗·常驻 ${stat.all.dropped['危机合约长窗/常驻']} → 保留 ${stat.all.kept} 个窗口 / ${allKeptSkus.size} 套`);
   console.log(`  └ 只留本站干员：从 ${stat.total} 套筛出 ${skins.length} 套（其中 ${siteKeptSkus.size} 套有≥1 个窗口）/ 保留 ${stat.site.kept} 个窗口`);
   console.log(`  其中 longTime（end = start + 14）：${longCount}`);
+  console.log(`  其中「合作款」（联动皮肤）：${skins.filter((s) => s.isCrossover).length} 套`);
   console.log(`  获取途径分布（按主类别）：${JSON.stringify(obtainDist)}`);
   console.log('· 密录');
   console.log(`  ${memoirs.length} 位 / ${batchCount} 批（其中 ${multiBatch} 位是多批）`);

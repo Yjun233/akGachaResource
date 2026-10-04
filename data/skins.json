@@ -8,6 +8,7 @@
       "name": "棠云巧梦",
       "group": "0011/韵系列/I",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -48,6 +49,7 @@
       "name": "步芳兰",
       "group": "0011/韵系列/III",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -96,6 +98,7 @@
       "name": "抚云间",
       "group": "0011/韵系列/IV",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -144,6 +147,7 @@
       "name": "松间月",
       "group": "0011/韵系列/V",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -184,6 +188,7 @@
       "name": "行梦侧畔",
       "group": "0011/韵系列/VII",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -208,6 +213,7 @@
       "name": "绣云鹤",
       "group": "0011/韵系列/VIII",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -240,6 +246,7 @@
       "name": "桂影窗",
       "group": "0011/韵系列/IX",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -272,6 +279,7 @@
       "name": "撷香霭",
       "group": "0011/韵系列/X",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -296,6 +304,7 @@
       "name": "照寰瀛",
       "group": "0011/韵系列/XII",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -320,6 +329,7 @@
       "name": "狩标浪人",
       "group": "0011/飙系列",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -360,6 +370,7 @@
       "name": "无拘无束",
       "group": "0011/飙系列/II",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -400,6 +411,7 @@
       "name": "街道狂花",
       "group": "0011/飙系列/II",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -440,6 +452,7 @@
       "name": "幽谷奏鸣",
       "group": "0011/飙系列/III",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "危机合约"
       ],
@@ -465,6 +478,7 @@
       "name": "捉风",
       "group": "0011/飙系列/Ⅴ",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -513,6 +527,7 @@
       "name": "来路",
       "group": "0011/飙系列/Ⅴ",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -553,6 +568,7 @@
       "name": "鉴浮生",
       "group": "0011/飙系列/X",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "集成战略"
       ],
@@ -577,6 +593,7 @@
       "name": "一闪极意",
       "group": "0011/飙系列/XI",
       "series": "0011",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -601,6 +618,7 @@
       "name": "岁红霞",
       "group": "0011制造/II",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -641,6 +659,7 @@
       "name": "富贵荣华",
       "group": "0011制造/II",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -689,6 +708,7 @@
       "name": "春竜",
       "group": "0011制造/II",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -729,6 +749,7 @@
       "name": "乐逍遥",
       "group": "0011制造/III",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -793,6 +814,7 @@
       "name": "百面郎中",
       "group": "0011制造/III",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -833,6 +855,7 @@
       "name": "一介车夫",
       "group": "0011制造/III",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -873,6 +896,7 @@
       "name": "孤寒峭",
       "group": "0011制造/III",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -905,6 +929,7 @@
       "name": "妙手玄心",
       "group": "0011制造/IV",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "危机合约"
       ],
@@ -930,6 +955,7 @@
       "name": "染尘烟",
       "group": "0011制造/VI",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -994,6 +1020,7 @@
       "name": "冷山月",
       "group": "0011制造/VI",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1034,6 +1061,7 @@
       "name": "且试箸",
       "group": "0011制造/VI",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1074,6 +1102,7 @@
       "name": "枝头馥",
       "group": "0011制造/VII",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -1098,6 +1127,7 @@
       "name": "濯缨",
       "group": "0011制造/VIII",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1146,6 +1176,7 @@
       "name": "灯如昼",
       "group": "0011制造/VIII",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1186,6 +1217,7 @@
       "name": "照冰轮",
       "group": "0011制造/VIII",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1226,6 +1258,7 @@
       "name": "何处栖",
       "group": "0011制造/IX",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1266,6 +1299,7 @@
       "name": "列瑶台",
       "group": "0011制造/IX",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1306,6 +1340,7 @@
       "name": "“杏仁”拼盘",
       "group": "0011制造/XI",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1338,6 +1373,7 @@
       "name": "春日宴",
       "group": "0011制造/XI",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1370,6 +1406,7 @@
       "name": "少年游",
       "group": "0011制造/XI",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1402,6 +1439,7 @@
       "name": "方遒卷",
       "group": "0011制造/XII",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1426,6 +1464,7 @@
       "name": "青玉砚",
       "group": "0011制造/XII",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1450,6 +1489,7 @@
       "name": "愿清晓",
       "group": "0011制造/XII",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1474,6 +1514,7 @@
       "name": "共凭栏",
       "group": "0011制造/XII",
       "series": "0011制造",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1498,6 +1539,7 @@
       "name": "厚礼",
       "group": "冰原信使/I",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1530,6 +1572,7 @@
       "name": "约克的寒风",
       "group": "冰原信使/I",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1562,6 +1605,7 @@
       "name": "开斯特之霜",
       "group": "冰原信使/I",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1602,6 +1646,7 @@
       "name": "糖果仙子",
       "group": "冰原信使/II",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1642,6 +1687,7 @@
       "name": "雪夜回音",
       "group": "冰原信使/II",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1682,6 +1728,7 @@
       "name": "覆雪",
       "group": "冰原信使/II",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1722,6 +1769,7 @@
       "name": "霍恩洛厄的寒沙",
       "group": "冰原信使/III",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1762,6 +1810,7 @@
       "name": "希望巡游",
       "group": "冰原信使/III",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1810,6 +1859,7 @@
       "name": "纸板仙子",
       "group": "冰原信使/III",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1850,6 +1900,7 @@
       "name": "喜夜侍者",
       "group": "冰原信使/V",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1890,6 +1941,7 @@
       "name": "演出后的王子",
       "group": "冰原信使/V",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1930,6 +1982,7 @@
       "name": "偶尔醉陶",
       "group": "冰原信使/VI",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -1970,6 +2023,7 @@
       "name": "舞",
       "group": "冰原信使/VI",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -2010,6 +2064,7 @@
       "name": "闪焰之夜",
       "group": "冰原信使/VIII",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -2034,6 +2089,7 @@
       "name": "纯净乐段",
       "group": "冰原信使/VIII",
       "series": "冰原信使",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -2058,6 +2114,7 @@
       "name": "城市骑手",
       "group": "肯德基",
       "series": "肯德基",
+      "isCrossover": true,
       "obtain": [
         "联名线下"
       ],
@@ -2082,6 +2139,7 @@
       "name": "儿童派对",
       "group": "肯德基",
       "series": "肯德基",
+      "isCrossover": true,
       "obtain": [
         "活动赠送"
       ],
@@ -2106,6 +2164,7 @@
       "name": "清晨七点",
       "group": "肯德基",
       "series": "肯德基",
+      "isCrossover": true,
       "obtain": [
         "联名线下"
       ],
@@ -2130,6 +2189,7 @@
       "name": "高原访客",
       "group": "WWF",
       "series": "WWF",
+      "isCrossover": true,
       "obtain": [
         "活动赠送"
       ],
@@ -2154,6 +2214,7 @@
       "name": "惬意",
       "group": "i.t",
       "series": "i.t",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2194,6 +2255,7 @@
       "name": "自由//失效",
       "group": "i.t",
       "series": "i.t",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2242,6 +2304,7 @@
       "name": "乌萨斯IO79",
       "group": "i.t",
       "series": "i.t",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2282,6 +2345,7 @@
       "name": "春之颂",
       "group": "罗小黑战记",
       "series": "罗小黑战记",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2306,6 +2370,7 @@
       "name": "欢唱之前",
       "group": "罗小黑战记",
       "series": "罗小黑战记",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2330,6 +2395,7 @@
       "name": "崖高梦远",
       "group": "国家地理",
       "series": "国家地理",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2354,6 +2420,7 @@
       "name": "霜林醉",
       "group": "国家地理",
       "series": "国家地理",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2378,6 +2445,7 @@
       "name": "林虹之间",
       "group": "国家地理",
       "series": "国家地理",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2402,6 +2470,7 @@
       "name": "坊间凉茶铺",
       "group": "三丽鸥家族",
       "series": "三丽鸥家族",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2434,6 +2503,7 @@
       "name": "花房茶话会",
       "group": "三丽鸥家族",
       "series": "三丽鸥家族",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2466,6 +2536,7 @@
       "name": "《上任达维镇》",
       "group": "中国电影资料馆",
       "series": "中国电影资料馆",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2498,6 +2569,7 @@
       "name": "霹雳导演",
       "group": "中国电影资料馆",
       "series": "中国电影资料馆",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2530,6 +2602,7 @@
       "name": "全能演员",
       "group": "中国电影资料馆",
       "series": "中国电影资料馆",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2562,6 +2635,7 @@
       "name": "绵绒小魔女",
       "group": "三丽鸥家族/II",
       "series": "三丽鸥家族",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2586,6 +2660,7 @@
       "name": "蒸汽寻踪者",
       "group": "三丽鸥家族/II",
       "series": "三丽鸥家族",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2610,6 +2685,7 @@
       "name": "常伴我身",
       "group": "轻松小熊",
       "series": "轻松小熊",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2634,6 +2710,7 @@
       "name": "轻松旅途",
       "group": "轻松小熊",
       "series": "轻松小熊",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2658,6 +2735,7 @@
       "name": "率直诚实之人",
       "group": "小马宝莉",
       "series": "小马宝莉",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2682,6 +2760,7 @@
       "name": "求知的魔法",
       "group": "小马宝莉",
       "series": "小马宝莉",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2706,6 +2785,7 @@
       "name": "善良坚强之心",
       "group": "小马宝莉",
       "series": "小马宝莉",
+      "isCrossover": true,
       "obtain": [
         "源石购买"
       ],
@@ -2730,6 +2810,7 @@
       "name": "破翼者",
       "group": "命途迭代",
       "series": "命途迭代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -2794,6 +2875,7 @@
       "name": "红女爵",
       "group": "命途迭代/II",
       "series": "命途迭代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -2850,6 +2932,7 @@
       "name": "哀律西昂夜曲",
       "group": "命途迭代/II",
       "series": "命途迭代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -2890,6 +2973,7 @@
       "name": "苍茫怒号",
       "group": "命途迭代/III",
       "series": "命途迭代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -2930,6 +3014,7 @@
       "name": "趋光之暗",
       "group": "命途迭代/IV",
       "series": "命途迭代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -2954,6 +3039,7 @@
       "name": "寻翼之歌",
       "group": "命途迭代/VI",
       "series": "命途迭代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -2978,6 +3064,7 @@
       "name": "常世之幻",
       "group": "命途迭代/VI",
       "series": "命途迭代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3002,6 +3089,7 @@
       "name": "幽蓝渡灵师",
       "group": "命途迭代/VI",
       "series": "命途迭代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3026,6 +3114,7 @@
       "name": "皇后一号",
       "group": "啸风",
       "series": "啸风",
+      "isCrossover": false,
       "obtain": [
         "危机合约"
       ],
@@ -3051,6 +3140,7 @@
       "name": "一人车队",
       "group": "啸风/II",
       "series": "啸风",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -3075,6 +3165,7 @@
       "name": "寒冬信使",
       "group": "寒武纪/I",
       "series": "寒武纪",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3115,6 +3206,7 @@
       "name": "暗流",
       "group": "寒武纪/I",
       "series": "寒武纪",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3155,6 +3247,7 @@
       "name": "霜息",
       "group": "寒武纪/II",
       "series": "寒武纪",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -3179,6 +3272,7 @@
       "name": "街角暖绒",
       "group": "寒武纪/IV",
       "series": "寒武纪",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3211,6 +3305,7 @@
       "name": "耀目之蓝",
       "group": "寒武纪/V",
       "series": "寒武纪",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3235,6 +3330,7 @@
       "name": "夜归人",
       "group": "寒武纪/V",
       "series": "寒武纪",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3259,6 +3355,7 @@
       "name": "挽歌",
       "group": "巫异盛宴",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3299,6 +3396,7 @@
       "name": "盛宴",
       "group": "巫异盛宴",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3347,6 +3445,7 @@
       "name": "异月灾裔",
       "group": "巫异盛宴/II",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3395,6 +3494,7 @@
       "name": "魔城回响",
       "group": "巫异盛宴/II",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3443,6 +3543,7 @@
       "name": "手到牌来",
       "group": "巫异盛宴/III",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3499,6 +3600,7 @@
       "name": "镜中来访",
       "group": "巫异盛宴/III",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3539,6 +3641,7 @@
       "name": "幻影轻悄",
       "group": "巫异盛宴/III",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3587,6 +3690,7 @@
       "name": "命运主宰",
       "group": "巫异盛宴/IV",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3627,6 +3731,7 @@
       "name": "至圣誓言",
       "group": "巫异盛宴/IV",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3667,6 +3772,7 @@
       "name": "树影吟游",
       "group": "巫异盛宴/IV",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3707,6 +3813,7 @@
       "name": "幽邃隐修",
       "group": "巫异盛宴/IV",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3747,6 +3854,7 @@
       "name": "暗月的影子",
       "group": "巫异盛宴/V",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3795,6 +3903,7 @@
       "name": "易爆蓝焰",
       "group": "巫异盛宴/V",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3835,6 +3944,7 @@
       "name": "夜空星芒",
       "group": "巫异盛宴/V",
       "series": "巫异盛宴",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3875,6 +3985,7 @@
       "name": "装点",
       "group": "待予花冠/I",
       "series": "待予花冠",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3915,6 +4026,7 @@
       "name": "湖畔的少女",
       "group": "待予花冠/II",
       "series": "待予花冠",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3947,6 +4059,7 @@
       "name": "浪漫满厢",
       "group": "待予花冠/II",
       "series": "待予花冠",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -3979,6 +4092,7 @@
       "name": "铁律",
       "group": "忒斯特收藏/III",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4019,6 +4133,7 @@
       "name": "焦点",
       "group": "忒斯特收藏/V",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "集成战略"
       ],
@@ -4043,6 +4158,7 @@
       "name": "夏日餮宴",
       "group": "忒斯特收藏/VIII",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "集成战略"
       ],
@@ -4067,6 +4183,7 @@
       "name": "午夜邮差",
       "group": "忒斯特收藏/IX",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "特典",
         "源石购买"
@@ -4084,6 +4201,7 @@
       "name": "彼有",
       "group": "忒斯特收藏/X",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4124,6 +4242,7 @@
       "name": "初晴",
       "group": "忒斯特收藏/XI",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "特典"
       ],
@@ -4140,6 +4259,7 @@
       "name": "无我唯识",
       "group": "忒斯特收藏/XIII",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4188,6 +4308,7 @@
       "name": "众志归一",
       "group": "忒斯特收藏/XIII",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4228,6 +4349,7 @@
       "name": "超新星",
       "group": "忒斯特收藏/XV",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4268,6 +4390,7 @@
       "name": "至虔者荣光",
       "group": "忒斯特收藏/XV",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4300,6 +4423,7 @@
       "name": "时遗",
       "group": "忒斯特收藏/XVI",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "特典"
       ],
@@ -4316,6 +4440,7 @@
       "name": "无序的谦卑",
       "group": "忒斯特收藏/XVII",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4348,6 +4473,7 @@
       "name": "轻盈一梦",
       "group": "忒斯特收藏/XVIII",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4380,6 +4506,7 @@
       "name": "无息破局",
       "group": "忒斯特收藏/XVIII",
       "series": "忒斯特收藏",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4404,6 +4531,7 @@
       "name": "小健将",
       "group": "成就之星/II",
       "series": "成就之星",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4452,6 +4580,7 @@
       "name": "光铳调试员",
       "group": "成就之星/II",
       "series": "成就之星",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4492,6 +4621,7 @@
       "name": "前沿玩家",
       "group": "成就之星/II",
       "series": "成就之星",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4532,6 +4662,7 @@
       "name": "遗迹游学者",
       "group": "成就之星/III",
       "series": "成就之星",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4580,6 +4711,7 @@
       "name": "至高判决",
       "group": "成就之星/III",
       "series": "成就之星",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4620,6 +4752,7 @@
       "name": "万物有灵",
       "group": "成就之星/V",
       "series": "成就之星",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4652,6 +4785,7 @@
       "name": "永恒玩家",
       "group": "成就之星/VI",
       "series": "成就之星",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4692,6 +4826,7 @@
       "name": "血翼蔷薇",
       "group": "成就之星/VIII",
       "series": "成就之星",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4716,6 +4851,7 @@
       "name": "绝对主角",
       "group": "成就之星/IX",
       "series": "成就之星",
+      "isCrossover": false,
       "obtain": [
         "特典"
       ],
@@ -4732,6 +4868,7 @@
       "name": "蔷薇之谜",
       "group": "成就之星/X",
       "series": "成就之星",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4756,6 +4893,7 @@
       "name": "坚城",
       "group": "斗争血脉/I",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4804,6 +4942,7 @@
       "name": "质素访客",
       "group": "斗争血脉/I",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4852,6 +4991,7 @@
       "name": "典雅噩兆",
       "group": "斗争血脉/I",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4900,6 +5040,7 @@
       "name": "无题密令",
       "group": "斗争血脉/I",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4948,6 +5089,7 @@
       "name": "归巢",
       "group": "斗争血脉/I",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -4988,6 +5130,7 @@
       "name": "歧路幻影",
       "group": "斗争血脉/II",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5028,6 +5171,7 @@
       "name": "乌云",
       "group": "斗争血脉/III",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5076,6 +5220,7 @@
       "name": "熔锻铸匠",
       "group": "斗争血脉/III",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5116,6 +5261,7 @@
       "name": "受验者",
       "group": "斗争血脉/III",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5164,6 +5310,7 @@
       "name": "绚烂夏花",
       "group": "斗争血脉/III",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5204,6 +5351,7 @@
       "name": "升华",
       "group": "斗争血脉/IV",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5284,6 +5432,7 @@
       "name": "先驱",
       "group": "斗争血脉/IV",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5332,6 +5481,7 @@
       "name": "极昼捕手",
       "group": "斗争血脉/IV",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5372,6 +5522,7 @@
       "name": "残余",
       "group": "斗争血脉/VI",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5420,6 +5571,7 @@
       "name": "生而为一",
       "group": "斗争血脉/VI",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5492,6 +5644,7 @@
       "name": "万重山",
       "group": "斗争血脉/VI",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5540,6 +5693,7 @@
       "name": "变奏",
       "group": "斗争血脉/VI",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5580,6 +5734,7 @@
       "name": "新枝",
       "group": "斗争血脉/VIII",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5636,6 +5791,7 @@
       "name": "燃烧天穹下",
       "group": "斗争血脉/VIII",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5684,6 +5840,7 @@
       "name": "锋潮",
       "group": "斗争血脉/VIII",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5724,6 +5881,7 @@
       "name": "审判日",
       "group": "斗争血脉/IX",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5756,6 +5914,7 @@
       "name": "锋锐",
       "group": "斗争血脉/XI",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5780,6 +5939,7 @@
       "name": "追想涤尘",
       "group": "斗争血脉/XI",
       "series": "斗争血脉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5804,6 +5964,7 @@
       "name": "幽静",
       "group": "时代/III",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -5828,6 +5989,7 @@
       "name": "无形悼挽",
       "group": "时代/IV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "危机合约"
       ],
@@ -5853,6 +6015,7 @@
       "name": "光影",
       "group": "时代/IV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -5885,6 +6048,7 @@
       "name": "除魅",
       "group": "时代/V",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5925,6 +6089,7 @@
       "name": "寻耀",
       "group": "时代/V",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -5957,6 +6122,7 @@
       "name": "恍惚",
       "group": "时代/VII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6061,6 +6227,7 @@
       "name": "意志",
       "group": "时代/VII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6109,6 +6276,7 @@
       "name": "白沙",
       "group": "时代/IX",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6157,6 +6325,7 @@
       "name": "伦式巫女",
       "group": "时代/IX",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6197,6 +6366,7 @@
       "name": "传承",
       "group": "时代/XII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6237,6 +6407,7 @@
       "name": "杰作",
       "group": "时代/XII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6277,6 +6448,7 @@
       "name": "暗矢",
       "group": "时代/XII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6317,6 +6489,7 @@
       "name": "识芳",
       "group": "时代/XIV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6357,6 +6530,7 @@
       "name": "植药",
       "group": "时代/XIV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6397,6 +6571,7 @@
       "name": "读者",
       "group": "时代/XV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6445,6 +6620,7 @@
       "name": "心性",
       "group": "时代/XV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6485,6 +6661,7 @@
       "name": "今昔须臾之梦",
       "group": "时代/XVII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6541,6 +6718,7 @@
       "name": "复现荣光",
       "group": "时代/XVII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6629,6 +6807,7 @@
       "name": "拥抱新生",
       "group": "时代/XVII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6717,6 +6896,7 @@
       "name": "如歌",
       "group": "时代/XVII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6757,6 +6937,7 @@
       "name": "遥乡之径",
       "group": "时代/XVII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -6781,6 +6962,7 @@
       "name": "山川的酿造",
       "group": "时代/XIX",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -6805,6 +6987,7 @@
       "name": "面纱之下",
       "group": "时代/XX",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6845,6 +7028,7 @@
       "name": "雪霁",
       "group": "时代/XXII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6901,6 +7085,7 @@
       "name": "奇工妙想",
       "group": "时代/XXIII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "危机合约"
       ],
@@ -6926,6 +7111,7 @@
       "name": "化花",
       "group": "时代/XXIV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -6974,6 +7160,7 @@
       "name": "邀约",
       "group": "时代/XXIV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7014,6 +7201,7 @@
       "name": "远路",
       "group": "时代/XXVIII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7062,6 +7250,7 @@
       "name": "皇家近卫",
       "group": "时代/XXVIII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7110,6 +7299,7 @@
       "name": "卡利斯卡群枪",
       "group": "时代/XXVIII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7158,6 +7348,7 @@
       "name": "博物",
       "group": "时代/XXX",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7206,6 +7397,7 @@
       "name": "礼遇",
       "group": "时代/XXXI",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7254,6 +7446,7 @@
       "name": "逸趣",
       "group": "时代/XXXI",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7294,6 +7487,7 @@
       "name": "全新业务",
       "group": "时代/XXXI",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7334,6 +7528,7 @@
       "name": "记叙",
       "group": "时代/XXXIII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7374,6 +7569,7 @@
       "name": "赴宴",
       "group": "时代/XXXIII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7414,6 +7610,7 @@
       "name": "远行前的野餐",
       "group": "时代/XXXIV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7462,6 +7659,7 @@
       "name": "晚风休憩",
       "group": "时代/XXXIV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7502,6 +7700,7 @@
       "name": "幽兰秘辛",
       "group": "时代/XXXVI",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7550,6 +7749,7 @@
       "name": "寄自奥格尼斯科",
       "group": "时代/XXXIX",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7582,6 +7782,7 @@
       "name": "风笛声声",
       "group": "时代/XXXIX",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7622,6 +7823,7 @@
       "name": "甜美配方",
       "group": "时代/XLI",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7654,6 +7856,7 @@
       "name": "湖畔歌者",
       "group": "时代/XLIII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7686,6 +7889,7 @@
       "name": "翻涌",
       "group": "时代/XLIV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7710,6 +7914,7 @@
       "name": "注目深渊",
       "group": "时代/XLVII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7734,6 +7939,7 @@
       "name": "光耀之途",
       "group": "时代/XLIX",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7758,6 +7964,7 @@
       "name": "恒久祭礼",
       "group": "时代/XLIX",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7782,6 +7989,7 @@
       "name": "舒心野趣",
       "group": "时代/LIV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -7806,6 +8014,7 @@
       "name": "失焦",
       "group": "时代/LV",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7830,6 +8039,7 @@
       "name": "后来的故事",
       "group": "时代/LVII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7854,6 +8064,7 @@
       "name": "清新布景",
       "group": "时代/LVII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7878,6 +8089,7 @@
       "name": "轻闲快照",
       "group": "时代/LVII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7902,6 +8114,7 @@
       "name": "慵怠哼唱",
       "group": "时代/LVIII",
       "series": "时代",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -7926,6 +8139,7 @@
       "name": "片场一角",
       "group": "玛尔特/I",
       "series": "玛尔特",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7950,6 +8164,7 @@
       "name": "整装待发",
       "group": "玛尔特/II",
       "series": "玛尔特",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -7982,6 +8197,7 @@
       "name": "浅滩律动",
       "group": "玛尔特/III",
       "series": "玛尔特",
+      "isCrossover": false,
       "obtain": [
         "危机合约"
       ],
@@ -8007,6 +8223,7 @@
       "name": "组间休息",
       "group": "玛尔特/IV",
       "series": "玛尔特",
+      "isCrossover": false,
       "obtain": [
         "危机合约"
       ],
@@ -8032,6 +8249,7 @@
       "name": "下一顿午茶",
       "group": "玛尔特/V",
       "series": "玛尔特",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8080,6 +8298,7 @@
       "name": "无际之帆",
       "group": "玛尔特/IX",
       "series": "玛尔特",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8112,6 +8331,7 @@
       "name": "硬派速度",
       "group": "玛尔特/XIII",
       "series": "玛尔特",
+      "isCrossover": false,
       "obtain": [
         "生息演算"
       ],
@@ -8136,6 +8356,7 @@
       "name": "跃动节拍",
       "group": "玛尔特/XIV",
       "series": "玛尔特",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -8160,6 +8381,7 @@
       "name": "静谧午夜 DN02",
       "group": "珊瑚海岸/I",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8200,6 +8422,7 @@
       "name": "温差 RT.RX01",
       "group": "珊瑚海岸/I",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8240,6 +8463,7 @@
       "name": "日晒 SS.SP",
       "group": "珊瑚海岸/I",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8280,6 +8504,7 @@
       "name": "夏卉 FA361",
       "group": "珊瑚海岸/I",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8320,6 +8545,7 @@
       "name": "灿阳朝露 SD01",
       "group": "珊瑚海岸/II",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8360,6 +8586,7 @@
       "name": "驭浪 WR04",
       "group": "珊瑚海岸/III",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8416,6 +8643,7 @@
       "name": "悠然假日 HD08",
       "group": "珊瑚海岸/III",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8472,6 +8700,7 @@
       "name": "灿阳朝露 SD05",
       "group": "珊瑚海岸/III",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8520,6 +8749,7 @@
       "name": "探寻者 SKm01",
       "group": "珊瑚海岸/IV",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8568,6 +8798,7 @@
       "name": "夏卉 FA333",
       "group": "珊瑚海岸/IV",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8616,6 +8847,7 @@
       "name": "探寻者 SK03",
       "group": "珊瑚海岸/IV",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8664,6 +8896,7 @@
       "name": "夏卉 FA018",
       "group": "珊瑚海岸/V",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8704,6 +8937,7 @@
       "name": "夏卉 FA017",
       "group": "珊瑚海岸/V",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8752,6 +8986,7 @@
       "name": "轻风 LB01",
       "group": "珊瑚海岸/VI",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8792,6 +9027,7 @@
       "name": "静谧午夜 DN06",
       "group": "珊瑚海岸/VI",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8840,6 +9076,7 @@
       "name": "悠然假日 HD31",
       "group": "珊瑚海岸/VII",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "危机合约"
       ],
@@ -8865,6 +9102,7 @@
       "name": "灿阳朝露 SD08",
       "group": "珊瑚海岸/VIII",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8897,6 +9135,7 @@
       "name": "夏卉 FA641",
       "group": "珊瑚海岸/VIII",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8929,6 +9168,7 @@
       "name": "缤纷奇境 CW03",
       "group": "珊瑚海岸/IX",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -8993,6 +9233,7 @@
       "name": "夏卉 FA210",
       "group": "珊瑚海岸/IX",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9033,6 +9274,7 @@
       "name": "灿阳朝露 SDm11",
       "group": "珊瑚海岸/IX",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9073,6 +9315,7 @@
       "name": "夏卉 FA317",
       "group": "珊瑚海岸/XI",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9113,6 +9356,7 @@
       "name": "沙滩护卫 GT003",
       "group": "珊瑚海岸/XI",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9153,6 +9397,7 @@
       "name": "悠然假日 HD61",
       "group": "珊瑚海岸/XI",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9201,6 +9446,7 @@
       "name": "悠然假日 HD26",
       "group": "珊瑚海岸/XII",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9257,6 +9503,7 @@
       "name": "夏卉 FA394",
       "group": "珊瑚海岸/XII",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9305,6 +9552,7 @@
       "name": "悠然假日 HD71",
       "group": "珊瑚海岸/XV",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "集成战略"
       ],
@@ -9329,6 +9577,7 @@
       "name": "探寻者 SK97",
       "group": "珊瑚海岸/XVI",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "生息演算"
       ],
@@ -9353,6 +9602,7 @@
       "name": "夏卉 FA075",
       "group": "珊瑚海岸/XVII",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9393,6 +9643,7 @@
       "name": "温差 RT.RX07",
       "group": "珊瑚海岸/XVII",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9425,6 +9676,7 @@
       "name": "悠然假日 HD78",
       "group": "珊瑚海岸/XVII",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9457,6 +9709,7 @@
       "name": "夏卉 FA137",
       "group": "珊瑚海岸/XIX",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9481,6 +9734,7 @@
       "name": "悠然假日 HD79",
       "group": "珊瑚海岸/XX",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9513,6 +9767,7 @@
       "name": "夏卉 FA161",
       "group": "珊瑚海岸/XX",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9545,6 +9800,7 @@
       "name": "夏卉 FA098",
       "group": "珊瑚海岸/XXII",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9569,6 +9825,7 @@
       "name": "夏卉 FA240",
       "group": "珊瑚海岸/XXII",
       "series": "珊瑚海岸",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9593,6 +9850,7 @@
       "name": "野地秘行",
       "group": "生命之地/I",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9633,6 +9891,7 @@
       "name": "孤攀客",
       "group": "生命之地/I",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9673,6 +9932,7 @@
       "name": "遗石",
       "group": "生命之地/II",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -9705,6 +9965,7 @@
       "name": "枯柏",
       "group": "生命之地/II",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9737,6 +9998,7 @@
       "name": "弃土花开",
       "group": "生命之地/III",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9777,6 +10039,7 @@
       "name": "宝藏行家",
       "group": "生命之地/III",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9817,6 +10080,7 @@
       "name": "远望",
       "group": "生命之地/III",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9849,6 +10113,7 @@
       "name": "荒原行者",
       "group": "生命之地/V",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "活动赠送"
       ],
@@ -9873,6 +10138,7 @@
       "name": "字句中的雪原",
       "group": "生命之地/VII",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9921,6 +10187,7 @@
       "name": "秋高气爽",
       "group": "生命之地/VII",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -9961,6 +10228,7 @@
       "name": "北地引路人",
       "group": "生命之地/IX",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "集成战略"
       ],
@@ -9985,6 +10253,7 @@
       "name": "砾瓦",
       "group": "生命之地/X",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "集成战略"
       ],
@@ -10009,6 +10278,7 @@
       "name": "千尺俯瞰",
       "group": "生命之地/XII",
       "series": "生命之地",
+      "isCrossover": false,
       "obtain": [
         "集成战略"
       ],
@@ -10033,6 +10303,7 @@
       "name": "链锯陪护者",
       "group": "破格视界",
       "series": "破格视界",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10065,6 +10336,7 @@
       "name": "无影灯下",
       "group": "破格视界",
       "series": "破格视界",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10097,6 +10369,7 @@
       "name": "生化沉溺",
       "group": "破格视界",
       "series": "破格视界",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10129,6 +10402,7 @@
       "name": "梦魇之梦",
       "group": "缠梦古堡",
       "series": "缠梦古堡",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10161,6 +10435,7 @@
       "name": "庭院寻梦尖兵",
       "group": "缠梦古堡",
       "series": "缠梦古堡",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10193,6 +10468,7 @@
       "name": "广场扫荡客",
       "group": "缠梦古堡",
       "series": "缠梦古堡",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10225,6 +10501,7 @@
       "name": "回味冰霜雪",
       "group": "罗德厨房",
       "series": "罗德厨房",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10257,6 +10534,7 @@
       "name": "书味",
       "group": "罗德厨房",
       "series": "罗德厨房",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10289,6 +10567,7 @@
       "name": "温情烘焙",
       "group": "罗德厨房/IV",
       "series": "罗德厨房",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10321,6 +10600,7 @@
       "name": "流辉",
       "group": "错位巡礼/I",
       "series": "错位巡礼",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10361,6 +10641,7 @@
       "name": "沉思之庭",
       "group": "错位巡礼/I",
       "series": "错位巡礼",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10401,6 +10682,7 @@
       "name": "倾听",
       "group": "错位巡礼/I",
       "series": "错位巡礼",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10441,6 +10723,7 @@
       "name": "星移",
       "group": "错位巡礼/II",
       "series": "错位巡礼",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10473,6 +10756,7 @@
       "name": "憩羽",
       "group": "错位巡礼/III",
       "series": "错位巡礼",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10505,6 +10789,7 @@
       "name": "宣传策略",
       "group": "闪耀阶梯",
       "series": "闪耀阶梯",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10545,6 +10830,7 @@
       "name": "殿堂上的游禽",
       "group": "闪耀阶梯",
       "series": "闪耀阶梯",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10585,6 +10871,7 @@
       "name": "梦幻高空",
       "group": "闪耀阶梯/II",
       "series": "闪耀阶梯",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10617,6 +10904,7 @@
       "name": "石墨",
       "group": "雷神开拓者",
       "series": "雷神开拓者",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10649,6 +10937,7 @@
       "name": "漆匠",
       "group": "雷神开拓者",
       "series": "雷神开拓者",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10689,6 +10978,7 @@
       "name": "天际线",
       "group": "雷神推进者",
       "series": "雷神推进者",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10729,6 +11019,7 @@
       "name": "超载",
       "group": "雷神推进者",
       "series": "雷神推进者",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10769,6 +11060,7 @@
       "name": "摧城",
       "group": "雷神推进者/II",
       "series": "雷神推进者",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10801,6 +11093,7 @@
       "name": "爆裂菲林",
       "group": "音律联觉",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10849,6 +11142,7 @@
       "name": "黑曜石",
       "group": "音律联觉/II",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10905,6 +11199,7 @@
       "name": "翡翠假日",
       "group": "音律联觉/II",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10953,6 +11248,7 @@
       "name": "飞羽",
       "group": "音律联觉/III",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -10993,6 +11289,7 @@
       "name": "不融冰",
       "group": "音律联觉/IV",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11033,6 +11330,7 @@
       "name": "历世流风",
       "group": "音律联觉/IV",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11073,6 +11371,7 @@
       "name": "律动方格",
       "group": "音律联觉/IV",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11113,6 +11412,7 @@
       "name": "蝶舞华章",
       "group": "音律联觉/V",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11145,6 +11445,7 @@
       "name": "空心王冠",
       "group": "音律联觉/V",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11177,6 +11478,7 @@
       "name": "漫步于黄金之梦",
       "group": "音律联觉/VI",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11225,6 +11527,7 @@
       "name": "辉煌的静谧",
       "group": "音律联觉/VI",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11257,6 +11560,7 @@
       "name": "幻语乐痕",
       "group": "音律联觉/VI",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11289,6 +11593,7 @@
       "name": "超然序曲",
       "group": "音律联觉/VII",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11313,6 +11618,7 @@
       "name": "繁花梦幻谈",
       "group": "音律联觉/VII",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11337,6 +11643,7 @@
       "name": "黑白冷峻",
       "group": "音律联觉/VIII",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11361,6 +11668,7 @@
       "name": "暮星安魂曲",
       "group": "音律联觉/VIII",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11385,6 +11693,7 @@
       "name": "晶化信念",
       "group": "音律联觉/VIII",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
@@ -11409,6 +11718,7 @@
       "name": "曙光祝颂",
       "group": "音律联觉/IX",
       "series": "音律联觉",
+      "isCrossover": false,
       "obtain": [
         "源石购买"
       ],
