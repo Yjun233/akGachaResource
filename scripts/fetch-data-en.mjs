@@ -37,6 +37,8 @@
  *      `Operators` / `OperatorFiles` / `EventServerDetails` 三表，取该干员登场事件在
  *      global 服的 startTime（同一干员可能命中多个事件，取最早）。取不到的
  *      （少数没挂 event 的干员）退化为「首次出现在国际服卡池」的日期。
+ *      ⚠️ **开服干员（`scReleaseDate` ≤ 2019-04-30，共 35 位）锚定为开服日 2020-01-16**
+ *      —— 这批人的「首次出现」是开服后的普通轮换，而 wiki 那张事件表也曾整批滞后（见常量注释）。
  *
  * 用法：
  *   node scripts/fetch-data-en.mjs            # 抓取并写盘（内容没变则不写）
@@ -65,6 +67,17 @@ const HEADERS = {
 };
 
 const SERVER = 'en';
+
+/* ---- 开服锚定 ----
+ * 国际服（Global，Yostar）**2020-01-16** 开服，开服干员集合与国服开服一致
+ * （`scReleaseDate` 全部 = 2019-04-30，实测 35 位，一个不差）。
+ * ⚠️ wiki.gg 的 `Opening Event` 在 global 侧有**多条**记录（2020-01-16 开服 / 01-22 / 02-05
+ * 后续三段），脚本虽然取最早，但这批干员**实测曾被整批标成 2020-02-05**
+ * ——那是开服后的普通轮换，不是实装日。**与繁中服是同一个坑**（见 fetch-data-tc.mjs 的
+ * `TC_LAUNCH_DATE`，那边当时就锚定了，国际服漏了）。
+ * → 开服干员的国际服实装日**锚定为开服日**，不依赖 wiki 那张事件表是否补全。 */
+const EN_LAUNCH_DATE = '2020-01-16';
+const CN_LAUNCH_DATE = '2019-04-30';
 const YEAR_PAGES = ['2020', '2021', '2022', '2023', '2024', '2025', '2026'];
 
 /** wiki.gg 的 type → 本站的 type。未列出的（联动等）一律忽略。 */
@@ -587,16 +600,23 @@ async function main() {
 
   /* enReleaseDate：来自 wiki.gg 登场事件的 global 服 startTime（见 fetchEnReleaseDates，
      已是「最早事件」口径）。取不到的（少数没挂 event 的干员）退化为
-     「第一次出现在国际服卡池」的日期。 */
+     「第一次出现在国际服卡池」的日期。
+     ⚠️ **开服干员另按 `EN_LAUNCH_DATE` 锚定**，不走上面两条（原因见常量注释）。 */
   let enReleaseFromWiki = 0;
   let enReleaseFromBanner = 0;
+  let enReleaseAnchored = 0;
   for (const [cid, op] of Object.entries(cnOperators)) {
     const info = byCharId.get(cid);
     op.enName = info?.enName ?? null;
     const fromWiki = enReleaseDates[cid] || null;
     const fallback = firstBannerDate.get(cid) || null;
     op.enReleaseDate = fromWiki || fallback;
-    if (fromWiki) enReleaseFromWiki += 1;
+    /* 开服干员：国服开服当天就在 roster 里 → 国际服实装日 = 国际服开服日（见上方常量注释）。
+       `scReleaseDate` 是 PRTS 的权威数据、必然存在，不依赖 wiki.gg 事件表是否完整。 */
+    if (op.scReleaseDate && op.scReleaseDate <= CN_LAUNCH_DATE) {
+      op.enReleaseDate = EN_LAUNCH_DATE;
+      enReleaseAnchored += 1;
+    } else if (fromWiki) enReleaseFromWiki += 1;
     else if (fallback) enReleaseFromBanner += 1;
   }
 
@@ -663,7 +683,8 @@ async function main() {
     for (const x of cnUnresolved) console.log(`    ${x}`);
   }
   console.log(`  干员：enName ${Object.values(cnOperators).filter((o) => o.enName).length} 个 / `
-    + `enReleaseDate ${enReleaseFromWiki} 个来自 wiki.gg + ${enReleaseFromBanner} 个来自卡池 / `
+    + `enReleaseDate ${enReleaseAnchored} 个锚定为开服日 + ${enReleaseFromWiki} 个来自 wiki.gg `
+    + `+ ${enReleaseFromBanner} 个来自卡池 / `
     + `enClassicDate ${Object.values(cnOperators).filter((o) => o.enClassicDate).length} 个（批次表判定）`);
   /* 中坚批次核对（2026-10-04）：把每段名单打出来给作者过目 —— 批次表只有日期，
      「这段到底有哪些干员」靠这份输出确认；将来新增批次时同样先看这里。 */
