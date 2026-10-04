@@ -38,8 +38,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-02-27",
-    "tcClassicDate": "2024-05-30"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4224_turdus": {
     "name": "乌啾",
@@ -80,8 +80,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-11-18",
-    "tcClassicDate": "2025-10-16"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_1015_aglna2": {
     "name": "予愿安洁莉娜",
@@ -150,8 +150,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-03-12",
-    "tcClassicDate": "2024-06-13"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4032_provs": {
     "name": "但书",
@@ -234,8 +234,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-03-26",
-    "tcClassicDate": "2024-07-25"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_115_headbr": {
     "name": "凛冬",
@@ -248,8 +248,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-07-30",
-    "tcClassicDate": "2024-08-22"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_1045_svash2": {
     "name": "凛御银灰",
@@ -276,8 +276,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": "2025-08-12",
-    "tcClassicDate": null
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-11-18"
   },
   "char_1052_kalts2": {
     "name": "凯尔希·思衡托",
@@ -304,8 +304,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-04-09",
-    "tcClassicDate": "2024-08-08"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_494_vendla": {
     "name": "刺玫",
@@ -332,8 +332,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-05-07",
-    "tcClassicDate": "2024-08-22"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_171_bldsk": {
     "name": "华法琳",
@@ -346,8 +346,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-03-12",
-    "tcClassicDate": "2024-09-05"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_214_kafka": {
     "name": "卡夫卡",
@@ -360,8 +360,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-09-23",
-    "tcClassicDate": "2025-08-21"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_426_billro": {
     "name": "卡涅利安",
@@ -374,8 +374,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": "2025-02-11",
-    "tcClassicDate": "2026-08-06"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-11-18"
   },
   "char_1036_fang2": {
     "name": "历阵锐枪芬",
@@ -416,8 +416,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-02-27",
-    "tcClassicDate": "2024-05-30"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_350_surtr": {
     "name": "史尔特尔",
@@ -430,8 +430,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-08-12",
-    "tcClassicDate": "2025-05-01"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_4039_horn": {
     "name": "号角",
@@ -444,7 +444,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_1043_leizi2": {
@@ -486,8 +486,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-01-02",
-    "tcClassicDate": "2024-05-02"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_297_hamoni": {
     "name": "和弦",
@@ -542,8 +542,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-09-23",
-    "tcClassicDate": "2025-07-24"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_1032_excu2": {
     "name": "圣约送葬人",
@@ -598,8 +598,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-03-12",
-    "tcClassicDate": "2024-06-13"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4031_liesel": {
     "name": "复奏",
@@ -626,7 +626,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_2015_dusk": {
@@ -654,7 +654,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_476_blkngt": {
@@ -668,7 +668,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_179_cgbird": {
@@ -682,8 +682,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-06-04",
-    "tcClassicDate": "2024-08-22"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_164_nightm": {
     "name": "夜魔",
@@ -696,8 +696,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-06-18",
-    "tcClassicDate": "2025-03-06"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_166_skfire": {
     "name": "天火",
@@ -710,8 +710,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-08-13",
-    "tcClassicDate": "2025-01-09"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_346_aosta": {
     "name": "奥斯塔",
@@ -724,8 +724,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-06-17",
-    "tcClassicDate": "2026-02-19"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_4146_nymph": {
     "name": "妮芙",
@@ -794,8 +794,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-07-16",
-    "tcClassicDate": "2024-12-12"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_218_cuttle": {
     "name": "安哲拉",
@@ -808,8 +808,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-11-04",
-    "tcClassicDate": "2025-11-27"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_291_aglina": {
     "name": "安洁莉娜",
@@ -822,8 +822,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-12-19",
-    "tcClassicDate": "2024-04-18"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_341_sntlla": {
     "name": "寒檀",
@@ -878,8 +878,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-06-17",
-    "tcClassicDate": "2025-07-10"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_173_slchan": {
     "name": "崖心",
@@ -892,8 +892,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-03-26",
-    "tcClassicDate": "2024-07-25"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_362_saga": {
     "name": "嵯峨",
@@ -906,8 +906,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-01-28",
-    "tcClassicDate": "2025-04-03"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_4121_zuole": {
     "name": "左乐",
@@ -934,8 +934,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-10-24",
-    "tcClassicDate": "2024-02-22"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_356_broca": {
     "name": "布洛卡",
@@ -948,8 +948,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-12-19",
-    "tcClassicDate": "2024-04-18"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_485_pallas": {
     "name": "帕拉斯",
@@ -962,8 +962,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": "2024-12-17",
-    "tcClassicDate": null
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-11-18"
   },
   "char_2014_nian": {
     "name": "年",
@@ -990,8 +990,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-05-07",
-    "tcClassicDate": "2024-08-22"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_472_pasngr": {
     "name": "异客",
@@ -1004,8 +1004,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-07-15",
-    "tcClassicDate": "2025-07-10"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_1039_thorn2": {
     "name": "引星棘刺",
@@ -1060,8 +1060,8 @@
     "obtainMethod": "公开招募 中坚寻访 常驻赠送",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-10-24",
-    "tcClassicDate": "2024-02-22"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4026_vulpis": {
     "name": "忍冬",
@@ -1102,8 +1102,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-01-02",
-    "tcClassicDate": "2024-05-02"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_379_sesa": {
     "name": "慑砂",
@@ -1116,8 +1116,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-10-24",
-    "tcClassicDate": "2024-02-22"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_1027_greyy2": {
     "name": "承曦格雷伊",
@@ -1130,7 +1130,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_4207_branch": {
@@ -1158,8 +1158,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-03-12",
-    "tcClassicDate": "2024-06-13"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_433_windft": {
     "name": "掠风",
@@ -1172,7 +1172,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_112_siege": {
@@ -1186,8 +1186,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-01-02",
-    "tcClassicDate": "2024-05-02"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_2012_typhon": {
     "name": "提丰",
@@ -1256,8 +1256,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2023-11-21",
-    "tcClassicDate": "2024-03-07"
+    "enClassicDate": "2023-10-27",
+    "tcClassicDate": "2024-02-13"
   },
   "char_263_skadi": {
     "name": "斯卡蒂",
@@ -1270,8 +1270,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-11-21",
-    "tcClassicDate": "2024-03-07"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_1041_angel2": {
     "name": "新约能天使",
@@ -1298,8 +1298,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2024-01-30",
-    "tcClassicDate": "2024-05-16"
+    "enClassicDate": "2023-10-27",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4071_peper": {
     "name": "明椒",
@@ -1326,8 +1326,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-03-26",
-    "tcClassicDate": "2024-07-25"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_136_hsguma": {
     "name": "星熊",
@@ -1340,8 +1340,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-11-07",
-    "tcClassicDate": "2024-03-21"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_497_ctable": {
     "name": "晓歌",
@@ -1354,7 +1354,7 @@
     "obtainMethod": "标准寻访",
     "isLimited": false,
     "classicDate": null,
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_145_prove": {
@@ -1368,8 +1368,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-03-12",
-    "tcClassicDate": "2024-06-13"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_343_tknogi": {
     "name": "月禾",
@@ -1382,8 +1382,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2024-01-30",
-    "tcClassicDate": "2024-05-16"
+    "enClassicDate": "2023-10-27",
+    "tcClassicDate": "2024-02-13"
   },
   "char_2027_wang": {
     "name": "望",
@@ -1424,8 +1424,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": "2026-05-19",
-    "tcClassicDate": "2026-09-17"
+    "enClassicDate": "2025-12-05",
+    "tcClassicDate": "2025-11-18"
   },
   "char_401_elysm": {
     "name": "极境",
@@ -1438,8 +1438,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-06-17",
-    "tcClassicDate": "2025-07-10"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_4080_lin": {
     "name": "林",
@@ -1466,8 +1466,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-04-09",
-    "tcClassicDate": "2024-08-08"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_473_mberry": {
     "name": "桑葚",
@@ -1480,8 +1480,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": "2026-09-22",
-    "tcClassicDate": null
+    "enClassicDate": "2025-12-05",
+    "tcClassicDate": "2025-11-18"
   },
   "char_242_otter": {
     "name": "梅尔",
@@ -1494,8 +1494,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-06-18",
-    "tcClassicDate": "2024-09-05"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_293_thorns": {
     "name": "棘刺",
@@ -1508,8 +1508,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-11-04",
-    "tcClassicDate": "2026-01-08"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_416_zumama": {
     "name": "森蚺",
@@ -1522,8 +1522,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-03-11",
-    "tcClassicDate": "2025-10-16"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_243_waaifu": {
     "name": "槐琥",
@@ -1536,8 +1536,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-04-23",
-    "tcClassicDate": "2024-09-19"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_450_necras": {
     "name": "死芒",
@@ -1564,8 +1564,8 @@
     "obtainMethod": "中坚寻访 公开招募",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": null,
-    "tcClassicDate": "2026-09-17"
+    "enClassicDate": "2025-12-05",
+    "tcClassicDate": "2025-11-18"
   },
   "char_487_bobb": {
     "name": "波卜",
@@ -1592,8 +1592,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2024-12-17",
-    "tcClassicDate": "2025-02-20"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_464_cement": {
     "name": "洋灰",
@@ -1620,7 +1620,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_1012_skadi2": {
@@ -1718,8 +1718,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-01-28",
-    "tcClassicDate": "2026-01-22"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_377_gdglow": {
     "name": "澄闪",
@@ -1732,7 +1732,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_1024_hbisc2": {
@@ -1746,7 +1746,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_493_firwhl": {
@@ -1774,8 +1774,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-12-19",
-    "tcClassicDate": "2024-04-18"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_431_ashlok": {
     "name": "灰毫",
@@ -1788,8 +1788,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": null,
-    "tcClassicDate": null
+    "enClassicDate": "2025-12-05",
+    "tcClassicDate": "2025-11-18"
   },
   "char_206_gnosis": {
     "name": "灵知",
@@ -1802,8 +1802,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": "2026-09-08",
-    "tcClassicDate": null
+    "enClassicDate": "2025-12-05",
+    "tcClassicDate": "2025-11-18"
   },
   "char_194_leto": {
     "name": "烈夏",
@@ -1844,8 +1844,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": null,
-    "tcClassicDate": "2026-10-01"
+    "enClassicDate": "2025-12-05",
+    "tcClassicDate": "2025-11-18"
   },
   "char_1020_reed2": {
     "name": "焰影苇草",
@@ -1872,8 +1872,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-10-24",
-    "tcClassicDate": "2024-02-22"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_363_toddi": {
     "name": "熔泉",
@@ -1886,8 +1886,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-10-07",
-    "tcClassicDate": "2026-02-05"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_415_flint": {
     "name": "燧石",
@@ -1900,8 +1900,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-02-11",
-    "tcClassicDate": "2026-01-22"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_338_iris": {
     "name": "爱丽丝",
@@ -1914,8 +1914,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-06-03",
-    "tcClassicDate": "2026-02-05"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_4164_tecno": {
     "name": "特克诺",
@@ -1942,8 +1942,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-01-16",
-    "tcClassicDate": "2024-06-27"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4064_mlynar": {
     "name": "玛恩纳",
@@ -2012,8 +2012,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": null,
-    "tcClassicDate": "2026-09-03"
+    "enClassicDate": "2025-12-05",
+    "tcClassicDate": "2025-11-18"
   },
   "char_423_blemsh": {
     "name": "瑕光",
@@ -2026,8 +2026,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-09-09",
-    "tcClassicDate": "2026-01-22"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_204_platnm": {
     "name": "白金",
@@ -2040,8 +2040,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-04-23",
-    "tcClassicDate": "2024-10-03"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4072_ironmn": {
     "name": "白铁",
@@ -2068,8 +2068,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-06-04",
-    "tcClassicDate": "2024-08-22"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_1026_gvial2": {
     "name": "百炼嘉维尔",
@@ -2096,8 +2096,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-08-13",
-    "tcClassicDate": "2024-11-14"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4204_mantra": {
     "name": "真言",
@@ -2124,8 +2124,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2024-01-30",
-    "tcClassicDate": "2024-05-16"
+    "enClassicDate": "2023-10-27",
+    "tcClassicDate": "2024-02-13"
   },
   "char_101_sora": {
     "name": "空",
@@ -2138,8 +2138,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-04-09",
-    "tcClassicDate": "2024-07-25"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_332_archet": {
     "name": "空弦",
@@ -2152,8 +2152,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-06-17",
-    "tcClassicDate": "2025-06-12"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_4015_spuria": {
     "name": "空构",
@@ -2180,8 +2180,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2025-11-04",
-    "tcClassicDate": "2025-10-16"
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-02-11"
   },
   "char_144_red": {
     "name": "红",
@@ -2194,8 +2194,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-06-18",
-    "tcClassicDate": "2024-09-19"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_1016_agoat2": {
     "name": "纯烬艾雅法拉",
@@ -2222,8 +2222,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": "2025-08-26",
-    "tcClassicDate": null
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-11-18"
   },
   "char_1035_wisdel": {
     "name": "维什戴尔",
@@ -2306,8 +2306,8 @@
     "obtainMethod": "中坚寻访 公开招募",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": "2026-09-22",
-    "tcClassicDate": null
+    "enClassicDate": "2025-12-05",
+    "tcClassicDate": "2025-11-18"
   },
   "char_1014_nearl2": {
     "name": "耀骑士临光",
@@ -2334,7 +2334,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_4187_graceb": {
@@ -2362,8 +2362,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-01-02",
-    "tcClassicDate": "2024-05-02"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4009_irene": {
     "name": "艾丽妮",
@@ -2376,7 +2376,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_180_amgoat": {
@@ -2390,8 +2390,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-01-16",
-    "tcClassicDate": "2024-06-27"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_106_franka": {
     "name": "芙兰卡",
@@ -2404,8 +2404,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-11-07",
-    "tcClassicDate": "2024-03-21"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_261_sddrag": {
     "name": "苇草",
@@ -2418,8 +2418,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-12-19",
-    "tcClassicDate": "2024-04-18"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_1038_whitw2": {
     "name": "荒芜拉普兰德",
@@ -2446,8 +2446,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-03-26",
-    "tcClassicDate": "2024-07-25"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4117_ray": {
     "name": "莱伊",
@@ -2474,8 +2474,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2024-01-30",
-    "tcClassicDate": "2024-05-16"
+    "enClassicDate": "2023-10-27",
+    "tcClassicDate": "2024-02-13"
   },
   "char_300_phenxi": {
     "name": "菲亚梅塔",
@@ -2488,7 +2488,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_4191_tippi": {
@@ -2516,8 +2516,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-11-21",
-    "tcClassicDate": "2024-03-07"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4193_lemuen": {
     "name": "蕾缪安",
@@ -2558,8 +2558,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": "2026-06-16",
-    "tcClassicDate": null
+    "enClassicDate": "2025-12-05",
+    "tcClassicDate": "2025-11-18"
   },
   "char_344_beewax": {
     "name": "蜜蜡",
@@ -2572,8 +2572,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2024-08-13",
-    "tcClassicDate": "2024-06-13"
+    "enClassicDate": "2023-10-27",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4140_lasher": {
     "name": "衡沙",
@@ -2628,8 +2628,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-01-16",
-    "tcClassicDate": "2024-06-27"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4173_nowell": {
     "name": "诺威尔",
@@ -2684,8 +2684,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2024-05-07",
-    "tcClassicDate": "2024-10-03"
+    "enClassicDate": "2023-10-27",
+    "tcClassicDate": "2024-02-13"
   },
   "char_475_akafyu": {
     "name": "赤冬",
@@ -2698,8 +2698,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": "2025-11-18",
-    "tcClassicDate": null
+    "enClassicDate": "2024-11-22",
+    "tcClassicDate": "2025-11-18"
   },
   "char_1050_chen3": {
     "name": "赤刃明霄陈",
@@ -2740,8 +2740,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-10-24",
-    "tcClassicDate": "2024-02-22"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_108_silent": {
     "name": "赫默",
@@ -2754,8 +2754,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-11-07",
-    "tcClassicDate": "2024-03-21"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_430_fartth": {
     "name": "远牙",
@@ -2768,8 +2768,8 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2025-03-27",
-    "enClassicDate": "2026-09-22",
-    "tcClassicDate": null
+    "enClassicDate": "2025-12-05",
+    "tcClassicDate": "2025-11-18"
   },
   "char_391_rosmon": {
     "name": "迷迭香",
@@ -2796,8 +2796,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-01-02",
-    "tcClassicDate": "2024-05-02"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4133_logos": {
     "name": "逻各斯",
@@ -2880,8 +2880,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2024-04-11",
-    "enClassicDate": "2023-11-21",
-    "tcClassicDate": "2024-03-07"
+    "enClassicDate": "2023-10-27",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4083_chimes": {
     "name": "铎铃",
@@ -2908,8 +2908,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-06-04",
-    "tcClassicDate": "2024-08-08"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4116_blkkgt": {
     "name": "锏",
@@ -2936,8 +2936,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-12-19",
-    "tcClassicDate": "2024-04-18"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_225_haak": {
     "name": "阿",
@@ -2950,8 +2950,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-02-27",
-    "tcClassicDate": "2024-05-30"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4178_alanna": {
     "name": "阿兰娜",
@@ -3006,8 +3006,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-01-30",
-    "tcClassicDate": "2024-05-16"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_219_meteo": {
     "name": "陨星",
@@ -3020,8 +3020,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-02-27",
-    "tcClassicDate": "2024-05-30"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4010_etlchi": {
     "name": "隐德来希",
@@ -3062,8 +3062,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-11-21",
-    "tcClassicDate": "2024-03-07"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4027_heyak": {
     "name": "霍尔海雅",
@@ -3104,7 +3104,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_222_bpipe": {
@@ -3118,8 +3118,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-11-07",
-    "tcClassicDate": "2024-03-21"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4222_taraxa": {
     "name": "风絮",
@@ -3146,8 +3146,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2023-11-07",
-    "tcClassicDate": "2024-03-21"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4055_bgsnow": {
     "name": "鸿雪",
@@ -3160,7 +3160,7 @@
     "obtainMethod": "标准寻访",
     "isLimited": false,
     "classicDate": null,
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   },
   "char_248_mgllan": {
@@ -3174,8 +3174,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-02-27",
-    "tcClassicDate": "2024-05-30"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_2025_shu": {
     "name": "黍",
@@ -3202,8 +3202,8 @@
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
     "classicDate": "2023-03-30",
-    "enClassicDate": "2024-01-16",
-    "tcClassicDate": "2024-06-27"
+    "enClassicDate": "2023-10-13",
+    "tcClassicDate": "2024-02-13"
   },
   "char_4046_ebnhlz": {
     "name": "黑键",
@@ -3216,7 +3216,7 @@
     "obtainMethod": "中坚寻访",
     "isLimited": false,
     "classicDate": "2026-03-26",
-    "enClassicDate": null,
+    "enClassicDate": "2026-10-09",
     "tcClassicDate": null
   }
 }

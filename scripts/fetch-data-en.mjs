@@ -51,6 +51,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
+import { makeMidBatchResolver, dryRun } from './lib/mid-batches.mjs';
 import './lib/http.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -574,7 +575,6 @@ async function main() {
   }
 
   // —— per-干员：enName / enClassicDate / enReleaseDate
-  const enClassicDate = new Map();     // charId → 第一次进国际服中坚寻访的日期
   const firstBannerDate = new Map();   // charId → 第一次出现在国际服卡池的日期
   for (const b of list) {
     const cn = cnByCharId;
@@ -582,7 +582,6 @@ async function main() {
       const cid = Object.keys(cn).find((k) => cn[k].name === op.name);
       if (!cid) continue;
       if (!firstBannerDate.has(cid)) firstBannerDate.set(cid, b.startDate);
-      if (b.type === 'classic' && !enClassicDate.has(cid)) enClassicDate.set(cid, b.startDate);
     }
   }
 
@@ -599,7 +598,17 @@ async function main() {
     op.enReleaseDate = fromWiki || fallback;
     if (fromWiki) enReleaseFromWiki += 1;
     else if (fallback) enReleaseFromBanner += 1;
-    op.enClassicDate = enClassicDate.get(cid) || null;
+  }
+
+  /* ⚠️ enClassicDate = **转入中坚寻访的日期**，按 lib/mid-batches.mjs 的批次表 + 国际服实装日判定。
+     2026-10-04 改：以前是「该干员第一次出现在中坚寻访卡池」—— 那是**轮换 UP** 的日期而不是
+     转入日期（实测差 3~9 个月），且没轮到就 null；wiki.gg 没有这个字段，只能硬编码批次。 */
+  const midOf = makeMidBatchResolver('en');
+  const midChanged = [];
+  for (const op of Object.values(cnOperators)) {
+    const before = op.enClassicDate ?? null;
+    op.enClassicDate = midOf(op);
+    if (before !== op.enClassicDate) midChanged.push(`${op.name} ${before || '—'} → ${op.enClassicDate || '—'}`);
   }
 
   // —— 输出：先判断「国际服自己的产出」有没有变化，再决定数据更新日要不要动
@@ -655,7 +664,23 @@ async function main() {
   }
   console.log(`  干员：enName ${Object.values(cnOperators).filter((o) => o.enName).length} 个 / `
     + `enReleaseDate ${enReleaseFromWiki} 个来自 wiki.gg + ${enReleaseFromBanner} 个来自卡池 / `
-    + `enClassicDate ${enClassicDate.size} 个`);
+    + `enClassicDate ${Object.values(cnOperators).filter((o) => o.enClassicDate).length} 个（批次表判定）`);
+  /* 中坚批次核对（2026-10-04）：把每段名单打出来给作者过目 —— 批次表只有日期，
+     「这段到底有哪些干员」靠这份输出确认；将来新增批次时同样先看这里。 */
+  {
+    const mid = dryRun('en', cnOperators);
+    console.log('  中坚批次（按国际服实装日切段；名单也按实装日排序，首尾一眼可核对）：');
+    for (const g of mid.groups) {
+      console.log(`    ${g.date}（${g.kind === 'override' ? '特例' : '批次'} ${g.from || '开服'} ~ ${g.to}）`
+        + ` ${g.count} 位 · 首 ${g.first} / 末 ${g.last}`);
+      console.log(`      ${g.names.join('、')}`);
+    }
+    console.log(`    段外（已实装、非限定，但还没到批次）${mid.outside.length} 位`
+      + (mid.outside.length ? `：${mid.outside.join('、')}` : ''));
+    console.log(`    限定干员（按规则置 null）${mid.limited.length} 位`);
+    console.log(`    与旧值不同 ${midChanged.length} 个`
+      + (midChanged.length ? `：${midChanged.slice(0, 12).join('、')}${midChanged.length > 12 ? ' …' : ''}` : ''));
+  }
   const withShop = list.filter((b) => b.upOperators.some((o) => o.isShop)).length;
   const storePools = list.filter((b) => b.type === 'double' || b.type === 'classic').length;
   console.log(`  isShop：${withShop} 个池子有进店标记（只有 double / classic 带 store 参数，共 ${storePools} 个池子）`);

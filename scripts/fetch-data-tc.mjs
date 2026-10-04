@@ -65,6 +65,7 @@ import { pinyin } from 'pinyin-pro';
 import { orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
 import { readSheets as readAirScriptSheets, resolveConfig } from './lib/airscript.mjs';
+import { makeMidBatchResolver, dryRun } from './lib/mid-batches.mjs';
 import './lib/http.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -518,11 +519,9 @@ async function main() {
 
   // ---- per-干员：tcReleaseDate / tcClassicDate ----
   const firstSeen = new Map();
-  const firstClassic = new Map();
   for (const b of list) {
     for (const op of b.upOperators) {
       if (!firstSeen.has(op.name)) firstSeen.set(op.name, b.startDate);
-      if (b.type === 'classic' && !firstClassic.has(op.name)) firstClassic.set(op.name, b.startDate);
     }
   }
   for (const op of Object.values(cnOperators)) {
@@ -533,7 +532,17 @@ async function main() {
     if (op.scReleaseDate && op.scReleaseDate <= CN_LAUNCH_DATE) {
       op.tcReleaseDate = TC_LAUNCH_DATE;
     }
-    op.tcClassicDate = firstClassic.get(op.name) || null;
+  }
+
+  /* ⚠️ tcClassicDate = **转入中坚寻访的日期**，按 lib/mid-batches.mjs 的批次表 + 繁中实装日判定。
+     2026-10-04 改：以前是「该干员第一次出现在中坚寻访卡池」—— 那是**轮换 UP** 的日期而不是转入
+     日期（实测差几个月），且没轮到就 null；繁中资料页没有这个字段，只能硬编码批次。 */
+  const midOf = makeMidBatchResolver('tc');
+  const midChanged = [];
+  for (const op of Object.values(cnOperators)) {
+    const before = op.tcClassicDate ?? null;
+    op.tcClassicDate = midOf(op);
+    if (before !== op.tcClassicDate) midChanged.push(`${op.name} ${before || '—'} → ${op.tcClassicDate || '—'}`);
   }
 
   // ---- metadata（tcGeneratedAt 要等「写盘了没有」出来才定，见下） ----
@@ -595,7 +604,23 @@ async function main() {
   console.log(`  时间范围 ${dates[0] || '—'} ~ ${dates[dates.length - 1] || '—'}`);
   console.log(`  各类型 ${ord.filter((t) => byType[t]).map((t) => `${t}×${byType[t]}`).join('  ')}`);
   console.log(`  tcGeneratedAt（数据更新日）${tcGeneratedAt}`);
-  console.log(`  干员：tcReleaseDate ${[...firstSeen].length} 个 / tcClassicDate ${firstClassic.size} 个`);
+  console.log(`  干员：tcReleaseDate ${[...firstSeen].length} 个 / `
+    + `tcClassicDate ${Object.values(cnOperators).filter((o) => o.tcClassicDate).length} 个（批次表判定）`);
+  /* 中坚批次核对（2026-10-04）：批次表里只有日期，「这段到底有哪些干员」靠这份输出确认。 */
+  {
+    const mid = dryRun('tc', cnOperators);
+    console.log('  中坚批次（按繁中实装日切段；名单也按实装日排序，首尾一眼可核对）：');
+    for (const g of mid.groups) {
+      console.log(`    ${g.date}（${g.kind === 'override' ? '特例' : '批次'} ${g.from || '开服'} ~ ${g.to}）`
+        + ` ${g.count} 位 · 首 ${g.first} / 末 ${g.last}`);
+      console.log(`      ${g.names.join('、')}`);
+    }
+    console.log(`    段外（已实装、非限定，但还没到批次）${mid.outside.length} 位`
+      + (mid.outside.length ? `：${mid.outside.join('、')}` : ''));
+    console.log(`    限定干员（按规则置 null）${mid.limited.length} 位`);
+    console.log(`    与旧值不同 ${midChanged.length} 个`
+      + (midChanged.length ? `：${midChanged.slice(0, 12).join('、')}${midChanged.length > 12 ? ' …' : ''}` : ''));
+  }
   const noRel = Object.values(cnOperators).filter((o) => !o.tcReleaseDate).map((o) => o.name);
   if (noRel.length) console.log(`  繁中服尚未实装的干员（无 tcReleaseDate）${noRel.length} 位：${noRel.join('、')}`);
   if (skippedCollab.length) {
