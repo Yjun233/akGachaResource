@@ -7,9 +7,10 @@
   "scripts": {
     "build:data": "node scripts/fetch-data.mjs",
     "build:avatars": "node scripts/fetch-avatars.mjs",
-    "build": "npm run build:data && npm run build:data:en && npm run build:data:tc && npm run build:avatars",
+    "build": "npm run build:data && npm run build:data:en && npm run build:data:tc && npm run build:extras && npm run build:avatars",
     "build:data:en": "node scripts/fetch-data-en.mjs",
-    "build:data:tc": "node scripts/fetch-data-tc.mjs"
+    "build:data:tc": "node scripts/fetch-data-tc.mjs",
+    "build:extras": "node scripts/fetch-extras.mjs"
   },
   "dependencies": {
     "pinyin-pro": "^3.29.4",

@@ -89,6 +89,13 @@ jobs:
           AIRSCRIPT_TOKEN: ${{ secrets.AIRSCRIPT_TOKEN }}
         run: npm run build:data:tc
 
+      # 干员皮肤 / 密录 / 模组（只做国服，源 = PRTS Wiki）。
+      # 只读公开 wiki，**不需要任何令牌**；只读 operators.json 当干员白名单。
+      # ⚠️ 与卡池无关，失败不该影响数据提交，故 continue-on-error。
+      - name: 抓取皮肤 / 密录 / 模组（国服）
+        continue-on-error: true
+        run: npm run build:extras
+
       - name: 判断有没有实际变化
         id: diff
         run: |
@@ -115,7 +122,7 @@ jobs:
       - name: 刷新 jsDelivr 缓存
         if: steps.diff.outputs.changed == 'true'
         run: |
-          for f in operators.json banners_sc.json banners_en.json banners_tc.json metadata.json; do
+          for f in operators.json banners_sc.json banners_en.json banners_tc.json skins.json memoirs.json modules.json metadata.json; do
             body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
             echo "purge data/$f -> $(echo "$body" | head -c 120)"
           done

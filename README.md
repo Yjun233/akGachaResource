@@ -24,6 +24,11 @@ https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/banners_tc.json   
 # 元信息（生成时间、服务器列表）
 https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/metadata.json
 
+# 干员皮肤 / 密录 / 模组（只做国服；时间是 YYYY-MM-DD）
+https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/skins.json     # 时装：上架窗口 + 获取途径
+https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/memoirs.json   # 密录：第几批 + 推出日期
+https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/modules.json   # 模组：第几个 + 推出日期
+
 # 干员头像（charId 见 operators.json）
 https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/avatars/char_306_leizi.png
 ```
@@ -33,17 +38,21 @@ https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/avatars/char_306_leizi.
 > `gcore.jsdelivr.net` 也可用。
 
 三个服务器的数据都由 GitHub Actions **每周二 / 周四 / 周五 北京时间 18:00** 自动更新，
-没有更新时不产生提交。繁中服的数据源是人工维护的金山在线表格，经 **AirScript webhook** 读取
-—— 需要给仓库配 `AIRSCRIPT_TOKEN` 这个 Secret（脚本令牌半年过期，到期去金山「脚本信息」里延期）。
+没有更新时不产生提交。**干员皮肤 / 密录 / 模组（只做国服）** 也在同一次任务里更新
+（读同一个公开 wiki，不需要任何令牌）。繁中服的数据源是人工维护的金山在线表格，
+经 **AirScript webhook** 读取 —— 需要给仓库配 `AIRSCRIPT_TOKEN` 这个 Secret
+（脚本令牌半年过期，到期去金山「脚本信息」里延期）。
 
 ## 目录
 
 ```
 data/       operators.json · metadata.json
             banners_sc.json（国服）· banners_en.json（国际服）· banners_tc.json（繁中服）
+            skins.json · memoirs.json · modules.json（干员皮肤 / 密录 / 模组，只做国服）
 avatars/    <charId>.png（96×96）
 scripts/    fetch-data.mjs（国服）· fetch-data-en.mjs（国际服）· fetch-data-tc.mjs（繁中服）
-            fetch-avatars.mjs（抓头像）· lib/（数据脚本共用的小工具，含 AirScript 调用封装）
+            fetch-extras.mjs（皮肤 / 密录 / 模组，国服）· fetch-avatars.mjs（抓头像）
+            lib/（数据脚本共用的小工具，含 AirScript 调用封装）
             airscript-sheet-reader.js   ⚠️ 不是 Node 脚本，要整段粘到金山文档的 AirScript 编辑器里
 ```
 
@@ -59,7 +68,7 @@ scripts/    fetch-data.mjs（国服）· fetch-data-en.mjs（国际服）· fetc
 
 ```bash
 npm install
-npm run build            # 一键全量：国服 → 国际服 → 繁中服 → 头像
+npm run build            # 一键全量：国服 → 国际服 → 繁中服 → 皮肤/密录/模组 → 头像
                          #   （繁中服需要 AIRSCRIPT_TOKEN，没配的话跑不通会中断）
 npm run build:data       # 从 PRTS Wiki 重爬**国服**数据 → data/
 npm run build:data:en    # 从 arknights.wiki.gg 抓**国际服**数据 → data/
@@ -67,6 +76,8 @@ npm run build:data:tc    # 从**金山在线表格**（AirScript webhook）生�
                          #   需要脚本令牌：设环境变量 AIRSCRIPT_TOKEN，或写成一行放到
                          #   scripts/.airscript_token（已 gitignore）—— 详见 scripts/lib/airscript.mjs
 npm run build:avatars    # 补齐头像 → avatars/（只拉缺失的）
+npm run build:extras     # 从 PRTS Wiki 抓**干员皮肤 / 密录 / 模组**（只做国服）→ data/
+                         #   加 --dry 可只看统计不写盘
 ```
 
 头像默认存 96×96；要原始尺寸：`node scripts/fetch-avatars.mjs --size=180`。

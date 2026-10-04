@@ -1,0 +1,2214 @@
+{
+  "generatedAt": "2026-10-04",
+  "source": "https://prts.wiki",
+  "memoirs": [
+    {
+      "char": "守林人",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "在路上",
+          "date": "2020-12-17"
+        }
+      ],
+      "releaseDate": "2020-12-17"
+    },
+    {
+      "char": "普罗旺斯",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "同事们",
+          "date": "2020-12-17"
+        },
+        {
+          "batch": 2,
+          "name": "崎路前行",
+          "date": "2022-01-10"
+        }
+      ],
+      "releaseDate": "2020-12-17"
+    },
+    {
+      "char": "艾雅法拉",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "学者之心|火山",
+          "date": "2020-12-17"
+        }
+      ],
+      "releaseDate": "2020-12-17"
+    },
+    {
+      "char": "布洛卡",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "信任的第一步",
+          "date": "2020-12-17"
+        },
+        {
+          "batch": 2,
+          "name": "愤怒的布洛卡",
+          "date": "2025-05-01"
+        }
+      ],
+      "releaseDate": "2020-12-17"
+    },
+    {
+      "char": "刻俄柏",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "特大号烤饼",
+          "date": "2020-12-17"
+        }
+      ],
+      "releaseDate": "2020-12-17"
+    },
+    {
+      "char": "傀影",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "合作",
+          "date": "2020-12-17"
+        }
+      ],
+      "releaseDate": "2020-12-17"
+    },
+    {
+      "char": "梅尔",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "满满的日程表",
+          "date": "2021-01-19"
+        },
+        {
+          "batch": 2,
+          "name": "造物之心",
+          "date": "2022-07-26"
+        }
+      ],
+      "releaseDate": "2021-01-19"
+    },
+    {
+      "char": "华法琳",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "怪物",
+          "date": "2021-02-05"
+        },
+        {
+          "batch": 2,
+          "name": "难得认真",
+          "date": "2022-04-14"
+        }
+      ],
+      "releaseDate": "2021-02-05"
+    },
+    {
+      "char": "安洁莉娜",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "没写收件人的包裹",
+          "date": "2021-02-05"
+        }
+      ],
+      "releaseDate": "2021-02-05"
+    },
+    {
+      "char": "雷蛇",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "苹果派对准备中！|尚待",
+          "date": "2021-03-09"
+        }
+      ],
+      "releaseDate": "2021-03-09"
+    },
+    {
+      "char": "黑",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "离乡之日",
+          "date": "2021-03-09"
+        },
+        {
+          "batch": 2,
+          "name": "普通的一天",
+          "date": "2024-11-01"
+        }
+      ],
+      "releaseDate": "2021-03-09"
+    },
+    {
+      "char": "能天使",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "来信",
+          "date": "2021-03-30"
+        },
+        {
+          "batch": 2,
+          "name": "改变中的不变",
+          "date": "2022-03-29"
+        }
+      ],
+      "releaseDate": "2021-03-30"
+    },
+    {
+      "char": "德克萨斯",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "使命必达",
+          "date": "2021-04-15"
+        }
+      ],
+      "releaseDate": "2021-04-15"
+    },
+    {
+      "char": "幽灵鲨",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "圣诞快乐！",
+          "date": "2021-04-15"
+        },
+        {
+          "batch": 2,
+          "name": "我，即是“我”",
+          "date": "2021-08-03"
+        }
+      ],
+      "releaseDate": "2021-04-15"
+    },
+    {
+      "char": "赫拉格",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "命途",
+          "date": "2021-04-15"
+        }
+      ],
+      "releaseDate": "2021-04-15"
+    },
+    {
+      "char": "夜莺",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "蓝色羽毛与歌",
+          "date": "2021-05-01"
+        }
+      ],
+      "releaseDate": "2021-05-01"
+    },
+    {
+      "char": "山",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "意外的烦恼",
+          "date": "2021-05-01"
+        },
+        {
+          "batch": 2,
+          "name": "赴罪",
+          "date": "2022-11-01"
+        }
+      ],
+      "releaseDate": "2021-05-01"
+    },
+    {
+      "char": "莫斯提马",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "高楼之上",
+          "date": "2021-06-01"
+        },
+        {
+          "batch": 2,
+          "name": "旅途的注脚",
+          "date": "2025-05-01"
+        }
+      ],
+      "releaseDate": "2021-06-01"
+    },
+    {
+      "char": "煌",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "你愿意吗",
+          "date": "2021-07-02"
+        }
+      ],
+      "releaseDate": "2021-07-02"
+    },
+    {
+      "char": "假日威龙陈",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "归属|道路",
+          "date": "2021-08-03"
+        }
+      ],
+      "releaseDate": "2021-08-03"
+    },
+    {
+      "char": "空",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "距离",
+          "date": "2021-09-17"
+        },
+        {
+          "batch": 2,
+          "name": "向舞台前进",
+          "date": "2024-11-01"
+        }
+      ],
+      "releaseDate": "2021-09-17"
+    },
+    {
+      "char": "风笛",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "难行长路",
+          "date": "2021-09-17"
+        }
+      ],
+      "releaseDate": "2021-09-17"
+    },
+    {
+      "char": "白面鸮",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "深暗之梦",
+          "date": "2021-11-01"
+        }
+      ],
+      "releaseDate": "2021-11-01"
+    },
+    {
+      "char": "白金",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "泡沫",
+          "date": "2021-11-01"
+        }
+      ],
+      "releaseDate": "2021-11-01"
+    },
+    {
+      "char": "耀骑士临光",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "起点",
+          "date": "2021-11-01"
+        }
+      ],
+      "releaseDate": "2021-11-01"
+    },
+    {
+      "char": "狮蝎",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "缄默",
+          "date": "2021-12-07"
+        }
+      ],
+      "releaseDate": "2021-12-07"
+    },
+    {
+      "char": "瑕光",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "心甘情愿",
+          "date": "2021-12-07"
+        }
+      ],
+      "releaseDate": "2021-12-07"
+    },
+    {
+      "char": "银灰",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "难猜的人|坚固的冰",
+          "date": "2021-12-21"
+        }
+      ],
+      "releaseDate": "2021-12-21"
+    },
+    {
+      "char": "崖心",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "崖上之心",
+          "date": "2021-12-21"
+        },
+        {
+          "batch": 2,
+          "name": "新的高峰",
+          "date": "2024-02-01"
+        }
+      ],
+      "releaseDate": "2021-12-21"
+    },
+    {
+      "char": "初雪",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "雪山外",
+          "date": "2021-12-21"
+        }
+      ],
+      "releaseDate": "2021-12-21"
+    },
+    {
+      "char": "真理",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "走吧，走吧",
+          "date": "2022-01-10"
+        },
+        {
+          "batch": 2,
+          "name": "再见以前",
+          "date": "2023-07-18"
+        }
+      ],
+      "releaseDate": "2022-01-10"
+    },
+    {
+      "char": "水月",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "第五类接触",
+          "date": "2022-01-10"
+        }
+      ],
+      "releaseDate": "2022-01-10"
+    },
+    {
+      "char": "食铁兽",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "一落千丈",
+          "date": "2022-01-25"
+        }
+      ],
+      "releaseDate": "2022-01-25"
+    },
+    {
+      "char": "诗怀雅",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "就任前夕",
+          "date": "2022-01-25"
+        }
+      ],
+      "releaseDate": "2022-01-25"
+    },
+    {
+      "char": "年",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "千年一叹",
+          "date": "2022-01-25"
+        }
+      ],
+      "releaseDate": "2022-01-25"
+    },
+    {
+      "char": "令",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "醒时梦长",
+          "date": "2022-01-25"
+        }
+      ],
+      "releaseDate": "2022-01-25"
+    },
+    {
+      "char": "陈",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "一鼓作气",
+          "date": "2022-02-15"
+        }
+      ],
+      "releaseDate": "2022-02-15"
+    },
+    {
+      "char": "乌有",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "落水人",
+          "date": "2022-02-15"
+        }
+      ],
+      "releaseDate": "2022-02-15"
+    },
+    {
+      "char": "芙兰卡",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "往日的象征",
+          "date": "2022-03-15"
+        },
+        {
+          "batch": 2,
+          "name": "驻足",
+          "date": "2023-09-05"
+        }
+      ],
+      "releaseDate": "2022-03-15"
+    },
+    {
+      "char": "菲亚梅塔",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "乐园",
+          "date": "2022-03-15"
+        },
+        {
+          "batch": 2,
+          "name": "在干净明亮的夜晚",
+          "date": "2026-09-04"
+        }
+      ],
+      "releaseDate": "2022-03-15"
+    },
+    {
+      "char": "槐琥",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "武为何物",
+          "date": "2022-03-29"
+        }
+      ],
+      "releaseDate": "2022-03-29"
+    },
+    {
+      "char": "号角",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "独奏曲",
+          "date": "2022-04-14"
+        }
+      ],
+      "releaseDate": "2022-04-14"
+    },
+    {
+      "char": "石棉",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "奇景",
+          "date": "2022-05-01"
+        }
+      ],
+      "releaseDate": "2022-05-01"
+    },
+    {
+      "char": "絮雨",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "雨落之前",
+          "date": "2022-05-01"
+        }
+      ],
+      "releaseDate": "2022-05-01"
+    },
+    {
+      "char": "归溟幽灵鲨",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "自我",
+          "date": "2022-05-01"
+        }
+      ],
+      "releaseDate": "2022-05-01"
+    },
+    {
+      "char": "艾丽妮",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "灯火微明",
+          "date": "2022-05-01"
+        }
+      ],
+      "releaseDate": "2022-05-01"
+    },
+    {
+      "char": "斯卡蒂",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "不见尽头的旅途",
+          "date": "2022-06-09"
+        }
+      ],
+      "releaseDate": "2022-06-09"
+    },
+    {
+      "char": "吽",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "南墙",
+          "date": "2022-06-09"
+        },
+        {
+          "batch": 2,
+          "name": "阴谋",
+          "date": "2026-02-10"
+        }
+      ],
+      "releaseDate": "2022-06-09"
+    },
+    {
+      "char": "奥斯塔",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "编织来日",
+          "date": "2022-06-09"
+        }
+      ],
+      "releaseDate": "2022-06-09"
+    },
+    {
+      "char": "熔泉",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "装甲与重弩",
+          "date": "2022-06-09"
+        }
+      ],
+      "releaseDate": "2022-06-09"
+    },
+    {
+      "char": "黑键",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "孤灯",
+          "date": "2022-06-09"
+        }
+      ],
+      "releaseDate": "2022-06-09"
+    },
+    {
+      "char": "濯尘芙蓉",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "无名之花",
+          "date": "2022-06-09"
+        }
+      ],
+      "releaseDate": "2022-06-09"
+    },
+    {
+      "char": "赫默",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "职场新人",
+          "date": "2022-07-05"
+        }
+      ],
+      "releaseDate": "2022-07-05"
+    },
+    {
+      "char": "伊芙利特",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "小队长",
+          "date": "2022-07-05"
+        }
+      ],
+      "releaseDate": "2022-07-05"
+    },
+    {
+      "char": "蓝毒",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "触不可及",
+          "date": "2022-07-05"
+        }
+      ],
+      "releaseDate": "2022-07-05"
+    },
+    {
+      "char": "承曦格雷伊",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "撰写光明",
+          "date": "2022-07-05"
+        }
+      ],
+      "releaseDate": "2022-07-05"
+    },
+    {
+      "char": "凛冬",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "强中自有强中手",
+          "date": "2022-07-26"
+        },
+        {
+          "batch": 2,
+          "name": "在冬夜里燃烧",
+          "date": "2023-05-22"
+        }
+      ],
+      "releaseDate": "2022-07-26"
+    },
+    {
+      "char": "棘刺",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "纪念日",
+          "date": "2022-08-11"
+        }
+      ],
+      "releaseDate": "2022-08-11"
+    },
+    {
+      "char": "燧石",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "合格的战士",
+          "date": "2022-08-11"
+        }
+      ],
+      "releaseDate": "2022-08-11"
+    },
+    {
+      "char": "四月",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "猎人的视线",
+          "date": "2022-08-11"
+        }
+      ],
+      "releaseDate": "2022-08-11"
+    },
+    {
+      "char": "百炼嘉维尔",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "以酒精之名！",
+          "date": "2022-08-11"
+        }
+      ],
+      "releaseDate": "2022-08-11"
+    },
+    {
+      "char": "天火",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "老同学",
+          "date": "2022-08-25"
+        }
+      ],
+      "releaseDate": "2022-08-25"
+    },
+    {
+      "char": "麦哲伦",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "生生不息",
+          "date": "2022-08-25"
+        }
+      ],
+      "releaseDate": "2022-08-25"
+    },
+    {
+      "char": "温蒂",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "同舟",
+          "date": "2022-09-08"
+        },
+        {
+          "batch": 2,
+          "name": "盐漠上的海风",
+          "date": "2025-06-05"
+        }
+      ],
+      "releaseDate": "2022-09-08"
+    },
+    {
+      "char": "极光",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "她所见",
+          "date": "2022-09-08"
+        }
+      ],
+      "releaseDate": "2022-09-08"
+    },
+    {
+      "char": "可颂",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "生意场",
+          "date": "2022-09-22"
+        }
+      ],
+      "releaseDate": "2022-09-22"
+    },
+    {
+      "char": "绮良",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "隐藏结局|无伤通关",
+          "date": "2022-09-22"
+        }
+      ],
+      "releaseDate": "2022-09-22"
+    },
+    {
+      "char": "蜜蜡",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "黄沙归途",
+          "date": "2022-09-27"
+        }
+      ],
+      "releaseDate": "2022-09-27"
+    },
+    {
+      "char": "卡涅利安",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "保护者的本性",
+          "date": "2022-09-27"
+        }
+      ],
+      "releaseDate": "2022-09-27"
+    },
+    {
+      "char": "洛洛",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "六百镑",
+          "date": "2022-10-11"
+        }
+      ],
+      "releaseDate": "2022-10-11"
+    },
+    {
+      "char": "掠风",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "老工厂里的一支舞",
+          "date": "2022-10-11"
+        }
+      ],
+      "releaseDate": "2022-10-11"
+    },
+    {
+      "char": "陨星",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "一星萤火",
+          "date": "2022-11-01"
+        }
+      ],
+      "releaseDate": "2022-11-01"
+    },
+    {
+      "char": "极境",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "漫长旅途",
+          "date": "2022-11-01"
+        }
+      ],
+      "releaseDate": "2022-11-01"
+    },
+    {
+      "char": "星极",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "启明",
+          "date": "2022-12-01"
+        },
+        {
+          "batch": 2,
+          "name": "复耀",
+          "date": "2023-12-05"
+        }
+      ],
+      "releaseDate": "2022-12-01"
+    },
+    {
+      "char": "琴柳",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "一双羽兽",
+          "date": "2022-12-15"
+        },
+        {
+          "batch": 2,
+          "name": "鬓旁的花",
+          "date": "2023-08-01"
+        }
+      ],
+      "releaseDate": "2022-12-15"
+    },
+    {
+      "char": "和弦",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "孤独的舞者",
+          "date": "2022-12-15"
+        }
+      ],
+      "releaseDate": "2022-12-15"
+    },
+    {
+      "char": "空弦",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "偶像宣传",
+          "date": "2023-01-01"
+        }
+      ],
+      "releaseDate": "2023-01-01"
+    },
+    {
+      "char": "蚀清",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "蚀清的工牌",
+          "date": "2023-01-01"
+        }
+      ],
+      "releaseDate": "2023-01-01"
+    },
+    {
+      "char": "阿",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "惊弓一夜",
+          "date": "2023-01-17"
+        }
+      ],
+      "releaseDate": "2023-01-17"
+    },
+    {
+      "char": "夕",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "旦夕",
+          "date": "2023-01-17"
+        }
+      ],
+      "releaseDate": "2023-01-17"
+    },
+    {
+      "char": "桑葚",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "平安祈愿",
+          "date": "2023-01-17"
+        }
+      ],
+      "releaseDate": "2023-01-17"
+    },
+    {
+      "char": "老鲤",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "三餐一日",
+          "date": "2023-01-17"
+        }
+      ],
+      "releaseDate": "2023-01-17"
+    },
+    {
+      "char": "重岳",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "昔我往矣",
+          "date": "2023-01-17"
+        }
+      ],
+      "releaseDate": "2023-01-17"
+    },
+    {
+      "char": "贾维",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "代表作",
+          "date": "2023-02-14"
+        }
+      ],
+      "releaseDate": "2023-02-14"
+    },
+    {
+      "char": "爱丽丝",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "糖果屋",
+          "date": "2023-02-14"
+        }
+      ],
+      "releaseDate": "2023-02-14"
+    },
+    {
+      "char": "夜半",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "荒地生灵",
+          "date": "2023-02-14"
+        }
+      ],
+      "releaseDate": "2023-02-14"
+    },
+    {
+      "char": "夏栎",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "终途|生命的萌芽",
+          "date": "2023-02-14"
+        }
+      ],
+      "releaseDate": "2023-02-14"
+    },
+    {
+      "char": "月禾",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "寻常夕阳",
+          "date": "2023-03-07"
+        }
+      ],
+      "releaseDate": "2023-03-07"
+    },
+    {
+      "char": "鸿雪",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "墨迹已落",
+          "date": "2023-03-07"
+        }
+      ],
+      "releaseDate": "2023-03-07"
+    },
+    {
+      "char": "巫恋",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "无字诅咒",
+          "date": "2023-03-21"
+        }
+      ],
+      "releaseDate": "2023-03-21"
+    },
+    {
+      "char": "莱恩哈特",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "暗境求生",
+          "date": "2023-04-20"
+        }
+      ],
+      "releaseDate": "2023-04-20"
+    },
+    {
+      "char": "断崖",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "黄沙觅迹",
+          "date": "2023-04-20"
+        }
+      ],
+      "releaseDate": "2023-04-20"
+    },
+    {
+      "char": "格劳克斯",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "以我双腿",
+          "date": "2023-05-01"
+        }
+      ],
+      "releaseDate": "2023-05-01"
+    },
+    {
+      "char": "慑砂",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "致命诱惑",
+          "date": "2023-05-01"
+        }
+      ],
+      "releaseDate": "2023-05-01"
+    },
+    {
+      "char": "多萝西",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "何处是我朋友的家",
+          "date": "2023-05-01"
+        }
+      ],
+      "releaseDate": "2023-05-01"
+    },
+    {
+      "char": "明椒",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "少年雇佣兵",
+          "date": "2023-05-01"
+        }
+      ],
+      "releaseDate": "2023-05-01"
+    },
+    {
+      "char": "风丸",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "应为必为",
+          "date": "2023-05-22"
+        },
+        {
+          "batch": 2,
+          "name": "在人群之中",
+          "date": "2025-08-02"
+        }
+      ],
+      "releaseDate": "2023-05-22"
+    },
+    {
+      "char": "晓歌",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "飞进窗的羽兽",
+          "date": "2023-05-22"
+        }
+      ],
+      "releaseDate": "2023-05-22"
+    },
+    {
+      "char": "送葬人",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "送葬人",
+          "date": "2023-06-08"
+        },
+        {
+          "batch": 2,
+          "name": "敌人",
+          "date": "2023-10-08"
+        }
+      ],
+      "releaseDate": "2023-06-08"
+    },
+    {
+      "char": "惊蛰",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "司雷霆者",
+          "date": "2023-06-08"
+        }
+      ],
+      "releaseDate": "2023-06-08"
+    },
+    {
+      "char": "卡夫卡",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "许以秘密",
+          "date": "2023-06-20"
+        }
+      ],
+      "releaseDate": "2023-06-20"
+    },
+    {
+      "char": "火哨",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "独行之人",
+          "date": "2023-06-20"
+        }
+      ],
+      "releaseDate": "2023-06-20"
+    },
+    {
+      "char": "赤冬",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "异乡剑士",
+          "date": "2023-07-06"
+        }
+      ],
+      "releaseDate": "2023-07-06"
+    },
+    {
+      "char": "但书",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "假定公正",
+          "date": "2023-07-06"
+        }
+      ],
+      "releaseDate": "2023-07-06"
+    },
+    {
+      "char": "缪尔赛思",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "无根之雨",
+          "date": "2023-07-06"
+        }
+      ],
+      "releaseDate": "2023-07-06"
+    },
+    {
+      "char": "羽毛笔",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "坚韧的羽毛",
+          "date": "2023-09-05"
+        }
+      ],
+      "releaseDate": "2023-09-05"
+    },
+    {
+      "char": "圣约送葬人",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "蓝色",
+          "date": "2023-09-05"
+        }
+      ],
+      "releaseDate": "2023-09-05"
+    },
+    {
+      "char": "涤火杰西卡",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "徽章",
+          "date": "2023-09-05"
+        }
+      ],
+      "releaseDate": "2023-09-05"
+    },
+    {
+      "char": "苇草",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "芦苇之心",
+          "date": "2023-10-08"
+        }
+      ],
+      "releaseDate": "2023-10-08"
+    },
+    {
+      "char": "杏仁",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "远航",
+          "date": "2023-10-08"
+        }
+      ],
+      "releaseDate": "2023-10-08"
+    },
+    {
+      "char": "早露",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "昨天的明天",
+          "date": "2023-11-01"
+        }
+      ],
+      "releaseDate": "2023-11-01"
+    },
+    {
+      "char": "寒檀",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "吹起未来的雪花",
+          "date": "2023-11-01"
+        }
+      ],
+      "releaseDate": "2023-11-01"
+    },
+    {
+      "char": "塑心",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "天空与流云",
+          "date": "2023-11-01"
+        }
+      ],
+      "releaseDate": "2023-11-01"
+    },
+    {
+      "char": "灵知",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "起点",
+          "date": "2023-12-05"
+        }
+      ],
+      "releaseDate": "2023-12-05"
+    },
+    {
+      "char": "烈夏",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "捉迷藏",
+          "date": "2023-12-05"
+        }
+      ],
+      "releaseDate": "2023-12-05"
+    },
+    {
+      "char": "玫拉",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "失去的时光",
+          "date": "2024-01-09"
+        }
+      ],
+      "releaseDate": "2024-01-09"
+    },
+    {
+      "char": "青枳",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "复还的羽兽",
+          "date": "2024-01-09"
+        }
+      ],
+      "releaseDate": "2024-01-09"
+    },
+    {
+      "char": "仇白",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "如冰碎雪融",
+          "date": "2024-02-01"
+        }
+      ],
+      "releaseDate": "2024-02-01"
+    },
+    {
+      "char": "铎铃",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "落叶何归",
+          "date": "2024-02-01"
+        }
+      ],
+      "releaseDate": "2024-02-01"
+    },
+    {
+      "char": "黍",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "谓我何求",
+          "date": "2024-02-01"
+        }
+      ],
+      "releaseDate": "2024-02-01"
+    },
+    {
+      "char": "子月",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "与人共舞",
+          "date": "2024-04-11"
+        }
+      ],
+      "releaseDate": "2024-04-11"
+    },
+    {
+      "char": "斥罪",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "为你撑伞",
+          "date": "2024-04-11"
+        }
+      ],
+      "releaseDate": "2024-04-11"
+    },
+    {
+      "char": "空构",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "铳声回响",
+          "date": "2024-04-11"
+        }
+      ],
+      "releaseDate": "2024-04-11"
+    },
+    {
+      "char": "闪灵",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "雨夜",
+          "date": "2024-05-01"
+        }
+      ],
+      "releaseDate": "2024-05-01"
+    },
+    {
+      "char": "推进之王",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "幻日",
+          "date": "2024-05-01"
+        }
+      ],
+      "releaseDate": "2024-05-01"
+    },
+    {
+      "char": "灰喉",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "殊途",
+          "date": "2024-05-01"
+        }
+      ],
+      "releaseDate": "2024-05-01"
+    },
+    {
+      "char": "阿斯卡纶",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "同行人",
+          "date": "2024-05-01"
+        }
+      ],
+      "releaseDate": "2024-05-01"
+    },
+    {
+      "char": "阿罗玛",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "入职邀请",
+          "date": "2024-05-01"
+        }
+      ],
+      "releaseDate": "2024-05-01"
+    },
+    {
+      "char": "海霓",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "怀有希望之人",
+          "date": "2024-06-05"
+        }
+      ],
+      "releaseDate": "2024-06-05"
+    },
+    {
+      "char": "温米",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "未完的结局",
+          "date": "2024-07-09"
+        }
+      ],
+      "releaseDate": "2024-07-09"
+    },
+    {
+      "char": "泥岩",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "在卡兹戴尔",
+          "date": "2024-08-01"
+        }
+      ],
+      "releaseDate": "2024-08-01"
+    },
+    {
+      "char": "洋灰",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "矿井里的太阳",
+          "date": "2024-08-01"
+        }
+      ],
+      "releaseDate": "2024-08-01"
+    },
+    {
+      "char": "纯烬艾雅法拉",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "夜色中的第一步",
+          "date": "2024-08-01"
+        }
+      ],
+      "releaseDate": "2024-08-01"
+    },
+    {
+      "char": "衡沙",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "遗失之物",
+          "date": "2024-08-01"
+        }
+      ],
+      "releaseDate": "2024-08-01"
+    },
+    {
+      "char": "森蚺",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "密林狂想",
+          "date": "2024-09-02"
+        }
+      ],
+      "releaseDate": "2024-09-02"
+    },
+    {
+      "char": "澄闪",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "纯属意外",
+          "date": "2024-09-02"
+        }
+      ],
+      "releaseDate": "2024-09-02"
+    },
+    {
+      "char": "渡桥",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "白纸黑字",
+          "date": "2024-09-02"
+        },
+        {
+          "batch": 2,
+          "name": "有始有终",
+          "date": "2026-08-01"
+        }
+      ],
+      "releaseDate": "2024-09-02"
+    },
+    {
+      "char": "白铁",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "啮合不良",
+          "date": "2024-10-09"
+        }
+      ],
+      "releaseDate": "2024-10-09"
+    },
+    {
+      "char": "深律",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "晚霞下的演奏",
+          "date": "2024-10-09"
+        }
+      ],
+      "releaseDate": "2024-10-09"
+    },
+    {
+      "char": "特克诺",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "共舞",
+          "date": "2024-12-05"
+        }
+      ],
+      "releaseDate": "2024-12-05"
+    },
+    {
+      "char": "林",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "新潮旧浪",
+          "date": "2025-01-22"
+        }
+      ],
+      "releaseDate": "2025-01-22"
+    },
+    {
+      "char": "小满",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "旧梦重温",
+          "date": "2025-01-22"
+        }
+      ],
+      "releaseDate": "2025-01-22"
+    },
+    {
+      "char": "余",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "百年一日",
+          "date": "2025-01-22"
+        }
+      ],
+      "releaseDate": "2025-01-22"
+    },
+    {
+      "char": "远牙",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "容身之所",
+          "date": "2025-03-07"
+        }
+      ],
+      "releaseDate": "2025-03-07"
+    },
+    {
+      "char": "凯尔希",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "长路至此",
+          "date": "2025-04-07"
+        }
+      ],
+      "releaseDate": "2025-04-07"
+    },
+    {
+      "char": "诺威尔",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "当我们人生开始时",
+          "date": "2025-05-01"
+        }
+      ],
+      "releaseDate": "2025-05-01"
+    },
+    {
+      "char": "阿兰娜",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "再见一面",
+          "date": "2025-05-01"
+        }
+      ],
+      "releaseDate": "2025-05-01"
+    },
+    {
+      "char": "薇薇安娜",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "不写诗的诗人",
+          "date": "2025-06-05"
+        }
+      ],
+      "releaseDate": "2025-06-05"
+    },
+    {
+      "char": "娜仁图亚",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "何处寻宝藏",
+          "date": "2025-06-05"
+        }
+      ],
+      "releaseDate": "2025-06-05"
+    },
+    {
+      "char": "嵯峨",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "未必空",
+          "date": "2025-07-08"
+        }
+      ],
+      "releaseDate": "2025-07-08"
+    },
+    {
+      "char": "莱伊",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "夜晚荒漠上的鳞群",
+          "date": "2025-07-08"
+        },
+        {
+          "batch": 2,
+          "name": "月下舞者",
+          "date": "2026-01-09"
+        }
+      ],
+      "releaseDate": "2025-07-08"
+    },
+    {
+      "char": "录武官",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "何须剑",
+          "date": "2025-07-08"
+        }
+      ],
+      "releaseDate": "2025-07-08"
+    },
+    {
+      "char": "星熊",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "抉择过后",
+          "date": "2025-08-02"
+        }
+      ],
+      "releaseDate": "2025-08-02"
+    },
+    {
+      "char": "灰毫",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "决斗",
+          "date": "2025-09-04"
+        }
+      ],
+      "releaseDate": "2025-09-04"
+    },
+    {
+      "char": "妮芙",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "跃动的微光",
+          "date": "2025-09-04"
+        },
+        {
+          "batch": 2,
+          "name": "心火",
+          "date": "2026-08-01"
+        }
+      ],
+      "releaseDate": "2025-09-04"
+    },
+    {
+      "char": "荒芜拉普兰德",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "气味游戏",
+          "date": "2025-09-04"
+        }
+      ],
+      "releaseDate": "2025-09-04"
+    },
+    {
+      "char": "波卜",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "谁与同行",
+          "date": "2025-10-09"
+        }
+      ],
+      "releaseDate": "2025-10-09"
+    },
+    {
+      "char": "蒂比",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "获奖感言",
+          "date": "2025-10-09"
+        }
+      ],
+      "releaseDate": "2025-10-09"
+    },
+    {
+      "char": "真言",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "无处不在",
+          "date": "2025-10-09"
+        }
+      ],
+      "releaseDate": "2025-10-09"
+    },
+    {
+      "char": "锏",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "骑士的旅程",
+          "date": "2025-11-01"
+        }
+      ],
+      "releaseDate": "2025-11-01"
+    },
+    {
+      "char": "吉星",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "好运相伴",
+          "date": "2025-11-01"
+        }
+      ],
+      "releaseDate": "2025-11-01"
+    },
+    {
+      "char": "雪猎",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "射向群山的最后一箭",
+          "date": "2025-11-01"
+        }
+      ],
+      "releaseDate": "2025-11-01"
+    },
+    {
+      "char": "塞雷娅",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "沃土",
+          "date": "2025-12-05"
+        }
+      ],
+      "releaseDate": "2025-12-05"
+    },
+    {
+      "char": "焰尾",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "像火一样燃烧",
+          "date": "2026-01-09"
+        }
+      ],
+      "releaseDate": "2026-01-09"
+    },
+    {
+      "char": "刺玫",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "新东西",
+          "date": "2026-01-09"
+        }
+      ],
+      "releaseDate": "2026-01-09"
+    },
+    {
+      "char": "钼铅",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "最后一次探险",
+          "date": "2026-01-09"
+        }
+      ],
+      "releaseDate": "2026-01-09"
+    },
+    {
+      "char": "望",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "终局",
+          "date": "2026-02-10"
+        }
+      ],
+      "releaseDate": "2026-02-10"
+    },
+    {
+      "char": "折桠",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "止痛药",
+          "date": "2026-04-07"
+        }
+      ],
+      "releaseDate": "2026-04-07"
+    },
+    {
+      "char": "怒潮凛冬",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "循环",
+          "date": "2026-05-01"
+        }
+      ],
+      "releaseDate": "2026-05-01"
+    },
+    {
+      "char": "可露希尔",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "分身有术",
+          "date": "2026-05-01"
+        }
+      ],
+      "releaseDate": "2026-05-01"
+    },
+    {
+      "char": "寻澜",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "顶峰之景",
+          "date": "2026-06-01"
+        }
+      ],
+      "releaseDate": "2026-06-01"
+    },
+    {
+      "char": "乌啾",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "号外！号外！",
+          "date": "2026-07-10"
+        }
+      ],
+      "releaseDate": "2026-07-10"
+    },
+    {
+      "char": "裂响",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "昨日已死",
+          "date": "2026-07-10"
+        }
+      ],
+      "releaseDate": "2026-07-10"
+    },
+    {
+      "char": "聆音",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "砸碎一抹微笑",
+          "date": "2026-09-04"
+        }
+      ],
+      "releaseDate": "2026-09-04"
+    }
+  ]
+}
