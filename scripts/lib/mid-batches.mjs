@@ -10,7 +10,11 @@
  * 1. **按该服自己的实装日落段**（各服上线顺序不同，所以每服各写一份 `releaseKey`）；
  *    区间**闭**，相邻段用「上批 to = 下批 from」表示 —— 同一天实装的干员归**前一批**
  *    （`find` 先命中先返回）。
- * 2. `overrides` **先判**：国际服开放中坚时漏掉的一段、14 天后才补上。
+ * 2. `overrides` **先判**，它有两种用法：
+ *    - `date` 给日期 = 「这段被漏掉、过几天才补上」（国际服「1.5 批」）；
+ *    - `date: null`  = 「这段虽然落在某个批次区间里，但**至今仍未转入中坚**」
+ *      （国际服 2023-01-13 同日实装的**鸿雪与晓歌**：落在第 4 批区间内，但国服 / 国际服都还没把
+ *      她们放进中坚寻访）。
  * 3. 限定干员（`isLimited`）→ null：中坚寻访池不含限定干员；该服尚未实装 → null。
  * 4. 落在最后一段之后 → null（国际服 = en 实装晚于 2023-03-14；第 5 批还没开放）。
  * 5. 批次日期**允许是未来**（国际服第 4 批 2026-10-09），照写。
@@ -21,9 +25,12 @@
 export const MID_BATCHES = {
   en: {
     releaseKey: 'enReleaseDate',
-    /* 特例：国际服首批没放这段，14 天后补上（含两个双五寻访的五星） */
+    /* 特例段（先于 batches 判定）：
+       ① 首批没放这段、14 天后才补上（含两个双五寻访的五星）；
+       ② 2023-01-13 同日实装的两位（鸿雪、晓歌）—— 落在第 4 批区间内，但至今**未转入中坚**。 */
     overrides: [
       { from: '2020-09-29', to: '2020-11-26', date: '2023-10-27' },
+      { from: '2023-01-13', to: '2023-01-13', date: null },
     ],
     batches: [
       { from: null, to: '2020-12-10', date: '2023-10-13' },
@@ -83,10 +90,15 @@ export function dryRun(server, operators) {
     ...cfg.batches.map((s) => ({ ...s, kind: 'batch' })),
   ];
   const groups = segs.map((s) => {
-    const hit = rows.filter((r) => r.date === s.date && r.rel && inSegment(r.rel, s))
+    /* ⚠️ `date: null` 的特例段（显式声明「这段至今未转入中坚」，如国际服鸿雪）**单独算**：
+       它没有日期可匹配 —— 按 `r.date === s.date` 匹配会把**所有** null 干员（含限定干员）
+       误算进这一段。所以改成按「段内 + 非限定 + 值符合预期」筛。 */
+    const hit = rows.filter((r) => r.rel && !r.op.isLimited && inSegment(r.rel, s)
+      && (s.date ? r.date === s.date : !r.date))
       .sort((a, b) => (a.rel < b.rel ? -1 : 1));
     return {
       ...s,
+      pending: !s.date,
       count: hit.length,
       first: hit[0] ? `${hit[0].op.name}(${hit[0].rel})` : '—',
       last: hit.length ? `${hit[hit.length - 1].op.name}(${hit[hit.length - 1].rel})` : '—',

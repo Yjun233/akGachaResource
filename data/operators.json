@@ -1354,7 +1354,7 @@
     "obtainMethod": "标准寻访",
     "isLimited": false,
     "classicDate": null,
-    "enClassicDate": "2026-10-09",
+    "enClassicDate": null,
     "tcClassicDate": null
   },
   "char_145_prove": {
@@ -3160,7 +3160,7 @@
     "obtainMethod": "标准寻访",
     "isLimited": false,
     "classicDate": null,
-    "enClassicDate": "2026-10-09",
+    "enClassicDate": null,
     "tcClassicDate": null
   },
   "char_248_mgllan": {

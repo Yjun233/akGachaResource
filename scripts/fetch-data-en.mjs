@@ -671,9 +671,9 @@ async function main() {
     const mid = dryRun('en', cnOperators);
     console.log('  中坚批次（按国际服实装日切段；名单也按实装日排序，首尾一眼可核对）：');
     for (const g of mid.groups) {
-      console.log(`    ${g.date}（${g.kind === 'override' ? '特例' : '批次'} ${g.from || '开服'} ~ ${g.to}）`
+      console.log(`    ${g.date || '（未转入）'}（${g.kind === 'override' ? '特例' : '批次'} ${g.from || '开服'} ~ ${g.to}）`
         + ` ${g.count} 位 · 首 ${g.first} / 末 ${g.last}`);
-      console.log(`      ${g.names.join('、')}`);
+      if (g.names.length) console.log(`      ${g.names.join('、')}`);
     }
     console.log(`    段外（已实装、非限定，但还没到批次）${mid.outside.length} 位`
       + (mid.outside.length ? `：${mid.outside.join('、')}` : ''));
