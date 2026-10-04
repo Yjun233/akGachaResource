@@ -16600,27 +16600,5 @@
         "isShop": false
       }
     ]
-  },
-  "20261022_single_sm": {
-    "name": "自火中归还·复刻",
-    "scName": "自火中归还·复刻",
-    "enName": "Returned From A Pyre",
-    "type": "single",
-    "startDate": "2026-10-22",
-    "endDate": "2026-11-05",
-    "upOperators": [
-      {
-        "name": "死芒",
-        "rarity": 6,
-        "isLimited": false,
-        "isShop": false
-      },
-      {
-        "name": "钼铅",
-        "rarity": 5,
-        "isLimited": false,
-        "isShop": false
-      }
-    ]
   }
 }
