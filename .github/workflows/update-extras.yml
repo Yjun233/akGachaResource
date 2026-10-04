@@ -1,0 +1,76 @@
+name: 更新皮肤 / 密录 / 模组
+
+# 每周六的**北京时间 18:17** 跑一次（也支持在网页上手动触发）。
+#
+# ⚠️ 为什么单独一条、而不挂在「更新数据与头像」里：
+#    这三个数据集**只做国服**、与卡池完全无关（源都是 PRTS Wiki），一周更新一次足够；
+#    拆出来还能单独重跑，不会牵连卡池数据。
+# ⚠️ 它读仓库里的 `data/operators.json` 当**干员白名单** → 必须排在国服抓取之后。
+#    国服是周二 / 周四 / 周五跑，周六跑正好能带上那一周新增的干员。
+# ⚠️ Actions 的 cron 一律 UTC（北京 = UTC+8），18:17 → `17 10`。
+#    与主工作流一样避开整点（整点容易排队、实际执行会晚）。
+"on":
+  schedule:
+    - cron: '17 10 * * 6'   # 6 = 周六
+  workflow_dispatch:        # 也支持手动触发
+
+permissions:
+  contents: write               # 需要用 GITHUB_TOKEN 推送
+
+# ⚠️ 与另外四条工作流**共用同一个并发组** → 互相串行，避免同时 push 撞车。
+concurrency:
+  group: data-fetch
+  cancel-in-progress: false
+
+jobs:
+  update-extras:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai         # 让提交信息里的日期是北京时间
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # 脚本 import 了 scripts/lib/http.mjs，那里要用 undici 包 → 必须装依赖。
+      # 不需要 Python（本工作流不碰头像）。
+      - name: 安装依赖
+        run: npm install
+
+      # 只读公开的 PRTS Wiki，**不需要任何令牌**。
+      # 数据没更新时脚本不会写盘、也不会动 generatedAt（见 fetch-extras.mjs）。
+      - name: 抓取皮肤 / 密录 / 模组（国服 · PRTS Wiki）
+        run: npm run build:extras
+
+      - name: 判断有没有实际变化
+        id: diff
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::皮肤 / 密录 / 模组无更新，不提交"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::检测到更新："
+            git status --short
+          fi
+
+      - name: 提交并推送
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "data(extras): $(date +%Y-%m-%d) 快照"
+          git push
+
+      # 本工作流只产这三个文件，所以只刷它们。
+      # ⚠️ purge 接口是 **GET**，不是 POST —— 用 POST 会一律返回 405（实测）。
+      - name: 刷新 jsDelivr 缓存
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          for f in skins.json memoirs.json modules.json; do
+            body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
+            echo "purge data/$f -> $(echo "$body" | head -c 120)"
+          done

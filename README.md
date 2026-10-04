@@ -37,9 +37,9 @@ https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/avatars/char_306_leizi.
 > raw.githubusercontent.com（国内网络下会取不到），而 JSON 又是正常的。
 > `gcore.jsdelivr.net` 也可用。
 
-三个服务器的数据都由 GitHub Actions **每周二 / 周四 / 周五 北京时间 18:00** 自动更新，
-没有更新时不产生提交。**干员皮肤 / 密录 / 模组（只做国服）** 也在同一次任务里更新
-（读同一个公开 wiki，不需要任何令牌）。繁中服的数据源是人工维护的金山在线表格，
+三个服务器的数据都由 GitHub Actions **每周二 / 周四 / 周五 北京时间 18:17** 自动更新，
+没有更新时不产生提交。**干员皮肤 / 密录 / 模组（只做国服）** 由另一条工作流
+**每周六 18:17** 更新（它读公开 wiki，不需要任何令牌）。繁中服的数据源是人工维护的金山在线表格，
 经 **AirScript webhook** 读取 —— 需要给仓库配 `AIRSCRIPT_TOKEN` 这个 Secret
 （脚本令牌半年过期，到期去金山「脚本信息」里延期）。
 

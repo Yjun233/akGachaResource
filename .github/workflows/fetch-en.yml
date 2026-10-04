@@ -8,9 +8,10 @@ name: 抓取国际服数据（手动）
 permissions:
   contents: write               # 需要用 GITHUB_TOKEN 推送
 
-# 三个单服工作流共用一个并发组，互相串行，避免同时 push 冲突。
+# ⚠️ 五条工作流（主更新 + 皮肤/密录/模组 + 三个单服）**共用同一个并发组** → 互相串行，
+#    避免「手动触发」与「定时任务」同时 push 撞车（原先分属两个组，真会撞）。
 concurrency:
-  group: data-single-fetch
+  group: data-fetch
   cancel-in-progress: false
 
 jobs:
