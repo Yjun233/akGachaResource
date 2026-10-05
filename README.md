@@ -52,6 +52,7 @@ data/       operators.json · metadata.json
 avatars/    <charId>.png（96×96）
 scripts/    fetch-data.mjs（国服）· fetch-data-en.mjs（国际服）· fetch-data-tc.mjs（繁中服）
             fetch-extras.mjs（皮肤 / 密录 / 模组，国服）· fetch-avatars.mjs（抓头像）
+            fetch-gamedata.mjs（官方解包：中坚寻访 / 中坚甄选）
             lib/（数据脚本共用的小工具，含 AirScript 调用封装）
             airscript-sheet-reader.js   ⚠️ 不是 Node 脚本，要整段粘到金山文档的 AirScript 编辑器里
 ```
@@ -78,6 +79,12 @@ npm run build:data:tc    # 从**金山在线表格**（AirScript webhook）生�
 npm run build:avatars    # 补齐头像 → avatars/（只拉缺失的）
 npm run build:extras     # 从 PRTS Wiki 抓**干员皮肤 / 密录 / 模组**（只做国服）→ data/
                          #   加 --dry 可只看统计不写盘
+npm run build:gamedata   # 从**官方解包数据**（ArknightsAssets/ArknightsGamedata）抽取
+                         #   **中坚寻访 / 中坚甄选** → data/banners_mid_<server>.json
+                         #   加 --check 只对撞不落盘（拿现有卡池自检）；
+                         #   本地被代理挡住时用 --local <解包仓库副本>（⚠️ 其中
+                         #   character_table.json 有 20MB+，jsDelivr 供不了，只能走本地/raw）
+                         #   ⚠️ 尚未接入 CI 与站点，见 akGachaDocs 的官方解包预研
 ```
 
 头像默认存 96×96；要原始尺寸：`node scripts/fetch-avatars.mjs --size=180`。

@@ -10,7 +10,8 @@
     "build": "npm run build:data && npm run build:data:en && npm run build:data:tc && npm run build:extras && npm run build:avatars",
     "build:data:en": "node scripts/fetch-data-en.mjs",
     "build:data:tc": "node scripts/fetch-data-tc.mjs",
-    "build:extras": "node scripts/fetch-extras.mjs"
+    "build:extras": "node scripts/fetch-extras.mjs",
+    "build:gamedata": "node scripts/fetch-gamedata.mjs"
   },
   "dependencies": {
     "pinyin-pro": "^3.29.4",
