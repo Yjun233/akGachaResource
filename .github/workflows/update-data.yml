@@ -42,8 +42,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install pillow
 
+      # 卡池所属活动（`actType` / `canRerun`）**只在周五抓**：活动类型变化很慢，
+      # 没必要每次跑都花那 ~7 次请求；不抓的那几次由脚本**从上次快照回填**（见 fetch-data.mjs）。
+      # 手动触发时一律抓（临时想刷新时方便）。TZ 已设成 Asia/Shanghai，所以 date 就是北京时间。
+      - name: 判断本轮要不要抓「卡池所属活动」
+        id: act
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date +%u)" = "5" ]; then
+            echo "with=1" >> "$GITHUB_OUTPUT"
+            echo "::notice::本轮会抓卡池所属活动（actType / canRerun）"
+          else
+            echo "with=0" >> "$GITHUB_OUTPUT"
+          fi
+
       # 数据没更新时脚本**不会写盘**、也不会动 generatedAt（见 fetch-data.mjs）
       - name: 抓取卡池 / 干员数据（国服）
+        env:
+          WITH_ACTIVITIES: ${{ steps.act.outputs.with }}
         run: npm run build:data
 
       # 头像跟国服放一起：国服的 operators.json 一落盘就顺手补齐缺失头像。

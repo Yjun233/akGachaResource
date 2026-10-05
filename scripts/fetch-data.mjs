@@ -13,6 +13,8 @@
  *                          `enName` = 国际服英文名，按干员集合反查 banners_en.json，
  *                                     没有英文名的（带序号的池子三服同名）为 null。
  *                          详见 scripts/lib/banner-names.mjs
+ *                          另有 `actType` / `actName`（所属活动）与 —— **只给单六寻访的** ——
+ *                          `canRerun` / `rerunKind`，见文件末尾那段说明。
  *   metadata.json          元信息（含服务器列表）
  *
  * ⚠️ 不再输出 `banner-categories.json`：type → 大类的映射已移入站点侧
@@ -20,6 +22,12 @@
  *
  * 限定寻访会细分为 limcel（庆典）/ limspr（春节）/ limsum（夏季），见 `limitedSubtype()`；
  * **ID 里的类型段与 `type` 一致**（2026-10-01 起，此前限定池的 ID 一律写 `limited`）。
+ *
+ * ⚠️ **卡池所属活动（`actType` / `canRerun`）只在带 `--with-activities` 时去抓**
+ *    （CI 里只有**周五**那一轮带，见 .github/workflows/update-data.yml；手动触发一律带）——
+ *    活动类型变化很慢，没必要每次跑都花那 ~7 次请求。
+ *    **不抓的那几次必须从旧文件回填**（见 main 里 else 那支），否则重写会把字段抹掉。
+ *    口径、实测与两个解析坑见 akGachaDocs/resource/单六寻访活动类型与复刻预研.md。
  */
 
 import fs from 'node:fs/promises';
@@ -153,6 +161,118 @@ async function fetchWikitext(titles) {
     else console.warn(`  ! 页面不存在: ${p.title}`);
   }
   return out;
+}
+
+/** 同 `fetchWikitext`，但**跟重定向** —— 活动页里有 `#REDIRECT`（如 `火蓝之心复刻` → `火蓝之心2020`），
+    不带 `redirects` 只会拿到 `#REDIRECT [[…]]` 那段文本、解析不出任何字段。
+    ⚠️ 跟着重定向后，返回的键是**目标页标题**（这正是我们要的）。 */
+async function fetchRedirectedWikitext(titles) {
+  const out = {};
+  for (let i = 0; i < titles.length; i += 50) {
+    const json = await requestJson({
+      action: 'query',
+      prop: 'revisions',
+      titles: titles.slice(i, i + 50).join('|'),
+      rvprop: 'content',
+      rvslots: 'main',
+      redirects: 1,
+      format: 'json',
+      formatversion: 2,
+    });
+    for (const p of json.query?.pages || []) {
+      if (p.revisions) out[p.title] = p.revisions[0].slots.main.content;
+    }
+    await sleep(150);
+  }
+  return out;
+}
+
+// ------------------------------------------------- 卡池所属活动（2026-10-05 加）
+
+/* 用途：判断**单六寻访会不会复刻** —— 实测只跟「所属活动的类型」有关：
+   `type === 'single'` 的首发池里，「非支线故事」的 25 个**一个都没复刻过**（0 反例），
+   支线故事的有 23/28 复刻过。口径与实测见
+   akGachaDocs/resource/单六寻访活动类型与复刻预研.md。
+   数据源：活动页的 `{{活动信息}}` 模板 —— 里面既有 `类型`，又有 `限时寻访N`
+   （**直接列出同期卡池**，所以「卡池 ↔ 活动」不用靠日期去猜）。 */
+
+const ACTIVITY_CATEGORY = '分类:有活动信息的页面';
+
+/** 已知反例（用户 2026-10-05 确认「理论上不会有新的」，所以直接写死在代码里）：
+    活动是支线故事、但**确实没复刻**的两个池 —— 2019「火蓝之心」在 2020 复刻时带了新干员
+    （棘刺）、开的是新池「不羁逆流」，当年这两个旧池就没复刻。 */
+const CAN_RERUN_EXCEPTIONS = new Set(['深夏的守夜人', '久铸尘铁']);
+
+/** 卡池名归一化，用于比对：**只留字母 / 数字 / 汉字**，去掉一切符号与空格。
+    实测 432 个卡池名归一化后仍是 432 个不同键（**零碰撞**），而能多收回
+    「燃钢之心:暴躁铁皮 复刻」这种全角/半角冒号不一致的（覆盖率 74 → 75 / 84）。 */
+const normName = (s) => String(s || '').replace(/[^\p{L}\p{N}]/gu, '');
+
+/** 解析 `{{活动信息}}` → 活动类型 / 开始日 / 它列出的同期卡池名 */
+function parseActivityInfo(text) {
+  const s = String(text);
+  const i = s.indexOf('{{活动信息');
+  if (i < 0) return null;
+  const end = s.indexOf('\n}}', i);
+  const body = s.slice(i + '{{活动信息'.length, end < 0 ? undefined : end);
+  const p = {};
+  for (const line of body.split('\n')) {
+    const m = /^\|([^=]+)=(.*)$/.exec(line.trim());
+    if (m) p[m[1].trim()] = m[2].trim();
+  }
+  const gachas = [];
+  for (const k of Object.keys(p)) {
+    if (!/^限时寻访\d*$/.test(k)) continue;
+    const val = String(p[k] || '').trim();
+    if (!val) continue;
+    const links = [...val.matchAll(/\[\[([^\]|]+)(?:\|([^\]]*))?\]\]/g)];
+    if (!links.length) { gachas.push(val); continue; }
+    for (const m of links) {
+      /* ⚠️ 链接的**目标**才是真名：`[[寻访模拟/搅动潮汐之剑 复刻|搅动潮汐之剑]]` 里
+         显示名反而是**原池名**。两个都收（比对照样按归一化，不会误配）。 */
+      gachas.push(m[1].replace(/^寻访模拟\//, '').trim());
+      if (m[2]) gachas.push(m[2].trim());
+    }
+  }
+  return { type: p['类型'] || null, startDate: toDate(p['活动开始时间']), gachas: gachas.filter(Boolean) };
+}
+
+/** 活动页 → `归一化卡池名 → { actType, actName, actStartDate }` */
+async function fetchActivityMap() {
+  const titles = [];
+  let cont = {};
+  do {
+    const j = await requestJson({
+      action: 'query',
+      list: 'categorymembers',
+      cmtitle: ACTIVITY_CATEGORY,
+      cmlimit: 500,
+      format: 'json',
+      formatversion: 2,
+      ...cont,
+    });
+    for (const m of j.query?.categorymembers || []) titles.push(m.title);
+    cont = j.continue || {};
+  } while (cont.cmcontinue);
+
+  const pages = await fetchRedirectedWikitext(titles);
+  const map = {};
+  let parsed = 0;
+  for (const [title, text] of Object.entries(pages)) {
+    const info = parseActivityInfo(text);
+    if (!info) continue;
+    parsed += 1;
+    for (const name of info.gachas) {
+      const key = normName(name);
+      if (!key) continue;
+      const prev = map[key];
+      /* 同一个池名可能同时出现在**首发**活动页与**复刻**活动页 → 取**活动开始日最早**的（= 首发活动）。 */
+      if (!prev || (info.startDate && (!prev.actStartDate || info.startDate < prev.actStartDate))) {
+        map[key] = { actType: info.type, actName: title, actStartDate: info.startDate };
+      }
+    }
+  }
+  return { map, pageCount: titles.length, parsed };
 }
 
 // ---------------------------------------------------------------- 工具函数
@@ -791,6 +911,69 @@ async function main() {
   const enNameTotal = Object.values(banners).filter((b) => b.enName).length;
   console.log(`· 卡池英文名：${enNameTotal} 个有 enName / ${enNameMiss.length} 个限定·单六·双五池暂时对不上国际服`
     + `${prevEnBanners ? '' : '（banners_en.json 不存在，全部留空）'}`);
+
+  /* ---- 卡池所属活动：`actType` / `actName`（+ 单六寻访的 `canRerun` / `rerunKind`）----
+     ⚠️ **只在带 `--with-activities`（CI 里只有周五那次带，见 update-data.yml）时真去抓**：
+        活动类型变化很慢，没必要每次跑都花那 ~7 次请求。
+     ⚠️ **不抓的那几次必须从旧文件回填** —— 否则重写 banners_sc.json 会把上次抓到的字段抹掉。
+     ⚠️ `canRerun` / `rerunKind` **只给 `single`**（常驻轮换池谈「会不会复刻」没意义）；
+        `actType` / `actName` 所有卡池都写（反正是白拿的）。 */
+  const withActivities = process.argv.includes('--with-activities')
+    || process.env.WITH_ACTIVITIES === '1';
+  const bannerFileName = `banners_${DEFAULT_SERVER}.json`;
+  const bannerTotal = Object.keys(banners).length;
+  const singleTotal = Object.values(banners).filter((b) => b.type === 'single').length;
+  if (withActivities) {
+    const { map, pageCount, parsed } = await fetchActivityMap();
+    let hit = 0;
+    const miss = [];
+    for (const [id, b] of Object.entries(banners)) {
+      /* 「返场」池**活动页不会列**（它只是首发活动期内的二次开放）→ 去掉后缀再查一次，
+         否则它的 actType 会是 null、canRerun 被误判成 false。
+         （实测「不羁逆流 返场」之后**确实**又复刻了一次 → 该 true。） */
+      const found = map[normName(b.name)]
+        || (/返场/.test(b.name) ? map[normName(b.name.replace(/返场/g, ''))] : null)
+        || null;
+      b.actType = found ? found.actType : null;
+      b.actName = found ? found.actName : null;
+      if (b.type === 'single') {
+        /* 口径：**只有支线故事的单六寻访会复刻，且只复刻一次**（实测非支线的 0 反例）。
+           ⚠️ 用户 2026-10-05 定：**`canRerun` 只对「首发」池为 true** ——
+              「复刻」池与「返场」池都算**已经再上架过一次**，不再有下一次。
+           两个已知反例写死在 CAN_RERUN_EXCEPTIONS 里。 */
+        const kind = /返场/.test(b.name) ? '返场' : (/复刻/.test(b.name) ? '复刻' : '首发');
+        b.rerunKind = kind;
+        b.canRerun = Boolean(found) && found.actType === '支线故事'
+          && kind === '首发' && !CAN_RERUN_EXCEPTIONS.has(b.name);
+      }
+      if (found) hit += 1; else miss.push(`${id} ${b.name}`);
+    }
+    const canRerunCount = Object.values(banners).filter((b) => b.canRerun).length;
+    console.log(`· 卡池所属活动：活动页 ${pageCount} 个（解析出 ${parsed} 个）→ 关联上 ${hit}/${bannerTotal} 个卡池`
+      + `；单六寻访 ${singleTotal} 个中 canRerun=true 的 ${canRerunCount} 个`);
+    if (miss.length) {
+      console.log(`  ${miss.length} 个对不上（actType 留 null，多为 2019~2020 早期池，其活动页还没写 限时寻访）：`
+        + `${miss.slice(0, 6).map((x) => x.split(' ')[1]).join('、')}${miss.length > 6 ? ' 等' : ''}`);
+    }
+  } else {
+    const prev = (await readPrev(bannerFileName)) || {};
+    let kept = 0;
+    let fresh = 0;
+    for (const [id, b] of Object.entries(banners)) {
+      const old = prev[id];
+      b.actType = old?.actType ?? null;
+      b.actName = old?.actName ?? null;
+      if (b.type === 'single') {
+        /* ⚠️ 赋值顺序必须与上面「抓取」那段**完全一致**（rerunKind 在前）：
+           否则 JSON 的键序不同 → 字符串比对不相等 → 每次跑都误判成「有变化」而写盘。 */
+        b.rerunKind = old?.rerunKind ?? null;
+        b.canRerun = old?.canRerun ?? false;
+      }
+      if (old && 'actType' in old) kept += 1; else fresh += 1;
+    }
+    console.log(`· 卡池所属活动：本次不抓（非周五、也没带 --with-activities）→ 从上次快照回填 ${kept} 个`
+      + `${fresh ? `；${fresh} 个新池暂缺 actType（下周五补上）` : ''}`);
+  }
 
   // 校验
   const dates = Object.values(banners).map((b) => b.startDate).sort();
