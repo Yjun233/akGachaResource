@@ -1,38 +1,37 @@
 {
-  "generatedAt": "2026-10-05",
-  "enGeneratedAt": "2026-10-05",
-  "tcGeneratedAt": "2026-10-04",
+  "generatedAt": "2026-10-06",
+  "enGeneratedAt": "2026-10-06",
+  "tcGeneratedAt": "2026-10-06",
   "defaultServer": "sc",
   "servers": [
     {
       "id": "sc",
       "label": "国服",
       "available": true,
-      "bannerCount": 432,
+      "bannerCount": 343,
       "earliestBanner": "2019-04-30",
-      "latestBanner": "2026-10-01"
+      "latestBanner": "2026-09-29"
     },
     {
       "id": "en",
       "label": "国际服",
       "available": true,
-      "bannerCount": 390,
+      "bannerCount": 315,
       "earliestBanner": "2020-01-16",
-      "latestBanner": "2026-10-06"
+      "latestBanner": "2026-09-25"
     },
     {
       "id": "tc",
       "label": "繁中服",
       "available": true,
-      "bannerCount": 369,
+      "bannerCount": 304,
       "earliestBanner": "2020-06-29",
-      "latestBanner": "2026-10-08"
+      "latestBanner": "2026-10-22"
     }
   ],
   "source": "https://prts.wiki",
   "sourcePages": [
     "卡池一览/常驻标准寻访",
-    "卡池一览/常驻中坚寻访&中坚甄选",
     "卡池一览/限时寻访",
     "寻访规则",
     "arknights.wiki.gg",

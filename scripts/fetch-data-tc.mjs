@@ -85,15 +85,16 @@ const CN_LAUNCH_DATE = '2019-04-30';
    ⚠️ 数组顺序 = 金山表格的**标签页顺序**（1-based）：索引 0 → 第 1 张表、1 → 第 2 张、2 → 第 3 张。
    readSheets 按此顺序发 argv.sheet=1/2/3，脚本回传真实表名当键，名字对不上会立即告警。 */
 const SHEET_ROT = '繁中轮换记录';
-const SHEET_MID = '繁中中坚记录';
-const SHEET_SEL = '繁中中坚甄选记录';
-const SHEET_NAMES = [SHEET_ROT, SHEET_MID, SHEET_SEL];
+/* ⚠️ 「繁中中坚记录」与「繁中中坚甄选记录」两张表**2026-10-06 起不再读、不再产出中坚** ——
+   常驻中坚寻访 + 中坚甄选改由**官方解包数据**提供（`scripts/fetch-gamedata.mjs` →
+   `data/banners_cla_<server>.json`，站点侧合并）。人工维护的金山表在这两块上有漏写与记错
+   （见 akGachaDocs/resource/官方解包数据（ArknightsGamedata）预研.md §4）。
+   ⚠️ `readSheets` 是**按位置**映射的（`names[i]` → `argv.sheet = i+1`），所以只留第 1 张表就够。 */
+const SHEET_NAMES = [SHEET_ROT];
 
 /** 序号类（展示名 = 类名 + 序号，ID 名称段 = 补零 4 位） */
 const SEQ_LABEL = {
   double: '常驻标准寻访',
-  classic: '常驻中坚寻访',
-  clafes: '中坚甄选',
   joint: '联合行动',
   stdfes: '定向甄选',
   mainfes: '前路回响',
@@ -136,7 +137,7 @@ const setKeyOf = (names) => [...new Set(names)].sort().join('|');
 // ---------------------------------------------------------------- 读表
 
 /**
- * 三张表 → `{ 表名: 二维数组 }`，直接喂给下面的 parseRotation / parseMid / parseSelection
+ * 表 → `{ 表名: 二维数组 }`，直接喂给下面的 parseRotation
  * —— 它们吃的就是「表名 → 行数组」，所以**解析逻辑一行都不用改**。
  *
  * 走金山文档 AirScript webhook（不是读本地 xlsx）。云端网格由 lib 的 `normalizeGrid()`
@@ -183,74 +184,11 @@ function parseRotation(rows, warnings) {
   return { doubles, limits };
 }
 
-/** 中坚记录 → 常驻中坚寻访列表 + 中坚甄选占位行（只有日期，干员在另一张表） */
-function parseMid(rows, warnings) {
-  const classic = [];
-  const selRows = [];
-  const ignored = [];
-  for (let i = 1; i < rows.length; i++) {
-    const r = rows[i] || [];
-    const rowNo = i + 1;
-    const start = cellDate(r[1]);
-    if (!start) continue;
-    const cells = [s(r[3]), s(r[4]), s(r[5]), s(r[6]), s(r[7])];
-    const joined = cells.join('');
-    if (joined.includes('中坚甄选池')) {
-      selRows.push({ row: rowNo, start, end: cellDate(r[2]) });
-      continue;
-    }
-    if (joined.includes('中坚必NEW池')) {
-      /* 本站的 11 种卡池类型里没有「中坚必NEW」，而且这几行只有标记文字、
-         没有干员名单（另一张表也只有 12 期，正好对上 12 个「中坚甄选池」行），
-         所以按用户确认的口径**跳过**。 */
-      ignored.push({ row: rowNo, start, end: cellDate(r[2]) });
-      continue;
-    }
-    const six = cells.slice(0, 2).filter(Boolean);
-    const five = cells.slice(2).filter(Boolean);
-    if (six.length || five.length) {
-      if (six.length !== 2 || five.length !== 3) {
-        warnings.push(`[中坚 r${rowNo}] 干员数不是 2 六星 + 3 五星：${six.length}+${five.length}`);
-      }
-      classic.push({
-        row: rowNo, start, end: cellDate(r[2]),
-        six: [{ name: six[0], isShop: true }, { name: six[1], isShop: false }].filter((x) => x.name),
-        five: [{ name: five[0], isShop: true }, { name: five[1], isShop: false }, { name: five[2], isShop: false }]
-          .filter((x) => x.name),
-      });
-    }
-  }
-  return { classic, selRows, ignored };
-}
-
-/** 中坚甄选记录 → 12 期，每期 { six:[名], five:[名] } */
-function parseSelection(rows, warnings) {
-  const hdr = [];
-  for (let i = 0; i < rows.length; i++) {
-    const r = rows[i] || [];
-    if (r.slice(3, 15).some((v) => s(v).includes('第一期'))) hdr.push(i);
-  }
-  if (hdr.length < 2) {
-    warnings.push(`[繁中中坚甄选记录] 只找到 ${hdr.length} 个期次表头，应为 2 个（6 星块 + 5 星块）`);
-    return [];
-  }
-  const [h6, h5] = hdr;
-  const nameOf = (i) => s((rows[i] || [])[2]);
-  const marked = (i, col) => s((rows[i] || [])[col]) === '1'
-    || Number((rows[i] || [])[col]) === 1;
-
-  const periods = [];
-  for (let col = 3; col <= 14; col++) {                  // D~O = 第 1~12 期
-    const six = [];
-    for (let i = h6 + 1; i < h5; i++) if (marked(i, col) && nameOf(i)) six.push(nameOf(i));
-    const five = [];
-    for (let i = h5 + 1; i < rows.length; i++) if (marked(i, col) && nameOf(i)) five.push(nameOf(i));
-    periods.push({ six, five });
-  }
-  const counts = periods.map((p, i) => `第${i + 1}期 ${p.six.length}+${p.five.length}`);
-  console.log(`· 繁中中坚甄选记录：12 期（${counts.join('、')}）`);
-  return periods;
-}
+/* ---- 「常驻中坚寻访 / 中坚甄选」的解析**已整体移除**（2026-10-06）----
+   原先这里有 `parseMid()`（读「繁中中坚记录」）与 `parseSelection()`（读「繁中中坚甄选记录」），
+   现在这两块数据改由**官方解包数据**提供：`scripts/fetch-gamedata.mjs` → `data/banners_cla_<server>.json`。
+   原因：人工维护的金山表在这两块上有漏写与记错（预研文档 §4 有实测），
+   而官方解包有完整名单 + 明确的进店位。连带 `SHEET_NAMES` 也只留「繁中轮换记录」一张表了。 */
 
 // ---------------------------------------------------------------- 国服反查
 
@@ -298,15 +236,7 @@ async function main() {
   }
 
   const { doubles, limits } = parseRotation(sheets[SHEET_ROT], warnings);
-  const { classic, selRows, ignored } = parseMid(sheets[SHEET_MID], warnings);
-  const periods = parseSelection(sheets[SHEET_SEL], warnings);
-
   console.log(`· 繁中轮换记录：常驻标准寻访 ${doubles.length} 条 / 限时寻访 ${limits.length} 条`);
-  console.log(`· 繁中中坚记录：常驻中坚寻访 ${classic.length} 条 / 中坚甄选 ${selRows.length} 条 / 跳过必NEW ${ignored.length} 条`);
-
-  if (selRows.length !== periods.length) {
-    warnings.push(`中坚甄选行数（${selRows.length}）与记录表期数（${periods.length}）不一致，按较少的一方配对`);
-  }
 
   const banners = [];
   /** 同名同类型的序号计数器（按时间顺序发号） */
@@ -355,31 +285,9 @@ async function main() {
     });
   });
 
-  // ---- 2) 常驻中坚寻访 ----
-  classic.slice().sort((a, b) => a.start.localeCompare(b.start) || a.row - b.row).forEach((d) => {
-    const n = (seqOf.classic = (seqOf.classic || 0) + 1);
-    pushBanner({
-      type: 'classic', start: d.start, end: d.end, suffix: pad4(n),
-      name: `${SEQ_LABEL.classic}${n}`, upOperators: toUps([...d.six, ...d.five], `[中坚 r${d.row}]`),
-      where: `中坚 r${d.row}`,
-    });
-  });
-
-  // ---- 3) 中坚甄选 ----
-  selRows.slice().sort((a, b) => a.start.localeCompare(b.start) || a.row - b.row).forEach((d, i) => {
-    const p = periods[i];
-    const n = (seqOf.clafes = (seqOf.clafes || 0) + 1);
-    if (!p) {
-      warnings.push(`[中坚 r${d.row}] 找不到对应的甄选期次，已跳过`);
-      return;
-    }
-    pushBanner({
-      type: 'clafes', start: d.start, end: d.end, suffix: pad4(n),
-      name: `${SEQ_LABEL.clafes}${n}`,
-      upOperators: toUps([...p.six, ...p.five], `[中坚甄选 第${i + 1}期]`),
-      where: `中坚 r${d.row}（甄选第${i + 1}期）`,
-    });
-  });
+  /* ---- 2) 常驻中坚寻访 与 3) 中坚甄选：**2026-10-06 起不由本脚本产出** ----
+     改由官方解包数据提供（`scripts/fetch-gamedata.mjs` → `data/banners_cla_<server>.json`，
+     站点侧合并）。原来的两段构造见 git 历史。 */
 
   // ---- 4) 限时寻访 ----
   const limitsSorted = limits.slice().sort((a, b) => a.start.localeCompare(b.start) || a.row - b.row);
@@ -598,7 +506,7 @@ async function main() {
   // ---- 报告 ----
   const byType = {};
   for (const b of list) byType[b.type] = (byType[b.type] || 0) + 1;
-  const ord = ['double', 'classic', 'clafes', 'joint', 'stdfes', 'mainfes', 'limcel', 'limspr', 'limsum', 'five', 'single'];
+  const ord = ['double', 'joint', 'stdfes', 'mainfes', 'limcel', 'limspr', 'limsum', 'five', 'single'];
   console.log('');
   console.log(`✓ 繁中服卡池 ${list.length} 个`);
   console.log(`  时间范围 ${dates[0] || '—'} ~ ${dates[dates.length - 1] || '—'}`);
@@ -625,9 +533,6 @@ async function main() {
   if (noRel.length) console.log(`  繁中服尚未实装的干员（无 tcReleaseDate）${noRel.length} 位：${noRel.join('、')}`);
   if (skippedCollab.length) {
     console.log(`  跳过联动卡池 ${skippedCollab.length} 个：${skippedCollab.join('；')}`);
-  }
-  if (ignored.length) {
-    console.log(`  跳过「中坚必NEW池」${ignored.length} 个：${ignored.map((x) => x.start).join('、')}`);
   }
   console.log(`  反查国服得到名称的池子 ${matchedCn.length} 个`);
   for (const m of matchedCn) console.log(`    ${m}`);

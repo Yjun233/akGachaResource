@@ -1,13 +1,17 @@
 name: 更新数据与头像
 
-# 每周二 / 周四 / 周五 的**北京时间 18:17** 跑一次。
+# 每周四 / 周五 的**北京时间 18:17** 跑一次。
+# ⚠️ 2026-10-06 起**去掉了周二** —— 原先排周二纯粹是因为「国际服中坚寻访在周二轮换」，
+#    而现在中坚已改由**官方解包数据**提供（`fetch-gamedata.mjs`）。那份数据里中坚池带的是
+#    **未来的 `openTime`**（实测 master 上 en 最新已到下周），所以周四/周五跑就能提前拿到
+#    下周二那一期，周二的必要性没有了。
 # ⚠️ GitHub Actions 的 cron 一律用 UTC，北京时间 = UTC+8，所以 18:17 → `17 10`。
 # ⚠️ 特意避开整点（:00 —— 整点容易排队、实际执行会晚几分钟到几十分钟）。
 # ⚠️ 这里给 `on` 加了引号：YAML 1.1 会把裸 `on` 解析成布尔 True，
 #    某些严格的解析器会因此取不到键。GitHub 自己两种都认，但加上更稳。
 "on":
   schedule:
-    - cron: '17 10 * * 2,4,5'   # 周二=2 周四=4 周五=5
+    - cron: '17 10 * * 4,5'   # 周四=4 周五=5（周二=2 已于 2026-10-06 去掉）
   workflow_dispatch:            # 也支持在网页上手动触发
 
 permissions:
@@ -106,7 +110,17 @@ jobs:
         run: npm run build:data:tc
 
       # ⚠️ 皮肤 / 密录 / 模组**不在本工作流里** —— 它已拆成独立工作流 `update-extras.yml`
-      #    （每周六跑一次）。那三个数据集只做国服、与卡池无关，没必要跟着周二/四/五跑。
+      #    （每周六跑一次）。那三个数据集只做国服、与卡池无关，没必要跟着周四/周五跑。
+
+      # 官方解包数据：**只补「常驻中坚寻访 + 中坚甄选」**（那两块 wiki 三个源都会漏写 / 记错进店位）。
+      # ⚠️ 脚本**自带 `data_version.txt` 短路** —— 各服版本没变时只下 3 个几十字节的版本文件就返回，
+      #    不会每次白拉 `character_table`（19MB）。
+      # ⚠️ CI 里 `raw.githubusercontent.com` 可直连（本机那个 HTTP_PROXY 不在 runner 上），
+      #    所以**不需要**设 `GAMEDATA_BASE`。
+      # ⚠️ 排在国服 / 国际服 / 繁中服**之后**：它读 `banners_<server>.json` 只为产出中坚那一份。
+      - name: 抓取官方解包数据（中坚寻访 / 中坚甄选）
+        continue-on-error: true
+        run: npm run build:gamedata
 
       - name: 判断有没有实际变化
         id: diff
@@ -134,7 +148,7 @@ jobs:
       - name: 刷新 jsDelivr 缓存
         if: steps.diff.outputs.changed == 'true'
         run: |
-          for f in operators.json banners_sc.json banners_en.json banners_tc.json metadata.json; do
+          for f in operators.json banners_sc.json banners_en.json banners_tc.json banners_cla_sc.json banners_cla_en.json banners_cla_tc.json metadata.json; do
             body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
             echo "purge data/$f -> $(echo "$body" | head -c 120)"
           done

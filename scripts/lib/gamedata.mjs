@@ -158,6 +158,10 @@ export function assignIds(list) {
     b.name = `${MID_LABEL[b.type]}${n}`;
     b.scName = b.name;
     b.enName = null;
+    /* ⚠️ `actType` / `actName` 是「卡池所属活动」的两个键（见 fetch-data.mjs）。中坚没有所属活动，
+       恒为 null —— 但**键必须存在**，否则与其它卡池的 schema 不一致（verify-data 会查这两个键）。 */
+    b.actType = null;
+    b.actName = null;
     b.id = `${b.startDate.replace(/-/g, '')}_${b.type}_${String(n).padStart(4, '0')}`;
   });
   return list;

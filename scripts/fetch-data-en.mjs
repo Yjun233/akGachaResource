@@ -500,6 +500,12 @@ async function main() {
         forcedFive = true;
       }
 
+      /* ⚠️ 常驻中坚寻访 / 中坚甄选**2026-10-06 起不由本脚本产出** ——
+         改由**官方解包数据**提供（`scripts/fetch-gamedata.mjs` → `data/banners_cla_<server>.json`，
+         站点侧合并）。wiki.gg 的中坚数据会漏人（中坚甄选少一个六星）也会记错进店位，
+         见 akGachaDocs/resource/官方解包数据（ArknightsGamedata）预研.md §4。 */
+      if (finalType === 'classic' || finalType === 'clafes') continue;
+
       // —— ID
       const datePart = startDate.replace(/-/g, '');
       const name = String(cell.name || '').trim();
@@ -703,8 +709,8 @@ async function main() {
       + (midChanged.length ? `：${midChanged.slice(0, 12).join('、')}${midChanged.length > 12 ? ' …' : ''}` : ''));
   }
   const withShop = list.filter((b) => b.upOperators.some((o) => o.isShop)).length;
-  const storePools = list.filter((b) => b.type === 'double' || b.type === 'classic').length;
-  console.log(`  isShop：${withShop} 个池子有进店标记（只有 double / classic 带 store 参数，共 ${storePools} 个池子）`);
+  const storePools = list.filter((b) => b.type === 'double').length;
+  console.log(`  isShop：${withShop} 个池子有进店标记（本脚本只产 double 带 store 参数，共 ${storePools} 个池子）`);
   if (skippedTypes.size) {
     console.log(`  忽略的类型：${[...skippedTypes].map(([k, v]) => `${k}×${v}`).join('、')}`);
   }

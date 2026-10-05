@@ -7,14 +7,17 @@
  * 仍由 PRTS / wiki.gg / 金山 那几个脚本负责 —— 见预研文档 §3。
  *
  * 输出：
- *   data/banners_mid_<server>.json   常驻中坚寻访 + 中坚甄选（**单独一个文件**，不与
+ *   data/banners_cla_<server>.json   常驻中坚寻访 + 中坚甄选（**单独一个文件**，不与
  *                                    `banners_<server>.json` 混写；站点侧合并）
  *
  * 口径的**权威说明**在 `akGachaDocs/resource/官方解包数据（ArknightsGamedata）预研.md`
  * （实测数字、字段语义、目标工作流 §9）。本文件只实现，不再重复论证。
  *
  * 用法：
- *   node scripts/fetch-gamedata.mjs --check            只对撞、不落盘（**先跑这个**）
+ *   node scripts/fetch-gamedata.mjs --check            只对撞、不落盘
+ *       对撞对象 = **站点实际用的那一套**（`banners_<srv>.json` 合并 `banners_cla_<srv>.json`），
+ *       正常应 0 差异。⚠️ 接入前（2026-10-06 之前）它比的是 **wiki 抓到的中坚** ——
+ *       那轮实测结果留档在 `akGachaDocs/resource/官方解包数据（ArknightsGamedata）预研.md` §4。
  *   node scripts/fetch-gamedata.mjs --check --dump     对撞 + 打印抽出来的 JSON
  *   node scripts/fetch-gamedata.mjs                    抽取并写盘（内容没变则不写）
  *
@@ -196,16 +199,45 @@ async function main() {
   console.log(`数据源：${process.env.GAMEDATA_BASE || 'raw.githubusercontent.com（默认）'}${LOCAL ? `  ｜ 本地副本 ${LOCAL}` : ''}`);
 
   /* ⚠️ 名字表**一律用 cn 的**：我们三服的 upOperators[].name 统一是简体中文名，
-     拿 en/tw 的本地化名去比会全量假不一致（实测 en 0/62、tw 1/54）。 */
-  const cnNames = await loadNames('cn', { local: LOCAL_NAMES || LOCAL });
-  console.log(`cn character_table：${Object.keys(cnNames).length} 个 charId`);
+     拿 en/tw 的本地化名去比会全量假不一致（实测 en 0/62、tw 1/54）。
+     而且**按需加载** —— `character_table` 有 19MB，被短路跳过时不该白下。 */
+  let cnNames = null;
+  const nameOf = async () => {
+    if (!cnNames) {
+      cnNames = await loadNames('cn', { local: LOCAL_NAMES || LOCAL });
+      console.log(`cn character_table：${Object.keys(cnNames).length} 个 charId`);
+    }
+    return cnNames;
+  };
 
   let problems = 0;
   for (const server of SERVERS) {
     const dir = SERVER_DIR[server];
+    const file = path.join(DATA, `banners_cla_${server}.json`);
+    /* ⚠️ 版本号用**整段文本**（trim 过），不要只取第一行 —— 三服 `data_version.txt` 长这样：
+         cn: `Stream://torappu-data/v077/rel77.0` / `Change:123576 on 2026/09/17` / `VersionControl:77.6.0`
+         en: `Stream:` / `Change:` / `VersionControl:51.10.0`   ← 首行是空的！
+       所以能区分版本的是「整段」（en/tw 靠 `VersionControl`）。 */
     const version = await readDataVersion(dir, { local: LOCAL });
+    /** 版本号是多行的（cn 三行、en/tw 首行还是空的），打日志时压成一行 */
+    const verShort = version.replace(/\s+/g, ' ').trim();
+
+    let prev = null;
+    try {
+      prev = JSON.parse(await fs.readFile(file, 'utf8'));
+    } catch {
+      /* 首次产出 */
+    }
+
+    /* ⚠️ **短路**：`data_version.txt` 没变就**整段跳过** —— 连 `character_table` 都不下。
+       实测 `data_version` 覆盖所有表变更（**热更新也会推进它**），所以不会漏更新。见预研 §7.1 / §9.2。 */
+    if (!CHECK && !FORCE && prev && prev.dataVersion === version) {
+      console.log(`\n${server}：data_version 未变（${verShort}），跳过`);
+      continue;
+    }
+
     const gacha = await loadTable(dir, 'gacha_table.json', { local: LOCAL });
-    const mid = extractMid(gacha, cnNames);
+    const mid = extractMid(gacha, await nameOf());
 
     if (DUMP) {
       console.log(`\n--- ${server} 抽出的前 2 条 ---`);
@@ -213,7 +245,17 @@ async function main() {
     }
 
     if (CHECK) {
+      /* 对撞对象 = **站点实际用的那一套**（`banners_<server>.json` + 合并 `banners_cla_<server>.json`）。
+         ⚠️ 2026-10-06 之前这里比的是 wiki 抓取的中坚 —— 那批数据已经不在主文件里了，
+         当时的实测结果留档在 `akGachaDocs/resource/官方解包数据（ArknightsGamedata）预研.md` §4。
+         现在这条退化成「跑出来的和已落盘的是否一致」的回归检查：正常应是 0 差异。 */
       const raw = JSON.parse(await fs.readFile(path.join(DATA, `banners_${server}.json`), 'utf8'));
+      try {
+        const prevMid = JSON.parse(await fs.readFile(path.join(DATA, `banners_cla_${server}.json`), 'utf8'));
+        if (prevMid.banners) Object.assign(raw, prevMid.banners);
+      } catch {
+        /* 还没有中坚文件 */
+      }
       problems += report(server, version, mid, raw);
       continue;
     }
@@ -223,16 +265,9 @@ async function main() {
           否则版本号一动就是一次只改两行的空提交。代价：「版本变了但内容没变」时下次还会重下，
           这个代价可接受（见预研 §7.1）。 */
     const banners = toBannerMap(mid);
-    const file = path.join(DATA, `banners_mid_${server}.json`);
-    let prev = null;
-    try {
-      prev = JSON.parse(await fs.readFile(file, 'utf8'));
-    } catch {
-      /* 首次产出 */
-    }
     const changed = JSON.stringify(prev?.banners || null) !== JSON.stringify(banners);
     if (!changed && !FORCE) {
-      console.log(`\n${server}：内容无变化，不写盘（data_version ${version}）`);
+      console.log(`\n${server}：内容无变化，不写盘（data_version ${verShort}）`);
       continue;
     }
     await fs.writeFile(
@@ -250,7 +285,7 @@ async function main() {
       'utf8'
     );
     console.log(
-      `\n${server}：已写入 data/banners_mid_${server}.json —— 中坚 ${mid.classic.length} / 甄选 ${mid.clafes.length}（data_version ${version}）`
+      `\n${server}：已写入 data/banners_cla_${server}.json —— 中坚 ${mid.classic.length} / 甄选 ${mid.clafes.length}（data_version ${verShort}）`
     );
   }
 

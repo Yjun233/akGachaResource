@@ -56,10 +56,14 @@ const SERVERS = [
 /** 国服这三个数据来源页（写进 metadata.sourcePages）；其余来源由各自脚本追加 */
 const CN_SOURCE_PAGES = [
   '卡池一览/常驻标准寻访',
-  '卡池一览/常驻中坚寻访&中坚甄选',
   '卡池一览/限时寻访',
   '寻访规则',
+  // ⚠️ 「卡池一览/常驻中坚寻访&中坚甄选」2026-10-06 起不再作为来源 ——
+  //    中坚改由官方解包数据提供，见 scripts/fetch-gamedata.mjs
 ];
+
+/** ⚠️ **已停用**的来源页：旧 metadata 里可能还留着，写回时要**主动滤掉**（见 sourcePages 那段） */
+const RETIRED_SOURCE_PAGES = ['卡池一览/常驻中坚寻访&中坚甄选'];
 
 const API = 'https://prts.wiki/api.php';
 
@@ -498,7 +502,9 @@ async function fetchBannerPages() {
   console.log('· 抓取卡池页面 ...');
   const out = {};
 
-  const indexPages = ['卡池一览/常驻标准寻访', '卡池一览/常驻中坚寻访&中坚甄选'];
+  /* ⚠️ 只抓「常驻标准寻访」这个索引页 —— 「常驻中坚寻访&中坚甄选」**2026-10-06 起不再抓**
+     （中坚已改由官方解包提供，理由见下面 classic / clafes 那段注释）。 */
+  const indexPages = ['卡池一览/常驻标准寻访'];
   const index = await fetchWikitext(indexPages);
   const subPages = [];
   for (const [title, content] of Object.entries(index)) {
@@ -578,52 +584,14 @@ function buildBanners(pages, opMeta) {
     }
   }
 
-  // ---- 常驻中坚寻访 & 中坚甄选 -> classic / clafes
-  const clIndex = pages['卡池一览/常驻中坚寻访&中坚甄选'];
-  for (const sub of clIndex.subPages) {
-    const content = pages[sub];
-    if (!content) continue;
-    for (const row of parseTableRows(content)) {
-      const cells = parseCells(row);
-      if (cells.length < 5) continue;
-      const serialCell = cells[0].replace(/\s+/g, '');
-      const [startDate, endDate] = parseTimeRange(cells[2]);
-      if (!startDate) continue;
-      const rowText = row.join('\n');
-      const isSelection = rowText.includes('可甄选6★干员');
-      let type;
-      let num;
-      if (isSelection) {
-        type = 'clafes';
-        num = /(\d+)/.exec(serialCell)?.[1] ?? '0';
-      } else if (/^\d+$/.test(serialCell)) {
-        type = 'classic';
-        num = serialCell;
-      } else {
-        warnings.push(`中坚寻访表头无法识别: ${serialCell}`);
-        continue;
-      }
-      const prefix = type === 'clafes' ? '中坚甄选' : '常驻中坚寻访';
-      const datePart = startDate.replace(/-/g, '');
-      const rawOps = isSelection
-        ? (() => {
-            const sel = parseSelectionCell(rowText);
-            return [
-              ...sel.six.map((a) => ({ ...a, col: 6 })),
-              ...sel.five.map((a) => ({ ...a, col: 5 })),
-            ];
-          })()
-        : pickOps(cells, 3, 4).map((a) => ({ ...a, col: a.col === 6 ? 6 : 5 }));
-      banners.push({
-        id: `${datePart}_${type}_${pad4(num)}`,
-        name: `${prefix}${Number(num)}`,
-        type,
-        startDate,
-        endDate,
-        rawOps,
-      });
-    }
-  }
+  /* ---- 常驻中坚寻访 & 中坚甄选：**2026-10-06 起不再从 PRTS 抓** ----
+     改由**官方解包数据**提供 → `scripts/fetch-gamedata.mjs` 产出 `data/banners_cla_<server>.json`，
+     站点侧（`loadData.js`）合并。原因见 `akGachaDocs/resource/官方解包数据（ArknightsGamedata）预研.md`：
+     wiki 的中坚数据会**漏写**（中坚甄选少一个六星）也会**记错进店位**，而官方解包有完整的
+     干员名单 + 明确的进店位（`main6RarityCharId` / `rare5CharList[0]`），且三服都有。
+     ⚠️ 连带两处也改了：上面 `indexPages` 里已移除那个索引页（所以本函数不再抓它的子页）；
+     `CN_SOURCE_PAGES` 里也去掉了它。
+     ⚠️ 但「寻访规则」页**仍要抓** —— `classicDate`（干员转入中坚的批次）来自那里，见 `fetchClassicDates()`。 */
 
   // ---- 限时寻访 -> limited / joint / stdfes / mainfes / single / five
   const limitedContent = pages['卡池一览/限时寻访'];
@@ -1015,7 +983,10 @@ async function main() {
        在 CI 里就是一堆空提交。 */
     sourcePages: [
       ...CN_SOURCE_PAGES,
-      ...((prevMeta.sourcePages || []).filter((p) => !CN_SOURCE_PAGES.includes(p))),
+      /* ⚠️ 只沿用**别人追加的**来源页（国际服 / 繁中服），并且要把**已停用的国服页**滤掉 ——
+         否则「卡池一览/常驻中坚寻访&中坚甄选」会一直残留在旧 metadata 里
+         （它已不在 CN_SOURCE_PAGES 里，但因为不属于 CN_SOURCE_PAGES 就被当成「别人加的」留下了）。 */
+      ...((prevMeta.sourcePages || []).filter((p) => !CN_SOURCE_PAGES.includes(p) && !RETIRED_SOURCE_PAGES.includes(p))),
     ],
     operatorCount: Object.keys(operators).length,
   };

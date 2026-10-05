@@ -1,0 +1,6349 @@
+{
+  "generatedAt": "2026-10-06",
+  "dataVersion": "Stream://torappu-data/v077/rel77.0\nChange:123576 on 2026/09/17\nVersionControl:77.6.0",
+  "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
+  "banners": {
+    "20230406_classic_0001": {
+      "type": "classic",
+      "startDate": "2023-04-06",
+      "endDate": "2023-04-20",
+      "upOperators": [
+        {
+          "name": "煌",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫拉格",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "慑砂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访1",
+      "scName": "常驻中坚寻访1",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230420_classic_0002": {
+      "type": "classic",
+      "startDate": "2023-04-20",
+      "endDate": "2023-05-04",
+      "upOperators": [
+        {
+          "name": "斯卡蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星熊",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访2",
+      "scName": "常驻中坚寻访2",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230504_classic_0003": {
+      "type": "classic",
+      "startDate": "2023-05-04",
+      "endDate": "2023-05-18",
+      "upOperators": [
+        {
+          "name": "风笛",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陈",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访3",
+      "scName": "常驻中坚寻访3",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230601_classic_0004": {
+      "type": "classic",
+      "startDate": "2023-06-01",
+      "endDate": "2023-06-15",
+      "upOperators": [
+        {
+          "name": "闪灵",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安洁莉娜",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "布洛卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "苇草",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访4",
+      "scName": "常驻中坚寻访4",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230615_classic_0005": {
+      "type": "classic",
+      "startDate": "2023-06-15",
+      "endDate": "2023-06-29",
+      "upOperators": [
+        {
+          "name": "推进之王",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "能天使",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "惊蛰",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "吽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "送葬人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访5",
+      "scName": "常驻中坚寻访5",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230629_classic_0006": {
+      "type": "classic",
+      "startDate": "2023-06-29",
+      "endDate": "2023-07-13",
+      "upOperators": [
+        {
+          "name": "伊芙利特",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "塞雷娅",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "拉普兰德",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "普罗旺斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "华法琳",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访6",
+      "scName": "常驻中坚寻访6",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230713_classic_0007": {
+      "type": "classic",
+      "startDate": "2023-07-13",
+      "endDate": "2023-07-27",
+      "upOperators": [
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "麦哲伦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "临光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访7",
+      "scName": "常驻中坚寻访7",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230727_classic_0008": {
+      "type": "classic",
+      "startDate": "2023-07-27",
+      "endDate": "2023-08-10",
+      "upOperators": [
+        {
+          "name": "黑",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "艾雅法拉",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "狮蝎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访8",
+      "scName": "常驻中坚寻访8",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230810_classic_0009": {
+      "type": "classic",
+      "startDate": "2023-08-10",
+      "endDate": "2023-08-24",
+      "upOperators": [
+        {
+          "name": "莫斯提马",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "傀影",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "崖心",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星极",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "红",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访9",
+      "scName": "常驻中坚寻访9",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230907_classic_0010": {
+      "type": "classic",
+      "startDate": "2023-09-07",
+      "endDate": "2023-09-21",
+      "upOperators": [
+        {
+          "name": "夜莺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "槐琥",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访10",
+      "scName": "常驻中坚寻访10",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230921_classic_0011": {
+      "type": "classic",
+      "startDate": "2023-09-21",
+      "endDate": "2023-10-05",
+      "upOperators": [
+        {
+          "name": "银灰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "白面鸮",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "守林人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访11",
+      "scName": "常驻中坚寻访11",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20231005_classic_0012": {
+      "type": "classic",
+      "startDate": "2023-10-05",
+      "endDate": "2023-10-19",
+      "upOperators": [
+        {
+          "name": "赫拉格",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "推进之王",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "格劳克斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "初雪",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访12",
+      "scName": "常驻中坚寻访12",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20231019_classic_0013": {
+      "type": "classic",
+      "startDate": "2023-10-19",
+      "endDate": "2023-11-02",
+      "upOperators": [
+        {
+          "name": "陈",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "伊芙利特",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "梅尔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "送葬人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凛冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访13",
+      "scName": "常驻中坚寻访13",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20231102_classic_0014": {
+      "type": "classic",
+      "startDate": "2023-11-02",
+      "endDate": "2023-11-16",
+      "upOperators": [
+        {
+          "name": "星熊",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "风笛",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白金",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "天火",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访14",
+      "scName": "常驻中坚寻访14",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20231130_classic_0015": {
+      "type": "classic",
+      "startDate": "2023-11-30",
+      "endDate": "2023-12-14",
+      "upOperators": [
+        {
+          "name": "安洁莉娜",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "煌",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "慑砂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "真理",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访15",
+      "scName": "常驻中坚寻访15",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20231214_classic_0016": {
+      "type": "classic",
+      "startDate": "2023-12-14",
+      "endDate": "2023-12-28",
+      "upOperators": [
+        {
+          "name": "能天使",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "闪灵",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "槐琥",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访16",
+      "scName": "常驻中坚寻访16",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240111_classic_0017": {
+      "type": "classic",
+      "startDate": "2024-01-11",
+      "endDate": "2024-01-25",
+      "upOperators": [
+        {
+          "name": "傀影",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "黑",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "布洛卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "苇草",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访17",
+      "scName": "常驻中坚寻访17",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240125_classic_0018": {
+      "type": "classic",
+      "startDate": "2024-01-25",
+      "endDate": "2024-02-08",
+      "upOperators": [
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "银灰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "惊蛰",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访18",
+      "scName": "常驻中坚寻访18",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240208_classic_0019": {
+      "type": "classic",
+      "startDate": "2024-02-08",
+      "endDate": "2024-02-22",
+      "upOperators": [
+        {
+          "name": "麦哲伦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "斯卡蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "吽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "华法琳",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "初雪",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访19",
+      "scName": "常驻中坚寻访19",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240307_classic_0020": {
+      "type": "classic",
+      "startDate": "2024-03-07",
+      "endDate": "2024-03-21",
+      "upOperators": [
+        {
+          "name": "艾雅法拉",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莫斯提马",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "拉普兰德",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "普罗旺斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访20",
+      "scName": "常驻中坚寻访20",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240321_classic_0021": {
+      "type": "classic",
+      "startDate": "2024-03-21",
+      "endDate": "2024-04-04",
+      "upOperators": [
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫拉格",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "星极",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "临光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "守林人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访21",
+      "scName": "常驻中坚寻访21",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240404_classic_0022": {
+      "type": "classic",
+      "startDate": "2024-04-04",
+      "endDate": "2024-04-18",
+      "upOperators": [
+        {
+          "name": "塞雷娅",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜莺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "狮蝎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访22",
+      "scName": "常驻中坚寻访22",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240418_classic_0023": {
+      "type": "classic",
+      "startDate": "2024-04-18",
+      "endDate": "2024-05-02",
+      "upOperators": [
+        {
+          "name": "棘刺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "早露",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "红",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "月禾",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "慑砂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访23",
+      "scName": "常驻中坚寻访23",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240502_classic_0024": {
+      "type": "classic",
+      "startDate": "2024-05-02",
+      "endDate": "2024-05-16",
+      "upOperators": [
+        {
+          "name": "银灰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "能天使",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访24",
+      "scName": "常驻中坚寻访24",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240530_classic_0025": {
+      "type": "classic",
+      "startDate": "2024-05-30",
+      "endDate": "2024-06-13",
+      "upOperators": [
+        {
+          "name": "伊芙利特",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星熊",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "格劳克斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访25",
+      "scName": "常驻中坚寻访25",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240613_classic_0026": {
+      "type": "classic",
+      "startDate": "2024-06-13",
+      "endDate": "2024-06-27",
+      "upOperators": [
+        {
+          "name": "风笛",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "斯卡蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "絮雨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安哲拉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访26",
+      "scName": "常驻中坚寻访26",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240627_classic_0027": {
+      "type": "classic",
+      "startDate": "2024-06-27",
+      "endDate": "2024-07-11",
+      "upOperators": [
+        {
+          "name": "煌",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陈",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "空",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凛冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "崖心",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访27",
+      "scName": "常驻中坚寻访27",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240711_classic_0028": {
+      "type": "classic",
+      "startDate": "2024-07-11",
+      "endDate": "2024-07-25",
+      "upOperators": [
+        {
+          "name": "莫斯提马",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "异客",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "送葬人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "狮蝎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访28",
+      "scName": "常驻中坚寻访28",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240808_classic_0029": {
+      "type": "classic",
+      "startDate": "2024-08-08",
+      "endDate": "2024-08-22",
+      "upOperators": [
+        {
+          "name": "温蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "傀影",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "贾维",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "天火",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白面鸮",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访29",
+      "scName": "常驻中坚寻访29",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240822_classic_0030": {
+      "type": "classic",
+      "startDate": "2024-08-22",
+      "endDate": "2024-09-05",
+      "upOperators": [
+        {
+          "name": "闪灵",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "塞雷娅",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "白金",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "梅尔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "临光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访30",
+      "scName": "常驻中坚寻访30",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240905_classic_0031": {
+      "type": "classic",
+      "startDate": "2024-09-05",
+      "endDate": "2024-09-19",
+      "upOperators": [
+        {
+          "name": "瑕光",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安洁莉娜",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "断崖",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "真理",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "惊蛰",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访31",
+      "scName": "常驻中坚寻访31",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240919_classic_0032": {
+      "type": "classic",
+      "startDate": "2024-09-19",
+      "endDate": "2024-10-03",
+      "upOperators": [
+        {
+          "name": "黑",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "麦哲伦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "莱恩哈特",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "槐琥",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "普罗旺斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访32",
+      "scName": "常驻中坚寻访32",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20241003_classic_0033": {
+      "type": "classic",
+      "startDate": "2024-10-03",
+      "endDate": "2024-10-17",
+      "upOperators": [
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "推进之王",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "燧石",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "布洛卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访33",
+      "scName": "常驻中坚寻访33",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20241017_classic_0034": {
+      "type": "classic",
+      "startDate": "2024-10-17",
+      "endDate": "2024-10-31",
+      "upOperators": [
+        {
+          "name": "森蚺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空弦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "苇草",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访34",
+      "scName": "常驻中坚寻访34",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20241031_classic_0035": {
+      "type": "classic",
+      "startDate": "2024-10-31",
+      "endDate": "2024-11-14",
+      "upOperators": [
+        {
+          "name": "铃兰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "艾雅法拉",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "乌有",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "拉普兰德",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访35",
+      "scName": "常驻中坚寻访35",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20241128_classic_0036": {
+      "type": "classic",
+      "startDate": "2024-11-28",
+      "endDate": "2024-12-12",
+      "upOperators": [
+        {
+          "name": "史尔特尔",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "棘刺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "四月",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星极",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访36",
+      "scName": "常驻中坚寻访36",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20241212_classic_0037": {
+      "type": "classic",
+      "startDate": "2024-12-12",
+      "endDate": "2024-12-26",
+      "upOperators": [
+        {
+          "name": "赫拉格",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "奥斯塔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "初雪",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "吽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访37",
+      "scName": "常驻中坚寻访37",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250109_classic_0038": {
+      "type": "classic",
+      "startDate": "2025-01-09",
+      "endDate": "2025-01-23",
+      "upOperators": [
+        {
+          "name": "夜莺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "山",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "华法琳",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蜜蜡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "格劳克斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访38",
+      "scName": "常驻中坚寻访38",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250123_classic_0039": {
+      "type": "classic",
+      "startDate": "2025-01-23",
+      "endDate": "2025-02-06",
+      "upOperators": [
+        {
+          "name": "煌",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "嵯峨",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "熔泉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白金",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访39",
+      "scName": "常驻中坚寻访39",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250220_classic_0040": {
+      "type": "classic",
+      "startDate": "2025-02-20",
+      "endDate": "2025-03-06",
+      "upOperators": [
+        {
+          "name": "风笛",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "泥岩",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "卡夫卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "爱丽丝",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访40",
+      "scName": "常驻中坚寻访40",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250306_classic_0041": {
+      "type": "classic",
+      "startDate": "2025-03-06",
+      "endDate": "2025-03-20",
+      "upOperators": [
+        {
+          "name": "早露",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "守林人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "极境",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "贾维",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访41",
+      "scName": "常驻中坚寻访41",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250320_classic_0042": {
+      "type": "classic",
+      "startDate": "2025-03-20",
+      "endDate": "2025-04-03",
+      "upOperators": [
+        {
+          "name": "能天使",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "温蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "红",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "石棉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访42",
+      "scName": "常驻中坚寻访42",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250403_classic_0043": {
+      "type": "classic",
+      "startDate": "2025-04-03",
+      "endDate": "2025-04-17",
+      "upOperators": [
+        {
+          "name": "银灰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "伊芙利特",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "慑砂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "月禾",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访43",
+      "scName": "常驻中坚寻访43",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250417_classic_0044": {
+      "type": "classic",
+      "startDate": "2025-04-17",
+      "endDate": "2025-05-01",
+      "upOperators": [
+        {
+          "name": "莫斯提马",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "闪灵",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莱恩哈特",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访44",
+      "scName": "常驻中坚寻访44",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250501_classic_0045": {
+      "type": "classic",
+      "startDate": "2025-05-01",
+      "endDate": "2025-05-15",
+      "upOperators": [
+        {
+          "name": "空弦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "水月",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安哲拉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访45",
+      "scName": "常驻中坚寻访45",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250529_classic_0046": {
+      "type": "classic",
+      "startDate": "2025-05-29",
+      "endDate": "2025-06-12",
+      "upOperators": [
+        {
+          "name": "星熊",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "傀影",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "絮雨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访46",
+      "scName": "常驻中坚寻访46",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250612_classic_0047": {
+      "type": "classic",
+      "startDate": "2025-06-12",
+      "endDate": "2025-06-26",
+      "upOperators": [
+        {
+          "name": "斯卡蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "瑕光",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "空",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凛冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访47",
+      "scName": "常驻中坚寻访47",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250626_classic_0048": {
+      "type": "classic",
+      "startDate": "2025-06-26",
+      "endDate": "2025-07-10",
+      "upOperators": [
+        {
+          "name": "陈",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "煌",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "崖心",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "狮蝎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "熔泉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访48",
+      "scName": "常驻中坚寻访48",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250710_classic_0049": {
+      "type": "classic",
+      "startDate": "2025-07-10",
+      "endDate": "2025-07-24",
+      "upOperators": [
+        {
+          "name": "异客",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "黑",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "白面鸮",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "天火",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "送葬人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访49",
+      "scName": "常驻中坚寻访49",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250724_classic_0050": {
+      "type": "classic",
+      "startDate": "2025-07-24",
+      "endDate": "2025-08-07",
+      "upOperators": [
+        {
+          "name": "塞雷娅",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "森蚺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "临光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "梅尔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "苇草",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访50",
+      "scName": "常驻中坚寻访50",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250807_classic_0051": {
+      "type": "classic",
+      "startDate": "2025-08-07",
+      "endDate": "2025-08-21",
+      "upOperators": [
+        {
+          "name": "麦哲伦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "风笛",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "断崖",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "惊蛰",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "华法琳",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访51",
+      "scName": "常驻中坚寻访51",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250904_classic_0052": {
+      "type": "classic",
+      "startDate": "2025-09-04",
+      "endDate": "2025-09-18",
+      "upOperators": [
+        {
+          "name": "远牙",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "铃兰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "真理",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "槐琥",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访52",
+      "scName": "常驻中坚寻访52",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250918_classic_0053": {
+      "type": "classic",
+      "startDate": "2025-09-18",
+      "endDate": "2025-10-02",
+      "upOperators": [
+        {
+          "name": "安洁莉娜",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "银灰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "普罗旺斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "布洛卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访53",
+      "scName": "常驻中坚寻访53",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20251002_classic_0054": {
+      "type": "classic",
+      "startDate": "2025-10-02",
+      "endDate": "2025-10-16",
+      "upOperators": [
+        {
+          "name": "推进之王",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凯尔希",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "拉普兰德",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "四月",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访54",
+      "scName": "常驻中坚寻访54",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20251016_classic_0055": {
+      "type": "classic",
+      "startDate": "2025-10-16",
+      "endDate": "2025-10-30",
+      "upOperators": [
+        {
+          "name": "灵知",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莫斯提马",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "燧石",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "月禾",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访55",
+      "scName": "常驻中坚寻访55",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20251030_classic_0056": {
+      "type": "classic",
+      "startDate": "2025-10-30",
+      "endDate": "2025-11-13",
+      "upOperators": [
+        {
+          "name": "艾雅法拉",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫拉格",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "乌有",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "初雪",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "红",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访56",
+      "scName": "常驻中坚寻访56",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20251127_classic_0057": {
+      "type": "classic",
+      "startDate": "2025-11-27",
+      "endDate": "2025-12-11",
+      "upOperators": [
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "史尔特尔",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星极",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访57",
+      "scName": "常驻中坚寻访57",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20251211_classic_0058": {
+      "type": "classic",
+      "startDate": "2025-12-11",
+      "endDate": "2025-12-25",
+      "upOperators": [
+        {
+          "name": "棘刺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜莺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "绮良",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "奥斯塔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访58",
+      "scName": "常驻中坚寻访58",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260108_classic_0059": {
+      "type": "classic",
+      "startDate": "2026-01-08",
+      "endDate": "2026-01-22",
+      "upOperators": [
+        {
+          "name": "山",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "早露",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "吽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "格劳克斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访59",
+      "scName": "常驻中坚寻访59",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260122_classic_0060": {
+      "type": "classic",
+      "startDate": "2026-01-22",
+      "endDate": "2026-02-05",
+      "upOperators": [
+        {
+          "name": "伊芙利特",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "能天使",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "桑葚",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白金",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蜜蜡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访60",
+      "scName": "常驻中坚寻访60",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260205_classic_0061": {
+      "type": "classic",
+      "startDate": "2026-02-05",
+      "endDate": "2026-02-19",
+      "upOperators": [
+        {
+          "name": "卡涅利安",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "琴柳",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "极光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凛冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访61",
+      "scName": "常驻中坚寻访61",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260305_classic_0062": {
+      "type": "classic",
+      "startDate": "2026-03-05",
+      "endDate": "2026-03-19",
+      "upOperators": [
+        {
+          "name": "嵯峨",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星熊",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "蚀清",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "爱丽丝",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "极境",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访62",
+      "scName": "常驻中坚寻访62",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260319_classic_0063": {
+      "type": "classic",
+      "startDate": "2026-03-19",
+      "endDate": "2026-04-02",
+      "upOperators": [
+        {
+          "name": "泥岩",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "帕拉斯",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "卡夫卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赤冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "天火",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访63",
+      "scName": "常驻中坚寻访63",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260402_classic_0064": {
+      "type": "classic",
+      "startDate": "2026-04-02",
+      "endDate": "2026-04-16",
+      "upOperators": [
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "斯卡蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "贾维",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "守林人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "真理",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访64",
+      "scName": "常驻中坚寻访64",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260416_classic_0065": {
+      "type": "classic",
+      "startDate": "2026-04-16",
+      "endDate": "2026-04-30",
+      "upOperators": [
+        {
+          "name": "温蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "塞雷娅",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "灰毫",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "羽毛笔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "断崖",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访65",
+      "scName": "常驻中坚寻访65",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260430_classic_0066": {
+      "type": "classic",
+      "startDate": "2026-04-30",
+      "endDate": "2026-05-14",
+      "upOperators": [
+        {
+          "name": "闪灵",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陈",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "石棉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "槐琥",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访66",
+      "scName": "常驻中坚寻访66",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260528_classic_0067": {
+      "type": "classic",
+      "startDate": "2026-05-28",
+      "endDate": "2026-06-11",
+      "upOperators": [
+        {
+          "name": "瑕光",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "异客",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "慑砂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莱恩哈特",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "燧石",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访67",
+      "scName": "常驻中坚寻访67",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260611_classic_0068": {
+      "type": "classic",
+      "startDate": "2026-06-11",
+      "endDate": "2026-06-25",
+      "upOperators": [
+        {
+          "name": "水月",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "焰尾",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "絮雨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安哲拉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访68",
+      "scName": "常驻中坚寻访68",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260625_classic_0069": {
+      "type": "classic",
+      "startDate": "2026-06-25",
+      "endDate": "2026-07-09",
+      "upOperators": [
+        {
+          "name": "傀影",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空弦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "熔泉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访69",
+      "scName": "常驻中坚寻访69",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260709_classic_0070": {
+      "type": "classic",
+      "startDate": "2026-07-09",
+      "endDate": "2026-07-23",
+      "upOperators": [
+        {
+          "name": "煌",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "麦哲伦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "狮蝎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "送葬人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访70",
+      "scName": "常驻中坚寻访70",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260723_classic_0071": {
+      "type": "classic",
+      "startDate": "2026-07-23",
+      "endDate": "2026-08-06",
+      "upOperators": [
+        {
+          "name": "黑",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安洁莉娜",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "绮良",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "乌有",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访71",
+      "scName": "常驻中坚寻访71",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260806_classic_0072": {
+      "type": "classic",
+      "startDate": "2026-08-06",
+      "endDate": "2026-08-20",
+      "upOperators": [
+        {
+          "name": "森蚺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "远牙",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "崖心",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访72",
+      "scName": "常驻中坚寻访72",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260903_classic_0073": {
+      "type": "classic",
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-17",
+      "upOperators": [
+        {
+          "name": "铃兰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "推进之王",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "白面鸮",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "临光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "奥斯塔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访73",
+      "scName": "常驻中坚寻访73",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260917_classic_0074": {
+      "type": "classic",
+      "startDate": "2026-09-17",
+      "endDate": "2026-10-01",
+      "upOperators": [
+        {
+          "name": "风笛",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "艾雅法拉",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "苇草",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "华法琳",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "初雪",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访74",
+      "scName": "常驻中坚寻访74",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20261001_classic_0075": {
+      "type": "classic",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-15",
+      "upOperators": [
+        {
+          "name": "银灰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灵知",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "惊蛰",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "梅尔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访75",
+      "scName": "常驻中坚寻访75",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230518_clafes_0001": {
+      "type": "clafes",
+      "startDate": "2023-05-18",
+      "endDate": "2023-06-01",
+      "upOperators": [
+        {
+          "name": "推进之王",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "伊芙利特",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "艾雅法拉",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜莺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "塞雷娅",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "银灰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "黑",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "麦哲伦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莫斯提马",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "傀影",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白面鸮",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凛冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "拉普兰德",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白金",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "天火",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "梅尔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "华法琳",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "临光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "红",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "普罗旺斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "守林人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "崖心",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "初雪",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "真理",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "狮蝎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "格劳克斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星极",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "送葬人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "槐琥",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选1",
+      "scName": "中坚甄选1",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20230824_clafes_0002": {
+      "type": "clafes",
+      "startDate": "2023-08-24",
+      "endDate": "2023-09-07",
+      "upOperators": [
+        {
+          "name": "能天使",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "艾雅法拉",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安洁莉娜",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "闪灵",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜莺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星熊",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "斯卡蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陈",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫拉格",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "煌",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "风笛",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白面鸮",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "天火",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "梅尔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "临光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "普罗旺斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "守林人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "崖心",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "初雪",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "真理",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "槐琥",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "苇草",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "布洛卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "吽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "惊蛰",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "慑砂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选2",
+      "scName": "中坚甄选2",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20231116_clafes_0003": {
+      "type": "clafes",
+      "startDate": "2023-11-16",
+      "endDate": "2023-11-30",
+      "upOperators": [
+        {
+          "name": "推进之王",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "伊芙利特",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "塞雷娅",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "银灰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "斯卡蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "黑",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫拉格",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "麦哲伦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莫斯提马",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "傀影",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凛冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "拉普兰德",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白金",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "华法琳",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "红",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "狮蝎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "格劳克斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星极",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "送葬人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "苇草",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "吽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选3",
+      "scName": "中坚甄选3",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240222_clafes_0004": {
+      "type": "clafes",
+      "startDate": "2024-02-22",
+      "endDate": "2024-03-07",
+      "upOperators": [
+        {
+          "name": "能天使",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "推进之王",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "伊芙利特",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安洁莉娜",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "闪灵",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星熊",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "塞雷娅",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陈",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "黑",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "煌",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "风笛",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白面鸮",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凛冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "拉普兰德",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白金",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "天火",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "华法琳",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "临光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "红",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "守林人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "崖心",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "初雪",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "狮蝎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星极",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "送葬人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选4",
+      "scName": "中坚甄选4",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240516_clafes_0005": {
+      "type": "clafes",
+      "startDate": "2024-05-16",
+      "endDate": "2024-05-30",
+      "upOperators": [
+        {
+          "name": "艾雅法拉",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜莺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "斯卡蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫拉格",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "麦哲伦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莫斯提马",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "傀影",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "温蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "早露",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "棘刺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白面鸮",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "拉普兰德",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "梅尔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "红",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "普罗旺斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "真理",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "格劳克斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "槐琥",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "苇草",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "布洛卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "吽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "惊蛰",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "慑砂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "极境",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莱恩哈特",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "贾维",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "爱丽丝",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选5",
+      "scName": "中坚甄选5",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20240725_clafes_0006": {
+      "type": "clafes",
+      "startDate": "2024-07-25",
+      "endDate": "2024-08-08",
+      "upOperators": [
+        {
+          "name": "能天使",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "伊芙利特",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "闪灵",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜莺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "银灰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陈",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "黑",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "煌",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "风笛",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "瑕光",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "泥岩",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "嵯峨",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白面鸮",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凛冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白金",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "天火",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "华法琳",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "临光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "守林人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "崖心",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "初雪",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "狮蝎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星极",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "送葬人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "极境",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蜜蜡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "奥斯塔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "卡夫卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "熔泉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选6",
+      "scName": "中坚甄选6",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20241114_clafes_0007": {
+      "type": "clafes",
+      "startDate": "2024-11-14",
+      "endDate": "2024-11-28",
+      "upOperators": [
+        {
+          "name": "推进之王",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安洁莉娜",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星熊",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "塞雷娅",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "斯卡蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫拉格",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莫斯提马",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "瑕光",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "山",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空弦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "异客",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白面鸮",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "梅尔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "红",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "普罗旺斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "真理",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "格劳克斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "槐琥",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "苇草",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "布洛卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "惊蛰",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "极境",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "石棉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莱恩哈特",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "贾维",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安哲拉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "燧石",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "絮雨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选7",
+      "scName": "中坚甄选7",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250206_clafes_0008": {
+      "type": "clafes",
+      "startDate": "2025-02-06",
+      "endDate": "2025-02-20",
+      "upOperators": [
+        {
+          "name": "能天使",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "艾雅法拉",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "银灰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "麦哲伦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "煌",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "温蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "铃兰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "棘刺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "森蚺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "史尔特尔",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "嵯峨",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凛冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "拉普兰德",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "天火",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "华法琳",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "临光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "守林人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "崖心",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "初雪",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "狮蝎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星极",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "送葬人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "吽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "慑砂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "月禾",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "断崖",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蜜蜡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "四月",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选8",
+      "scName": "中坚甄选8",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250515_clafes_0009": {
+      "type": "clafes",
+      "startDate": "2025-05-15",
+      "endDate": "2025-05-29",
+      "upOperators": [
+        {
+          "name": "伊芙利特",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安洁莉娜",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜莺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "斯卡蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陈",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "风笛",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "史尔特尔",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "泥岩",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "山",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "琴柳",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灵知",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白面鸮",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白金",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "梅尔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "红",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "真理",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "格劳克斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "槐琥",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "苇草",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "布洛卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "惊蛰",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "极境",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "石棉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莱恩哈特",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "贾维",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "燧石",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "奥斯塔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "卡夫卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "爱丽丝",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "乌有",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "熔泉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赤冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "极光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选9",
+      "scName": "中坚甄选9",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20250821_clafes_0010": {
+      "type": "clafes",
+      "startDate": "2025-08-21",
+      "endDate": "2025-09-04",
+      "upOperators": [
+        {
+          "name": "闪灵",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星熊",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "黑",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫拉格",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "傀影",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "温蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "早露",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "史尔特尔",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "瑕光",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凯尔希",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "焰尾",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "雷蛇",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "普罗旺斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "守林人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "初雪",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星极",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "吽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "慑砂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "月禾",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "断崖",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蜜蜡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安哲拉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "四月",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "絮雨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "绮良",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蚀清",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选10",
+      "scName": "中坚甄选10",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20251113_clafes_0011": {
+      "type": "clafes",
+      "startDate": "2025-11-13",
+      "endDate": "2025-11-27",
+      "upOperators": [
+        {
+          "name": "能天使",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "塞雷娅",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "煌",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "棘刺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "森蚺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "泥岩",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "山",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空弦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "嵯峨",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "异客",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "卡涅利安",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "帕拉斯",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凛冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "天火",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "梅尔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "华法琳",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "临光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "崖心",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "狮蝎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "格劳克斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "送葬人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "苇草",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "惊蛰",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "极境",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "石棉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莱恩哈特",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "贾维",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "奥斯塔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "卡夫卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "爱丽丝",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "熔泉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "羽毛笔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "桑葚",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选11",
+      "scName": "中坚甄选11",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260219_clafes_0012": {
+      "type": "clafes",
+      "startDate": "2026-02-19",
+      "endDate": "2026-03-05",
+      "upOperators": [
+        {
+          "name": "推进之王",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安洁莉娜",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陈",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "麦哲伦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "风笛",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "傀影",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "早露",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "铃兰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "泥岩",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "山",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "水月",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "远牙",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "拉普兰德",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白金",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "陨星",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "普罗旺斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "真理",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "槐琥",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "布洛卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "吽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "慑砂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "石棉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "月禾",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "断崖",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蜜蜡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "安哲拉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "燧石",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "四月",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "絮雨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "卡夫卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "乌有",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "熔泉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰毫",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选12",
+      "scName": "中坚甄选12",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260514_clafes_0013": {
+      "type": "clafes",
+      "startDate": "2026-05-14",
+      "endDate": "2026-05-28",
+      "upOperators": [
+        {
+          "name": "艾雅法拉",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星熊",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "银灰",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莫斯提马",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "温蒂",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "史尔特尔",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凯尔希",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "琴柳",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "焰尾",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灵知",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "澄闪",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "多萝西",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "德克萨斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蓝毒",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫默",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "食铁兽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜魔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "星极",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "惊蛰",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "巫恋",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "极境",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "莱恩哈特",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "贾维",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "奥斯塔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "爱丽丝",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "乌有",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赤冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "绮良",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "羽毛笔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "桑葚",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰毫",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蚀清",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "极光",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夜半",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "夏栎",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选13",
+      "scName": "中坚甄选13",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    },
+    "20260820_clafes_0014": {
+      "type": "clafes",
+      "startDate": "2026-08-20",
+      "endDate": "2026-09-03",
+      "upOperators": [
+        {
+          "name": "闪灵",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "赫拉格",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "阿",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "刻俄柏",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "棘刺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "瑕光",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "嵯峨",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "异客",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "卡涅利安",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "帕拉斯",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "号角",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "黑键",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凛冬",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "芙兰卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "拉普兰德",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "幽灵鲨",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "白金",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "天火",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "梅尔",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "红",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "可颂",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "普罗旺斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "守林人",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "空",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "格劳克斯",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "布洛卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "吽",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "石棉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "月禾",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "断崖",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蜜蜡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "四月",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "卡夫卡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "风丸",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "洛洛",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "name": "中坚甄选14",
+      "scName": "中坚甄选14",
+      "enName": null,
+      "actType": null,
+      "actName": null
+    }
+  }
+}

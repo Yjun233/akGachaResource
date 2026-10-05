@@ -44,6 +44,12 @@ jobs:
       - name: 抓取皮肤 / 密录 / 模组（国服 · PRTS Wiki）
         run: npm run build:extras
 
+      # 顺带把**官方解包数据**也刷一遍（三服的中坚）。它自带 `data_version.txt` 短路，
+      # 版本没变时只下几个几十字节的版本文件就返回。
+      - name: 抓取官方解包数据（三服中坚）
+        continue-on-error: true
+        run: npm run build:gamedata
+
       - name: 判断有没有实际变化
         id: diff
         run: |
@@ -70,7 +76,7 @@ jobs:
       - name: 刷新 jsDelivr 缓存
         if: steps.diff.outputs.changed == 'true'
         run: |
-          for f in skins.json memoirs.json modules.json; do
+          for f in skins.json memoirs.json modules.json banners_cla_sc.json banners_cla_en.json banners_cla_tc.json; do
             body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
             echo "purge data/$f -> $(echo "$body" | head -c 120)"
           done
