@@ -9524,6 +9524,12 @@
         "isShop": false
       },
       {
+        "name": "刻俄柏",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
         "name": "能天使",
         "rarity": 6,
         "isLimited": false,
@@ -17337,12 +17343,12 @@
       }
     ]
   },
-  "20260924_double_0176": {
+  "20260925_double_0176": {
     "name": "常驻标准寻访176",
     "scName": "常驻标准寻访176",
     "enName": null,
     "type": "double",
-    "startDate": "2026-09-24",
+    "startDate": "2026-09-25",
     "endDate": "2026-10-09",
     "upOperators": [
       {
@@ -17371,6 +17377,46 @@
       },
       {
         "name": "明椒",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": true
+      }
+    ]
+  },
+  "20261006_classic_0063": {
+    "name": "常驻中坚寻访63",
+    "scName": "常驻中坚寻访63",
+    "enName": null,
+    "type": "classic",
+    "startDate": "2026-10-06",
+    "endDate": "2026-10-20",
+    "upOperators": [
+      {
+        "name": "焰尾",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "星熊",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "name": "食铁兽",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "梅尔",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "熔泉",
         "rarity": 5,
         "isLimited": false,
         "isShop": true

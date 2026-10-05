@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-05",
-  "enGeneratedAt": "2026-10-04",
+  "enGeneratedAt": "2026-10-05",
   "tcGeneratedAt": "2026-10-04",
   "defaultServer": "sc",
   "servers": [
@@ -16,9 +16,9 @@
       "id": "en",
       "label": "国际服",
       "available": true,
-      "bannerCount": 389,
+      "bannerCount": 390,
       "earliestBanner": "2020-01-16",
-      "latestBanner": "2026-09-24"
+      "latestBanner": "2026-10-06"
     },
     {
       "id": "tc",
