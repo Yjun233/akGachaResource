@@ -9,6 +9,10 @@
  * 输出：
  *   data/banners_cla_<server>.json   常驻中坚寻访 + 中坚甄选（**单独一个文件**，不与
  *                                    `banners_<server>.json` 混写；站点侧合并）
+ *   data/metadata.json 的 `cla` 键     中坚元信息的**镜像**：`{ source, sc|en|tc: { generatedAt, count } }`
+ *                                    —— 站点左栏「中坚数据更新」读它。内容一致就不写盘。
+ *                                    ⚠️ 三个 fetch-data 脚本构造 metadata 时是**全新对象**，
+ *                                    所以它们各自把 `cla` 原样沿用（不然会被抹掉）。
  *
  * 口径的**权威说明**在 `akGachaDocs/resource/官方解包数据（ArknightsGamedata）预研.md`
  * （实测数字、字段语义、目标工作流 §9）。本文件只实现，不再重复论证。
@@ -48,12 +52,17 @@ import {
   extractMid,
   toBannerMap,
 } from './lib/gamedata.mjs';
+import { orderMeta } from './lib/meta.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
+const META_FILE = path.join(DATA, 'metadata.json');
 
 const SERVER_LABEL = { sc: '国服', en: '国际服', tc: '繁中服' };
+/** 固定三服顺序 —— `metadata.cla` 的键序靠它钉死（键序一变，另一脚本就会看成「有变化」） */
+const CLA_SERVERS = ['sc', 'en', 'tc'];
+const CLA_SOURCE = 'https://github.com/ArknightsAssets/ArknightsGamedata';
 
 /* ---------------- 参数 ---------------- */
 const argv = process.argv.slice(2);
@@ -193,6 +202,15 @@ function report(server, version, mid, rawScraped) {
   return problems.length;
 }
 
+/** 读 metadata.json（读不出来返回 null —— 调用方要保证不因此写出残缺文件） */
+async function readMeta() {
+  try {
+    return JSON.parse(await fs.readFile(META_FILE, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
 /* ---------------- 主流程 ---------------- */
 async function main() {
   console.log(`官方解包抽取：${CHECK ? '--check（只对撞、不落盘）' : '写盘模式'}`);
@@ -209,6 +227,16 @@ async function main() {
     }
     return cnNames;
   };
+
+  /* `metadata.cla` = 中坚系列元信息的**镜像**（站点左栏「中坚数据更新」读它）。
+     ⚠️ 三个 fetch-data 脚本构造 metadata 时用的是**全新对象**，所以它们各自把 `cla` 原样沿用；
+     这里先读旧值，是为了「只跑了部分服」（`--servers sc`）时保住另外两服。 */
+  const prevMeta = CHECK ? null : await readMeta();
+  const claMeta = { source: CLA_SOURCE };
+  for (const s of CLA_SERVERS) {
+    const v = prevMeta?.cla?.[s];
+    claMeta[s] = { generatedAt: v?.generatedAt ?? null, count: v?.count ?? null };
+  }
 
   let problems = 0;
   for (const server of SERVERS) {
@@ -233,6 +261,11 @@ async function main() {
        实测 `data_version` 覆盖所有表变更（**热更新也会推进它**），所以不会漏更新。见预研 §7.1 / §9.2。 */
     if (!CHECK && !FORCE && prev && prev.dataVersion === version) {
       console.log(`\n${server}：data_version 未变（${verShort}），跳过`);
+      /* 短路时 cla 取**文件里的真实值** —— 它才是权威，保证 metadata 与文件永远一致 */
+      claMeta[server] = {
+        generatedAt: prev.generatedAt ?? null,
+        count: Object.keys(prev.banners || {}).length,
+      };
       continue;
     }
 
@@ -268,6 +301,10 @@ async function main() {
     const changed = JSON.stringify(prev?.banners || null) !== JSON.stringify(banners);
     if (!changed && !FORCE) {
       console.log(`\n${server}：内容无变化，不写盘（data_version ${verShort}）`);
+      claMeta[server] = {
+        generatedAt: prev?.generatedAt ?? null,
+        count: Object.keys(banners).length,
+      };
       continue;
     }
     await fs.writeFile(
@@ -276,7 +313,7 @@ async function main() {
         {
           generatedAt: todayLocal,
           dataVersion: version,
-          source: 'https://github.com/ArknightsAssets/ArknightsGamedata',
+          source: CLA_SOURCE,
           banners,
         },
         null,
@@ -284,12 +321,31 @@ async function main() {
       ) + '\n',
       'utf8'
     );
+    claMeta[server] = { generatedAt: todayLocal, count: Object.keys(banners).length };
     console.log(
       `\n${server}：已写入 data/banners_cla_${server}.json —— 中坚 ${mid.classic.length} / 甄选 ${mid.clafes.length}（data_version ${verShort}）`
     );
   }
 
-  if (CHECK) console.log(problems ? `\n⚠️ 共 ${problems} 处差异（见上）` : '\n✅ 对撞全部一致');
+  if (CHECK) {
+    console.log(problems ? `\n⚠️ 共 ${problems} 处差异（见上）` : '\n✅ 对撞全部一致');
+    return;
+  }
+
+  /* 把中坚元信息镜像进 `metadata.json`（站点左栏「中坚数据更新」用）。
+     内容一致就不写 —— 沿用本仓库「不产生空提交」的约定。 */
+  if (!prevMeta) {
+    console.log('\n⚠️ metadata.json 不存在或读不出来，跳过 cla 更新');
+  } else if (JSON.stringify(prevMeta.cla || null) !== JSON.stringify(claMeta)) {
+    await fs.writeFile(
+      META_FILE,
+      JSON.stringify(orderMeta({ ...prevMeta, cla: claMeta }), null, 2) + '\n',
+      'utf8'
+    );
+    console.log('\n· metadata.json：cla 已更新（中坚元信息）');
+  } else {
+    console.log('\n· metadata.json：cla 无变化');
+  }
 }
 
 await main();

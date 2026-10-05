@@ -953,6 +953,10 @@ async function main() {
        tcGeneratedAt 由 fetch-data-tc.mjs 填成 banners_tc.json 的修改日。 */
     enGeneratedAt: prevMeta.enGeneratedAt ?? null,
     tcGeneratedAt: prevMeta.tcGeneratedAt ?? null,
+    /* 中坚系列（官方解包）的元信息由 `fetch-gamedata.mjs` 维护。
+       ⚠️ 本脚本的 `meta` 是**全新对象**（另外两个脚本是从旧文件读出来的，天然保留未知键），
+       所以这里**必须显式沿用** —— 否则本脚本每跑一次都会把 `cla` 抹掉。 */
+    ...(prevMeta.cla ? { cla: prevMeta.cla } : {}),
     defaultServer: DEFAULT_SERVER,
     /* 服务器列表：前端据此渲染「服务器」下拉框（只列 available 的项）。
        卡池规模按服务器统计；干员表各服共用一份 operators.json，靠 *ReleaseDate 区分。 */
