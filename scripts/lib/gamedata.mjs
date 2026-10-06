@@ -1,8 +1,9 @@
 /**
  * lib/gamedata.mjs
  * ----------
- * **官方解包数据**（`ArknightsAssets/ArknightsGamedata`）的读取与解析 —— 目前用在
- * 「常驻中坚寻访 / 中坚甄选」上（其余卡池类型官方没有干员名单，见预研文档 §3）。
+ * **官方解包数据**（`ArknightsAssets/ArknightsGamedata`）的读取与解析 —— 目前用在两处：
+ *   ① 「常驻中坚寻访 / 中坚甄选」（其余卡池类型官方没有干员名单，见预研文档 §3）；
+ *   ②  **异格关系**（`char_meta_table.json` 的 `spCharGroups`）→ `operators.json` 的 `alter`。
  *
  * ⚠️ 口径与实测依据全在 `akGachaDocs/resource/官方解包数据（ArknightsGamedata）预研.md`
  *    （字段语义、为什么只做中坚、进店位怎么认、以及 §9 的目标工作流）。本文件只负责实现。
@@ -86,6 +87,52 @@ export async function loadNames(dir, { local = null } = {}) {
   const tbl = await loadTable(dir, 'character_table.json', { local });
   const out = {};
   for (const [id, v] of Object.entries(tbl)) if (v && v.name) out[id] = v.name;
+  return out;
+}
+
+/**
+ * 读 `char_meta_table.json` 的 **`spCharGroups`（异格分组）**。
+ *
+ * 形状：`{ 本体charId: [本体charId, 异格charId, …] }` —— 键是**本体**，值是整组。
+ * ⚠️ **绝大多数组只有一个元素**（没有同族的干员也各占一条）：
+ *    实测 cn **420 组**里只有 **37 组**是多成员（合共 **38 个**异格 charId）。
+ */
+export async function loadSpCharGroups(dir, { local = null } = {}) {
+  const tbl = await loadTable(dir, 'char_meta_table.json', { local });
+  return tbl?.spCharGroups || {};
+}
+
+/**
+ * 由异格分组 + 「在册干员」集合，算出 `charId → [同组的其它 charId…]`
+ * （写进 `operators.json` 每个干员条目的 `alter` 字段）。
+ *
+ * 口径（用户 2026-10-06 定）：**组内「在册」的成员两两互填** ——
+ *   · 本体填异格、**异格也填本体**；
+ *   · 一组有 3 个成员（如「陈」+「假日威龙陈」+「赤刃明霄陈」）时，
+ *     **每个成员都填另外两个**。
+ *
+ * 只在册的成员参与 —— **不在册的成员一律不出现**（用户：「charId 没在 `operators.json`
+ * 存储的干员则不存入」）。所以：
+ *   · 本体不在册（实测 **13 组**本体是 3~4★）→ 该组的异格**填不到别人**，`alter` 为空
+ *     （如「承曦格雷伊」的本体格雷伊是 4★；其余 6 组的异格本就是 5~6★，但同样只剩自己一个）；
+ *   · 异格不在册 → 它不出现在任何人的 `alter` 里（实测 1 例：「淬羽赫默」没进过寻访）。
+ *   · 结论：**只有「在册成员 ≥ 2」的组才会产生非空 `alter`**。
+ *
+ * → 实测结果：**47 位**干员有非空 `alter`，合共 **50 个** charId
+ *   （22 组两人互填 = 44，加上「陈」那组三人各填两个 = 6）。
+ *
+ * @param {Record<string, string[]>} spCharGroups `loadSpCharGroups()` 的返回值
+ * @param {Set<string>} validIds 在册 charId 集合（= `operators.json` 的键）
+ * @returns {Map<string, string[]>} 只有**非空**的才在表里；其余干员由调用方给 `[]`
+ */
+export function buildAlterMap(spCharGroups, validIds) {
+  const out = new Map();
+  for (const [base, ids] of Object.entries(spCharGroups || {})) {
+    /* 组内去重后**只留「在册」的**；不足 2 个就没有可互填的对象 */
+    const group = [...new Set([base, ...(ids || [])])].filter((id) => validIds.has(id));
+    if (group.length < 2) continue;
+    for (const id of group) out.set(id, group.filter((x) => x !== id));
+  }
   return out;
 }
 

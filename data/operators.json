@@ -11,7 +11,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_113_cqbw": {
     "name": "W",
@@ -25,7 +26,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_1035_wisdel"
+    ]
   },
   "char_148_nearl": {
     "name": "临光",
@@ -39,7 +43,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1014_nearl2"
+    ]
   },
   "char_4224_turdus": {
     "name": "乌啾",
@@ -53,7 +60,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4145_ulpia": {
     "name": "乌尔比安",
@@ -67,7 +75,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_455_nothin": {
     "name": "乌有",
@@ -81,7 +90,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_1015_aglna2": {
     "name": "予愿安洁莉娜",
@@ -95,7 +105,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_291_aglina"
+    ]
   },
   "char_4082_qiubai": {
     "name": "仇白",
@@ -109,7 +122,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_2023_ling": {
     "name": "令",
@@ -123,7 +137,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4087_ines": {
     "name": "伊内丝",
@@ -137,7 +152,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_134_ifrit": {
     "name": "伊芙利特",
@@ -151,7 +167,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4032_provs": {
     "name": "但书",
@@ -165,7 +182,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_2026_yu": {
     "name": "余",
@@ -179,7 +197,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4058_pepe": {
     "name": "佩佩",
@@ -193,7 +212,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4234_pedro": {
     "name": "佩德洛",
@@ -207,7 +227,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_1013_chen2": {
     "name": "假日威龙陈",
@@ -221,7 +242,11 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_010_chen",
+      "char_1050_chen3"
+    ]
   },
   "char_250_phatom": {
     "name": "傀影",
@@ -235,7 +260,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1042_phatm2"
+    ]
   },
   "char_115_headbr": {
     "name": "凛冬",
@@ -249,7 +277,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1051_headb2"
+    ]
   },
   "char_1045_svash2": {
     "name": "凛御银灰",
@@ -263,7 +294,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_172_svrash"
+    ]
   },
   "char_003_kalts": {
     "name": "凯尔希",
@@ -277,7 +311,10 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": [
+      "char_1052_kalts2"
+    ]
   },
   "char_1052_kalts2": {
     "name": "凯尔希·思衡托",
@@ -291,7 +328,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_003_kalts"
+    ]
   },
   "char_174_slbell": {
     "name": "初雪",
@@ -305,7 +345,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1046_sbell2"
+    ]
   },
   "char_494_vendla": {
     "name": "刺玫",
@@ -319,7 +362,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_2013_cerber": {
     "name": "刻俄柏",
@@ -333,7 +377,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_171_bldsk": {
     "name": "华法琳",
@@ -347,7 +392,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_214_kafka": {
     "name": "卡夫卡",
@@ -361,7 +407,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_426_billro": {
     "name": "卡涅利安",
@@ -375,7 +422,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_1036_fang2": {
     "name": "历阵锐枪芬",
@@ -389,7 +437,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4228_closur": {
     "name": "可露希尔",
@@ -403,7 +452,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_201_moeshd": {
     "name": "可颂",
@@ -417,7 +467,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_350_surtr": {
     "name": "史尔特尔",
@@ -431,7 +482,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_4039_horn": {
     "name": "号角",
@@ -445,7 +497,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_1043_leizi2": {
     "name": "司霆惊蛰",
@@ -459,7 +512,10 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_306_leizi"
+    ]
   },
   "char_4203_kichi": {
     "name": "吉星",
@@ -473,7 +529,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_226_hmau": {
     "name": "吽",
@@ -487,7 +544,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_297_hamoni": {
     "name": "和弦",
@@ -501,7 +559,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4214_cairn": {
     "name": "响石",
@@ -515,7 +574,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4237_jcinta": {
     "name": "嘉辛塔",
@@ -529,7 +589,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_365_aprl": {
     "name": "四月",
@@ -543,7 +604,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_1032_excu2": {
     "name": "圣约送葬人",
@@ -557,7 +619,10 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_279_excu"
+    ]
   },
   "char_1046_sbell2": {
     "name": "圣聆初雪",
@@ -571,7 +636,10 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_174_slbell"
+    ]
   },
   "char_245_cello": {
     "name": "塑心",
@@ -585,7 +653,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_202_demkni": {
     "name": "塞雷娅",
@@ -599,7 +668,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4031_liesel": {
     "name": "复奏",
@@ -613,7 +683,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_492_quercu": {
     "name": "夏栎",
@@ -627,7 +698,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_2015_dusk": {
     "name": "夕",
@@ -641,7 +713,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4048_doroth": {
     "name": "多萝西",
@@ -655,7 +728,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_476_blkngt": {
     "name": "夜半",
@@ -669,7 +743,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_179_cgbird": {
     "name": "夜莺",
@@ -683,7 +758,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_164_nightm": {
     "name": "夜魔",
@@ -697,7 +773,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_166_skfire": {
     "name": "天火",
@@ -711,7 +788,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_346_aosta": {
     "name": "奥斯塔",
@@ -725,7 +803,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_4146_nymph": {
     "name": "妮芙",
@@ -739,7 +818,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4138_narant": {
     "name": "娜仁图亚",
@@ -753,7 +833,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4212_nasti": {
     "name": "娜斯提",
@@ -767,7 +848,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4014_lunacu": {
     "name": "子月",
@@ -781,7 +863,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_158_milu": {
     "name": "守林人",
@@ -795,7 +878,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_218_cuttle": {
     "name": "安哲拉",
@@ -809,7 +893,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_291_aglina": {
     "name": "安洁莉娜",
@@ -823,7 +908,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1015_aglna2"
+    ]
   },
   "char_341_sntlla": {
     "name": "寒檀",
@@ -837,7 +925,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4052_surfer": {
     "name": "寻澜",
@@ -851,7 +940,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4122_grabds": {
     "name": "小满",
@@ -865,7 +955,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_264_f12yin": {
     "name": "山",
@@ -879,7 +970,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_173_slchan": {
     "name": "崖心",
@@ -893,7 +985,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_362_saga": {
     "name": "嵯峨",
@@ -907,7 +1000,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_4121_zuole": {
     "name": "左乐",
@@ -921,7 +1015,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_254_vodfox": {
     "name": "巫恋",
@@ -935,7 +1030,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_356_broca": {
     "name": "布洛卡",
@@ -949,7 +1045,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_485_pallas": {
     "name": "帕拉斯",
@@ -963,7 +1060,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_2014_nian": {
     "name": "年",
@@ -977,7 +1075,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_143_ghost": {
     "name": "幽灵鲨",
@@ -991,7 +1090,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1023_ghost2"
+    ]
   },
   "char_472_pasngr": {
     "name": "异客",
@@ -1005,7 +1107,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_1039_thorn2": {
     "name": "引星棘刺",
@@ -1019,7 +1122,10 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_293_thorns"
+    ]
   },
   "char_1023_ghost2": {
     "name": "归溟幽灵鲨",
@@ -1033,7 +1139,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_143_ghost"
+    ]
   },
   "char_4196_reckpr": {
     "name": "录武官",
@@ -1047,7 +1156,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_102_texas": {
     "name": "德克萨斯",
@@ -1061,7 +1171,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1028_texas2"
+    ]
   },
   "char_4026_vulpis": {
     "name": "忍冬",
@@ -1075,7 +1188,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_1051_headb2": {
     "name": "怒潮凛冬",
@@ -1089,7 +1203,10 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_115_headbr"
+    ]
   },
   "char_306_leizi": {
     "name": "惊蛰",
@@ -1103,7 +1220,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1043_leizi2"
+    ]
   },
   "char_379_sesa": {
     "name": "慑砂",
@@ -1117,7 +1237,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_1027_greyy2": {
     "name": "承曦格雷伊",
@@ -1131,7 +1252,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4207_branch": {
     "name": "折桠",
@@ -1145,7 +1267,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_140_whitew": {
     "name": "拉普兰德",
@@ -1159,7 +1282,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1038_whitw2"
+    ]
   },
   "char_433_windft": {
     "name": "掠风",
@@ -1173,7 +1299,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_112_siege": {
     "name": "推进之王",
@@ -1187,7 +1314,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1019_siege2"
+    ]
   },
   "char_2012_typhon": {
     "name": "提丰",
@@ -1201,7 +1331,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_1022_flwr2": {
     "name": "撷英调香师",
@@ -1215,7 +1346,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4065_judge": {
     "name": "斥罪",
@@ -1229,7 +1361,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_1044_hsgma2": {
     "name": "斩业星熊",
@@ -1243,7 +1376,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_136_hsguma"
+    ]
   },
   "char_294_ayer": {
     "name": "断崖",
@@ -1257,7 +1393,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_263_skadi": {
     "name": "斯卡蒂",
@@ -1271,7 +1408,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1012_skadi2"
+    ]
   },
   "char_1041_angel2": {
     "name": "新约能天使",
@@ -1285,7 +1425,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_103_angel"
+    ]
   },
   "char_197_poca": {
     "name": "早露",
@@ -1299,7 +1442,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4071_peper": {
     "name": "明椒",
@@ -1313,7 +1457,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_274_astesi": {
     "name": "星极",
@@ -1327,7 +1472,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_136_hsguma": {
     "name": "星熊",
@@ -1341,7 +1487,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1044_hsgma2"
+    ]
   },
   "char_497_ctable": {
     "name": "晓歌",
@@ -1355,7 +1504,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_145_prove": {
     "name": "普罗旺斯",
@@ -1369,7 +1519,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_343_tknogi": {
     "name": "月禾",
@@ -1383,7 +1534,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_2027_wang": {
     "name": "望",
@@ -1397,7 +1549,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4105_almond": {
     "name": "杏仁",
@@ -1411,7 +1564,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_422_aurora": {
     "name": "极光",
@@ -1425,7 +1579,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_401_elysm": {
     "name": "极境",
@@ -1439,7 +1594,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_4080_lin": {
     "name": "林",
@@ -1453,7 +1609,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_326_glacus": {
     "name": "格劳克斯",
@@ -1467,7 +1624,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_473_mberry": {
     "name": "桑葚",
@@ -1481,7 +1639,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_242_otter": {
     "name": "梅尔",
@@ -1495,7 +1654,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_293_thorns": {
     "name": "棘刺",
@@ -1509,7 +1669,10 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": [
+      "char_1039_thorn2"
+    ]
   },
   "char_416_zumama": {
     "name": "森蚺",
@@ -1523,7 +1686,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_243_waaifu": {
     "name": "槐琥",
@@ -1537,7 +1701,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_450_necras": {
     "name": "死芒",
@@ -1551,7 +1716,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_437_mizuki": {
     "name": "水月",
@@ -1565,7 +1731,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_487_bobb": {
     "name": "波卜",
@@ -1579,7 +1746,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_311_mudrok": {
     "name": "泥岩",
@@ -1593,7 +1761,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_464_cement": {
     "name": "洋灰",
@@ -1607,7 +1776,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4040_rockr": {
     "name": "洛洛",
@@ -1621,7 +1791,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_1012_skadi2": {
     "name": "浊心斯卡蒂",
@@ -1635,7 +1806,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_263_skadi"
+    ]
   },
   "char_4079_haini": {
     "name": "海霓",
@@ -1649,7 +1823,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_1034_jesca2": {
     "name": "涤火杰西卡",
@@ -1663,7 +1838,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4109_baslin": {
     "name": "深律",
@@ -1677,7 +1853,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4147_mitm": {
     "name": "渡桥",
@@ -1691,7 +1868,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4081_warmy": {
     "name": "温米",
@@ -1705,7 +1883,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_400_weedy": {
     "name": "温蒂",
@@ -1719,7 +1898,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_377_gdglow": {
     "name": "澄闪",
@@ -1733,7 +1913,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_1024_hbisc2": {
     "name": "濯尘芙蓉",
@@ -1747,7 +1928,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_493_firwhl": {
     "name": "火哨",
@@ -1761,7 +1943,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_367_swllow": {
     "name": "灰喉",
@@ -1775,7 +1958,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_431_ashlok": {
     "name": "灰毫",
@@ -1789,7 +1973,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_206_gnosis": {
     "name": "灵知",
@@ -1803,7 +1988,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_194_leto": {
     "name": "烈夏",
@@ -1817,7 +2003,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_1040_blaze2": {
     "name": "烛煌",
@@ -1831,7 +2018,10 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_017_huang"
+    ]
   },
   "char_420_flamtl": {
     "name": "焰尾",
@@ -1845,7 +2035,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_1020_reed2": {
     "name": "焰影苇草",
@@ -1859,7 +2050,10 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_261_sddrag"
+    ]
   },
   "char_017_huang": {
     "name": "煌",
@@ -1873,7 +2067,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1040_blaze2"
+    ]
   },
   "char_363_toddi": {
     "name": "熔泉",
@@ -1887,7 +2084,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_415_flint": {
     "name": "燧石",
@@ -1901,7 +2099,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_338_iris": {
     "name": "爱丽丝",
@@ -1915,7 +2114,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_4164_tecno": {
     "name": "特克诺",
@@ -1929,7 +2129,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_215_mantic": {
     "name": "狮蝎",
@@ -1943,7 +2144,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4064_mlynar": {
     "name": "玛恩纳",
@@ -1957,7 +2159,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4006_melnte": {
     "name": "玫拉",
@@ -1971,7 +2174,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4235_thumpy": {
     "name": "珊比",
@@ -1985,7 +2189,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_1033_swire2": {
     "name": "琳琅诗怀雅",
@@ -1999,7 +2204,10 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_308_swire"
+    ]
   },
   "char_479_sleach": {
     "name": "琴柳",
@@ -2013,7 +2221,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_423_blemsh": {
     "name": "瑕光",
@@ -2027,7 +2236,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_204_platnm": {
     "name": "白金",
@@ -2041,7 +2251,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4072_ironmn": {
     "name": "白铁",
@@ -2055,7 +2266,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_128_plosis": {
     "name": "白面鸮",
@@ -2069,7 +2281,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_1026_gvial2": {
     "name": "百炼嘉维尔",
@@ -2083,7 +2296,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_195_glassb": {
     "name": "真理",
@@ -2097,7 +2311,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4204_mantra": {
     "name": "真言",
@@ -2111,7 +2326,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_378_asbest": {
     "name": "石棉",
@@ -2125,7 +2341,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_101_sora": {
     "name": "空",
@@ -2139,7 +2356,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_332_archet": {
     "name": "空弦",
@@ -2153,7 +2371,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_4015_spuria": {
     "name": "空构",
@@ -2167,7 +2386,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_436_whispr": {
     "name": "絮雨",
@@ -2181,7 +2401,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-02-11"
+    "tcClassicDate": "2025-02-11",
+    "alter": []
   },
   "char_144_red": {
     "name": "红",
@@ -2195,7 +2416,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_1016_agoat2": {
     "name": "纯烬艾雅法拉",
@@ -2209,7 +2431,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_180_amgoat"
+    ]
   },
   "char_478_kirara": {
     "name": "绮良",
@@ -2223,7 +2448,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_1035_wisdel": {
     "name": "维什戴尔",
@@ -2237,7 +2463,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_113_cqbw"
+    ]
   },
   "char_1019_siege2": {
     "name": "维娜·维多利亚",
@@ -2251,7 +2480,10 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_112_siege"
+    ]
   },
   "char_1028_texas2": {
     "name": "缄默德克萨斯",
@@ -2265,7 +2497,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_102_texas"
+    ]
   },
   "char_4056_titi": {
     "name": "缇缇",
@@ -2279,7 +2514,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_249_mlyss": {
     "name": "缪尔赛思",
@@ -2293,7 +2529,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_421_crow": {
     "name": "羽毛笔",
@@ -2307,7 +2544,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_1014_nearl2": {
     "name": "耀骑士临光",
@@ -2321,7 +2559,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_148_nearl"
+    ]
   },
   "char_322_lmlee": {
     "name": "老鲤",
@@ -2335,7 +2576,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4187_graceb": {
     "name": "聆音",
@@ -2349,7 +2591,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_103_angel": {
     "name": "能天使",
@@ -2363,7 +2606,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1041_angel2"
+    ]
   },
   "char_4009_irene": {
     "name": "艾丽妮",
@@ -2377,7 +2623,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_180_amgoat": {
     "name": "艾雅法拉",
@@ -2391,7 +2638,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1016_agoat2"
+    ]
   },
   "char_106_franka": {
     "name": "芙兰卡",
@@ -2405,7 +2655,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_261_sddrag": {
     "name": "苇草",
@@ -2419,7 +2670,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1020_reed2"
+    ]
   },
   "char_1038_whitw2": {
     "name": "荒芜拉普兰德",
@@ -2433,7 +2687,10 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_140_whitew"
+    ]
   },
   "char_213_mostma": {
     "name": "莫斯提马",
@@ -2447,7 +2704,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4117_ray": {
     "name": "莱伊",
@@ -2461,7 +2719,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_373_lionhd": {
     "name": "莱恩哈特",
@@ -2475,7 +2734,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_300_phenxi": {
     "name": "菲亚梅塔",
@@ -2489,7 +2749,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4191_tippi": {
     "name": "蒂比",
@@ -2503,7 +2764,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_129_bluep": {
     "name": "蓝毒",
@@ -2517,7 +2779,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4193_lemuen": {
     "name": "蕾缪安",
@@ -2531,7 +2794,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4098_vvana": {
     "name": "薇薇安娜",
@@ -2545,7 +2809,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_489_serum": {
     "name": "蚀清",
@@ -2559,7 +2824,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_344_beewax": {
     "name": "蜜蜡",
@@ -2573,7 +2839,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4140_lasher": {
     "name": "衡沙",
@@ -2587,7 +2854,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4155_talr": {
     "name": "裁度",
@@ -2601,7 +2869,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4225_tanya": {
     "name": "裂响",
@@ -2615,7 +2884,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_308_swire": {
     "name": "诗怀雅",
@@ -2629,7 +2899,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1033_swire2"
+    ]
   },
   "char_4173_nowell": {
     "name": "诺威尔",
@@ -2643,7 +2916,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4229_aphris": {
     "name": "谬因",
@@ -2657,7 +2931,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4037_demetr": {
     "name": "贝洛内",
@@ -2671,7 +2946,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_349_chiave": {
     "name": "贾维",
@@ -2685,7 +2961,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_475_akafyu": {
     "name": "赤冬",
@@ -2699,7 +2976,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_1050_chen3": {
     "name": "赤刃明霄陈",
@@ -2713,7 +2991,11 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_010_chen",
+      "char_1013_chen2"
+    ]
   },
   "char_4088_hodrer": {
     "name": "赫德雷",
@@ -2727,7 +3009,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_188_helage": {
     "name": "赫拉格",
@@ -2741,7 +3024,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_108_silent": {
     "name": "赫默",
@@ -2755,7 +3039,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_430_fartth": {
     "name": "远牙",
@@ -2769,7 +3054,8 @@
     "isLimited": false,
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
-    "tcClassicDate": "2025-11-18"
+    "tcClassicDate": "2025-11-18",
+    "alter": []
   },
   "char_391_rosmon": {
     "name": "迷迭香",
@@ -2783,7 +3069,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_279_excu": {
     "name": "送葬人",
@@ -2797,7 +3084,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1032_excu2"
+    ]
   },
   "char_4133_logos": {
     "name": "逻各斯",
@@ -2811,7 +3101,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4202_haruka": {
     "name": "遥",
@@ -2825,7 +3116,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_1042_phatm2": {
     "name": "酒神",
@@ -2839,7 +3131,10 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": [
+      "char_250_phatom"
+    ]
   },
   "char_2024_chyue": {
     "name": "重岳",
@@ -2853,7 +3148,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4171_wulfen": {
     "name": "钼铅",
@@ -2867,7 +3163,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_358_lisa": {
     "name": "铃兰",
@@ -2881,7 +3178,8 @@
     "isLimited": false,
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4083_chimes": {
     "name": "铎铃",
@@ -2895,7 +3193,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_172_svrash": {
     "name": "银灰",
@@ -2909,7 +3208,10 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1045_svash2"
+    ]
   },
   "char_4116_blkkgt": {
     "name": "锏",
@@ -2923,7 +3225,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_147_shining": {
     "name": "闪灵",
@@ -2937,7 +3240,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_225_haak": {
     "name": "阿",
@@ -2951,7 +3255,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4178_alanna": {
     "name": "阿兰娜",
@@ -2965,7 +3270,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4132_ascln": {
     "name": "阿斯卡纶",
@@ -2979,7 +3285,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_446_aroma": {
     "name": "阿罗玛",
@@ -2993,7 +3300,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_010_chen": {
     "name": "陈",
@@ -3007,7 +3315,11 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": [
+      "char_1013_chen2",
+      "char_1050_chen3"
+    ]
   },
   "char_219_meteo": {
     "name": "陨星",
@@ -3021,7 +3333,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4010_etlchi": {
     "name": "隐德来希",
@@ -3035,7 +3348,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4211_snhunt": {
     "name": "雪猎",
@@ -3049,7 +3363,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_107_liskam": {
     "name": "雷蛇",
@@ -3063,7 +3378,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4027_heyak": {
     "name": "霍尔海雅",
@@ -3077,7 +3393,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_488_buildr": {
     "name": "青枳",
@@ -3091,7 +3408,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_4016_kazema": {
     "name": "风丸",
@@ -3105,7 +3423,8 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_222_bpipe": {
     "name": "风笛",
@@ -3119,7 +3438,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4222_taraxa": {
     "name": "风絮",
@@ -3133,7 +3453,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_241_panda": {
     "name": "食铁兽",
@@ -3147,7 +3468,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4055_bgsnow": {
     "name": "鸿雪",
@@ -3161,7 +3483,8 @@
     "isLimited": false,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_248_mgllan": {
     "name": "麦哲伦",
@@ -3175,7 +3498,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_2025_shu": {
     "name": "黍",
@@ -3189,7 +3513,8 @@
     "isLimited": true,
     "classicDate": null,
     "enClassicDate": null,
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   },
   "char_340_shwaz": {
     "name": "黑",
@@ -3203,7 +3528,8 @@
     "isLimited": false,
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
-    "tcClassicDate": "2024-02-13"
+    "tcClassicDate": "2024-02-13",
+    "alter": []
   },
   "char_4046_ebnhlz": {
     "name": "黑键",
@@ -3217,6 +3543,7 @@
     "isLimited": false,
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
-    "tcClassicDate": null
+    "tcClassicDate": null,
+    "alter": []
   }
 }

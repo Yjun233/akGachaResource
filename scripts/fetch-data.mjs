@@ -6,6 +6,12 @@
  * 输出（data/，本仓库根目录下的 data 目录）：
  *   operators.json         以 charId 为键的干员表（仅 5★/6★）
  *                          含 scReleaseDate（国服实装日）/ enReleaseDate / tcReleaseDate
+ *                          `alter` = **同一个异格组里其它成员**的 charId 数组（没有就是 `[]`）。
+ *                          组内「在册」的成员**两两互填**（本体填异格、异格也填本体；
+ *                          三人组如「陈」则各填另外两个），**不在册的成员一律不出现**。
+ *                          数据来自官方解包 `char_meta_table.json` 的 `spCharGroups`，
+ *                          口径见 lib/gamedata.mjs。
+ *                          网络拿不到官方表时**沿用旧文件里的 alter**，不会让脚本失败。
  *   banners_sc.json        国服卡池表（以卡池 ID 为键；en / tc 两个分文件
  *                          由各自的脚本产出，本脚本只读 banners_en.json 用于反查英文名）
  *                          每个卡池都有 `name` / `scName` / `enName` 三个名字字段：
@@ -36,10 +42,14 @@ import { fileURLToPath } from 'node:url';
 import { pinyin } from 'pinyin-pro';
 import { metaStable, orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
+import { buildAlterMap, loadSpCharGroups } from './lib/gamedata.mjs';
 import './lib/http.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
+
+/** 官方解包仓库的**本地副本**根目录（给了就完全不联网读盘）—— 见文件末尾「异格」那段 */
+const GAMEDATA_LOCAL = process.env.GAMEDATA_LOCAL || null;
 const OUT_DIR = path.join(ROOT, 'data');
 
 /* 服务器：本脚本只负责**国服**（PRTS Wiki）。国际服见 fetch-data-en.mjs（wiki.gg）、
@@ -784,11 +794,41 @@ async function main() {
       classicDate: classicMap.get(row.page) || null,
       enClassicDate: prev.enClassicDate ?? null,  // 国际服进入中坚寻访的日期（同上）
       tcClassicDate: prev.tcClassicDate ?? null,  // 繁中服进入中坚寻访的日期（同上）
+      alter: [],                                  // 该干员的**异格** charId 数组（下面统一填）
     };
   }
   console.log(
     `· 干员 ${Object.keys(operators).length} 位（跳过无日期 ${skippedNoRarity}）`,
   );
+
+  /* ---- 异格（alter）----
+     来自官方解包的 `char_meta_table.json` → `spCharGroups`（`{ 本体: [本体, 异格…] }`）。
+     口径见 `lib/gamedata.mjs` 的 `buildAlterMap`：**组内「在册」的成员两两互填**
+     （本体填异格、异格也填本体；「陈」那种三人组就是各填另外两个），
+     **不在册的成员一律不出现** → 只有在册成员 ≥ 2 的组才有非空 `alter`。
+     ⚠️ 官方表**拿不到时沿用旧文件里的 alter**（本地没配 GAMEDATA_BASE 或网络不通），
+       绝不因此让整个脚本失败 —— 异格关系变化很慢，晚一轮没有影响。 */
+  const opIds = new Set(Object.keys(operators));
+  let alterMap = new Map();
+  let alterOk = false;
+  try {
+    alterMap = buildAlterMap(await loadSpCharGroups('cn', { local: GAMEDATA_LOCAL }), opIds);
+    alterOk = true;
+  } catch (err) {
+    console.warn(`⚠ 异格关系取不到（${err.message}）—— 沿用旧 operators.json 里的 alter`);
+  }
+  let alterN = 0;
+  for (const [charId, op] of Object.entries(operators)) {
+    const fromMeta = alterMap.get(charId);
+    if (fromMeta) {
+      op.alter = fromMeta;
+      alterN += fromMeta.length;
+    } else {
+      op.alter = alterOk ? [] : (prevOperators[charId]?.alter ?? []);
+    }
+  }
+  console.log(`· 异格：${alterMap.size} 位干员有非空 alter（共 ${alterN} 个 charId）`
+    + (alterOk ? '' : '（沿用旧值）'));
 
   const opByName = new Map(Object.values(operators).map((o) => [o.name, o]));
 
