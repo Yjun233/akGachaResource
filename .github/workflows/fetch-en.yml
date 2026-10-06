@@ -35,8 +35,8 @@ jobs:
       - name: 抓取卡池 / 干员数据（国际服 · wiki.gg）
         run: npm run build:data:en
 
-      # 顺带把**官方解包数据**里的国际服中坚也刷一遍（自带 data_version 短路）。
-      - name: 抓取官方解包数据（国际服中坚）
+      # 顺带把**官方解包数据**里的国际服中坚 + 模组 / 密录 / 皮肤也刷一遍（自带 data_version 短路）。
+      - name: 抓取官方解包数据（国际服中坚 + 模组 / 密录 / 皮肤）
         continue-on-error: true
         run: npm run build:gamedata -- --servers en
 
@@ -66,7 +66,8 @@ jobs:
       - name: 刷新 jsDelivr 缓存
         if: steps.diff.outputs.changed == 'true'
         run: |
-          for f in operators.json banners_en.json banners_cla_en.json metadata.json; do
+          for f in operators.json metadata.json banners_en.json banners_cla_en.json \
+                   modules_en.json memoirs_en.json skins_en.json; do
             body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
             echo "purge data/$f -> $(echo "$body" | head -c 120)"
           done

@@ -1,14 +1,20 @@
 /**
  * fetch-gamedata.mjs
- * 从**官方解包数据**（`ArknightsAssets/ArknightsGamedata`）抽取卡池数据。
+ * 从**官方解包数据**（`ArknightsAssets/ArknightsGamedata`）抽取数据。做两块：
  *
- * 目前只做**中坚系列**：常驻中坚寻访（`CLASSIC` / `CLASSIC_DOUBLE`）+ 中坚甄选（`FESCLASSIC`）。
- * 其余类型官方**没有干员名单**（单六寻访 35 条全无、常驻标准 233 条仅 10 条有文案…），
- * 仍由 PRTS / wiki.gg / 金山 那几个脚本负责 —— 见预研文档 §3。
+ *   ① **中坚系列**：常驻中坚寻访（`CLASSIC` / `CLASSIC_DOUBLE`）+ 中坚甄选（`FESCLASSIC`）。
+ *      其余卡池类型官方**没有干员名单**（单六寻访 35 条全无、常驻标准 233 条仅 10 条有文案…），
+ *      仍由 PRTS / wiki.gg / 金山 那几个脚本负责 —— 见预研文档 §3。
+ *   ② **extras**：模组 / 密录 / 皮肤，只收 `operators.json` 里那 230 位（= 参与过寻访 UP 的干员）。
+ *      ⚠️ **国服皮肤不走这条线** —— 它由 `fetch-skins.mjs` 从 PRTS 抓（那里有真实的复刻 / 下架窗口）。
+ *      官方只有「首发上架日」这一个点，所以只给 en / tw 出，窗口按 `WINDOW_DAYS` 天兜底。
  *
  * 输出：
  *   data/banners_cla_<server>.json   常驻中坚寻访 + 中坚甄选（**单独一个文件**，不与
  *                                    `banners_<server>.json` 混写；站点侧合并）
+ *   data/modules_<server>.json       干员模组（三服）
+ *   data/memoirs_<server>.json       干员密录（三服）
+ *   data/skins_<server>.json         干员皮肤（**只有 en / tw**；国服由 fetch-skins.mjs 出）
  *   data/metadata.json 的 `cla` 键     中坚元信息的**镜像**：`{ source, sc|en|tc: { generatedAt, count } }`
  *                                    —— 站点左栏「中坚数据更新」读它。内容一致就不写盘。
  *                                    ⚠️ 三个 fetch-data 脚本构造 metadata 时是**全新对象**，
@@ -19,14 +25,16 @@
  *
  * 用法：
  *   node scripts/fetch-gamedata.mjs --check            只对撞、不落盘
- *       对撞对象 = **站点实际用的那一套**（`banners_<srv>.json` 合并 `banners_cla_<srv>.json`），
- *       正常应 0 差异。⚠️ 接入前（2026-10-06 之前）它比的是 **wiki 抓到的中坚** ——
+ *       中坚的对撞对象 = **站点实际用的那一套**（`banners_<srv>.json` 合并 `banners_cla_<srv>.json`）；
+ *       extras 的对撞对象 = 已落盘的 `modules_/memoirs_/skins_<srv>.json`。
+ *       正常都应是 0 差异。⚠️ 接入前（2026-10-06 之前）它比的是 **wiki 抓到的中坚** ——
  *       那轮实测结果留档在 `akGachaDocs/resource/官方解包数据（ArknightsGamedata）预研.md` §4。
- *   node scripts/fetch-gamedata.mjs --check --dump     对撞 + 打印抽出来的 JSON
+ *   node scripts/fetch-gamedata.mjs --check --dump     对撞 + 打印抽出来的中坚 JSON
  *   node scripts/fetch-gamedata.mjs                    抽取并写盘（内容没变则不写）
  *
  * 常用选项：
  *   --servers sc,en,tc   只处理指定服务器（默认三服）
+ *   --only mid|extras    只做其中一块（默认 all = 两块都做）
  *   --local <dir>        从本地解包仓库副本读**全部**表（完全不联网）
  *   --local-names <dir>  只把 `character_table.json` 走本地、其余走网络
  *                        （本地开发的常用姿势：jsDelivr **供不了 21MB 的 character_table**，见下）
@@ -52,6 +60,7 @@ import {
   extractMid,
   toBannerMap,
 } from './lib/gamedata.mjs';
+import { extractModules, extractMemoirs, extractSkins, WINDOW_DAYS } from './lib/gamedata-extras.mjs';
 import { orderMeta } from './lib/meta.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -62,7 +71,7 @@ const META_FILE = path.join(DATA, 'metadata.json');
 const SERVER_LABEL = { sc: '国服', en: '国际服', tc: '繁中服' };
 /** 固定三服顺序 —— `metadata.cla` 的键序靠它钉死（键序一变，另一脚本就会看成「有变化」） */
 const CLA_SERVERS = ['sc', 'en', 'tc'];
-const CLA_SOURCE = 'https://github.com/ArknightsAssets/ArknightsGamedata';
+const GAMEDATA_SOURCE = 'https://github.com/ArknightsAssets/ArknightsGamedata';
 
 /* ---------------- 参数 ---------------- */
 const argv = process.argv.slice(2);
@@ -82,6 +91,10 @@ const SERVERS = (valOf('--servers') || 'sc,en,tc')
   .split(',')
   .map((s) => s.trim())
   .filter(Boolean);
+/** `--only=mid` 只抽中坚 / `--only=extras` 只抽模组密录皮肤（默认两者都做） */
+const ONLY = (valOf('--only') || 'all').trim();
+const DO_MID = ONLY === 'all' || ONLY === 'mid';
+const DO_EXTRAS = ONLY === 'all' || ONLY === 'extras';
 
 /** 生成日 = 本地时区的今天（CI 里 TZ=Asia/Shanghai，与既有 generatedAt 口径一致） */
 const todayLocal = new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10);
@@ -202,6 +215,58 @@ function report(server, version, mid, rawScraped) {
   return problems.length;
 }
 
+/** 读 `data/operators.json`（extras 的**口径白名单 + 星级**）—— 三服共用同一份 */
+async function loadOperatorIndex() {
+  const raw = JSON.parse(await fs.readFile(path.join(DATA, 'operators.json'), 'utf8'));
+  const names = new Set();
+  const rarity = {};
+  for (const op of Object.values(raw)) {
+    if (!op?.name) continue;
+    names.add(op.name);
+    rarity[op.name] = op.rarity;
+  }
+  return { names, rarity };
+}
+
+/** 某服本轮 extras 会产出哪些文件（⚠️ **国服不含皮肤** —— 那由 `fetch-skins.mjs` 从 PRTS 出） */
+const extrasFilesOf = (server) =>
+  ['modules', 'memoirs', ...(server === 'sc' ? [] : ['skins'])].map((k) => `${k}_${server}.json`);
+
+/**
+ * 写一个 `{ generatedAt, source, <key>: [...] }` 形状的文件 —— 口径与 `fetch-skins.mjs` 一致：
+ * **内容没变就不写盘，`generatedAt` 也不推进**（否则 CI 每周都产生一次空提交）。
+ */
+async function putStable(name, key, arr, source) {
+  const file = path.join(DATA, name);
+  let prev = null;
+  try {
+    prev = JSON.parse(await fs.readFile(file, 'utf8'));
+  } catch {
+    /* 首次产出 */
+  }
+  const core = { source, [key]: arr };
+  const prevCore = prev ? { source: prev.source ?? null, [key]: prev[key] ?? null } : null;
+  if (!FORCE && prevCore !== null && JSON.stringify(prevCore) === JSON.stringify(core)) return false;
+  await fs.writeFile(file, JSON.stringify({ generatedAt: todayLocal, ...core }, null, 2) + '\n', 'utf8');
+  return true;
+}
+
+/** 与已落盘的同名文件逐条比（`--check` 用）；文件还没有就跳过（= 首次产出） */
+async function compareWithDisk(name, key, arr) {
+  const file = path.join(DATA, name);
+  try {
+    const old = JSON.parse(await fs.readFile(file, 'utf8'));
+    const same = JSON.stringify(old[key] ?? null) === JSON.stringify(arr);
+    console.log(
+      `  · ${name}：落盘 ${(old[key] || []).length} 条 vs 抽出 ${arr.length} 条 → ${same ? '一致' : '⚠️ 不一致'}`
+    );
+    return same ? 0 : 1;
+  } catch {
+    console.log(`  · ${name}：还没有文件（首次产出，跳过对撞）`);
+    return 0;
+  }
+}
+
 /** 读 metadata.json（读不出来返回 null —— 调用方要保证不因此写出残缺文件） */
 async function readMeta() {
   try {
@@ -232,11 +297,16 @@ async function main() {
      ⚠️ 三个 fetch-data 脚本构造 metadata 时用的是**全新对象**，所以它们各自把 `cla` 原样沿用；
      这里先读旧值，是为了「只跑了部分服」（`--servers sc`）时保住另外两服。 */
   const prevMeta = CHECK ? null : await readMeta();
-  const claMeta = { source: CLA_SOURCE };
+  const claMeta = { source: GAMEDATA_SOURCE };
   for (const s of CLA_SERVERS) {
     const v = prevMeta?.cla?.[s];
     claMeta[s] = { generatedAt: v?.generatedAt ?? null, count: v?.count ?? null };
   }
+
+  /* extras 的口径白名单（`operators.json` = **参与过寻访 UP 的干员**，不是全量五六星名册）——
+     官方表里 509 个模组 / 439 位密录远比口径大，靠它筛。只在真的要做 extras 时读。 */
+  const OP_INDEX = DO_EXTRAS ? await loadOperatorIndex() : { names: new Set(), rarity: {} };
+  if (DO_EXTRAS) console.log(`operators.json：${OP_INDEX.names.size} 位（extras 只收这些干员）`);
 
   let problems = 0;
   for (const server of SERVERS) {
@@ -258,8 +328,20 @@ async function main() {
     }
 
     /* ⚠️ **短路**：`data_version.txt` 没变就**整段跳过** —— 连 `character_table` 都不下。
-       实测 `data_version` 覆盖所有表变更（**热更新也会推进它**），所以不会漏更新。见预研 §7.1 / §9.2。 */
-    if (!CHECK && !FORCE && prev && prev.dataVersion === version) {
+       实测 `data_version` 覆盖所有表变更（**热更新也会推进它**），所以不会漏更新。见预研 §7.1 / §9.2。
+       ⚠️ 但**首次产出**时不能短路：基准是中坚文件里的版本号，而 extras 的文件可能还不存在
+       （2026-10-06 接入 extras 时就踩到这个），所以再要求「本轮要产出的文件都已落盘」。 */
+    let outputsReady = !DO_MID || Boolean(prev);
+    if (DO_EXTRAS && outputsReady) {
+      for (const n of extrasFilesOf(server)) {
+        try {
+          await fs.access(path.join(DATA, n));
+        } catch {
+          outputsReady = false;
+        }
+      }
+    }
+    if (!CHECK && !FORCE && outputsReady && prev && prev.dataVersion === version) {
       console.log(`\n${server}：data_version 未变（${verShort}），跳过`);
       /* 短路时 cla 取**文件里的真实值** —— 它才是权威，保证 metadata 与文件永远一致 */
       claMeta[server] = {
@@ -268,63 +350,112 @@ async function main() {
       };
       continue;
     }
-
-    const gacha = await loadTable(dir, 'gacha_table.json', { local: LOCAL });
-    const mid = extractMid(gacha, await nameOf());
-
-    if (DUMP) {
-      console.log(`\n--- ${server} 抽出的前 2 条 ---`);
-      console.log(JSON.stringify([...mid.classic.slice(0, 1), ...mid.clafes.slice(0, 1)], null, 1));
+    if (!CHECK && !FORCE && !outputsReady) {
+      console.log(`\n${server}：有文件还没产出过（首次接入）→ 忽略 data_version 短路，全量跑一次`);
     }
 
-    if (CHECK) {
-      /* 对撞对象 = **站点实际用的那一套**（`banners_<server>.json` + 合并 `banners_cla_<server>.json`）。
-         ⚠️ 2026-10-06 之前这里比的是 wiki 抓取的中坚 —— 那批数据已经不在主文件里了，
-         当时的实测结果留档在 `akGachaDocs/resource/官方解包数据（ArknightsGamedata）预研.md` §4。
-         现在这条退化成「跑出来的和已落盘的是否一致」的回归检查：正常应是 0 差异。 */
-      const raw = JSON.parse(await fs.readFile(path.join(DATA, `banners_${server}.json`), 'utf8'));
-      try {
-        const prevMid = JSON.parse(await fs.readFile(path.join(DATA, `banners_cla_${server}.json`), 'utf8'));
-        if (prevMid.banners) Object.assign(raw, prevMid.banners);
-      } catch {
-        /* 还没有中坚文件 */
+    /* ---------------- 抽取 ---------------- */
+    let mid = null;
+    if (DO_MID) {
+      const gacha = await loadTable(dir, 'gacha_table.json', { local: LOCAL });
+      mid = extractMid(gacha, await nameOf());
+      if (DUMP) {
+        console.log(`\n--- ${server} 抽出的前 2 条 ---`);
+        console.log(JSON.stringify([...mid.classic.slice(0, 1), ...mid.clafes.slice(0, 1)], null, 1));
       }
-      problems += report(server, version, mid, raw);
+    }
+
+    let extras = null;
+    if (DO_EXTRAS) {
+      const names = await nameOf();
+      const ue = await loadTable(dir, 'uniequip_table.json', { local: LOCAL });
+      const hb = await loadTable(dir, 'handbook_info_table.json', { local: LOCAL });
+      extras = {
+        modules: extractModules(ue, names, OP_INDEX.names),
+        memoirs: extractMemoirs(hb, names, OP_INDEX.names, OP_INDEX.rarity),
+      };
+      /* ⚠️ **国服皮肤不在这条线上** —— 它由 `fetch-skins.mjs` 从 PRTS 抓（那里有真实的复刻 /
+         下架窗口）。官方只有「首发上架日」这一个点，所以只给 en/tw 出（窗口按 `WINDOW_DAYS` 天兜底）。 */
+      if (server !== 'sc') {
+        const sk = await loadTable(dir, 'skin_table.json', { local: LOCAL });
+        extras.skins = extractSkins(sk, names, OP_INDEX.names);
+      }
+    }
+
+    /* ---------------- 对撞（--check） ---------------- */
+    if (CHECK) {
+      if (DO_MID) {
+        /* 对撞对象 = **站点实际用的那一套**（`banners_<server>.json` + 合并 `banners_cla_<server>.json`）。
+           ⚠️ 2026-10-06 之前这里比的是 wiki 抓取的中坚 —— 那批数据已经不在主文件里了，
+           当时的实测结果留档在 `akGachaDocs/resource/官方解包数据（ArknightsGamedata）预研.md` §4。
+           现在这条退化成「跑出来的和已落盘的是否一致」的回归检查：正常应是 0 差异。 */
+        const raw = JSON.parse(await fs.readFile(path.join(DATA, `banners_${server}.json`), 'utf8'));
+        try {
+          const prevMid = JSON.parse(await fs.readFile(path.join(DATA, `banners_cla_${server}.json`), 'utf8'));
+          if (prevMid.banners) Object.assign(raw, prevMid.banners);
+        } catch {
+          /* 还没有中坚文件 */
+        }
+        problems += report(server, version, mid, raw);
+      }
+      if (DO_EXTRAS) {
+        console.log(
+          `\n  extras —— 模组 ${extras.modules.length} / 密录 ${extras.memoirs.length}` +
+            (extras.skins ? ` / 皮肤 ${extras.skins.length}` : ' / 皮肤（国服走 PRTS，不在此列）')
+        );
+        for (const key of ['modules', 'memoirs', 'skins']) {
+          if (extras[key]) problems += await compareWithDisk(`${key}_${server}.json`, key, extras[key]);
+        }
+      }
       continue;
     }
 
-    /* 落盘：内容没变就不写（沿用本仓库「不产生空提交」的约定）。
-       ⚠️ `generatedAt` / `dataVersion` 是易变字段，**不参与**变化比对 ——
-          否则版本号一动就是一次只改两行的空提交。代价：「版本变了但内容没变」时下次还会重下，
-          这个代价可接受（见预研 §7.1）。 */
-    const banners = toBannerMap(mid);
-    const changed = JSON.stringify(prev?.banners || null) !== JSON.stringify(banners);
-    if (!changed && !FORCE) {
-      console.log(`\n${server}：内容无变化，不写盘（data_version ${verShort}）`);
-      claMeta[server] = {
-        generatedAt: prev?.generatedAt ?? null,
-        count: Object.keys(banners).length,
-      };
-      continue;
+    /* ---------------- 落盘 ---------------- */
+    if (DO_MID) {
+      /* 内容没变就不写（沿用本仓库「不产生空提交」的约定）。
+         ⚠️ `generatedAt` / `dataVersion` 是易变字段，**不参与**变化比对 ——
+            否则版本号一动就是一次只改两行的空提交。代价：「版本变了但内容没变」时下次还会重下，
+            这个代价可接受（见预研 §7.1）。 */
+      const banners = toBannerMap(mid);
+      const changed = JSON.stringify(prev?.banners || null) !== JSON.stringify(banners);
+      if (!changed && !FORCE) {
+        console.log(`\n${server}：中坚内容无变化，不写盘（data_version ${verShort}）`);
+        claMeta[server] = {
+          generatedAt: prev?.generatedAt ?? null,
+          count: Object.keys(banners).length,
+        };
+      } else {
+        await fs.writeFile(
+          file,
+          JSON.stringify(
+            {
+              generatedAt: todayLocal,
+              dataVersion: version,
+              source: GAMEDATA_SOURCE,
+              banners,
+            },
+            null,
+            2
+          ) + '\n',
+          'utf8'
+        );
+        claMeta[server] = { generatedAt: todayLocal, count: Object.keys(banners).length };
+        console.log(
+          `\n${server}：已写入 data/banners_cla_${server}.json —— 中坚 ${mid.classic.length} / 甄选 ${mid.clafes.length}（data_version ${verShort}）`
+        );
+      }
     }
-    await fs.writeFile(
-      file,
-      JSON.stringify(
-        {
-          generatedAt: todayLocal,
-          dataVersion: version,
-          source: CLA_SOURCE,
-          banners,
-        },
-        null,
-        2
-      ) + '\n',
-      'utf8'
-    );
-    claMeta[server] = { generatedAt: todayLocal, count: Object.keys(banners).length };
-    console.log(
-      `\n${server}：已写入 data/banners_cla_${server}.json —— 中坚 ${mid.classic.length} / 甄选 ${mid.clafes.length}（data_version ${verShort}）`
-    );
+
+    if (DO_EXTRAS) {
+      const wrote = [];
+      for (const key of ['modules', 'memoirs', 'skins']) {
+        if (!extras[key]) continue;
+        if (await putStable(`${key}_${server}.json`, key, extras[key], GAMEDATA_SOURCE)) {
+          wrote.push(`${key}_${server}.json`);
+        }
+      }
+      console.log(`\n${server}：extras ${wrote.length ? `已写入 ${wrote.join('、')}` : '内容无变化，未写盘'}`);
+    }
   }
 
   if (CHECK) {

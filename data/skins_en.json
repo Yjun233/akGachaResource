@@ -1,0 +1,3548 @@
+{
+  "generatedAt": "2026-10-06",
+  "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
+  "skins": [
+    {
+      "char": "W",
+      "skinIndex": 1,
+      "name": "Fugue",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-05-01",
+          "end": "2020-05-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "临光",
+      "skinIndex": 1,
+      "name": "Shining Dew SD01",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-02-05",
+          "end": "2021-02-19",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "乌尔比安",
+      "skinIndex": 1,
+      "name": "Staring into the Abyss",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-12-11",
+          "end": "2025-12-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "乌有",
+      "skinIndex": 1,
+      "name": "Pale Rising Moon",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-07-29",
+          "end": "2022-08-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "仇白",
+      "skinIndex": 1,
+      "name": "Wine-flushed is Woods of Rime",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-03-20",
+          "end": "2024-04-03",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "仇白",
+      "skinIndex": 2,
+      "name": "Courtesy",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-10-10",
+          "end": "2024-10-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "令",
+      "skinIndex": 1,
+      "name": "It Does Wash the Strings",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-07-29",
+          "end": "2023-08-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "令",
+      "skinIndex": 2,
+      "name": "Towering is Cliff of Nostalgia",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-03-20",
+          "end": "2024-04-03",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "令",
+      "skinIndex": 3,
+      "name": "A Gallant Dream",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-16",
+          "end": "2026-07-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "伊内丝",
+      "skinIndex": 1,
+      "name": "Under the Flaming Dome",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-11-01",
+          "end": "2024-11-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "伊内丝",
+      "skinIndex": 2,
+      "name": "Melodic Flutter",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-09-17",
+          "end": "2025-10-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "伊芙利特",
+      "skinIndex": 1,
+      "name": "Sunburn SS.SP",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-04-30",
+          "end": "2020-05-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "伊芙利特",
+      "skinIndex": 2,
+      "name": "Relaxing Trip",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-06",
+          "end": "2026-07-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "但书",
+      "skinIndex": 1,
+      "name": "High Autumn",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-08-23",
+          "end": "2023-09-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "但书",
+      "skinIndex": 2,
+      "name": "Holiday HD78",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-02-07",
+          "end": "2025-02-21",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "余",
+      "skinIndex": 1,
+      "name": "Clear Morning View",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-16",
+          "end": "2026-07-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "佩佩",
+      "skinIndex": 1,
+      "name": "Nuit of the Nightsky",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-01-16",
+          "end": "2026-01-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "假日威龙陈",
+      "skinIndex": 1,
+      "name": "Ten Thousand Mountains",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-11-08",
+          "end": "2023-11-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "假日威龙陈",
+      "skinIndex": 2,
+      "name": "Holiday HD79",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-01-16",
+          "end": "2026-01-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "傀影",
+      "skinIndex": 1,
+      "name": "Dream Within a Dreammare",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-04-09",
+          "end": "2021-04-23",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "凛冬",
+      "skinIndex": 1,
+      "name": "Ready to Go",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-09-11",
+          "end": "2020-09-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "凛冬",
+      "skinIndex": 2,
+      "name": "Ursus IO79",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-12-09",
+          "end": "2021-12-23",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "凯尔希",
+      "skinIndex": 1,
+      "name": "Remnant",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-11-08",
+          "end": "2023-11-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "初雪",
+      "skinIndex": 1,
+      "name": "Caster's Frost",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-07-01",
+          "end": "2020-07-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "刻俄柏",
+      "skinIndex": 1,
+      "name": "Summer Flowers FA333",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-02-26",
+          "end": "2021-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "刻俄柏",
+      "skinIndex": 2,
+      "name": "Unfettered",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-08-18",
+          "end": "2022-09-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "华法琳",
+      "skinIndex": 1,
+      "name": "the feast",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-04-08",
+          "end": "2020-04-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "卡夫卡",
+      "skinIndex": 1,
+      "name": "Cardboard Fairy",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-06-30",
+          "end": "2022-07-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "卡涅利安",
+      "skinIndex": 1,
+      "name": "Hohenlohe Chillysand",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-06-30",
+          "end": "2022-07-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "卡涅利安",
+      "skinIndex": 2,
+      "name": "Shining Dew SD08",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-03-14",
+          "end": "2023-03-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "历阵锐枪芬",
+      "skinIndex": 1,
+      "name": "A Pure Pianissimo",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-05-21",
+          "end": "2026-06-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "可颂",
+      "skinIndex": 1,
+      "name": "Seeker SK03",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-02-26",
+          "end": "2021-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "史尔特尔",
+      "skinIndex": 1,
+      "name": "Liberté//Échec",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-12-09",
+          "end": "2021-12-23",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "史尔特尔",
+      "skinIndex": 2,
+      "name": "Colorful Wonderland CW03",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-01-13",
+          "end": "2023-01-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "史尔特尔",
+      "skinIndex": 3,
+      "name": "Prelude to Transcendence",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-09-16",
+          "end": "2026-09-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "号角",
+      "skinIndex": 1,
+      "name": "To Effloresce Whitely",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-10-24",
+          "end": "2023-11-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "司霆惊蛰",
+      "skinIndex": 1,
+      "name": "The Bloodwing Rose",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-08-13",
+          "end": "2026-08-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "吽",
+      "skinIndex": 1,
+      "name": "Just A Driver",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-07-31",
+          "end": "2021-08-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "和弦",
+      "skinIndex": 1,
+      "name": "Invitation",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-10-24",
+          "end": "2023-11-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "和弦",
+      "skinIndex": 2,
+      "name": "Decoration",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-08-10",
+          "end": "2024-08-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "四月",
+      "skinIndex": 1,
+      "name": "Faraway Gaze",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-03-26",
+          "end": "2021-04-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "圣约送葬人",
+      "skinIndex": 1,
+      "name": "Allmind As One",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-25",
+          "end": "2025-05-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "圣约送葬人",
+      "skinIndex": 2,
+      "name": "The Train Runner",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-03-06",
+          "end": "2026-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "塑心",
+      "skinIndex": 1,
+      "name": "Diversity Oneness",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-25",
+          "end": "2025-05-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "塞雷娅",
+      "skinIndex": 1,
+      "name": "Stronghold",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-12-31",
+          "end": "2021-01-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "塞雷娅",
+      "skinIndex": 2,
+      "name": "The Law",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-06-23",
+          "end": "2021-07-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "塞雷娅",
+      "skinIndex": 3,
+      "name": "Unstained, Unshaken",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-09-23",
+          "end": "2026-10-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夏栎",
+      "skinIndex": 1,
+      "name": "The Bard's Tale",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-04-16",
+          "end": "2024-04-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夕",
+      "skinIndex": 1,
+      "name": "Everything Is a Miracle",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-07-29",
+          "end": "2022-08-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夕",
+      "skinIndex": 2,
+      "name": "Hazy Jade",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-16",
+          "end": "2026-07-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "多萝西",
+      "skinIndex": 1,
+      "name": "Hand of Destiny",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-04-16",
+          "end": "2024-04-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夜半",
+      "skinIndex": 1,
+      "name": "Summer Flowers FA641",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-03-14",
+          "end": "2023-03-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夜莺",
+      "skinIndex": 1,
+      "name": "an elegy",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-04-07",
+          "end": "2020-04-21",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夜莺",
+      "skinIndex": 2,
+      "name": "Iakhu of Flows",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-01-17",
+          "end": "2025-01-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夜魔",
+      "skinIndex": 1,
+      "name": "The Ferry Girl",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-08",
+          "end": "2025-08-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "天火",
+      "skinIndex": 1,
+      "name": "Temperature Difference RT.RX01",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-04-30",
+          "end": "2020-05-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "奥斯塔",
+      "skinIndex": 1,
+      "name": "Light Gun Adjuster",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-12-27",
+          "end": "2023-01-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "妮芙",
+      "skinIndex": 1,
+      "name": "Sweetness to the Heart",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-28",
+          "end": "2025-09-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "妮芙",
+      "skinIndex": 2,
+      "name": "Blooming Reverie",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-09-16",
+          "end": "2026-09-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "娜仁图亚",
+      "skinIndex": 1,
+      "name": "The Chainsaw Nurse",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-03-19",
+          "end": "2026-04-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "子月",
+      "skinIndex": 1,
+      "name": "Clouds Float Like Ideas of Art",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-02-14",
+          "end": "2024-02-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "守林人",
+      "skinIndex": 1,
+      "name": "Wilted Cypress",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-05-28",
+          "end": "2020-06-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "守林人",
+      "skinIndex": 2,
+      "name": "Snowywatch",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-06-23",
+          "end": "2021-07-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "安哲拉",
+      "skinIndex": 1,
+      "name": "Silent Arrow",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-04-28",
+          "end": "2022-05-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "安洁莉娜",
+      "skinIndex": 1,
+      "name": "Distinguished Visitor",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-12-31",
+          "end": "2021-01-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "安洁莉娜",
+      "skinIndex": 2,
+      "name": "Summer Flowers FA017",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-02-05",
+          "end": "2022-02-19",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "寻澜",
+      "skinIndex": 1,
+      "name": "By the Lamplight",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-16",
+          "end": "2026-07-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "小满",
+      "skinIndex": 1,
+      "name": "Fragrant Pace",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-12-03",
+          "end": "2024-12-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "山",
+      "skinIndex": 1,
+      "name": "Dark Cloud",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-10-22",
+          "end": "2021-11-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "山",
+      "skinIndex": 2,
+      "name": "Book Reader",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-04-01",
+          "end": "2023-04-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "崖心",
+      "skinIndex": 1,
+      "name": "Lone Climber",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-02-27",
+          "end": "2020-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "嵯峨",
+      "skinIndex": 1,
+      "name": "There They Be",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-12-21",
+          "end": "2024-01-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "左乐",
+      "skinIndex": 1,
+      "name": "Youthful Journey",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-07-18",
+          "end": "2025-08-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "左乐",
+      "skinIndex": 2,
+      "name": "Quiet Move",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-12-23",
+          "end": "2026-01-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "巫恋",
+      "skinIndex": 1,
+      "name": "Echo of the Horrorlair",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-04-14",
+          "end": "2022-04-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "巫恋",
+      "skinIndex": 2,
+      "name": "Celestial Crane",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-02-14",
+          "end": "2026-02-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "帕拉斯",
+      "skinIndex": 1,
+      "name": "Heritage",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-04-28",
+          "end": "2022-05-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "年",
+      "skinIndex": 1,
+      "name": "Unfettered Freedom",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-07-31",
+          "end": "2021-08-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "年",
+      "skinIndex": 2,
+      "name": "Thunderbolt Director",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-06-13",
+          "end": "2025-06-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "幽灵鲨",
+      "skinIndex": 1,
+      "name": "Undercurrent",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-02-06",
+          "end": "2020-02-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "异客",
+      "skinIndex": 1,
+      "name": "Dream In A Moment",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-05-23",
+          "end": "2023-06-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "引星棘刺",
+      "skinIndex": 1,
+      "name": "Boundless Sail",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-01-16",
+          "end": "2026-01-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "归溟幽灵鲨",
+      "skinIndex": 1,
+      "name": "Born as One",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-11-08",
+          "end": "2023-11-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "德克萨斯",
+      "skinIndex": 1,
+      "name": "Winter Messenger",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-02-06",
+          "end": "2020-02-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "德克萨斯",
+      "skinIndex": 2,
+      "name": "Willpower",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-05-01",
+          "end": "2020-05-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "惊蛰",
+      "skinIndex": 1,
+      "name": "The Archivist and Her Pilgrimage",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-11",
+          "end": "2025-03-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "慑砂",
+      "skinIndex": 1,
+      "name": "To Evoke the Anima",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-28",
+          "end": "2025-09-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "承曦格雷伊",
+      "skinIndex": 1,
+      "name": "Aftershow",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-07-13",
+          "end": "2023-07-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "承曦格雷伊",
+      "skinIndex": 2,
+      "name": "Biochemical Submergence",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-03-19",
+          "end": "2026-04-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "拉普兰德",
+      "skinIndex": 1,
+      "name": "Refined Horrormare",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-12-31",
+          "end": "2021-01-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "推进之王",
+      "skinIndex": 1,
+      "name": "City Destroyer",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-10-19",
+          "end": "2022-11-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "提丰",
+      "skinIndex": 1,
+      "name": "Temperature Difference RT.RX07",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-02-07",
+          "end": "2025-02-21",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "斥罪",
+      "skinIndex": 1,
+      "name": "Occasionally Flushed",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-06-21",
+          "end": "2024-07-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "斥罪",
+      "skinIndex": 2,
+      "name": "Scribing",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-12-03",
+          "end": "2024-12-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "断崖",
+      "skinIndex": 1,
+      "name": "Tested One",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-10-22",
+          "end": "2021-11-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "斯卡蒂",
+      "skinIndex": 1,
+      "name": "Waverider WR04",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-01-21",
+          "end": "2021-02-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "斯卡蒂",
+      "skinIndex": 2,
+      "name": "The Next Afternoon Tea",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-11-29",
+          "end": "2023-12-13",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "早露",
+      "skinIndex": 1,
+      "name": "Masterpiece",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-04-28",
+          "end": "2022-05-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "早露",
+      "skinIndex": 2,
+      "name": "Forever Together",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-06",
+          "end": "2026-07-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "明椒",
+      "skinIndex": 1,
+      "name": "The Road to Here",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-12-21",
+          "end": "2024-01-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "星极",
+      "skinIndex": 1,
+      "name": "Starseeker",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-10-29",
+          "end": "2020-11-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "星极",
+      "skinIndex": 2,
+      "name": "Frlibe on the Palace",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-03-17",
+          "end": "2022-03-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "星熊",
+      "skinIndex": 1,
+      "name": "Ronin Huntress",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-09-11",
+          "end": "2020-09-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "晓歌",
+      "skinIndex": 1,
+      "name": "Illumination That of Daylights",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-07-29",
+          "end": "2023-08-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "晓歌",
+      "skinIndex": 2,
+      "name": "Bard by the Lake",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-10-14",
+          "end": "2025-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "普罗旺斯",
+      "skinIndex": 1,
+      "name": "Holiday HD08",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-01-21",
+          "end": "2021-02-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "月禾",
+      "skinIndex": 1,
+      "name": "Londinium Style Miko",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-12-29",
+          "end": "2022-01-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "月禾",
+      "skinIndex": 2,
+      "name": "Dance",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-06-21",
+          "end": "2024-07-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "杏仁",
+      "skinIndex": 1,
+      "name": "Almond Platter",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-07-18",
+          "end": "2025-08-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "极光",
+      "skinIndex": 1,
+      "name": "Polar Catcher",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-11-03",
+          "end": "2022-11-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "极境",
+      "skinIndex": 1,
+      "name": "Snowy Echo",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-06-23",
+          "end": "2021-07-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "极境",
+      "skinIndex": 2,
+      "name": "Shining Dew SDm11",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-01-13",
+          "end": "2023-01-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "林",
+      "skinIndex": 1,
+      "name": "Heavenly Mirage",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-07-31",
+          "end": "2024-08-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "林",
+      "skinIndex": 2,
+      "name": "Summer Flowers FA137",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-12-11",
+          "end": "2025-12-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "格劳克斯",
+      "skinIndex": 1,
+      "name": "Exterminator in the Square",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-04-09",
+          "end": "2021-04-23",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "桑葚",
+      "skinIndex": 1,
+      "name": "Plant Crude Drug",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-09-16",
+          "end": "2022-09-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "桑葚",
+      "skinIndex": 2,
+      "name": "Reflection That of the Moons",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-07-29",
+          "end": "2023-08-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "梅尔",
+      "skinIndex": 1,
+      "name": "Visionblazer in the Courtyard",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-04-09",
+          "end": "2021-04-23",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "棘刺",
+      "skinIndex": 1,
+      "name": "Cómodo",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-12-09",
+          "end": "2021-12-23",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "棘刺",
+      "skinIndex": 2,
+      "name": "Blade-cleaved Tides",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-11-01",
+          "end": "2024-11-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "森蚺",
+      "skinIndex": 1,
+      "name": "Forgemaster",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-10-22",
+          "end": "2021-11-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "槐琥",
+      "skinIndex": 1,
+      "name": "Wild Flower of Street",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-08-18",
+          "end": "2022-09-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "死芒",
+      "skinIndex": 1,
+      "name": "Summer Flowers FA161",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-01-16",
+          "end": "2026-01-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "死芒",
+      "skinIndex": 2,
+      "name": "As Clear As Crystal",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-09-23",
+          "end": "2026-10-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "水月",
+      "skinIndex": 1,
+      "name": "A Player Forever",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-10-14",
+          "end": "2025-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "波卜",
+      "skinIndex": 1,
+      "name": "Heartwarming Baking",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-02-24",
+          "end": "2026-03-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "泥岩",
+      "skinIndex": 1,
+      "name": "Silent Night DN06",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-01-14",
+          "end": "2022-01-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "泥岩",
+      "skinIndex": 2,
+      "name": "Obsidian",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-11-03",
+          "end": "2022-11-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "洋灰",
+      "skinIndex": 1,
+      "name": "New Business",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-10-10",
+          "end": "2024-10-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "洛洛",
+      "skinIndex": 1,
+      "name": "Before Singing",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-04-08",
+          "end": "2023-04-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "浊心斯卡蒂",
+      "skinIndex": 1,
+      "name": "Sublimation",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-11-03",
+          "end": "2022-11-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "浊心斯卡蒂",
+      "skinIndex": 2,
+      "name": "Red Countess",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-11-01",
+          "end": "2024-11-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "海霓",
+      "skinIndex": 1,
+      "name": "Tidal Bore",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-11-13",
+          "end": "2025-11-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "涤火杰西卡",
+      "skinIndex": 1,
+      "name": "'Ride to Davistown'",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-06-13",
+          "end": "2025-06-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "深律",
+      "skinIndex": 1,
+      "name": "Starry Night Sky",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-08",
+          "end": "2025-04-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "渡桥",
+      "skinIndex": 1,
+      "name": "Under Surgical Lights",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-03-19",
+          "end": "2026-04-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "温米",
+      "skinIndex": 1,
+      "name": "Warm Velvet At the Corner",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-25",
+          "end": "2025-05-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "温蒂",
+      "skinIndex": 1,
+      "name": "Candy Cape",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-06-23",
+          "end": "2021-07-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "温蒂",
+      "skinIndex": 2,
+      "name": "Sedjem",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-01-17",
+          "end": "2025-01-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "澄闪",
+      "skinIndex": 1,
+      "name": "Maiden for the Bright Night",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-07-13",
+          "end": "2023-07-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "澄闪",
+      "skinIndex": 2,
+      "name": "Summer Flowers FA394",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-01-17",
+          "end": "2024-01-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "澄闪",
+      "skinIndex": 3,
+      "name": "Party In The Garden",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-12-21",
+          "end": "2025-01-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "濯尘芙蓉",
+      "skinIndex": 1,
+      "name": "Romance Overflow",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-08",
+          "end": "2025-08-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "灰喉",
+      "skinIndex": 1,
+      "name": "Homecoming",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-12-31",
+          "end": "2021-01-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "灰毫",
+      "skinIndex": 1,
+      "name": "Lances of Kaliskas",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-05-01",
+          "end": "2024-05-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "灵知",
+      "skinIndex": 1,
+      "name": "Forerunner",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-11-03",
+          "end": "2022-11-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "烛煌",
+      "skinIndex": 1,
+      "name": "Homecoming Night",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-06-22",
+          "end": "2026-07-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "焰尾",
+      "skinIndex": 1,
+      "name": "Sport For All",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-12-27",
+          "end": "2023-01-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "焰影苇草",
+      "skinIndex": 1,
+      "name": "Curator",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-07-10",
+          "end": "2024-07-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "焰影苇草",
+      "skinIndex": 2,
+      "name": "Summer Flowers FA075",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-02-07",
+          "end": "2025-02-21",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "焰影苇草",
+      "skinIndex": 3,
+      "name": "Glowing Flame in the Night",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-05-21",
+          "end": "2026-06-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "煌",
+      "skinIndex": 1,
+      "name": "Burst Feline",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-10-22",
+          "end": "2021-11-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "煌",
+      "skinIndex": 2,
+      "name": "Explosive Blue Flame",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-08",
+          "end": "2025-04-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "燧石",
+      "skinIndex": 1,
+      "name": "Gorgeous Flower",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-10-22",
+          "end": "2021-11-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "爱丽丝",
+      "skinIndex": 1,
+      "name": "Mirror Visitor",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-04-28",
+          "end": "2023-05-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "狮蝎",
+      "skinIndex": 1,
+      "name": "Under A Veil",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-08-23",
+          "end": "2023-09-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "玛恩纳",
+      "skinIndex": 1,
+      "name": "W Dali",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-05-01",
+          "end": "2024-05-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "玛恩纳",
+      "skinIndex": 2,
+      "name": "Roar Against the Wilds",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-10-14",
+          "end": "2025-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "玫拉",
+      "skinIndex": 1,
+      "name": "For the Banquet",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-12-03",
+          "end": "2024-12-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "琳琅诗怀雅",
+      "skinIndex": 1,
+      "name": "Rhythmic Blocks",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-11-01",
+          "end": "2024-11-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "琴柳",
+      "skinIndex": 1,
+      "name": "Appreciate Fragrance",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-09-16",
+          "end": "2022-09-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "琴柳",
+      "skinIndex": 2,
+      "name": "Summer Flowers FA317",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-02-27",
+          "end": "2024-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "瑕光",
+      "skinIndex": 1,
+      "name": "Moon Catastrborn",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-04-14",
+          "end": "2022-04-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "白金",
+      "skinIndex": 1,
+      "name": "Shining Dew SD05",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-01-21",
+          "end": "2021-02-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "白铁",
+      "skinIndex": 1,
+      "name": "Beach Guard GT003",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-02-27",
+          "end": "2024-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "白铁",
+      "skinIndex": 2,
+      "name": "Empty Crown",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-09-17",
+          "end": "2025-10-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "白面鸮",
+      "skinIndex": 1,
+      "name": "Among the Clouds",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-02-14",
+          "end": "2025-02-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "百炼嘉维尔",
+      "skinIndex": 1,
+      "name": "Holiday HD26",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-01-17",
+          "end": "2024-01-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "真理",
+      "skinIndex": 1,
+      "name": "Bibliosmia",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-09-30",
+          "end": "2020-10-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "空",
+      "skinIndex": 1,
+      "name": "Summer Flowers FA361",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-04-30",
+          "end": "2020-05-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "空",
+      "skinIndex": 2,
+      "name": "Melodiosa",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-05-23",
+          "end": "2023-06-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "空弦",
+      "skinIndex": 1,
+      "name": "Publicity Strategy",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-03-17",
+          "end": "2022-03-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "空弦",
+      "skinIndex": 2,
+      "name": "Glory of the Devout",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-10-14",
+          "end": "2025-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "絮雨",
+      "skinIndex": 1,
+      "name": "Priory of Abyss",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-04-16",
+          "end": "2024-04-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "红",
+      "skinIndex": 1,
+      "name": "Light Breeze LB01",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-01-14",
+          "end": "2022-01-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "纯烬艾雅法拉",
+      "skinIndex": 1,
+      "name": "A Picnic Before A Long Trip",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-01-17",
+          "end": "2025-01-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "绮良",
+      "skinIndex": 1,
+      "name": "Trendsetting Player",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-12-27",
+          "end": "2023-01-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "维什戴尔",
+      "skinIndex": 1,
+      "name": "Supernova",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-10-14",
+          "end": "2025-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "维娜·维多利亚",
+      "skinIndex": 1,
+      "name": "Glorious Path",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-04-14",
+          "end": "2026-04-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "缄默德克萨斯",
+      "skinIndex": 1,
+      "name": "Wingbreaker",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-05-01",
+          "end": "2024-05-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "缄默德克萨斯",
+      "skinIndex": 2,
+      "name": "Il Segreto Della Notte",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-25",
+          "end": "2025-05-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "缪尔赛思",
+      "skinIndex": 1,
+      "name": "Young Branch",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-11-01",
+          "end": "2024-11-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "缪尔赛思",
+      "skinIndex": 2,
+      "name": "Golden Reverie",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-09-17",
+          "end": "2025-10-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "羽毛笔",
+      "skinIndex": 1,
+      "name": "Summer Flowers FA210",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-01-13",
+          "end": "2023-01-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "耀骑士临光",
+      "skinIndex": 1,
+      "name": "Relight",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-05-23",
+          "end": "2023-06-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "老鲤",
+      "skinIndex": 1,
+      "name": "Trust Your Eyes",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-04-28",
+          "end": "2023-05-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "老鲤",
+      "skinIndex": 2,
+      "name": "Remedy In A Cup Of Leung Cha",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-12-21",
+          "end": "2025-01-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "能天使",
+      "skinIndex": 1,
+      "name": "Wild Operation",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-02-27",
+          "end": "2020-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "艾丽妮",
+      "skinIndex": 1,
+      "name": "Voyage of Feathers",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-11-08",
+          "end": "2023-11-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "艾丽妮",
+      "skinIndex": 2,
+      "name": "The Adjudicatrix and Her Resolve",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-11",
+          "end": "2025-03-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "艾雅法拉",
+      "skinIndex": 1,
+      "name": "Summer Flowers FA018",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-02-05",
+          "end": "2022-02-19",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "艾雅法拉",
+      "skinIndex": 2,
+      "name": "Fluffy Little Witch",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-03-06",
+          "end": "2026-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "芙兰卡",
+      "skinIndex": 1,
+      "name": "Rainforest, Me, Rainbow",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-03-20",
+          "end": "2024-04-03",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "苇草",
+      "skinIndex": 1,
+      "name": "Emerald Holiday",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-11-03",
+          "end": "2022-11-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "荒芜拉普兰德",
+      "skinIndex": 1,
+      "name": "Unruly Humbleness",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-04-14",
+          "end": "2026-04-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "莫斯提马",
+      "skinIndex": 1,
+      "name": "Spellbreaker",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-10-29",
+          "end": "2020-11-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "莫斯提马",
+      "skinIndex": 2,
+      "name": "Ethereal Harmony",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-09-17",
+          "end": "2025-10-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "莱伊",
+      "skinIndex": 1,
+      "name": "Dreaming High",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-06-05",
+          "end": "2025-06-19",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "莱恩哈特",
+      "skinIndex": 1,
+      "name": "Finder in the Rough",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-03-26",
+          "end": "2021-04-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "莱恩哈特",
+      "skinIndex": 2,
+      "name": "Hope Cruise",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-06-30",
+          "end": "2022-07-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "菲亚梅塔",
+      "skinIndex": 1,
+      "name": "Divine Oath",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-04-16",
+          "end": "2024-04-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "菲亚梅塔",
+      "skinIndex": 2,
+      "name": "Judgment Day",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-10-14",
+          "end": "2025-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "蓝毒",
+      "skinIndex": 1,
+      "name": "Nocturne of Elysia",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-11-01",
+          "end": "2024-11-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "蕾缪安",
+      "skinIndex": 1,
+      "name": "Requiem Vesperis",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-09-23",
+          "end": "2026-10-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "薇薇安娜",
+      "skinIndex": 1,
+      "name": "Sent from Ognisko",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-08",
+          "end": "2025-08-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "蚀清",
+      "skinIndex": 1,
+      "name": "Leisure",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-10-10",
+          "end": "2024-10-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "蜜蜡",
+      "skinIndex": 1,
+      "name": "Weißer Sand",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-12-29",
+          "end": "2022-01-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "蜜蜡",
+      "skinIndex": 2,
+      "name": "Holiday HD61",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-02-27",
+          "end": "2024-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "衡沙",
+      "skinIndex": 1,
+      "name": "Horus' Rest",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-01-06",
+          "end": "2026-01-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "裁度",
+      "skinIndex": 1,
+      "name": "Autumn Shadow",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-03-06",
+          "end": "2026-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "诗怀雅",
+      "skinIndex": 1,
+      "name": "Honor and Splendor",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-07-30",
+          "end": "2020-08-13",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "赤冬",
+      "skinIndex": 1,
+      "name": "Temperament",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-04-01",
+          "end": "2023-04-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "赫德雷",
+      "skinIndex": 1,
+      "name": "Courtyard of Neka",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-01-17",
+          "end": "2025-01-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "赫拉格",
+      "skinIndex": 1,
+      "name": "Octopath Illusion",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-10-01",
+          "end": "2021-10-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "赫默",
+      "skinIndex": 1,
+      "name": "Lacquer",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-03-26",
+          "end": "2020-04-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "远牙",
+      "skinIndex": 1,
+      "name": "Hear the Wind Sing",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-12-21",
+          "end": "2024-01-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "迷迭香",
+      "skinIndex": 1,
+      "name": "Become Anew",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-05-23",
+          "end": "2023-06-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "迷迭香",
+      "skinIndex": 2,
+      "name": "An Airy Dream",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-12-23",
+          "end": "2026-01-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "送葬人",
+      "skinIndex": 1,
+      "name": "Titleless Code",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-12-31",
+          "end": "2021-01-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "逻各斯",
+      "skinIndex": 1,
+      "name": "Radiant Serenity",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-09-17",
+          "end": "2025-10-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "重岳",
+      "skinIndex": 1,
+      "name": "Alighting",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-07-31",
+          "end": "2024-08-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "重岳",
+      "skinIndex": 2,
+      "name": "All-Round Actor",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-06-13",
+          "end": "2025-06-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "铃兰",
+      "skinIndex": 1,
+      "name": "Lostlands Flowering",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-03-26",
+          "end": "2021-04-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "铃兰",
+      "skinIndex": 2,
+      "name": "Spring Praise",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-04-08",
+          "end": "2023-04-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "铃兰",
+      "skinIndex": 3,
+      "name": "Yukibare",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-09-07",
+          "end": "2023-09-21",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "铎铃",
+      "skinIndex": 1,
+      "name": "Moon under the Pines",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-02-18",
+          "end": "2025-03-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "银灰",
+      "skinIndex": 1,
+      "name": "York's Bise",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-07-01",
+          "end": "2020-07-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "银灰",
+      "skinIndex": 2,
+      "name": "Seeker SKm01",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-02-26",
+          "end": "2021-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "银灰",
+      "skinIndex": 3,
+      "name": "Never-melting Ice",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-11-01",
+          "end": "2024-11-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "锏",
+      "skinIndex": 1,
+      "name": "The Shadow of the Dark Moon",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-08",
+          "end": "2025-04-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "闪灵",
+      "skinIndex": 1,
+      "name": "Silent Night DN02",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-04-30",
+          "end": "2020-05-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "阿",
+      "skinIndex": 1,
+      "name": "Doctor of Faces",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-07-31",
+          "end": "2021-08-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "阿斯卡纶",
+      "skinIndex": 1,
+      "name": "Phototaxis",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-11-13",
+          "end": "2025-11-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "陈",
+      "skinIndex": 1,
+      "name": "Ageless Afterglow",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-07-30",
+          "end": "2020-08-13",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "陨星",
+      "skinIndex": 1,
+      "name": "Graphite",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-03-26",
+          "end": "2020-04-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "隐德来希",
+      "skinIndex": 1,
+      "name": "Dazzling Blue",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-06-22",
+          "end": "2026-07-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "雷蛇",
+      "skinIndex": 1,
+      "name": "Spring Vouivre",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-07-30",
+          "end": "2020-08-13",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "雷蛇",
+      "skinIndex": 2,
+      "name": "Overload",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-08-19",
+          "end": "2021-09-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "霍尔海雅",
+      "skinIndex": 1,
+      "name": "Carriage of the Winds of Time",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-11-01",
+          "end": "2024-11-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "霍尔海雅",
+      "skinIndex": 2,
+      "name": "Ritual of Immortality",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-04-14",
+          "end": "2026-04-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "青枳",
+      "skinIndex": 1,
+      "name": "To Rest in Night Breezes",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-01-17",
+          "end": "2025-01-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "风丸",
+      "skinIndex": 1,
+      "name": "Like Illusion",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-04-28",
+          "end": "2023-05-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "风笛",
+      "skinIndex": 1,
+      "name": "Royal Guardswoman",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-05-01",
+          "end": "2024-05-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "风笛",
+      "skinIndex": 2,
+      "name": "Echo of Bagpipes",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-08",
+          "end": "2025-08-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "食铁兽",
+      "skinIndex": 1,
+      "name": "Dojo Star",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-07-01",
+          "end": "2020-07-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "食铁兽",
+      "skinIndex": 2,
+      "name": "Gourmet",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-07-29",
+          "end": "2022-08-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "鸿雪",
+      "skinIndex": 1,
+      "name": "Snowy Plains in Words",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-08-23",
+          "end": "2023-09-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "鸿雪",
+      "skinIndex": 2,
+      "name": "Beside Dreams",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-12-11",
+          "end": "2025-12-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "麦哲伦",
+      "skinIndex": 1,
+      "name": "Shaved-Ice Memories",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-09-30",
+          "end": "2020-10-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "黍",
+      "skinIndex": 1,
+      "name": "Spring Feast",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-07-18",
+          "end": "2025-08-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "黑",
+      "skinIndex": 1,
+      "name": "Presents",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-07-01",
+          "end": "2020-07-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "黑",
+      "skinIndex": 2,
+      "name": "Skyline",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-08-19",
+          "end": "2021-09-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "黑键",
+      "skinIndex": 1,
+      "name": "Eine Variation",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-11-08",
+          "end": "2023-11-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    }
+  ]
+}

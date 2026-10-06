@@ -1,0 +1,3478 @@
+{
+  "generatedAt": "2026-10-06",
+  "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
+  "skins": [
+    {
+      "char": "W",
+      "skinIndex": 1,
+      "name": "恍惚",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-08-26",
+          "end": "2021-09-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "临光",
+      "skinIndex": 1,
+      "name": "燦陽朝露 SD01",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-07-15",
+          "end": "2021-07-29",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "乌尔比安",
+      "skinIndex": 1,
+      "name": "注目深淵",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-01-26",
+          "end": "2026-02-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "乌有",
+      "skinIndex": 1,
+      "name": "冷山月",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-10-27",
+          "end": "2022-11-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "仇白",
+      "skinIndex": 1,
+      "name": "霜林醉",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-08-08",
+          "end": "2024-08-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "仇白",
+      "skinIndex": 2,
+      "name": "禮遇",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-02-11",
+          "end": "2025-02-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "令",
+      "skinIndex": 1,
+      "name": "濯纓",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-11-21",
+          "end": "2023-12-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "令",
+      "skinIndex": 2,
+      "name": "崖高夢遠",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-08-08",
+          "end": "2024-08-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "令",
+      "skinIndex": 3,
+      "name": "方遒卷",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-08-18",
+          "end": "2026-09-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "伊内丝",
+      "skinIndex": 1,
+      "name": "燃燒天穹下",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-06",
+          "end": "2025-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "伊内丝",
+      "skinIndex": 2,
+      "name": "蝶舞華章",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-10-31",
+          "end": "2025-11-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "伊芙利特",
+      "skinIndex": 1,
+      "name": "日曬 SS.SP",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-09-30",
+          "end": "2020-10-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "伊芙利特",
+      "skinIndex": 2,
+      "name": "輕鬆旅途",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-29",
+          "end": "2026-08-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "但书",
+      "skinIndex": 1,
+      "name": "秋高氣爽",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-01-09",
+          "end": "2024-01-23",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "但书",
+      "skinIndex": 2,
+      "name": "悠然假日 HD78",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-05-15",
+          "end": "2025-05-29",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "余",
+      "skinIndex": 1,
+      "name": "願清曉",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-08-18",
+          "end": "2026-09-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "佩佩",
+      "skinIndex": 1,
+      "name": "星移",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-02-26",
+          "end": "2026-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "假日威龙陈",
+      "skinIndex": 1,
+      "name": "萬重山",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-03-19",
+          "end": "2024-04-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "假日威龙陈",
+      "skinIndex": 2,
+      "name": "悠然假日 HD79",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-02-26",
+          "end": "2026-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "傀影",
+      "skinIndex": 1,
+      "name": "夢魘之夢",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-08-12",
+          "end": "2021-08-26",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "凛冬",
+      "skinIndex": 1,
+      "name": "整裝待發",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-03-04",
+          "end": "2021-03-18",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "凛冬",
+      "skinIndex": 2,
+      "name": "烏薩斯IO79",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-03-08",
+          "end": "2022-03-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "凯尔希",
+      "skinIndex": 1,
+      "name": "殘餘",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-03-19",
+          "end": "2024-04-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "初雪",
+      "skinIndex": 1,
+      "name": "開斯特之霜",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-12-24",
+          "end": "2021-01-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "刻俄柏",
+      "skinIndex": 1,
+      "name": "夏卉 FA333",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-06-24",
+          "end": "2021-07-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "刻俄柏",
+      "skinIndex": 2,
+      "name": "無拘無束",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-11-17",
+          "end": "2022-12-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "华法琳",
+      "skinIndex": 1,
+      "name": "盛宴",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-10-29",
+          "end": "2020-11-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "卡夫卡",
+      "skinIndex": 1,
+      "name": "紙板仙子",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-09-29",
+          "end": "2022-10-13",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "卡涅利安",
+      "skinIndex": 1,
+      "name": "霍恩洛厄的寒沙",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-09-29",
+          "end": "2022-10-13",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "卡涅利安",
+      "skinIndex": 2,
+      "name": "燦陽朝露 SD08",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-04-13",
+          "end": "2023-04-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "历阵锐枪芬",
+      "skinIndex": 1,
+      "name": "純淨樂段",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-06",
+          "end": "2026-07-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "可颂",
+      "skinIndex": 1,
+      "name": "探尋者 SK03",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-06-24",
+          "end": "2021-07-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "史尔特尔",
+      "skinIndex": 1,
+      "name": "自由//失效",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-03-08",
+          "end": "2022-03-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "史尔特尔",
+      "skinIndex": 2,
+      "name": "繽紛奇境 CW03",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-06-20",
+          "end": "2023-07-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "号角",
+      "skinIndex": 1,
+      "name": "化花",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-02-22",
+          "end": "2024-03-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "司霆惊蛰",
+      "skinIndex": 1,
+      "name": "血翼薔薇",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-09-14",
+          "end": "2026-09-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "吽",
+      "skinIndex": 1,
+      "name": "一介車夫",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-12-23",
+          "end": "2022-01-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "和弦",
+      "skinIndex": 1,
+      "name": "邀約",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-02-22",
+          "end": "2024-03-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "和弦",
+      "skinIndex": 2,
+      "name": "裝點",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-02-03",
+          "end": "2025-02-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "四月",
+      "skinIndex": 1,
+      "name": "遠望",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-07-29",
+          "end": "2021-08-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "圣约送葬人",
+      "skinIndex": 1,
+      "name": "眾志歸一",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-06-27",
+          "end": "2025-07-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "圣约送葬人",
+      "skinIndex": 2,
+      "name": "蒸汽尋蹤者",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-04-29",
+          "end": "2026-05-13",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "塑心",
+      "skinIndex": 1,
+      "name": "無我唯識",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-06-27",
+          "end": "2025-07-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "塞雷娅",
+      "skinIndex": 1,
+      "name": "堅城",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-05-27",
+          "end": "2021-06-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "塞雷娅",
+      "skinIndex": 2,
+      "name": "鐵律",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-10-28",
+          "end": "2021-11-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夏栎",
+      "skinIndex": 1,
+      "name": "樹影吟遊",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-09-05",
+          "end": "2024-09-19",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夕",
+      "skinIndex": 1,
+      "name": "染塵煙",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-10-27",
+          "end": "2022-11-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夕",
+      "skinIndex": 2,
+      "name": "青玉硯",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-08-18",
+          "end": "2026-09-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "多萝西",
+      "skinIndex": 1,
+      "name": "命運主宰",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-09-05",
+          "end": "2024-09-19",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夜半",
+      "skinIndex": 1,
+      "name": "夏卉 FA641",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-04-13",
+          "end": "2023-04-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夜莺",
+      "skinIndex": 1,
+      "name": "輓歌",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-10-29",
+          "end": "2020-11-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夜莺",
+      "skinIndex": 2,
+      "name": "流輝",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-24",
+          "end": "2025-05-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "夜魔",
+      "skinIndex": 1,
+      "name": "湖畔的少女",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-29",
+          "end": "2025-09-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "天火",
+      "skinIndex": 1,
+      "name": "溫差 RT.RX01",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-10-14",
+          "end": "2020-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "奥斯塔",
+      "skinIndex": 1,
+      "name": "光銃調試員",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-03-28",
+          "end": "2023-04-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "妮芙",
+      "skinIndex": 1,
+      "name": "甜美配方",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-10-17",
+          "end": "2025-10-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "娜仁图亚",
+      "skinIndex": 1,
+      "name": "鏈鋸陪護者",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-04-22",
+          "end": "2026-05-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "子月",
+      "skinIndex": 1,
+      "name": "棠雲巧夢",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-08-10",
+          "end": "2024-08-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "守林人",
+      "skinIndex": 1,
+      "name": "枯柏",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-11-19",
+          "end": "2020-12-03",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "守林人",
+      "skinIndex": 2,
+      "name": "覆雪",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-10-28",
+          "end": "2021-11-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "安哲拉",
+      "skinIndex": 1,
+      "name": "暗矢",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-08-04",
+          "end": "2022-08-18",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "安洁莉娜",
+      "skinIndex": 1,
+      "name": "質素訪客",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-05-27",
+          "end": "2021-06-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "安洁莉娜",
+      "skinIndex": 2,
+      "name": "夏卉 FA017",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-04-26",
+          "end": "2022-05-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "寻澜",
+      "skinIndex": 1,
+      "name": "共憑欄",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-08-18",
+          "end": "2026-09-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "小满",
+      "skinIndex": 1,
+      "name": "步芳蘭",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-31",
+          "end": "2025-04-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "山",
+      "skinIndex": 1,
+      "name": "烏雲",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-01-26",
+          "end": "2022-02-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "山",
+      "skinIndex": 2,
+      "name": "讀者",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-05-16",
+          "end": "2023-05-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "崖心",
+      "skinIndex": 1,
+      "name": "孤攀客",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-08-13",
+          "end": "2020-08-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "嵯峨",
+      "skinIndex": 1,
+      "name": "彼有",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-04-25",
+          "end": "2024-05-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "左乐",
+      "skinIndex": 1,
+      "name": "少年遊",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-09-16",
+          "end": "2025-09-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "左乐",
+      "skinIndex": 2,
+      "name": "無息破局",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-12-23",
+          "end": "2026-01-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "巫恋",
+      "skinIndex": 1,
+      "name": "魔城迴響",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-07-20",
+          "end": "2022-08-03",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "巫恋",
+      "skinIndex": 2,
+      "name": "繡雲鶴",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-03-13",
+          "end": "2026-03-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "帕拉斯",
+      "skinIndex": 1,
+      "name": "傳承",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-08-04",
+          "end": "2022-08-18",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "年",
+      "skinIndex": 1,
+      "name": "樂逍遙",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-12-23",
+          "end": "2022-01-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "年",
+      "skinIndex": 2,
+      "name": "霹靂導演",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-19",
+          "end": "2025-09-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "幽灵鲨",
+      "skinIndex": 1,
+      "name": "暗流",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-07-23",
+          "end": "2020-08-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "异客",
+      "skinIndex": 1,
+      "name": "今昔須臾之夢",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-09-12",
+          "end": "2023-09-26",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "引星棘刺",
+      "skinIndex": 1,
+      "name": "無際之帆",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-02-26",
+          "end": "2026-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "归溟幽灵鲨",
+      "skinIndex": 1,
+      "name": "生而為一",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-03-19",
+          "end": "2024-04-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "德克萨斯",
+      "skinIndex": 1,
+      "name": "寒冬信使",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-07-23",
+          "end": "2020-08-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "德克萨斯",
+      "skinIndex": 2,
+      "name": "意志",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-08-26",
+          "end": "2021-09-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "惊蛰",
+      "skinIndex": 1,
+      "name": "遺跡遊學者",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-06-03",
+          "end": "2025-06-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "慑砂",
+      "skinIndex": 1,
+      "name": "萬物有靈",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-10-17",
+          "end": "2025-10-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "承曦格雷伊",
+      "skinIndex": 1,
+      "name": "演出後的王子",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-10-19",
+          "end": "2023-11-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "承曦格雷伊",
+      "skinIndex": 2,
+      "name": "生化沉溺",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-04-22",
+          "end": "2026-05-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "拉普兰德",
+      "skinIndex": 1,
+      "name": "典雅噩兆",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-05-27",
+          "end": "2021-06-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "推进之王",
+      "skinIndex": 1,
+      "name": "摧城",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-01-17",
+          "end": "2023-01-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "提丰",
+      "skinIndex": 1,
+      "name": "溫差 RT.RX07",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-05-15",
+          "end": "2025-05-29",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "斥罪",
+      "skinIndex": 1,
+      "name": "偶爾醉陶",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-10-31",
+          "end": "2024-11-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "斥罪",
+      "skinIndex": 2,
+      "name": "記敘",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-31",
+          "end": "2025-04-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "断崖",
+      "skinIndex": 1,
+      "name": "受驗者",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-01-26",
+          "end": "2022-02-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "斯卡蒂",
+      "skinIndex": 1,
+      "name": "馭浪 WR04",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-06-10",
+          "end": "2021-06-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "斯卡蒂",
+      "skinIndex": 2,
+      "name": "下一頓午茶",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-03-07",
+          "end": "2024-03-21",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "早露",
+      "skinIndex": 1,
+      "name": "傑作",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-08-04",
+          "end": "2022-08-18",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "早露",
+      "skinIndex": 2,
+      "name": "常伴我身",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-29",
+          "end": "2026-08-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "明椒",
+      "skinIndex": 1,
+      "name": "來路",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-04-25",
+          "end": "2024-05-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "星极",
+      "skinIndex": 1,
+      "name": "尋耀",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-04-01",
+          "end": "2021-04-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "星极",
+      "skinIndex": 2,
+      "name": "殿堂上的游禽",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-06-21",
+          "end": "2022-07-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "星熊",
+      "skinIndex": 1,
+      "name": "狩標浪人",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-03-04",
+          "end": "2021-03-18",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "晓歌",
+      "skinIndex": 1,
+      "name": "燈如晝",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-11-21",
+          "end": "2023-12-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "晓歌",
+      "skinIndex": 2,
+      "name": "湖畔歌者",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-11-28",
+          "end": "2025-12-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "普罗旺斯",
+      "skinIndex": 1,
+      "name": "悠然假日 HD08",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-06-10",
+          "end": "2021-06-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "月禾",
+      "skinIndex": 1,
+      "name": "倫式巫女",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-04-06",
+          "end": "2022-04-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "月禾",
+      "skinIndex": 2,
+      "name": "舞",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-10-31",
+          "end": "2024-11-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "杏仁",
+      "skinIndex": 1,
+      "name": "“杏仁”拼盤",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-09-16",
+          "end": "2025-09-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "极光",
+      "skinIndex": 1,
+      "name": "極晝捕手",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-01-31",
+          "end": "2023-02-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "极境",
+      "skinIndex": 1,
+      "name": "雪夜回音",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-10-28",
+          "end": "2021-11-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "极境",
+      "skinIndex": 2,
+      "name": "燦陽朝露 SDm11",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-06-20",
+          "end": "2023-07-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "林",
+      "skinIndex": 1,
+      "name": "列瑤臺",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-01-20",
+          "end": "2025-02-03",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "林",
+      "skinIndex": 2,
+      "name": "夏卉 FA137",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-01-26",
+          "end": "2026-02-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "格劳克斯",
+      "skinIndex": 1,
+      "name": "廣場掃蕩客",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-08-12",
+          "end": "2021-08-26",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "桑葚",
+      "skinIndex": 1,
+      "name": "植藥",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-12-29",
+          "end": "2023-01-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "桑葚",
+      "skinIndex": 2,
+      "name": "照冰輪",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-11-21",
+          "end": "2023-12-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "梅尔",
+      "skinIndex": 1,
+      "name": "庭院尋夢尖兵",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-08-12",
+          "end": "2021-08-26",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "棘刺",
+      "skinIndex": 1,
+      "name": "愜意",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-03-08",
+          "end": "2022-03-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "棘刺",
+      "skinIndex": 2,
+      "name": "鋒潮",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-06",
+          "end": "2025-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "森蚺",
+      "skinIndex": 1,
+      "name": "熔鍛鑄匠",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-01-26",
+          "end": "2022-02-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "槐琥",
+      "skinIndex": 1,
+      "name": "街道狂花",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-11-17",
+          "end": "2022-12-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "死芒",
+      "skinIndex": 1,
+      "name": "夏卉 FA161",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-02-26",
+          "end": "2026-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "水月",
+      "skinIndex": 1,
+      "name": "永恆玩家",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-11-28",
+          "end": "2025-12-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "波卜",
+      "skinIndex": 1,
+      "name": "溫情烘焙",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-03-20",
+          "end": "2026-04-03",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "泥岩",
+      "skinIndex": 1,
+      "name": "靜謐午夜 DN06",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-05-10",
+          "end": "2022-05-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "泥岩",
+      "skinIndex": 2,
+      "name": "黑曜石",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-01-31",
+          "end": "2023-02-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "洋灰",
+      "skinIndex": 1,
+      "name": "全新業務",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-02-11",
+          "end": "2025-02-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "洛洛",
+      "skinIndex": 1,
+      "name": "歡唱之前",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-06-13",
+          "end": "2023-06-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "浊心斯卡蒂",
+      "skinIndex": 1,
+      "name": "昇華",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-01-31",
+          "end": "2023-02-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "浊心斯卡蒂",
+      "skinIndex": 2,
+      "name": "紅女爵",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-06",
+          "end": "2025-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "海霓",
+      "skinIndex": 1,
+      "name": "翻湧",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-12-29",
+          "end": "2026-01-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "涤火杰西卡",
+      "skinIndex": 1,
+      "name": "《上任達維鎮》",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-19",
+          "end": "2025-09-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "深律",
+      "skinIndex": 1,
+      "name": "夜空星芒",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-07-18",
+          "end": "2025-08-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "渡桥",
+      "skinIndex": 1,
+      "name": "無影燈下",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-04-22",
+          "end": "2026-05-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "温米",
+      "skinIndex": 1,
+      "name": "街角暖絨",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-06-27",
+          "end": "2025-07-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "温蒂",
+      "skinIndex": 1,
+      "name": "糖果仙子",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-10-28",
+          "end": "2021-11-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "温蒂",
+      "skinIndex": 2,
+      "name": "傾聽",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-24",
+          "end": "2025-05-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "澄闪",
+      "skinIndex": 1,
+      "name": "喜夜侍者",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-10-19",
+          "end": "2023-11-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "澄闪",
+      "skinIndex": 2,
+      "name": "夏卉 FA394",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-06-27",
+          "end": "2024-07-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "澄闪",
+      "skinIndex": 3,
+      "name": "花房茶話會",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-17",
+          "end": "2025-05-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "濯尘芙蓉",
+      "skinIndex": 1,
+      "name": "浪漫滿廂",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-29",
+          "end": "2025-09-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "灰喉",
+      "skinIndex": 1,
+      "name": "歸巢",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-05-27",
+          "end": "2021-06-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "灰毫",
+      "skinIndex": 1,
+      "name": "卡利斯卡群槍",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-09-24",
+          "end": "2024-10-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "灵知",
+      "skinIndex": 1,
+      "name": "先驅",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-01-31",
+          "end": "2023-02-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "烛煌",
+      "skinIndex": 1,
+      "name": "夜歸人",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-22",
+          "end": "2026-08-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "焰尾",
+      "skinIndex": 1,
+      "name": "小健將",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-03-28",
+          "end": "2023-04-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "焰影苇草",
+      "skinIndex": 1,
+      "name": "博物",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-11-14",
+          "end": "2024-11-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "焰影苇草",
+      "skinIndex": 2,
+      "name": "夏卉 FA075",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-05-15",
+          "end": "2025-05-29",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "焰影苇草",
+      "skinIndex": 3,
+      "name": "閃焰之夜",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-06",
+          "end": "2026-07-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "煌",
+      "skinIndex": 1,
+      "name": "爆裂菲林",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-01-26",
+          "end": "2022-02-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "煌",
+      "skinIndex": 2,
+      "name": "易爆藍焰",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-07-18",
+          "end": "2025-08-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "燧石",
+      "skinIndex": 1,
+      "name": "絢爛夏花",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-01-26",
+          "end": "2022-02-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "爱丽丝",
+      "skinIndex": 1,
+      "name": "鏡中來訪",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-08-10",
+          "end": "2023-08-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "狮蝎",
+      "skinIndex": 1,
+      "name": "面紗之下",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-01-09",
+          "end": "2024-01-23",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "玛恩纳",
+      "skinIndex": 1,
+      "name": "遠路",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-09-24",
+          "end": "2024-10-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "玛恩纳",
+      "skinIndex": 2,
+      "name": "蒼茫怒號",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-11-28",
+          "end": "2025-12-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "玫拉",
+      "skinIndex": 1,
+      "name": "赴宴",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-31",
+          "end": "2025-04-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "琳琅诗怀雅",
+      "skinIndex": 1,
+      "name": "律動方格",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-06",
+          "end": "2025-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "琴柳",
+      "skinIndex": 1,
+      "name": "識芳",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-12-29",
+          "end": "2023-01-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "琴柳",
+      "skinIndex": 2,
+      "name": "夏卉 FA317",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-06-13",
+          "end": "2024-06-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "瑕光",
+      "skinIndex": 1,
+      "name": "異月災裔",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-07-20",
+          "end": "2022-08-03",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "白金",
+      "skinIndex": 1,
+      "name": "燦陽朝露 SD05",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-06-10",
+          "end": "2021-06-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "白铁",
+      "skinIndex": 1,
+      "name": "沙灘護衛 GT003",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-06-13",
+          "end": "2024-06-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "白铁",
+      "skinIndex": 2,
+      "name": "空心王冠",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-10-31",
+          "end": "2025-11-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "白面鸮",
+      "skinIndex": 1,
+      "name": "撫雲間",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-24",
+          "end": "2025-05-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "百炼嘉维尔",
+      "skinIndex": 1,
+      "name": "悠然假日 HD26",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-06-27",
+          "end": "2024-07-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "真理",
+      "skinIndex": 1,
+      "name": "書味",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-03-18",
+          "end": "2021-04-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "空",
+      "skinIndex": 1,
+      "name": "夏卉 FA361",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-09-30",
+          "end": "2020-10-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "空",
+      "skinIndex": 2,
+      "name": "如歌",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-09-12",
+          "end": "2023-09-26",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "空弦",
+      "skinIndex": 1,
+      "name": "宣傳策略",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-06-21",
+          "end": "2022-07-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "空弦",
+      "skinIndex": 2,
+      "name": "至虔者榮光",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-11-28",
+          "end": "2025-12-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "絮雨",
+      "skinIndex": 1,
+      "name": "幽邃隱修",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-09-05",
+          "end": "2024-09-19",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "红",
+      "skinIndex": 1,
+      "name": "輕風 LB01",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-05-10",
+          "end": "2022-05-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "纯烬艾雅法拉",
+      "skinIndex": 1,
+      "name": "遠行前的野餐",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-24",
+          "end": "2025-05-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "绮良",
+      "skinIndex": 1,
+      "name": "頂尖玩家",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-03-28",
+          "end": "2023-04-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "维什戴尔",
+      "skinIndex": 1,
+      "name": "超新星",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-11-28",
+          "end": "2025-12-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "维娜·维多利亚",
+      "skinIndex": 1,
+      "name": "光耀之途",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-06-10",
+          "end": "2026-06-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "缄默德克萨斯",
+      "skinIndex": 1,
+      "name": "破翼者",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-09-24",
+          "end": "2024-10-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "缄默德克萨斯",
+      "skinIndex": 2,
+      "name": "幽蘭秘辛",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-06-27",
+          "end": "2025-07-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "缪尔赛思",
+      "skinIndex": 1,
+      "name": "新枝",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-06",
+          "end": "2025-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "缪尔赛思",
+      "skinIndex": 2,
+      "name": "漫步於黃金之夢",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-11-07",
+          "end": "2025-11-21",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "羽毛笔",
+      "skinIndex": 1,
+      "name": "夏卉 FA210",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-06-20",
+          "end": "2023-07-04",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "耀骑士临光",
+      "skinIndex": 1,
+      "name": "復現榮光",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-09-12",
+          "end": "2023-09-26",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "老鲤",
+      "skinIndex": 1,
+      "name": "手到牌來",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-08-10",
+          "end": "2023-08-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "老鲤",
+      "skinIndex": 2,
+      "name": "坊間涼茶舖",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-17",
+          "end": "2025-05-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "能天使",
+      "skinIndex": 1,
+      "name": "野地秘行",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-08-13",
+          "end": "2020-08-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "艾丽妮",
+      "skinIndex": 1,
+      "name": "飛羽",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-03-19",
+          "end": "2024-04-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "艾丽妮",
+      "skinIndex": 2,
+      "name": "至高判決",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-06-03",
+          "end": "2025-06-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "艾雅法拉",
+      "skinIndex": 1,
+      "name": "夏卉 FA018",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-04-26",
+          "end": "2022-05-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "艾雅法拉",
+      "skinIndex": 2,
+      "name": "綿絨小魔女",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-04-29",
+          "end": "2026-05-13",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "芙兰卡",
+      "skinIndex": 1,
+      "name": "林虹之間",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-08-08",
+          "end": "2024-08-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "苇草",
+      "skinIndex": 1,
+      "name": "翡翠假日",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-01-31",
+          "end": "2023-02-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "荒芜拉普兰德",
+      "skinIndex": 1,
+      "name": "無序的謙卑",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-06-10",
+          "end": "2026-06-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "莫斯提马",
+      "skinIndex": 1,
+      "name": "除魅",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-04-01",
+          "end": "2021-04-15",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "莫斯提马",
+      "skinIndex": 2,
+      "name": "幻語樂痕",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-11-07",
+          "end": "2025-11-21",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "莱伊",
+      "skinIndex": 1,
+      "name": "夢幻高空",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-11",
+          "end": "2025-08-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "莱恩哈特",
+      "skinIndex": 1,
+      "name": "寶藏行家",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-07-29",
+          "end": "2021-08-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "莱恩哈特",
+      "skinIndex": 2,
+      "name": "希望巡遊",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-09-29",
+          "end": "2022-10-13",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "菲亚梅塔",
+      "skinIndex": 1,
+      "name": "至聖誓言",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-09-05",
+          "end": "2024-09-19",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "菲亚梅塔",
+      "skinIndex": 2,
+      "name": "審判日",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-11-28",
+          "end": "2025-12-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "蓝毒",
+      "skinIndex": 1,
+      "name": "哀律西昂夜曲",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-06",
+          "end": "2025-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "薇薇安娜",
+      "skinIndex": 1,
+      "name": "寄自奧格尼斯科",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-26",
+          "end": "2025-09-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "蚀清",
+      "skinIndex": 1,
+      "name": "逸趣",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-02-11",
+          "end": "2025-02-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "蜜蜡",
+      "skinIndex": 1,
+      "name": "白沙",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-04-06",
+          "end": "2022-04-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "蜜蜡",
+      "skinIndex": 2,
+      "name": "悠然假日 HD61",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-06-13",
+          "end": "2024-06-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "衡沙",
+      "skinIndex": 1,
+      "name": "憩羽",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-02-12",
+          "end": "2026-02-26",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "裁度",
+      "skinIndex": 1,
+      "name": "桂影窗",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-04-08",
+          "end": "2026-04-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "诗怀雅",
+      "skinIndex": 1,
+      "name": "富貴榮華",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-02-04",
+          "end": "2021-02-18",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "赤冬",
+      "skinIndex": 1,
+      "name": "心性",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-05-16",
+          "end": "2023-05-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "赫德雷",
+      "skinIndex": 1,
+      "name": "沉思之庭",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-24",
+          "end": "2025-05-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "赫拉格",
+      "skinIndex": 1,
+      "name": "歧路幻影",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-01-11",
+          "end": "2022-01-25",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "赫默",
+      "skinIndex": 1,
+      "name": "漆匠",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-09-10",
+          "end": "2020-09-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "远牙",
+      "skinIndex": 1,
+      "name": "捉風",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-04-25",
+          "end": "2024-05-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "迷迭香",
+      "skinIndex": 1,
+      "name": "擁抱新生",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-09-12",
+          "end": "2023-09-26",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "迷迭香",
+      "skinIndex": 2,
+      "name": "輕盈一夢",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-12-23",
+          "end": "2026-01-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "送葬人",
+      "skinIndex": 1,
+      "name": "無題密令",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-05-27",
+          "end": "2021-06-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "逻各斯",
+      "skinIndex": 1,
+      "name": "輝煌的靜謐",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-11-07",
+          "end": "2025-11-21",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "重岳",
+      "skinIndex": 1,
+      "name": "何處棲",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-01-20",
+          "end": "2025-02-03",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "重岳",
+      "skinIndex": 2,
+      "name": "全能演員",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-19",
+          "end": "2025-09-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "铃兰",
+      "skinIndex": 1,
+      "name": "棄土花開",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-07-29",
+          "end": "2021-08-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "铃兰",
+      "skinIndex": 2,
+      "name": "春之頌",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-06-13",
+          "end": "2023-06-27",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "铃兰",
+      "skinIndex": 3,
+      "name": "雪霽",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-12-12",
+          "end": "2023-12-26",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "铎铃",
+      "skinIndex": 1,
+      "name": "松間月",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-06-03",
+          "end": "2025-06-17",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "银灰",
+      "skinIndex": 1,
+      "name": "約克的寒風",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-12-24",
+          "end": "2021-01-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "银灰",
+      "skinIndex": 2,
+      "name": "探尋者 SKm01",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-06-24",
+          "end": "2021-07-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "银灰",
+      "skinIndex": 3,
+      "name": "不融冰",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-06",
+          "end": "2025-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "锏",
+      "skinIndex": 1,
+      "name": "暗月的影子",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-07-18",
+          "end": "2025-08-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "闪灵",
+      "skinIndex": 1,
+      "name": "靜謐午夜 DN02",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-10-14",
+          "end": "2020-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "阿",
+      "skinIndex": 1,
+      "name": "百面郎中",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-12-23",
+          "end": "2022-01-06",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "阿斯卡纶",
+      "skinIndex": 1,
+      "name": "趨光之暗",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-12-29",
+          "end": "2026-01-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "陈",
+      "skinIndex": 1,
+      "name": "歲紅霞",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-02-04",
+          "end": "2021-02-18",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "陨星",
+      "skinIndex": 1,
+      "name": "石墨",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-09-10",
+          "end": "2020-09-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "隐德来希",
+      "skinIndex": 1,
+      "name": "耀目之藍",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-07-22",
+          "end": "2026-08-05",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "雷蛇",
+      "skinIndex": 1,
+      "name": "春竜",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-02-04",
+          "end": "2021-02-18",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "雷蛇",
+      "skinIndex": 2,
+      "name": "超載",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-09-09",
+          "end": "2021-09-23",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "霍尔海雅",
+      "skinIndex": 1,
+      "name": "歷世流風",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-03-06",
+          "end": "2025-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "霍尔海雅",
+      "skinIndex": 2,
+      "name": "恆久祭禮",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-06-10",
+          "end": "2026-06-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "青枳",
+      "skinIndex": 1,
+      "name": "晚風休憩",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-04-24",
+          "end": "2025-05-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "风丸",
+      "skinIndex": 1,
+      "name": "幻影輕悄",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2023-08-10",
+          "end": "2023-08-24",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "风笛",
+      "skinIndex": 1,
+      "name": "皇家近衛",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-09-24",
+          "end": "2024-10-08",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "风笛",
+      "skinIndex": 2,
+      "name": "風笛聲聲",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-08-26",
+          "end": "2025-09-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "食铁兽",
+      "skinIndex": 1,
+      "name": "片場一角",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-12-24",
+          "end": "2021-01-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "食铁兽",
+      "skinIndex": 2,
+      "name": "且試箸",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2022-10-27",
+          "end": "2022-11-10",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "鸿雪",
+      "skinIndex": 1,
+      "name": "字句中的雪原",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-01-09",
+          "end": "2024-01-23",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "鸿雪",
+      "skinIndex": 2,
+      "name": "行夢側畔",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-01-26",
+          "end": "2026-02-09",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "麦哲伦",
+      "skinIndex": 1,
+      "name": "回味冰霜雪",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-03-18",
+          "end": "2021-04-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "黍",
+      "skinIndex": 1,
+      "name": "春日宴",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2025-09-16",
+          "end": "2025-09-30",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "黑",
+      "skinIndex": 1,
+      "name": "厚禮",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2020-12-24",
+          "end": "2021-01-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "黑",
+      "skinIndex": 2,
+      "name": "天際線",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2021-09-09",
+          "end": "2021-09-23",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "黑键",
+      "skinIndex": 1,
+      "name": "變奏",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2024-03-19",
+          "end": "2024-04-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    }
+  ]
+}

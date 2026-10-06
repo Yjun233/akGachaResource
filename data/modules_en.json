@@ -1,0 +1,1866 @@
+{
+  "generatedAt": "2026-10-06",
+  "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
+  "modules": [
+    {
+      "char": "Mon3tr",
+      "seq": 1,
+      "name": "Ten Thousand Years of Memories",
+      "date": "2026-05-21"
+    },
+    {
+      "char": "W",
+      "seq": 1,
+      "name": "Mercenary's Bag",
+      "date": "2022-09-16"
+    },
+    {
+      "char": "W",
+      "seq": 2,
+      "name": "Lost Dull Knife",
+      "date": "2023-11-08"
+    },
+    {
+      "char": "临光",
+      "seq": 1,
+      "name": "Improved Knight Shield",
+      "date": "2022-12-27"
+    },
+    {
+      "char": "乌啾",
+      "seq": 1,
+      "name": "'Nighttime Stories'",
+      "date": "2026-09-16"
+    },
+    {
+      "char": "乌尔比安",
+      "seq": 1,
+      "name": "Vestiarium Ulpiani",
+      "date": "2025-03-11"
+    },
+    {
+      "char": "乌有",
+      "seq": 1,
+      "name": "'Shelter from the Rain'",
+      "date": "2022-01-26"
+    },
+    {
+      "char": "仇白",
+      "seq": 1,
+      "name": "A Weathered Snow Hat",
+      "date": "2024-11-01"
+    },
+    {
+      "char": "令",
+      "seq": 1,
+      "name": "Fond Dream with Poetry",
+      "date": "2022-01-26"
+    },
+    {
+      "char": "伊内丝",
+      "seq": 1,
+      "name": "'Horncare Set'",
+      "date": "2025-09-17"
+    },
+    {
+      "char": "伊芙利特",
+      "seq": 1,
+      "name": "'Syntexis'",
+      "date": "2023-09-07"
+    },
+    {
+      "char": "伊芙利特",
+      "seq": 2,
+      "name": "'Thermoformed Memory'",
+      "date": "2024-12-03"
+    },
+    {
+      "char": "但书",
+      "seq": 1,
+      "name": "Deszcz's Graduate Memento",
+      "date": "2023-04-01"
+    },
+    {
+      "char": "余",
+      "seq": 1,
+      "name": "Tastes of Life",
+      "date": "2026-07-16"
+    },
+    {
+      "char": "佩佩",
+      "seq": 1,
+      "name": "Rain or Shine",
+      "date": "2025-07-18"
+    },
+    {
+      "char": "佩佩",
+      "seq": 2,
+      "name": "Pepe's Specialized Badge",
+      "date": "2026-01-16"
+    },
+    {
+      "char": "假日威龙陈",
+      "seq": 1,
+      "name": "Beach Combat Suit",
+      "date": "2025-02-07"
+    },
+    {
+      "char": "假日威龙陈",
+      "seq": 2,
+      "name": "The Last Day of Holiday",
+      "date": "2026-01-16"
+    },
+    {
+      "char": "傀影",
+      "seq": 1,
+      "name": "Miss Christine's Felt",
+      "date": "2021-11-02"
+    },
+    {
+      "char": "傀影",
+      "seq": 2,
+      "name": "'Think of Me'",
+      "date": "2024-02-27"
+    },
+    {
+      "char": "傀影",
+      "seq": 3,
+      "name": "Phantom's Specialized Badge",
+      "date": "2025-01-17"
+    },
+    {
+      "char": "凛冬",
+      "seq": 1,
+      "name": "A Graduation Gift for Генерал Мороз",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "凯尔希",
+      "seq": 1,
+      "name": "Mon2tr",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "凯尔希",
+      "seq": 2,
+      "name": "Panacea",
+      "date": "2023-11-08"
+    },
+    {
+      "char": "凯尔希",
+      "seq": 3,
+      "name": "Kal'tsit's Specialized Badge",
+      "date": "2025-01-17"
+    },
+    {
+      "char": "初雪",
+      "seq": 1,
+      "name": "'Knitting of a Future'",
+      "date": "2023-11-08"
+    },
+    {
+      "char": "刺玫",
+      "seq": 1,
+      "name": "Broken Rose",
+      "date": "2024-06-21"
+    },
+    {
+      "char": "刻俄柏",
+      "seq": 1,
+      "name": "'Really Dry Bread'",
+      "date": "2023-07-29"
+    },
+    {
+      "char": "刻俄柏",
+      "seq": 2,
+      "name": "'Knife, I Made'",
+      "date": "2023-10-24"
+    },
+    {
+      "char": "华法琳",
+      "seq": 1,
+      "name": "Emergency Reserves",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "卡夫卡",
+      "seq": 1,
+      "name": "Rubik's Cube Pendant",
+      "date": "2021-11-02"
+    },
+    {
+      "char": "卡涅利安",
+      "seq": 1,
+      "name": "Hyacinth and Dagger",
+      "date": "2023-10-24"
+    },
+    {
+      "char": "卡涅利安",
+      "seq": 2,
+      "name": "Always Have Your Back",
+      "date": "2024-06-21"
+    },
+    {
+      "char": "历阵锐枪芬",
+      "seq": 1,
+      "name": "The Dauntless",
+      "date": "2024-11-01"
+    },
+    {
+      "char": "可颂",
+      "seq": 1,
+      "name": "Combat Boots",
+      "date": "2023-04-01"
+    },
+    {
+      "char": "史尔特尔",
+      "seq": 1,
+      "name": "Heart of Sami",
+      "date": "2025-06-05"
+    },
+    {
+      "char": "史尔特尔",
+      "seq": 2,
+      "name": "Travel Necessities",
+      "date": "2026-09-16"
+    },
+    {
+      "char": "号角",
+      "seq": 1,
+      "name": "Exemplars",
+      "date": "2024-04-16"
+    },
+    {
+      "char": "号角",
+      "seq": 2,
+      "name": "Old Clothes, New Days",
+      "date": "2025-04-08"
+    },
+    {
+      "char": "司霆惊蛰",
+      "seq": 1,
+      "name": "'Within a Thought'",
+      "date": "2025-12-11"
+    },
+    {
+      "char": "吉星",
+      "seq": 1,
+      "name": "A Suspicious Pamphlet",
+      "date": "2026-01-16"
+    },
+    {
+      "char": "吽",
+      "seq": 1,
+      "name": "Popular Sitcom Tapes",
+      "date": "2022-12-27"
+    },
+    {
+      "char": "和弦",
+      "seq": 1,
+      "name": "The Spy's Dossiers",
+      "date": "2023-07-13"
+    },
+    {
+      "char": "响石",
+      "seq": 1,
+      "name": "'Parachute'",
+      "date": "2026-07-16"
+    },
+    {
+      "char": "四月",
+      "seq": 1,
+      "name": "Hi-Fi Headset",
+      "date": "2023-03-14"
+    },
+    {
+      "char": "圣约送葬人",
+      "seq": 1,
+      "name": "Unanswered",
+      "date": "2023-12-21"
+    },
+    {
+      "char": "圣约送葬人",
+      "seq": 2,
+      "name": "Acknowledged",
+      "date": "2026-03-19"
+    },
+    {
+      "char": "圣聆初雪",
+      "seq": 1,
+      "name": "A Thousandth of A Heart",
+      "date": "2026-04-14"
+    },
+    {
+      "char": "塑心",
+      "seq": 1,
+      "name": "The Decrescendo",
+      "date": "2025-04-25"
+    },
+    {
+      "char": "塑心",
+      "seq": 2,
+      "name": "'Tuning on the Heart'",
+      "date": "2026-02-10"
+    },
+    {
+      "char": "塞雷娅",
+      "seq": 1,
+      "name": "Unused Boxing Gloves",
+      "date": "2022-12-27"
+    },
+    {
+      "char": "塞雷娅",
+      "seq": 2,
+      "name": "Technology Rising Star Award",
+      "date": "2023-07-29"
+    },
+    {
+      "char": "复奏",
+      "seq": 1,
+      "name": "'Dusk Covenant'",
+      "date": "2026-08-13"
+    },
+    {
+      "char": "夏栎",
+      "seq": 1,
+      "name": "Rusty Stick",
+      "date": "2024-03-20"
+    },
+    {
+      "char": "夕",
+      "seq": 1,
+      "name": "Untitled Scroll",
+      "date": "2022-09-16"
+    },
+    {
+      "char": "夕",
+      "seq": 2,
+      "name": "'All Told, A Sleepless Night'",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "夕",
+      "seq": 3,
+      "name": "Dusk's Specialized Badge",
+      "date": "2025-07-18"
+    },
+    {
+      "char": "多萝西",
+      "seq": 1,
+      "name": "Story Book",
+      "date": "2023-10-24"
+    },
+    {
+      "char": "多萝西",
+      "seq": 2,
+      "name": "In My Dreams",
+      "date": "2025-11-13"
+    },
+    {
+      "char": "夜半",
+      "seq": 1,
+      "name": "The Stars and The Sleepyhead",
+      "date": "2024-10-10"
+    },
+    {
+      "char": "夜莺",
+      "seq": 1,
+      "name": "'Closed Hope'",
+      "date": "2021-09-18"
+    },
+    {
+      "char": "夜莺",
+      "seq": 2,
+      "name": "'Nocturnal Echoes'",
+      "date": "2025-01-17"
+    },
+    {
+      "char": "夜魔",
+      "seq": 1,
+      "name": "'The Double'",
+      "date": "2023-07-29"
+    },
+    {
+      "char": "天火",
+      "seq": 1,
+      "name": "Fire Retardant Treatment",
+      "date": "2022-09-16"
+    },
+    {
+      "char": "奥斯塔",
+      "seq": 1,
+      "name": "Emergency Kit",
+      "date": "2025-02-07"
+    },
+    {
+      "char": "妮芙",
+      "seq": 1,
+      "name": "'Aspiration'",
+      "date": "2026-01-16"
+    },
+    {
+      "char": "妮芙",
+      "seq": 2,
+      "name": "Consultation Toolkit",
+      "date": "2026-09-16"
+    },
+    {
+      "char": "娜仁图亚",
+      "seq": 1,
+      "name": "'Those Buried in Sand'",
+      "date": "2026-03-19"
+    },
+    {
+      "char": "娜斯提",
+      "seq": 1,
+      "name": "The Engineers",
+      "date": "2026-05-21"
+    },
+    {
+      "char": "子月",
+      "seq": 1,
+      "name": "'A Hidey-Hole That Moves'",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "守林人",
+      "seq": 1,
+      "name": "Field Sniper Equipment",
+      "date": "2021-09-18"
+    },
+    {
+      "char": "安哲拉",
+      "seq": 1,
+      "name": "Gunsmithing Toolkit",
+      "date": "2021-09-18"
+    },
+    {
+      "char": "安洁莉娜",
+      "seq": 1,
+      "name": "Gravity Calibration Module",
+      "date": "2022-10-19"
+    },
+    {
+      "char": "安洁莉娜",
+      "seq": 2,
+      "name": "Experimental Anti-Gravity Module",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "安洁莉娜",
+      "seq": 3,
+      "name": "Angelina's Specialized Badge",
+      "date": "2025-04-25"
+    },
+    {
+      "char": "寒檀",
+      "seq": 1,
+      "name": "Ice Brazier",
+      "date": "2024-02-27"
+    },
+    {
+      "char": "寻澜",
+      "seq": 1,
+      "name": "The Delicacy",
+      "date": "2025-09-17"
+    },
+    {
+      "char": "小满",
+      "seq": 1,
+      "name": "On the Field",
+      "date": "2024-07-31"
+    },
+    {
+      "char": "山",
+      "seq": 1,
+      "name": "'Price of Freedom'",
+      "date": "2024-07-31"
+    },
+    {
+      "char": "山",
+      "seq": 2,
+      "name": "'In the Dead of Night'",
+      "date": "2025-11-13"
+    },
+    {
+      "char": "崖心",
+      "seq": 1,
+      "name": "'Reach the Top'",
+      "date": "2023-01-13"
+    },
+    {
+      "char": "嵯峨",
+      "seq": 1,
+      "name": "Walk The World",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "嵯峨",
+      "seq": 2,
+      "name": "Where to Find the Burdenbeast?",
+      "date": "2024-03-20"
+    },
+    {
+      "char": "左乐",
+      "seq": 1,
+      "name": "'You Night, Be Fleeting'",
+      "date": "2024-07-31"
+    },
+    {
+      "char": "左乐",
+      "seq": 2,
+      "name": "'Who is he?'",
+      "date": "2025-07-18"
+    },
+    {
+      "char": "巫恋",
+      "seq": 1,
+      "name": "Fabric Apples",
+      "date": "2023-11-08"
+    },
+    {
+      "char": "布洛卡",
+      "seq": 1,
+      "name": "'Buddies'",
+      "date": "2024-01-17"
+    },
+    {
+      "char": "帕拉斯",
+      "seq": 1,
+      "name": "'Ούρος'",
+      "date": "2021-08-04"
+    },
+    {
+      "char": "帕拉斯",
+      "seq": 2,
+      "name": "'Light of Heria'",
+      "date": "2023-03-14"
+    },
+    {
+      "char": "年",
+      "seq": 1,
+      "name": "The Array of Chaos",
+      "date": "2023-04-01"
+    },
+    {
+      "char": "年",
+      "seq": 2,
+      "name": "'Don't Disturb'",
+      "date": "2023-10-24"
+    },
+    {
+      "char": "幽灵鲨",
+      "seq": 1,
+      "name": "Dim Candlelight",
+      "date": "2024-01-17"
+    },
+    {
+      "char": "异客",
+      "seq": 1,
+      "name": "Electromagnetic Regulator",
+      "date": "2021-11-02"
+    },
+    {
+      "char": "异客",
+      "seq": 2,
+      "name": "Gold of Crowns",
+      "date": "2022-12-27"
+    },
+    {
+      "char": "异客",
+      "seq": 3,
+      "name": "Passenger's Specialized Badge",
+      "date": "2026-07-16"
+    },
+    {
+      "char": "引星棘刺",
+      "seq": 1,
+      "name": "A Three-Sided Coin",
+      "date": "2025-08-28"
+    },
+    {
+      "char": "归溟幽灵鲨",
+      "seq": 1,
+      "name": "'Vinyl Record' Box",
+      "date": "2022-11-03"
+    },
+    {
+      "char": "归溟幽灵鲨",
+      "seq": 2,
+      "name": "The Beauty in the Incomplete",
+      "date": "2023-01-13"
+    },
+    {
+      "char": "录武官",
+      "seq": 1,
+      "name": "Unfinished Record",
+      "date": "2025-12-11"
+    },
+    {
+      "char": "德克萨斯",
+      "seq": 1,
+      "name": "Private Field Supply Package",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "忍冬",
+      "seq": 1,
+      "name": "Patience, Mission, Vacation",
+      "date": "2025-04-25"
+    },
+    {
+      "char": "怒潮凛冬",
+      "seq": 1,
+      "name": "Unissued Medal",
+      "date": "2026-09-16"
+    },
+    {
+      "char": "惊蛰",
+      "seq": 1,
+      "name": "'All the Thunderlight'",
+      "date": "2021-11-02"
+    },
+    {
+      "char": "慑砂",
+      "seq": 1,
+      "name": "'Soul Resonance'",
+      "date": "2022-09-16"
+    },
+    {
+      "char": "承曦格雷伊",
+      "seq": 1,
+      "name": "Experimental ECU Prototype",
+      "date": "2023-11-08"
+    },
+    {
+      "char": "折桠",
+      "seq": 1,
+      "name": "'Marks of Time'",
+      "date": "2026-03-19"
+    },
+    {
+      "char": "拉普兰德",
+      "seq": 1,
+      "name": "'The Young Fang'",
+      "date": "2024-11-01"
+    },
+    {
+      "char": "掠风",
+      "seq": 1,
+      "name": "'A Bright Idea Occurs'",
+      "date": "2023-12-21"
+    },
+    {
+      "char": "推进之王",
+      "seq": 1,
+      "name": "'Candy Box'",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "推进之王",
+      "seq": 2,
+      "name": "'Thy First Vow'",
+      "date": "2023-09-07"
+    },
+    {
+      "char": "提丰",
+      "seq": 1,
+      "name": "Ammadikshu",
+      "date": "2024-02-27"
+    },
+    {
+      "char": "提丰",
+      "seq": 2,
+      "name": "Shadow of the Icefield",
+      "date": "2025-12-11"
+    },
+    {
+      "char": "撷英调香师",
+      "seq": 1,
+      "name": "'Breath of Twin Moons'",
+      "date": "2026-06-22"
+    },
+    {
+      "char": "斥罪",
+      "seq": 1,
+      "name": "The Thorny Road That Continues",
+      "date": "2024-05-01"
+    },
+    {
+      "char": "斥罪",
+      "seq": 2,
+      "name": "'Innocent'",
+      "date": "2024-12-03"
+    },
+    {
+      "char": "斩业星熊",
+      "seq": 1,
+      "name": "No Trace",
+      "date": "2026-04-14"
+    },
+    {
+      "char": "断崖",
+      "seq": 1,
+      "name": "Portable Wildland Stimulants",
+      "date": "2024-11-01"
+    },
+    {
+      "char": "斯卡蒂",
+      "seq": 1,
+      "name": "Moist Sword Bag",
+      "date": "2022-01-26"
+    },
+    {
+      "char": "斯卡蒂",
+      "seq": 2,
+      "name": "No Ending to This Dream",
+      "date": "2022-12-27"
+    },
+    {
+      "char": "新约能天使",
+      "seq": 1,
+      "name": "Convenience Kit for New Friends",
+      "date": "2025-10-14"
+    },
+    {
+      "char": "早露",
+      "seq": 1,
+      "name": "Siege Equipment Training Device",
+      "date": "2023-07-13"
+    },
+    {
+      "char": "早露",
+      "seq": 2,
+      "name": "'Сердце'",
+      "date": "2026-06-22"
+    },
+    {
+      "char": "明椒",
+      "seq": 1,
+      "name": "'Colorful Life'",
+      "date": "2026-05-21"
+    },
+    {
+      "char": "星极",
+      "seq": 1,
+      "name": "Unpredictable Star Chart",
+      "date": "2025-06-05"
+    },
+    {
+      "char": "星熊",
+      "seq": 1,
+      "name": "Gifts From Friends",
+      "date": "2023-04-01"
+    },
+    {
+      "char": "星熊",
+      "seq": 2,
+      "name": "Amulet",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "晓歌",
+      "seq": 1,
+      "name": "'The Voiceless'",
+      "date": "2025-09-17"
+    },
+    {
+      "char": "普罗旺斯",
+      "seq": 1,
+      "name": "Tail-Care Suit",
+      "date": "2022-10-19"
+    },
+    {
+      "char": "月禾",
+      "seq": 1,
+      "name": "Rouya Bimei",
+      "date": "2024-03-20"
+    },
+    {
+      "char": "望",
+      "seq": 1,
+      "name": "Beast-Shaped Stone Container",
+      "date": "2026-07-16"
+    },
+    {
+      "char": "杏仁",
+      "seq": 1,
+      "name": "'Capstone Project'",
+      "date": "2024-03-20"
+    },
+    {
+      "char": "极光",
+      "seq": 1,
+      "name": "Shield Photography Module",
+      "date": "2022-11-03"
+    },
+    {
+      "char": "极境",
+      "seq": 1,
+      "name": "Emergency Callbook",
+      "date": "2024-02-27"
+    },
+    {
+      "char": "林",
+      "seq": 1,
+      "name": "'Exquisite Heart'",
+      "date": "2023-10-24"
+    },
+    {
+      "char": "林",
+      "seq": 2,
+      "name": "The Compassionate and the Just",
+      "date": "2025-07-18"
+    },
+    {
+      "char": "格劳克斯",
+      "seq": 1,
+      "name": "Powered Exoskeleton",
+      "date": "2022-10-19"
+    },
+    {
+      "char": "桑葚",
+      "seq": 1,
+      "name": "Serenity Inside",
+      "date": "2025-01-17"
+    },
+    {
+      "char": "梅尔",
+      "seq": 1,
+      "name": "'Meeboo' Control Terminal XP",
+      "date": "2021-08-04"
+    },
+    {
+      "char": "棘刺",
+      "seq": 1,
+      "name": "The Salt and the Sand",
+      "date": "2024-11-01"
+    },
+    {
+      "char": "棘刺",
+      "seq": 2,
+      "name": "Sand Erosion",
+      "date": "2025-10-14"
+    },
+    {
+      "char": "森蚺",
+      "seq": 1,
+      "name": "Zumama's Tool Box",
+      "date": "2022-11-03"
+    },
+    {
+      "char": "森蚺",
+      "seq": 2,
+      "name": "'The Little Ugly Thing'",
+      "date": "2023-04-01"
+    },
+    {
+      "char": "森蚺",
+      "seq": 3,
+      "name": "Eunectes's Specialized Badge",
+      "date": "2025-07-18"
+    },
+    {
+      "char": "槐琥",
+      "seq": 1,
+      "name": "The Classic of Hung Mei Wing Chun",
+      "date": "2021-11-02"
+    },
+    {
+      "char": "死芒",
+      "seq": 1,
+      "name": "Unclaimed Legacy",
+      "date": "2025-11-13"
+    },
+    {
+      "char": "水月",
+      "seq": 1,
+      "name": "Entreaty of the Herald",
+      "date": "2023-01-13"
+    },
+    {
+      "char": "水月",
+      "seq": 2,
+      "name": "Caerulorum Semina",
+      "date": "2023-07-13"
+    },
+    {
+      "char": "水月",
+      "seq": 3,
+      "name": "Mizuki's Specialized Badge",
+      "date": "2025-10-14"
+    },
+    {
+      "char": "波卜",
+      "seq": 1,
+      "name": "Second-hand Textbook for Social Work",
+      "date": "2025-04-25"
+    },
+    {
+      "char": "泥岩",
+      "seq": 1,
+      "name": "Spreading Roots of Soil and Stone",
+      "date": "2024-05-01"
+    },
+    {
+      "char": "泥岩",
+      "seq": 2,
+      "name": "Wish of the Fertile Earth",
+      "date": "2025-09-17"
+    },
+    {
+      "char": "洋灰",
+      "seq": 1,
+      "name": "Engineering Recorder",
+      "date": "2023-10-24"
+    },
+    {
+      "char": "洛洛",
+      "seq": 1,
+      "name": "Unnamed Drone",
+      "date": "2024-06-21"
+    },
+    {
+      "char": "浊心斯卡蒂",
+      "seq": 1,
+      "name": "An Exuvia of Her Past",
+      "date": "2025-04-08"
+    },
+    {
+      "char": "浊心斯卡蒂",
+      "seq": 2,
+      "name": "New Generation",
+      "date": "2026-09-16"
+    },
+    {
+      "char": "海霓",
+      "seq": 1,
+      "name": "Multifunctional Mapping Instruments (Early Access)",
+      "date": "2024-12-03"
+    },
+    {
+      "char": "涤火杰西卡",
+      "seq": 1,
+      "name": "This Hero of Mine",
+      "date": "2024-09-06"
+    },
+    {
+      "char": "涤火杰西卡",
+      "seq": 2,
+      "name": "Unweathered",
+      "date": "2026-08-13"
+    },
+    {
+      "char": "深律",
+      "seq": 1,
+      "name": "Bestowed Trinket",
+      "date": "2024-05-01"
+    },
+    {
+      "char": "渡桥",
+      "seq": 1,
+      "name": "Beware of the Edges",
+      "date": "2025-02-07"
+    },
+    {
+      "char": "温米",
+      "seq": 1,
+      "name": "A Warmy Gift",
+      "date": "2026-01-16"
+    },
+    {
+      "char": "温蒂",
+      "seq": 1,
+      "name": "Custom Bionic Seadragon",
+      "date": "2023-09-07"
+    },
+    {
+      "char": "温蒂",
+      "seq": 2,
+      "name": "New Bionic Prototype",
+      "date": "2024-06-21"
+    },
+    {
+      "char": "澄闪",
+      "seq": 1,
+      "name": "'Industrious Wings'",
+      "date": "2024-06-21"
+    },
+    {
+      "char": "澄闪",
+      "seq": 2,
+      "name": "Dream Must Come True",
+      "date": "2025-12-11"
+    },
+    {
+      "char": "濯尘芙蓉",
+      "seq": 1,
+      "name": "Crystal Corsage",
+      "date": "2024-06-21"
+    },
+    {
+      "char": "火哨",
+      "seq": 1,
+      "name": "'Footprints Growing'",
+      "date": "2024-04-16"
+    },
+    {
+      "char": "灰喉",
+      "seq": 1,
+      "name": "Reflection of a Mother's Love",
+      "date": "2023-03-14"
+    },
+    {
+      "char": "灰毫",
+      "seq": 1,
+      "name": "Outdoor Essential Kit",
+      "date": "2024-04-16"
+    },
+    {
+      "char": "灵知",
+      "seq": 1,
+      "name": "'Vow'",
+      "date": "2023-11-08"
+    },
+    {
+      "char": "灵知",
+      "seq": 2,
+      "name": "Project One Model",
+      "date": "2025-08-28"
+    },
+    {
+      "char": "灵知",
+      "seq": 3,
+      "name": "Gnosis's Specialized Badge",
+      "date": "2026-04-14"
+    },
+    {
+      "char": "烈夏",
+      "seq": 1,
+      "name": "The Old Clothes",
+      "date": "2024-11-01"
+    },
+    {
+      "char": "烛煌",
+      "seq": 1,
+      "name": "The Fervent Longing",
+      "date": "2026-01-16"
+    },
+    {
+      "char": "焰尾",
+      "seq": 1,
+      "name": "The Origins of Pinus Sylvestris",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "焰尾",
+      "seq": 2,
+      "name": "Their Future",
+      "date": "2023-12-21"
+    },
+    {
+      "char": "焰影苇草",
+      "seq": 1,
+      "name": "'A Floral Garland to the Red Dragon'",
+      "date": "2024-06-21"
+    },
+    {
+      "char": "煌",
+      "seq": 1,
+      "name": "Overloaded Weapons, Overheated Heart",
+      "date": "2024-01-17"
+    },
+    {
+      "char": "煌",
+      "seq": 2,
+      "name": "'I'll be right back'",
+      "date": "2026-02-10"
+    },
+    {
+      "char": "熔泉",
+      "seq": 1,
+      "name": "Arrow Adjustment Box",
+      "date": "2023-07-13"
+    },
+    {
+      "char": "燧石",
+      "seq": 1,
+      "name": "Meaning of Flowers",
+      "date": "2024-07-31"
+    },
+    {
+      "char": "爱丽丝",
+      "seq": 1,
+      "name": "Castle Pop-Up Book",
+      "date": "2022-12-27"
+    },
+    {
+      "char": "特克诺",
+      "seq": 1,
+      "name": "Official Coupon Stamp of the BBQ House",
+      "date": "2025-11-13"
+    },
+    {
+      "char": "狮蝎",
+      "seq": 1,
+      "name": "Tail-Protection Training Tool",
+      "date": "2023-01-13"
+    },
+    {
+      "char": "玛恩纳",
+      "seq": 1,
+      "name": "'Man in Scabbard'",
+      "date": "2025-10-14"
+    },
+    {
+      "char": "玫拉",
+      "seq": 1,
+      "name": "Fragrance Earrings",
+      "date": "2023-11-08"
+    },
+    {
+      "char": "琳琅诗怀雅",
+      "seq": 1,
+      "name": "'Be Resplendent and Outstanding'",
+      "date": "2024-01-17"
+    },
+    {
+      "char": "琳琅诗怀雅",
+      "seq": 2,
+      "name": "Director Swire's Lungmen Food Guide",
+      "date": "2025-02-07"
+    },
+    {
+      "char": "琳琅诗怀雅",
+      "seq": 3,
+      "name": "Swire the Elegant Wit's Badge",
+      "date": "2026-01-16"
+    },
+    {
+      "char": "琴柳",
+      "seq": 1,
+      "name": "Pastoral",
+      "date": "2024-02-27"
+    },
+    {
+      "char": "琴柳",
+      "seq": 2,
+      "name": "'Auld Lang Syne'",
+      "date": "2025-08-28"
+    },
+    {
+      "char": "瑕光",
+      "seq": 1,
+      "name": "Echo of Craftsman's Guild",
+      "date": "2022-12-27"
+    },
+    {
+      "char": "瑕光",
+      "seq": 2,
+      "name": "'Knight Primus'",
+      "date": "2023-12-21"
+    },
+    {
+      "char": "白金",
+      "seq": 1,
+      "name": "Solo Travel Kit",
+      "date": "2023-03-14"
+    },
+    {
+      "char": "白铁",
+      "seq": 1,
+      "name": "FMC-Crawler",
+      "date": "2023-12-21"
+    },
+    {
+      "char": "白铁",
+      "seq": 2,
+      "name": "Highbury Imprint",
+      "date": "2025-04-08"
+    },
+    {
+      "char": "白面鸮",
+      "seq": 1,
+      "name": "Medic Environment Analyze System",
+      "date": "2021-09-18"
+    },
+    {
+      "char": "百炼嘉维尔",
+      "seq": 1,
+      "name": "The Binding of Gavial",
+      "date": "2024-01-17"
+    },
+    {
+      "char": "百炼嘉维尔",
+      "seq": 2,
+      "name": "Sanding and Polishing",
+      "date": "2025-12-11"
+    },
+    {
+      "char": "真理",
+      "seq": 1,
+      "name": "Reading Notes",
+      "date": "2022-10-19"
+    },
+    {
+      "char": "真言",
+      "seq": 1,
+      "name": "Central Nerve Detection Module",
+      "date": "2026-03-19"
+    },
+    {
+      "char": "石棉",
+      "seq": 1,
+      "name": "'Asbestos vs. Two-headed Gloompincer'",
+      "date": "2026-04-14"
+    },
+    {
+      "char": "空",
+      "seq": 1,
+      "name": "'Unison'",
+      "date": "2025-04-08"
+    },
+    {
+      "char": "空弦",
+      "seq": 1,
+      "name": "'Seeds of Tomorrow'",
+      "date": "2023-03-14"
+    },
+    {
+      "char": "空弦",
+      "seq": 2,
+      "name": "Yesterday Once More",
+      "date": "2023-07-13"
+    },
+    {
+      "char": "空弦",
+      "seq": 3,
+      "name": "Archetto's Specialized Badge",
+      "date": "2025-10-14"
+    },
+    {
+      "char": "空构",
+      "seq": 1,
+      "name": "Drone Spraying Kit",
+      "date": "2023-12-21"
+    },
+    {
+      "char": "絮雨",
+      "seq": 1,
+      "name": "A Quaint First-Aid Kit",
+      "date": "2022-11-03"
+    },
+    {
+      "char": "红",
+      "seq": 1,
+      "name": "Mystery Prop Pack",
+      "date": "2021-11-02"
+    },
+    {
+      "char": "纯烬艾雅法拉",
+      "seq": 1,
+      "name": "Sounds I Want to Retain",
+      "date": "2025-01-17"
+    },
+    {
+      "char": "纯烬艾雅法拉",
+      "seq": 2,
+      "name": "Life I Want to Retain",
+      "date": "2026-08-13"
+    },
+    {
+      "char": "绮良",
+      "seq": 1,
+      "name": "We Will Survive 3 Online",
+      "date": "2023-01-13"
+    },
+    {
+      "char": "维什戴尔",
+      "seq": 1,
+      "name": "'Ancestor Launcher'",
+      "date": "2024-11-01"
+    },
+    {
+      "char": "维娜·维多利亚",
+      "seq": 1,
+      "name": "The Adventure of the Lioness",
+      "date": "2025-06-05"
+    },
+    {
+      "char": "维娜·维多利亚",
+      "seq": 2,
+      "name": "'Speed and Bag'",
+      "date": "2026-04-14"
+    },
+    {
+      "char": "缄默德克萨斯",
+      "seq": 1,
+      "name": "Blueberry & Dark Chocolate",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "缇缇",
+      "seq": 1,
+      "name": "Gifts from Columbia",
+      "date": "2026-06-22"
+    },
+    {
+      "char": "缪尔赛思",
+      "seq": 1,
+      "name": "Dresser Flowing Shape",
+      "date": "2024-10-10"
+    },
+    {
+      "char": "缪尔赛思",
+      "seq": 2,
+      "name": "Fallen Leaves of Four Seasons",
+      "date": "2025-10-14"
+    },
+    {
+      "char": "羽毛笔",
+      "seq": 1,
+      "name": "Aqua Blue Dawn",
+      "date": "2023-12-21"
+    },
+    {
+      "char": "耀骑士临光",
+      "seq": 1,
+      "name": "Blade of Blazing Sun",
+      "date": "2022-01-26"
+    },
+    {
+      "char": "耀骑士临光",
+      "seq": 2,
+      "name": "'A Knightly House'",
+      "date": "2024-05-01"
+    },
+    {
+      "char": "老鲤",
+      "seq": 1,
+      "name": "'Wandering'",
+      "date": "2022-01-26"
+    },
+    {
+      "char": "老鲤",
+      "seq": 2,
+      "name": "'Distinguisher'",
+      "date": "2024-06-21"
+    },
+    {
+      "char": "能天使",
+      "seq": 1,
+      "name": "Exusiai's Surprise",
+      "date": "2023-03-14"
+    },
+    {
+      "char": "能天使",
+      "seq": 2,
+      "name": "Welcome to Penguin Logistics",
+      "date": "2025-06-05"
+    },
+    {
+      "char": "艾丽妮",
+      "seq": 1,
+      "name": "Liber Sacer",
+      "date": "2022-11-03"
+    },
+    {
+      "char": "艾丽妮",
+      "seq": 2,
+      "name": "Inquisitor's Ration",
+      "date": "2025-03-11"
+    },
+    {
+      "char": "艾丽妮",
+      "seq": 3,
+      "name": "Irene's Specialized Badge",
+      "date": "2026-07-16"
+    },
+    {
+      "char": "艾雅法拉",
+      "seq": 1,
+      "name": "'Missed Sounds'",
+      "date": "2023-07-29"
+    },
+    {
+      "char": "艾雅法拉",
+      "seq": 2,
+      "name": "Pet Contest First Prize",
+      "date": "2026-03-19"
+    },
+    {
+      "char": "芙兰卡",
+      "seq": 1,
+      "name": "Cutting-edge Thermite Unit",
+      "date": "2022-01-26"
+    },
+    {
+      "char": "苇草",
+      "seq": 1,
+      "name": "Spear Clean Suit",
+      "date": "2021-12-22"
+    },
+    {
+      "char": "荒芜拉普兰德",
+      "seq": 1,
+      "name": "Hour of the Wolf",
+      "date": "2025-04-25"
+    },
+    {
+      "char": "莫斯提马",
+      "seq": 1,
+      "name": "Home of 'Black Lock' and 'White Key'",
+      "date": "2022-09-16"
+    },
+    {
+      "char": "莫斯提马",
+      "seq": 2,
+      "name": "Veteran Legatus' Customized Cloak",
+      "date": "2025-02-07"
+    },
+    {
+      "char": "莱伊",
+      "seq": 1,
+      "name": "Dancing Moonlight",
+      "date": "2024-12-03"
+    },
+    {
+      "char": "莱伊",
+      "seq": 2,
+      "name": "To Certify What?",
+      "date": "2026-05-21"
+    },
+    {
+      "char": "莱恩哈特",
+      "seq": 1,
+      "name": "Inheritance and Development",
+      "date": "2022-09-16"
+    },
+    {
+      "char": "菲亚梅塔",
+      "seq": 1,
+      "name": "'Out-Law' Special Ammunition Surplus",
+      "date": "2022-09-16"
+    },
+    {
+      "char": "菲亚梅塔",
+      "seq": 2,
+      "name": "A Long Journey",
+      "date": "2024-04-16"
+    },
+    {
+      "char": "蓝毒",
+      "seq": 1,
+      "name": "Standard Color Chart",
+      "date": "2023-03-14"
+    },
+    {
+      "char": "蕾缪安",
+      "seq": 1,
+      "name": "'Magazine and Stained Glass'",
+      "date": "2025-10-14"
+    },
+    {
+      "char": "薇薇安娜",
+      "seq": 1,
+      "name": "The Unforeseeable",
+      "date": "2025-06-05"
+    },
+    {
+      "char": "薇薇安娜",
+      "seq": 2,
+      "name": "'Final Line'",
+      "date": "2026-06-22"
+    },
+    {
+      "char": "蚀清",
+      "seq": 1,
+      "name": "Unerasable",
+      "date": "2023-09-07"
+    },
+    {
+      "char": "蜜蜡",
+      "seq": 1,
+      "name": "'Beeswax's Blessing'",
+      "date": "2023-10-24"
+    },
+    {
+      "char": "衡沙",
+      "seq": 1,
+      "name": "Traces From the Past",
+      "date": "2025-01-17"
+    },
+    {
+      "char": "裁度",
+      "seq": 1,
+      "name": "'The Big Shot'",
+      "date": "2025-04-25"
+    },
+    {
+      "char": "诗怀雅",
+      "seq": 1,
+      "name": "Self-defense Lipstick",
+      "date": "2021-08-04"
+    },
+    {
+      "char": "诺威尔",
+      "seq": 1,
+      "name": "To Grandpa",
+      "date": "2025-07-18"
+    },
+    {
+      "char": "贝洛内",
+      "seq": 1,
+      "name": "The Instrument",
+      "date": "2026-08-13"
+    },
+    {
+      "char": "贾维",
+      "seq": 1,
+      "name": "Homemade Jack",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "赤冬",
+      "seq": 1,
+      "name": "Samurai Armor",
+      "date": "2023-07-13"
+    },
+    {
+      "char": "赤刃明霄陈",
+      "seq": 1,
+      "name": "Remnant Pages of Memory",
+      "date": "2026-07-16"
+    },
+    {
+      "char": "赫德雷",
+      "seq": 1,
+      "name": "A New Life",
+      "date": "2025-03-11"
+    },
+    {
+      "char": "赫德雷",
+      "seq": 2,
+      "name": "The Handwriting",
+      "date": "2026-06-22"
+    },
+    {
+      "char": "赫拉格",
+      "seq": 1,
+      "name": "Zouhou, a Sheath for Contempt",
+      "date": "2023-07-13"
+    },
+    {
+      "char": "赫拉格",
+      "seq": 2,
+      "name": "'Горячий снег'",
+      "date": "2024-02-27"
+    },
+    {
+      "char": "赫默",
+      "seq": 1,
+      "name": "Emergency Self-Defense Procedures",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "远牙",
+      "seq": 1,
+      "name": "First-show Support Set",
+      "date": "2021-10-16"
+    },
+    {
+      "char": "远牙",
+      "seq": 2,
+      "name": "Fan Letters",
+      "date": "2023-01-13"
+    },
+    {
+      "char": "迷迭香",
+      "seq": 1,
+      "name": "'Notes'",
+      "date": "2023-11-08"
+    },
+    {
+      "char": "迷迭香",
+      "seq": 2,
+      "name": "Rosmontis's Specialized Badge",
+      "date": "2025-04-25"
+    },
+    {
+      "char": "送葬人",
+      "seq": 1,
+      "name": "Executor's Satchel",
+      "date": "2025-02-07"
+    },
+    {
+      "char": "逻各斯",
+      "seq": 1,
+      "name": "A Pen Collection from the Convallis",
+      "date": "2024-11-01"
+    },
+    {
+      "char": "逻各斯",
+      "seq": 2,
+      "name": "Semantics Paradigm Encyclopedia",
+      "date": "2025-09-17"
+    },
+    {
+      "char": "遥",
+      "seq": 1,
+      "name": "The Belated Memorial",
+      "date": "2026-01-16"
+    },
+    {
+      "char": "酒神",
+      "seq": 1,
+      "name": "Heart of Tragodia",
+      "date": "2025-11-13"
+    },
+    {
+      "char": "重岳",
+      "seq": 1,
+      "name": "'When to Wake Up'",
+      "date": "2024-07-31"
+    },
+    {
+      "char": "重岳",
+      "seq": 2,
+      "name": "Shuo",
+      "date": "2025-07-18"
+    },
+    {
+      "char": "钼铅",
+      "seq": 1,
+      "name": "Mineral Display Cabinet",
+      "date": "2025-08-28"
+    },
+    {
+      "char": "铃兰",
+      "seq": 1,
+      "name": "Pocket Omamori",
+      "date": "2022-10-19"
+    },
+    {
+      "char": "铃兰",
+      "seq": 2,
+      "name": "Children of Terra",
+      "date": "2024-06-21"
+    },
+    {
+      "char": "铎铃",
+      "seq": 1,
+      "name": "To My Successor",
+      "date": "2025-03-11"
+    },
+    {
+      "char": "银灰",
+      "seq": 1,
+      "name": "Snow Realm Fowlcare Kit",
+      "date": "2024-11-01"
+    },
+    {
+      "char": "锏",
+      "seq": 1,
+      "name": "'Footnotes of the Past'",
+      "date": "2024-06-21"
+    },
+    {
+      "char": "闪灵",
+      "seq": 1,
+      "name": "Withered Scabbard",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "闪灵",
+      "seq": 2,
+      "name": "'Followers'",
+      "date": "2023-09-07"
+    },
+    {
+      "char": "阿",
+      "seq": 1,
+      "name": "Mixed-Fruit Medical Caddy",
+      "date": "2023-12-21"
+    },
+    {
+      "char": "阿",
+      "seq": 2,
+      "name": "Remnant of the Malpractice",
+      "date": "2026-08-13"
+    },
+    {
+      "char": "阿兰娜",
+      "seq": 1,
+      "name": "'Carry-On Bumper'",
+      "date": "2025-09-17"
+    },
+    {
+      "char": "阿斯卡纶",
+      "seq": 1,
+      "name": "'Hidden Blade'",
+      "date": "2024-10-10"
+    },
+    {
+      "char": "阿斯卡纶",
+      "seq": 2,
+      "name": "'Eyes of Ascalon'",
+      "date": "2025-11-13"
+    },
+    {
+      "char": "阿罗玛",
+      "seq": 1,
+      "name": "Lemon-flavored Childhood",
+      "date": "2024-10-10"
+    },
+    {
+      "char": "陈",
+      "seq": 1,
+      "name": "Rhodes Island Standard Combat Sword",
+      "date": "2021-12-22"
+    },
+    {
+      "char": "陈",
+      "seq": 2,
+      "name": "Good Old School Days",
+      "date": "2024-03-20"
+    },
+    {
+      "char": "陨星",
+      "seq": 1,
+      "name": "Tag of Nameless",
+      "date": "2022-09-16"
+    },
+    {
+      "char": "隐德来希",
+      "seq": 1,
+      "name": "A Ferry that Withers",
+      "date": "2025-08-08"
+    },
+    {
+      "char": "隐德来希",
+      "seq": 2,
+      "name": "A Collection of Rosy Tales",
+      "date": "2026-06-22"
+    },
+    {
+      "char": "雪猎",
+      "seq": 1,
+      "name": "Hunts of the Past",
+      "date": "2026-04-14"
+    },
+    {
+      "char": "雷蛇",
+      "seq": 1,
+      "name": "Stunner's Storage",
+      "date": "2024-09-06"
+    },
+    {
+      "char": "霍尔海雅",
+      "seq": 1,
+      "name": "'Bibliotheca'",
+      "date": "2023-11-08"
+    },
+    {
+      "char": "霍尔海雅",
+      "seq": 2,
+      "name": "Time Gallery of K'uk'ulkan",
+      "date": "2024-10-10"
+    },
+    {
+      "char": "霍尔海雅",
+      "seq": 3,
+      "name": "Ho'olheyak's Specialized Badge",
+      "date": "2026-04-14"
+    },
+    {
+      "char": "青枳",
+      "seq": 1,
+      "name": "The Morning Star of the Homeseeker",
+      "date": "2024-01-17"
+    },
+    {
+      "char": "风丸",
+      "seq": 1,
+      "name": "An Old Thing",
+      "date": "2022-11-03"
+    },
+    {
+      "char": "风笛",
+      "seq": 1,
+      "name": "Piledriver Spear Magazine",
+      "date": "2021-12-22"
+    },
+    {
+      "char": "风笛",
+      "seq": 2,
+      "name": "Stick and Sack",
+      "date": "2024-05-01"
+    },
+    {
+      "char": "食铁兽",
+      "seq": 1,
+      "name": "Shangshu-Style Homemade Chili Sauce",
+      "date": "2023-09-07"
+    },
+    {
+      "char": "鸿雪",
+      "seq": 1,
+      "name": "Typewriter Ribbon",
+      "date": "2023-01-13"
+    },
+    {
+      "char": "鸿雪",
+      "seq": 2,
+      "name": "чувство ритуала",
+      "date": "2025-08-28"
+    },
+    {
+      "char": "麦哲伦",
+      "seq": 1,
+      "name": "Drone Control Module.P",
+      "date": "2021-08-04"
+    },
+    {
+      "char": "麦哲伦",
+      "seq": 2,
+      "name": "Instructional Soaring Dragon Drone",
+      "date": "2023-03-14"
+    },
+    {
+      "char": "黍",
+      "seq": 1,
+      "name": "On Architecture of Time",
+      "date": "2024-07-31"
+    },
+    {
+      "char": "黑",
+      "seq": 1,
+      "name": "Customized Crossbow Accessory Suit",
+      "date": "2022-10-19"
+    },
+    {
+      "char": "黑",
+      "seq": 2,
+      "name": "Old Razor",
+      "date": "2023-05-23"
+    },
+    {
+      "char": "黑键",
+      "seq": 1,
+      "name": "Originium Dice Case",
+      "date": "2022-12-27"
+    },
+    {
+      "char": "黑键",
+      "seq": 2,
+      "name": "'Theory Expositor'",
+      "date": "2023-04-01"
+    },
+    {
+      "char": "黑键",
+      "seq": 3,
+      "name": "Lineage of Decay",
+      "date": "2024-04-16"
+    }
+  ]
+}

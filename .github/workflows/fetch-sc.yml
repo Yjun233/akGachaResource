@@ -50,7 +50,8 @@ jobs:
 
       # 顺带把**官方解包数据**里的国服中坚（常驻中坚寻访 + 中坚甄选）也刷一遍。
       # 它自带 `data_version.txt` 短路，版本没变时几乎不耗时。
-      - name: 抓取官方解包数据（国服中坚）
+      # 顺带把国服的模组 / 密录也刷一遍（**国服皮肤不在此列** —— 它走 PRTS）。
+      - name: 抓取官方解包数据（国服中坚 + 模组 / 密录）
         continue-on-error: true
         run: npm run build:gamedata -- --servers sc
 
@@ -80,7 +81,8 @@ jobs:
       - name: 刷新 jsDelivr 缓存
         if: steps.diff.outputs.changed == 'true'
         run: |
-          for f in operators.json banners_sc.json banners_cla_sc.json metadata.json; do
+          for f in operators.json metadata.json banners_sc.json banners_cla_sc.json \
+                   modules_sc.json memoirs_sc.json; do
             body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
             echo "purge data/$f -> $(echo "$body" | head -c 120)"
           done

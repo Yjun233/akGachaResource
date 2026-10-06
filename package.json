@@ -6,12 +6,12 @@
   "description": "明日方舟寻访数据站的静态资源仓库：卡池 / 干员 JSON 数据 + 干员头像。由 akGachaData 站点通过 jsDelivr CDN 直接引用，数据与图片都不进站点主仓库。",
   "scripts": {
     "build:data": "node scripts/fetch-data.mjs",
-    "build:avatars": "node scripts/fetch-avatars.mjs",
-    "build": "npm run build:data && npm run build:data:en && npm run build:data:tc && npm run build:extras && npm run build:avatars",
     "build:data:en": "node scripts/fetch-data-en.mjs",
     "build:data:tc": "node scripts/fetch-data-tc.mjs",
-    "build:extras": "node scripts/fetch-extras.mjs",
-    "build:gamedata": "node scripts/fetch-gamedata.mjs"
+    "build:gamedata": "node scripts/fetch-gamedata.mjs",
+    "build:skins": "node scripts/fetch-skins.mjs",
+    "build:avatars": "node scripts/fetch-avatars.mjs",
+    "build": "npm run build:data && npm run build:data:en && npm run build:data:tc && npm run build:gamedata && npm run build:skins && npm run build:avatars"
   },
   "dependencies": {
     "pinyin-pro": "^3.29.4",

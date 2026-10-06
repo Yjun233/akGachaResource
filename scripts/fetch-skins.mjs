@@ -1,11 +1,17 @@
 /**
- * fetch-extras.mjs
- * 从 PRTS Wiki 抓取**国服**的「干员皮肤 / 干员密录 / 干员模组」数据，生成静态 JSON。
+ * fetch-skins.mjs
+ * 从 PRTS Wiki 抓取**国服**的**干员皮肤**数据，生成静态 JSON。
  *
  * 输出（data/）：
- *   skins.json     干员时装：含**复刻在内**的所有上架窗口 + 获取途径
- *   memoirs.json   干员密录：第几批 + 推出日期
- *   modules.json   干员模组：第几个 + 推出日期
+ *   skins_sc.json  干员时装：含**复刻在内**的所有上架窗口 + 获取途径（**只做国服**）
+ *
+ * ⚠️ **本脚本 2026-10-06 起只做皮肤**（原名 `fetch-extras.mjs`）：
+ *    密录与模组改由**官方解包数据**提供 → `scripts/fetch-gamedata.mjs` 产出
+ *    `modules_<server>.json` / `memoirs_<server>.json`（三服）。这么分的原因：
+ *    · 官方那两个数据集有**完整日期**、一次给三服，而 PRTS 只有国服；
+ *    · 但**皮肤必须留在 PRTS** —— 官方只有「首发上架日」这一个点、没有复刻 / 下架窗口，
+ *      而 UP 历史页的三角标记靠的正是「卡池窗口 ∩ 皮肤上架窗口」（实测官方与 PRTS 的
+ *      首发达 271/272 一致，但复刻窗口官方压根没有）。
  *
  * ⚠️ 口径的**权威说明**在 akGachaDocs/resource/干员皮肤密录模组数据爬取预研.md
  *    （该文档记录了所有实测数字与用户拍板项）。本文件只实现它，不再重复论证。
@@ -19,9 +25,7 @@
  *  5. 剩下的「无终点（XXXX以后）」= 常驻 → `end = start + 14` 且记 `longTime: true`。
  *     （用户明确：只为讨论与 UP 的关联性，这里数据不真实也无妨。）
  *  6. **只存年月日**，丢掉时分。
- *  7. 密录：把 `stories` **按时间分组**，同一时间的一组算「一批」，组内名字用 `|` 连成 `name`。
- *  8. 模组：按批次 `time` 升序给每位干员编号（`seq` = 第几个）。
- *  9. **「合作款」（`isCrossover`）按皮肤所在的系列页判定** —— 即 `时装回廊/合作款`，
+ *  7. **「合作款」（`isCrossover`）按皮肤所在的系列页判定** —— 即 `时装回廊/合作款`，
  *     不是拿 `series` 去比对品牌名清单（实测 25 个系列页互不重叠，故无歧义；
  *     这样以后新增联动品牌也不用改代码）。
  *
@@ -29,8 +33,8 @@
  *    本脚本**只记 warning、保留原样，不自动「修」** —— 发现疑似写错报给用户（他有 PRTS 编辑权限）。
  *
  * 用法：
- *   node scripts/fetch-extras.mjs           抓取并写盘（内容没变则不写）
- *   node scripts/fetch-extras.mjs --dry     只打印统计，不写盘
+ *   node scripts/fetch-skins.mjs           抓取并写盘（内容没变则不写）
+ *   node scripts/fetch-skins.mjs --dry     只打印统计，不写盘
  */
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -134,13 +138,6 @@ const addDays = (date, n) => {
   const t = Date.parse(`${date}T00:00:00Z`) + n * 86400000;
   return new Date(t).toISOString().slice(0, 10);
 };
-/**
- * Unix 秒 → `YYYY-MM-DD`（**按北京时间**）。
- * ⚠️ 不能直接 `new Date(t*1000).toISOString().slice(0,10)` —— 那是 UTC。
- * 这些时间戳的北京时间是 04:00 / 16:00，其中 04:00 对应 UTC **前一天 20:00**，
- * 用 UTC 取日期会整体早一天，而且会把「同一天上线」的密录拆开（实测会少算多批的干员数）。
- */
-const unixToBeijingDate = (sec) => new Date(sec * 1000 + BEIJING_OFFSET_MS).toISOString().slice(0, 10);
 
 /**
  * 解析一个「上架窗口」字段的值。
@@ -323,55 +320,15 @@ async function main() {
     });
   }
 
-  /* ---------------- 2. 密录 ---------------- */
-  const memoirJson = JSON.parse(await fetchWikitext('干员密录一览/time'));
-  const memoirs = [];
-  for (const [char, v] of Object.entries(memoirJson)) {
-    if (!opNames.has(char)) continue;
-    const stories = (v.stories || []).map((s) => ({ name: plain(s.story), date: unixToBeijingDate(s.time) }));
-    /* 口径 7：**按时间分组**，同一时间的一组算「一批」，组内名字用 `|` 连接 */
-    const groups = [];
-    for (const s of stories) {
-      const last = groups[groups.length - 1];
-      if (last && last.date === s.date) last.names.push(s.name);
-      else groups.push({ date: s.date, names: [s.name] });
-    }
-    if (!groups.length) continue;
-    memoirs.push({
-      char,
-      rarity: v.rarity ?? null,
-      batches: groups.map((g, i) => ({ batch: i + 1, name: g.names.join('|'), date: g.date })),
-      releaseDate: groups[0].date,
-    });
-  }
-  memoirs.sort((a, b) => (a.releaseDate < b.releaseDate ? -1 : a.releaseDate > b.releaseDate ? 1 : 0));
-
-  /* ---------------- 3. 模组 ---------------- */
-  const modJson = JSON.parse(await fetchWikitext('干员模组一览/time'));
-  const flat = [];
-  for (const batch of modJson) {
-    const date = unixToBeijingDate(batch.time);
-    for (const e of batch.equips || []) flat.push({ char: plain(e.char), name: plain(e.name), date });
-  }
-  const byChar = new Map();
-  for (const m of flat) {
-    if (!opNames.has(m.char)) continue; // 口径 1
-    if (!byChar.has(m.char)) byChar.set(m.char, []);
-    byChar.get(m.char).push(m);
-  }
-  const modules = [];
-  for (const [char, list] of byChar) {
-    list.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
-    list.forEach((m, i) => modules.push({ char, seq: i + 1, name: m.name, date: m.date }));
-  }
-  modules.sort((a, b) => (a.char < b.char ? -1 : a.char > b.char ? 1 : a.seq - b.seq));
+  /* ⚠️ 密录 / 模组**不在这里做了**（2026-10-06 起）—— 改由官方解包数据提供：
+     `scripts/fetch-gamedata.mjs`（+ `lib/gamedata-extras.mjs`）→
+     `modules_<server>.json` / `memoirs_<server>.json`（三服）。本脚本只产 `skins_sc.json`。
+     对撞过：官方抽出的模组与这里原先的 326 条**逐条一致**、密录 174/174 批次一致。 */
 
   /* ---------------- 统计 ---------------- */
   const obtainDist = {};
   for (const s of skins) obtainDist[s.obtain[0]] = (obtainDist[s.obtain[0]] || 0) + 1;
   const longCount = skins.reduce((a, s) => a + s.onShelf.filter((w) => w.longTime).length, 0);
-  const batchCount = memoirs.reduce((a, m) => a + m.batches.length, 0);
-  const multiBatch = memoirs.filter((m) => m.batches.length > 1).length;
 
   console.log('\n· 皮肤');
   console.log(`  原文解析 ${stat.total} 套 / 窗口 ${stat.all.windows}`);
@@ -380,13 +337,9 @@ async function main() {
   console.log(`  其中 longTime（end = start + 14）：${longCount}`);
   console.log(`  其中「合作款」（联动皮肤）：${skins.filter((s) => s.isCrossover).length} 套`);
   console.log(`  获取途径分布（按主类别）：${JSON.stringify(obtainDist)}`);
-  console.log('· 密录');
-  console.log(`  ${memoirs.length} 位 / ${batchCount} 批（其中 ${multiBatch} 位是多批）`);
-  console.log('· 模组');
-  console.log(`  ${byChar.size} 位 / ${modules.length} 个`);
 
   if (DRY) {
-    console.log('\n[dry] 未写盘。黄金值参考：皮肤 520 → 1471 → 1190 → 807；密录 333 → 174；模组 499 → 326');
+    console.log('\n[dry] 未写盘。黄金值参考：皮肤 520 → 1471 → 1190 → 807 个窗口 → 310 套');
     if (warnings.length) {
       console.warn(`\n⚠ ${warnings.length} 条警告：`);
       for (const w of warnings.slice(0, 30)) console.warn('  - ' + w);
@@ -410,11 +363,7 @@ async function main() {
      就会产生「内容其实没变」的空提交。所以比内容时**把它剔掉**，
      只有该文件内容真的变了才推进日期，否则沿用旧文件里的日期。
      （与 fetch-data.mjs 的处理方式一致。） */
-  const OUT_FILES = [
-    ['skins.json', 'skins', skins],
-    ['memoirs.json', 'memoirs', memoirs],
-    ['modules.json', 'modules', modules],
-  ];
+  const OUT_FILES = [['skins_sc.json', 'skins', skins]];
   const today = todayBeijing();
   const finals = [];
   for (const [name, key, arr] of OUT_FILES) {
@@ -437,9 +386,9 @@ async function main() {
     for (const w of warnings.slice(0, 40)) console.warn('  - ' + w);
     if (warnings.length > 40) console.warn(`  ... 其余 ${warnings.length - 40} 条已省略`);
   }
-  console.log(wrote.length ? `\n✓ 已写入：${wrote.join('、')}` : '\n✓ 三个文件内容都没变化，未写盘');
-  /* ⚠️ 刻意**不动 metadata.json**：它的键由另外三个脚本各写一部分，本脚本插一个键
-     会被它们下次运行抹掉（要改三个脚本才稳）。每个文件自带 generatedAt 就够了。 */
+  console.log(wrote.length ? `\n✓ 已写入：${wrote.join('、')}` : '\n✓ 内容没变化，未写盘');
+  /* ⚠️ 刻意**不动 metadata.json**：它的键由另外几个脚本各写一部分，本脚本插一个键
+     会被它们下次运行抹掉（要同步改才行）。文件自带 generatedAt 就够了。 */
 }
 
 main().catch((e) => { console.error('✗ 失败：', e); process.exitCode = 1; });

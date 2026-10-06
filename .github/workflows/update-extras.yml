@@ -1,12 +1,15 @@
-name: 更新皮肤 / 密录 / 模组
+name: 更新皮肤与官方解包 extras
 
 # 每周六的**北京时间 18:17** 跑一次（也支持在网页上手动触发）。
 #
 # ⚠️ 为什么单独一条、而不挂在「更新数据与头像」里：
-#    这三个数据集**只做国服**、与卡池完全无关（源都是 PRTS Wiki），一周更新一次足够；
-#    拆出来还能单独重跑，不会牵连卡池数据。
+#    这两块与「卡池」无关，一周更新一次足够；拆出来还能单独重跑，不会牵连卡池数据。
 # ⚠️ 它读仓库里的 `data/operators.json` 当**干员白名单** → 必须排在国服抓取之后。
-#    国服是周二 / 周四 / 周五跑，周六跑正好能带上那一周新增的干员。
+#    国服是周四 / 周五跑，周六跑正好能带上那一周新增的干员。
+# ⚠️ 两块数据的**来源不同，别混**（2026-10-06 起）：
+#    · **国服皮肤** 走 PRTS（`build:skins`）—— 只有那里有**复刻 / 下架窗口**，
+#      而 UP 历史页的三角标记靠的就是「卡池窗口 ∩ 皮肤上架窗口」；
+#    · **模组 / 密录（三服）+ en·tw 皮肤** 走**官方解包**（`build:gamedata --only=extras`）。
 # ⚠️ Actions 的 cron 一律 UTC（北京 = UTC+8），18:17 → `17 10`。
 #    与主工作流一样避开整点（整点容易排队、实际执行会晚）。
 "on":
@@ -40,22 +43,23 @@ jobs:
         run: npm install
 
       # 只读公开的 PRTS Wiki，**不需要任何令牌**。
-      # 数据没更新时脚本不会写盘、也不会动 generatedAt（见 fetch-extras.mjs）。
-      - name: 抓取皮肤 / 密录 / 模组（国服 · PRTS Wiki）
-        run: npm run build:extras
+      # 数据没更新时脚本不会写盘、也不会动 generatedAt（见 fetch-skins.mjs）。
+      - name: 抓取国服皮肤（PRTS Wiki）
+        run: npm run build:skins
 
-      # 顺带把**官方解包数据**也刷一遍（三服的中坚）。它自带 `data_version.txt` 短路，
+      # 官方解包：模组 / 密录（三服）+ en·tw 皮肤。自带 `data_version.txt` 短路，
       # 版本没变时只下几个几十字节的版本文件就返回。
-      - name: 抓取官方解包数据（三服中坚）
+      # ⚠️ `--only=extras` —— 中坚由主工作流负责，这里不重复跑。
+      - name: 抓取官方解包 extras（模组 / 密录 / en·tw 皮肤）
         continue-on-error: true
-        run: npm run build:gamedata
+        run: npm run build:gamedata -- --only=extras
 
       - name: 判断有没有实际变化
         id: diff
         run: |
           if [ -z "$(git status --porcelain)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::皮肤 / 密录 / 模组无更新，不提交"
+            echo "::notice::皮肤 / 模组 / 密录无更新，不提交"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "::notice::检测到更新："
@@ -71,12 +75,14 @@ jobs:
           git commit -m "data(extras): $(date +%Y-%m-%d) 快照"
           git push
 
-      # 本工作流只产这三个文件，所以只刷它们。
+      # 本工作流会动到这几个文件（**不含**卡池与 metadata），所以只刷它们。
       # ⚠️ purge 接口是 **GET**，不是 POST —— 用 POST 会一律返回 405（实测）。
       - name: 刷新 jsDelivr 缓存
         if: steps.diff.outputs.changed == 'true'
         run: |
-          for f in skins.json memoirs.json modules.json banners_cla_sc.json banners_cla_en.json banners_cla_tc.json; do
+          for f in skins_sc.json skins_en.json skins_tc.json \
+                   memoirs_sc.json memoirs_en.json memoirs_tc.json \
+                   modules_sc.json modules_en.json modules_tc.json; do
             body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
             echo "purge data/$f -> $(echo "$body" | head -c 120)"
           done

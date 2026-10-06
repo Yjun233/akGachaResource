@@ -117,8 +117,8 @@ jobs:
       #    不会每次白拉 `character_table`（19MB）。
       # ⚠️ CI 里 `raw.githubusercontent.com` 可直连（本机那个 HTTP_PROXY 不在 runner 上），
       #    所以**不需要**设 `GAMEDATA_BASE`。
-      # ⚠️ 排在国服 / 国际服 / 繁中服**之后**：它读 `banners_<server>.json` 只为产出中坚那一份。
-      - name: 抓取官方解包数据（中坚寻访 / 中坚甄选）
+      # ⚠️ 排在国服 / 国际服 / 繁中服**之后**：它读 `operators.json` 当 extras 的干员白名单。
+      - name: 抓取官方解包数据（中坚 + 模组 / 密录 / 皮肤）
         continue-on-error: true
         run: npm run build:gamedata
 
@@ -148,7 +148,12 @@ jobs:
       - name: 刷新 jsDelivr 缓存
         if: steps.diff.outputs.changed == 'true'
         run: |
-          for f in operators.json banners_sc.json banners_en.json banners_tc.json banners_cla_sc.json banners_cla_en.json banners_cla_tc.json metadata.json; do
+          for f in operators.json metadata.json \
+                   banners_sc.json banners_en.json banners_tc.json \
+                   banners_cla_sc.json banners_cla_en.json banners_cla_tc.json \
+                   modules_sc.json modules_en.json modules_tc.json \
+                   memoirs_sc.json memoirs_en.json memoirs_tc.json \
+                   skins_en.json skins_tc.json; do
             body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
             echo "purge data/$f -> $(echo "$body" | head -c 120)"
           done

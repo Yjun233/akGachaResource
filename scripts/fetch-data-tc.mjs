@@ -270,9 +270,14 @@ async function main() {
   };
   const sortUps = (ups) => ups.slice().sort((a, b) => (b.rarity - a.rarity) || Number(a.isShop) - Number(b.isShop));
 
-  const pushBanner = ({ type, start, end, name, upOperators, suffix, where }) => {
+  /* `ref` = 反查到的**国服对应卡池**（只有限定 / 单六 / 双五三类有）—— 先留在这里，
+     最后要把它的「卡池所属活动」字段沿用过去（见下面构造 `out` 的那段）。 */
+  const pushBanner = ({ type, start, end, name, upOperators, suffix, where, ref = null }) => {
     const id = `${start.replace(/-/g, '')}_${type}_${suffix}`;
-    banners.push({ id, name, type, startDate: start, endDate: end, upOperators: sortUps(upOperators), _where: where });
+    banners.push({
+      id, name, type, startDate: start, endDate: end,
+      upOperators: sortUps(upOperators), _where: where, _ref: ref,
+    });
   };
 
   // ---- 1) 常驻标准寻访 ----
@@ -368,7 +373,7 @@ async function main() {
     if (!suffix) warnings.push(`${where}：名称段算不出来（干员名全非中文？），已跳过`);
     if (!suffix) continue;
 
-    pushBanner({ type, start: L.start, end: L.end, name: displayName, suffix, upOperators: ups, where });
+    pushBanner({ type, start: L.start, end: L.end, name: displayName, suffix, upOperators: ups, where, ref });
   }
 
   // ---- 去重 + 排序 ----
@@ -389,6 +394,7 @@ async function main() {
      字段与顺序跟 banners_sc.json / banners_en.json 保持一致（`_where` 是内部调试用，不写出）。 */
   const out = {};
   for (const b of list) {
+    const ref = b._ref || null;
     out[b.id] = {
       name: b.name,
       scName: b.name,
@@ -397,7 +403,19 @@ async function main() {
       startDate: b.startDate,
       endDate: b.endDate,
       upOperators: b.upOperators,
+      /* ---- `actType` / `actName`（卡池所属活动）**不是抓来的**，是从国服对应池沿用过来的
+         （用户 2026-10-06 定）：它们反映**国服口径的上架进度**，繁中服落后于国服，
+         按各服历史重算没有意义。只有限定 / 单六 / 双五三类能反查得到，其余恒为 null，
+         但**键必须存在**（与国服 schema 一致，站点侧会查）。 */
+      actType: ref ? (ref.actType ?? null) : null,
+      actName: ref ? (ref.actName ?? null) : null,
     };
+    /* ⚠️ `rerunKind` / `canRerun` **只有单六寻访才有**（国服的 double 等类型就没这两个键）。
+       实测支持「直接沿用国服」：国服 `single` 里只有 2 条「返场」，而 tc 79 条一条都不对应。 */
+    if (b.type === 'single') {
+      out[b.id].rerunKind = ref ? (ref.rerunKind ?? null) : null;
+      out[b.id].canRerun = ref ? (ref.canRerun ?? false) : false;
+    }
   }
 
   /* ---- 第二遍：回填 enName ----

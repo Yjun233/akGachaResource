@@ -37,7 +37,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200122_single_tgos": {
     "name": "银灰色的荣耀",
@@ -65,7 +67,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null,
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20200124_double_0002": {
     "name": "常驻标准寻访2",
@@ -105,7 +111,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200205_single_btsot": {
     "name": "搅动潮汐之剑",
@@ -133,7 +141,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "骑兵与猎人",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20200207_double_0003": {
     "name": "常驻标准寻访3",
@@ -173,7 +185,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200221_double_0004": {
     "name": "常驻标准寻访4",
@@ -213,7 +227,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200226_single_cxthd": {
     "name": "鞘中赤红",
@@ -241,7 +257,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null,
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20200306_double_0005": {
     "name": "常驻标准寻访5",
@@ -281,7 +301,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200311_single_lso": {
     "name": "龙门特别行动专员寻访",
@@ -309,7 +331,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null,
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20200320_double_0006": {
     "name": "常驻标准寻访6",
@@ -349,7 +375,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200325_single_fl": {
     "name": "冰封原野",
@@ -377,7 +405,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "微型故事",
+    "actName": "战地秘闻",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20200403_double_0007": {
     "name": "常驻标准寻访7",
@@ -417,7 +449,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200415_single_fs": {
     "name": "久铸尘铁",
@@ -445,7 +479,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "火蓝之心",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20200417_double_0008": {
     "name": "常驻标准寻访8",
@@ -485,7 +523,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200429_single_sg": {
     "name": "深夏的守夜人",
@@ -513,7 +553,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "火蓝之心",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20200501_double_0009": {
     "name": "常驻标准寻访9",
@@ -553,7 +597,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200513_single_dl": {
     "name": "火舞之人",
@@ -581,7 +627,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null,
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20200515_double_0010": {
     "name": "常驻标准寻访10",
@@ -621,7 +671,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200527_single_kotlk": {
     "name": "锁与匙的守卫者",
@@ -649,7 +701,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "喧闹法则",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20200529_double_0011": {
     "name": "常驻标准寻访11",
@@ -689,7 +745,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200612_double_0012": {
     "name": "常驻标准寻访12",
@@ -729,7 +787,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200612_joint_0001": {
     "name": "联合行动1",
@@ -799,7 +859,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200626_double_0013": {
     "name": "常驻标准寻访13",
@@ -839,7 +901,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200630_single_eee": {
     "name": "热情，膨胀，爆发！",
@@ -867,7 +931,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null,
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20200710_double_0014": {
     "name": "常驻标准寻访14",
@@ -907,7 +975,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200715_five_d": {
     "name": "凝电之钻",
@@ -935,7 +1005,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200724_double_0015": {
     "name": "常驻标准寻访15",
@@ -975,7 +1047,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200729_limspr_em": {
     "name": "地生五金",
@@ -1003,7 +1077,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "微型故事",
+    "actName": "洪炉示岁"
   },
   "20200807_double_0016": {
     "name": "常驻标准寻访16",
@@ -1043,7 +1119,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200821_double_0017": {
     "name": "常驻标准寻访17",
@@ -1083,7 +1161,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200826_single_tha": {
     "name": "百种兵器",
@@ -1111,7 +1191,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "微型故事",
+    "actName": "午间逸话",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20200904_double_0018": {
     "name": "常驻标准寻访18",
@@ -1151,7 +1235,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200910_single_tpotk": {
     "name": "草垛上的风笛声",
@@ -1179,7 +1265,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null,
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20200918_double_0019": {
     "name": "常驻标准寻访19",
@@ -1219,7 +1309,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20200929_single_fs": {
     "name": "雪落晨心",
@@ -1247,7 +1339,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "乌萨斯的孩子们",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20201002_double_0020": {
     "name": "常驻标准寻访20",
@@ -1287,7 +1383,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20201016_double_0021": {
     "name": "常驻标准寻访21",
@@ -1327,7 +1425,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20201028_single_lotv": {
     "name": "君影轻灵",
@@ -1355,7 +1455,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "沃伦姆德的薄暮",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20201030_double_0022": {
     "name": "常驻标准寻访22",
@@ -1395,7 +1499,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20201111_five_mw": {
     "name": "雾漫荒林",
@@ -1417,7 +1523,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20201113_double_0023": {
     "name": "常驻标准寻访23",
@@ -1457,7 +1565,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20201126_five_qv": {
     "name": "流沙涡旋",
@@ -1479,7 +1589,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20201126_single_btsot": {
     "name": "搅动潮汐之剑 复刻",
@@ -1507,7 +1619,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "骑兵与猎人2020",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20201127_double_0024": {
     "name": "常驻标准寻访24",
@@ -1547,7 +1663,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20201210_single_iotp": {
     "name": "往日幻象",
@@ -1575,7 +1693,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "生于黑夜",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20201211_double_0025": {
     "name": "常驻标准寻访25",
@@ -1615,7 +1737,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20201225_double_0026": {
     "name": "常驻标准寻访26",
@@ -1655,7 +1779,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20201230_limcel_clw": {
     "name": "遗愿焰火",
@@ -1683,7 +1809,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "纪念活动",
+    "actName": "一周年庆典"
   },
   "20210108_double_0027": {
     "name": "常驻标准寻访27",
@@ -1723,7 +1851,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210120_single_ur": {
     "name": "不羁逆流",
@@ -1751,7 +1881,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "火蓝之心2020",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20210122_double_0028": {
     "name": "常驻标准寻访28",
@@ -1791,7 +1925,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210204_joint_0002": {
     "name": "联合行动2",
@@ -1861,7 +1997,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210205_double_0029": {
     "name": "常驻标准寻访29",
@@ -1901,7 +2039,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210219_double_0030": {
     "name": "常驻标准寻访30",
@@ -1941,7 +2081,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210225_single_hostri": {
     "name": "燃钢之心 暴躁铁皮",
@@ -1969,7 +2111,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "密林悍将归来",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20210305_double_0031": {
     "name": "常驻标准寻访31",
@@ -2009,7 +2155,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210319_double_0032": {
     "name": "常驻标准寻访32",
@@ -2049,7 +2197,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210325_single_um": {
     "name": "无拘熔火",
@@ -2077,7 +2227,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "踏寻往昔之风",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20210402_double_0033": {
     "name": "常驻标准寻访33",
@@ -2117,7 +2271,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210408_single_fl": {
     "name": "瑕光微明",
@@ -2145,7 +2301,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "玛莉娅临光",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20210416_double_0034": {
     "name": "常驻标准寻访34",
@@ -2185,7 +2345,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210430_double_0035": {
     "name": "常驻标准寻访35",
@@ -2225,7 +2387,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210430_limcel_fmn": {
     "name": "勿忘我",
@@ -2253,7 +2417,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "纪念活动",
+    "actName": "感谢庆典2020"
   },
   "20210514_double_0036": {
     "name": "常驻标准寻访36",
@@ -2293,7 +2459,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210514_single_kotlk": {
     "name": "锁与匙的守卫者 复刻",
@@ -2321,7 +2489,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "喧闹法则2020",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20210528_double_0037": {
     "name": "常驻标准寻访37",
@@ -2361,7 +2533,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210528_joint_0003": {
     "name": "联合行动3",
@@ -2431,7 +2605,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210611_double_0038": {
     "name": "常驻标准寻访38",
@@ -2471,7 +2647,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210622_single_jtu": {
     "name": "自由的囚徒",
@@ -2499,7 +2677,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "孤岛风云",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20210625_double_0039": {
     "name": "常驻标准寻访39",
@@ -2539,7 +2721,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210706_single_twata": {
     "name": "麦穗与赞美诗",
@@ -2567,7 +2751,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "此地之外",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20210709_double_0040": {
     "name": "常驻标准寻访40",
@@ -2607,7 +2795,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210713_limspr_em": {
     "name": "地生五金 复刻",
@@ -2635,7 +2825,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210723_double_0041": {
     "name": "常驻标准寻访41",
@@ -2675,7 +2867,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210730_limspr_hm": {
     "name": "月隐晦明",
@@ -2703,7 +2897,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "画中人"
   },
   "20210806_double_0042": {
     "name": "常驻标准寻访42",
@@ -2743,7 +2939,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210820_double_0043": {
     "name": "常驻标准寻访43",
@@ -2783,7 +2981,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210903_double_0044": {
     "name": "常驻标准寻访44",
@@ -2823,7 +3023,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210907_single_iotp": {
     "name": "往日幻象 复刻",
@@ -2851,7 +3053,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "生于黑夜2021",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20210917_double_0045": {
     "name": "常驻标准寻访45",
@@ -2891,7 +3097,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20210930_single_ep": {
     "name": "沙海过客",
@@ -2919,7 +3127,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "遗尘漫步",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20211001_double_0046": {
     "name": "常驻标准寻访46",
@@ -2959,7 +3171,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20211015_double_0047": {
     "name": "常驻标准寻访47",
@@ -2999,7 +3213,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20211021_limcel_ddl": {
     "name": "深悼",
@@ -3027,7 +3243,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "覆潮之下"
   },
   "20211029_double_0048": {
     "name": "常驻标准寻访48",
@@ -3067,7 +3285,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20211111_joint_0004": {
     "name": "联合行动4",
@@ -3137,7 +3357,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20211112_double_0049": {
     "name": "常驻标准寻访49",
@@ -3177,7 +3399,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20211126_double_0050": {
     "name": "常驻标准寻访50",
@@ -3217,7 +3441,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20211209_single_rs": {
     "name": "革新交响曲",
@@ -3245,7 +3471,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "灯火序曲",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20211210_double_0051": {
     "name": "常驻标准寻访51",
@@ -3285,7 +3515,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20211217_single_lotv": {
     "name": "君影轻灵 复刻",
@@ -3313,7 +3545,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "沃伦姆德的薄暮2021",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20211224_double_0052": {
     "name": "常驻标准寻访52",
@@ -3353,7 +3589,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20211229_single_fts": {
     "name": "从星火中来",
@@ -3381,7 +3619,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "联锁竞赛",
+    "actName": "荷谟伊智境",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20220107_double_0053": {
     "name": "常驻标准寻访53",
@@ -3421,7 +3663,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220114_limsum_hs": {
     "name": "盛夏新星",
@@ -3449,7 +3693,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "多索雷斯假日"
   },
   "20220121_double_0054": {
     "name": "常驻标准寻访54",
@@ -3489,7 +3735,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220204_double_0055": {
     "name": "常驻标准寻访55",
@@ -3529,7 +3777,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220204_single_hostri": {
     "name": "燃钢之心:暴躁铁皮 复刻",
@@ -3557,7 +3807,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "密林悍将归来2021",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20220218_double_0056": {
     "name": "常驻标准寻访56",
@@ -3597,7 +3851,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220301_single_ur": {
     "name": "不羁逆流 复刻",
@@ -3625,7 +3881,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null,
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20220304_double_0057": {
     "name": "常驻标准寻访57",
@@ -3665,7 +3925,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220317_single_soth": {
     "name": "小丘上的眠柳",
@@ -3687,7 +3949,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "主线",
+    "actName": "风暴瞭望",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20220318_double_0058": {
     "name": "常驻标准寻访58",
@@ -3727,7 +3993,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220331_single_fl": {
     "name": "瑕光微明 复刻",
@@ -3755,7 +4023,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "玛莉娅临光2021",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20220401_double_0059": {
     "name": "常驻标准寻访59",
@@ -3795,7 +4067,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220414_single_awitw": {
     "name": "漂泊于风",
@@ -3823,7 +4097,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "红松林",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20220415_double_0060": {
     "name": "常驻标准寻访60",
@@ -3863,7 +4141,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220428_limcel_potr": {
     "name": "循光道途",
@@ -3891,7 +4171,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "长夜临光"
   },
   "20220429_double_0061": {
     "name": "常驻标准寻访61",
@@ -3931,7 +4213,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220513_double_0062": {
     "name": "常驻标准寻访62",
@@ -3971,7 +4255,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220526_single_jtu": {
     "name": "自由的囚徒 复刻",
@@ -3999,7 +4285,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "孤岛风云2021",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20220527_double_0063": {
     "name": "常驻标准寻访63",
@@ -4039,7 +4329,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220609_joint_0005": {
     "name": "联合行动5",
@@ -4109,7 +4401,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220610_double_0064": {
     "name": "常驻标准寻访64",
@@ -4149,7 +4443,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220624_double_0065": {
     "name": "常驻标准寻访65",
@@ -4189,7 +4485,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220630_single_ev": {
     "name": "雪融之诺",
@@ -4217,7 +4515,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "风雪过境",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20220708_double_0066": {
     "name": "常驻标准寻访66",
@@ -4257,7 +4559,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220722_double_0067": {
     "name": "常驻标准寻访67",
@@ -4297,7 +4601,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220729_limspr_ulph": {
     "name": "浊酒澄心",
@@ -4325,7 +4631,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "将进酒"
   },
   "20220805_double_0068": {
     "name": "常驻标准寻访68",
@@ -4365,7 +4673,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220818_single_sb": {
     "name": "火花绽放",
@@ -4393,7 +4703,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "阴云火花",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20220819_double_0069": {
     "name": "常驻标准寻访69",
@@ -4433,7 +4747,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220902_double_0070": {
     "name": "常驻标准寻访70",
@@ -4473,7 +4789,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220916_double_0071": {
     "name": "常驻标准寻访71",
@@ -4513,7 +4831,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20220916_single_foi": {
     "name": "炽焰无霾",
@@ -4541,7 +4861,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "吾导先路",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20220930_double_0072": {
     "name": "常驻标准寻访72",
@@ -4581,7 +4905,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20221004_single_ep": {
     "name": "沙海过客 复刻",
@@ -4609,7 +4935,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "遗尘漫步2022",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20221014_double_0073": {
     "name": "常驻标准寻访73",
@@ -4649,7 +4979,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20221019_single_rc": {
     "name": "奔崖怒号",
@@ -4677,7 +5009,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "主线",
+    "actName": "破碎日冕",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20221028_double_0074": {
     "name": "常驻标准寻访74",
@@ -4717,7 +5053,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20221103_limcel_ac": {
     "name": "海蚀",
@@ -4745,7 +5083,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "愚人号"
   },
   "20221111_double_0075": {
     "name": "常驻标准寻访75",
@@ -4785,7 +5125,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20221125_double_0076": {
     "name": "常驻标准寻访76",
@@ -4825,7 +5167,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20221208_joint_0006": {
     "name": "联合行动6",
@@ -4895,7 +5239,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20221209_double_0077": {
     "name": "常驻标准寻访77",
@@ -4935,7 +5281,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20221223_double_0078": {
     "name": "常驻标准寻访78",
@@ -4975,7 +5323,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20221227_single_d": {
     "name": "不协和音程",
@@ -5003,7 +5353,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "尘影余音",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20230106_double_0079": {
     "name": "常驻标准寻访79",
@@ -5043,7 +5397,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230113_limsum_gaapn": {
     "name": "巨斧与笔尖",
@@ -5071,7 +5427,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "理想城长夏狂欢季"
   },
   "20230120_double_0080": {
     "name": "常驻标准寻访80",
@@ -5111,7 +5469,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230203_double_0081": {
     "name": "常驻标准寻访81",
@@ -5151,7 +5511,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230203_joint_0007": {
     "name": "联合行动7",
@@ -5221,7 +5583,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230217_double_0082": {
     "name": "常驻标准寻访82",
@@ -5261,7 +5625,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230303_double_0083": {
     "name": "常驻标准寻访83",
@@ -5301,7 +5667,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230314_single_pos": {
     "name": "沙洲引路人",
@@ -5329,7 +5697,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "绿野幻梦",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20230317_double_0084": {
     "name": "常驻标准寻访84",
@@ -5369,7 +5741,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230331_double_0085": {
     "name": "常驻标准寻访85",
@@ -5409,7 +5783,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230331_single_nv": {
     "name": "未曾起誓",
@@ -5437,7 +5813,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "日暮寻路",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20230414_double_0086": {
     "name": "常驻标准寻访86",
@@ -5477,7 +5857,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230418_mainfes_0001": {
     "name": "前路回响1",
@@ -5523,7 +5905,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230427_single_bas": {
     "name": "轴承与火星",
@@ -5551,7 +5935,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "主线",
+    "actName": "淬火尘霾",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20230428_double_0087": {
     "name": "常驻标准寻访87",
@@ -5591,7 +5979,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230512_double_0088": {
     "name": "常驻标准寻访88",
@@ -5631,7 +6021,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230523_limcel_tapob": {
     "name": "斩荆辟路",
@@ -5659,7 +6051,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "叙拉古人"
   },
   "20230526_double_0089": {
     "name": "常驻标准寻访89",
@@ -5699,7 +6093,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230609_double_0090": {
     "name": "常驻标准寻访90",
@@ -5739,7 +6135,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230613_single_ev": {
     "name": "雪融之诺 复刻",
@@ -5767,7 +6165,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "风雪过境2022",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20230623_double_0091": {
     "name": "常驻标准寻访91",
@@ -5807,7 +6209,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230623_joint_0008": {
     "name": "联合行动8",
@@ -5877,7 +6281,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230707_double_0092": {
     "name": "常驻标准寻访92",
@@ -5917,7 +6323,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230713_single_tbfadf": {
     "name": "枯焰生花",
@@ -5945,7 +6353,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "照我以火",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20230721_double_0093": {
     "name": "常驻标准寻访93",
@@ -5985,7 +6397,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230728_limspr_su": {
     "name": "万象伶仃",
@@ -6013,7 +6427,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "登临意"
   },
   "20230804_double_0094": {
     "name": "常驻标准寻访94",
@@ -6053,7 +6469,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230818_double_0095": {
     "name": "常驻标准寻访95",
@@ -6093,7 +6511,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230822_single_ss": {
     "name": "春江逢雪",
@@ -6121,7 +6541,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "春分",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20230901_double_0096": {
     "name": "常驻标准寻访96",
@@ -6161,7 +6585,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230915_double_0097": {
     "name": "常驻标准寻访97",
@@ -6201,7 +6627,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20230921_single_foi": {
     "name": "炽焰无霾 复刻",
@@ -6229,7 +6657,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "吾导先路2023",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20230929_double_0098": {
     "name": "常驻标准寻访98",
@@ -6269,7 +6701,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20231001_joint_0009": {
     "name": "联合行动9",
@@ -6339,7 +6773,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20231010_mainfes_0002": {
     "name": "前路回响2",
@@ -6385,7 +6821,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20231013_double_0099": {
     "name": "常驻标准寻访99",
@@ -6425,7 +6863,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20231024_single_aima": {
     "name": "犹在影中",
@@ -6453,7 +6893,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "主线",
+    "actName": "惊霆无声",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20231027_double_0100": {
     "name": "常驻标准寻访100",
@@ -6493,7 +6937,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20231107_limcel_his": {
     "name": "真理孑然",
@@ -6521,7 +6967,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "孤星"
   },
   "20231110_double_0101": {
     "name": "常驻标准寻访101",
@@ -6561,7 +7009,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20231124_double_0102": {
     "name": "常驻标准寻访102",
@@ -6601,7 +7051,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20231205_joint_0010": {
     "name": "联合行动10",
@@ -6671,7 +7123,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20231208_double_0103": {
     "name": "常驻标准寻访103",
@@ -6711,7 +7165,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20231221_single_aa": {
     "name": "执裁者",
@@ -6739,7 +7195,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "空想花庭",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20231222_double_0104": {
     "name": "常驻标准寻访104",
@@ -6779,7 +7239,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240105_double_0105": {
     "name": "常驻标准寻访105",
@@ -6819,7 +7281,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240105_single_d": {
     "name": "不协和音程 复刻",
@@ -6847,7 +7311,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "尘影余音2023",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20240116_limsum_cld": {
     "name": "云间清醒梦",
@@ -6875,7 +7343,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "火山旅梦"
   },
   "20240119_double_0106": {
     "name": "常驻标准寻访106",
@@ -6915,7 +7385,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240202_double_0107": {
     "name": "常驻标准寻访107",
@@ -6955,7 +7427,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240212_joint_0011": {
     "name": "联合行动11",
@@ -7025,7 +7499,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240216_double_0108": {
     "name": "常驻标准寻访108",
@@ -7065,7 +7541,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240227_single_twch": {
     "name": "射落灾异的风暴",
@@ -7093,7 +7571,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "眠于树影之中",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20240301_double_0109": {
     "name": "常驻标准寻访109",
@@ -7133,7 +7615,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240305_single_pos": {
     "name": "沙洲引路人 复刻",
@@ -7161,7 +7645,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "绿野幻梦2023",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20240315_double_0110": {
     "name": "常驻标准寻访110",
@@ -7201,7 +7689,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240319_single_cl": {
     "name": "鸣铳",
@@ -7229,7 +7719,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "不义之财",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20240329_double_0111": {
     "name": "常驻标准寻访111",
@@ -7269,7 +7763,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240402_mainfes_0003": {
     "name": "前路回响3",
@@ -7315,7 +7811,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240412_double_0112": {
     "name": "常驻标准寻访112",
@@ -7355,7 +7853,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240416_single_fgasie": {
     "name": "烁尘烟中",
@@ -7383,7 +7883,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "主线",
+    "actName": "恶兆湍流",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20240426_double_0113": {
     "name": "常驻标准寻访113",
@@ -7423,7 +7927,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240430_limcel_bmw": {
     "name": "宿愿",
@@ -7451,7 +7957,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "崔林特尔梅之金"
   },
   "20240510_double_0114": {
     "name": "常驻标准寻访114",
@@ -7491,7 +7999,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240524_double_0115": {
     "name": "常驻标准寻访115",
@@ -7531,7 +8041,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240605_joint_0012": {
     "name": "联合行动12",
@@ -7601,7 +8113,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240607_double_0116": {
     "name": "常驻标准寻访116",
@@ -7641,7 +8155,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240621_double_0117": {
     "name": "常驻标准寻访117",
@@ -7681,7 +8197,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240621_single_ts": {
     "name": "游邦者",
@@ -7709,7 +8227,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "银心湖列车",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20240705_double_0118": {
     "name": "常驻标准寻访118",
@@ -7749,7 +8271,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240709_single_rol": {
     "name": "一线微明",
@@ -7777,7 +8301,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "去咧嘴谷",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20240719_double_0119": {
     "name": "常驻标准寻访119",
@@ -7817,7 +8345,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240731_limspr_rom": {
     "name": "千秋一粟",
@@ -7845,7 +8375,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "怀黍离"
   },
   "20240802_double_0120": {
     "name": "常驻标准寻访120",
@@ -7885,7 +8417,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240814_joint_0013": {
     "name": "联合行动13",
@@ -7955,7 +8489,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240816_double_0121": {
     "name": "常驻标准寻访121",
@@ -7995,7 +8531,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240821_single_tbfadf": {
     "name": "枯焰生花·复刻",
@@ -8023,7 +8561,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "照我以火2023",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20240830_double_0122": {
     "name": "常驻标准寻访122",
@@ -8063,7 +8605,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240913_double_0123": {
     "name": "常驻标准寻访123",
@@ -8103,7 +8647,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240926_joint_0014": {
     "name": "联合行动14",
@@ -8173,7 +8719,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20240927_double_0124": {
     "name": "常驻标准寻访124",
@@ -8213,7 +8761,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20241010_single_leld": {
     "name": "如死亦终",
@@ -8241,7 +8791,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "巴别塔",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20241011_double_0125": {
     "name": "常驻标准寻访125",
@@ -8281,7 +8835,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20241018_mainfes_0004": {
     "name": "前路回响4",
@@ -8327,7 +8883,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20241025_double_0126": {
     "name": "常驻标准寻访126",
@@ -8367,7 +8925,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20241031_limcel_ok": {
     "name": "何以为我",
@@ -8395,7 +8955,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "主线",
+    "actName": "慈悲灯塔"
   },
   "20241108_double_0127": {
     "name": "常驻标准寻访127",
@@ -8435,7 +8997,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20241114_joint_0015": {
     "name": "联合行动15",
@@ -8505,7 +9069,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20241122_double_0128": {
     "name": "常驻标准寻访128",
@@ -8545,7 +9111,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20241203_single_aitd": {
     "name": "沉向深渊的锚",
@@ -8573,7 +9141,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "生路",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20241206_double_0129": {
     "name": "常驻标准寻访129",
@@ -8613,7 +9185,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20241220_double_0130": {
     "name": "常驻标准寻访130",
@@ -8653,7 +9227,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20241224_single_aa": {
     "name": "执裁者·复刻",
@@ -8681,7 +9257,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "空想花庭2024",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20250103_double_0131": {
     "name": "常驻标准寻访131",
@@ -8721,7 +9301,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250116_limsum_eoq": {
     "name": "在流沙上刻印",
@@ -8749,7 +9331,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "太阳甩在身后"
   },
   "20250117_double_0132": {
     "name": "常驻标准寻访132",
@@ -8789,7 +9373,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250131_double_0133": {
     "name": "常驻标准寻访133",
@@ -8829,7 +9415,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250207_single_clhtlr": {
     "name": "心与镜的印痕",
@@ -8857,7 +9445,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "熔炉“还魂”记",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20250214_double_0134": {
     "name": "常驻标准寻访134",
@@ -8897,7 +9489,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250214_joint_0016": {
     "name": "联合行动16",
@@ -8967,7 +9561,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250228_double_0135": {
     "name": "常驻标准寻访135",
@@ -9007,7 +9603,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250228_single_cl": {
     "name": "鸣铳·复刻",
@@ -9035,7 +9633,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "不义之财2024",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20250314_double_0136": {
     "name": "常驻标准寻访136",
@@ -9075,7 +9677,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250325_stdfes_0001": {
     "name": "定向甄选1",
@@ -9157,7 +9761,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250328_double_0137": {
     "name": "常驻标准寻访137",
@@ -9197,7 +9803,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250408_single_ng": {
     "name": "未致蒙尘",
@@ -9225,7 +9833,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "追迹日落以西",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20250411_double_0138": {
     "name": "常驻标准寻访138",
@@ -9265,7 +9877,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250424_limcel_wmf": {
     "name": "恶人寥寥",
@@ -9293,7 +9907,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "揭幕者们"
   },
   "20250425_double_0139": {
     "name": "常驻标准寻访139",
@@ -9333,7 +9949,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250508_joint_0017": {
     "name": "联合行动17",
@@ -9403,7 +10021,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250509_double_0140": {
     "name": "常驻标准寻访140",
@@ -9443,7 +10063,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250523_double_0141": {
     "name": "常驻标准寻访141",
@@ -9483,7 +10105,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250605_single_ccc": {
     "name": "证实，完成，指引",
@@ -9511,7 +10135,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "出苍白海",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20250606_double_0142": {
     "name": "常驻标准寻访142",
@@ -9551,7 +10179,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250620_double_0143": {
     "name": "常驻标准寻访143",
@@ -9591,7 +10221,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250620_single_ts": {
     "name": "游邦者·复刻",
@@ -9619,7 +10251,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "银心湖列车2024",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20250704_double_0144": {
     "name": "常驻标准寻访144",
@@ -9659,7 +10295,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250717_limspr_aea": {
     "name": "炽吾生平",
@@ -9687,7 +10325,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "相见欢"
   },
   "20250718_double_0145": {
     "name": "常驻标准寻访145",
@@ -9727,7 +10367,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250801_double_0146": {
     "name": "常驻标准寻访146",
@@ -9767,7 +10409,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250807_single_atclcuty": {
     "name": "她们渡船而来",
@@ -9795,7 +10439,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "我们明日见",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20250814_joint_0018": {
     "name": "联合行动18",
@@ -9865,7 +10513,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250815_double_0147": {
     "name": "常驻标准寻访147",
@@ -9905,7 +10555,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250828_single_rfap": {
     "name": "自火中归还",
@@ -9933,7 +10585,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "挽歌燃烧殆尽",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20250829_double_0148": {
     "name": "常驻标准寻访148",
@@ -9973,7 +10629,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250904_stdfes_0002": {
     "name": "定向甄选2",
@@ -10055,7 +10713,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250912_double_0149": {
     "name": "常驻标准寻访149",
@@ -10095,7 +10755,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250916_single_cr": {
     "name": "指令·重构",
@@ -10123,7 +10785,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "主线",
+    "actName": "离解复合",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20250926_double_0150": {
     "name": "常驻标准寻访150",
@@ -10163,7 +10829,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20250930_single_leld": {
     "name": "如死亦终·复刻",
@@ -10191,7 +10859,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "巴别塔2025",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20251010_double_0151": {
     "name": "常驻标准寻访151",
@@ -10231,7 +10903,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20251014_limcel_fop": {
     "name": "布道自由",
@@ -10259,7 +10933,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "众生行记"
   },
   "20251024_double_0152": {
     "name": "常驻标准寻访152",
@@ -10299,7 +10975,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20251030_stdfes_0003": {
     "name": "定向甄选3",
@@ -10381,7 +11059,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20251107_double_0153": {
     "name": "常驻标准寻访153",
@@ -10421,7 +11101,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20251113_single_du": {
     "name": "永不落幕",
@@ -10449,7 +11131,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "红丝绒",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20251121_double_0154": {
     "name": "常驻标准寻访154",
@@ -10489,7 +11175,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20251127_single_aitd": {
     "name": "沉向深渊的锚·复刻",
@@ -10517,7 +11205,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "生路2025",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20251205_double_0155": {
     "name": "常驻标准寻访155",
@@ -10557,7 +11249,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20251211_single_trt": {
     "name": "青霆重明",
@@ -10585,7 +11279,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "镜中集",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20251219_double_0156": {
     "name": "常驻标准寻访156",
@@ -10625,7 +11323,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260102_double_0157": {
     "name": "常驻标准寻访157",
@@ -10665,7 +11365,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260116_double_0158": {
     "name": "常驻标准寻访158",
@@ -10705,7 +11407,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260116_limsum_he": {
     "name": "不归花火",
@@ -10733,7 +11437,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "墟"
   },
   "20260123_joint_0019": {
     "name": "联合行动19",
@@ -10803,7 +11509,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260130_double_0159": {
     "name": "常驻标准寻访159",
@@ -10843,7 +11551,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260213_double_0160": {
     "name": "常驻标准寻访160",
@@ -10883,7 +11593,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260224_single_ng": {
     "name": "未致蒙尘·复刻",
@@ -10911,7 +11623,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "追迹日落以西2025",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20260227_double_0161": {
     "name": "常驻标准寻访161",
@@ -10951,7 +11667,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260306_stdfes_0004": {
     "name": "定向甄选4",
@@ -11033,7 +11751,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260313_double_0162": {
     "name": "常驻标准寻访162",
@@ -11073,7 +11793,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260319_single_tsw": {
     "name": "空白频段",
@@ -11101,7 +11823,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "主线",
+    "actName": "反常光谱",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20260327_double_0163": {
     "name": "常驻标准寻访163",
@@ -11141,7 +11867,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260401_joint_0020": {
     "name": "联合行动20",
@@ -11211,7 +11939,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260410_double_0164": {
     "name": "常驻标准寻访164",
@@ -11251,7 +11981,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260414_limcel_asoog": {
     "name": "以风雪为誓",
@@ -11279,7 +12011,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "雪山降临1101"
   },
   "20260424_double_0165": {
     "name": "常驻标准寻访165",
@@ -11319,7 +12053,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260428_stdfes_0005": {
     "name": "定向甄选5",
@@ -11401,7 +12137,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260508_double_0166": {
     "name": "常驻标准寻访166",
@@ -11441,7 +12179,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260521_single_6motf": {
     "name": "现实之上六百米",
@@ -11469,7 +12209,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "未许之地",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20260522_double_0167": {
     "name": "常驻标准寻访167",
@@ -11509,7 +12253,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260605_double_0168": {
     "name": "常驻标准寻访168",
@@ -11549,7 +12295,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260605_single_ccc": {
     "name": "证实，完成，指引·复刻",
@@ -11577,7 +12325,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "出苍白海2025",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20260619_double_0169": {
     "name": "常驻标准寻访169",
@@ -11617,7 +12369,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260622_single_qifm": {
     "name": "在凝固的时光中探寻",
@@ -11645,7 +12399,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "雅赛努斯复仇记",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20260703_double_0170": {
     "name": "常驻标准寻访170",
@@ -11685,7 +12443,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260716_limspr_ataaoa": {
     "name": "劫尽古今",
@@ -11713,7 +12473,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "辞岁行"
   },
   "20260717_double_0171": {
     "name": "常驻标准寻访171",
@@ -11753,7 +12515,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260730_stdfes_0006": {
     "name": "定向甄选6",
@@ -11835,7 +12599,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260731_double_0172": {
     "name": "常驻标准寻访172",
@@ -11875,7 +12641,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260813_single_bmr": {
     "name": "以我的方式",
@@ -11903,7 +12671,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "故事集",
+    "actName": "十字路口",
+    "rerunKind": "首发",
+    "canRerun": false
   },
   "20260814_double_0173": {
     "name": "常驻标准寻访173",
@@ -11943,7 +12715,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260820_joint_0021": {
     "name": "联合行动21",
@@ -12013,7 +12787,9 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260827_single_rfap": {
     "name": "自火中归还·复刻",
@@ -12041,7 +12817,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "挽歌燃烧殆尽2026",
+    "rerunKind": "复刻",
+    "canRerun": false
   },
   "20260828_double_0174": {
     "name": "常驻标准寻访174",
@@ -12081,7 +12861,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260911_double_0175": {
     "name": "常驻标准寻访175",
@@ -12121,7 +12903,9 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   },
   "20260916_single_rotm": {
     "name": "辟路之人",
@@ -12149,7 +12933,11 @@
         "isLimited": false,
         "isShop": false
       }
-    ]
+    ],
+    "actType": "支线故事",
+    "actName": "人们，我们",
+    "rerunKind": "首发",
+    "canRerun": true
   },
   "20260925_double_0176": {
     "name": "常驻标准寻访176",
@@ -12189,6 +12977,8 @@
         "isLimited": false,
         "isShop": true
       }
-    ]
+    ],
+    "actType": null,
+    "actName": null
   }
 }

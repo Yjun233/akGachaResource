@@ -572,8 +572,9 @@ async function main() {
     const { _forcedFive, _enName, upOperators: ups } = b;
     const group = nameGroupOf(b.type);
     let scName = b.name;
+    let hit = null;
     if (group) {
-      const hit = matchCnName(b);
+      hit = matchCnName(b);
       if (hit) {
         scName = hit.name;
         cnNamed.push(`${b.id}「${_enName}」→ 国服 ${hit.id}「${scName}」`);
@@ -590,7 +591,20 @@ async function main() {
       startDate: b.startDate,
       endDate: b.endDate,
       upOperators: ups,
+      /* ---- `actType` / `actName`（卡池所属活动）**不是抓来的**，是从国服对应池沿用过来的
+         （用户 2026-10-06 定）：这两个字段反映**国服口径的上架进度**，国际服落后于国服，
+         按各服历史重算没有意义。只有限定 / 单六 / 双五三类能反查得到（`group` 非空），
+         其余类型恒为 null —— 但**键必须存在**（与国服 schema 一致，站点侧会查）。 */
+      actType: hit ? (hit.actType ?? null) : null,
+      actName: hit ? (hit.actName ?? null) : null,
     };
+    /* ⚠️ `rerunKind` / `canRerun` **只有单六寻访才有** —— 与国服 schema 保持一致
+       （国服的 double 等类型就没这两个键）。实测支持「直接沿用国服」这个选择：
+       国服 `single` 里只有 2 条「返场」，而 en 80 条**一条都不对应**。 */
+    if (b.type === 'single') {
+      out[b.id].rerunKind = hit ? (hit.rerunKind ?? null) : null;
+      out[b.id].canRerun = hit ? (hit.canRerun ?? false) : false;
+    }
   }
 
   // —— per-干员：enName / enClassicDate / enReleaseDate
