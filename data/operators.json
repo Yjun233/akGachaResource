@@ -12,7 +12,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "离解复合",
+    "actLine": "为了明日"
   },
   "char_113_cqbw": {
     "name": "W",
@@ -29,7 +34,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_1035_wisdel"
-    ]
+    ],
+    "group": null,
+    "subGroup": "babel",
+    "actType": "插曲",
+    "actName": "生于黑夜",
+    "actLine": "方舟"
   },
   "char_148_nearl": {
     "name": "临光",
@@ -46,7 +56,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1014_nearl2"
-    ]
+    ],
+    "group": null,
+    "subGroup": "followers",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4224_turdus": {
     "name": "乌啾",
@@ -61,7 +76,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "ursus",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "人们，我们",
+    "actLine": "燎原"
   },
   "char_4145_ulpia": {
     "name": "乌尔比安",
@@ -76,7 +96,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "egir",
+    "subGroup": "abyssal",
+    "actType": "别传",
+    "actName": "生路",
+    "actLine": "自海渊的一瞥"
   },
   "char_455_nothin": {
     "name": "乌有",
@@ -91,7 +116,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "画中人",
+    "actLine": "岁岁今朝"
   },
   "char_1015_aglna2": {
     "name": "予愿安洁莉娜",
@@ -108,7 +138,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_291_aglina"
-    ]
+    ],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "直到大地变成一颗酸橙",
+    "actLine": "夏日律动"
   },
   "char_4082_qiubai": {
     "name": "仇白",
@@ -123,7 +158,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "春分",
+    "actLine": "岁岁今朝"
   },
   "char_2023_ling": {
     "name": "令",
@@ -138,7 +178,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": "sui",
+    "actType": "别传",
+    "actName": "将进酒",
+    "actLine": "岁岁今朝"
   },
   "char_4087_ines": {
     "name": "伊内丝",
@@ -153,7 +198,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": null,
+    "subGroup": "babel",
+    "actType": "主题曲",
+    "actName": "惊霆无声",
+    "actLine": "为了明日"
   },
   "char_134_ifrit": {
     "name": "伊芙利特",
@@ -168,7 +218,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "rhine",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4032_provs": {
     "name": "但书",
@@ -183,7 +238,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "kazimierz",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "日暮寻路",
+    "actLine": "霓虹之下"
   },
   "char_2026_yu": {
     "name": "余",
@@ -198,7 +258,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": "sui",
+    "actType": "别传",
+    "actName": "相见欢",
+    "actLine": "岁岁今朝"
   },
   "char_4058_pepe": {
     "name": "佩佩",
@@ -213,7 +278,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "sargon",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "太阳甩在身后",
+    "actLine": "夏日律动"
   },
   "char_4234_pedro": {
     "name": "佩德洛",
@@ -228,7 +298,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "bolivar",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "丛林症结",
+    "actLine": "泰拉奇谈"
   },
   "char_1013_chen2": {
     "name": "假日威龙陈",
@@ -246,7 +321,12 @@
     "alter": [
       "char_010_chen",
       "char_1050_chen3"
-    ]
+    ],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "多索雷斯假日",
+    "actLine": "夏日律动"
   },
   "char_250_phatom": {
     "name": "傀影",
@@ -263,7 +343,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1042_phatm2"
-    ]
+    ],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "生于黑夜",
+    "actLine": "方舟"
   },
   "char_115_headbr": {
     "name": "凛冬",
@@ -280,7 +365,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1051_headb2"
-    ]
+    ],
+    "group": "ursus",
+    "subGroup": "student",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_1045_svash2": {
     "name": "凛御银灰",
@@ -297,7 +387,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_172_svrash"
-    ]
+    ],
+    "group": "kjerag",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "雪山降临1101",
+    "actLine": "山雪与银铁"
   },
   "char_003_kalts": {
     "name": "凯尔希",
@@ -314,7 +409,12 @@
     "tcClassicDate": "2025-11-18",
     "alter": [
       "char_1052_kalts2"
-    ]
+    ],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "覆潮之下",
+    "actLine": "自海渊的一瞥"
   },
   "char_1052_kalts2": {
     "name": "凯尔希·思衡托",
@@ -331,7 +431,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_003_kalts"
-    ]
+    ],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "相变临界",
+    "actLine": "为了明日"
   },
   "char_174_slbell": {
     "name": "初雪",
@@ -348,7 +453,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1046_sbell2"
-    ]
+    ],
+    "group": "kjerag",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_494_vendla": {
     "name": "刺玫",
@@ -363,7 +473,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "恶兆湍流",
+    "actLine": "为了明日"
   },
   "char_2013_cerber": {
     "name": "刻俄柏",
@@ -378,7 +493,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "午间逸话",
+    "actLine": "泰拉奇谈"
   },
   "char_171_bldsk": {
     "name": "华法琳",
@@ -393,7 +513,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_214_kafka": {
     "name": "卡夫卡",
@@ -408,7 +533,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "孤岛风云",
+    "actLine": "摘取未来之人"
   },
   "char_426_billro": {
     "name": "卡涅利安",
@@ -423,7 +553,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "leithanien",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "灯火序曲",
+    "actLine": "泰拉奇谈"
   },
   "char_1036_fang2": {
     "name": "历阵锐枪芬",
@@ -438,7 +573,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "慈悲灯塔",
+    "actLine": "为了明日"
   },
   "char_4228_closur": {
     "name": "可露希尔",
@@ -453,7 +593,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "相变临界",
+    "actLine": "为了明日"
   },
   "char_201_moeshd": {
     "name": "可颂",
@@ -468,7 +613,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "lungmen",
+    "subGroup": "penguin",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_350_surtr": {
     "name": "史尔特尔",
@@ -483,7 +633,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "踏寻往昔之风",
+    "actLine": "泰拉奇谈"
   },
   "char_4039_horn": {
     "name": "号角",
@@ -498,7 +653,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "破碎日冕",
+    "actLine": "为了明日"
   },
   "char_1043_leizi2": {
     "name": "司霆惊蛰",
@@ -515,7 +675,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_306_leizi"
-    ]
+    ],
+    "group": "yan",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "镜中集",
+    "actLine": "岁岁今朝"
   },
   "char_4203_kichi": {
     "name": "吉星",
@@ -530,7 +695,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "higashi",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "墟",
+    "actLine": "夏日律动"
   },
   "char_226_hmau": {
     "name": "吽",
@@ -545,7 +715,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "lungmen",
+    "subGroup": "lee",
+    "actType": "故事集",
+    "actName": "洪炉示岁",
+    "actLine": "岁岁今朝"
   },
   "char_297_hamoni": {
     "name": "和弦",
@@ -560,7 +735,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": "tara",
+    "actType": "别传",
+    "actName": "照我以火",
+    "actLine": "薪火重燃"
   },
   "char_4214_cairn": {
     "name": "响石",
@@ -575,7 +755,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "未许之地",
+    "actLine": "摘取未来之人"
   },
   "char_4237_jcinta": {
     "name": "嘉辛塔",
@@ -590,7 +775,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "直到大地变成一颗酸橙",
+    "actLine": "夏日律动"
   },
   "char_365_aprl": {
     "name": "四月",
@@ -605,7 +795,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "踏寻往昔之风",
+    "actLine": "泰拉奇谈"
   },
   "char_1032_excu2": {
     "name": "圣约送葬人",
@@ -622,7 +817,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_279_excu"
-    ]
+    ],
+    "group": "laterano",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "空想花庭",
+    "actLine": "那被祝福的"
   },
   "char_1046_sbell2": {
     "name": "圣聆初雪",
@@ -639,7 +839,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_174_slbell"
-    ]
+    ],
+    "group": "kjerag",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "雪山降临1101",
+    "actLine": "山雪与银铁"
   },
   "char_245_cello": {
     "name": "塑心",
@@ -654,7 +859,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "laterano",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "崔林特尔梅之金",
+    "actLine": "那被祝福的"
   },
   "char_202_demkni": {
     "name": "塞雷娅",
@@ -669,7 +879,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "rhine",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4031_liesel": {
     "name": "复奏",
@@ -684,7 +899,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "十字路口",
+    "actLine": "七丘的新芽"
   },
   "char_492_quercu": {
     "name": "夏栎",
@@ -699,7 +919,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "阴云火花",
+    "actLine": "泰拉奇谈"
   },
   "char_2015_dusk": {
     "name": "夕",
@@ -714,7 +939,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": "sui",
+    "actType": "别传",
+    "actName": "画中人",
+    "actLine": "岁岁今朝"
   },
   "char_4048_doroth": {
     "name": "多萝西",
@@ -729,7 +959,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "rhine",
+    "actType": "别传",
+    "actName": "绿野幻梦",
+    "actLine": "摘取未来之人"
   },
   "char_476_blkngt": {
     "name": "夜半",
@@ -744,7 +979,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "将进酒",
+    "actLine": "岁岁今朝"
   },
   "char_179_cgbird": {
     "name": "夜莺",
@@ -759,7 +999,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": null,
+    "subGroup": "followers",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_164_nightm": {
     "name": "夜魔",
@@ -774,7 +1019,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "骑兵与猎人",
+    "actLine": "自海渊的一瞥"
   },
   "char_166_skfire": {
     "name": "天火",
@@ -789,7 +1039,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_346_aosta": {
     "name": "奥斯塔",
@@ -804,7 +1059,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": "chiave",
+    "actType": "别传",
+    "actName": "玛莉娅临光",
+    "actLine": "霓虹之下"
   },
   "char_4146_nymph": {
     "name": "妮芙",
@@ -819,7 +1079,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "熔炉“还魂”记",
+    "actLine": "泰拉奇谈"
   },
   "char_4138_narant": {
     "name": "娜仁图亚",
@@ -834,7 +1099,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "sargon",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "太阳甩在身后",
+    "actLine": "夏日律动"
   },
   "char_4212_nasti": {
     "name": "娜斯提",
@@ -849,7 +1119,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "rhine",
+    "actType": "别传",
+    "actName": "未许之地",
+    "actLine": "摘取未来之人"
   },
   "char_4014_lunacu": {
     "name": "子月",
@@ -864,7 +1139,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "叙拉古人",
+    "actLine": "七丘的新芽"
   },
   "char_158_milu": {
     "name": "守林人",
@@ -879,7 +1159,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_218_cuttle": {
     "name": "安哲拉",
@@ -894,7 +1179,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "egir",
+    "subGroup": "abyssal",
+    "actType": "别传",
+    "actName": "火蓝之心2020",
+    "actLine": "夏日律动"
   },
   "char_291_aglina": {
     "name": "安洁莉娜",
@@ -911,7 +1201,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1015_aglna2"
-    ]
+    ],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_341_sntlla": {
     "name": "寒檀",
@@ -926,7 +1221,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "sami",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "眠于树影之中",
+    "actLine": "泰拉奇谈"
   },
   "char_4052_surfer": {
     "name": "寻澜",
@@ -941,7 +1241,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "blacksteel",
+    "actType": "别传",
+    "actName": "相见欢",
+    "actLine": "岁岁今朝"
   },
   "char_4122_grabds": {
     "name": "小满",
@@ -956,7 +1261,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "怀黍离",
+    "actLine": "岁岁今朝"
   },
   "char_264_f12yin": {
     "name": "山",
@@ -971,7 +1281,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "孤岛风云",
+    "actLine": "摘取未来之人"
   },
   "char_173_slchan": {
     "name": "崖心",
@@ -986,7 +1301,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "kjerag",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_362_saga": {
     "name": "嵯峨",
@@ -1001,7 +1321,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "higashi",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "画中人",
+    "actLine": "岁岁今朝"
   },
   "char_4121_zuole": {
     "name": "左乐",
@@ -1016,7 +1341,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "怀黍离",
+    "actLine": "岁岁今朝"
   },
   "char_254_vodfox": {
     "name": "巫恋",
@@ -1031,7 +1361,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "生于黑夜",
+    "actLine": "方舟"
   },
   "char_356_broca": {
     "name": "布洛卡",
@@ -1046,7 +1381,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": "chiave",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_485_pallas": {
     "name": "帕拉斯",
@@ -1061,7 +1401,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "minos",
+    "subGroup": null,
+    "actType": "其他",
+    "actName": "荷谟伊智境",
+    "actLine": null
   },
   "char_2014_nian": {
     "name": "年",
@@ -1076,7 +1421,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": "sui",
+    "actType": "故事集",
+    "actName": "洪炉示岁",
+    "actLine": "岁岁今朝"
   },
   "char_143_ghost": {
     "name": "幽灵鲨",
@@ -1093,7 +1443,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1023_ghost2"
-    ]
+    ],
+    "group": "egir",
+    "subGroup": "abyssal",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_472_pasngr": {
     "name": "异客",
@@ -1108,7 +1463,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "sargon",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "遗尘漫步",
+    "actLine": "方舟"
   },
   "char_1039_thorn2": {
     "name": "引星棘刺",
@@ -1125,7 +1485,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_293_thorns"
-    ]
+    ],
+    "group": "iberia",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "出苍白海",
+    "actLine": "自海渊的一瞥"
   },
   "char_1023_ghost2": {
     "name": "归溟幽灵鲨",
@@ -1142,7 +1507,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_143_ghost"
-    ]
+    ],
+    "group": "egir",
+    "subGroup": "abyssal",
+    "actType": "插曲",
+    "actName": "愚人号",
+    "actLine": "自海渊的一瞥"
   },
   "char_4196_reckpr": {
     "name": "录武官",
@@ -1157,7 +1527,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "镜中集",
+    "actLine": "岁岁今朝"
   },
   "char_102_texas": {
     "name": "德克萨斯",
@@ -1174,7 +1549,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1028_texas2"
-    ]
+    ],
+    "group": "lungmen",
+    "subGroup": "penguin",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4026_vulpis": {
     "name": "忍冬",
@@ -1189,7 +1569,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "揭幕者们",
+    "actLine": "七丘的新芽"
   },
   "char_1051_headb2": {
     "name": "怒潮凛冬",
@@ -1206,7 +1591,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_115_headbr"
-    ]
+    ],
+    "group": "ursus",
+    "subGroup": "student",
+    "actType": "别传",
+    "actName": "人们，我们",
+    "actLine": "燎原"
   },
   "char_306_leizi": {
     "name": "惊蛰",
@@ -1223,7 +1613,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1043_leizi2"
-    ]
+    ],
+    "group": "yan",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "午间逸话",
+    "actLine": "泰拉奇谈"
   },
   "char_379_sesa": {
     "name": "慑砂",
@@ -1238,7 +1633,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "sargon",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_1027_greyy2": {
     "name": "承曦格雷伊",
@@ -1253,7 +1653,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "绿野幻梦",
+    "actLine": "摘取未来之人"
   },
   "char_4207_branch": {
     "name": "折桠",
@@ -1268,7 +1673,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "ursus",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "反常光谱",
+    "actLine": "为了明日"
   },
   "char_140_whitew": {
     "name": "拉普兰德",
@@ -1285,7 +1695,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1038_whitw2"
-    ]
+    ],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_433_windft": {
     "name": "掠风",
@@ -1300,7 +1715,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "愚人号",
+    "actLine": "自海渊的一瞥"
   },
   "char_112_siege": {
     "name": "推进之王",
@@ -1317,7 +1737,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1019_siege2"
-    ]
+    ],
+    "group": "victoria",
+    "subGroup": "glasgow",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_2012_typhon": {
     "name": "提丰",
@@ -1332,7 +1757,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "sami",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "眠于树影之中",
+    "actLine": "泰拉奇谈"
   },
   "char_1022_flwr2": {
     "name": "撷英调香师",
@@ -1347,7 +1777,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "雅赛努斯复仇记",
+    "actLine": "泰拉奇谈"
   },
   "char_4065_judge": {
     "name": "斥罪",
@@ -1362,7 +1797,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "叙拉古人",
+    "actLine": "七丘的新芽"
   },
   "char_1044_hsgma2": {
     "name": "斩业星熊",
@@ -1379,7 +1819,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_136_hsguma"
-    ]
+    ],
+    "group": "lungmen",
+    "subGroup": "lgd",
+    "actType": "别传",
+    "actName": "墟",
+    "actLine": "夏日律动"
   },
   "char_294_ayer": {
     "name": "断崖",
@@ -1394,7 +1839,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "沃伦姆德的薄暮",
+    "actLine": "高塔迷影"
   },
   "char_263_skadi": {
     "name": "斯卡蒂",
@@ -1411,7 +1861,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1012_skadi2"
-    ]
+    ],
+    "group": "egir",
+    "subGroup": "abyssal",
+    "actType": "别传",
+    "actName": "骑兵与猎人",
+    "actLine": "自海渊的一瞥"
   },
   "char_1041_angel2": {
     "name": "新约能天使",
@@ -1428,7 +1883,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_103_angel"
-    ]
+    ],
+    "group": "lungmen",
+    "subGroup": "penguin",
+    "actType": "别传",
+    "actName": "众生行记",
+    "actLine": "那被祝福的"
   },
   "char_197_poca": {
     "name": "早露",
@@ -1443,7 +1903,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "ursus",
+    "subGroup": "student",
+    "actType": "故事集",
+    "actName": "乌萨斯的孩子们",
+    "actLine": "燎原"
   },
   "char_4071_peper": {
     "name": "明椒",
@@ -1458,7 +1923,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "淬火尘霾",
+    "actLine": "为了明日"
   },
   "char_274_astesi": {
     "name": "星极",
@@ -1473,7 +1943,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "火蓝之心",
+    "actLine": "夏日律动"
   },
   "char_136_hsguma": {
     "name": "星熊",
@@ -1490,7 +1965,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1044_hsgma2"
-    ]
+    ],
+    "group": "lungmen",
+    "subGroup": "lgd",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_497_ctable": {
     "name": "晓歌",
@@ -1505,7 +1985,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "理想城长夏狂欢季",
+    "actLine": "夏日律动"
   },
   "char_145_prove": {
     "name": "普罗旺斯",
@@ -1520,7 +2005,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_343_tknogi": {
     "name": "月禾",
@@ -1535,7 +2025,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "higashi",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_2027_wang": {
     "name": "望",
@@ -1550,7 +2045,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": "sui",
+    "actType": "别传",
+    "actName": "辞岁行",
+    "actLine": "岁岁今朝"
   },
   "char_4105_almond": {
     "name": "杏仁",
@@ -1565,7 +2065,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "blacksteel",
+    "actType": "别传",
+    "actName": "不义之财",
+    "actLine": "泰拉奇谈"
   },
   "char_422_aurora": {
     "name": "极光",
@@ -1580,7 +2085,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "kjerag",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "风雪过境",
+    "actLine": "山雪与银铁"
   },
   "char_401_elysm": {
     "name": "极境",
@@ -1595,7 +2105,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "生于黑夜",
+    "actLine": "方舟"
   },
   "char_4080_lin": {
     "name": "林",
@@ -1610,7 +2125,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "lungmen",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "登临意",
+    "actLine": "岁岁今朝"
   },
   "char_326_glacus": {
     "name": "格劳克斯",
@@ -1625,7 +2145,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "iberia",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "火蓝之心",
+    "actLine": "夏日律动"
   },
   "char_473_mberry": {
     "name": "桑葚",
@@ -1640,7 +2165,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "风暴瞭望",
+    "actLine": "为了明日"
   },
   "char_242_otter": {
     "name": "梅尔",
@@ -1655,7 +2185,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "rhine",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_293_thorns": {
     "name": "棘刺",
@@ -1672,7 +2207,12 @@
     "tcClassicDate": "2025-02-11",
     "alter": [
       "char_1039_thorn2"
-    ]
+    ],
+    "group": "iberia",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "火蓝之心2020",
+    "actLine": "夏日律动"
   },
   "char_416_zumama": {
     "name": "森蚺",
@@ -1687,7 +2227,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "sargon",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "密林悍将归来",
+    "actLine": "夏日律动"
   },
   "char_243_waaifu": {
     "name": "槐琥",
@@ -1702,7 +2247,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "lungmen",
+    "subGroup": "lee",
+    "actType": "别传",
+    "actName": "喧闹法则",
+    "actLine": "泰拉奇谈"
   },
   "char_450_necras": {
     "name": "死芒",
@@ -1717,7 +2267,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": "tara",
+    "actType": "别传",
+    "actName": "挽歌燃烧殆尽",
+    "actLine": "方舟"
   },
   "char_437_mizuki": {
     "name": "水月",
@@ -1732,7 +2287,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "higashi",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "多索雷斯假日",
+    "actLine": "夏日律动"
   },
   "char_487_bobb": {
     "name": "波卜",
@@ -1747,7 +2307,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "追迹日落以西",
+    "actLine": "方舟"
   },
   "char_311_mudrok": {
     "name": "泥岩",
@@ -1762,7 +2327,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "其他",
+    "actName": "感谢庆典2020",
+    "actLine": null
   },
   "char_464_cement": {
     "name": "洋灰",
@@ -1777,7 +2347,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "惊霆无声",
+    "actLine": "为了明日"
   },
   "char_4040_rockr": {
     "name": "洛洛",
@@ -1792,7 +2367,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "破碎日冕",
+    "actLine": "为了明日"
   },
   "char_1012_skadi2": {
     "name": "浊心斯卡蒂",
@@ -1809,7 +2389,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_263_skadi"
-    ]
+    ],
+    "group": "egir",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "覆潮之下",
+    "actLine": "自海渊的一瞥"
   },
   "char_4079_haini": {
     "name": "海霓",
@@ -1824,7 +2409,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "egir",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "生路",
+    "actLine": "自海渊的一瞥"
   },
   "char_1034_jesca2": {
     "name": "涤火杰西卡",
@@ -1839,7 +2429,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "blacksteel",
+    "actType": "别传",
+    "actName": "不义之财",
+    "actLine": "泰拉奇谈"
   },
   "char_4109_baslin": {
     "name": "深律",
@@ -1854,7 +2449,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "leithanien",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "崔林特尔梅之金",
+    "actLine": "那被祝福的"
   },
   "char_4147_mitm": {
     "name": "渡桥",
@@ -1869,7 +2469,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "熔炉“还魂”记",
+    "actLine": "泰拉奇谈"
   },
   "char_4081_warmy": {
     "name": "温米",
@@ -1884,7 +2489,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "去咧嘴谷",
+    "actLine": "泰拉奇谈"
   },
   "char_400_weedy": {
     "name": "温蒂",
@@ -1899,7 +2509,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "生于黑夜",
+    "actLine": "方舟"
   },
   "char_377_gdglow": {
     "name": "澄闪",
@@ -1914,7 +2529,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "阴云火花",
+    "actLine": "泰拉奇谈"
   },
   "char_1024_hbisc2": {
     "name": "濯尘芙蓉",
@@ -1929,7 +2549,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "尘影余音",
+    "actLine": "高塔迷影"
   },
   "char_493_firwhl": {
     "name": "火哨",
@@ -1944,7 +2569,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "登临意",
+    "actLine": "岁岁今朝"
   },
   "char_367_swllow": {
     "name": "灰喉",
@@ -1959,7 +2589,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "局部坏死",
+    "actLine": "为了明日"
   },
   "char_431_ashlok": {
     "name": "灰毫",
@@ -1974,7 +2609,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "kazimierz",
+    "subGroup": "pinus",
+    "actType": "故事集",
+    "actName": "红松林",
+    "actLine": "霓虹之下"
   },
   "char_206_gnosis": {
     "name": "灵知",
@@ -1989,7 +2629,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "kjerag",
+    "subGroup": "karlan",
+    "actType": "别传",
+    "actName": "风雪过境",
+    "actLine": "山雪与银铁"
   },
   "char_194_leto": {
     "name": "烈夏",
@@ -2004,7 +2649,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "ursus",
+    "subGroup": "student",
+    "actType": "别传",
+    "actName": "银心湖列车",
+    "actLine": "山雪与银铁"
   },
   "char_1040_blaze2": {
     "name": "烛煌",
@@ -2021,7 +2671,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_017_huang"
-    ]
+    ],
+    "group": "rhodes",
+    "subGroup": "elite",
+    "actType": "别传",
+    "actName": "相见欢",
+    "actLine": "岁岁今朝"
   },
   "char_420_flamtl": {
     "name": "焰尾",
@@ -2036,7 +2691,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "kazimierz",
+    "subGroup": "pinus",
+    "actType": "别传",
+    "actName": "长夜临光",
+    "actLine": "霓虹之下"
   },
   "char_1020_reed2": {
     "name": "焰影苇草",
@@ -2053,7 +2713,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_261_sddrag"
-    ]
+    ],
+    "group": "victoria",
+    "subGroup": "tara",
+    "actType": "别传",
+    "actName": "照我以火",
+    "actLine": "薪火重燃"
   },
   "char_017_huang": {
     "name": "煌",
@@ -2070,7 +2735,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1040_blaze2"
-    ]
+    ],
+    "group": "rhodes",
+    "subGroup": "elite",
+    "actType": "主题曲",
+    "actName": "局部坏死",
+    "actLine": "为了明日"
   },
   "char_363_toddi": {
     "name": "熔泉",
@@ -2085,7 +2755,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "遗尘漫步",
+    "actLine": "方舟"
   },
   "char_415_flint": {
     "name": "燧石",
@@ -2100,7 +2775,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "sargon",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "密林悍将归来",
+    "actLine": "夏日律动"
   },
   "char_338_iris": {
     "name": "爱丽丝",
@@ -2115,7 +2795,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "此地之外",
+    "actLine": "泰拉奇谈"
   },
   "char_4164_tecno": {
     "name": "特克诺",
@@ -2130,7 +2815,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "bolivar",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "出苍白海",
+    "actLine": "自海渊的一瞥"
   },
   "char_215_mantic": {
     "name": "狮蝎",
@@ -2145,7 +2835,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "sargon",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4064_mlynar": {
     "name": "玛恩纳",
@@ -2160,7 +2855,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "kazimierz",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "日暮寻路",
+    "actLine": "霓虹之下"
   },
   "char_4006_melnte": {
     "name": "玫拉",
@@ -2175,7 +2875,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "孤星",
+    "actLine": "摘取未来之人"
   },
   "char_4235_thumpy": {
     "name": "珊比",
@@ -2190,7 +2895,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "直到大地变成一颗酸橙",
+    "actLine": "夏日律动"
   },
   "char_1033_swire2": {
     "name": "琳琅诗怀雅",
@@ -2207,7 +2917,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_308_swire"
-    ]
+    ],
+    "group": "lungmen",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "火山旅梦",
+    "actLine": "夏日律动"
   },
   "char_479_sleach": {
     "name": "琴柳",
@@ -2222,7 +2937,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "风暴瞭望",
+    "actLine": "为了明日"
   },
   "char_423_blemsh": {
     "name": "瑕光",
@@ -2237,7 +2957,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "kazimierz",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "玛莉娅临光",
+    "actLine": "霓虹之下"
   },
   "char_204_platnm": {
     "name": "白金",
@@ -2252,7 +2977,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "kazimierz",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4072_ironmn": {
     "name": "白铁",
@@ -2267,7 +2997,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "淬火尘霾",
+    "actLine": "为了明日"
   },
   "char_128_plosis": {
     "name": "白面鸮",
@@ -2282,7 +3017,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "rhine",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_1026_gvial2": {
     "name": "百炼嘉维尔",
@@ -2297,7 +3037,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "理想城长夏狂欢季",
+    "actLine": "夏日律动"
   },
   "char_195_glassb": {
     "name": "真理",
@@ -2312,7 +3057,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "ursus",
+    "subGroup": "student",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4204_mantra": {
     "name": "真言",
@@ -2327,7 +3077,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": "elite",
+    "actType": "主题曲",
+    "actName": "反常光谱",
+    "actLine": "为了明日"
   },
   "char_378_asbest": {
     "name": "石棉",
@@ -2342,7 +3097,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_101_sora": {
     "name": "空",
@@ -2357,7 +3117,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "lungmen",
+    "subGroup": "penguin",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_332_archet": {
     "name": "空弦",
@@ -2372,7 +3137,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "laterano",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "此地之外",
+    "actLine": "泰拉奇谈"
   },
   "char_4015_spuria": {
     "name": "空构",
@@ -2387,7 +3157,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "laterano",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "空想花庭",
+    "actLine": "那被祝福的"
   },
   "char_436_whispr": {
     "name": "絮雨",
@@ -2402,7 +3177,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
-    "alter": []
+    "alter": [],
+    "group": "iberia",
+    "subGroup": null,
+    "actType": "其他",
+    "actName": "感谢庆典2020",
+    "actLine": null
   },
   "char_144_red": {
     "name": "红",
@@ -2417,7 +3197,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": "sweep",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_1016_agoat2": {
     "name": "纯烬艾雅法拉",
@@ -2434,7 +3219,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_180_amgoat"
-    ]
+    ],
+    "group": "leithanien",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "火山旅梦",
+    "actLine": "夏日律动"
   },
   "char_478_kirara": {
     "name": "绮良",
@@ -2449,7 +3239,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "higashi",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "灯火序曲",
+    "actLine": "泰拉奇谈"
   },
   "char_1035_wisdel": {
     "name": "维什戴尔",
@@ -2466,7 +3261,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_113_cqbw"
-    ]
+    ],
+    "group": null,
+    "subGroup": "babel",
+    "actType": "主题曲",
+    "actName": "慈悲灯塔",
+    "actLine": "为了明日"
   },
   "char_1019_siege2": {
     "name": "维娜·维多利亚",
@@ -2483,7 +3283,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_112_siege"
-    ]
+    ],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "追迹日落以西",
+    "actLine": "方舟"
   },
   "char_1028_texas2": {
     "name": "缄默德克萨斯",
@@ -2500,7 +3305,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_102_texas"
-    ]
+    ],
+    "group": "lungmen",
+    "subGroup": "penguin",
+    "actType": "别传",
+    "actName": "叙拉古人",
+    "actLine": "七丘的新芽"
   },
   "char_4056_titi": {
     "name": "缇缇",
@@ -2515,7 +3325,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "sargon",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "雅赛努斯复仇记",
+    "actLine": "泰拉奇谈"
   },
   "char_249_mlyss": {
     "name": "缪尔赛思",
@@ -2530,7 +3345,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "rhine",
+    "actType": "插曲",
+    "actName": "孤星",
+    "actLine": "摘取未来之人"
   },
   "char_421_crow": {
     "name": "羽毛笔",
@@ -2545,7 +3365,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "bolivar",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "多索雷斯假日",
+    "actLine": "夏日律动"
   },
   "char_1014_nearl2": {
     "name": "耀骑士临光",
@@ -2562,7 +3387,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_148_nearl"
-    ]
+    ],
+    "group": "kazimierz",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "长夜临光",
+    "actLine": "霓虹之下"
   },
   "char_322_lmlee": {
     "name": "老鲤",
@@ -2577,7 +3407,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "lungmen",
+    "subGroup": "lee",
+    "actType": "别传",
+    "actName": "将进酒",
+    "actLine": "岁岁今朝"
   },
   "char_4187_graceb": {
     "name": "聆音",
@@ -2592,7 +3427,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "bolivar",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "众生行记",
+    "actLine": "那被祝福的"
   },
   "char_103_angel": {
     "name": "能天使",
@@ -2609,7 +3449,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1041_angel2"
-    ]
+    ],
+    "group": "lungmen",
+    "subGroup": "penguin",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4009_irene": {
     "name": "艾丽妮",
@@ -2624,7 +3469,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "iberia",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "愚人号",
+    "actLine": "自海渊的一瞥"
   },
   "char_180_amgoat": {
     "name": "艾雅法拉",
@@ -2641,7 +3491,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1016_agoat2"
-    ]
+    ],
+    "group": "leithanien",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_106_franka": {
     "name": "芙兰卡",
@@ -2656,7 +3511,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "blacksteel",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_261_sddrag": {
     "name": "苇草",
@@ -2673,7 +3533,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1020_reed2"
-    ]
+    ],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_1038_whitw2": {
     "name": "荒芜拉普兰德",
@@ -2690,7 +3555,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_140_whitew"
-    ]
+    ],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "揭幕者们",
+    "actLine": "七丘的新芽"
   },
   "char_213_mostma": {
     "name": "莫斯提马",
@@ -2705,7 +3575,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "laterano",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "喧闹法则",
+    "actLine": "泰拉奇谈"
   },
   "char_4117_ray": {
     "name": "莱伊",
@@ -2720,7 +3595,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "去咧嘴谷",
+    "actLine": "泰拉奇谈"
   },
   "char_373_lionhd": {
     "name": "莱恩哈特",
@@ -2735,7 +3615,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "乌萨斯的孩子们",
+    "actLine": "燎原"
   },
   "char_300_phenxi": {
     "name": "菲亚梅塔",
@@ -2750,7 +3635,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "laterano",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "吾导先路",
+    "actLine": "那被祝福的"
   },
   "char_4191_tippi": {
     "name": "蒂比",
@@ -2765,7 +3655,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "红丝绒",
+    "actLine": "泰拉奇谈"
   },
   "char_129_bluep": {
     "name": "蓝毒",
@@ -2780,7 +3675,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "iberia",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4193_lemuen": {
     "name": "蕾缪安",
@@ -2795,7 +3695,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "laterano",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "众生行记",
+    "actLine": "那被祝福的"
   },
   "char_4098_vvana": {
     "name": "薇薇安娜",
@@ -2810,7 +3715,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "leithanien",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "崔林特尔梅之金",
+    "actLine": "那被祝福的"
   },
   "char_489_serum": {
     "name": "蚀清",
@@ -2825,7 +3735,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "长夜临光",
+    "actLine": "霓虹之下"
   },
   "char_344_beewax": {
     "name": "蜜蜡",
@@ -2840,7 +3755,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "sargon",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4140_lasher": {
     "name": "衡沙",
@@ -2855,7 +3775,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "sargon",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "太阳甩在身后",
+    "actLine": "夏日律动"
   },
   "char_4155_talr": {
     "name": "裁度",
@@ -2870,7 +3795,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "揭幕者们",
+    "actLine": "七丘的新芽"
   },
   "char_4225_tanya": {
     "name": "裂响",
@@ -2885,7 +3815,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "ursus",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "相变临界",
+    "actLine": "为了明日"
   },
   "char_308_swire": {
     "name": "诗怀雅",
@@ -2902,7 +3837,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1033_swire2"
-    ]
+    ],
+    "group": "lungmen",
+    "subGroup": "lgd",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4173_nowell": {
     "name": "诺威尔",
@@ -2917,7 +3857,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "我们明日见",
+    "actLine": "方舟"
   },
   "char_4229_aphris": {
     "name": "谬因",
@@ -2932,7 +3877,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "丛林症结",
+    "actLine": "泰拉奇谈"
   },
   "char_4037_demetr": {
     "name": "贝洛内",
@@ -2947,7 +3897,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "十字路口",
+    "actLine": "七丘的新芽"
   },
   "char_349_chiave": {
     "name": "贾维",
@@ -2962,7 +3917,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": "chiave",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_475_akafyu": {
     "name": "赤冬",
@@ -2977,7 +3937,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "higashi",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "覆潮之下",
+    "actLine": "自海渊的一瞥"
   },
   "char_1050_chen3": {
     "name": "赤刃明霄陈",
@@ -2995,7 +3960,12 @@
     "alter": [
       "char_010_chen",
       "char_1013_chen2"
-    ]
+    ],
+    "group": "yan",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "辞岁行",
+    "actLine": "岁岁今朝"
   },
   "char_4088_hodrer": {
     "name": "赫德雷",
@@ -3010,7 +3980,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": null,
+    "subGroup": "babel",
+    "actType": "主题曲",
+    "actName": "恶兆湍流",
+    "actLine": "为了明日"
   },
   "char_188_helage": {
     "name": "赫拉格",
@@ -3025,7 +4000,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "ursus",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "火蓝之心",
+    "actLine": "夏日律动"
   },
   "char_108_silent": {
     "name": "赫默",
@@ -3040,7 +4020,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "rhine",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_430_fartth": {
     "name": "远牙",
@@ -3055,7 +4040,12 @@
     "classicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
-    "alter": []
+    "alter": [],
+    "group": "kazimierz",
+    "subGroup": "pinus",
+    "actType": "故事集",
+    "actName": "红松林",
+    "actLine": "霓虹之下"
   },
   "char_391_rosmon": {
     "name": "迷迭香",
@@ -3070,7 +4060,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": "elite",
+    "actType": "其他",
+    "actName": "感谢庆典2020",
+    "actLine": null
   },
   "char_279_excu": {
     "name": "送葬人",
@@ -3087,7 +4082,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1032_excu2"
-    ]
+    ],
+    "group": "laterano",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "战地秘闻",
+    "actLine": "泰拉奇谈"
   },
   "char_4133_logos": {
     "name": "逻各斯",
@@ -3102,7 +4102,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": "elite",
+    "actType": "主题曲",
+    "actName": "慈悲灯塔",
+    "actLine": "为了明日"
   },
   "char_4202_haruka": {
     "name": "遥",
@@ -3117,7 +4122,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "higashi",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "墟",
+    "actLine": "夏日律动"
   },
   "char_1042_phatm2": {
     "name": "酒神",
@@ -3134,7 +4144,12 @@
     "tcClassicDate": null,
     "alter": [
       "char_250_phatom"
-    ]
+    ],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "红丝绒",
+    "actLine": "泰拉奇谈"
   },
   "char_2024_chyue": {
     "name": "重岳",
@@ -3149,7 +4164,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": "sui",
+    "actType": "别传",
+    "actName": "登临意",
+    "actLine": "岁岁今朝"
   },
   "char_4171_wulfen": {
     "name": "钼铅",
@@ -3164,7 +4184,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "sargon",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "挽歌燃烧殆尽",
+    "actLine": "方舟"
   },
   "char_358_lisa": {
     "name": "铃兰",
@@ -3179,7 +4204,12 @@
     "classicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "沃伦姆德的薄暮",
+    "actLine": "高塔迷影"
   },
   "char_4083_chimes": {
     "name": "铎铃",
@@ -3194,7 +4224,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "春分",
+    "actLine": "岁岁今朝"
   },
   "char_172_svrash": {
     "name": "银灰",
@@ -3211,7 +4246,12 @@
     "tcClassicDate": "2024-02-13",
     "alter": [
       "char_1045_svash2"
-    ]
+    ],
+    "group": "kjerag",
+    "subGroup": "karlan",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4116_blkkgt": {
     "name": "锏",
@@ -3226,7 +4266,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "kjerag",
+    "subGroup": "karlan",
+    "actType": "别传",
+    "actName": "银心湖列车",
+    "actLine": "山雪与银铁"
   },
   "char_147_shining": {
     "name": "闪灵",
@@ -3241,7 +4286,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": null,
+    "subGroup": "followers",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_225_haak": {
     "name": "阿",
@@ -3256,7 +4306,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "lungmen",
+    "subGroup": "lee",
+    "actType": "故事集",
+    "actName": "洪炉示岁",
+    "actLine": "岁岁今朝"
   },
   "char_4178_alanna": {
     "name": "阿兰娜",
@@ -3271,7 +4326,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rim",
+    "subGroup": null,
+    "actType": "主题曲",
+    "actName": "离解复合",
+    "actLine": "为了明日"
   },
   "char_4132_ascln": {
     "name": "阿斯卡纶",
@@ -3286,7 +4346,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": "sweep",
+    "actType": "插曲",
+    "actName": "巴别塔",
+    "actLine": "方舟"
   },
   "char_446_aroma": {
     "name": "阿罗玛",
@@ -3301,7 +4366,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "siracusa",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "巴别塔",
+    "actLine": "方舟"
   },
   "char_010_chen": {
     "name": "陈",
@@ -3319,7 +4389,12 @@
     "alter": [
       "char_1013_chen2",
       "char_1050_chen3"
-    ]
+    ],
+    "group": "lungmen",
+    "subGroup": "lgd",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_219_meteo": {
     "name": "陨星",
@@ -3334,7 +4409,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4010_etlchi": {
     "name": "隐德来希",
@@ -3349,7 +4429,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "故事集",
+    "actName": "我们明日见",
+    "actLine": "方舟"
   },
   "char_4211_snhunt": {
     "name": "雪猎",
@@ -3364,7 +4449,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "kjerag",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "雪山降临1101",
+    "actLine": "山雪与银铁"
   },
   "char_107_liskam": {
     "name": "雷蛇",
@@ -3379,7 +4469,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "blacksteel",
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4027_heyak": {
     "name": "霍尔海雅",
@@ -3394,7 +4489,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": null,
+    "actType": "插曲",
+    "actName": "孤星",
+    "actLine": "摘取未来之人"
   },
   "char_488_buildr": {
     "name": "青枳",
@@ -3409,7 +4509,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "siesta",
+    "actType": "别传",
+    "actName": "火山旅梦",
+    "actLine": "夏日律动"
   },
   "char_4016_kazema": {
     "name": "风丸",
@@ -3424,7 +4529,12 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "higashi",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "吾导先路",
+    "actLine": "那被祝福的"
   },
   "char_222_bpipe": {
     "name": "风笛",
@@ -3439,7 +4549,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "victoria",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4222_taraxa": {
     "name": "风絮",
@@ -3454,7 +4569,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "辞岁行",
+    "actLine": "岁岁今朝"
   },
   "char_241_panda": {
     "name": "食铁兽",
@@ -3469,7 +4589,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "lungmen",
+    "subGroup": null,
+    "actType": null,
+    "actName": null,
+    "actLine": null
   },
   "char_4055_bgsnow": {
     "name": "鸿雪",
@@ -3484,7 +4609,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "rhodes",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "理想城长夏狂欢季",
+    "actLine": "夏日律动"
   },
   "char_248_mgllan": {
     "name": "麦哲伦",
@@ -3499,7 +4629,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "rhine",
+    "actType": "故事集",
+    "actName": "战地秘闻",
+    "actLine": "泰拉奇谈"
   },
   "char_2025_shu": {
     "name": "黍",
@@ -3514,7 +4649,12 @@
     "classicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "yan",
+    "subGroup": "sui",
+    "actType": "别传",
+    "actName": "怀黍离",
+    "actLine": "岁岁今朝"
   },
   "char_340_shwaz": {
     "name": "黑",
@@ -3529,7 +4669,12 @@
     "classicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
-    "alter": []
+    "alter": [],
+    "group": "columbia",
+    "subGroup": "siesta",
+    "actType": "别传",
+    "actName": "火蓝之心",
+    "actLine": "夏日律动"
   },
   "char_4046_ebnhlz": {
     "name": "黑键",
@@ -3544,6 +4689,11 @@
     "classicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
-    "alter": []
+    "alter": [],
+    "group": "leithanien",
+    "subGroup": null,
+    "actType": "别传",
+    "actName": "尘影余音",
+    "actLine": "高塔迷影"
   }
 }

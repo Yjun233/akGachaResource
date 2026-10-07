@@ -91,6 +91,37 @@ export async function loadNames(dir, { local = null } = {}) {
 }
 
 /**
+ * charId → **阵营**（写进 `operators.json` 的 `group` / `subGroup`，2026-10-07 加）。
+ *
+ * 来源 = `character_table.json` 的三个字段（**原始内部 id**，不是本地化名）：
+ *   · `nationId` → `group`（**国家 / 地区**，如 `lungmen` 龙门 / `rhodes` 罗德岛 / `kazimierz` 卡西米尔）
+ *   · `groupId` **或** `teamId` → `subGroup`（**组织 / 小队**，如 `penguin` 企鹅物流 / `lgd` 龙门近卫局）
+ *
+ * ⚠️ 实测口径（2026-10-07，cn 表 1375 条 / 本项目 230 位在册干员）：
+ *   · **`groupId` 与 `teamId` 互斥** —— 全表 0 例同时有值（用户也是这么说的）。
+ *     取 `groupId ?? teamId` 即可，**不要**拼起来。
+ *   · **三服取值完全一致**（cn / en / tw 同名 charId 的三个字段逐位相同）→ **读 cn 一份就够**，
+ *     不像名字那样要分服。（en / tw 表里没有的新干员，是「该服还没上」而不是值不同。）
+ *   · **覆盖率不是 100%**：230 位里 `nationId` 有 **223**（7 位为 `null`）、
+ *     `groupId|teamId` 有 **74**（156 位为 `null`）—— 空值是**正常**的，别当成抓漏。
+ *
+ * @returns {Promise<Map<string, {nationId:string|null, groupId:string|null, teamId:string|null}>>}
+ */
+export async function loadAffiliations(dir, { local = null } = {}) {
+  const tbl = await loadTable(dir, 'character_table.json', { local });
+  const out = new Map();
+  for (const [id, v] of Object.entries(tbl)) {
+    if (!v) continue;
+    out.set(id, {
+      nationId: v.nationId || null,
+      groupId: v.groupId || null,
+      teamId: v.teamId || null,
+    });
+  }
+  return out;
+}
+
+/**
  * 读 `char_meta_table.json` 的 **`spCharGroups`（异格分组）**。
  *
  * 形状：`{ 本体charId: [本体charId, 异格charId, …] }` —— 键是**本体**，值是整组。

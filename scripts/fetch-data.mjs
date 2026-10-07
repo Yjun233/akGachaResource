@@ -12,6 +12,16 @@
  *                          数据来自官方解包 `char_meta_table.json` 的 `spCharGroups`，
  *                          口径见 lib/gamedata.mjs。
  *                          网络拿不到官方表时**沿用旧文件里的 alter**，不会让脚本失败。
+ *                          另有 `group` / `subGroup` = **阵营**，来自官方解包 `character_table.json`：
+ *                          `group` = `nationId`（国家/地区，如 `lungmen`）、
+ *                          `subGroup` = `groupId` **或** `teamId`（组织/小队，如 `penguin`；
+ *                          ⚠️ 两者**互斥**，取 `??` 不拼接）。都是**原始内部 id**、**三服一致**。
+ *                          同样「拿不到就沿用旧值」。
+ *                          另有 `actType` / `actName` / `actLine` = **该干员的实装活动**
+ *                          （`actType` 五选一：主题曲 / 插曲 / 别传 / 故事集 / 其他，
+ *                            没有活动的为 `null`；`actLine` = 剧情线名，只对上面前四类有值）。
+ *                          口径见 lib/op-activity.mjs；**只在 `--with-activities` 时重算**，
+ *                          其余轮次沿用旧值。
  *   banners_sc.json        国服卡池表（以卡池 ID 为键；en / tc 两个分文件
  *                          由各自的脚本产出，本脚本只读 banners_en.json 用于反查英文名）
  *                          每个卡池都有 `name` / `scName` / `enName` 三个名字字段：
@@ -34,6 +44,12 @@
  *    活动类型变化很慢，没必要每次跑都花那 ~7 次请求。
  *    **不抓的那几次必须从旧文件回填**（见 main 里 else 那支），否则重写会把字段抹掉。
  *    口径、实测与两个解析坑见 akGachaDocs/resource/单六寻访活动类型与复刻预研.md。
+ *
+ * ⚠️ **干员的「实装活动」也挂在同一个开关下** —— `operators.json` 的
+ *    `actType`（主题曲 / 插曲 / 别传 / 故事集 / 其他，无活动为 null）、`actName`、`actLine`
+ *    （剧情线名，取官方解包 `stage_table.json` 的 `storylineName`）。**同样要回填**。
+ *    实现与口径见 `lib/op-activity.mjs` + akGachaDocs/resource/干员实装活动类型预研.md；
+ *    它额外要读解包的 `stage_table.json`（26MB）/ `story_review_table.json`（2.4MB）。
  */
 
 import fs from 'node:fs/promises';
@@ -42,7 +58,8 @@ import { fileURLToPath } from 'node:url';
 import { pinyin } from 'pinyin-pro';
 import { metaStable, orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
-import { buildAlterMap, loadSpCharGroups } from './lib/gamedata.mjs';
+import { buildAlterMap, loadAffiliations, loadSpCharGroups } from './lib/gamedata.mjs';
+import { loadActivityTables, resolveOperatorActivities } from './lib/op-activity.mjs';
 import './lib/http.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -222,13 +239,51 @@ const CAN_RERUN_EXCEPTIONS = new Set(['深夏的守夜人', '久铸尘铁']);
     「燃钢之心:暴躁铁皮 复刻」这种全角/半角冒号不一致的（覆盖率 74 → 75 / 84）。 */
 const normName = (s) => String(s || '').replace(/[^\p{L}\p{N}]/gu, '');
 
-/** 解析 `{{活动信息}}` → 活动类型 / 开始日 / 它列出的同期卡池名 */
+/** 从 `pos`（指向 `{{`）处抠出**括号配对**的模板正文。
+    ⚠️ 不能用 `indexOf('}}')` —— 正文里常有内嵌模板（`{{干员头像/发光|空弦|60px}}`），
+       那样会在内层的 `}}` 处被截断，实测会让「信赖提升干员」只解析出 1 人。 */
+function extractTemplateBody(s, pos) {
+  let depth = 0;
+  for (let i = pos; i < s.length - 1; i++) {
+    if (s[i] === '{' && s[i + 1] === '{') { depth += 1; i += 1; continue; }
+    if (s[i] === '}' && s[i + 1] === '}') { depth -= 1; i += 1; if (depth === 0) return s.slice(pos + 2, i - 1); }
+  }
+  return s.slice(pos + 2);
+}
+
+/** 该活动页**新增的干员**（路B + 路C，见 lib/op-activity.mjs 的文件头说明）。
+ *  · 路B：`{{活动信赖获取提升干员}}` 里 `{{干员头像/发光|名字|60px}}`（实测最多 7 位，很干净）；
+ *  · 路C：**主线章节的活动页不写这个模板**，而是把干员写在正文里
+ *    （`干员信赖值UP：` 后面跟 `★★★★★★：煌`）—— 实测只有 2019 的「局部坏死」这样写。
+ *    ⚠️ 正文截取到**下一个二级标题或空行**为止，免得把后面章节的干员也吸进来。 */
+function parseActivityOps(s) {
+  const names = new Set();
+  const i = s.search(/\{\{\s*活动信赖获取提升干员/);
+  if (i >= 0) {
+    const body = extractTemplateBody(s, i);
+    for (const m of body.matchAll(/\{\{\s*干员头像[^|}]*\|([^|}\]]+)/g)) names.add(m[1].trim());
+    for (const m of body.matchAll(/\[\[([^\]|]+)(?:\|[^\]]*)?\]\]/g)) {
+      const n = m[1].trim();
+      if (!/^(文件|File|分类):/.test(n)) names.add(n);
+    }
+  }
+  const re = /干员信赖值\s*UP/g;
+  let m;
+  while ((m = re.exec(s))) {
+    const seg = s.slice(m.index, m.index + 600).split(/\n==|^\s*$/m)[0];
+    for (const mm of seg.matchAll(/★+\s*[：:]\s*([^\n<{|]+)/g)) {
+      for (const n of mm[1].split(/[、,，/\s]+/)) if (n.trim()) names.add(n.trim());
+    }
+  }
+  return [...names];
+}
+
+/** 解析 `{{活动信息}}` → 活动类型 / 开始日 / 结束日 / 它列出的同期卡池名 / 新增干员 */
 function parseActivityInfo(text) {
   const s = String(text);
-  const i = s.indexOf('{{活动信息');
+  const i = s.search(/\{\{\s*活动信息(?!\/)/);
   if (i < 0) return null;
-  const end = s.indexOf('\n}}', i);
-  const body = s.slice(i + '{{活动信息'.length, end < 0 ? undefined : end);
+  const body = extractTemplateBody(s, i);
   const p = {};
   for (const line of body.split('\n')) {
     const m = /^\|([^=]+)=(.*)$/.exec(line.trim());
@@ -248,10 +303,27 @@ function parseActivityInfo(text) {
       if (m[2]) gachas.push(m[2].trim());
     }
   }
-  return { type: p['类型'] || null, startDate: toDate(p['活动开始时间']), gachas: gachas.filter(Boolean) };
+  return {
+    type: p['类型'] || null,
+    startDate: toDate(p['活动开始时间']),
+    endDate: toDate(p['活动结束时间']),
+    gachas: gachas.filter(Boolean),
+    ops: parseActivityOps(s),
+  };
 }
 
-/** 活动页 → `归一化卡池名 → { actType, actName, actStartDate }` */
+/** 取 `关卡一览/插曲` 与 `关卡一览/别传` 两个清单页 → 归一化活动名集合。
+ *  ⚠️ 页面结构是 `=== 活动名 ===` 的二级标题；**只取这种整行的标题**，别去扫正文，
+ *     否则表头里的「推荐」等字样也会被当成活动名。 */
+async function fetchReviewLists() {
+  const pages = await fetchRedirectedWikitext(['关卡一览/插曲', '关卡一览/别传']);
+  const pick = (title) => new Set(
+    [...(pages[title] || '').matchAll(/^===\s*([^=\n]+?)\s*===\s*$/gm)].map((m) => normName(m[1])),
+  );
+  return { chishu: pick('关卡一览/插曲'), biezhuan: pick('关卡一览/别传') };
+}
+
+/** 活动页 → `归一化卡池名 → { actType, actName, actStartDate }`，并附带**整份活动表** */
 async function fetchActivityMap() {
   const titles = [];
   let cont = {};
@@ -271,11 +343,20 @@ async function fetchActivityMap() {
 
   const pages = await fetchRedirectedWikitext(titles);
   const map = {};
+  /** 活动页标题 → 解析结果（干员归类要用，见 `lib/op-activity.mjs`） */
+  const activities = {};
   let parsed = 0;
   for (const [title, text] of Object.entries(pages)) {
     const info = parseActivityInfo(text);
     if (!info) continue;
     parsed += 1;
+    activities[title] = {
+      type: info.type,
+      start: info.startDate,
+      end: info.endDate,
+      gachas: info.gachas,
+      ops: info.ops,
+    };
     for (const name of info.gachas) {
       const key = normName(name);
       if (!key) continue;
@@ -286,7 +367,8 @@ async function fetchActivityMap() {
       }
     }
   }
-  return { map, pageCount: titles.length, parsed };
+  const { chishu, biezhuan } = await fetchReviewLists();
+  return { map, activities, chishu, biezhuan, pageCount: titles.length, parsed };
 }
 
 // ---------------------------------------------------------------- 工具函数
@@ -795,6 +877,17 @@ async function main() {
       enClassicDate: prev.enClassicDate ?? null,  // 国际服进入中坚寻访的日期（同上）
       tcClassicDate: prev.tcClassicDate ?? null,  // 繁中服进入中坚寻访的日期（同上）
       alter: [],                                  // 该干员的**异格** charId 数组（下面统一填）
+      /* 阵营（官方解包 `character_table.json`）—— `group` = `nationId`（国家/地区）、
+         `subGroup` = `groupId` **或** `teamId`（组织/小队，**两者互斥**，实测 0 例同时有）。
+         都是**原始内部 id**（`lungmen` / `penguin` …），不是本地化名。取值**三服一致** → 只读 cn。
+         下面统一填；拿不到表时沿用旧值。 */
+      group: prev.group ?? null,
+      subGroup: prev.subGroup ?? null,
+      /* 实装活动（国服口径）—— 见 `lib/op-activity.mjs`。
+         ⚠️ **只在带 `--with-activities` 时才算**，其余轮次从旧文件回填（下面统一处理）。 */
+      actType: prev.actType ?? null,
+      actName: prev.actName ?? null,
+      actLine: prev.actLine ?? null,
     };
   }
   console.log(
@@ -829,6 +922,39 @@ async function main() {
   }
   console.log(`· 异格：${alterMap.size} 位干员有非空 alter（共 ${alterN} 个 charId）`
     + (alterOk ? '' : '（沿用旧值）'));
+
+  /* ---- 阵营（group / subGroup）----
+     来自官方解包 `character_table.json` 的 `nationId` / `groupId|teamId`（口径见 loadAffiliations）。
+     ⚠️ 与上面 alter 同一个策略：**拿不到表就沿用旧值**，绝不让脚本失败。
+     ⚠️ 这份 cn 表 **21.6MB**，是本脚本目前读的**最大**一张表（比 char_meta 大一个量级）——
+        它是**无条件**读的（不像 actType 那样挂在 `--with-activities` 下），
+        因为阵营是**干员身份属性**、跟活动无关，且新干员可能在**周四**就入库。
+     ⚠️ 取的是 `groupId || teamId` —— 实测两者**互斥**（0 例同时有值），**不要拼起来**。 */
+  let affMap = new Map();
+  try {
+    affMap = await loadAffiliations('cn', { local: GAMEDATA_LOCAL });
+  } catch (err) {
+    console.warn(`⚠ 阵营取不到（${err.message}）—— 沿用旧 operators.json 里的 group / subGroup`);
+  }
+  let affNation = 0;
+  let affSub = 0;
+  let affFromPrev = 0;
+  for (const [charId, op] of Object.entries(operators)) {
+    const a = affMap.get(charId);
+    const pv = prevOperators[charId];
+    if (a) {
+      op.group = a.nationId;
+      op.subGroup = a.groupId || a.teamId;
+    } else {
+      op.group = pv?.group ?? null;
+      op.subGroup = pv?.subGroup ?? null;
+      if (pv && ('group' in pv)) affFromPrev += 1;
+    }
+    if (op.group) affNation += 1;
+    if (op.subGroup) affSub += 1;
+  }
+  console.log(`· 阵营：${affNation} 位有 group（国家/地区）、${affSub} 位有 subGroup（组织/小队）`
+    + (affMap.size ? '' : `（表没读到，${affFromPrev} 位沿用旧值）`));
 
   const opByName = new Map(Object.values(operators).map((o) => [o.name, o]));
 
@@ -932,7 +1058,7 @@ async function main() {
   const bannerTotal = Object.keys(banners).length;
   const singleTotal = Object.values(banners).filter((b) => b.type === 'single').length;
   if (withActivities) {
-    const { map, pageCount, parsed } = await fetchActivityMap();
+    const { map, activities, chishu, pageCount, parsed } = await fetchActivityMap();
     let hit = 0;
     const miss = [];
     for (const [id, b] of Object.entries(banners)) {
@@ -963,6 +1089,37 @@ async function main() {
       console.log(`  ${miss.length} 个对不上（actType 留 null，多为 2019~2020 早期池，其活动页还没写 限时寻访）：`
         + `${miss.slice(0, 6).map((x) => x.split(' ')[1]).join('、')}${miss.length > 6 ? ' 等' : ''}`);
     }
+
+    /* ---- 干员的「实装活动」：`operators.json` 的 actType / actName / actLine ----
+       口径、三路来源与全部坑见 `lib/op-activity.mjs` 的文件头 + `akGachaDocs/resource/干员实装活动类型预研.md`。
+       ⚠️ 要读 `stage_table.json`（26MB）/ `story_review_table.json`（2.4MB），所以**只在这一支里做**。
+       ⚠️ 官方表拿不到时**沿用旧文件里的三个字段**（与上面 alter 同一个策略），绝不让脚本失败。 */
+    try {
+      const tables = await loadActivityTables('cn', { local: GAMEDATA_LOCAL });
+      const byOp = resolveOperatorActivities({
+        activities, banners: Object.values(banners), operators: Object.values(operators),
+        ctx: { tables, chishu },
+      });
+      const stat = {};
+      let filled = 0;
+      for (const op of Object.values(operators)) {
+        const got = byOp[op.name];
+        if (!got) continue;
+        op.actType = got.actType;
+        op.actName = got.actName;
+        op.actLine = got.actLine;
+        if (got.actType) filled += 1;
+        stat[got.actType || '（无活动）'] = (stat[got.actType || '（无活动）'] || 0) + 1;
+      }
+      const lineMissing = Object.values(operators).filter(
+        (o) => o.actType && o.actType !== '其他' && !o.actLine,
+      ).length;
+      console.log(`· 干员实装活动：${filled}/${Object.keys(operators).length} 位有活动`
+        + `　${Object.entries(stat).map(([k, v]) => `${k} ${v}`).join(' / ')}`
+        + `　剧情线缺失 ${lineMissing}（应为 0）`);
+    } catch (err) {
+      console.warn(`⚠ 干员实装活动取不到（${err.message}）—— 沿用旧 operators.json 里的 actType / actName / actLine`);
+    }
   } else {
     const prev = (await readPrev(bannerFileName)) || {};
     let kept = 0;
@@ -981,6 +1138,8 @@ async function main() {
     }
     console.log(`· 卡池所属活动：本次不抓（非周五、也没带 --with-activities）→ 从上次快照回填 ${kept} 个`
       + `${fresh ? `；${fresh} 个新池暂缺 actType（下周五补上）` : ''}`);
+    const opKept = Object.values(operators).filter((o) => 'actType' in o).length;
+    console.log(`· 干员实装活动：本次不抓 → 从上次快照回填 ${opKept} 位`);
   }
 
   // 校验
