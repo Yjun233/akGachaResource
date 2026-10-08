@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06",
+  "generatedAt": "2026-10-09",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "skins": [
     {
@@ -479,6 +479,20 @@
       ]
     },
     {
+      "char": "史尔特尔",
+      "skinIndex": 3,
+      "name": "超然序曲",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-08",
+          "end": "2026-10-22",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
       "char": "号角",
       "skinIndex": 1,
       "name": "化花",
@@ -781,6 +795,20 @@
           "kind": "首发",
           "start": "2025-10-17",
           "end": "2025-10-31",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "char": "妮芙",
+      "skinIndex": 2,
+      "name": "繁花夢幻談",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-08",
+          "end": "2026-10-22",
           "note": "",
           "longTime": false
         }

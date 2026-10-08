@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06",
+  "generatedAt": "2026-10-09",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "memoirs": [
     {
@@ -2110,6 +2110,18 @@
         }
       ],
       "releaseDate": "2026-08-18"
+    },
+    {
+      "char": "折桠",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "止痛藥",
+          "date": "2026-10-08"
+        }
+      ],
+      "releaseDate": "2026-10-08"
     }
   ]
 }

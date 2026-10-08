@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-08",
-  "enGeneratedAt": "2026-10-08",
-  "tcGeneratedAt": "2026-10-08",
+  "enGeneratedAt": "2026-10-09",
+  "tcGeneratedAt": "2026-10-09",
   "cla": {
     "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
     "sc": {
@@ -13,8 +13,8 @@
       "count": 75
     },
     "tc": {
-      "generatedAt": "2026-10-08",
-      "count": 66
+      "generatedAt": "2026-10-09",
+      "count": 67
     }
   },
   "defaultServer": "sc",
@@ -31,15 +31,15 @@
       "id": "en",
       "label": "国际服",
       "available": true,
-      "bannerCount": 315,
+      "bannerCount": 316,
       "earliestBanner": "2020-01-16",
-      "latestBanner": "2026-09-25"
+      "latestBanner": "2026-10-09"
     },
     {
       "id": "tc",
       "label": "繁中服",
       "available": true,
-      "bannerCount": 304,
+      "bannerCount": 305,
       "earliestBanner": "2020-06-29",
       "latestBanner": "2026-10-22"
     }

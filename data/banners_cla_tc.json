@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-08",
-  "dataVersion": "Stream:\nChange:\nVersionControl:51.2.0",
+  "generatedAt": "2026-10-09",
+  "dataVersion": "Stream:\nChange:\nVersionControl:51.4.0",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "banners": {
     "20240222_classic_0001": {
@@ -2161,6 +2161,46 @@
       ],
       "name": "常驻中坚寻访54",
       "scName": "常驻中坚寻访54",
+      "enName": null
+    },
+    "20261015_classic_0055": {
+      "type": "classic",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-29",
+      "upOperators": [
+        {
+          "name": "麦哲伦",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "凯尔希",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "绮良",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "桑葚",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "蜜蜡",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访55",
+      "scName": "常驻中坚寻访55",
       "enName": null
     },
     "20240404_clafes_0001": {

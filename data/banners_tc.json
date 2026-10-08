@@ -11887,6 +11887,46 @@
     "rerunKind": "首发",
     "canRerun": true
   },
+  "20261020_double_0166": {
+    "name": "常驻标准寻访166",
+    "scName": "常驻标准寻访166",
+    "enName": null,
+    "type": "double",
+    "startDate": "2026-10-20",
+    "endDate": "2026-11-03",
+    "upOperators": [
+      {
+        "name": "鸿雪",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "薇薇安娜",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "name": "寻澜",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "空构",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "但书",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": true
+      }
+    ]
+  },
   "20261022_single_sm": {
     "name": "自火中归还·复刻",
     "scName": "自火中归还·复刻",

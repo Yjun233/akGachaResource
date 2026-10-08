@@ -12350,5 +12350,45 @@
         "isShop": true
       }
     ]
+  },
+  "20261009_double_0177": {
+    "name": "常驻标准寻访177",
+    "scName": "常驻标准寻访177",
+    "enName": null,
+    "type": "double",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-23",
+    "upOperators": [
+      {
+        "name": "赫德雷",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "霍尔海雅",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "name": "杏仁",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "特克诺",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "海霓",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": true
+      }
+    ]
   }
 }
