@@ -33,7 +33,7 @@ jobs:
 
       - name: 安装依赖
         run: |
-          npm install
+          npm ci
           python -m pip install --upgrade pip
           pip install pillow
 
@@ -55,34 +55,12 @@ jobs:
         continue-on-error: true
         run: npm run build:gamedata -- --servers sc
 
-      - name: 判断有没有实际变化
-        id: diff
-        run: |
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::国服数据无更新，不提交"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "::notice::检测到更新："
-            git status --short
-          fi
-
-      - name: 提交并推送
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "data(sc): $(date +%Y-%m-%d) 快照"
-          git push
-
-      # 单服抓取只刷新「本服会改动」的 json：国服产 operators.json / banners_sc.json / metadata.json。
+      # 单服抓取只刷新「本服会改动」的 json：国服产 operators.json / banners_sc.json /
+      # banners_cla_sc.json / metadata.json（以及 gamedata 顺带刷的 extras）。
       # 其它服的 json 不在本工作流产出范围，刷它们的缓存既无意义也可能误导，故不刷。
-      - name: 刷新 jsDelivr 缓存
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          for f in operators.json metadata.json banners_sc.json banners_cla_sc.json \
-                   modules_sc.json memoirs_sc.json; do
-            body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
-            echo "purge data/$f -> $(echo "$body" | head -c 120)"
-          done
+      - uses: ./.github/actions/commit-and-purge
+        with:
+          prefix: data(sc)
+          purge-files: |
+            operators.json metadata.json banners_sc.json banners_cla_sc.json
+            modules_sc.json memoirs_sc.json

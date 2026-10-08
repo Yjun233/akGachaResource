@@ -1,0 +1,63 @@
+name: 提交并刷新 CDN 缓存
+description: >
+  判断工作区有没有实际变化 → 有则用 bot 身份提交并推送 → 再刷新 jsDelivr 缓存。
+  本仓库 5 条工作流共用这一套样板（原先每条各抄一遍，改一次要动五处）。
+
+inputs:
+  prefix:
+    description: 提交信息的前缀（最终形如「<prefix> · YYYY-MM-DD 快照」）
+    required: false
+    default: data
+  purge-files:
+    description: >
+      要刷新缓存的 data/ 下的文件名，可用空格或换行分隔
+      （如 "operators.json metadata.json" 或一个字一行）。
+      ⚠️ 只列本工作流**确实会改动**的文件 —— 刷别的服的 json 既无意义也可能误导。
+      留空则跳过刷新（只提交）。
+    required: false
+    default: ''
+
+outputs:
+  changed:
+    description: '是否检测到变化并已提交（true / false）'
+    value: ${{ steps.diff.outputs.changed }}
+
+runs:
+  using: composite
+  steps:
+    - name: 判断有没有实际变化
+      id: diff
+      shell: bash
+      run: |
+        if [ -z "$(git status --porcelain)" ]; then
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          echo "::notice::无更新，不提交、不刷新缓存"
+        else
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "::notice::检测到更新："
+          git status --short
+        fi
+
+    - name: 提交并推送
+      if: steps.diff.outputs.changed == 'true'
+      shell: bash
+      run: |
+        git config user.name  "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -A
+        git commit -m "${{ inputs.prefix }}: $(date +%Y-%m-%d) 快照"
+        git push
+
+    # 站点在浏览器里经 jsDelivr CDN 读这些文件，不刷缓存会一直拿到旧的。
+    # ⚠️ purge 接口是 **GET**，不是 POST —— 用 POST 会一律返回 405（实测）。
+    - name: 刷新 jsDelivr 缓存
+      if: steps.diff.outputs.changed == 'true' && inputs.purge-files != ''
+      shell: bash
+      env:
+        PURGE_FILES: ${{ inputs.purge-files }}
+        REPO: ${{ github.repository }}
+      run: |
+        for f in $PURGE_FILES; do
+          body=$(curl -s "https://purge.jsdelivr.net/gh/$REPO@main/data/$f" || echo '{}')
+          echo "purge data/$f -> $(echo "$body" | head -c 120)"
+        done

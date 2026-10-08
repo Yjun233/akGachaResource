@@ -42,7 +42,7 @@ jobs:
 
       - name: 安装依赖
         run: |
-          npm install
+          npm ci
           python -m pip install --upgrade pip
           pip install pillow
 
@@ -123,38 +123,20 @@ jobs:
         continue-on-error: true
         run: npm run build:gamedata
 
-      - name: 判断有没有实际变化
-        id: diff
-        run: |
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::数据与头像均无更新，不提交、不刷新缓存"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "::notice::检测到更新："
-            git status --short
-          fi
-
-      - name: 提交并推送
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "data: $(date +%Y-%m-%d) 快照"
-          git push
-
-      # 站点在浏览器里经 jsDelivr CDN 读这些文件，不刷缓存会一直拿到旧的。
-      # ⚠️ purge 接口是 **GET**，不是 POST —— 用 POST 会一律返回 405（实测）。
-      - name: 刷新 jsDelivr 缓存
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          for f in operators.json metadata.json \
-                   banners_sc.json banners_en.json banners_tc.json \
-                   banners_cla_sc.json banners_cla_en.json banners_cla_tc.json \
-                   modules_sc.json modules_en.json modules_tc.json \
-                   memoirs_sc.json memoirs_en.json memoirs_tc.json \
-                   skins_en.json skins_tc.json; do
-            body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
-            echo "purge data/$f -> $(echo "$body" | head -c 120)"
-          done
+      # 本工作流会动到这些文件 → 交给共用 action 判断变化、提交、刷新 CDN。
+      # ⚠️ 清单要覆盖**本工作流会改动的每一份** data/*.json：
+      #    · 国服脚本产 operators.json / banners_sc.json / metadata.json；
+      #    · 国际服 / 繁中服脚本产 banners_{en,tc}.json 并写回 operators.json / metadata.json；
+      #    · gamedata 产 banners_cla_*.json 与（`--only=all` 含 extras）skins_en/tc、memoirs_*、modules_*；
+      #    · 头像 `npm run build:avatars` 产 avatars/**（不走 CDN purge，是图片文件）。
+      #    （sc 皮肤不在此列 —— 它由 update-extras.yml 的 build:skins 负责刷新。）
+      - uses: ./.github/actions/commit-and-purge
+        with:
+          prefix: data
+          purge-files: |
+            operators.json metadata.json
+            banners_sc.json banners_en.json banners_tc.json
+            banners_cla_sc.json banners_cla_en.json banners_cla_tc.json
+            modules_sc.json modules_en.json modules_tc.json
+            memoirs_sc.json memoirs_en.json memoirs_tc.json
+            skins_en.json skins_tc.json

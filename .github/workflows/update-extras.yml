@@ -40,7 +40,7 @@ jobs:
       # 脚本 import 了 scripts/lib/http.mjs，那里要用 undici 包 → 必须装依赖。
       # 不需要 Python（本工作流不碰头像）。
       - name: 安装依赖
-        run: npm install
+        run: npm ci
 
       # 只读公开的 PRTS Wiki，**不需要任何令牌**。
       # 数据没更新时脚本不会写盘、也不会动 generatedAt（见 fetch-skins.mjs）。
@@ -54,35 +54,11 @@ jobs:
         continue-on-error: true
         run: npm run build:gamedata -- --only=extras
 
-      - name: 判断有没有实际变化
-        id: diff
-        run: |
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::皮肤 / 模组 / 密录无更新，不提交"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "::notice::检测到更新："
-            git status --short
-          fi
-
-      - name: 提交并推送
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "data(extras): $(date +%Y-%m-%d) 快照"
-          git push
-
       # 本工作流会动到这几个文件（**不含**卡池与 metadata），所以只刷它们。
-      # ⚠️ purge 接口是 **GET**，不是 POST —— 用 POST 会一律返回 405（实测）。
-      - name: 刷新 jsDelivr 缓存
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          for f in skins_sc.json skins_en.json skins_tc.json \
-                   memoirs_sc.json memoirs_en.json memoirs_tc.json \
-                   modules_sc.json modules_en.json modules_tc.json; do
-            body=$(curl -s "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/data/$f" || echo '{}')
-            echo "purge data/$f -> $(echo "$body" | head -c 120)"
-          done
+      - uses: ./.github/actions/commit-and-purge
+        with:
+          prefix: data(extras)
+          purge-files: |
+            skins_sc.json skins_en.json skins_tc.json
+            memoirs_sc.json memoirs_en.json memoirs_tc.json
+            modules_sc.json modules_en.json modules_tc.json
