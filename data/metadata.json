@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-07",
-  "enGeneratedAt": "2026-10-06",
-  "tcGeneratedAt": "2026-10-06",
+  "generatedAt": "2026-10-08",
+  "enGeneratedAt": "2026-10-08",
+  "tcGeneratedAt": "2026-10-08",
   "cla": {
     "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
     "sc": {
-      "generatedAt": "2026-10-06",
+      "generatedAt": "2026-10-08",
       "count": 89
     },
     "en": {
-      "generatedAt": "2026-10-06",
+      "generatedAt": "2026-10-08",
       "count": 75
     },
     "tc": {
-      "generatedAt": "2026-10-06",
+      "generatedAt": "2026-10-08",
       "count": 66
     }
   },
@@ -23,9 +23,9 @@
       "id": "sc",
       "label": "国服",
       "available": true,
-      "bannerCount": 343,
+      "bannerCount": 344,
       "earliestBanner": "2019-04-30",
-      "latestBanner": "2026-09-29"
+      "latestBanner": "2026-10-08"
     },
     {
       "id": "en",

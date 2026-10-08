@@ -15,8 +15,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "离解复合",
     "actLine": "为了明日"
   },
   "char_113_cqbw": {
@@ -37,9 +35,7 @@
     ],
     "group": null,
     "subGroup": "babel",
-    "actType": "插曲",
-    "actName": "生于黑夜",
-    "actLine": "方舟"
+    "actLine": "为了明日"
   },
   "char_148_nearl": {
     "name": "临光",
@@ -59,8 +55,6 @@
     ],
     "group": null,
     "subGroup": "followers",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4224_turdus": {
@@ -79,8 +73,6 @@
     "alter": [],
     "group": "ursus",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "人们，我们",
     "actLine": "燎原"
   },
   "char_4145_ulpia": {
@@ -99,8 +91,6 @@
     "alter": [],
     "group": "egir",
     "subGroup": "abyssal",
-    "actType": "别传",
-    "actName": "生路",
     "actLine": "自海渊的一瞥"
   },
   "char_455_nothin": {
@@ -119,8 +109,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "画中人",
     "actLine": "岁岁今朝"
   },
   "char_1015_aglna2": {
@@ -141,8 +129,6 @@
     ],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "直到大地变成一颗酸橙",
     "actLine": "夏日律动"
   },
   "char_4082_qiubai": {
@@ -161,8 +147,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "春分",
     "actLine": "岁岁今朝"
   },
   "char_2023_ling": {
@@ -181,8 +165,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
-    "actType": "别传",
-    "actName": "将进酒",
     "actLine": "岁岁今朝"
   },
   "char_4087_ines": {
@@ -201,8 +183,6 @@
     "alter": [],
     "group": null,
     "subGroup": "babel",
-    "actType": "主题曲",
-    "actName": "惊霆无声",
     "actLine": "为了明日"
   },
   "char_134_ifrit": {
@@ -221,8 +201,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4032_provs": {
@@ -241,8 +219,6 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "日暮寻路",
     "actLine": "霓虹之下"
   },
   "char_2026_yu": {
@@ -261,8 +237,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
-    "actType": "别传",
-    "actName": "相见欢",
     "actLine": "岁岁今朝"
   },
   "char_4058_pepe": {
@@ -281,8 +255,6 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "太阳甩在身后",
     "actLine": "夏日律动"
   },
   "char_4234_pedro": {
@@ -301,8 +273,6 @@
     "alter": [],
     "group": "bolivar",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "丛林症结",
     "actLine": "泰拉奇谈"
   },
   "char_1013_chen2": {
@@ -324,8 +294,6 @@
     ],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "多索雷斯假日",
     "actLine": "夏日律动"
   },
   "char_250_phatom": {
@@ -346,8 +314,6 @@
     ],
     "group": "victoria",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "生于黑夜",
     "actLine": "方舟"
   },
   "char_115_headbr": {
@@ -368,8 +334,6 @@
     ],
     "group": "ursus",
     "subGroup": "student",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_1045_svash2": {
@@ -390,8 +354,6 @@
     ],
     "group": "kjerag",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "雪山降临1101",
     "actLine": "山雪与银铁"
   },
   "char_003_kalts": {
@@ -412,8 +374,6 @@
     ],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "覆潮之下",
     "actLine": "自海渊的一瞥"
   },
   "char_1052_kalts2": {
@@ -434,8 +394,6 @@
     ],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "相变临界",
     "actLine": "为了明日"
   },
   "char_174_slbell": {
@@ -456,8 +414,6 @@
     ],
     "group": "kjerag",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_494_vendla": {
@@ -476,8 +432,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "恶兆湍流",
     "actLine": "为了明日"
   },
   "char_2013_cerber": {
@@ -496,8 +450,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "午间逸话",
     "actLine": "泰拉奇谈"
   },
   "char_171_bldsk": {
@@ -516,8 +468,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_214_kafka": {
@@ -536,8 +486,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "孤岛风云",
     "actLine": "摘取未来之人"
   },
   "char_426_billro": {
@@ -556,8 +504,6 @@
     "alter": [],
     "group": "leithanien",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "灯火序曲",
     "actLine": "泰拉奇谈"
   },
   "char_1036_fang2": {
@@ -576,8 +522,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "慈悲灯塔",
     "actLine": "为了明日"
   },
   "char_4228_closur": {
@@ -596,8 +540,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "相变临界",
     "actLine": "为了明日"
   },
   "char_201_moeshd": {
@@ -616,8 +558,6 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "penguin",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_350_surtr": {
@@ -636,8 +576,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "踏寻往昔之风",
     "actLine": "泰拉奇谈"
   },
   "char_4039_horn": {
@@ -656,8 +594,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "破碎日冕",
     "actLine": "为了明日"
   },
   "char_1043_leizi2": {
@@ -678,8 +614,6 @@
     ],
     "group": "yan",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "镜中集",
     "actLine": "岁岁今朝"
   },
   "char_4203_kichi": {
@@ -698,8 +632,6 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "墟",
     "actLine": "夏日律动"
   },
   "char_226_hmau": {
@@ -718,8 +650,6 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "lee",
-    "actType": "故事集",
-    "actName": "洪炉示岁",
     "actLine": "岁岁今朝"
   },
   "char_297_hamoni": {
@@ -738,8 +668,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": "tara",
-    "actType": "别传",
-    "actName": "照我以火",
     "actLine": "薪火重燃"
   },
   "char_4214_cairn": {
@@ -758,8 +686,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "未许之地",
     "actLine": "摘取未来之人"
   },
   "char_4237_jcinta": {
@@ -778,8 +704,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "直到大地变成一颗酸橙",
     "actLine": "夏日律动"
   },
   "char_365_aprl": {
@@ -798,8 +722,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "踏寻往昔之风",
     "actLine": "泰拉奇谈"
   },
   "char_1032_excu2": {
@@ -820,8 +742,6 @@
     ],
     "group": "laterano",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "空想花庭",
     "actLine": "那被祝福的"
   },
   "char_1046_sbell2": {
@@ -842,8 +762,6 @@
     ],
     "group": "kjerag",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "雪山降临1101",
     "actLine": "山雪与银铁"
   },
   "char_245_cello": {
@@ -862,8 +780,6 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "崔林特尔梅之金",
     "actLine": "那被祝福的"
   },
   "char_202_demkni": {
@@ -882,8 +798,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4031_liesel": {
@@ -902,8 +816,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "十字路口",
     "actLine": "七丘的新芽"
   },
   "char_492_quercu": {
@@ -922,8 +834,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "阴云火花",
     "actLine": "泰拉奇谈"
   },
   "char_2015_dusk": {
@@ -942,8 +852,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
-    "actType": "别传",
-    "actName": "画中人",
     "actLine": "岁岁今朝"
   },
   "char_4048_doroth": {
@@ -962,8 +870,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
-    "actType": "别传",
-    "actName": "绿野幻梦",
     "actLine": "摘取未来之人"
   },
   "char_476_blkngt": {
@@ -982,8 +888,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "将进酒",
     "actLine": "岁岁今朝"
   },
   "char_179_cgbird": {
@@ -1002,8 +906,6 @@
     "alter": [],
     "group": null,
     "subGroup": "followers",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_164_nightm": {
@@ -1022,8 +924,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "骑兵与猎人",
     "actLine": "自海渊的一瞥"
   },
   "char_166_skfire": {
@@ -1042,8 +942,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_346_aosta": {
@@ -1062,8 +960,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": "chiave",
-    "actType": "别传",
-    "actName": "玛莉娅临光",
     "actLine": "霓虹之下"
   },
   "char_4146_nymph": {
@@ -1082,8 +978,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "熔炉“还魂”记",
     "actLine": "泰拉奇谈"
   },
   "char_4138_narant": {
@@ -1102,8 +996,6 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "太阳甩在身后",
     "actLine": "夏日律动"
   },
   "char_4212_nasti": {
@@ -1122,8 +1014,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
-    "actType": "别传",
-    "actName": "未许之地",
     "actLine": "摘取未来之人"
   },
   "char_4014_lunacu": {
@@ -1142,8 +1032,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "叙拉古人",
     "actLine": "七丘的新芽"
   },
   "char_158_milu": {
@@ -1162,8 +1050,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_218_cuttle": {
@@ -1182,8 +1068,6 @@
     "alter": [],
     "group": "egir",
     "subGroup": "abyssal",
-    "actType": "别传",
-    "actName": "火蓝之心2020",
     "actLine": "夏日律动"
   },
   "char_291_aglina": {
@@ -1204,8 +1088,6 @@
     ],
     "group": "siracusa",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_341_sntlla": {
@@ -1224,8 +1106,6 @@
     "alter": [],
     "group": "sami",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "眠于树影之中",
     "actLine": "泰拉奇谈"
   },
   "char_4052_surfer": {
@@ -1244,8 +1124,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "blacksteel",
-    "actType": "别传",
-    "actName": "相见欢",
     "actLine": "岁岁今朝"
   },
   "char_4122_grabds": {
@@ -1264,8 +1142,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "怀黍离",
     "actLine": "岁岁今朝"
   },
   "char_264_f12yin": {
@@ -1284,8 +1160,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "孤岛风云",
     "actLine": "摘取未来之人"
   },
   "char_173_slchan": {
@@ -1304,8 +1178,6 @@
     "alter": [],
     "group": "kjerag",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_362_saga": {
@@ -1324,8 +1196,6 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "画中人",
     "actLine": "岁岁今朝"
   },
   "char_4121_zuole": {
@@ -1344,8 +1214,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "怀黍离",
     "actLine": "岁岁今朝"
   },
   "char_254_vodfox": {
@@ -1364,8 +1232,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "生于黑夜",
     "actLine": "方舟"
   },
   "char_356_broca": {
@@ -1384,8 +1250,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": "chiave",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_485_pallas": {
@@ -1404,8 +1268,6 @@
     "alter": [],
     "group": "minos",
     "subGroup": null,
-    "actType": "其他",
-    "actName": "荷谟伊智境",
     "actLine": null
   },
   "char_2014_nian": {
@@ -1424,8 +1286,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
-    "actType": "故事集",
-    "actName": "洪炉示岁",
     "actLine": "岁岁今朝"
   },
   "char_143_ghost": {
@@ -1446,8 +1306,6 @@
     ],
     "group": "egir",
     "subGroup": "abyssal",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_472_pasngr": {
@@ -1466,8 +1324,6 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "遗尘漫步",
     "actLine": "方舟"
   },
   "char_1039_thorn2": {
@@ -1488,8 +1344,6 @@
     ],
     "group": "iberia",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "出苍白海",
     "actLine": "自海渊的一瞥"
   },
   "char_1023_ghost2": {
@@ -1510,8 +1364,6 @@
     ],
     "group": "egir",
     "subGroup": "abyssal",
-    "actType": "插曲",
-    "actName": "愚人号",
     "actLine": "自海渊的一瞥"
   },
   "char_4196_reckpr": {
@@ -1530,8 +1382,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "镜中集",
     "actLine": "岁岁今朝"
   },
   "char_102_texas": {
@@ -1552,8 +1402,6 @@
     ],
     "group": "lungmen",
     "subGroup": "penguin",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4026_vulpis": {
@@ -1572,8 +1420,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "揭幕者们",
     "actLine": "七丘的新芽"
   },
   "char_1051_headb2": {
@@ -1594,8 +1440,6 @@
     ],
     "group": "ursus",
     "subGroup": "student",
-    "actType": "别传",
-    "actName": "人们，我们",
     "actLine": "燎原"
   },
   "char_306_leizi": {
@@ -1616,8 +1460,6 @@
     ],
     "group": "yan",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "午间逸话",
     "actLine": "泰拉奇谈"
   },
   "char_379_sesa": {
@@ -1636,8 +1478,6 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_1027_greyy2": {
@@ -1656,8 +1496,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "绿野幻梦",
     "actLine": "摘取未来之人"
   },
   "char_4207_branch": {
@@ -1676,8 +1514,6 @@
     "alter": [],
     "group": "ursus",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "反常光谱",
     "actLine": "为了明日"
   },
   "char_140_whitew": {
@@ -1698,8 +1534,6 @@
     ],
     "group": "siracusa",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_433_windft": {
@@ -1718,8 +1552,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "愚人号",
     "actLine": "自海渊的一瞥"
   },
   "char_112_siege": {
@@ -1740,8 +1572,6 @@
     ],
     "group": "victoria",
     "subGroup": "glasgow",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_2012_typhon": {
@@ -1760,8 +1590,6 @@
     "alter": [],
     "group": "sami",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "眠于树影之中",
     "actLine": "泰拉奇谈"
   },
   "char_1022_flwr2": {
@@ -1780,8 +1608,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "雅赛努斯复仇记",
     "actLine": "泰拉奇谈"
   },
   "char_4065_judge": {
@@ -1800,8 +1626,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "叙拉古人",
     "actLine": "七丘的新芽"
   },
   "char_1044_hsgma2": {
@@ -1822,8 +1646,6 @@
     ],
     "group": "lungmen",
     "subGroup": "lgd",
-    "actType": "别传",
-    "actName": "墟",
     "actLine": "夏日律动"
   },
   "char_294_ayer": {
@@ -1842,8 +1664,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "沃伦姆德的薄暮",
     "actLine": "高塔迷影"
   },
   "char_263_skadi": {
@@ -1864,8 +1684,6 @@
     ],
     "group": "egir",
     "subGroup": "abyssal",
-    "actType": "别传",
-    "actName": "骑兵与猎人",
     "actLine": "自海渊的一瞥"
   },
   "char_1041_angel2": {
@@ -1886,8 +1704,6 @@
     ],
     "group": "lungmen",
     "subGroup": "penguin",
-    "actType": "别传",
-    "actName": "众生行记",
     "actLine": "那被祝福的"
   },
   "char_197_poca": {
@@ -1906,8 +1722,6 @@
     "alter": [],
     "group": "ursus",
     "subGroup": "student",
-    "actType": "故事集",
-    "actName": "乌萨斯的孩子们",
     "actLine": "燎原"
   },
   "char_4071_peper": {
@@ -1926,8 +1740,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "淬火尘霾",
     "actLine": "为了明日"
   },
   "char_274_astesi": {
@@ -1946,8 +1758,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "火蓝之心",
     "actLine": "夏日律动"
   },
   "char_136_hsguma": {
@@ -1968,8 +1778,6 @@
     ],
     "group": "lungmen",
     "subGroup": "lgd",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_497_ctable": {
@@ -1988,8 +1796,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "理想城长夏狂欢季",
     "actLine": "夏日律动"
   },
   "char_145_prove": {
@@ -2008,8 +1814,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_343_tknogi": {
@@ -2028,8 +1832,6 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_2027_wang": {
@@ -2048,8 +1850,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
-    "actType": "别传",
-    "actName": "辞岁行",
     "actLine": "岁岁今朝"
   },
   "char_4105_almond": {
@@ -2068,8 +1868,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "blacksteel",
-    "actType": "别传",
-    "actName": "不义之财",
     "actLine": "泰拉奇谈"
   },
   "char_422_aurora": {
@@ -2088,8 +1886,6 @@
     "alter": [],
     "group": "kjerag",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "风雪过境",
     "actLine": "山雪与银铁"
   },
   "char_401_elysm": {
@@ -2108,9 +1904,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "生于黑夜",
-    "actLine": "方舟"
+    "actLine": "为了明日"
   },
   "char_4080_lin": {
     "name": "林",
@@ -2128,8 +1922,6 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "登临意",
     "actLine": "岁岁今朝"
   },
   "char_326_glacus": {
@@ -2148,8 +1940,6 @@
     "alter": [],
     "group": "iberia",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "火蓝之心",
     "actLine": "夏日律动"
   },
   "char_473_mberry": {
@@ -2168,8 +1958,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "风暴瞭望",
     "actLine": "为了明日"
   },
   "char_242_otter": {
@@ -2188,8 +1976,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_293_thorns": {
@@ -2210,8 +1996,6 @@
     ],
     "group": "iberia",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "火蓝之心2020",
     "actLine": "夏日律动"
   },
   "char_416_zumama": {
@@ -2230,8 +2014,6 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "密林悍将归来",
     "actLine": "夏日律动"
   },
   "char_243_waaifu": {
@@ -2250,8 +2032,6 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "lee",
-    "actType": "别传",
-    "actName": "喧闹法则",
     "actLine": "泰拉奇谈"
   },
   "char_450_necras": {
@@ -2270,8 +2050,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": "tara",
-    "actType": "别传",
-    "actName": "挽歌燃烧殆尽",
     "actLine": "方舟"
   },
   "char_437_mizuki": {
@@ -2290,8 +2068,6 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "多索雷斯假日",
     "actLine": "夏日律动"
   },
   "char_487_bobb": {
@@ -2310,8 +2086,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "追迹日落以西",
     "actLine": "方舟"
   },
   "char_311_mudrok": {
@@ -2330,9 +2104,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "其他",
-    "actName": "感谢庆典2020",
-    "actLine": null
+    "actLine": "为了明日"
   },
   "char_464_cement": {
     "name": "洋灰",
@@ -2350,8 +2122,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "惊霆无声",
     "actLine": "为了明日"
   },
   "char_4040_rockr": {
@@ -2370,8 +2140,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "破碎日冕",
     "actLine": "为了明日"
   },
   "char_1012_skadi2": {
@@ -2392,8 +2160,6 @@
     ],
     "group": "egir",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "覆潮之下",
     "actLine": "自海渊的一瞥"
   },
   "char_4079_haini": {
@@ -2412,8 +2178,6 @@
     "alter": [],
     "group": "egir",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "生路",
     "actLine": "自海渊的一瞥"
   },
   "char_1034_jesca2": {
@@ -2432,8 +2196,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "blacksteel",
-    "actType": "别传",
-    "actName": "不义之财",
     "actLine": "泰拉奇谈"
   },
   "char_4109_baslin": {
@@ -2452,8 +2214,6 @@
     "alter": [],
     "group": "leithanien",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "崔林特尔梅之金",
     "actLine": "那被祝福的"
   },
   "char_4147_mitm": {
@@ -2472,8 +2232,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "熔炉“还魂”记",
     "actLine": "泰拉奇谈"
   },
   "char_4081_warmy": {
@@ -2492,8 +2250,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "去咧嘴谷",
     "actLine": "泰拉奇谈"
   },
   "char_400_weedy": {
@@ -2512,9 +2268,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "生于黑夜",
-    "actLine": "方舟"
+    "actLine": "为了明日"
   },
   "char_377_gdglow": {
     "name": "澄闪",
@@ -2532,8 +2286,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "阴云火花",
     "actLine": "泰拉奇谈"
   },
   "char_1024_hbisc2": {
@@ -2552,8 +2304,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "尘影余音",
     "actLine": "高塔迷影"
   },
   "char_493_firwhl": {
@@ -2572,8 +2322,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "登临意",
     "actLine": "岁岁今朝"
   },
   "char_367_swllow": {
@@ -2592,8 +2340,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "局部坏死",
     "actLine": "为了明日"
   },
   "char_431_ashlok": {
@@ -2612,8 +2358,6 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": "pinus",
-    "actType": "故事集",
-    "actName": "红松林",
     "actLine": "霓虹之下"
   },
   "char_206_gnosis": {
@@ -2632,8 +2376,6 @@
     "alter": [],
     "group": "kjerag",
     "subGroup": "karlan",
-    "actType": "别传",
-    "actName": "风雪过境",
     "actLine": "山雪与银铁"
   },
   "char_194_leto": {
@@ -2652,8 +2394,6 @@
     "alter": [],
     "group": "ursus",
     "subGroup": "student",
-    "actType": "别传",
-    "actName": "银心湖列车",
     "actLine": "山雪与银铁"
   },
   "char_1040_blaze2": {
@@ -2674,8 +2414,6 @@
     ],
     "group": "rhodes",
     "subGroup": "elite",
-    "actType": "别传",
-    "actName": "相见欢",
     "actLine": "岁岁今朝"
   },
   "char_420_flamtl": {
@@ -2694,8 +2432,6 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": "pinus",
-    "actType": "别传",
-    "actName": "长夜临光",
     "actLine": "霓虹之下"
   },
   "char_1020_reed2": {
@@ -2716,8 +2452,6 @@
     ],
     "group": "victoria",
     "subGroup": "tara",
-    "actType": "别传",
-    "actName": "照我以火",
     "actLine": "薪火重燃"
   },
   "char_017_huang": {
@@ -2738,8 +2472,6 @@
     ],
     "group": "rhodes",
     "subGroup": "elite",
-    "actType": "主题曲",
-    "actName": "局部坏死",
     "actLine": "为了明日"
   },
   "char_363_toddi": {
@@ -2758,8 +2490,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "遗尘漫步",
     "actLine": "方舟"
   },
   "char_415_flint": {
@@ -2778,8 +2508,6 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "密林悍将归来",
     "actLine": "夏日律动"
   },
   "char_338_iris": {
@@ -2798,8 +2526,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "此地之外",
     "actLine": "泰拉奇谈"
   },
   "char_4164_tecno": {
@@ -2818,8 +2544,6 @@
     "alter": [],
     "group": "bolivar",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "出苍白海",
     "actLine": "自海渊的一瞥"
   },
   "char_215_mantic": {
@@ -2838,8 +2562,6 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4064_mlynar": {
@@ -2858,8 +2580,6 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "日暮寻路",
     "actLine": "霓虹之下"
   },
   "char_4006_melnte": {
@@ -2878,8 +2598,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "孤星",
     "actLine": "摘取未来之人"
   },
   "char_4235_thumpy": {
@@ -2898,8 +2616,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "直到大地变成一颗酸橙",
     "actLine": "夏日律动"
   },
   "char_1033_swire2": {
@@ -2920,8 +2636,6 @@
     ],
     "group": "lungmen",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "火山旅梦",
     "actLine": "夏日律动"
   },
   "char_479_sleach": {
@@ -2940,8 +2654,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "风暴瞭望",
     "actLine": "为了明日"
   },
   "char_423_blemsh": {
@@ -2960,8 +2672,6 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "玛莉娅临光",
     "actLine": "霓虹之下"
   },
   "char_204_platnm": {
@@ -2980,8 +2690,6 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4072_ironmn": {
@@ -3000,8 +2708,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "淬火尘霾",
     "actLine": "为了明日"
   },
   "char_128_plosis": {
@@ -3020,8 +2726,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_1026_gvial2": {
@@ -3040,8 +2744,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "理想城长夏狂欢季",
     "actLine": "夏日律动"
   },
   "char_195_glassb": {
@@ -3060,8 +2762,6 @@
     "alter": [],
     "group": "ursus",
     "subGroup": "student",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4204_mantra": {
@@ -3080,8 +2780,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": "elite",
-    "actType": "主题曲",
-    "actName": "反常光谱",
     "actLine": "为了明日"
   },
   "char_378_asbest": {
@@ -3100,8 +2798,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_101_sora": {
@@ -3120,8 +2816,6 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "penguin",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_332_archet": {
@@ -3140,8 +2834,6 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "此地之外",
     "actLine": "泰拉奇谈"
   },
   "char_4015_spuria": {
@@ -3160,8 +2852,6 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "空想花庭",
     "actLine": "那被祝福的"
   },
   "char_436_whispr": {
@@ -3180,9 +2870,7 @@
     "alter": [],
     "group": "iberia",
     "subGroup": null,
-    "actType": "其他",
-    "actName": "感谢庆典2020",
-    "actLine": null
+    "actLine": "为了明日"
   },
   "char_144_red": {
     "name": "红",
@@ -3200,8 +2888,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": "sweep",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_1016_agoat2": {
@@ -3222,8 +2908,6 @@
     ],
     "group": "leithanien",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "火山旅梦",
     "actLine": "夏日律动"
   },
   "char_478_kirara": {
@@ -3242,8 +2926,6 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "灯火序曲",
     "actLine": "泰拉奇谈"
   },
   "char_1035_wisdel": {
@@ -3264,8 +2946,6 @@
     ],
     "group": null,
     "subGroup": "babel",
-    "actType": "主题曲",
-    "actName": "慈悲灯塔",
     "actLine": "为了明日"
   },
   "char_1019_siege2": {
@@ -3286,8 +2966,6 @@
     ],
     "group": "victoria",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "追迹日落以西",
     "actLine": "方舟"
   },
   "char_1028_texas2": {
@@ -3308,8 +2986,6 @@
     ],
     "group": "lungmen",
     "subGroup": "penguin",
-    "actType": "别传",
-    "actName": "叙拉古人",
     "actLine": "七丘的新芽"
   },
   "char_4056_titi": {
@@ -3328,8 +3004,6 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "雅赛努斯复仇记",
     "actLine": "泰拉奇谈"
   },
   "char_249_mlyss": {
@@ -3348,8 +3022,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
-    "actType": "插曲",
-    "actName": "孤星",
     "actLine": "摘取未来之人"
   },
   "char_421_crow": {
@@ -3368,8 +3040,6 @@
     "alter": [],
     "group": "bolivar",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "多索雷斯假日",
     "actLine": "夏日律动"
   },
   "char_1014_nearl2": {
@@ -3390,8 +3060,6 @@
     ],
     "group": "kazimierz",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "长夜临光",
     "actLine": "霓虹之下"
   },
   "char_322_lmlee": {
@@ -3410,8 +3078,6 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "lee",
-    "actType": "别传",
-    "actName": "将进酒",
     "actLine": "岁岁今朝"
   },
   "char_4187_graceb": {
@@ -3430,8 +3096,6 @@
     "alter": [],
     "group": "bolivar",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "众生行记",
     "actLine": "那被祝福的"
   },
   "char_103_angel": {
@@ -3452,8 +3116,6 @@
     ],
     "group": "lungmen",
     "subGroup": "penguin",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4009_irene": {
@@ -3472,8 +3134,6 @@
     "alter": [],
     "group": "iberia",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "愚人号",
     "actLine": "自海渊的一瞥"
   },
   "char_180_amgoat": {
@@ -3494,8 +3154,6 @@
     ],
     "group": "leithanien",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_106_franka": {
@@ -3514,8 +3172,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "blacksteel",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_261_sddrag": {
@@ -3536,8 +3192,6 @@
     ],
     "group": "victoria",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_1038_whitw2": {
@@ -3558,8 +3212,6 @@
     ],
     "group": "siracusa",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "揭幕者们",
     "actLine": "七丘的新芽"
   },
   "char_213_mostma": {
@@ -3578,8 +3230,6 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "喧闹法则",
     "actLine": "泰拉奇谈"
   },
   "char_4117_ray": {
@@ -3598,8 +3248,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "去咧嘴谷",
     "actLine": "泰拉奇谈"
   },
   "char_373_lionhd": {
@@ -3618,8 +3266,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "乌萨斯的孩子们",
     "actLine": "燎原"
   },
   "char_300_phenxi": {
@@ -3638,8 +3284,6 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "吾导先路",
     "actLine": "那被祝福的"
   },
   "char_4191_tippi": {
@@ -3658,8 +3302,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "红丝绒",
     "actLine": "泰拉奇谈"
   },
   "char_129_bluep": {
@@ -3678,8 +3320,6 @@
     "alter": [],
     "group": "iberia",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4193_lemuen": {
@@ -3698,8 +3338,6 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "众生行记",
     "actLine": "那被祝福的"
   },
   "char_4098_vvana": {
@@ -3718,8 +3356,6 @@
     "alter": [],
     "group": "leithanien",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "崔林特尔梅之金",
     "actLine": "那被祝福的"
   },
   "char_489_serum": {
@@ -3738,8 +3374,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "长夜临光",
     "actLine": "霓虹之下"
   },
   "char_344_beewax": {
@@ -3758,8 +3392,6 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4140_lasher": {
@@ -3778,8 +3410,6 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "太阳甩在身后",
     "actLine": "夏日律动"
   },
   "char_4155_talr": {
@@ -3798,8 +3428,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "揭幕者们",
     "actLine": "七丘的新芽"
   },
   "char_4225_tanya": {
@@ -3818,8 +3446,6 @@
     "alter": [],
     "group": "ursus",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "相变临界",
     "actLine": "为了明日"
   },
   "char_308_swire": {
@@ -3840,8 +3466,6 @@
     ],
     "group": "lungmen",
     "subGroup": "lgd",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4173_nowell": {
@@ -3860,8 +3484,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "我们明日见",
     "actLine": "方舟"
   },
   "char_4229_aphris": {
@@ -3880,8 +3502,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "丛林症结",
     "actLine": "泰拉奇谈"
   },
   "char_4037_demetr": {
@@ -3900,8 +3520,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "十字路口",
     "actLine": "七丘的新芽"
   },
   "char_349_chiave": {
@@ -3920,8 +3538,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": "chiave",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_475_akafyu": {
@@ -3940,8 +3556,6 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "覆潮之下",
     "actLine": "自海渊的一瞥"
   },
   "char_1050_chen3": {
@@ -3963,8 +3577,6 @@
     ],
     "group": "yan",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "辞岁行",
     "actLine": "岁岁今朝"
   },
   "char_4088_hodrer": {
@@ -3983,8 +3595,6 @@
     "alter": [],
     "group": null,
     "subGroup": "babel",
-    "actType": "主题曲",
-    "actName": "恶兆湍流",
     "actLine": "为了明日"
   },
   "char_188_helage": {
@@ -4003,8 +3613,6 @@
     "alter": [],
     "group": "ursus",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "火蓝之心",
     "actLine": "夏日律动"
   },
   "char_108_silent": {
@@ -4023,8 +3631,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_430_fartth": {
@@ -4043,8 +3649,6 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": "pinus",
-    "actType": "故事集",
-    "actName": "红松林",
     "actLine": "霓虹之下"
   },
   "char_391_rosmon": {
@@ -4063,9 +3667,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": "elite",
-    "actType": "其他",
-    "actName": "感谢庆典2020",
-    "actLine": null
+    "actLine": "为了明日"
   },
   "char_279_excu": {
     "name": "送葬人",
@@ -4085,8 +3687,6 @@
     ],
     "group": "laterano",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "战地秘闻",
     "actLine": "泰拉奇谈"
   },
   "char_4133_logos": {
@@ -4105,8 +3705,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": "elite",
-    "actType": "主题曲",
-    "actName": "慈悲灯塔",
     "actLine": "为了明日"
   },
   "char_4202_haruka": {
@@ -4125,8 +3723,6 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "墟",
     "actLine": "夏日律动"
   },
   "char_1042_phatm2": {
@@ -4147,8 +3743,6 @@
     ],
     "group": "victoria",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "红丝绒",
     "actLine": "泰拉奇谈"
   },
   "char_2024_chyue": {
@@ -4167,8 +3761,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
-    "actType": "别传",
-    "actName": "登临意",
     "actLine": "岁岁今朝"
   },
   "char_4171_wulfen": {
@@ -4187,8 +3779,6 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "挽歌燃烧殆尽",
     "actLine": "方舟"
   },
   "char_358_lisa": {
@@ -4207,8 +3797,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "沃伦姆德的薄暮",
     "actLine": "高塔迷影"
   },
   "char_4083_chimes": {
@@ -4227,8 +3815,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "春分",
     "actLine": "岁岁今朝"
   },
   "char_172_svrash": {
@@ -4249,8 +3835,6 @@
     ],
     "group": "kjerag",
     "subGroup": "karlan",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4116_blkkgt": {
@@ -4269,8 +3853,6 @@
     "alter": [],
     "group": "kjerag",
     "subGroup": "karlan",
-    "actType": "别传",
-    "actName": "银心湖列车",
     "actLine": "山雪与银铁"
   },
   "char_147_shining": {
@@ -4289,8 +3871,6 @@
     "alter": [],
     "group": null,
     "subGroup": "followers",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_225_haak": {
@@ -4309,8 +3889,6 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "lee",
-    "actType": "故事集",
-    "actName": "洪炉示岁",
     "actLine": "岁岁今朝"
   },
   "char_4178_alanna": {
@@ -4329,8 +3907,6 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
-    "actType": "主题曲",
-    "actName": "离解复合",
     "actLine": "为了明日"
   },
   "char_4132_ascln": {
@@ -4349,8 +3925,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": "sweep",
-    "actType": "插曲",
-    "actName": "巴别塔",
     "actLine": "方舟"
   },
   "char_446_aroma": {
@@ -4369,8 +3943,6 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "巴别塔",
     "actLine": "方舟"
   },
   "char_010_chen": {
@@ -4392,8 +3964,6 @@
     ],
     "group": "lungmen",
     "subGroup": "lgd",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_219_meteo": {
@@ -4412,8 +3982,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4010_etlchi": {
@@ -4432,8 +4000,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "故事集",
-    "actName": "我们明日见",
     "actLine": "方舟"
   },
   "char_4211_snhunt": {
@@ -4452,8 +4018,6 @@
     "alter": [],
     "group": "kjerag",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "雪山降临1101",
     "actLine": "山雪与银铁"
   },
   "char_107_liskam": {
@@ -4472,8 +4036,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "blacksteel",
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4027_heyak": {
@@ -4492,8 +4054,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
-    "actType": "插曲",
-    "actName": "孤星",
     "actLine": "摘取未来之人"
   },
   "char_488_buildr": {
@@ -4512,8 +4072,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "siesta",
-    "actType": "别传",
-    "actName": "火山旅梦",
     "actLine": "夏日律动"
   },
   "char_4016_kazema": {
@@ -4532,8 +4090,6 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "吾导先路",
     "actLine": "那被祝福的"
   },
   "char_222_bpipe": {
@@ -4552,8 +4108,6 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4222_taraxa": {
@@ -4572,8 +4126,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "辞岁行",
     "actLine": "岁岁今朝"
   },
   "char_241_panda": {
@@ -4592,8 +4144,6 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": null,
-    "actType": null,
-    "actName": null,
     "actLine": null
   },
   "char_4055_bgsnow": {
@@ -4612,8 +4162,6 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "理想城长夏狂欢季",
     "actLine": "夏日律动"
   },
   "char_248_mgllan": {
@@ -4632,8 +4180,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
-    "actType": "故事集",
-    "actName": "战地秘闻",
     "actLine": "泰拉奇谈"
   },
   "char_2025_shu": {
@@ -4652,8 +4198,6 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
-    "actType": "别传",
-    "actName": "怀黍离",
     "actLine": "岁岁今朝"
   },
   "char_340_shwaz": {
@@ -4672,8 +4216,6 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "siesta",
-    "actType": "别传",
-    "actName": "火蓝之心",
     "actLine": "夏日律动"
   },
   "char_4046_ebnhlz": {
@@ -4692,8 +4234,6 @@
     "alter": [],
     "group": "leithanien",
     "subGroup": null,
-    "actType": "别传",
-    "actName": "尘影余音",
     "actLine": "高塔迷影"
   }
 }

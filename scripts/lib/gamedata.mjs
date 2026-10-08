@@ -72,10 +72,17 @@ export async function loadTable(dir, table, { local = null } = {}) {
   return JSON.parse(await fetchText(tableUrl(dir, table)));
 }
 
-/** 该服的 `data_version.txt`（几十字节，用来判「解包数据有没有变」） */
+/**
+ * 该服的 `data_version.txt`（几十字节，用来判「解包数据有没有变」）。
+ * ⚠️ 原文件是 **CRLF** 结尾 —— 必须归一成 LF 再入库，否则换行符会**原样写进**
+ *    `banners_cla_*.json` 的 `dataVersion` 字符串里（值变成 `…rel77.0\r\nChange:…`），
+ *    既污染 JSON 又与全仓库 LF 约定冲突。
+ */
 export async function readDataVersion(dir, { local = null } = {}) {
-  if (local) return (await fs.readFile(tablePath(local, dir, 'data_version.txt'), 'utf8')).trim();
-  return (await fetchText(tableUrl(dir, 'data_version.txt'))).trim();
+  const raw = local
+    ? await fs.readFile(tablePath(local, dir, 'data_version.txt'), 'utf8')
+    : await fetchText(tableUrl(dir, 'data_version.txt'));
+  return raw.replace(/\r\n?/g, '\n').trim();
 }
 
 /**
@@ -236,10 +243,6 @@ export function assignIds(list) {
     b.name = `${MID_LABEL[b.type]}${n}`;
     b.scName = b.name;
     b.enName = null;
-    /* ⚠️ `actType` / `actName` 是「卡池所属活动」的两个键（见 fetch-data.mjs）。中坚没有所属活动，
-       恒为 null —— 但**键必须存在**，否则与其它卡池的 schema 不一致（verify-data 会查这两个键）。 */
-    b.actType = null;
-    b.actName = null;
     b.id = `${b.startDate.replace(/-/g, '')}_${b.type}_${String(n).padStart(4, '0')}`;
   });
   return list;

@@ -271,7 +271,7 @@ async function main() {
   const sortUps = (ups) => ups.slice().sort((a, b) => (b.rarity - a.rarity) || Number(a.isShop) - Number(b.isShop));
 
   /* `ref` = 反查到的**国服对应卡池**（只有限定 / 单六 / 双五三类有）—— 先留在这里，
-     最后要把它的「卡池所属活动」字段沿用过去（见下面构造 `out` 的那段）。 */
+     最后要把它的 `rerunKind` / `canRerun` 沿用过去（见下面构造 `out` 的那段）。 */
   const pushBanner = ({ type, start, end, name, upOperators, suffix, where, ref = null }) => {
     const id = `${start.replace(/-/g, '')}_${type}_${suffix}`;
     banners.push({
@@ -403,15 +403,12 @@ async function main() {
       startDate: b.startDate,
       endDate: b.endDate,
       upOperators: b.upOperators,
-      /* ---- `actType` / `actName`（卡池所属活动）**不是抓来的**，是从国服对应池沿用过来的
-         （用户 2026-10-06 定）：它们反映**国服口径的上架进度**，繁中服落后于国服，
-         按各服历史重算没有意义。只有限定 / 单六 / 双五三类能反查得到，其余恒为 null，
-         但**键必须存在**（与国服 schema 一致，站点侧会查）。 */
-      actType: ref ? (ref.actType ?? null) : null,
-      actName: ref ? (ref.actName ?? null) : null,
     };
     /* ⚠️ `rerunKind` / `canRerun` **只有单六寻访才有**（国服的 double 等类型就没这两个键）。
-       实测支持「直接沿用国服」：国服 `single` 里只有 2 条「返场」，而 tc 79 条一条都不对应。 */
+       自 2026-10-08 起这两个字段都由**官方解包**在国服侧推导（见 lib/op-activity.mjs），
+       繁中服**直接沿用国服对应池的值**（同一套解包池序列，按各服历史重算没有意义）。
+       实测支持「直接沿用国服」：国服 `single` 里只有 2 条「返场」，而 tc 79 条一条都不对应。
+       （卡池的 `actType` / `actName` 两个旧字段已于 2026-10-08 删除。） */
     if (b.type === 'single') {
       out[b.id].rerunKind = ref ? (ref.rerunKind ?? null) : null;
       out[b.id].canRerun = ref ? (ref.canRerun ?? false) : false;
