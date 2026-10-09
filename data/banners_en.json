@@ -12390,5 +12390,33 @@
         "isShop": true
       }
     ]
+  },
+  "20261014_limcel_swt": {
+    "name": "承诺",
+    "scName": "承诺",
+    "enName": "Sealed With Time",
+    "type": "limcel",
+    "startDate": "2026-10-14",
+    "endDate": "2026-10-28",
+    "upOperators": [
+      {
+        "name": "可露希尔",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "凯尔希·思衡托",
+        "rarity": 6,
+        "isLimited": true,
+        "isShop": false
+      },
+      {
+        "name": "裂响",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }

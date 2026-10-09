@@ -13596,5 +13596,35 @@
         "isShop": true
       }
     ]
+  },
+  "20261009_single_hyxy": {
+    "name": "海渊巡游",
+    "scName": "海渊巡游",
+    "enName": null,
+    "type": "single",
+    "startDate": "2026-10-09",
+    "endDate": "2026-10-23",
+    "upOperators": [
+      {
+        "name": "克莱门莎",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "火哨",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "name": "德·托莱多",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ],
+    "rerunKind": null,
+    "canRerun": false
   }
 }

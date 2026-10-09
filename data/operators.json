@@ -318,7 +318,7 @@
   },
   "char_4231_clemnt": {
     "name": "克莱门莎",
-    "enName": null,
+    "enName": "Clementia",
     "charId": "char_4231_clemnt",
     "rarity": 6,
     "scReleaseDate": "2026-10-09",
@@ -1404,7 +1404,7 @@
   },
   "char_393_toledo": {
     "name": "德·托莱多",
-    "enName": null,
+    "enName": "De Toledo",
     "charId": "char_393_toledo",
     "rarity": 5,
     "scReleaseDate": "2026-10-09",
