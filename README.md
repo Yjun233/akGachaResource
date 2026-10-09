@@ -8,7 +8,8 @@
 - 🧩 **皮肤 / 密录 / 模组的日期**与**中坚寻访（含中坚甄选）的干员名单**来自
   [ArknightsAssets/ArknightsGamedata](https://github.com/ArknightsAssets/ArknightsGamedata)
   —— 官方解包数据，三个服都有
-- 🖼 **干员头像**：来自 [ArknightsGameResource](https://github.com/yuanyan3060/ArknightsGameResource)，
+- 🖼 **干员头像**：来自
+  [ArknightsAssets/ArknightsAssets2](https://github.com/ArknightsAssets/ArknightsAssets2)（`cn` 分支），
   已压缩到 96×96
 
 ## 直接用这些数据

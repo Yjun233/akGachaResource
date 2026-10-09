@@ -3,13 +3,26 @@
  * fetch-avatars.mjs
  * 抓取干员头像 → avatars/<charId>.png
  *
- * 来源：yuanyan3060/ArknightsGameResource 的 avatar/<charId>.png（原始 180×180 RGBA）。
+ * 来源：**ArknightsAssets/ArknightsAssets2** 的 `cn` 分支
+ *   `assets/dyn/arts/charavatars/<charId>.png`（原始 180×180 RGBA PNG）。
+ *
+ * ⚠️ 2026-10-09 从 `yuanyan3060/ArknightsGameResource` 换到这里（用户要求，**后者更新更快**）：
+ *   - 前者是别人**已缩好 / 已筛过**的成品仓，更新较慢；
+ *   - 后者是 ArknightsAssets 组织用 ArknightsStudio 的**全量官方解包**，`charavatars` 目录
+ *     几乎**每周**跟热更新同步（实测 2026-05 ~ 10 每月多次）。
+ *   - 两边文件**格式与尺寸完全一致**（PNG / 180×180 RGBA），所以下游缩图流程不用改；
+ *     实测我方 232 位干员在新源 **232/232 零缺口**，且新源另有全量 485 个 `char_` 头像。
+ *   - ⚠️ 新源整仓 `.git` 达 **35GB**（含 avatars / spines / audio / bundles 全量解包），
+ *     **绝不能 clone** —— 本脚本本来就是按 `raw` 单文件取，正好不受仓库体积影响。
+ *   - ⚠️ 只取**主头像**（`charavatars/<charId>.png`）；同目录的 `elite/`（精二）、
+ *     `skins/`（皮肤）暂不需要（皮肤另有 `fetch-skins.mjs` 管线）。
+ *   - 解包**数据**（非头像）另有来源 `ArknightsAssets/ArknightsGamedata`，见 `fetch-gamedata.mjs`。
  *
  * ⚠️ 为什么不能直链源仓库：
- *   - jsDelivr 对这个仓库**不提供托管**：`fastly/cdn.jsdelivr.net/gh/...` 返回 301 跳回
- *     raw.githubusercontent.com，`gcore/testingcf.jsdelivr.net` 直接 404（仓库太大：
- *     avatar 目录就有 2218 个文件 / 104 MB）。普通小仓库的 /gh/ 通道是正常的，所以
- *     只有落到「自己的小仓库」才能让 jsDelivr 正常托管。
+ *   - jsDelivr 对这类**超大仓库不提供 `gh` 托管**：`fastly/cdn.jsdelivr.net/gh/...` 会 301 跳回
+ *     raw.githubusercontent.com，`gcore/testingcf.jsdelivr.net` 直接 404。普通小仓库的 /gh/
+ *     通道是正常的，所以只有把头像落到**我们自己的小仓库**才能让 jsDelivr 正常托管。
+ *     （旧源仅 avatar 目录就 104 MB；新源整仓 35 GB，只会更糟。）
  *   - 而 raw.githubusercontent.com 在国内直连不通（本机实测 http=000）。
  *
  * 所以本脚本走**第三方反代**下载（它们代理 raw.githubusercontent.com）：
@@ -34,8 +47,10 @@ const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'avatars');
 const DATA = path.join(ROOT, 'data', 'operators.json');
 
-const REPO = 'yuanyan3060/ArknightsGameResource';
-const BRANCH = 'main';
+const REPO = 'ArknightsAssets/ArknightsAssets2';
+const BRANCH = 'cn';
+/** 仓库内头像目录（2026-10-09 换源前是 `avatar/`，现在是解包目录下的 charavatars） */
+const AVATAR_DIR = 'assets/dyn/arts/charavatars';
 
 /**
  * 反代列表（可用 `AVATAR_MIRRORS` 环境变量覆盖，逗号分隔）。
@@ -47,7 +62,7 @@ const MIRRORS = (process.env.AVATAR_MIRRORS
   .split(',').map((s) => s.trim()).filter(Boolean);
 const CANDIDATES = [...MIRRORS, '']; // '' = 直连
 
-const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/avatar`;
+const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/${AVATAR_DIR}`;
 /** m 为空串时直连 */
 const urlOf = (m, charId) => (m ? `${m}/${RAW}/${charId}.png` : `${RAW}/${charId}.png`);
 
