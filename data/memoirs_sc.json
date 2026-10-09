@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08",
+  "generatedAt": "2026-10-09",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "memoirs": [
     {
@@ -2209,6 +2209,30 @@
         }
       ],
       "releaseDate": "2026-09-04"
+    },
+    {
+      "char": "贝洛内",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "一个没有家主的家族",
+          "date": "2026-10-09"
+        }
+      ],
+      "releaseDate": "2026-10-09"
+    },
+    {
+      "char": "复奏",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "春日序曲",
+          "date": "2026-10-09"
+        }
+      ],
+      "releaseDate": "2026-10-09"
     }
   ]
 }

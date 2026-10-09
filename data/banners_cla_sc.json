@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-08",
-  "dataVersion": "Stream://torappu-data/v077/rel77.0\nChange:123576 on 2026/09/17\nVersionControl:77.6.0",
+  "generatedAt": "2026-10-09",
+  "dataVersion": "Stream://torappu-data/v078/rel78.0\nChange:124981 on 2026/10/08\nVersionControl:78.0.0",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "banners": {
     "20230406_classic_0001": {
@@ -3001,6 +3001,46 @@
       ],
       "name": "常驻中坚寻访75",
       "scName": "常驻中坚寻访75",
+      "enName": null
+    },
+    "20261015_classic_0076": {
+      "type": "classic",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-29",
+      "upOperators": [
+        {
+          "name": "凯尔希",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "棘刺",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "name": "诗怀雅",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "四月",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "name": "灰喉",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "name": "常驻中坚寻访76",
+      "scName": "常驻中坚寻访76",
       "enName": null
     },
     "20230518_clafes_0001": {

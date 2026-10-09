@@ -316,6 +316,24 @@
     "subGroup": null,
     "actLine": "方舟"
   },
+  "char_4231_clemnt": {
+    "name": "克莱门莎",
+    "enName": null,
+    "charId": "char_4231_clemnt",
+    "rarity": 6,
+    "scReleaseDate": "2026-10-09",
+    "enReleaseDate": null,
+    "tcReleaseDate": null,
+    "obtainMethod": "标准寻访",
+    "isLimited": false,
+    "classicDate": null,
+    "enClassicDate": null,
+    "tcClassicDate": null,
+    "alter": [],
+    "group": "egir",
+    "subGroup": null,
+    "actLine": null
+  },
   "char_115_headbr": {
     "name": "凛冬",
     "enName": "Zima",
@@ -1383,6 +1401,24 @@
     "group": "yan",
     "subGroup": null,
     "actLine": "岁岁今朝"
+  },
+  "char_393_toledo": {
+    "name": "德·托莱多",
+    "enName": null,
+    "charId": "char_393_toledo",
+    "rarity": 5,
+    "scReleaseDate": "2026-10-09",
+    "enReleaseDate": null,
+    "tcReleaseDate": null,
+    "obtainMethod": "标准寻访",
+    "isLimited": false,
+    "classicDate": null,
+    "enClassicDate": null,
+    "tcClassicDate": null,
+    "alter": [],
+    "group": "iberia",
+    "subGroup": null,
+    "actLine": null
   },
   "char_102_texas": {
     "name": "德克萨斯",

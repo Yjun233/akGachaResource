@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08",
+  "generatedAt": "2026-10-09",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "modules": [
     {
@@ -37,6 +37,12 @@
       "seq": 1,
       "name": "乌尔比安的衣橱",
       "date": "2024-09-02"
+    },
+    {
+      "char": "乌尔比安",
+      "seq": 2,
+      "name": "“前路”",
+      "date": "2026-10-09"
     },
     {
       "char": "乌有",
@@ -625,6 +631,12 @@
       "seq": 1,
       "name": "未完成的录武簿",
       "date": "2025-07-08"
+    },
+    {
+      "char": "德·托莱多",
+      "seq": 1,
+      "name": "贵族义务",
+      "date": "2026-10-09"
     },
     {
       "char": "德克萨斯",
@@ -1927,6 +1939,12 @@
       "seq": 1,
       "name": "“钦天司时”",
       "date": "2024-02-01"
+    },
+    {
+      "char": "黍",
+      "seq": 2,
+      "name": "好时节",
+      "date": "2026-10-09"
     },
     {
       "char": "黑",

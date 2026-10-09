@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-08",
+  "generatedAt": "2026-10-09",
   "enGeneratedAt": "2026-10-09",
   "tcGeneratedAt": "2026-10-09",
   "cla": {
     "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
     "sc": {
-      "generatedAt": "2026-10-08",
-      "count": 89
+      "generatedAt": "2026-10-09",
+      "count": 90
     },
     "en": {
       "generatedAt": "2026-10-08",
@@ -52,5 +52,5 @@
     "arknights.wiki.gg",
     "金山文档·繁中卡池统计表（AirScript 云端读取）"
   ],
-  "operatorCount": 230
+  "operatorCount": 232
 }
