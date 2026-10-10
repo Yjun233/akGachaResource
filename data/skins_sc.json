@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04",
+  "generatedAt": "2026-10-10",
   "source": "https://prts.wiki",
   "skins": [
     {
@@ -10778,6 +10778,81 @@
           "note": "",
           "longTime": false,
           "seq": 1
+        }
+      ],
+      "dynamic": false,
+      "warnings": []
+    },
+    {
+      "char": "酒神",
+      "skinIndex": 1,
+      "name": "真我自扼",
+      "group": "错位巡礼/IV",
+      "series": "错位巡礼",
+      "isCrossover": false,
+      "obtain": [
+        "源石购买"
+      ],
+      "obtainRaw": "采购中心",
+      "firstPrice": 21,
+      "firstPriceUnit": null,
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-09",
+          "end": "2026-10-23",
+          "note": "",
+          "longTime": false
+        }
+      ],
+      "dynamic": true,
+      "warnings": []
+    },
+    {
+      "char": "真言",
+      "skinIndex": 1,
+      "name": "万籁俱寂",
+      "group": "错位巡礼/IV",
+      "series": "错位巡礼",
+      "isCrossover": false,
+      "obtain": [
+        "源石购买"
+      ],
+      "obtainRaw": "采购中心",
+      "firstPrice": 18,
+      "firstPriceUnit": null,
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-09",
+          "end": "2026-10-23",
+          "note": "",
+          "longTime": false
+        }
+      ],
+      "dynamic": false,
+      "warnings": []
+    },
+    {
+      "char": "烈夏",
+      "skinIndex": 1,
+      "name": "来日欢歌",
+      "group": "错位巡礼/IV",
+      "series": "错位巡礼",
+      "isCrossover": false,
+      "obtain": [
+        "源石购买"
+      ],
+      "obtainRaw": "采购中心",
+      "firstPrice": 18,
+      "firstPriceUnit": null,
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-09",
+          "end": "2026-10-23",
+          "note": "",
+          "longTime": false
         }
       ],
       "dynamic": false,
