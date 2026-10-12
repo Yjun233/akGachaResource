@@ -313,11 +313,11 @@ export async function loadActivityTables(dir, { local = null } = {}) {
  * 给每个干员算出「实装活动剧情线」（`operators.json` 的 `actLine`）。
  *
  * @param {object} p
- * @param {Array<{name:string, scName?:string, type:string, startDate:string, endDate:string,
- *                upOperators:Array<{name:string}>}>} p.banners
- * @param {Array<{name:string, scReleaseDate:string|null}>} p.operators
+ * @param {Array<{scName:string, type:string, startDate:string, endDate:string,
+ *                upOperators:Array<{scCharName:string, charId:string|null}>}>} p.banners
+ * @param {Array<{scName:string, scReleaseDate:string|null}>} p.operators
  * @param {object} p.tables  `loadActivityTables()` 的返回值
- * @returns {Record<string, {actLine:string|null}>}  以**干员名**为键
+ * @returns {Record<string, {actLine:string|null}>}  以**干员中文名**（`scName`）为键
  */
 export function resolveOperatorActivities({ banners, operators, tables }) {
   /* 候选按开放日排序；同日时**非主线优先**（活动优先，实测更稳）。
@@ -326,12 +326,13 @@ export function resolveOperatorActivities({ banners, operators, tables }) {
     .filter((c) => c.open)
     .sort((a, b) => (ms(a.open) - ms(b.open)) || (a.main - b.main));
 
-  /* 干员 → 最早含他的卡池（= 首发卡池） */
+  /* 干员 → 最早含他的卡池（= 首发卡池）。
+     ⚠️ 2026-10-12：`upOperators` 的字段由裸 `name` 改为 `scCharName`。 */
   const firstBanner = new Map();
   for (const b of banners) {
     for (const o of b.upOperators || []) {
-      const cur = firstBanner.get(o.name);
-      if (!cur || b.startDate < cur.startDate) firstBanner.set(o.name, b);
+      const cur = firstBanner.get(o.scCharName);
+      if (!cur || b.startDate < cur.startDate) firstBanner.set(o.scCharName, b);
     }
   }
 
@@ -358,8 +359,8 @@ export function resolveOperatorActivities({ banners, operators, tables }) {
 
   /** 单个干员 → 剧情线（四级，见文件头） */
   function lineFor(op) {
-    if (NULL_LINE_EXCEPTIONS.has(op.name)) return null;
-    const fb = firstBanner.get(op.name);
+    if (NULL_LINE_EXCEPTIONS.has(op.scName)) return null;
+    const fb = firstBanner.get(op.scName);
     if (!fb) return null;
     /* ① 轮换池：没有所属活动 */
     if (ROTATE_TYPES.has(fb.type)) return null;
@@ -369,7 +370,7 @@ export function resolveOperatorActivities({ banners, operators, tables }) {
     const t = ms(rel);
     if (t < ms(fb.startDate) - TOL || t > ms(fb.endDate) + TOL) return null;
     /* ③ 精确匹配 openTime */
-    const ot = tables.openByPoolName.get(fb.name);
+    const ot = tables.openByPoolName.get(fb.scName);
     if (ot !== undefined && tables.startInfo.has(ot)) {
       const info = tables.startInfo.get(ot);
       if (info.line) return info.line;          // 命中且有剧情线 → 定论
@@ -381,7 +382,7 @@ export function resolveOperatorActivities({ banners, operators, tables }) {
   }
 
   const out = {};
-  for (const op of operators) out[op.name] = { actLine: lineFor(op) };
+  for (const op of operators) out[op.scName] = { actLine: lineFor(op) };
   return out;
 }
 
@@ -397,7 +398,7 @@ export function resolveOperatorActivities({ banners, operators, tables }) {
 export function replayIndexOf(banner, tables) {
   const map = tables.replayIndexByNormName;
   if (!map) return null;
-  const base = String(banner.name || '').replace(RERUN_SUFFIX, '');
+  const base = String(banner.scName || '').replace(RERUN_SUFFIX, '');
   const byTime = map.get(normName(base));
   if (!byTime) return null;
   const t = new Date(`${banner.startDate}T00:00:00+08:00`).getTime();
@@ -419,7 +420,7 @@ export function replayIndexOf(banner, tables) {
 export function daysSinceFirstOf(banner, tables) {
   const map = tables.replayIndexByNormName;
   if (!map) return null;
-  const base = String(banner.name || '').replace(RERUN_SUFFIX, '');
+  const base = String(banner.scName || '').replace(RERUN_SUFFIX, '');
   const byTime = map.get(normName(base));
   if (!byTime || byTime.size === 0) return null;
   const first = Math.min(...byTime.keys());
@@ -436,7 +437,7 @@ export function daysSinceFirstOf(banner, tables) {
  *   · 序号 ≥ 1 且距首发 > 180 天 → `复刻`（约一年后的正式复刻，实测最近的一例也有 328 天）
  * ⚠️ 两档之间实测**最小的间隔是 27 天 vs 328 天**，180 天阈值离两端都很远，非常稳。
  *
- * @param {{name:string, type:string, startDate:string, scName?:string}} banner
+ * @param {{scName:string, type:string, startDate:string}} banner
  * @param {object} tables  `loadActivityTables()` 的返回值
  * @returns {'首发'|'复刻'|'返场'}  非 single 或找不到对应解包池时按「首发」处理
  */
@@ -452,7 +453,7 @@ export function rerunKindOf(banner, tables) {
 /**
  * 单六寻访的 `canRerun` —— **纯解包**（见文件头）。**只对 `single` 有意义**。
  *
- * @param {{name:string, type:string, startDate:string, scName?:string}} banner
+ * @param {{scName:string, type:string, startDate:string}} banner
  * @param {object} tables  `loadActivityTables()` 的返回值
  * @returns {boolean}  只对 `single` 可能为 true；非 single 恒 false
  */
@@ -461,7 +462,7 @@ export function canRerunOf(banner, tables) {
   /* 序号 ≠ 0（返场 / 复刻池）已再上架过一次 → 不再有下一次（用户 2026-10-05 定）。 */
   const idx = replayIndexOf(banner, tables);
   if (idx !== null && idx !== 0) return false;
-  if (CAN_RERUN_EXCEPTIONS.has(banner.name)) return false;
+  if (CAN_RERUN_EXCEPTIONS.has(banner.scName)) return false;
   /* 最近候选（±容差）是 SS（支线故事）→ 会复刻。
      ⚠️ tiebreak 必须**非主线优先**（与 `resolveOperatorActivities` 的 ④ 同向）——
         `搅动潮汐之剑`（2019-05-30）与主线第二章「异卵同生」同日，主线优先会误判成 false

@@ -33,8 +33,10 @@ import path from 'node:path';
 const REPO = 'ArknightsAssets/ArknightsGamedata';
 const REF = 'master';
 
-/** 我们这边（站点/资源仓库）的服务器 id ↔ 解包仓库的目录名 */
-export const SERVER_DIR = { sc: 'cn', en: 'en', tc: 'tw' };
+/** 我们这边（站点/资源仓库）的服务器 id ↔ 解包仓库的目录名
+ *  ⚠️ `jp` 只是**名字的来源**（`operators.json` 的 `jpName`），我们并没有做日服站；
+ *     它跟 `en` 一样是「解包仓库里有、我们这边不展示」的目录。 */
+export const SERVER_DIR = { sc: 'cn', en: 'en', tc: 'tw', jp: 'jp' };
 
 /** 中坚系列的两个 type → 展示名（与站点 `constants.js` 的 TYPE_LABEL 一致，但别跨仓 import） */
 export const MID_LABEL = { classic: '常驻中坚寻访', clafes: '中坚甄选' };
@@ -94,6 +96,34 @@ export async function loadNames(dir, { local = null } = {}) {
   const tbl = await loadTable(dir, 'character_table.json', { local });
   const out = {};
   for (const [id, v] of Object.entries(tbl)) if (v && v.name) out[id] = v.name;
+  return out;
+}
+
+/**
+ * charId → `{ name, appellation, nationId, groupId, teamId }`（**一次读表**拿全）。
+ *
+ * 为什么要有它：`loadNames()` 与 `loadAffiliations()` 各读一遍 `character_table.json`，
+ * 而这张表 **21MB** —— 一处要用到「本地化名 + appellation + 阵营」时读三次太浪费。
+ * `fetch-data.mjs` 就是这种情形（`scName` 用 cn.name、`appellation` 当 en/jp 名的兜底、
+ * 阵营用 nationId/groupId/teamId）→ 用这个函数 **cn 表只读一次**。
+ *
+ * @param {string} dir 目录名（cn / en / jp / tw）
+ * @returns {Promise<Map<string, {name:string|null, appellation:string|null,
+ *   nationId:string|null, groupId:string|null, teamId:string|null}>>}
+ */
+export async function loadCharInfo(dir, { local = null } = {}) {
+  const tbl = await loadTable(dir, 'character_table.json', { local });
+  const out = new Map();
+  for (const [id, v] of Object.entries(tbl)) {
+    if (!v) continue;
+    out.set(id, {
+      name: v.name || null,
+      appellation: v.appellation || null,
+      nationId: v.nationId || null,
+      groupId: v.groupId || null,
+      teamId: v.teamId || null,
+    });
+  }
   return out;
 }
 
@@ -177,8 +207,20 @@ export function buildAlterMap(spCharGroups, validIds) {
 /** Unix 秒 → 北京时间日期（`YYYY-MM-DD`）。官方 openTime/endTime 都是**秒** */
 export const unixDate = (sec) => new Date((Number(sec) + 8 * 3600) * 1000).toISOString().slice(0, 10);
 
-function makeOp(name, rarity, isShop) {
-  return { name, rarity, isLimited: false, isShop: Boolean(isShop) };
+/**
+ * 组一个 `upOperators` 项 —— 字段名与 `banners_<server>.json` 一致
+ * （`scCharName` + `charId`，2026-10-12 改名；原来是裸 `name`）。
+ * @param {string} charId 官方 charId（**在解包路径上本来就有**，不需要按名字反查）
+ * @param {Record<string,string>} nameOf charId → 中文名
+ */
+function makeOp(charId, nameOf, rarity, isShop) {
+  return {
+    scCharName: nameOf[charId] || null,
+    charId: charId || null,
+    rarity,
+    isLimited: false,
+    isShop: Boolean(isShop),
+  };
 }
 
 /**
@@ -186,7 +228,7 @@ function makeOp(name, rarity, isShop) {
  *
  * @param {object} gacha        `gacha_table.json` 的解析结果
  * @param {Record<string,string>} nameOf charId → 名字（**三服统一用 cn 的名字表**）
- * @returns {{classic: object[], clafes: object[]}} 已按开始日升序、并且**已编好 id / name**
+ * @returns {{classic: object[], clafes: object[]}} 已按开始日升序、并且**已编好 id / scName**
  */
 export function extractMid(gacha, nameOf) {
   const pools = (gacha && gacha.gachaPoolClient) || [];
@@ -203,13 +245,13 @@ export function extractMid(gacha, nameOf) {
     .sort((a, b) => a.openTime - b.openTime)
     .map((p) => {
       const m = p.dynMeta;
-      const r5 = (m.rare5CharList || []).map(named);
+      const r5 = (m.rare5CharList || []);
       const ups = [
-        makeOp(named(m.sub6RarityCharId), 6, false),        // 陪跑六星
-        makeOp(named(m.main6RarityCharId), 6, true),        // 进店六星
-        ...r5.slice(1).map((n) => makeOp(n, 5, false)),     // 陪跑五星
-        r5[0] ? makeOp(r5[0], 5, true) : null,              // 进店五星（官方 index0）
-      ].filter((o) => o.name);
+        makeOp(m.sub6RarityCharId, nameOf, 6, false),        // 陪跑六星
+        makeOp(m.main6RarityCharId, nameOf, 6, true),        // 进店六星
+        ...r5.slice(1).map((id) => makeOp(id, nameOf, 5, false)),     // 陪跑五星
+        r5[0] ? makeOp(r5[0], nameOf, 5, true) : null,              // 进店五星（官方 index0）
+      ].filter((o) => o.scCharName);
       return { type: 'classic', startDate: unixDate(p.openTime), endDate: unixDate(p.endTime), upOperators: ups };
     });
 
@@ -220,9 +262,9 @@ export function extractMid(gacha, nameOf) {
     .map((p) => {
       const d = p.dynMeta.rarityPickCharDict;
       const ups = [
-        ...(d.TIER_6 || []).map((c) => makeOp(named(c), 6, false)),
-        ...(d.TIER_5 || []).map((c) => makeOp(named(c), 5, false)),
-      ].filter((o) => o.name);
+        ...(d.TIER_6 || []).map((c) => makeOp(c, nameOf, 6, false)),
+        ...(d.TIER_5 || []).map((c) => makeOp(c, nameOf, 5, false)),
+      ].filter((o) => o.scCharName);
       return { type: 'clafes', startDate: unixDate(p.openTime), endDate: unixDate(p.endTime), upOperators: ups };
     });
 
@@ -232,16 +274,16 @@ export function extractMid(gacha, nameOf) {
 }
 
 /**
- * 给同一 type 的卡池按**开始日升序**编序号，并生成 `name` / `scName` / `id`。
- * 口径与现有数据完全一致：`name = <展示名><序号>`，`id = YYYYMMDD_<type>_<4 位序号>`。
+ * 给同一 type 的卡池按**开始日升序**编序号，并生成 `scName` / `id`。
+ * 口径与现有数据完全一致：`scName = <展示名><序号>`，`id = YYYYMMDD_<type>_<4 位序号>`。
  * ⚠️ 现有三服的中坚系列名字**正好就是**「常驻中坚寻访1..N」「中坚甄选1..N」（实测），
  *    所以这里重新编号不会改名。
+ * ⚠️ 2026-10-12 起卡池的 `name` 已删（与 `scName` 重复），只留 `scName`。
  */
 export function assignIds(list) {
   list.forEach((b, i) => {
     const n = i + 1;
-    b.name = `${MID_LABEL[b.type]}${n}`;
-    b.scName = b.name;
+    b.scName = `${MID_LABEL[b.type]}${n}`;
     b.enName = null;
     b.id = `${b.startDate.replace(/-/g, '')}_${b.type}_${String(n).padStart(4, '0')}`;
   });

@@ -30,9 +30,13 @@
  *      卡池数据里只有英文名，而站点一律用中文名索引，所以这个映射是关键。
  *      （此前是「Operators 清单 + 分批抓干员页 wikitext」，仅映射就要 ~9 次请求，已合并。）
  *   4. 卡池名：限定寻访 / 单六寻访 / 双五寻访的 `|name` 是**英文名**，
- *      写成 `enName`；`name` / `scName` 用**国服中文名**（按干员集合反查 banners_sc.json，
+ *      写成 `enName`；`scName` 用**国服中文名**（按干员集合反查 banners_sc.json，
  *      见 lib/banner-names.mjs）。带序号的池子（常驻 / 中坚 / 联合行动…）三服同名，
  *      `enName` 为 null。ID 里的名称段仍是**英文名首字母**，不随改名变动（ID 要保持稳定）。
+ *      ⚠️ 2026-10-12 起卡池**不再写 `name`**（与 `scName` 重复，已删）；
+ *         干员的 `enName` 也**不再由本脚本写**（改由 `fetch-data.mjs` 从官方解包 en 表取，
+ *         实测与这里原来的 wiki.gg 页面名 222/222 逐字符相同）。
+ *         `upOperators` 项同理：`name` → `scCharName` + `charId`。
  *   5. `enReleaseDate`（国际服上线日）：来自 wiki.gg 的 cargoquery，join
  *      `Operators` / `OperatorFiles` / `EventServerDetails` 三表，取该干员登场事件在
  *      global 服的 startTime（同一干员可能命中多个事件，取最早）。取不到的
@@ -341,7 +345,7 @@ async function main() {
   // —— 读国服数据（干员表 + 卡池表），用来对齐 charId / 中文名 / 抵店 / 双五判定
   const cnOperators = JSON.parse(await fs.readFile(path.join(OUT_DIR, 'operators.json'), 'utf8'));
   const cnBanners = JSON.parse(await fs.readFile(path.join(OUT_DIR, 'banners_sc.json'), 'utf8'));
-  const cnByName = new Map(Object.values(cnOperators).map((o) => [o.name, o]));
+  const cnByName = new Map(Object.values(cnOperators).map((o) => [o.scName, o]));
   /** charId → 国服卡池 */
   const cnByCharId = cnOperators;
 
@@ -349,7 +353,7 @@ async function main() {
   const setKeyOf = (charIds) => [...new Set(charIds)].sort().join('|');
   const cnByOpSet = new Map();
   for (const [id, b] of Object.entries(cnBanners)) {
-    const ids = b.upOperators.map((o) => cnByName.get(o.name)?.charId).filter(Boolean);
+    const ids = b.upOperators.map((o) => cnByName.get(o.scCharName)?.charId).filter(Boolean);
     if (ids.length === b.upOperators.length) cnByOpSet.set(setKeyOf(ids), { id, ...b });
   }
   /** 国服「双五寻访」的干员集合 → 国际服的同一批池子靠它认出来 */
@@ -357,10 +361,10 @@ async function main() {
   const cnFiveNames = [];
   for (const [id, b] of Object.entries(cnBanners)) {
     if (b.type !== 'five') continue;
-    const ids = b.upOperators.map((o) => cnByName.get(o.name)?.charId).filter(Boolean);
+    const ids = b.upOperators.map((o) => cnByName.get(o.scCharName)?.charId).filter(Boolean);
     if (ids.length) {
       cnFiveSets.set(setKeyOf(ids), id);
-      cnFiveNames.push(`${id} ${b.name}`);
+      cnFiveNames.push(`${id} ${b.scName}`);
     }
   }
   console.log(`· 国服数据：干员 ${Object.keys(cnOperators).length} / 卡池 ${Object.keys(cnBanners).length}`);
@@ -463,7 +467,7 @@ async function main() {
         seen.add(charId);
         charIds.push(charId);
         upOperators.push({
-          name: cn.name,          // 站点一律用中文名
+          scCharName: cn.scName,  // 站点一律用中文名
           nameEn: en,             // 英文名留一份，便于排查
           charId,
           rarity,
@@ -533,8 +537,11 @@ async function main() {
         type: finalType,
         startDate,
         endDate,
+        /* ⚠️ 这里只剥掉排查用的 `nameEn`。
+           2026-10-12 之前**连 `charId` 一起剥**（那个字段当时国服侧也没有、schema 里不存在）；
+           现在三服 schema 统一要求 `upOperators` 带 `charId`，所以必须留着。 */
         upOperators: upOperators
-          .map(({ charId, nameEn, ...rest }) => rest)
+          .map(({ nameEn, ...rest }) => rest)
           .sort((a, b) => (b.rarity - a.rarity) || Number(a.isShop) - Number(b.isShop)),
         _forcedFive: forcedFive,
         /* 英文卡池名只在「限定 / 单六 / 双五」上有（这三类三服的叫法不同）；
@@ -571,12 +578,14 @@ async function main() {
   for (const b of list) {
     const { _forcedFive, _enName, upOperators: ups } = b;
     const group = nameGroupOf(b.type);
+    /* ⚠️ `b` 是本脚本内部的卡池对象（字段仍叫 `name`）—— 别写成 `b.scName`（undefined，
+       会把输出的 `scName` 变成 undefined 而被 JSON.stringify 直接丢掉）。 */
     let scName = b.name;
     let hit = null;
     if (group) {
       hit = matchCnName(b);
       if (hit) {
-        scName = hit.name;
+        scName = hit.scName;
         cnNamed.push(`${b.id}「${_enName}」→ 国服 ${hit.id}「${scName}」`);
       } else {
         /* 国际服比国服慢，最新的几个池子还没上 —— 属于正常，保留英文名并记一条提示 */
@@ -584,7 +593,7 @@ async function main() {
       }
     }
     out[b.id] = {
-      name: scName,
+      /* ⚠️ 2026-10-12：`name` 已删（与 scName 重复），与国服 schema 对齐 */
       scName,
       enName: group ? (_enName || null) : null,
       type: b.type,
@@ -610,7 +619,7 @@ async function main() {
   for (const b of list) {
     const cn = cnByCharId;
     for (const op of b.upOperators) {
-      const cid = Object.keys(cn).find((k) => cn[k].name === op.name);
+      const cid = Object.keys(cn).find((k) => cn[k].scName === op.scCharName);
       if (!cid) continue;
       if (!firstBannerDate.has(cid)) firstBannerDate.set(cid, b.startDate);
     }
@@ -624,8 +633,8 @@ async function main() {
   let enReleaseFromBanner = 0;
   let enReleaseAnchored = 0;
   for (const [cid, op] of Object.entries(cnOperators)) {
-    const info = byCharId.get(cid);
-    op.enName = info?.enName ?? null;
+    /* ⚠️ 2026-10-12：`op.enName` 已改由 `fetch-data.mjs`（国服脚本）从官方解包 en 表写，
+       本脚本不再碰它（原来取的是 wiki.gg 页面名；实测两者 222/222 逐字符相同）。 */
     const fromWiki = enReleaseDates[cid] || null;
     const fallback = firstBannerDate.get(cid) || null;
     op.enReleaseDate = fromWiki || fallback;
@@ -646,7 +655,7 @@ async function main() {
   for (const op of Object.values(cnOperators)) {
     const before = op.enClassicDate ?? null;
     op.enClassicDate = midOf(op);
-    if (before !== op.enClassicDate) midChanged.push(`${op.name} ${before || '—'} → ${op.enClassicDate || '—'}`);
+    if (before !== op.enClassicDate) midChanged.push(`${op.scName} ${before || '—'} → ${op.enClassicDate || '—'}`);
   }
 
   // —— 输出：先判断「国际服自己的产出」有没有变化，再决定数据更新日要不要动

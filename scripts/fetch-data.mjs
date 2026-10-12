@@ -5,7 +5,12 @@
  *
  * 输出（data/，本仓库根目录下的 data 目录）：
  *   operators.json         以 charId 为键的干员表（仅 5★/6★）
- *                          含 scReleaseDate（国服实装日）/ enReleaseDate / tcReleaseDate
+ *                          ⚠️ **2026-10-12 字段改名**：`name` → `scName`、`classicDate` →
+ *                             `scClassicDate`，并**新增 `jpName`**（日文名）。
+ *                          含 scReleaseDate（国服实装日）/ enReleaseDate / tcReleaseDate。
+ *                          `enName` / `jpName` 都**来自官方解包对应服的 `character_table.json`**
+ *                          （en / jp 目录），该服还没上架时**退用国服的 `appellation`**；
+ *                          两张表读不到时（网络问题）整列沿用旧值。
  *                          `alter` = **同一个异格组里其它成员**的 charId 数组（没有就是 `[]`）。
  *                          组内「在册」的成员**两两互填**（本体填异格、异格也填本体；
  *                          三人组如「陈」则各填另外两个），**不在册的成员一律不出现**。
@@ -24,10 +29,13 @@
  *                          （旧字段 `actType` / `actName` 已于 2026-10-08 删除。）
  *   banners_sc.json        国服卡池表（以卡池 ID 为键；en / tc 两个分文件
  *                          由各自的脚本产出，本脚本只读 banners_en.json 用于反查英文名）
- *                          每个卡池都有 `name` / `scName` / `enName` 三个名字字段：
- *                          `scName` = 国服中文名（本脚本的 name 就是它）；
+ *                          ⚠️ **2026-10-12 起卡池名只有 `scName` / `enName` 两个字段**
+ *                          （去掉了与 `scName` 完全重复的 `name`）：
+ *                          `scName` = 国服中文名；
  *                          `enName` = 国际服英文名，按干员集合反查 banners_en.json，
  *                                     没有英文名的（带序号的池子三服同名）为 null。
+ *                          `upOperators` 项也从裸 `name` 改为 `scCharName` + `charId`
+ *                          （`charId` 在 PRTS 的 Cargo 里本来就有，不需要按名字反查）。
  *                          详见 scripts/lib/banner-names.mjs
  *                          另有 `canRerun` / `rerunKind`（**只给单六寻访**）——
  *                          ⭐ 自 2026-10-08 起**都由官方解包推导**（`lib/op-activity.mjs`），
@@ -63,7 +71,7 @@ import { fileURLToPath } from 'node:url';
 import { pinyin } from 'pinyin-pro';
 import { metaStable, orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
-import { buildAlterMap, loadAffiliations, loadSpCharGroups } from './lib/gamedata.mjs';
+import { buildAlterMap, loadCharInfo, loadNames, loadSpCharGroups } from './lib/gamedata.mjs';
 import { loadActivityTables, resolveOperatorActivities, canRerunOf, rerunKindOf } from './lib/op-activity.mjs';
 import './lib/http.mjs';
 
@@ -520,7 +528,8 @@ function buildBanners(pages, opMeta) {
      干员名单 + 明确的进店位（`main6RarityCharId` / `rare5CharList[0]`），且三服都有。
      ⚠️ 连带两处也改了：上面 `indexPages` 里已移除那个索引页（所以本函数不再抓它的子页）；
      `CN_SOURCE_PAGES` 里也去掉了它。
-     ⚠️ 但「寻访规则」页**仍要抓** —— `classicDate`（干员转入中坚的批次）来自那里，见 `fetchClassicDates()`。 */
+     ⚠️ 但「寻访规则」页**仍要抓** —— `scClassicDate`（干员转入中坚的批次，2026-10-12 前叫
+     `classicDate`）来自那里，见 `fetchClassicDates()`。 */
 
   // ---- 限时寻访 -> limited / joint / stdfes / mainfes / single / five
   const limitedContent = pages['卡池一览/限时寻访'];
@@ -658,10 +667,12 @@ async function main() {
     fetchBannerPages(),
   ]);
 
-  /* ---- 读旧文件：本脚本**不负责**国际服字段 ----
-     国际服数据由 `fetch-data-en.mjs` 产出（enName / enReleaseDate / enClassicDate
-     以及 banners_en.json）。本脚本只重建国服部分，所以要把这些**原样保留**，
-     否则跑一次 build:data 就会把国际服数据抹掉。
+  /* ---- 读旧文件：本脚本**不负责**国际服 / 繁中服字段 ----
+     国际服数据由 `fetch-data-en.mjs` 产出（enReleaseDate / enClassicDate 以及 banners_en.json），
+     繁中服由 `fetch-data-tc.mjs` 产出（tcReleaseDate / tcClassicDate / banners_tc.json）。
+     本脚本只重建国服部分，所以要把这些**原样保留**，否则跑一次 build:data 就会把其它服抹掉。
+     ⚠️ 例外：`enName` / `jpName` 现在**由本脚本**从解包表写（见 main 里那段），
+        不再依赖 en 脚本 —— 所以上面初始化时仍先取 prev 值只是为了「表读不到时兜底」。
      同理 metadata 里非默认服务器的 available / bannerCount 也由 en 脚本负责。 */
   const readPrev = async (name) => {
     try { return JSON.parse(await fs.readFile(path.join(OUT_DIR, name), 'utf8')); } catch { return null; }
@@ -701,16 +712,17 @@ async function main() {
     }
     const prev = prevOperators[charId] || {};
     operators[charId] = {
-      name: row.page,
-      enName: prev.enName ?? null,            // 国际服名字（由 fetch-data-en.mjs 填）
+      scName: row.page,                       // 国服中文名（2026-10-12 由 `name` 改名）
+      enName: prev.enName ?? null,            // 国际服英文名（下面用解包 en 表覆盖）
+      jpName: prev.jpName ?? null,            // 日服日文名（下面用解包 jp 表覆盖）
       charId,
       rarity: stars,
       scReleaseDate,                          // 国服实装日
-      enReleaseDate: prev.enReleaseDate ?? null,  // 国际服实装日（同上）
+      enReleaseDate: prev.enReleaseDate ?? null,  // 国际服实装日（由 fetch-data-en.mjs 填）
       tcReleaseDate: prev.tcReleaseDate ?? null,  // 繁中服实装日（由 fetch-data-tc.mjs 填）
       obtainMethod,
       isLimited: /限定寻访/.test(obtainMethod),
-      classicDate: classicMap.get(row.page) || null,
+      scClassicDate: classicMap.get(row.page) || null,  // 国服进入中坚寻访的日期（2026-10-12 由 `classicDate` 改名）
       enClassicDate: prev.enClassicDate ?? null,  // 国际服进入中坚寻访的日期（同上）
       tcClassicDate: prev.tcClassicDate ?? null,  // 繁中服进入中坚寻访的日期（同上）
       alter: [],                                  // 该干员的**异格** charId 数组（下面统一填）
@@ -758,16 +770,22 @@ async function main() {
   console.log(`· 异格：${alterMap.size} 位干员有非空 alter（共 ${alterN} 个 charId）`
     + (alterOk ? '' : '（沿用旧值）'));
 
-  /* ---- 阵营（group / subGroup）----
-     来自官方解包 `character_table.json` 的 `nationId` / `groupId|teamId`（口径见 loadAffiliations）。
+  /* ---- 阵营（group / subGroup）+ 国服 appellation（一次读 cn 表拿全）----
+     来自官方解包 `character_table.json` 的 `nationId` / `groupId|teamId`（口径见 loadCharInfo）。
      ⚠️ 与上面 alter 同一个策略：**拿不到表就沿用旧值**，绝不让脚本失败。
-     ⚠️ 这份 cn 表 **21.6MB**，是本脚本目前读的**最大**一张表（比 char_meta 大一个量级）——
+     ⚠️ 这份 cn 表 **21MB**，是本脚本目前读的**最大**一张表（比 char_meta 大一个量级）——
         它是**无条件**读的（不像 `actLine` / `rerunKind` 那样挂在 `--with-activities` 下），
         因为阵营是**干员身份属性**、跟活动无关，且新干员可能在**周四**就入库。
-     ⚠️ 取的是 `groupId || teamId` —— 实测两者**互斥**（0 例同时有值），**不要拼起来**。 */
+     ⚠️ 取的是 `groupId || teamId` —— 实测两者**互斥**（0 例同时有值），**不要拼起来**。
+     ⭐ 2026-10-12 起同一次读表还顺手收下 `appellation`（= 官方拉丁字母代号，如 `Exusiai`）——
+        en / jp 名字的**兜底**用它（见下）。 */
   let affMap = new Map();
+  let cnApp = new Map();
   try {
-    affMap = await loadAffiliations('cn', { local: GAMEDATA_LOCAL });
+    for (const [id, v] of await loadCharInfo('cn', { local: GAMEDATA_LOCAL })) {
+      affMap.set(id, { nationId: v.nationId, groupId: v.groupId, teamId: v.teamId });
+      if (v.appellation) cnApp.set(id, v.appellation);
+    }
   } catch (err) {
     console.warn(`⚠ 阵营取不到（${err.message}）—— 沿用旧 operators.json 里的 group / subGroup`);
   }
@@ -791,11 +809,49 @@ async function main() {
   console.log(`· 阵营：${affNation} 位有 group（国家/地区）、${affSub} 位有 subGroup（组织/小队）`
     + (affMap.size ? '' : `（表没读到，${affFromPrev} 位沿用旧值）`));
 
-  const opByName = new Map(Object.values(operators).map((o) => [o.name, o]));
+  /* ---- en / jp 本地化名（2026-10-12 加）----
+     用户定：「英语名和日语名从 `ArknightsAssets/ArknightsGamedata` 对应服务器解包获取，
+     若对应服务器未更新，改为用国服的 `appellation`」。
+       · `enName` ← `en/gamedata/excel/character_table.json` 的 `name`（= 国际服客户端里显示的英文名）
+       · `jpName` ← `jp/…` 的 `name`（**日文假名**，与 en 是两套独立文本；实测 222 位里 220 位不同）
+       · 两者兜底**同一个** `cn.appellation`（拉丁字母代号）—— 解包表里还没有这位干员时用
+         （实测 en / jp 表都缺同样的 10 位新干员）。
+     ⚠️ **表读不到时（网络问题）整列沿用旧值**，绝不写成「全员 appellation」——
+        否则一次网络抖动就会把 232 个英文名全改一遍。
+     ⚠️ 这两张表各 **19MB**，加上 cn 那张，本脚本每轮要读 **≈59MB** 解包表。
+        换来的好处是**不依赖调度轮次**（不像 `actLine` 那样非周五就 null）。
+     📌 改前 `enName` 由 `fetch-data-en.mjs` 从 wiki.gg 页面名取；实测两者 **222/222 逐字符相同**，
+        所以换源只影响 en 表还没有的 10 位（见预研记录）。 */
+  let enNames = null;
+  let jpNames = null;
+  try {
+    enNames = await loadNames('en', { local: GAMEDATA_LOCAL });
+  } catch (err) {
+    console.warn(`⚠ en 名字表取不到（${err.message}）—— 沿用旧 operators.json 的 enName`);
+  }
+  try {
+    jpNames = await loadNames('jp', { local: GAMEDATA_LOCAL });
+  } catch (err) {
+    console.warn(`⚠ jp 名字表取不到（${err.message}）—— 沿用旧 operators.json 的 jpName`);
+  }
+  let enFromGd = 0;
+  let jpFromGd = 0;
+  for (const [charId, op] of Object.entries(operators)) {
+    const app = cnApp.get(charId) || null;
+    op.enName = enNames ? (enNames[charId] || app) : (prevOperators[charId]?.enName ?? null);
+    op.jpName = jpNames ? (jpNames[charId] || app) : (prevOperators[charId]?.jpName ?? null);
+    if (enNames && enNames[charId]) enFromGd += 1;
+    if (jpNames && jpNames[charId]) jpFromGd += 1;
+  }
+  console.log(`· 本地化名：enName ${enFromGd} 位来自解包`
+    + `（其余 ${Object.keys(operators).length - enFromGd} 位用 cn.appellation 兜底）`
+    + `；jpName ${jpFromGd} 位来自解包`);
+
+  const opByScName = new Map(Object.values(operators).map((o) => [o.scName, o]));
 
   /** 供卡池解析使用：任意干员的星级 + 国服实装日（4★ 无日期，但本规则只关心 5★） */
   const opMeta = (name) => {
-    const op = opByName.get(name);
+    const op = opByScName.get(name);
     return {
       stars: rarityByName.get(name) ?? (op ? op.rarity : 0),
       scReleaseDate: op ? op.scReleaseDate : null,
@@ -818,13 +874,14 @@ async function main() {
         droppedNames.push(`${a.name}（${obtainByName.get(a.name) || '无记录'}）`);
         continue; // 4★ 不纳入范围
       }
-      const known = opByName.get(a.name);
+      const known = opByScName.get(a.name);
       if (!known) warnings.push(`卡池 ${b.id} 出现未知干员: ${a.name}`);
       const key = `${a.name}|${isShopArg(a.args)}`;
       if (dedup.has(key)) continue;
       dedup.add(key);
       upOperators.push({
-        name: a.name,
+        scCharName: a.name,                        // 国服中文名（2026-10-12 由裸 `name` 改名）
+        charId: known ? known.charId : null,        // 同一位干员在 operators.json 里的键
         rarity,
         isLimited: known ? known.isLimited : Boolean(a.args.limited),
         isShop: isShopArg(a.args),
@@ -833,8 +890,7 @@ async function main() {
     // 确保 6★ 在前、5★ 在后，便于展示
     upOperators.sort((x, y) => (y.rarity - x.rarity) || Number(x.isShop) - Number(y.isShop));
     banners[b.id] = {
-      name: b.name,
-      scName: b.name,       // 国服中文名（与 name 相同，保留一列便于跨服对齐）
+      scName: b.name,       // 国服中文名（2026-10-12 起去掉了重复的 `name`，只留这一列）
       enName: null,         // 国际服英文名，第二遍回填
       type: b.type,
       startDate: b.startDate,
@@ -868,12 +924,13 @@ async function main() {
       if (!nameGroupOf(b.type)) continue;
       const hit = matchEnName(b);
       if (hit) {
-        /* 优先取对方明确给出的英文名；旧版 banners_en.json 还没这个字段，
-           那时它的 `name` 就是英文名，所以退一步用它（过渡期用得上）。 */
+        /* 优先取对方明确给出的英文名；旧版 banners_en.json 还没有 `enName` 字段，
+           那时它的 `name` 就是英文名 —— 保留这一步只作**过渡期**兜底
+           （2026-10-12 起新格式已删 `name`，这行届时自动落空为 null）。 */
         b.enName = hit.enName || hit.name || null;
         enNameHits += 1;
       } else {
-        enNameMiss.push(`${id} ${b.name}（${b.startDate}）`);
+        enNameMiss.push(`${id} ${b.scName}（${b.startDate}）`);
       }
     }
   }
@@ -934,7 +991,9 @@ async function main() {
       const stat = {};
       let filled = 0;
       for (const op of Object.values(operators)) {
-        const got = byOp[op.name];
+        /* ⚠️ 键是**干员中文名** `scName`（2026-10-12 由 `name` 改名）——
+           改名前这里写的是 `op.name`，改名后会**静默查不到**（全是 undefined → 一条都不更新）。 */
+        const got = byOp[op.scName];
         if (!got) continue;
         op.actLine = got.actLine;
         if (got.actLine) filled += 1;
@@ -1096,26 +1155,32 @@ function validate(operators, banners, meta) {
   if (meta.operatorCount < 50) problems.push(`干员数量异常偏少: ${meta.operatorCount}`);
   if ((sc.bannerCount || 0) < 50) problems.push(`卡池数量异常偏少: ${sc.bannerCount}`);
   for (const [id, b] of Object.entries(banners)) {
-    for (const f of ['name', 'scName', 'type', 'startDate', 'endDate']) {
+    for (const f of ['scName', 'type', 'startDate', 'endDate']) {
       if (!b[f]) problems.push(`卡池 ${id} 缺少字段 ${f}`);
     }
     /* enName 可以为 null（带序号的池子三服同名、国际服还没出的池子也还没英文名），
        但这个字段本身必须存在，否则站点侧没法区分「没有英文名」和「忘了写」。 */
     if (!('enName' in b)) problems.push(`卡池 ${id} 缺少字段 enName`);
-    if (b.name !== b.scName) problems.push(`卡池 ${id} 的 name 与 scName 不一致: ${b.name} / ${b.scName}`);
+    /* ⚠️ 2026-10-12 起卡池**不应再有** `name`（与 `scName` 重复）—— 留一条反向检查，
+       免得哪天有人照旧稿又把它写回来。 */
+    if ('name' in b) problems.push(`卡池 ${id} 仍有已废弃的字段 name`);
     if (!Array.isArray(b.upOperators) || b.upOperators.length === 0) {
       problems.push(`卡池 ${id} 没有 UP 干员`);
     }
     for (const op of b.upOperators) {
-      for (const f of ['name', 'rarity', 'isLimited', 'isShop']) {
+      for (const f of ['scCharName', 'charId', 'rarity', 'isLimited', 'isShop']) {
         if (op[f] === undefined) problems.push(`卡池 ${id} 的 UP 干员缺少字段 ${f}`);
       }
+      if ('name' in op) problems.push(`卡池 ${id} 的 UP 干员仍有已废弃的字段 name`);
     }
   }
   for (const [cid, op] of Object.entries(operators)) {
-    for (const f of ['name', 'charId', 'rarity', 'scReleaseDate', 'enReleaseDate', 'tcReleaseDate', 'obtainMethod', 'isLimited']) {
+    for (const f of ['scName', 'enName', 'jpName', 'charId', 'rarity', 'scReleaseDate',
+      'enReleaseDate', 'tcReleaseDate', 'obtainMethod', 'isLimited', 'scClassicDate']) {
       if (op[f] === undefined) problems.push(`干员 ${cid} 缺少字段 ${f}`);
     }
+    if ('name' in op) problems.push(`干员 ${cid} 仍有已废弃的字段 name`);
+    if ('classicDate' in op) problems.push(`干员 ${cid} 仍有已废弃的字段 classicDate`);
     if (!op.scReleaseDate) problems.push(`干员 ${cid} 缺少国服实装日`);
     if (![5, 6].includes(op.rarity)) problems.push(`干员 ${cid} 星级异常: ${op.rarity}`);
   }

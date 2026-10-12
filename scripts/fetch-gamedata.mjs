@@ -102,11 +102,11 @@ const todayLocal = new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
 /* ---------------- 对撞用的小工具 ---------------- */
 const parseDay = (s) => Date.parse(`${s}T00:00:00Z`);
 const dayDiff = (a, b) => Math.abs(parseDay(a) - parseDay(b)) / 864e5;
-const upKey = (u) => `${u.name}|${u.rarity}|${u.isShop ? 1 : 0}`;
+const upKey = (u) => `${u.scCharName}|${u.rarity}|${u.isShop ? 1 : 0}`;
 const upText = (ups, r) =>
   ups
     .filter((u) => u.rarity === r)
-    .map((u) => u.name + (u.isShop ? '*' : ''))
+    .map((u) => u.scCharName + (u.isShop ? '*' : ''))
     .join('/') || '—';
 
 /** 两条 UP 名单的相似度：exact（含顺序）/ set（集合相同、顺序不同）/ diff */
@@ -163,17 +163,17 @@ function report(server, version, mid, rawScraped) {
     for (const { official: ob, scraped: sb } of pairs) {
       if (!sb) {
         tally.missing++;
-        details.push(`  [抓取缺失] ${type} ${ob.startDate} ${ob.name}`);
+        details.push(`  [抓取缺失] ${type} ${ob.startDate} ${ob.scName}`);
         continue;
       }
       tally[compareUps(ob.upOperators, sb.upOperators)]++;
       for (const r of [6, 5]) {
-        const os = ob.upOperators.find((u) => u.rarity === r && u.isShop)?.name ?? null;
-        const ss = sb.upOperators.find((u) => u.rarity === r && u.isShop)?.name ?? null;
+        const os = ob.upOperators.find((u) => u.rarity === r && u.isShop)?.scCharName ?? null;
+        const ss = sb.upOperators.find((u) => u.rarity === r && u.isShop)?.scCharName ?? null;
         os === ss ? shopOk++ : shopBad++;
       }
       details.push(
-        `__PAIR__|${type}|${ob.startDate}|${sb.startDate}|${ob.name}|${sb.name}|` +
+        `__PAIR__|${type}|${ob.startDate}|${sb.startDate}|${ob.scName}|${sb.scName}|` +
           `${ob.endDate}|${sb.endDate}|${upText(ob.upOperators, 6)}|${upText(sb.upOperators, 6)}|` +
           `${upText(ob.upOperators, 5)}|${upText(sb.upOperators, 5)}|${compareUps(ob.upOperators, sb.upOperators)}`
       );
@@ -188,7 +188,7 @@ function report(server, version, mid, rawScraped) {
         `      抓取多出来的（官方没有）：` +
           leftover
             .filter((b) => b.type === type)
-            .map((b) => `${b.name}(${b.startDate})`)
+            .map((b) => `${b.scName}(${b.startDate})`)
             .join('、')
       );
   }
@@ -221,9 +221,9 @@ async function loadOperatorIndex() {
   const names = new Set();
   const rarity = {};
   for (const op of Object.values(raw)) {
-    if (!op?.name) continue;
-    names.add(op.name);
-    rarity[op.name] = op.rarity;
+    if (!op?.scName) continue;
+    names.add(op.scName);
+    rarity[op.scName] = op.rarity;
   }
   return { names, rarity };
 }

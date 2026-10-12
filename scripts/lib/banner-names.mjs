@@ -43,7 +43,7 @@ const setKey = (names) => [...new Set(names)].sort().join('|');
  * 国际服的复刻会被错配到国服的**返场**上，真正的复刻反而落空。
  * 所以：**建索引时跳过返场**（永不当配对目标），查询侧再按下面的「数量是否刚好对上」决定跳过。
  */
-const isFlashReturn = (b) => /返场/.test(String((b && b.name) || ''));
+const isFlashReturn = (b) => /返场/.test(String((b && b.scName) || ''));
 
 /** 分组匹配键：lim / single 只看六星，five 看全部。
  *  ⚠️ 传进来的 `banner.upOperators` 必须是**已经定稿的** UP 名单（剔过 4★、去过重），
@@ -51,9 +51,9 @@ const isFlashReturn = (b) => /返场/.test(String((b && b.name) || ''));
 export function nameKeyOf(banner, group) {
   const ups = (banner && banner.upOperators) || [];
   if (group === 'five') {
-    return setKey(ups.map((o) => o.name).filter(Boolean));
+    return setKey(ups.map((o) => o.scCharName).filter(Boolean));
   }
-  return setKey(ups.filter((o) => o.rarity === 6).map((o) => o.name).filter(Boolean));
+  return setKey(ups.filter((o) => o.rarity === 6).map((o) => o.scCharName).filter(Boolean));
 }
 
 /**

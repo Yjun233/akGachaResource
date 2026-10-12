@@ -12,9 +12,11 @@
  *   回填 data/operators.json     tcReleaseDate / tcClassicDate
  *   回填 data/metadata.json      tcGeneratedAt + 繁中服那条 server 记录
  *
- * 卡池名：`name` / `scName` 都是**国服中文名**（繁中服与国服同名，脚本里
- * 靠干员集合反查 banners_sc.json 拿到的就是这个）；`enName` 是国际服英文名，
- * 从 banners_en.json 反查，没有的（带序号的池子三服同名）为 null。
+ * 卡池名：只有 `scName`（**国服中文名**，繁中服与国服同名，脚本里靠干员集合反查
+ * banners_sc.json 拿到的就是这个）+ `enName`（国际服英文名，从 banners_en.json 反查，
+ * 没有的（带序号的池子三服同名）为 null）。
+ * ⚠️ 2026-10-12 起卡池**不再写 `name`**（与 `scName` 重复，已删）；
+ *    干员的 `upOperators` 项也从裸 `name` 改为 `scCharName` + `charId`（charId 来自国服干员表）。
  * 反查规则见 scripts/lib/banner-names.mjs。
  *
  * 用法：
@@ -215,7 +217,7 @@ async function main() {
   // —— 读国服数据（对齐干员名 / 星级 / 限定标记，并反查限定·单六·双五的卡池名）
   const cnOperators = JSON.parse(await fs.readFile(path.join(OUT_DIR, 'operators.json'), 'utf8'));
   const cnBanners = JSON.parse(await fs.readFile(path.join(OUT_DIR, 'banners_sc.json'), 'utf8'));
-  const cnByName = new Map(Object.values(cnOperators).map((o) => [o.name, o]));
+  const cnByName = new Map(Object.values(cnOperators).map((o) => [o.scName, o]));
   const cnIndex = buildCnIndex(cnBanners);
 
   /* 国际服卡池表（**只读**，由 fetch-data-en.mjs 产出）：给卡池补英文名 enName。
@@ -264,7 +266,10 @@ async function main() {
       const op = opInfo(name, where);
       if (!op || seen.has(name)) continue;
       seen.add(name);
-      out.push({ name, rarity: op.rarity, isLimited: !!op.isLimited, isShop: !!isShop });
+      out.push({
+        scCharName: name, charId: op.charId ?? null,
+        rarity: op.rarity, isLimited: !!op.isLimited, isShop: !!isShop,
+      });
     }
     return out;
   };
@@ -331,7 +336,9 @@ async function main() {
         continue;
       }
       type = ref.type;
-      displayName = ref.name;
+      /* ⚠️ `ref` 是**国服卡池**（banners_sc.json 的条目）→ 字段是 `scName`，
+        写成 `ref.name` 会拿到 undefined，而 undefined 会被 JSON.stringify 直接丢掉。 */
+      displayName = ref.scName;
       suffix = L.six.map(pinyinInitials).join('');
     } else if (sixN === 3 || sixN === 4 || sixN === 6) {
       type = sixN === 3 ? 'mainfes' : sixN === 4 ? 'joint' : 'stdfes';
@@ -344,7 +351,7 @@ async function main() {
       if (fiveRef) {
         ref = fiveRef;
         type = 'five';
-        displayName = fiveRef.name;
+        displayName = fiveRef.scName;
         suffix = L.five.map(pinyinInitials).join('');
         forcedNote = '（识别为双五）';
       } else {
@@ -354,12 +361,12 @@ async function main() {
           continue;
         }
         type = 'single';
-        displayName = ref.name;
+        displayName = ref.scName;
         suffix = L.six.map(pinyinInitials).join('');
       }
     }
 
-    if (ref) matchedCn.push(`${where} ${L.start} [${type}] → 国服 ${ref.id}「${ref.name}」${forcedNote}`);
+    if (ref) matchedCn.push(`${where} ${L.start} [${type}] → 国服 ${ref.id}「${ref.scName}」${forcedNote}`);
 
     const ups = toUps([
       ...L.six.map((name) => ({ name, isShop: false })),
@@ -367,8 +374,8 @@ async function main() {
     ], where);
     /* 六星/五星的列位置本身就是类型信号，与干员表里的星级对不上说明抄错了 */
     for (const u of ups) {
-      if (L.six.includes(u.name) && u.rarity !== 6) warnings.push(`${where}：${u.name} 填在「六星」列，但干员表里是 ${u.rarity} 星`);
-      if (L.five.includes(u.name) && u.rarity !== 5) warnings.push(`${where}：${u.name} 填在「五星」列，但干员表里是 ${u.rarity} 星`);
+      if (L.six.includes(u.scCharName) && u.rarity !== 6) warnings.push(`${where}：${u.scCharName} 填在「六星」列，但干员表里是 ${u.rarity} 星`);
+      if (L.five.includes(u.scCharName) && u.rarity !== 5) warnings.push(`${where}：${u.scCharName} 填在「五星」列，但干员表里是 ${u.rarity} 星`);
     }
     if (!suffix) warnings.push(`${where}：名称段算不出来（干员名全非中文？），已跳过`);
     if (!suffix) continue;
@@ -396,7 +403,6 @@ async function main() {
   for (const b of list) {
     const ref = b._ref || null;
     out[b.id] = {
-      name: b.name,
       scName: b.name,
       enName: null,
       type: b.type,
@@ -435,7 +441,7 @@ async function main() {
         b.enName = hit.enName || hit.name || null;
         enNameHits += 1;
       } else {
-        enNameMiss.push(`${id} ${b.name}（${b.startDate}）`);
+        enNameMiss.push(`${id} ${b.scName}（${b.startDate}）`);
       }
     }
   }
@@ -444,11 +450,11 @@ async function main() {
   const firstSeen = new Map();
   for (const b of list) {
     for (const op of b.upOperators) {
-      if (!firstSeen.has(op.name)) firstSeen.set(op.name, b.startDate);
+      if (!firstSeen.has(op.scCharName)) firstSeen.set(op.scCharName, b.startDate);
     }
   }
   for (const op of Object.values(cnOperators)) {
-    op.tcReleaseDate = firstSeen.get(op.name) || null;
+    op.tcReleaseDate = firstSeen.get(op.scName) || null;
     /* 开服干员：国服开服当天就在 roster 里 → 繁中实装日 = 繁中开服日。
        scReleaseDate 是 PRTS 权威数据且必然存在，不依赖 enReleaseDate 的准确性
        （实测盘上 enReleaseDate 曾整批滞后，见上方常量注释）。 */
@@ -465,7 +471,7 @@ async function main() {
   for (const op of Object.values(cnOperators)) {
     const before = op.tcClassicDate ?? null;
     op.tcClassicDate = midOf(op);
-    if (before !== op.tcClassicDate) midChanged.push(`${op.name} ${before || '—'} → ${op.tcClassicDate || '—'}`);
+    if (before !== op.tcClassicDate) midChanged.push(`${op.scName} ${before || '—'} → ${op.tcClassicDate || '—'}`);
   }
 
   // ---- metadata（tcGeneratedAt 要等「写盘了没有」出来才定，见下） ----
@@ -544,7 +550,7 @@ async function main() {
     console.log(`    与旧值不同 ${midChanged.length} 个`
       + (midChanged.length ? `：${midChanged.slice(0, 12).join('、')}${midChanged.length > 12 ? ' …' : ''}` : ''));
   }
-  const noRel = Object.values(cnOperators).filter((o) => !o.tcReleaseDate).map((o) => o.name);
+  const noRel = Object.values(cnOperators).filter((o) => !o.tcReleaseDate).map((o) => o.scName);
   if (noRel.length) console.log(`  繁中服尚未实装的干员（无 tcReleaseDate）${noRel.length} 位：${noRel.join('、')}`);
   if (skippedCollab.length) {
     console.log(`  跳过联动卡池 ${skippedCollab.length} 个：${skippedCollab.join('；')}`);

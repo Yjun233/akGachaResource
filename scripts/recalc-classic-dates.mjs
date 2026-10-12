@@ -36,7 +36,7 @@ for (const op of Object.values(ops)) {
     if (before !== next) {
       op[field] = next;
       const rel = op[MID_BATCHES[server].releaseKey] || '—';
-      changed[field].push(`${op.name}（实装 ${rel}） ${before || '—'} → ${next || '—'}`);
+      changed[field].push(`${op.scName}（实装 ${rel}） ${before || '—'} → ${next || '—'}`);
     }
   }
 }

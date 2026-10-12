@@ -100,16 +100,16 @@ export function dryRun(server, operators) {
       ...s,
       pending: !s.date,
       count: hit.length,
-      first: hit[0] ? `${hit[0].op.name}(${hit[0].rel})` : '—',
-      last: hit.length ? `${hit[hit.length - 1].op.name}(${hit[hit.length - 1].rel})` : '—',
-      names: hit.map((r) => r.op.name),
+      first: hit[0] ? `${hit[0].op.scName}(${hit[0].rel})` : '—',
+      last: hit.length ? `${hit[hit.length - 1].op.scName}(${hit[hit.length - 1].rel})` : '—',
+      names: hit.map((r) => r.op.scName),
     };
   });
   /* 段外 = 该服已实装、非限定、但没落进任何一段（还没轮到批次） */
   const outside = rows.filter((r) => r.rel && !r.date && !r.op.isLimited)
-    .map((r) => r.op.name).sort();
+    .map((r) => r.op.scName).sort();
   /* 限定干员：按规则一律 null（中坚寻访池不含它们） */
   const limited = rows.filter((r) => r.rel && r.op.isLimited)
-    .map((r) => r.op.name).sort();
+    .map((r) => r.op.scName).sort();
   return { groups, outside, limited };
 }

@@ -221,7 +221,9 @@ function normalizeObtain(raw) {
 
 async function main() {
   const operators = JSON.parse(await fs.readFile(path.join(OUT_DIR, 'operators.json'), 'utf8'));
-  const opNames = new Set(Object.values(operators).map((o) => o.name));
+  const opNames = new Set(Object.values(operators).map((o) => o.scName));
+  /** 干员中文名 → charId（2026-10-12 起每个 extras 条目都要带 charId） */
+  const charIdOf = new Map(Object.values(operators).map((o) => [o.scName, o.charId]));
   console.log(`· 本站干员表 ${opNames.size} 位（只收这些干员的皮肤 / 密录 / 模组）`);
 
   /* ---------------- 1. 皮肤 ---------------- */
@@ -303,7 +305,8 @@ async function main() {
     const group = plain(p['时装组名称']) || null;
     const priceNum = Number((/^(\d+)/.exec(plain(p['价格'])) || [])[1]);
     skins.push({
-      char: name,
+      scCharName: name,
+      charId: charIdOf.get(name) ?? null,
       skinIndex: Number(p['皮肤序号']) || null,
       name: plain(p['时装名']),
       group,

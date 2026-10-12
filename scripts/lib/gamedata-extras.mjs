@@ -21,8 +21,10 @@
  * ⚠️ `obtainApproach` / `uniEquipName` / `storySetName` 都是**本地化文本**：
  *   · 皮肤的在售判据必须按语言写（cn `采购中心` / tw `採購中心` / en `Store`）——
  *     拿中文去套 en/tw 会得 0 条（实测）。
- *   · 模组名 / 密录名**各服用自己的本地化名**（`char` 字段仍统一用**中文名**，
+ *   · 模组名 / 密录名**各服用自己的本地化名**（`scCharName` 字段仍统一用**中文名**，
  *     因为站点是按 `operators.json` 的中文名索引的）。
+ *   · ⚠️ 2026-10-12 字段改名：`char` → `scCharName`，并**新增 `charId`**
+ *     （解包路径上 charId 本来就有，不需要按名字反查）。
  */
 import { unixDate } from './gamedata.mjs';
 
@@ -40,7 +42,8 @@ const addDays = (date, n) => {
 
 /** 统一的排序：先按干员名（**与 PRTS 版相同的 code-unit 比较**，别用 localeCompare），再按各自序号 */
 const byCharThen = (seqKey) => (a, b) =>
-  a.char < b.char ? -1 : a.char > b.char ? 1 : (a[seqKey] ?? 0) - (b[seqKey] ?? 0);
+  a.scCharName < b.scCharName ? -1
+    : a.scCharName > b.scCharName ? 1 : (a[seqKey] ?? 0) - (b[seqKey] ?? 0);
 
 /**
  * 模组 → `modules_<server>.json` 的 `modules[]`
@@ -61,7 +64,10 @@ export function extractModules(uniequip, nameOf, opNames) {
       /* ⚠️ 自己按时间升序编号，**不用** `charEquipOrder`（见文件头说明） */
       .sort((a, b) => a.uniEquipGetTime - b.uniEquipGetTime);
     adv.forEach((e, i) => {
-      out.push({ char, seq: i + 1, name: e.uniEquipName, date: unixDate(e.uniEquipGetTime) });
+      out.push({
+        scCharName: char, charId, seq: i + 1,
+        name: e.uniEquipName, date: unixDate(e.uniEquipGetTime),
+      });
     });
   }
   out.sort(byCharThen('seq'));
@@ -95,7 +101,10 @@ export function extractMemoirs(handbook, nameOf, opNames, rarityOf = {}) {
     const batches = [...byDate.entries()]
       .sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
       .map(([date, names], i) => ({ batch: i + 1, name: names.join('|'), date }));
-    out.push({ char, rarity: rarityOf[char] ?? null, batches, releaseDate: batches[0].date });
+    out.push({
+      scCharName: char, charId, rarity: rarityOf[char] ?? null, batches,
+      releaseDate: batches[0].date,
+    });
   }
   out.sort((a, b) => (a.releaseDate < b.releaseDate ? -1 : a.releaseDate > b.releaseDate ? 1 : 0));
   return out;
@@ -119,15 +128,17 @@ export function extractSkins(skin, nameOf, opNames) {
     if (!ON_SALE_RE.test(d.obtainApproach || '')) continue;
     const char = nameOf[s.charId];
     if (!char || !opNames.has(char)) continue;
-    if (!byChar.has(char)) byChar.set(char, []);
-    byChar.get(char).push({ name: d.skinName, start: unixDate(d.getTime) });
+    if (!byChar.has(char)) byChar.set(char, { charId: s.charId || null, list: [] });
+    byChar.get(char).list.push({ name: d.skinName, start: unixDate(d.getTime) });
   }
   const out = [];
-  for (const [char, list] of byChar) {
+  for (const [char, entry] of byChar) {
+    const { charId, list } = entry;
     list.sort((a, b) => (a.start < b.start ? -1 : a.start > b.start ? 1 : 0));
     list.forEach((x, i) => {
       out.push({
-        char,
+        scCharName: char,
+        charId,
         /* 与 PRTS 版同义：该干员的第几套时装。官方没有这个字段，按首发日升序自己编号 */
         skinIndex: i + 1,
         name: x.name,
