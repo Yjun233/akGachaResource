@@ -8,9 +8,14 @@
  *                          ⚠️ **2026-10-12 字段改名**：`name` → `scName`、`classicDate` →
  *                             `scClassicDate`，并**新增 `jpName`**（日文名）。
  *                          含 scReleaseDate（国服实装日）/ enReleaseDate / tcReleaseDate。
- *                          `enName` / `jpName` 都**来自官方解包对应服的 `character_table.json`**
- *                          （en / jp 目录），该服还没上架时**退用国服的 `appellation`**；
- *                          两张表读不到时（网络问题）整列沿用旧值。
+ *                          `enName` / `jpName` 的来源是**三级兜底**（用户 2026-10-12 定）：
+ *                            ① 官方解包对应服的 `character_table.json`（en / jp 目录）
+ *                            ② **wiki.gg** —— 一个 cargoquery 同时给
+ *                               「干员页名（= 国际服英文名）」与 `jpname`（日文名）
+ *                            ③ `enName` 用国服的 `appellation`（拉丁字母代号）兜底；
+ *                               ⭐ **`jpName` 的末级是「照抄 enName」**（用户 2026-10-12 定）
+ *                          ①整表读不到时（网络问题）整列沿用旧值，绝不写 appellation；
+ *                          ②只在①读到了、且确实有缺口时才请求（失败即跳过这一层）。
  *                          `alter` = **同一个异格组里其它成员**的 charId 数组（没有就是 `[]`）。
  *                          组内「在册」的成员**两两互填**（本体填异格、异格也填本体；
  *                          三人组如「陈」则各填另外两个），**不在册的成员一律不出现**。
@@ -73,6 +78,7 @@ import { metaStable, orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
 import { buildAlterMap, loadCharInfo, loadNames, loadSpCharGroups } from './lib/gamedata.mjs';
 import { loadActivityTables, resolveOperatorActivities, canRerunOf, rerunKindOf } from './lib/op-activity.mjs';
+import { fetchWikiOperatorMap } from './lib/wiki-gg.mjs';
 import './lib/http.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -671,7 +677,7 @@ async function main() {
      国际服数据由 `fetch-data-en.mjs` 产出（enReleaseDate / enClassicDate 以及 banners_en.json），
      繁中服由 `fetch-data-tc.mjs` 产出（tcReleaseDate / tcClassicDate / banners_tc.json）。
      本脚本只重建国服部分，所以要把这些**原样保留**，否则跑一次 build:data 就会把其它服抹掉。
-     ⚠️ 例外：`enName` / `jpName` 现在**由本脚本**从解包表写（见 main 里那段），
+     ⚠️ 例外：`enName` / `jpName` 现在**由本脚本**写（解包表 + wiki.gg 兜底，见 main 里那段），
         不再依赖 en 脚本 —— 所以上面初始化时仍先取 prev 值只是为了「表读不到时兜底」。
      同理 metadata 里非默认服务器的 available / bannerCount 也由 en 脚本负责。 */
   const readPrev = async (name) => {
@@ -809,19 +815,29 @@ async function main() {
   console.log(`· 阵营：${affNation} 位有 group（国家/地区）、${affSub} 位有 subGroup（组织/小队）`
     + (affMap.size ? '' : `（表没读到，${affFromPrev} 位沿用旧值）`));
 
-  /* ---- en / jp 本地化名（2026-10-12 加）----
-     用户定：「英语名和日语名从 `ArknightsAssets/ArknightsGamedata` 对应服务器解包获取，
-     若对应服务器未更新，改为用国服的 `appellation`」。
-       · `enName` ← `en/gamedata/excel/character_table.json` 的 `name`（= 国际服客户端里显示的英文名）
-       · `jpName` ← `jp/…` 的 `name`（**日文假名**，与 en 是两套独立文本；实测 222 位里 220 位不同）
-       · 两者兜底**同一个** `cn.appellation`（拉丁字母代号）—— 解包表里还没有这位干员时用
-         （实测 en / jp 表都缺同样的 10 位新干员）。
-     ⚠️ **表读不到时（网络问题）整列沿用旧值**，绝不写成「全员 appellation」——
-        否则一次网络抖动就会把 232 个英文名全改一遍。
-     ⚠️ 这两张表各 **19MB**，加上 cn 那张，本脚本每轮要读 **≈59MB** 解包表。
-        换来的好处是**不依赖调度轮次**（不像 `actLine` 那样非周五就 null）。
-     📌 改前 `enName` 由 `fetch-data-en.mjs` 从 wiki.gg 页面名取；实测两者 **222/222 逐字符相同**，
-        所以换源只影响 en 表还没有的 10 位（见预研记录）。 */
+  /* ---- en / jp 本地化名（2026-10-12 加；同日补上 wiki.gg 中间层）----
+     用户定：**解包（对应服）拿不到时先以 wiki.gg 为准，wiki 也没有才退到国服 `appellation`**。
+       · `enName`：解包 `en/gamedata/excel/character_table.json` 的 `name`（= 国际服客户端里的英文名）
+                    → **wiki.gg 干员页名** → `cn.appellation`
+       · `jpName`：解包 `jp/…` 的 `name`（**日文假名**，与 en 是两套独立文本；实测 222 位里 220 位不同）
+                    → **wiki.gg 的 `OperatorFiles.jpname`** → **复制 `enName`**（用户 2026-10-12 定）
+        ⚠️ jpName 的**末级不是 `appellation`，而是「照抄 enName」** —— 理由是 `appellation` 只是
+           官方拉丁代号、常常不是个像样的名字（`Позёмка`、`Kaltsit·Esperanta`），
+           而 enName 至少是「这一位在国际服叫什么」，可读性好得多。
+           ⚠️ 因为 enName 自己的末级就是 `appellation`，所以这条链实际上是
+           `jp 解包 → wiki jpname → (en 解包 → wiki 页名 → appellation)`。
+     ⚠️ **解包表整表读不到（网络问题）时整列沿用旧值**，绝不写成「全员 appellation」——
+        否则一次网络抖动就会把 232 个名字全改一遍。
+     ⚠️ wiki.gg 只在「解包表读到了、且**确实有缺口**」时才请求 —— 省一次网络；
+        请求失败就当没这一层（直接退到 appellation，即加入 wiki 之前的行为）。
+     📌 实测（2026-10-12）：en / jp 解包表都缺同样的 **10 位**新干员，而 **wiki.gg 10 位全有**
+        （页面上 `isUnreleased=0`，即已上架国际服）→ **enName 靠它全部补齐**。
+        ⚠️ 但 wiki 的 `jpname` 在这些新干员上**多数留空**（10 位里只有 2 位有值）→ jpName 只补到 2 位，
+        其余 8 位**照抄 enName**（英文名，如 `De Toledo` / `Aphrissa`）。
+     ⚠️ **`jpname` 在 Cargo 的 `OperatorFiles` 表**（`Operators` 表**没有**它，别找错表）；
+        它与干员页 infobox 的 `|jpname=` 是同一份数据 → 和「页名 + 星级」**同一个请求**就拿到了。
+     ⚠️ 这两张解包表各 **19MB**，加上 cn 那张，本脚本每轮要读 **≈59MB**。
+        换来的好处是**不依赖调度轮次**（不像 `actLine` 那样非周五就 null）。 */
   let enNames = null;
   let jpNames = null;
   try {
@@ -834,18 +850,57 @@ async function main() {
   } catch (err) {
     console.warn(`⚠ jp 名字表取不到（${err.message}）—— 沿用旧 operators.json 的 jpName`);
   }
+
+  /* 解包表缺哪些位 → 只有真有缺口才去 wiki.gg 补。
+     ⭐ 一个 cargoquery（`Operators ⋈ OperatorFiles`）**同时**给到：
+        `O._pageName`（= 国际服英文名）与 `OperatorFiles.jpname`（= 日文名）
+        ⚠️ `jpname` **在 `OperatorFiles` 表**，不在 `Operators` 表 —— 别找错表。 */
+  const allIds = Object.keys(operators);
+  const enMiss = enNames ? allIds.filter((id) => !enNames[id]) : [];
+  const jpMiss = jpNames ? allIds.filter((id) => !jpNames[id]) : [];
+  let wikiNames = new Map();        // charId → { enName: 干员页名, rarity, jpName }
+  if (enMiss.length || jpMiss.length) {
+    try {
+      wikiNames = await fetchWikiOperatorMap();
+    } catch (err) {
+      console.warn(`⚠ wiki.gg 干员映射取不到（${err.message}）—— 缺口直接退到 cn.appellation`);
+    }
+  }
+  const wikiEnOf = (id) => wikiNames.get(id)?.enName || null;
+  const wikiJpOf = (id) => wikiNames.get(id)?.jpName || null;
+
   let enFromGd = 0;
+  let enFromWiki = 0;
   let jpFromGd = 0;
+  let jpFromWiki = 0;
+  let jpFromEnName = 0;
   for (const [charId, op] of Object.entries(operators)) {
     const app = cnApp.get(charId) || null;
-    op.enName = enNames ? (enNames[charId] || app) : (prevOperators[charId]?.enName ?? null);
-    op.jpName = jpNames ? (jpNames[charId] || app) : (prevOperators[charId]?.jpName ?? null);
-    if (enNames && enNames[charId]) enFromGd += 1;
-    if (jpNames && jpNames[charId]) jpFromGd += 1;
+    const wEn = wikiEnOf(charId);
+    const wJp = wikiJpOf(charId);
+    if (enNames) {
+      op.enName = enNames[charId] || wEn || app;
+      if (enNames[charId]) enFromGd += 1;
+      else if (wEn) enFromWiki += 1;
+    } else {
+      op.enName = prevOperators[charId]?.enName ?? null;
+    }
+    /* ⚠️ 末级是**照抄 enName**（不是 appellation）—— 见上面注释。
+       ⚠️ 顺序要紧：enName 必须在**上面**就算好（`op.enName` 此刻已定）。 */
+    if (jpNames) {
+      op.jpName = jpNames[charId] || wJp || op.enName || null;
+      if (jpNames[charId]) jpFromGd += 1;
+      else if (wJp) jpFromWiki += 1;
+      else jpFromEnName += 1;
+    } else {
+      op.jpName = prevOperators[charId]?.jpName ?? null;
+    }
   }
-  console.log(`· 本地化名：enName ${enFromGd} 位来自解包`
-    + `（其余 ${Object.keys(operators).length - enFromGd} 位用 cn.appellation 兜底）`
-    + `；jpName ${jpFromGd} 位来自解包`);
+  const nOps = allIds.length;
+  console.log(`· 本地化名：enName ${enFromGd} 位来自解包 + ${enFromWiki} 位来自 wiki.gg`
+    + `（其余 ${nOps - enFromGd - enFromWiki} 位用 cn.appellation 兜底）`
+    + `；jpName ${jpFromGd} 位来自解包 + ${jpFromWiki} 位来自 wiki.gg`
+    + ` + ${jpFromEnName} 位照抄 enName`);
 
   const opByScName = new Map(Object.values(operators).map((o) => [o.scName, o]));
 

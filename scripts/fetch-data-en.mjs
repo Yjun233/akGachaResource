@@ -58,17 +58,15 @@ import { fileURLToPath } from 'node:url';
 import { orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
 import { makeMidBatchResolver, dryRun } from './lib/mid-batches.mjs';
+import { wikiApi, fetchWikiOperatorMap } from './lib/wiki-gg.mjs';
 import './lib/http.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data');
 
-const WIKI = 'https://arknights.wiki.gg/api.php';
-const HEADERS = {
-  'User-Agent': 'akGachaData/1.0 (personal data site; +https://github.com/Yjun233/akGachaData)',
-  Accept: 'application/json',
-};
+/* ⚠️ wiki.gg 的 API 入口 / 请求头 / 重试封装已抽到 `lib/wiki-gg.mjs`
+   （2026-10-12：`fetch-data.mjs` 也要用它给 enName / jpName 兜底） */
 
 const SERVER = 'en';
 
@@ -117,26 +115,8 @@ function todayBeijing() {
 
 // ---------------------------------------------------------------- 网络
 
-async function api(params, { tries = 5 } = {}) {
-  const url = `${WIKI}?${new URLSearchParams({ ...params, format: 'json', formatversion: '2' })}`;
-  let lastErr;
-  for (let i = 0; i < tries; i++) {
-    try {
-      const res = await fetch(url, { headers: HEADERS });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      return await res.json();
-    } catch (e) {
-      lastErr = e;
-      const c = e && e.cause;
-      const detail = c ? `${c.code || c.name || ''} ${c.message || ''}`.trim() : '';
-      console.error(`  · 第 ${i + 1}/${tries} 次请求失败: ${e.message}${detail ? ' ← ' + detail : ''}`);
-      await sleep(1200 * (i + 1));
-    }
-  }
-  const c = lastErr && lastErr.cause;
-  const tail = c ? `${c.code || c.name || ''} ${c.message || ''}`.trim() : '';
-  throw new Error(`请求失败: ${lastErr && lastErr.message}${tail ? ' ← ' + tail : ''}`);
-}
+/* 发请求的 `api()` 已抽到 `lib/wiki-gg.mjs` 的 `wikiApi()`（本脚本与 fetch-data.mjs 共用）。
+   调用处仍写作 `wikiApi({...})`，行为与原来的 `api()` 完全一致。 */
 
 // ---------------------------------------------------------------- 工具
 
@@ -239,46 +219,8 @@ function normKey(str) {
 
 // ---------------------------------------------------------------- 干员映射
 
-/**
- * 一次 cargoquery 拿齐干员映射（Operators ⋈ OperatorFiles）：
- *   英文名（O._pageName）+ 星级（O.rarity）+ charId（F.id）。
- * 取代原先「Operators 全量清单 + 分批抓干员页 wikitext」两步（后者要 ~9 次请求）。
- *
- * ⚠️ 行粒度**不是**一干员一行：多形态干员（阿米娅本体/升变、精英干员的
- *    ac / Stronghold Protocol 变体）在 OperatorFiles 里有多个 charId 的行，
- *    还有空页名（正义骑士号这类没有干员页的）与空 charId（新公布未实装）的杂行。
- *    所以：byCharId 收**所有**有 charId 的行（4★ 靠它识别星级、静默剔除）；
- *    调用方建「英文名 → charId」映射时必须让**本体行**（charId 在 operators.json
- *    里）优先占位，变体行只补空位 —— 否则阿米娅会解析到升变形态的 charId
- *    （2026-10-03 实测 482 行）。
- */
-async function fetchOperatorMap(cnOperators) {
-  console.log('· 抓取 wiki.gg 干员映射（Operators ⋈ OperatorFiles）...');
-  const byCharId = new Map();
-  for (let offset = 0; offset < 4000; offset += 500) {
-    const json = await api({
-      action: 'cargoquery',
-      tables: 'Operators=O,OperatorFiles=F',
-      fields: 'O._pageName=page,O.rarity=rarity,F.id=charId',
-      join_on: 'F.name=O.name',
-      limit: 500,
-      offset,
-    });
-    const rows = json.cargoquery || [];
-    if (!rows.length) break;
-    for (const r of rows) {
-      const { page, rarity, charId } = r.title;
-      if (!page || !charId || byCharId.has(charId)) continue;
-      byCharId.set(charId, {
-        enName: page,
-        rarity: rarity === '' ? null : Number(rarity),
-      });
-    }
-    if (rows.length < 500) break;
-  }
-  console.log(`  → ${byCharId.size} 条 charId 映射`);
-  return byCharId;
-}
+/* `fetchOperatorMap()` 已抽到 `lib/wiki-gg.mjs` 的 `fetchWikiOperatorMap()`
+   （同一个 cargoquery：Operators ⋈ OperatorFiles → charId / 页名(英文名) / 星级）。 */
 
 // ---------------------------------------------------------------- 卡池
 
@@ -287,7 +229,7 @@ async function fetchBannerPages() {
   console.log('· 抓取卡池页（Headhunting/Banners/<年份>）...');
   const pages = {};
   for (const y of YEAR_PAGES) {
-    const json = await api({ action: 'parse', page: `Headhunting/Banners/${y}`, prop: 'wikitext' });
+    const json = await wikiApi({ action: 'parse', page: `Headhunting/Banners/${y}`, prop: 'wikitext' });
     const text = json.parse?.wikitext || '';
     if (text) pages[y] = text;
     console.log(`  ${y}: ${text.length} 字符`);
@@ -313,7 +255,7 @@ async function fetchEnReleaseDates() {
   console.log('· 抓取 wiki.gg 国际服上线日期（登场事件 startTime）...');
   const map = {}; // charId → 最早 startTime (YYYY-MM-DD)
   for (let offset = 0; offset < 2000; offset += 500) {
-    const json = await api({
+    const json = await wikiApi({
       action: 'cargoquery',
       tables: 'Operators=O,OperatorFiles=F,EventServerDetails=S',
       fields: 'S.startTime=start,F.id=charId,O.name=name', // name 代码没用到，便于人工核对
@@ -370,7 +312,7 @@ async function main() {
   console.log(`· 国服数据：干员 ${Object.keys(cnOperators).length} / 卡池 ${Object.keys(cnBanners).length}`);
   console.log(`  国服「双五寻访」共 ${cnFiveSets.size} 个：${cnFiveNames.join('、')}`);
 
-  const byCharId = await fetchOperatorMap(cnOperators);
+  const byCharId = await fetchWikiOperatorMap();
   /** 英文名 → charId（本体行 —— charId 在 operators.json 里 —— 优先占位，变体行只补空位） */
   const byEnName = new Map();
   for (const [charId, v] of byCharId) {
