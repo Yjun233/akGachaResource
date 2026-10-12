@@ -1,7 +1,8 @@
 {
   "char_4179_monstr": {
-    "name": "Mon3tr",
+    "scName": "Mon3tr",
     "enName": "Mon3tr",
+    "jpName": "Mon3tr",
     "charId": "char_4179_monstr",
     "rarity": 6,
     "scReleaseDate": "2025-04-07",
@@ -9,7 +10,7 @@
     "tcReleaseDate": "2025-10-31",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -18,8 +19,9 @@
     "actLine": "为了明日"
   },
   "char_113_cqbw": {
-    "name": "W",
+    "scName": "W",
     "enName": "W",
+    "jpName": "W",
     "charId": "char_113_cqbw",
     "rarity": 6,
     "scReleaseDate": "2020-05-01",
@@ -27,7 +29,7 @@
     "tcReleaseDate": "2021-05-27",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -38,8 +40,9 @@
     "actLine": "为了明日"
   },
   "char_148_nearl": {
-    "name": "临光",
+    "scName": "临光",
     "enName": "Nearl",
+    "jpName": "ニアール",
     "charId": "char_148_nearl",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -47,7 +50,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -58,8 +61,9 @@
     "actLine": null
   },
   "char_4224_turdus": {
-    "name": "乌啾",
+    "scName": "乌啾",
     "enName": "Ukusik",
+    "jpName": "ウクシク",
     "charId": "char_4224_turdus",
     "rarity": 5,
     "scReleaseDate": "2026-04-07",
@@ -67,7 +71,7 @@
     "tcReleaseDate": "2026-10-08",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -76,8 +80,9 @@
     "actLine": "燎原"
   },
   "char_4145_ulpia": {
-    "name": "乌尔比安",
+    "scName": "乌尔比安",
     "enName": "Ulpianus",
+    "jpName": "ウルピアヌス",
     "charId": "char_4145_ulpia",
     "rarity": 6,
     "scReleaseDate": "2024-06-05",
@@ -85,7 +90,7 @@
     "tcReleaseDate": "2025-03-31",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -94,8 +99,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_455_nothin": {
-    "name": "乌有",
+    "scName": "乌有",
     "enName": "Mr. Nothing",
+    "jpName": "ウユウ",
     "charId": "char_455_nothin",
     "rarity": 5,
     "scReleaseDate": "2021-02-05",
@@ -103,7 +109,7 @@
     "tcReleaseDate": "2021-12-23",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -112,8 +118,9 @@
     "actLine": "岁岁今朝"
   },
   "char_1015_aglna2": {
-    "name": "予愿安洁莉娜",
+    "scName": "予愿安洁莉娜",
     "enName": "Angelina the Mellow Wish",
+    "jpName": "Angelina the Mellow Wish",
     "charId": "char_1015_aglna2",
     "rarity": 6,
     "scReleaseDate": "2026-08-01",
@@ -121,7 +128,7 @@
     "tcReleaseDate": null,
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -132,8 +139,9 @@
     "actLine": "夏日律动"
   },
   "char_4082_qiubai": {
-    "name": "仇白",
+    "scName": "仇白",
     "enName": "Qiubai",
+    "jpName": "チューバイ",
     "charId": "char_4082_qiubai",
     "rarity": 6,
     "scReleaseDate": "2023-02-14",
@@ -141,7 +149,7 @@
     "tcReleaseDate": "2024-01-09",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -150,8 +158,9 @@
     "actLine": "岁岁今朝"
   },
   "char_2023_ling": {
-    "name": "令",
+    "scName": "令",
     "enName": "Ling",
+    "jpName": "リィン",
     "charId": "char_2023_ling",
     "rarity": 6,
     "scReleaseDate": "2022-01-25",
@@ -159,7 +168,7 @@
     "tcReleaseDate": "2022-10-27",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -168,8 +177,9 @@
     "actLine": "岁岁今朝"
   },
   "char_4087_ines": {
-    "name": "伊内丝",
+    "scName": "伊内丝",
     "enName": "Ines",
+    "jpName": "イネス",
     "charId": "char_4087_ines",
     "rarity": 6,
     "scReleaseDate": "2023-04-06",
@@ -177,7 +187,7 @@
     "tcReleaseDate": "2024-02-22",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -186,8 +196,9 @@
     "actLine": "为了明日"
   },
   "char_134_ifrit": {
-    "name": "伊芙利特",
+    "scName": "伊芙利特",
     "enName": "Ifrit",
+    "jpName": "イフリータ",
     "charId": "char_134_ifrit",
     "rarity": 6,
     "scReleaseDate": "2019-04-30",
@@ -195,7 +206,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -204,8 +215,9 @@
     "actLine": null
   },
   "char_4032_provs": {
-    "name": "但书",
+    "scName": "但书",
     "enName": "Proviso",
+    "jpName": "プロヴァイゾ",
     "charId": "char_4032_provs",
     "rarity": 5,
     "scReleaseDate": "2022-09-08",
@@ -213,7 +225,7 @@
     "tcReleaseDate": "2023-05-16",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -222,8 +234,9 @@
     "actLine": "霓虹之下"
   },
   "char_2026_yu": {
-    "name": "余",
+    "scName": "余",
     "enName": "Yu",
+    "jpName": "ユー",
     "charId": "char_2026_yu",
     "rarity": 6,
     "scReleaseDate": "2025-01-22",
@@ -231,7 +244,7 @@
     "tcReleaseDate": "2025-09-16",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -240,8 +253,9 @@
     "actLine": "岁岁今朝"
   },
   "char_4058_pepe": {
-    "name": "佩佩",
+    "scName": "佩佩",
     "enName": "Pepe",
+    "jpName": "ペペ",
     "charId": "char_4058_pepe",
     "rarity": 6,
     "scReleaseDate": "2024-08-01",
@@ -249,7 +263,7 @@
     "tcReleaseDate": "2025-04-24",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -258,8 +272,9 @@
     "actLine": "夏日律动"
   },
   "char_4234_pedro": {
-    "name": "佩德洛",
+    "scName": "佩德洛",
     "enName": "Pedro",
+    "jpName": "Pedro",
     "charId": "char_4234_pedro",
     "rarity": 5,
     "scReleaseDate": "2026-07-10",
@@ -267,7 +282,7 @@
     "tcReleaseDate": null,
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -276,8 +291,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_1013_chen2": {
-    "name": "假日威龙陈",
+    "scName": "假日威龙陈",
     "enName": "Ch'en the Holungday",
+    "jpName": "遊龍チェン",
     "charId": "char_1013_chen2",
     "rarity": 6,
     "scReleaseDate": "2021-08-03",
@@ -285,7 +301,7 @@
     "tcReleaseDate": "2022-05-10",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -297,8 +313,9 @@
     "actLine": "夏日律动"
   },
   "char_250_phatom": {
-    "name": "傀影",
+    "scName": "傀影",
     "enName": "Phantom",
+    "jpName": "ファントム",
     "charId": "char_250_phatom",
     "rarity": 6,
     "scReleaseDate": "2020-04-21",
@@ -306,7 +323,7 @@
     "tcReleaseDate": "2021-05-13",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -317,8 +334,9 @@
     "actLine": "方舟"
   },
   "char_4231_clemnt": {
-    "name": "克莱门莎",
+    "scName": "克莱门莎",
     "enName": "Clementia",
+    "jpName": "Clementia",
     "charId": "char_4231_clemnt",
     "rarity": 6,
     "scReleaseDate": "2026-10-09",
@@ -326,17 +344,18 @@
     "tcReleaseDate": null,
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
     "group": "egir",
     "subGroup": null,
-    "actLine": null
+    "actLine": "自海渊的一瞥"
   },
   "char_115_headbr": {
-    "name": "凛冬",
+    "scName": "凛冬",
     "enName": "Zima",
+    "jpName": "ズィマー",
     "charId": "char_115_headbr",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -344,7 +363,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -355,8 +374,9 @@
     "actLine": null
   },
   "char_1045_svash2": {
-    "name": "凛御银灰",
+    "scName": "凛御银灰",
     "enName": "SilverAsh the Reignfrost",
+    "jpName": "凛御シルバーアッシュ",
     "charId": "char_1045_svash2",
     "rarity": 6,
     "scReleaseDate": "2025-11-01",
@@ -364,7 +384,7 @@
     "tcReleaseDate": "2026-06-10",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -375,8 +395,9 @@
     "actLine": "山雪与银铁"
   },
   "char_003_kalts": {
-    "name": "凯尔希",
+    "scName": "凯尔希",
     "enName": "Kal'tsit",
+    "jpName": "ケルシー",
     "charId": "char_003_kalts",
     "rarity": 6,
     "scReleaseDate": "2021-05-01",
@@ -384,7 +405,7 @@
     "tcReleaseDate": "2022-01-26",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-11-18",
     "alter": [
@@ -395,8 +416,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_1052_kalts2": {
-    "name": "凯尔希·思衡托",
-    "enName": "Kal'tsit - Esperanta",
+    "scName": "凯尔希·思衡托",
+    "enName": "Kal'tsit·Esperanta",
+    "jpName": "Kal'tsit·Esperanta",
     "charId": "char_1052_kalts2",
     "rarity": 6,
     "scReleaseDate": "2026-05-01",
@@ -404,7 +426,7 @@
     "tcReleaseDate": null,
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -415,8 +437,9 @@
     "actLine": "为了明日"
   },
   "char_174_slbell": {
-    "name": "初雪",
+    "scName": "初雪",
     "enName": "Pramanix",
+    "jpName": "プラマニクス",
     "charId": "char_174_slbell",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -424,7 +447,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -435,8 +458,9 @@
     "actLine": null
   },
   "char_494_vendla": {
-    "name": "刺玫",
+    "scName": "刺玫",
     "enName": "Vendela",
+    "jpName": "ヴァンデラ",
     "charId": "char_494_vendla",
     "rarity": 5,
     "scReleaseDate": "2023-10-08",
@@ -444,7 +468,7 @@
     "tcReleaseDate": "2024-09-05",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -453,8 +477,9 @@
     "actLine": "为了明日"
   },
   "char_2013_cerber": {
-    "name": "刻俄柏",
+    "scName": "刻俄柏",
     "enName": "Ceobe",
+    "jpName": "ケオベ",
     "charId": "char_2013_cerber",
     "rarity": 6,
     "scReleaseDate": "2020-02-25",
@@ -462,7 +487,7 @@
     "tcReleaseDate": "2021-01-21",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -471,8 +496,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_171_bldsk": {
-    "name": "华法琳",
+    "scName": "华法琳",
     "enName": "Warfarin",
+    "jpName": "ワルファリン",
     "charId": "char_171_bldsk",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -480,7 +506,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -489,8 +515,9 @@
     "actLine": null
   },
   "char_214_kafka": {
-    "name": "卡夫卡",
+    "scName": "卡夫卡",
     "enName": "Kafka",
+    "jpName": "カフカ",
     "charId": "char_214_kafka",
     "rarity": 5,
     "scReleaseDate": "2020-12-17",
@@ -498,7 +525,7 @@
     "tcReleaseDate": "2021-10-28",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -507,8 +534,9 @@
     "actLine": "摘取未来之人"
   },
   "char_426_billro": {
-    "name": "卡涅利安",
+    "scName": "卡涅利安",
     "enName": "Carnelian",
+    "jpName": "カーネリアン",
     "charId": "char_426_billro",
     "rarity": 6,
     "scReleaseDate": "2021-06-01",
@@ -516,7 +544,7 @@
     "tcReleaseDate": "2022-03-08",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -525,8 +553,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_1036_fang2": {
-    "name": "历阵锐枪芬",
+    "scName": "历阵锐枪芬",
     "enName": "Fang the Fire-Sharpened",
+    "jpName": "歴陣鋭槍フェン",
     "charId": "char_1036_fang2",
     "rarity": 5,
     "scReleaseDate": "2024-05-01",
@@ -534,7 +563,7 @@
     "tcReleaseDate": "2025-03-06",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -543,8 +572,9 @@
     "actLine": "为了明日"
   },
   "char_4228_closur": {
-    "name": "可露希尔",
+    "scName": "可露希尔",
     "enName": "Closure",
+    "jpName": "Closure",
     "charId": "char_4228_closur",
     "rarity": 6,
     "scReleaseDate": "2026-05-01",
@@ -552,7 +582,7 @@
     "tcReleaseDate": null,
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -561,8 +591,9 @@
     "actLine": "为了明日"
   },
   "char_201_moeshd": {
-    "name": "可颂",
+    "scName": "可颂",
     "enName": "Croissant",
+    "jpName": "クロワッサン",
     "charId": "char_201_moeshd",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -570,7 +601,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -579,8 +610,9 @@
     "actLine": null
   },
   "char_350_surtr": {
-    "name": "史尔特尔",
+    "scName": "史尔特尔",
     "enName": "Surtr",
+    "jpName": "スルト",
     "charId": "char_350_surtr",
     "rarity": 6,
     "scReleaseDate": "2020-09-24",
@@ -588,7 +620,7 @@
     "tcReleaseDate": "2021-07-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -597,8 +629,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_4039_horn": {
-    "name": "号角",
+    "scName": "号角",
     "enName": "Horn",
+    "jpName": "ホルン",
     "charId": "char_4039_horn",
     "rarity": 6,
     "scReleaseDate": "2022-04-14",
@@ -606,7 +639,7 @@
     "tcReleaseDate": "2023-01-17",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -615,8 +648,9 @@
     "actLine": "为了明日"
   },
   "char_1043_leizi2": {
-    "name": "司霆惊蛰",
+    "scName": "司霆惊蛰",
     "enName": "Leizi the Thunderbringer",
+    "jpName": "司霆レイズ",
     "charId": "char_1043_leizi2",
     "rarity": 6,
     "scReleaseDate": "2025-07-08",
@@ -624,7 +658,7 @@
     "tcReleaseDate": "2026-01-26",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -635,8 +669,9 @@
     "actLine": "岁岁今朝"
   },
   "char_4203_kichi": {
-    "name": "吉星",
+    "scName": "吉星",
     "enName": "Kichisei",
+    "jpName": "キチセイ",
     "charId": "char_4203_kichi",
     "rarity": 5,
     "scReleaseDate": "2025-08-02",
@@ -644,7 +679,7 @@
     "tcReleaseDate": "2026-02-26",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -653,8 +688,9 @@
     "actLine": "夏日律动"
   },
   "char_226_hmau": {
-    "name": "吽",
+    "scName": "吽",
     "enName": "Hung",
+    "jpName": "ウン",
     "charId": "char_226_hmau",
     "rarity": 5,
     "scReleaseDate": "2020-01-16",
@@ -662,7 +698,7 @@
     "tcReleaseDate": "2021-02-04",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -671,8 +707,9 @@
     "actLine": "岁岁今朝"
   },
   "char_297_hamoni": {
-    "name": "和弦",
+    "scName": "和弦",
     "enName": "Harmonie",
+    "jpName": "ハーモニー",
     "charId": "char_297_hamoni",
     "rarity": 5,
     "scReleaseDate": "2022-12-15",
@@ -680,7 +717,7 @@
     "tcReleaseDate": "2023-10-19",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -689,8 +726,9 @@
     "actLine": "薪火重燃"
   },
   "char_4214_cairn": {
-    "name": "响石",
+    "scName": "响石",
     "enName": "Cairn",
+    "jpName": "ケルン",
     "charId": "char_4214_cairn",
     "rarity": 5,
     "scReleaseDate": "2025-12-05",
@@ -698,7 +736,7 @@
     "tcReleaseDate": "2026-07-06",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -707,8 +745,9 @@
     "actLine": "摘取未来之人"
   },
   "char_4237_jcinta": {
-    "name": "嘉辛塔",
+    "scName": "嘉辛塔",
     "enName": "Jacinta",
+    "jpName": "Jacinta",
     "charId": "char_4237_jcinta",
     "rarity": 5,
     "scReleaseDate": "2026-08-01",
@@ -716,7 +755,7 @@
     "tcReleaseDate": null,
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -725,8 +764,9 @@
     "actLine": "夏日律动"
   },
   "char_365_aprl": {
-    "name": "四月",
+    "scName": "四月",
     "enName": "April",
+    "jpName": "エイプリル",
     "charId": "char_365_aprl",
     "rarity": 5,
     "scReleaseDate": "2020-09-24",
@@ -734,7 +774,7 @@
     "tcReleaseDate": "2021-07-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -743,8 +783,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_1032_excu2": {
-    "name": "圣约送葬人",
+    "scName": "圣约送葬人",
     "enName": "Executor the Ex Foedere",
+    "jpName": "聖約イグゼキュター",
     "charId": "char_1032_excu2",
     "rarity": 6,
     "scReleaseDate": "2023-06-08",
@@ -752,7 +793,7 @@
     "tcReleaseDate": "2024-04-25",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -763,8 +804,9 @@
     "actLine": "那被祝福的"
   },
   "char_1046_sbell2": {
-    "name": "圣聆初雪",
+    "scName": "圣聆初雪",
     "enName": "Pramanix the Prerita",
+    "jpName": "聖聆プラマニクス",
     "charId": "char_1046_sbell2",
     "rarity": 6,
     "scReleaseDate": "2025-11-01",
@@ -772,7 +814,7 @@
     "tcReleaseDate": "2026-06-10",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -783,8 +825,9 @@
     "actLine": "山雪与银铁"
   },
   "char_245_cello": {
-    "name": "塑心",
+    "scName": "塑心",
     "enName": "Virtuosa",
+    "jpName": "ヴィルトゥオーサ",
     "charId": "char_245_cello",
     "rarity": 6,
     "scReleaseDate": "2023-11-01",
@@ -792,7 +835,7 @@
     "tcReleaseDate": "2024-09-24",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -801,8 +844,9 @@
     "actLine": "那被祝福的"
   },
   "char_202_demkni": {
-    "name": "塞雷娅",
+    "scName": "塞雷娅",
     "enName": "Saria",
+    "jpName": "サリア",
     "charId": "char_202_demkni",
     "rarity": 6,
     "scReleaseDate": "2019-04-30",
@@ -810,7 +854,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -819,8 +863,9 @@
     "actLine": null
   },
   "char_4031_liesel": {
-    "name": "复奏",
+    "scName": "复奏",
     "enName": "Ripresa",
+    "jpName": "リプレーザ",
     "charId": "char_4031_liesel",
     "rarity": 5,
     "scReleaseDate": "2026-03-10",
@@ -828,7 +873,7 @@
     "tcReleaseDate": "2026-09-14",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -837,8 +882,9 @@
     "actLine": "七丘的新芽"
   },
   "char_492_quercu": {
-    "name": "夏栎",
+    "scName": "夏栎",
     "enName": "Quercus",
+    "jpName": "クエルクス",
     "charId": "char_492_quercu",
     "rarity": 5,
     "scReleaseDate": "2022-02-15",
@@ -846,7 +892,7 @@
     "tcReleaseDate": "2022-11-17",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -855,8 +901,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_2015_dusk": {
-    "name": "夕",
+    "scName": "夕",
     "enName": "Dusk",
+    "jpName": "シー",
     "charId": "char_2015_dusk",
     "rarity": 6,
     "scReleaseDate": "2021-02-05",
@@ -864,7 +911,7 @@
     "tcReleaseDate": "2021-12-23",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -873,8 +920,9 @@
     "actLine": "岁岁今朝"
   },
   "char_4048_doroth": {
-    "name": "多萝西",
+    "scName": "多萝西",
     "enName": "Dorothy",
+    "jpName": "ドロシー",
     "charId": "char_4048_doroth",
     "rarity": 6,
     "scReleaseDate": "2022-07-05",
@@ -882,7 +930,7 @@
     "tcReleaseDate": "2023-04-13",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -891,8 +939,9 @@
     "actLine": "摘取未来之人"
   },
   "char_476_blkngt": {
-    "name": "夜半",
+    "scName": "夜半",
     "enName": "Blacknight",
+    "jpName": "ブラックナイト",
     "charId": "char_476_blkngt",
     "rarity": 5,
     "scReleaseDate": "2022-01-25",
@@ -900,7 +949,7 @@
     "tcReleaseDate": "2022-10-27",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -909,8 +958,9 @@
     "actLine": "岁岁今朝"
   },
   "char_179_cgbird": {
-    "name": "夜莺",
+    "scName": "夜莺",
     "enName": "Nightingale",
+    "jpName": "ナイチンゲール",
     "charId": "char_179_cgbird",
     "rarity": 6,
     "scReleaseDate": "2019-04-30",
@@ -918,7 +968,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -927,8 +977,9 @@
     "actLine": null
   },
   "char_164_nightm": {
-    "name": "夜魔",
+    "scName": "夜魔",
     "enName": "Nightmare",
+    "jpName": "ナイトメア",
     "charId": "char_164_nightm",
     "rarity": 5,
     "scReleaseDate": "2019-05-30",
@@ -936,7 +987,7 @@
     "tcReleaseDate": "2020-07-23",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -945,8 +996,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_166_skfire": {
-    "name": "天火",
+    "scName": "天火",
     "enName": "Skyfire",
+    "jpName": "スカイフレア",
     "charId": "char_166_skfire",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -954,7 +1006,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -963,8 +1015,9 @@
     "actLine": null
   },
   "char_346_aosta": {
-    "name": "奥斯塔",
+    "scName": "奥斯塔",
     "enName": "Aosta",
+    "jpName": "アオスタ",
     "charId": "char_346_aosta",
     "rarity": 5,
     "scReleaseDate": "2020-10-15",
@@ -972,7 +1025,7 @@
     "tcReleaseDate": "2021-08-12",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -981,8 +1034,9 @@
     "actLine": "霓虹之下"
   },
   "char_4146_nymph": {
-    "name": "妮芙",
+    "scName": "妮芙",
     "enName": "Nymph",
+    "jpName": "ニンフ",
     "charId": "char_4146_nymph",
     "rarity": 6,
     "scReleaseDate": "2024-07-09",
@@ -990,7 +1044,7 @@
     "tcReleaseDate": "2025-05-15",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -999,8 +1053,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_4138_narant": {
-    "name": "娜仁图亚",
+    "scName": "娜仁图亚",
     "enName": "Narantuya",
+    "jpName": "ナラントゥヤ",
     "charId": "char_4138_narant",
     "rarity": 6,
     "scReleaseDate": "2024-08-01",
@@ -1008,7 +1063,7 @@
     "tcReleaseDate": "2025-04-24",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1017,8 +1072,9 @@
     "actLine": "夏日律动"
   },
   "char_4212_nasti": {
-    "name": "娜斯提",
+    "scName": "娜斯提",
     "enName": "Nasti",
+    "jpName": "ナスティ",
     "charId": "char_4212_nasti",
     "rarity": 6,
     "scReleaseDate": "2025-12-05",
@@ -1026,7 +1082,7 @@
     "tcReleaseDate": "2026-07-06",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1035,8 +1091,9 @@
     "actLine": "摘取未来之人"
   },
   "char_4014_lunacu": {
-    "name": "子月",
+    "scName": "子月",
     "enName": "Lunacub",
+    "jpName": "ルナカブ",
     "charId": "char_4014_lunacu",
     "rarity": 5,
     "scReleaseDate": "2022-11-01",
@@ -1044,7 +1101,7 @@
     "tcReleaseDate": "2023-09-12",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1053,8 +1110,9 @@
     "actLine": "七丘的新芽"
   },
   "char_158_milu": {
-    "name": "守林人",
+    "scName": "守林人",
     "enName": "Firewatch",
+    "jpName": "ファイヤーウォッチ",
     "charId": "char_158_milu",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -1062,7 +1120,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -1071,8 +1129,9 @@
     "actLine": null
   },
   "char_218_cuttle": {
-    "name": "安哲拉",
+    "scName": "安哲拉",
     "enName": "Andreana",
+    "jpName": "アンドレアナ",
     "charId": "char_218_cuttle",
     "rarity": 5,
     "scReleaseDate": "2020-08-11",
@@ -1080,7 +1139,7 @@
     "tcReleaseDate": "2021-06-10",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -1089,8 +1148,9 @@
     "actLine": "夏日律动"
   },
   "char_291_aglina": {
-    "name": "安洁莉娜",
+    "scName": "安洁莉娜",
     "enName": "Angelina",
+    "jpName": "アンジェリーナ",
     "charId": "char_291_aglina",
     "rarity": 6,
     "scReleaseDate": "2019-04-30",
@@ -1098,7 +1158,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -1109,8 +1169,9 @@
     "actLine": null
   },
   "char_341_sntlla": {
-    "name": "寒檀",
+    "scName": "寒檀",
     "enName": "Santalla",
+    "jpName": "サンタラ",
     "charId": "char_341_sntlla",
     "rarity": 5,
     "scReleaseDate": "2023-07-06",
@@ -1118,7 +1179,7 @@
     "tcReleaseDate": "2024-06-13",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1127,8 +1188,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_4052_surfer": {
-    "name": "寻澜",
+    "scName": "寻澜",
     "enName": "Surfer",
+    "jpName": "サーファー",
     "charId": "char_4052_surfer",
     "rarity": 5,
     "scReleaseDate": "2025-01-22",
@@ -1136,7 +1198,7 @@
     "tcReleaseDate": "2025-09-16",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1145,8 +1207,9 @@
     "actLine": "岁岁今朝"
   },
   "char_4122_grabds": {
-    "name": "小满",
+    "scName": "小满",
     "enName": "Grain Buds",
+    "jpName": "グレインバッズ",
     "charId": "char_4122_grabds",
     "rarity": 5,
     "scReleaseDate": "2024-02-01",
@@ -1154,7 +1217,7 @@
     "tcReleaseDate": "2025-01-20",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1163,8 +1226,9 @@
     "actLine": "岁岁今朝"
   },
   "char_264_f12yin": {
-    "name": "山",
+    "scName": "山",
     "enName": "Mountain",
+    "jpName": "マウンテン",
     "charId": "char_264_f12yin",
     "rarity": 6,
     "scReleaseDate": "2020-12-17",
@@ -1172,7 +1236,7 @@
     "tcReleaseDate": "2021-10-28",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -1181,8 +1245,9 @@
     "actLine": "摘取未来之人"
   },
   "char_173_slchan": {
-    "name": "崖心",
+    "scName": "崖心",
     "enName": "Cliffheart",
+    "jpName": "クリフハート",
     "charId": "char_173_slchan",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -1190,7 +1255,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -1199,8 +1264,9 @@
     "actLine": null
   },
   "char_362_saga": {
-    "name": "嵯峨",
+    "scName": "嵯峨",
     "enName": "Saga",
+    "jpName": "サガ",
     "charId": "char_362_saga",
     "rarity": 6,
     "scReleaseDate": "2021-02-05",
@@ -1208,7 +1274,7 @@
     "tcReleaseDate": "2021-12-23",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -1217,8 +1283,9 @@
     "actLine": "岁岁今朝"
   },
   "char_4121_zuole": {
-    "name": "左乐",
+    "scName": "左乐",
     "enName": "Zuo Le",
+    "jpName": "ズオ・ラウ",
     "charId": "char_4121_zuole",
     "rarity": 6,
     "scReleaseDate": "2024-02-01",
@@ -1226,7 +1293,7 @@
     "tcReleaseDate": "2025-01-20",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1235,8 +1302,9 @@
     "actLine": "岁岁今朝"
   },
   "char_254_vodfox": {
-    "name": "巫恋",
+    "scName": "巫恋",
     "enName": "Shamare",
+    "jpName": "シャマレ",
     "charId": "char_254_vodfox",
     "rarity": 5,
     "scReleaseDate": "2020-04-21",
@@ -1244,7 +1312,7 @@
     "tcReleaseDate": "2021-05-13",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -1253,8 +1321,9 @@
     "actLine": "方舟"
   },
   "char_356_broca": {
-    "name": "布洛卡",
+    "scName": "布洛卡",
     "enName": "Broca",
+    "jpName": "ブローカ",
     "charId": "char_356_broca",
     "rarity": 5,
     "scReleaseDate": "2019-12-10",
@@ -1262,7 +1331,7 @@
     "tcReleaseDate": "2021-01-07",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -1271,8 +1340,9 @@
     "actLine": null
   },
   "char_485_pallas": {
-    "name": "帕拉斯",
+    "scName": "帕拉斯",
     "enName": "Pallas",
+    "jpName": "パラス",
     "charId": "char_485_pallas",
     "rarity": 6,
     "scReleaseDate": "2021-07-02",
@@ -1280,7 +1350,7 @@
     "tcReleaseDate": "2022-04-06",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -1289,8 +1359,9 @@
     "actLine": null
   },
   "char_2014_nian": {
-    "name": "年",
+    "scName": "年",
     "enName": "Nian",
+    "jpName": "ニェン",
     "charId": "char_2014_nian",
     "rarity": 6,
     "scReleaseDate": "2020-01-16",
@@ -1298,7 +1369,7 @@
     "tcReleaseDate": "2021-02-04",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1307,8 +1378,9 @@
     "actLine": "岁岁今朝"
   },
   "char_143_ghost": {
-    "name": "幽灵鲨",
+    "scName": "幽灵鲨",
     "enName": "Specter",
+    "jpName": "スペクター",
     "charId": "char_143_ghost",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -1316,7 +1388,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -1327,8 +1399,9 @@
     "actLine": null
   },
   "char_472_pasngr": {
-    "name": "异客",
+    "scName": "异客",
     "enName": "Passenger",
+    "jpName": "パッセンジャー",
     "charId": "char_472_pasngr",
     "rarity": 6,
     "scReleaseDate": "2021-04-15",
@@ -1336,7 +1409,7 @@
     "tcReleaseDate": "2022-01-11",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -1345,8 +1418,9 @@
     "actLine": "方舟"
   },
   "char_1039_thorn2": {
-    "name": "引星棘刺",
+    "scName": "引星棘刺",
     "enName": "Thorns the Lodestar",
+    "jpName": "引星ソーンズ",
     "charId": "char_1039_thorn2",
     "rarity": 6,
     "scReleaseDate": "2024-12-05",
@@ -1354,7 +1428,7 @@
     "tcReleaseDate": "2025-08-11",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -1365,8 +1439,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_1023_ghost2": {
-    "name": "归溟幽灵鲨",
+    "scName": "归溟幽灵鲨",
     "enName": "Specter the Unchained",
+    "jpName": "帰溟スペクター",
     "charId": "char_1023_ghost2",
     "rarity": 6,
     "scReleaseDate": "2022-05-01",
@@ -1374,7 +1449,7 @@
     "tcReleaseDate": "2023-01-31",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -1385,8 +1460,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_4196_reckpr": {
-    "name": "录武官",
+    "scName": "录武官",
     "enName": "Record Keeper",
+    "jpName": "レコードキーパー",
     "charId": "char_4196_reckpr",
     "rarity": 5,
     "scReleaseDate": "2025-07-08",
@@ -1394,7 +1470,7 @@
     "tcReleaseDate": "2026-01-26",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1403,8 +1479,9 @@
     "actLine": "岁岁今朝"
   },
   "char_393_toledo": {
-    "name": "德·托莱多",
-    "enName": "De Toledo",
+    "scName": "德·托莱多",
+    "enName": "de Toledo",
+    "jpName": "de Toledo",
     "charId": "char_393_toledo",
     "rarity": 5,
     "scReleaseDate": "2026-10-09",
@@ -1412,17 +1489,18 @@
     "tcReleaseDate": null,
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
     "group": "iberia",
     "subGroup": null,
-    "actLine": null
+    "actLine": "自海渊的一瞥"
   },
   "char_102_texas": {
-    "name": "德克萨斯",
+    "scName": "德克萨斯",
     "enName": "Texas",
+    "jpName": "テキサス",
     "charId": "char_102_texas",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -1430,7 +1508,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访 常驻赠送",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -1441,8 +1519,9 @@
     "actLine": null
   },
   "char_4026_vulpis": {
-    "name": "忍冬",
+    "scName": "忍冬",
     "enName": "Vulpisfoglia",
+    "jpName": "ウルピスフォリア",
     "charId": "char_4026_vulpis",
     "rarity": 6,
     "scReleaseDate": "2024-11-01",
@@ -1450,7 +1529,7 @@
     "tcReleaseDate": "2025-06-27",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1459,8 +1538,9 @@
     "actLine": "七丘的新芽"
   },
   "char_1051_headb2": {
-    "name": "怒潮凛冬",
+    "scName": "怒潮凛冬",
     "enName": "Zima the Raging Tide",
+    "jpName": "怒潮ズィマー",
     "charId": "char_1051_headb2",
     "rarity": 6,
     "scReleaseDate": "2026-04-07",
@@ -1468,7 +1548,7 @@
     "tcReleaseDate": "2026-10-08",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -1479,8 +1559,9 @@
     "actLine": "燎原"
   },
   "char_306_leizi": {
-    "name": "惊蛰",
+    "scName": "惊蛰",
     "enName": "Leizi",
+    "jpName": "レイズ",
     "charId": "char_306_leizi",
     "rarity": 5,
     "scReleaseDate": "2020-02-25",
@@ -1488,7 +1569,7 @@
     "tcReleaseDate": "2021-01-21",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -1499,8 +1580,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_379_sesa": {
-    "name": "慑砂",
+    "scName": "慑砂",
     "enName": "Sesa",
+    "jpName": "シェーシャ",
     "charId": "char_379_sesa",
     "rarity": 5,
     "scReleaseDate": "2020-03-17",
@@ -1508,7 +1590,7 @@
     "tcReleaseDate": "2021-03-04",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -1517,8 +1599,9 @@
     "actLine": null
   },
   "char_1027_greyy2": {
-    "name": "承曦格雷伊",
+    "scName": "承曦格雷伊",
     "enName": "Greyy the Lightningbearer",
+    "jpName": "承曦グレイ",
     "charId": "char_1027_greyy2",
     "rarity": 5,
     "scReleaseDate": "2022-07-05",
@@ -1526,7 +1609,7 @@
     "tcReleaseDate": "2023-04-13",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -1535,8 +1618,9 @@
     "actLine": "摘取未来之人"
   },
   "char_4207_branch": {
-    "name": "折桠",
+    "scName": "折桠",
     "enName": "Vetochki",
+    "jpName": "ヴェトチキ",
     "charId": "char_4207_branch",
     "rarity": 5,
     "scReleaseDate": "2025-10-09",
@@ -1544,7 +1628,7 @@
     "tcReleaseDate": "2026-04-22",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1553,8 +1637,9 @@
     "actLine": "为了明日"
   },
   "char_140_whitew": {
-    "name": "拉普兰德",
+    "scName": "拉普兰德",
     "enName": "Lappland",
+    "jpName": "ラップランド",
     "charId": "char_140_whitew",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -1562,7 +1647,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -1573,8 +1658,9 @@
     "actLine": null
   },
   "char_433_windft": {
-    "name": "掠风",
+    "scName": "掠风",
     "enName": "Windflit",
+    "jpName": "ウインドフリット",
     "charId": "char_433_windft",
     "rarity": 5,
     "scReleaseDate": "2022-05-01",
@@ -1582,7 +1668,7 @@
     "tcReleaseDate": "2023-01-31",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -1591,8 +1677,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_112_siege": {
-    "name": "推进之王",
+    "scName": "推进之王",
     "enName": "Siege",
+    "jpName": "シージ",
     "charId": "char_112_siege",
     "rarity": 6,
     "scReleaseDate": "2019-04-30",
@@ -1600,7 +1687,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -1611,8 +1698,9 @@
     "actLine": null
   },
   "char_2012_typhon": {
-    "name": "提丰",
+    "scName": "提丰",
     "enName": "Typhon",
+    "jpName": "ティフォン",
     "charId": "char_2012_typhon",
     "rarity": 6,
     "scReleaseDate": "2023-07-06",
@@ -1620,7 +1708,7 @@
     "tcReleaseDate": "2024-06-13",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1629,8 +1717,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_1022_flwr2": {
-    "name": "撷英调香师",
+    "scName": "撷英调香师",
     "enName": "Perfumer the Distilled",
+    "jpName": "萃香パフューマー",
     "charId": "char_1022_flwr2",
     "rarity": 5,
     "scReleaseDate": "2026-01-09",
@@ -1638,7 +1727,7 @@
     "tcReleaseDate": "2026-07-22",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1647,8 +1736,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_4065_judge": {
-    "name": "斥罪",
+    "scName": "斥罪",
     "enName": "Penance",
+    "jpName": "ペナンス",
     "charId": "char_4065_judge",
     "rarity": 6,
     "scReleaseDate": "2022-11-01",
@@ -1656,7 +1746,7 @@
     "tcReleaseDate": "2023-09-12",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1665,8 +1755,9 @@
     "actLine": "七丘的新芽"
   },
   "char_1044_hsgma2": {
-    "name": "斩业星熊",
+    "scName": "斩业星熊",
     "enName": "Hoshiguma the Breacher",
+    "jpName": "斬業ホシグマ",
     "charId": "char_1044_hsgma2",
     "rarity": 6,
     "scReleaseDate": "2025-08-02",
@@ -1674,7 +1765,7 @@
     "tcReleaseDate": "2026-02-26",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -1685,8 +1776,9 @@
     "actLine": "夏日律动"
   },
   "char_294_ayer": {
-    "name": "断崖",
+    "scName": "断崖",
     "enName": "Ayerscarpe",
+    "jpName": "エアースカーペ",
     "charId": "char_294_ayer",
     "rarity": 5,
     "scReleaseDate": "2020-07-09",
@@ -1694,7 +1786,7 @@
     "tcReleaseDate": "2021-04-01",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -1703,8 +1795,9 @@
     "actLine": "高塔迷影"
   },
   "char_263_skadi": {
-    "name": "斯卡蒂",
+    "scName": "斯卡蒂",
     "enName": "Skadi",
+    "jpName": "スカジ",
     "charId": "char_263_skadi",
     "rarity": 6,
     "scReleaseDate": "2019-05-30",
@@ -1712,7 +1805,7 @@
     "tcReleaseDate": "2020-07-23",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -1723,8 +1816,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_1041_angel2": {
-    "name": "新约能天使",
+    "scName": "新约能天使",
     "enName": "Exusiai the New Covenant",
+    "jpName": "新約エクシア",
     "charId": "char_1041_angel2",
     "rarity": 6,
     "scReleaseDate": "2025-05-01",
@@ -1732,7 +1826,7 @@
     "tcReleaseDate": "2025-11-28",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -1743,8 +1837,9 @@
     "actLine": "那被祝福的"
   },
   "char_197_poca": {
-    "name": "早露",
+    "scName": "早露",
     "enName": "Rosa",
+    "jpName": "ロサ",
     "charId": "char_197_poca",
     "rarity": 6,
     "scReleaseDate": "2020-06-18",
@@ -1752,7 +1847,7 @@
     "tcReleaseDate": "2021-03-18",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -1761,8 +1856,9 @@
     "actLine": "燎原"
   },
   "char_4071_peper": {
-    "name": "明椒",
+    "scName": "明椒",
     "enName": "Paprika",
+    "jpName": "パプリカ",
     "charId": "char_4071_peper",
     "rarity": 5,
     "scReleaseDate": "2022-10-11",
@@ -1770,7 +1866,7 @@
     "tcReleaseDate": "2023-08-10",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1779,8 +1875,9 @@
     "actLine": "为了明日"
   },
   "char_274_astesi": {
-    "name": "星极",
+    "scName": "星极",
     "enName": "Astesia",
+    "jpName": "アステシア",
     "charId": "char_274_astesi",
     "rarity": 5,
     "scReleaseDate": "2019-09-10",
@@ -1788,7 +1885,7 @@
     "tcReleaseDate": "2020-09-30",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -1797,8 +1894,9 @@
     "actLine": "夏日律动"
   },
   "char_136_hsguma": {
-    "name": "星熊",
+    "scName": "星熊",
     "enName": "Hoshiguma",
+    "jpName": "ホシグマ",
     "charId": "char_136_hsguma",
     "rarity": 6,
     "scReleaseDate": "2019-04-30",
@@ -1806,7 +1904,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -1817,8 +1915,9 @@
     "actLine": null
   },
   "char_497_ctable": {
-    "name": "晓歌",
+    "scName": "晓歌",
     "enName": "Cantabile",
+    "jpName": "カンタービレ",
     "charId": "char_497_ctable",
     "rarity": 5,
     "scReleaseDate": "2022-08-11",
@@ -1826,7 +1925,7 @@
     "tcReleaseDate": "2023-06-20",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1835,8 +1934,9 @@
     "actLine": "夏日律动"
   },
   "char_145_prove": {
-    "name": "普罗旺斯",
+    "scName": "普罗旺斯",
     "enName": "Provence",
+    "jpName": "プロヴァンス",
     "charId": "char_145_prove",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -1844,7 +1944,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -1853,8 +1953,9 @@
     "actLine": null
   },
   "char_343_tknogi": {
-    "name": "月禾",
+    "scName": "月禾",
     "enName": "Tsukinogi",
+    "jpName": "ツキノギ",
     "charId": "char_343_tknogi",
     "rarity": 5,
     "scReleaseDate": "2020-06-02",
@@ -1862,7 +1963,7 @@
     "tcReleaseDate": "2021-04-15",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -1871,8 +1972,9 @@
     "actLine": null
   },
   "char_2027_wang": {
-    "name": "望",
+    "scName": "望",
     "enName": "Wang",
+    "jpName": "ウァン",
     "charId": "char_2027_wang",
     "rarity": 6,
     "scReleaseDate": "2026-02-10",
@@ -1880,7 +1982,7 @@
     "tcReleaseDate": "2026-08-18",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1889,8 +1991,9 @@
     "actLine": "岁岁今朝"
   },
   "char_4105_almond": {
-    "name": "杏仁",
+    "scName": "杏仁",
     "enName": "Almond",
+    "jpName": "アーモンド",
     "charId": "char_4105_almond",
     "rarity": 5,
     "scReleaseDate": "2023-09-05",
@@ -1898,7 +2001,7 @@
     "tcReleaseDate": "2024-08-08",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1907,8 +2010,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_422_aurora": {
-    "name": "极光",
+    "scName": "极光",
     "enName": "Aurora",
+    "jpName": "オーロラ",
     "charId": "char_422_aurora",
     "rarity": 5,
     "scReleaseDate": "2021-12-21",
@@ -1916,7 +2020,7 @@
     "tcReleaseDate": "2022-09-29",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -1925,8 +2029,9 @@
     "actLine": "山雪与银铁"
   },
   "char_401_elysm": {
-    "name": "极境",
+    "scName": "极境",
     "enName": "Elysium",
+    "jpName": "エリジウム",
     "charId": "char_401_elysm",
     "rarity": 5,
     "scReleaseDate": "2020-05-01",
@@ -1934,7 +2039,7 @@
     "tcReleaseDate": "2021-05-27",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -1943,8 +2048,9 @@
     "actLine": "为了明日"
   },
   "char_4080_lin": {
-    "name": "林",
+    "scName": "林",
     "enName": "Lin",
+    "jpName": "リン",
     "charId": "char_4080_lin",
     "rarity": 6,
     "scReleaseDate": "2023-01-17",
@@ -1952,7 +2058,7 @@
     "tcReleaseDate": "2023-11-21",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -1961,8 +2067,9 @@
     "actLine": "岁岁今朝"
   },
   "char_326_glacus": {
-    "name": "格劳克斯",
+    "scName": "格劳克斯",
     "enName": "Glaucus",
+    "jpName": "グラウコス",
     "charId": "char_326_glacus",
     "rarity": 5,
     "scReleaseDate": "2019-08-27",
@@ -1970,7 +2077,7 @@
     "tcReleaseDate": "2020-10-14",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -1979,8 +2086,9 @@
     "actLine": "夏日律动"
   },
   "char_473_mberry": {
-    "name": "桑葚",
+    "scName": "桑葚",
     "enName": "Mulberry",
+    "jpName": "マルベリー",
     "charId": "char_473_mberry",
     "rarity": 5,
     "scReleaseDate": "2021-09-17",
@@ -1988,7 +2096,7 @@
     "tcReleaseDate": "2022-06-21",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -1997,8 +2105,9 @@
     "actLine": "为了明日"
   },
   "char_242_otter": {
-    "name": "梅尔",
+    "scName": "梅尔",
     "enName": "Mayer",
+    "jpName": "メイヤー",
     "charId": "char_242_otter",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -2006,7 +2115,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -2015,8 +2124,9 @@
     "actLine": null
   },
   "char_293_thorns": {
-    "name": "棘刺",
+    "scName": "棘刺",
     "enName": "Thorns",
+    "jpName": "ソーンズ",
     "charId": "char_293_thorns",
     "rarity": 6,
     "scReleaseDate": "2020-08-11",
@@ -2024,7 +2134,7 @@
     "tcReleaseDate": "2021-06-10",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [
@@ -2035,8 +2145,9 @@
     "actLine": "夏日律动"
   },
   "char_416_zumama": {
-    "name": "森蚺",
+    "scName": "森蚺",
     "enName": "Eunectes",
+    "jpName": "ユーネクテス",
     "charId": "char_416_zumama",
     "rarity": 6,
     "scReleaseDate": "2020-08-25",
@@ -2044,7 +2155,7 @@
     "tcReleaseDate": "2021-06-24",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -2053,8 +2164,9 @@
     "actLine": "夏日律动"
   },
   "char_243_waaifu": {
-    "name": "槐琥",
+    "scName": "槐琥",
     "enName": "Waai Fu",
+    "jpName": "ワイフー",
     "charId": "char_243_waaifu",
     "rarity": 5,
     "scReleaseDate": "2019-11-19",
@@ -2062,7 +2174,7 @@
     "tcReleaseDate": "2020-11-19",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -2071,8 +2183,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_450_necras": {
-    "name": "死芒",
+    "scName": "死芒",
     "enName": "Necrass",
+    "jpName": "ネクラス",
     "charId": "char_450_necras",
     "rarity": 6,
     "scReleaseDate": "2025-03-07",
@@ -2080,7 +2193,7 @@
     "tcReleaseDate": "2025-10-17",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2089,8 +2202,9 @@
     "actLine": "方舟"
   },
   "char_437_mizuki": {
-    "name": "水月",
+    "scName": "水月",
     "enName": "Mizuki",
+    "jpName": "ミヅキ",
     "charId": "char_437_mizuki",
     "rarity": 6,
     "scReleaseDate": "2021-08-03",
@@ -2098,7 +2212,7 @@
     "tcReleaseDate": "2022-05-10",
     "obtainMethod": "中坚寻访 公开招募",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -2107,8 +2221,9 @@
     "actLine": "夏日律动"
   },
   "char_487_bobb": {
-    "name": "波卜",
+    "scName": "波卜",
     "enName": "Bobbing",
+    "jpName": "ボビング",
     "charId": "char_487_bobb",
     "rarity": 5,
     "scReleaseDate": "2024-10-09",
@@ -2116,7 +2231,7 @@
     "tcReleaseDate": "2025-07-18",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2125,8 +2240,9 @@
     "actLine": "方舟"
   },
   "char_311_mudrok": {
-    "name": "泥岩",
+    "scName": "泥岩",
     "enName": "Mudrock",
+    "jpName": "マドロック",
     "charId": "char_311_mudrok",
     "rarity": 6,
     "scReleaseDate": "2020-11-01",
@@ -2134,7 +2250,7 @@
     "tcReleaseDate": "2021-08-26",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -2143,8 +2259,9 @@
     "actLine": "为了明日"
   },
   "char_464_cement": {
-    "name": "洋灰",
+    "scName": "洋灰",
     "enName": "Cement",
+    "jpName": "セメント",
     "charId": "char_464_cement",
     "rarity": 5,
     "scReleaseDate": "2023-04-06",
@@ -2152,7 +2269,7 @@
     "tcReleaseDate": "2024-02-22",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2161,8 +2278,9 @@
     "actLine": "为了明日"
   },
   "char_4040_rockr": {
-    "name": "洛洛",
+    "scName": "洛洛",
     "enName": "Rockrock",
+    "jpName": "ロックロック",
     "charId": "char_4040_rockr",
     "rarity": 5,
     "scReleaseDate": "2022-04-14",
@@ -2170,7 +2288,7 @@
     "tcReleaseDate": "2023-01-17",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -2179,8 +2297,9 @@
     "actLine": "为了明日"
   },
   "char_1012_skadi2": {
-    "name": "浊心斯卡蒂",
+    "scName": "浊心斯卡蒂",
     "enName": "Skadi the Corrupting Heart",
+    "jpName": "濁心スカジ",
     "charId": "char_1012_skadi2",
     "rarity": 6,
     "scReleaseDate": "2021-05-01",
@@ -2188,7 +2307,7 @@
     "tcReleaseDate": "2022-01-26",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -2199,8 +2318,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_4079_haini": {
-    "name": "海霓",
+    "scName": "海霓",
     "enName": "Lucilla",
+    "jpName": "ルシーラ",
     "charId": "char_4079_haini",
     "rarity": 5,
     "scReleaseDate": "2024-06-05",
@@ -2208,7 +2328,7 @@
     "tcReleaseDate": "2025-03-31",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2217,8 +2337,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_1034_jesca2": {
-    "name": "涤火杰西卡",
+    "scName": "涤火杰西卡",
     "enName": "Jessica the Liberated",
+    "jpName": "滌火ジェシカ",
     "charId": "char_1034_jesca2",
     "rarity": 6,
     "scReleaseDate": "2023-09-05",
@@ -2226,7 +2347,7 @@
     "tcReleaseDate": "2024-08-08",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2235,8 +2356,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_4109_baslin": {
-    "name": "深律",
+    "scName": "深律",
     "enName": "Bassline",
+    "jpName": "ベースライン",
     "charId": "char_4109_baslin",
     "rarity": 5,
     "scReleaseDate": "2023-11-01",
@@ -2244,7 +2366,7 @@
     "tcReleaseDate": "2024-09-24",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2253,8 +2375,9 @@
     "actLine": "那被祝福的"
   },
   "char_4147_mitm": {
-    "name": "渡桥",
+    "scName": "渡桥",
     "enName": "Mitm",
+    "jpName": "ミトム",
     "charId": "char_4147_mitm",
     "rarity": 5,
     "scReleaseDate": "2024-07-09",
@@ -2262,7 +2385,7 @@
     "tcReleaseDate": "2025-05-15",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2271,8 +2394,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_4081_warmy": {
-    "name": "温米",
+    "scName": "温米",
     "enName": "Warmy",
+    "jpName": "ウォーミー",
     "charId": "char_4081_warmy",
     "rarity": 5,
     "scReleaseDate": "2024-01-09",
@@ -2280,7 +2404,7 @@
     "tcReleaseDate": "2024-12-04",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2289,8 +2413,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_400_weedy": {
-    "name": "温蒂",
+    "scName": "温蒂",
     "enName": "Weedy",
+    "jpName": "ウィーディ",
     "charId": "char_400_weedy",
     "rarity": 6,
     "scReleaseDate": "2020-05-01",
@@ -2298,7 +2423,7 @@
     "tcReleaseDate": "2021-05-27",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -2307,8 +2432,9 @@
     "actLine": "为了明日"
   },
   "char_377_gdglow": {
-    "name": "澄闪",
+    "scName": "澄闪",
     "enName": "Goldenglow",
+    "jpName": "ゴールデングロー",
     "charId": "char_377_gdglow",
     "rarity": 6,
     "scReleaseDate": "2022-02-15",
@@ -2316,7 +2442,7 @@
     "tcReleaseDate": "2022-11-17",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -2325,8 +2451,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_1024_hbisc2": {
-    "name": "濯尘芙蓉",
+    "scName": "濯尘芙蓉",
     "enName": "Hibiscus the Purifier",
+    "jpName": "濯塵ハイビスカス",
     "charId": "char_1024_hbisc2",
     "rarity": 5,
     "scReleaseDate": "2022-06-09",
@@ -2334,7 +2461,7 @@
     "tcReleaseDate": "2023-03-28",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -2343,8 +2470,9 @@
     "actLine": "高塔迷影"
   },
   "char_493_firwhl": {
-    "name": "火哨",
+    "scName": "火哨",
     "enName": "Firewhistle",
+    "jpName": "ファイヤーホイッスル",
     "charId": "char_493_firwhl",
     "rarity": 5,
     "scReleaseDate": "2023-01-17",
@@ -2352,7 +2480,7 @@
     "tcReleaseDate": "2023-11-21",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2361,8 +2489,9 @@
     "actLine": "岁岁今朝"
   },
   "char_367_swllow": {
-    "name": "灰喉",
+    "scName": "灰喉",
     "enName": "GreyThroat",
+    "jpName": "グレースロート",
     "charId": "char_367_swllow",
     "rarity": 5,
     "scReleaseDate": "2019-12-24",
@@ -2370,7 +2499,7 @@
     "tcReleaseDate": "2020-12-24",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -2379,8 +2508,9 @@
     "actLine": "为了明日"
   },
   "char_431_ashlok": {
-    "name": "灰毫",
+    "scName": "灰毫",
     "enName": "Ashlock",
+    "jpName": "アッシュロック",
     "charId": "char_431_ashlok",
     "rarity": 5,
     "scReleaseDate": "2021-10-15",
@@ -2388,7 +2518,7 @@
     "tcReleaseDate": "2022-07-20",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -2397,8 +2527,9 @@
     "actLine": "霓虹之下"
   },
   "char_206_gnosis": {
-    "name": "灵知",
+    "scName": "灵知",
     "enName": "Gnosis",
+    "jpName": "ノーシス",
     "charId": "char_206_gnosis",
     "rarity": 6,
     "scReleaseDate": "2021-12-21",
@@ -2406,7 +2537,7 @@
     "tcReleaseDate": "2022-09-29",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -2415,8 +2546,9 @@
     "actLine": "山雪与银铁"
   },
   "char_194_leto": {
-    "name": "烈夏",
+    "scName": "烈夏",
     "enName": "Leto",
+    "jpName": "リェータ",
     "charId": "char_194_leto",
     "rarity": 5,
     "scReleaseDate": "2023-12-05",
@@ -2424,7 +2556,7 @@
     "tcReleaseDate": "2024-10-31",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2433,8 +2565,9 @@
     "actLine": "山雪与银铁"
   },
   "char_1040_blaze2": {
-    "name": "烛煌",
+    "scName": "烛煌",
     "enName": "Blaze the Igniting Spark",
+    "jpName": "熾炎ブレイズ",
     "charId": "char_1040_blaze2",
     "rarity": 6,
     "scReleaseDate": "2025-01-22",
@@ -2442,7 +2575,7 @@
     "tcReleaseDate": "2025-09-16",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -2453,8 +2586,9 @@
     "actLine": "岁岁今朝"
   },
   "char_420_flamtl": {
-    "name": "焰尾",
+    "scName": "焰尾",
     "enName": "Flametail",
+    "jpName": "フレイムテイル",
     "charId": "char_420_flamtl",
     "rarity": 6,
     "scReleaseDate": "2021-11-01",
@@ -2462,7 +2596,7 @@
     "tcReleaseDate": "2022-08-04",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -2471,8 +2605,9 @@
     "actLine": "霓虹之下"
   },
   "char_1020_reed2": {
-    "name": "焰影苇草",
+    "scName": "焰影苇草",
     "enName": "Reed the Flame Shadow",
+    "jpName": "焔影リード",
     "charId": "char_1020_reed2",
     "rarity": 6,
     "scReleaseDate": "2022-12-15",
@@ -2480,7 +2615,7 @@
     "tcReleaseDate": "2023-10-19",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -2491,8 +2626,9 @@
     "actLine": "薪火重燃"
   },
   "char_017_huang": {
-    "name": "煌",
+    "scName": "煌",
     "enName": "Blaze",
+    "jpName": "ブレイズ",
     "charId": "char_017_huang",
     "rarity": 6,
     "scReleaseDate": "2019-12-24",
@@ -2500,7 +2636,7 @@
     "tcReleaseDate": "2020-12-24",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -2511,8 +2647,9 @@
     "actLine": "为了明日"
   },
   "char_363_toddi": {
-    "name": "熔泉",
+    "scName": "熔泉",
     "enName": "Toddifons",
+    "jpName": "トギフォンス",
     "charId": "char_363_toddi",
     "rarity": 5,
     "scReleaseDate": "2021-04-15",
@@ -2520,7 +2657,7 @@
     "tcReleaseDate": "2022-01-11",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -2529,8 +2666,9 @@
     "actLine": "方舟"
   },
   "char_415_flint": {
-    "name": "燧石",
+    "scName": "燧石",
     "enName": "Flint",
+    "jpName": "フリント",
     "charId": "char_415_flint",
     "rarity": 5,
     "scReleaseDate": "2020-08-25",
@@ -2538,7 +2676,7 @@
     "tcReleaseDate": "2021-06-24",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -2547,8 +2685,9 @@
     "actLine": "夏日律动"
   },
   "char_338_iris": {
-    "name": "爱丽丝",
+    "scName": "爱丽丝",
     "enName": "Iris",
+    "jpName": "アイリス",
     "charId": "char_338_iris",
     "rarity": 5,
     "scReleaseDate": "2021-01-05",
@@ -2556,7 +2695,7 @@
     "tcReleaseDate": "2021-11-11",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -2565,8 +2704,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_4164_tecno": {
-    "name": "特克诺",
+    "scName": "特克诺",
     "enName": "Tecno",
+    "jpName": "テクノ",
     "charId": "char_4164_tecno",
     "rarity": 5,
     "scReleaseDate": "2024-12-05",
@@ -2574,7 +2714,7 @@
     "tcReleaseDate": "2025-08-11",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2583,8 +2723,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_215_mantic": {
-    "name": "狮蝎",
+    "scName": "狮蝎",
     "enName": "Manticore",
+    "jpName": "マンティコア",
     "charId": "char_215_mantic",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -2592,7 +2733,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -2601,8 +2742,9 @@
     "actLine": null
   },
   "char_4064_mlynar": {
-    "name": "玛恩纳",
+    "scName": "玛恩纳",
     "enName": "Młynar",
+    "jpName": "ムリナール",
     "charId": "char_4064_mlynar",
     "rarity": 6,
     "scReleaseDate": "2022-09-08",
@@ -2610,7 +2752,7 @@
     "tcReleaseDate": "2023-05-16",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2619,8 +2761,9 @@
     "actLine": "霓虹之下"
   },
   "char_4006_melnte": {
-    "name": "玫拉",
+    "scName": "玫拉",
     "enName": "Melanite",
+    "jpName": "メラナイト",
     "charId": "char_4006_melnte",
     "rarity": 5,
     "scReleaseDate": "2023-05-01",
@@ -2628,7 +2771,7 @@
     "tcReleaseDate": "2024-03-19",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2637,8 +2780,9 @@
     "actLine": "摘取未来之人"
   },
   "char_4235_thumpy": {
-    "name": "珊比",
+    "scName": "珊比",
     "enName": "Thumpy",
+    "jpName": "Thumpy",
     "charId": "char_4235_thumpy",
     "rarity": 6,
     "scReleaseDate": "2026-08-01",
@@ -2646,7 +2790,7 @@
     "tcReleaseDate": null,
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2655,8 +2799,9 @@
     "actLine": "夏日律动"
   },
   "char_1033_swire2": {
-    "name": "琳琅诗怀雅",
+    "scName": "琳琅诗怀雅",
     "enName": "Swire the Elegant Wit",
+    "jpName": "琳琅スワイヤー",
     "charId": "char_1033_swire2",
     "rarity": 6,
     "scReleaseDate": "2023-08-01",
@@ -2664,7 +2809,7 @@
     "tcReleaseDate": "2024-06-27",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -2675,8 +2820,9 @@
     "actLine": "夏日律动"
   },
   "char_479_sleach": {
-    "name": "琴柳",
+    "scName": "琴柳",
     "enName": "Saileach",
+    "jpName": "サイラッハ",
     "charId": "char_479_sleach",
     "rarity": 6,
     "scReleaseDate": "2021-09-17",
@@ -2684,7 +2830,7 @@
     "tcReleaseDate": "2022-06-21",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -2693,8 +2839,9 @@
     "actLine": "为了明日"
   },
   "char_423_blemsh": {
-    "name": "瑕光",
+    "scName": "瑕光",
     "enName": "Blemishine",
+    "jpName": "ブレミシャイン",
     "charId": "char_423_blemsh",
     "rarity": 6,
     "scReleaseDate": "2020-10-15",
@@ -2702,7 +2849,7 @@
     "tcReleaseDate": "2021-08-12",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -2711,8 +2858,9 @@
     "actLine": "霓虹之下"
   },
   "char_204_platnm": {
-    "name": "白金",
+    "scName": "白金",
     "enName": "Platinum",
+    "jpName": "プラチナ",
     "charId": "char_204_platnm",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -2720,7 +2868,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -2729,8 +2877,9 @@
     "actLine": null
   },
   "char_4072_ironmn": {
-    "name": "白铁",
+    "scName": "白铁",
     "enName": "Stainless",
+    "jpName": "ステインレス",
     "charId": "char_4072_ironmn",
     "rarity": 6,
     "scReleaseDate": "2022-10-11",
@@ -2738,7 +2887,7 @@
     "tcReleaseDate": "2023-08-10",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2747,8 +2896,9 @@
     "actLine": "为了明日"
   },
   "char_128_plosis": {
-    "name": "白面鸮",
+    "scName": "白面鸮",
     "enName": "Ptilopsis",
+    "jpName": "フィリオプシス",
     "charId": "char_128_plosis",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -2756,7 +2906,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -2765,8 +2915,9 @@
     "actLine": null
   },
   "char_1026_gvial2": {
-    "name": "百炼嘉维尔",
+    "scName": "百炼嘉维尔",
     "enName": "Gavial the Invincible",
+    "jpName": "百錬ガヴィル",
     "charId": "char_1026_gvial2",
     "rarity": 6,
     "scReleaseDate": "2022-08-11",
@@ -2774,7 +2925,7 @@
     "tcReleaseDate": "2023-06-20",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2783,8 +2934,9 @@
     "actLine": "夏日律动"
   },
   "char_195_glassb": {
-    "name": "真理",
+    "scName": "真理",
     "enName": "Istina",
+    "jpName": "イースチナ",
     "charId": "char_195_glassb",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -2792,7 +2944,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -2801,8 +2953,9 @@
     "actLine": null
   },
   "char_4204_mantra": {
-    "name": "真言",
+    "scName": "真言",
     "enName": "Mantra",
+    "jpName": "マントラ",
     "charId": "char_4204_mantra",
     "rarity": 6,
     "scReleaseDate": "2025-10-09",
@@ -2810,7 +2963,7 @@
     "tcReleaseDate": "2026-04-22",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2819,8 +2972,9 @@
     "actLine": "为了明日"
   },
   "char_378_asbest": {
-    "name": "石棉",
+    "scName": "石棉",
     "enName": "Asbestos",
+    "jpName": "アスベストス",
     "charId": "char_378_asbest",
     "rarity": 5,
     "scReleaseDate": "2020-06-02",
@@ -2828,7 +2982,7 @@
     "tcReleaseDate": "2021-04-15",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -2837,8 +2991,9 @@
     "actLine": null
   },
   "char_101_sora": {
-    "name": "空",
+    "scName": "空",
     "enName": "Sora",
+    "jpName": "ソラ",
     "charId": "char_101_sora",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -2846,7 +3001,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -2855,8 +3010,9 @@
     "actLine": null
   },
   "char_332_archet": {
-    "name": "空弦",
+    "scName": "空弦",
     "enName": "Archetto",
+    "jpName": "アルケット",
     "charId": "char_332_archet",
     "rarity": 6,
     "scReleaseDate": "2021-01-05",
@@ -2864,7 +3020,7 @@
     "tcReleaseDate": "2021-11-11",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -2873,8 +3029,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_4015_spuria": {
-    "name": "空构",
+    "scName": "空构",
     "enName": "Spuria",
+    "jpName": "スプリア",
     "charId": "char_4015_spuria",
     "rarity": 5,
     "scReleaseDate": "2023-06-08",
@@ -2882,7 +3039,7 @@
     "tcReleaseDate": "2024-04-25",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -2891,8 +3048,9 @@
     "actLine": "那被祝福的"
   },
   "char_436_whispr": {
-    "name": "絮雨",
+    "scName": "絮雨",
     "enName": "Whisperain",
+    "jpName": "ウィスパーレイン",
     "charId": "char_436_whispr",
     "rarity": 5,
     "scReleaseDate": "2020-11-01",
@@ -2900,7 +3058,7 @@
     "tcReleaseDate": "2021-08-26",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-02-11",
     "alter": [],
@@ -2909,8 +3067,9 @@
     "actLine": "为了明日"
   },
   "char_144_red": {
-    "name": "红",
+    "scName": "红",
     "enName": "Projekt Red",
+    "jpName": "レッド",
     "charId": "char_144_red",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -2918,7 +3077,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -2927,8 +3086,9 @@
     "actLine": null
   },
   "char_1016_agoat2": {
-    "name": "纯烬艾雅法拉",
+    "scName": "纯烬艾雅法拉",
     "enName": "Eyjafjalla the Hvít Aska",
+    "jpName": "純燼エイヤフィヤトラ",
     "charId": "char_1016_agoat2",
     "rarity": 6,
     "scReleaseDate": "2023-08-01",
@@ -2936,7 +3096,7 @@
     "tcReleaseDate": "2024-06-27",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -2947,8 +3107,9 @@
     "actLine": "夏日律动"
   },
   "char_478_kirara": {
-    "name": "绮良",
+    "scName": "绮良",
     "enName": "Kirara",
+    "jpName": "キララ",
     "charId": "char_478_kirara",
     "rarity": 5,
     "scReleaseDate": "2021-06-01",
@@ -2956,7 +3117,7 @@
     "tcReleaseDate": "2022-03-08",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -2965,8 +3126,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_1035_wisdel": {
-    "name": "维什戴尔",
+    "scName": "维什戴尔",
     "enName": "Wiš'adel",
+    "jpName": "ウィシャデル",
     "charId": "char_1035_wisdel",
     "rarity": 6,
     "scReleaseDate": "2024-05-01",
@@ -2974,7 +3136,7 @@
     "tcReleaseDate": "2025-03-06",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -2985,8 +3147,9 @@
     "actLine": "为了明日"
   },
   "char_1019_siege2": {
-    "name": "维娜·维多利亚",
+    "scName": "维娜·维多利亚",
     "enName": "Vina Victoria",
+    "jpName": "ヴィーナ・ヴィクトリア",
     "charId": "char_1019_siege2",
     "rarity": 6,
     "scReleaseDate": "2024-10-09",
@@ -2994,7 +3157,7 @@
     "tcReleaseDate": "2025-07-18",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -3005,8 +3168,9 @@
     "actLine": "方舟"
   },
   "char_1028_texas2": {
-    "name": "缄默德克萨斯",
+    "scName": "缄默德克萨斯",
     "enName": "Texas the Omertosa",
+    "jpName": "血掟テキサス",
     "charId": "char_1028_texas2",
     "rarity": 6,
     "scReleaseDate": "2022-11-01",
@@ -3014,7 +3178,7 @@
     "tcReleaseDate": "2023-09-12",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -3025,8 +3189,9 @@
     "actLine": "七丘的新芽"
   },
   "char_4056_titi": {
-    "name": "缇缇",
+    "scName": "缇缇",
     "enName": "Titi",
+    "jpName": "ティティ",
     "charId": "char_4056_titi",
     "rarity": 6,
     "scReleaseDate": "2026-01-09",
@@ -3034,7 +3199,7 @@
     "tcReleaseDate": "2026-07-22",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3043,8 +3208,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_249_mlyss": {
-    "name": "缪尔赛思",
+    "scName": "缪尔赛思",
     "enName": "Muelsyse",
+    "jpName": "ミュルジス",
     "charId": "char_249_mlyss",
     "rarity": 6,
     "scReleaseDate": "2023-05-01",
@@ -3052,7 +3218,7 @@
     "tcReleaseDate": "2024-03-19",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3061,8 +3227,9 @@
     "actLine": "摘取未来之人"
   },
   "char_421_crow": {
-    "name": "羽毛笔",
+    "scName": "羽毛笔",
     "enName": "La Pluma",
+    "jpName": "ラ・プルマ",
     "charId": "char_421_crow",
     "rarity": 5,
     "scReleaseDate": "2021-08-03",
@@ -3070,7 +3237,7 @@
     "tcReleaseDate": "2022-05-10",
     "obtainMethod": "中坚寻访 公开招募",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -3079,8 +3246,9 @@
     "actLine": "夏日律动"
   },
   "char_1014_nearl2": {
-    "name": "耀骑士临光",
+    "scName": "耀骑士临光",
     "enName": "Nearl the Radiant Knight",
+    "jpName": "耀騎士ニアール",
     "charId": "char_1014_nearl2",
     "rarity": 6,
     "scReleaseDate": "2021-11-01",
@@ -3088,7 +3256,7 @@
     "tcReleaseDate": "2022-08-04",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -3099,8 +3267,9 @@
     "actLine": "霓虹之下"
   },
   "char_322_lmlee": {
-    "name": "老鲤",
+    "scName": "老鲤",
     "enName": "Lee",
+    "jpName": "リー",
     "charId": "char_322_lmlee",
     "rarity": 6,
     "scReleaseDate": "2022-01-25",
@@ -3108,7 +3277,7 @@
     "tcReleaseDate": "2022-10-27",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -3117,8 +3286,9 @@
     "actLine": "岁岁今朝"
   },
   "char_4187_graceb": {
-    "name": "聆音",
+    "scName": "聆音",
     "enName": "Gracebearer",
+    "jpName": "グレースベアラー",
     "charId": "char_4187_graceb",
     "rarity": 5,
     "scReleaseDate": "2025-05-01",
@@ -3126,7 +3296,7 @@
     "tcReleaseDate": "2025-11-28",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3135,8 +3305,9 @@
     "actLine": "那被祝福的"
   },
   "char_103_angel": {
-    "name": "能天使",
+    "scName": "能天使",
     "enName": "Exusiai",
+    "jpName": "エクシア",
     "charId": "char_103_angel",
     "rarity": 6,
     "scReleaseDate": "2019-04-30",
@@ -3144,7 +3315,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -3155,8 +3326,9 @@
     "actLine": null
   },
   "char_4009_irene": {
-    "name": "艾丽妮",
+    "scName": "艾丽妮",
     "enName": "Irene",
+    "jpName": "アイリーニ",
     "charId": "char_4009_irene",
     "rarity": 6,
     "scReleaseDate": "2022-05-01",
@@ -3164,7 +3336,7 @@
     "tcReleaseDate": "2023-01-31",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -3173,8 +3345,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_180_amgoat": {
-    "name": "艾雅法拉",
+    "scName": "艾雅法拉",
     "enName": "Eyjafjalla",
+    "jpName": "エイヤフィヤトラ",
     "charId": "char_180_amgoat",
     "rarity": 6,
     "scReleaseDate": "2019-04-30",
@@ -3182,7 +3355,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -3193,8 +3366,9 @@
     "actLine": null
   },
   "char_106_franka": {
-    "name": "芙兰卡",
+    "scName": "芙兰卡",
     "enName": "Franka",
+    "jpName": "フランカ",
     "charId": "char_106_franka",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -3202,7 +3376,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -3211,8 +3385,9 @@
     "actLine": null
   },
   "char_261_sddrag": {
-    "name": "苇草",
+    "scName": "苇草",
     "enName": "Reed",
+    "jpName": "リード",
     "charId": "char_261_sddrag",
     "rarity": 5,
     "scReleaseDate": "2019-12-10",
@@ -3220,7 +3395,7 @@
     "tcReleaseDate": "2021-01-07",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -3231,8 +3406,9 @@
     "actLine": null
   },
   "char_1038_whitw2": {
-    "name": "荒芜拉普兰德",
+    "scName": "荒芜拉普兰德",
     "enName": "Lappland the Decadenza",
+    "jpName": "荒蕪ラップランド",
     "charId": "char_1038_whitw2",
     "rarity": 6,
     "scReleaseDate": "2024-11-01",
@@ -3240,7 +3416,7 @@
     "tcReleaseDate": "2025-06-27",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -3251,8 +3427,9 @@
     "actLine": "七丘的新芽"
   },
   "char_213_mostma": {
-    "name": "莫斯提马",
+    "scName": "莫斯提马",
     "enName": "Mostima",
+    "jpName": "モスティマ",
     "charId": "char_213_mostma",
     "rarity": 6,
     "scReleaseDate": "2019-11-19",
@@ -3260,7 +3437,7 @@
     "tcReleaseDate": "2020-11-19",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -3269,8 +3446,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_4117_ray": {
-    "name": "莱伊",
+    "scName": "莱伊",
     "enName": "Ray",
+    "jpName": "レイ",
     "charId": "char_4117_ray",
     "rarity": 6,
     "scReleaseDate": "2024-01-09",
@@ -3278,7 +3456,7 @@
     "tcReleaseDate": "2024-12-04",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3287,8 +3465,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_373_lionhd": {
-    "name": "莱恩哈特",
+    "scName": "莱恩哈特",
     "enName": "Leonhardt",
+    "jpName": "レオンハルト",
     "charId": "char_373_lionhd",
     "rarity": 5,
     "scReleaseDate": "2020-06-18",
@@ -3296,7 +3475,7 @@
     "tcReleaseDate": "2021-03-18",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -3305,8 +3484,9 @@
     "actLine": "燎原"
   },
   "char_300_phenxi": {
-    "name": "菲亚梅塔",
+    "scName": "菲亚梅塔",
     "enName": "Fiammetta",
+    "jpName": "フィアメッタ",
     "charId": "char_300_phenxi",
     "rarity": 6,
     "scReleaseDate": "2022-03-15",
@@ -3314,7 +3494,7 @@
     "tcReleaseDate": "2022-12-29",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -3323,8 +3503,9 @@
     "actLine": "那被祝福的"
   },
   "char_4191_tippi": {
-    "name": "蒂比",
+    "scName": "蒂比",
     "enName": "Tippi",
+    "jpName": "ティッピ",
     "charId": "char_4191_tippi",
     "rarity": 5,
     "scReleaseDate": "2025-06-05",
@@ -3332,7 +3513,7 @@
     "tcReleaseDate": "2025-12-29",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3341,8 +3522,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_129_bluep": {
-    "name": "蓝毒",
+    "scName": "蓝毒",
     "enName": "Blue Poison",
+    "jpName": "アズリウス",
     "charId": "char_129_bluep",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -3350,7 +3532,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -3359,8 +3541,9 @@
     "actLine": null
   },
   "char_4193_lemuen": {
-    "name": "蕾缪安",
+    "scName": "蕾缪安",
     "enName": "Lemuen",
+    "jpName": "レミュアン",
     "charId": "char_4193_lemuen",
     "rarity": 6,
     "scReleaseDate": "2025-05-01",
@@ -3368,7 +3551,7 @@
     "tcReleaseDate": "2025-11-28",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3377,8 +3560,9 @@
     "actLine": "那被祝福的"
   },
   "char_4098_vvana": {
-    "name": "薇薇安娜",
+    "scName": "薇薇安娜",
     "enName": "Viviana",
+    "jpName": "ヴィヴィアナ",
     "charId": "char_4098_vvana",
     "rarity": 6,
     "scReleaseDate": "2023-11-01",
@@ -3386,7 +3570,7 @@
     "tcReleaseDate": "2024-09-24",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3395,8 +3579,9 @@
     "actLine": "那被祝福的"
   },
   "char_489_serum": {
-    "name": "蚀清",
+    "scName": "蚀清",
     "enName": "Corroserum",
+    "jpName": "コロセラム",
     "charId": "char_489_serum",
     "rarity": 5,
     "scReleaseDate": "2021-11-01",
@@ -3404,7 +3589,7 @@
     "tcReleaseDate": "2022-08-04",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -3413,8 +3598,9 @@
     "actLine": "霓虹之下"
   },
   "char_344_beewax": {
-    "name": "蜜蜡",
+    "scName": "蜜蜡",
     "enName": "Beeswax",
+    "jpName": "ビーズワクス",
     "charId": "char_344_beewax",
     "rarity": 5,
     "scReleaseDate": "2020-07-28",
@@ -3422,7 +3608,7 @@
     "tcReleaseDate": "2021-04-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -3431,8 +3617,9 @@
     "actLine": null
   },
   "char_4140_lasher": {
-    "name": "衡沙",
+    "scName": "衡沙",
     "enName": "Sand Reckoner",
+    "jpName": "サンドレコナー",
     "charId": "char_4140_lasher",
     "rarity": 5,
     "scReleaseDate": "2024-08-01",
@@ -3440,7 +3627,7 @@
     "tcReleaseDate": "2025-04-24",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3449,8 +3636,9 @@
     "actLine": "夏日律动"
   },
   "char_4155_talr": {
-    "name": "裁度",
+    "scName": "裁度",
     "enName": "Figurino",
+    "jpName": "フィグリーノ",
     "charId": "char_4155_talr",
     "rarity": 5,
     "scReleaseDate": "2024-11-01",
@@ -3458,7 +3646,7 @@
     "tcReleaseDate": "2025-06-27",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3467,8 +3655,9 @@
     "actLine": "七丘的新芽"
   },
   "char_4225_tanya": {
-    "name": "裂响",
+    "scName": "裂响",
     "enName": "Crackborne",
+    "jpName": "Crackborne",
     "charId": "char_4225_tanya",
     "rarity": 5,
     "scReleaseDate": "2026-05-01",
@@ -3476,7 +3665,7 @@
     "tcReleaseDate": null,
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3485,8 +3674,9 @@
     "actLine": "为了明日"
   },
   "char_308_swire": {
-    "name": "诗怀雅",
+    "scName": "诗怀雅",
     "enName": "Swire",
+    "jpName": "スワイヤー",
     "charId": "char_308_swire",
     "rarity": 5,
     "scReleaseDate": "2019-07-09",
@@ -3494,7 +3684,7 @@
     "tcReleaseDate": "2020-08-13",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -3505,8 +3695,9 @@
     "actLine": null
   },
   "char_4173_nowell": {
-    "name": "诺威尔",
+    "scName": "诺威尔",
     "enName": "Nowell",
+    "jpName": "ノウエル",
     "charId": "char_4173_nowell",
     "rarity": 5,
     "scReleaseDate": "2025-02-14",
@@ -3514,7 +3705,7 @@
     "tcReleaseDate": "2025-08-26",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3523,8 +3714,9 @@
     "actLine": "方舟"
   },
   "char_4229_aphris": {
-    "name": "谬因",
+    "scName": "谬因",
     "enName": "Aphrissa",
+    "jpName": "Aphrissa",
     "charId": "char_4229_aphris",
     "rarity": 6,
     "scReleaseDate": "2026-07-10",
@@ -3532,7 +3724,7 @@
     "tcReleaseDate": null,
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3541,8 +3733,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_4037_demetr": {
-    "name": "贝洛内",
+    "scName": "贝洛内",
     "enName": "Bellone",
+    "jpName": "ベッローネ",
     "charId": "char_4037_demetr",
     "rarity": 6,
     "scReleaseDate": "2026-03-10",
@@ -3550,7 +3743,7 @@
     "tcReleaseDate": "2026-09-14",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3559,8 +3752,9 @@
     "actLine": "七丘的新芽"
   },
   "char_349_chiave": {
-    "name": "贾维",
+    "scName": "贾维",
     "enName": "Chiave",
+    "jpName": "キアーベ",
     "charId": "char_349_chiave",
     "rarity": 5,
     "scReleaseDate": "2020-07-28",
@@ -3568,7 +3762,7 @@
     "tcReleaseDate": "2021-04-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -3577,8 +3771,9 @@
     "actLine": null
   },
   "char_475_akafyu": {
-    "name": "赤冬",
+    "scName": "赤冬",
     "enName": "Akafuyu",
+    "jpName": "アカフユ",
     "charId": "char_475_akafyu",
     "rarity": 5,
     "scReleaseDate": "2021-05-01",
@@ -3586,7 +3781,7 @@
     "tcReleaseDate": "2022-01-26",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2024-11-22",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -3595,8 +3790,9 @@
     "actLine": "自海渊的一瞥"
   },
   "char_1050_chen3": {
-    "name": "赤刃明霄陈",
+    "scName": "赤刃明霄陈",
     "enName": "Ch'en the Dawnstreak",
+    "jpName": "赤刃明霄チェン",
     "charId": "char_1050_chen3",
     "rarity": 6,
     "scReleaseDate": "2026-02-10",
@@ -3604,7 +3800,7 @@
     "tcReleaseDate": "2026-08-18",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -3616,8 +3812,9 @@
     "actLine": "岁岁今朝"
   },
   "char_4088_hodrer": {
-    "name": "赫德雷",
+    "scName": "赫德雷",
     "enName": "Hoederer",
+    "jpName": "ヘドリー",
     "charId": "char_4088_hodrer",
     "rarity": 6,
     "scReleaseDate": "2023-10-08",
@@ -3625,7 +3822,7 @@
     "tcReleaseDate": "2024-09-05",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3634,8 +3831,9 @@
     "actLine": "为了明日"
   },
   "char_188_helage": {
-    "name": "赫拉格",
+    "scName": "赫拉格",
     "enName": "Hellagur",
+    "jpName": "ヘラグ",
     "charId": "char_188_helage",
     "rarity": 6,
     "scReleaseDate": "2019-09-10",
@@ -3643,7 +3841,7 @@
     "tcReleaseDate": "2020-09-30",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -3652,8 +3850,9 @@
     "actLine": "夏日律动"
   },
   "char_108_silent": {
-    "name": "赫默",
+    "scName": "赫默",
     "enName": "Silence",
+    "jpName": "サイレンス",
     "charId": "char_108_silent",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -3661,7 +3860,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -3670,8 +3869,9 @@
     "actLine": null
   },
   "char_430_fartth": {
-    "name": "远牙",
+    "scName": "远牙",
     "enName": "Fartooth",
+    "jpName": "ファートゥース",
     "charId": "char_430_fartth",
     "rarity": 6,
     "scReleaseDate": "2021-10-15",
@@ -3679,7 +3879,7 @@
     "tcReleaseDate": "2022-07-20",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2025-03-27",
+    "scClassicDate": "2025-03-27",
     "enClassicDate": "2025-12-05",
     "tcClassicDate": "2025-11-18",
     "alter": [],
@@ -3688,8 +3888,9 @@
     "actLine": "霓虹之下"
   },
   "char_391_rosmon": {
-    "name": "迷迭香",
+    "scName": "迷迭香",
     "enName": "Rosmontis",
+    "jpName": "ロスモンティス",
     "charId": "char_391_rosmon",
     "rarity": 6,
     "scReleaseDate": "2020-11-01",
@@ -3697,7 +3898,7 @@
     "tcReleaseDate": "2021-08-26",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3706,8 +3907,9 @@
     "actLine": "为了明日"
   },
   "char_279_excu": {
-    "name": "送葬人",
+    "scName": "送葬人",
     "enName": "Executor",
+    "jpName": "イグゼキュター",
     "charId": "char_279_excu",
     "rarity": 5,
     "scReleaseDate": "2019-10-15",
@@ -3715,7 +3917,7 @@
     "tcReleaseDate": "2020-09-10",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -3726,8 +3928,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_4133_logos": {
-    "name": "逻各斯",
+    "scName": "逻各斯",
     "enName": "Logos",
+    "jpName": "ロゴス",
     "charId": "char_4133_logos",
     "rarity": 6,
     "scReleaseDate": "2024-05-01",
@@ -3735,7 +3938,7 @@
     "tcReleaseDate": "2025-03-06",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3744,8 +3947,9 @@
     "actLine": "为了明日"
   },
   "char_4202_haruka": {
-    "name": "遥",
+    "scName": "遥",
     "enName": "Haruka",
+    "jpName": "ハルカ",
     "charId": "char_4202_haruka",
     "rarity": 6,
     "scReleaseDate": "2025-08-02",
@@ -3753,7 +3957,7 @@
     "tcReleaseDate": "2026-02-26",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3762,8 +3966,9 @@
     "actLine": "夏日律动"
   },
   "char_1042_phatm2": {
-    "name": "酒神",
+    "scName": "酒神",
     "enName": "Tragodia",
+    "jpName": "トラゴーディア",
     "charId": "char_1042_phatm2",
     "rarity": 6,
     "scReleaseDate": "2025-06-05",
@@ -3771,7 +3976,7 @@
     "tcReleaseDate": "2025-12-29",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [
@@ -3782,8 +3987,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_2024_chyue": {
-    "name": "重岳",
+    "scName": "重岳",
     "enName": "Chongyue",
+    "jpName": "チョンユエ",
     "charId": "char_2024_chyue",
     "rarity": 6,
     "scReleaseDate": "2023-01-17",
@@ -3791,7 +3997,7 @@
     "tcReleaseDate": "2023-11-21",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3800,8 +4006,9 @@
     "actLine": "岁岁今朝"
   },
   "char_4171_wulfen": {
-    "name": "钼铅",
+    "scName": "钼铅",
     "enName": "Wulfenite",
+    "jpName": "ウルフェナイト",
     "charId": "char_4171_wulfen",
     "rarity": 5,
     "scReleaseDate": "2025-03-07",
@@ -3809,7 +4016,7 @@
     "tcReleaseDate": "2025-10-17",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3818,8 +4025,9 @@
     "actLine": "方舟"
   },
   "char_358_lisa": {
-    "name": "铃兰",
+    "scName": "铃兰",
     "enName": "Suzuran",
+    "jpName": "スズラン",
     "charId": "char_358_lisa",
     "rarity": 6,
     "scReleaseDate": "2020-07-09",
@@ -3827,7 +4035,7 @@
     "tcReleaseDate": "2021-04-01",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2024-04-11",
+    "scClassicDate": "2024-04-11",
     "enClassicDate": "2023-10-27",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -3836,8 +4044,9 @@
     "actLine": "高塔迷影"
   },
   "char_4083_chimes": {
-    "name": "铎铃",
+    "scName": "铎铃",
     "enName": "Wind Chimes",
+    "jpName": "ウィンドチャイム",
     "charId": "char_4083_chimes",
     "rarity": 5,
     "scReleaseDate": "2023-02-14",
@@ -3845,7 +4054,7 @@
     "tcReleaseDate": "2024-01-09",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3854,8 +4063,9 @@
     "actLine": "岁岁今朝"
   },
   "char_172_svrash": {
-    "name": "银灰",
+    "scName": "银灰",
     "enName": "SilverAsh",
+    "jpName": "シルバーアッシュ",
     "charId": "char_172_svrash",
     "rarity": 6,
     "scReleaseDate": "2019-04-30",
@@ -3863,7 +4073,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -3874,8 +4084,9 @@
     "actLine": null
   },
   "char_4116_blkkgt": {
-    "name": "锏",
+    "scName": "锏",
     "enName": "Degenbrecher",
+    "jpName": "デーゲンブレヒャー",
     "charId": "char_4116_blkkgt",
     "rarity": 6,
     "scReleaseDate": "2023-12-05",
@@ -3883,7 +4094,7 @@
     "tcReleaseDate": "2024-10-31",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3892,8 +4103,9 @@
     "actLine": "山雪与银铁"
   },
   "char_147_shining": {
-    "name": "闪灵",
+    "scName": "闪灵",
     "enName": "Shining",
+    "jpName": "シャイニング",
     "charId": "char_147_shining",
     "rarity": 6,
     "scReleaseDate": "2019-04-30",
@@ -3901,7 +4113,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -3910,8 +4122,9 @@
     "actLine": null
   },
   "char_225_haak": {
-    "name": "阿",
+    "scName": "阿",
     "enName": "Aak",
+    "jpName": "ア",
     "charId": "char_225_haak",
     "rarity": 6,
     "scReleaseDate": "2020-01-16",
@@ -3919,7 +4132,7 @@
     "tcReleaseDate": "2021-02-04",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -3928,8 +4141,9 @@
     "actLine": "岁岁今朝"
   },
   "char_4178_alanna": {
-    "name": "阿兰娜",
+    "scName": "阿兰娜",
     "enName": "Alanna",
+    "jpName": "アランナ",
     "charId": "char_4178_alanna",
     "rarity": 5,
     "scReleaseDate": "2025-04-07",
@@ -3937,7 +4151,7 @@
     "tcReleaseDate": "2025-10-31",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3946,8 +4160,9 @@
     "actLine": "为了明日"
   },
   "char_4132_ascln": {
-    "name": "阿斯卡纶",
+    "scName": "阿斯卡纶",
     "enName": "Ascalon",
+    "jpName": "アスカロン",
     "charId": "char_4132_ascln",
     "rarity": 6,
     "scReleaseDate": "2024-04-11",
@@ -3955,7 +4170,7 @@
     "tcReleaseDate": "2025-02-11",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3964,8 +4179,9 @@
     "actLine": "方舟"
   },
   "char_446_aroma": {
-    "name": "阿罗玛",
+    "scName": "阿罗玛",
     "enName": "Aroma",
+    "jpName": "アロマ",
     "charId": "char_446_aroma",
     "rarity": 5,
     "scReleaseDate": "2024-04-11",
@@ -3973,7 +4189,7 @@
     "tcReleaseDate": "2025-02-11",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -3982,8 +4198,9 @@
     "actLine": "方舟"
   },
   "char_010_chen": {
-    "name": "陈",
+    "scName": "陈",
     "enName": "Ch'en",
+    "jpName": "チェン",
     "charId": "char_010_chen",
     "rarity": 6,
     "scReleaseDate": "2019-07-09",
@@ -3991,7 +4208,7 @@
     "tcReleaseDate": "2020-08-13",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [
@@ -4003,8 +4220,9 @@
     "actLine": null
   },
   "char_219_meteo": {
-    "name": "陨星",
+    "scName": "陨星",
     "enName": "Meteorite",
+    "jpName": "メテオリーテ",
     "charId": "char_219_meteo",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -4012,7 +4230,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -4021,8 +4239,9 @@
     "actLine": null
   },
   "char_4010_etlchi": {
-    "name": "隐德来希",
+    "scName": "隐德来希",
     "enName": "Entelechia",
+    "jpName": "エンテレケイア",
     "charId": "char_4010_etlchi",
     "rarity": 6,
     "scReleaseDate": "2025-02-14",
@@ -4030,7 +4249,7 @@
     "tcReleaseDate": "2025-08-26",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -4039,8 +4258,9 @@
     "actLine": "方舟"
   },
   "char_4211_snhunt": {
-    "name": "雪猎",
+    "scName": "雪猎",
     "enName": "Snow Hunter",
+    "jpName": "スノーハンター",
     "charId": "char_4211_snhunt",
     "rarity": 5,
     "scReleaseDate": "2025-11-01",
@@ -4048,7 +4268,7 @@
     "tcReleaseDate": "2026-06-10",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -4057,8 +4277,9 @@
     "actLine": "山雪与银铁"
   },
   "char_107_liskam": {
-    "name": "雷蛇",
+    "scName": "雷蛇",
     "enName": "Liskarm",
+    "jpName": "リスカム",
     "charId": "char_107_liskam",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -4066,7 +4287,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -4075,8 +4296,9 @@
     "actLine": null
   },
   "char_4027_heyak": {
-    "name": "霍尔海雅",
+    "scName": "霍尔海雅",
     "enName": "Ho'olheyak",
+    "jpName": "ホルハイヤ",
     "charId": "char_4027_heyak",
     "rarity": 6,
     "scReleaseDate": "2023-05-01",
@@ -4084,7 +4306,7 @@
     "tcReleaseDate": "2024-03-19",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -4093,8 +4315,9 @@
     "actLine": "摘取未来之人"
   },
   "char_488_buildr": {
-    "name": "青枳",
+    "scName": "青枳",
     "enName": "Poncirus",
+    "jpName": "ポンシラス",
     "charId": "char_488_buildr",
     "rarity": 5,
     "scReleaseDate": "2023-08-01",
@@ -4102,7 +4325,7 @@
     "tcReleaseDate": "2024-06-27",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -4111,8 +4334,9 @@
     "actLine": "夏日律动"
   },
   "char_4016_kazema": {
-    "name": "风丸",
+    "scName": "风丸",
     "enName": "Kazemaru",
+    "jpName": "カゼマル",
     "charId": "char_4016_kazema",
     "rarity": 5,
     "scReleaseDate": "2022-03-15",
@@ -4120,7 +4344,7 @@
     "tcReleaseDate": "2022-12-29",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],
@@ -4129,8 +4353,9 @@
     "actLine": "那被祝福的"
   },
   "char_222_bpipe": {
-    "name": "风笛",
+    "scName": "风笛",
     "enName": "Bagpipe",
+    "jpName": "バグパイプ",
     "charId": "char_222_bpipe",
     "rarity": 6,
     "scReleaseDate": "2020-03-17",
@@ -4138,7 +4363,7 @@
     "tcReleaseDate": "2021-03-04",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -4147,8 +4372,9 @@
     "actLine": null
   },
   "char_4222_taraxa": {
-    "name": "风絮",
+    "scName": "风絮",
     "enName": "Taraxacum",
+    "jpName": "タラクサカム",
     "charId": "char_4222_taraxa",
     "rarity": 5,
     "scReleaseDate": "2026-02-10",
@@ -4156,7 +4382,7 @@
     "tcReleaseDate": "2026-08-18",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -4165,8 +4391,9 @@
     "actLine": "岁岁今朝"
   },
   "char_241_panda": {
-    "name": "食铁兽",
+    "scName": "食铁兽",
     "enName": "FEater",
+    "jpName": "エフイーター",
     "charId": "char_241_panda",
     "rarity": 5,
     "scReleaseDate": "2019-04-30",
@@ -4174,7 +4401,7 @@
     "tcReleaseDate": "2020-06-29",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -4183,8 +4410,9 @@
     "actLine": null
   },
   "char_4055_bgsnow": {
-    "name": "鸿雪",
+    "scName": "鸿雪",
     "enName": "Pozëmka",
+    "jpName": "パゼオンカ",
     "charId": "char_4055_bgsnow",
     "rarity": 6,
     "scReleaseDate": "2022-08-11",
@@ -4192,7 +4420,7 @@
     "tcReleaseDate": "2023-06-20",
     "obtainMethod": "标准寻访",
     "isLimited": false,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -4201,8 +4429,9 @@
     "actLine": "夏日律动"
   },
   "char_248_mgllan": {
-    "name": "麦哲伦",
+    "scName": "麦哲伦",
     "enName": "Magallan",
+    "jpName": "マゼラン",
     "charId": "char_248_mgllan",
     "rarity": 6,
     "scReleaseDate": "2019-10-15",
@@ -4210,7 +4439,7 @@
     "tcReleaseDate": "2020-09-10",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -4219,8 +4448,9 @@
     "actLine": "泰拉奇谈"
   },
   "char_2025_shu": {
-    "name": "黍",
+    "scName": "黍",
     "enName": "Shu",
+    "jpName": "シュウ",
     "charId": "char_2025_shu",
     "rarity": 6,
     "scReleaseDate": "2024-02-01",
@@ -4228,7 +4458,7 @@
     "tcReleaseDate": "2025-01-20",
     "obtainMethod": "限定寻访",
     "isLimited": true,
-    "classicDate": null,
+    "scClassicDate": null,
     "enClassicDate": null,
     "tcClassicDate": null,
     "alter": [],
@@ -4237,8 +4467,9 @@
     "actLine": "岁岁今朝"
   },
   "char_340_shwaz": {
-    "name": "黑",
+    "scName": "黑",
     "enName": "Schwarz",
+    "jpName": "シュヴァルツ",
     "charId": "char_340_shwaz",
     "rarity": 6,
     "scReleaseDate": "2019-08-27",
@@ -4246,7 +4477,7 @@
     "tcReleaseDate": "2020-10-14",
     "obtainMethod": "公开招募 中坚寻访",
     "isLimited": false,
-    "classicDate": "2023-03-30",
+    "scClassicDate": "2023-03-30",
     "enClassicDate": "2023-10-13",
     "tcClassicDate": "2024-02-13",
     "alter": [],
@@ -4255,8 +4486,9 @@
     "actLine": "夏日律动"
   },
   "char_4046_ebnhlz": {
-    "name": "黑键",
+    "scName": "黑键",
     "enName": "Ebenholz",
+    "jpName": "エーベンホルツ",
     "charId": "char_4046_ebnhlz",
     "rarity": 6,
     "scReleaseDate": "2022-06-09",
@@ -4264,7 +4496,7 @@
     "tcReleaseDate": "2023-03-28",
     "obtainMethod": "中坚寻访",
     "isLimited": false,
-    "classicDate": "2026-03-26",
+    "scClassicDate": "2026-03-26",
     "enClassicDate": "2026-10-09",
     "tcClassicDate": null,
     "alter": [],

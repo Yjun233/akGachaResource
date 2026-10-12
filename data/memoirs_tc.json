@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-09",
+  "generatedAt": "2026-10-12",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "memoirs": [
     {
-      "char": "雷蛇",
+      "scCharName": "雷蛇",
+      "charId": "char_107_liskam",
       "rarity": 5,
       "batches": [
         {
@@ -15,7 +16,8 @@
       "releaseDate": "2021-09-09"
     },
     {
-      "char": "守林人",
+      "scCharName": "守林人",
+      "charId": "char_158_milu",
       "rarity": 5,
       "batches": [
         {
@@ -27,7 +29,8 @@
       "releaseDate": "2021-10-28"
     },
     {
-      "char": "普罗旺斯",
+      "scCharName": "普罗旺斯",
+      "charId": "char_145_prove",
       "rarity": 5,
       "batches": [
         {
@@ -44,7 +47,8 @@
       "releaseDate": "2021-10-28"
     },
     {
-      "char": "艾雅法拉",
+      "scCharName": "艾雅法拉",
+      "charId": "char_180_amgoat",
       "rarity": 6,
       "batches": [
         {
@@ -56,7 +60,8 @@
       "releaseDate": "2021-10-28"
     },
     {
-      "char": "黑",
+      "scCharName": "黑",
+      "charId": "char_340_shwaz",
       "rarity": 6,
       "batches": [
         {
@@ -73,7 +78,8 @@
       "releaseDate": "2021-10-28"
     },
     {
-      "char": "布洛卡",
+      "scCharName": "布洛卡",
+      "charId": "char_356_broca",
       "rarity": 5,
       "batches": [
         {
@@ -90,7 +96,8 @@
       "releaseDate": "2021-10-28"
     },
     {
-      "char": "刻俄柏",
+      "scCharName": "刻俄柏",
+      "charId": "char_2013_cerber",
       "rarity": 6,
       "batches": [
         {
@@ -102,7 +109,8 @@
       "releaseDate": "2021-10-28"
     },
     {
-      "char": "傀影",
+      "scCharName": "傀影",
+      "charId": "char_250_phatom",
       "rarity": 6,
       "batches": [
         {
@@ -114,7 +122,8 @@
       "releaseDate": "2021-10-28"
     },
     {
-      "char": "梅尔",
+      "scCharName": "梅尔",
+      "charId": "char_242_otter",
       "rarity": 5,
       "batches": [
         {
@@ -131,7 +140,8 @@
       "releaseDate": "2021-11-25"
     },
     {
-      "char": "华法琳",
+      "scCharName": "华法琳",
+      "charId": "char_171_bldsk",
       "rarity": 5,
       "batches": [
         {
@@ -148,7 +158,8 @@
       "releaseDate": "2021-12-23"
     },
     {
-      "char": "安洁莉娜",
+      "scCharName": "安洁莉娜",
+      "charId": "char_291_aglina",
       "rarity": 6,
       "batches": [
         {
@@ -160,7 +171,8 @@
       "releaseDate": "2021-12-23"
     },
     {
-      "char": "德克萨斯",
+      "scCharName": "德克萨斯",
+      "charId": "char_102_texas",
       "rarity": 5,
       "batches": [
         {
@@ -172,7 +184,8 @@
       "releaseDate": "2022-01-11"
     },
     {
-      "char": "能天使",
+      "scCharName": "能天使",
+      "charId": "char_103_angel",
       "rarity": 6,
       "batches": [
         {
@@ -189,7 +202,8 @@
       "releaseDate": "2022-01-11"
     },
     {
-      "char": "幽灵鲨",
+      "scCharName": "幽灵鲨",
+      "charId": "char_143_ghost",
       "rarity": 5,
       "batches": [
         {
@@ -206,7 +220,8 @@
       "releaseDate": "2022-01-11"
     },
     {
-      "char": "赫拉格",
+      "scCharName": "赫拉格",
+      "charId": "char_188_helage",
       "rarity": 6,
       "batches": [
         {
@@ -218,7 +233,8 @@
       "releaseDate": "2022-01-11"
     },
     {
-      "char": "夜莺",
+      "scCharName": "夜莺",
+      "charId": "char_179_cgbird",
       "rarity": 6,
       "batches": [
         {
@@ -230,7 +246,8 @@
       "releaseDate": "2022-01-26"
     },
     {
-      "char": "山",
+      "scCharName": "山",
+      "charId": "char_264_f12yin",
       "rarity": 6,
       "batches": [
         {
@@ -247,7 +264,8 @@
       "releaseDate": "2022-01-26"
     },
     {
-      "char": "莫斯提马",
+      "scCharName": "莫斯提马",
+      "charId": "char_213_mostma",
       "rarity": 6,
       "batches": [
         {
@@ -264,7 +282,8 @@
       "releaseDate": "2022-03-08"
     },
     {
-      "char": "煌",
+      "scCharName": "煌",
+      "charId": "char_017_huang",
       "rarity": 6,
       "batches": [
         {
@@ -276,7 +295,8 @@
       "releaseDate": "2022-04-06"
     },
     {
-      "char": "假日威龙陈",
+      "scCharName": "假日威龙陈",
+      "charId": "char_1013_chen2",
       "rarity": 6,
       "batches": [
         {
@@ -288,7 +308,8 @@
       "releaseDate": "2022-05-10"
     },
     {
-      "char": "空",
+      "scCharName": "空",
+      "charId": "char_101_sora",
       "rarity": 5,
       "batches": [
         {
@@ -305,7 +326,8 @@
       "releaseDate": "2022-06-21"
     },
     {
-      "char": "风笛",
+      "scCharName": "风笛",
+      "charId": "char_222_bpipe",
       "rarity": 6,
       "batches": [
         {
@@ -317,7 +339,8 @@
       "releaseDate": "2022-06-21"
     },
     {
-      "char": "白面鸮",
+      "scCharName": "白面鸮",
+      "charId": "char_128_plosis",
       "rarity": 5,
       "batches": [
         {
@@ -329,7 +352,8 @@
       "releaseDate": "2022-08-04"
     },
     {
-      "char": "白金",
+      "scCharName": "白金",
+      "charId": "char_204_platnm",
       "rarity": 5,
       "batches": [
         {
@@ -341,7 +365,8 @@
       "releaseDate": "2022-08-04"
     },
     {
-      "char": "耀骑士临光",
+      "scCharName": "耀骑士临光",
+      "charId": "char_1014_nearl2",
       "rarity": 6,
       "batches": [
         {
@@ -353,7 +378,8 @@
       "releaseDate": "2022-08-04"
     },
     {
-      "char": "狮蝎",
+      "scCharName": "狮蝎",
+      "charId": "char_215_mantic",
       "rarity": 5,
       "batches": [
         {
@@ -365,7 +391,8 @@
       "releaseDate": "2022-09-14"
     },
     {
-      "char": "瑕光",
+      "scCharName": "瑕光",
+      "charId": "char_423_blemsh",
       "rarity": 6,
       "batches": [
         {
@@ -377,7 +404,8 @@
       "releaseDate": "2022-09-14"
     },
     {
-      "char": "银灰",
+      "scCharName": "银灰",
+      "charId": "char_172_svrash",
       "rarity": 6,
       "batches": [
         {
@@ -389,7 +417,8 @@
       "releaseDate": "2022-09-29"
     },
     {
-      "char": "崖心",
+      "scCharName": "崖心",
+      "charId": "char_173_slchan",
       "rarity": 5,
       "batches": [
         {
@@ -406,7 +435,8 @@
       "releaseDate": "2022-09-29"
     },
     {
-      "char": "初雪",
+      "scCharName": "初雪",
+      "charId": "char_174_slbell",
       "rarity": 5,
       "batches": [
         {
@@ -418,7 +448,8 @@
       "releaseDate": "2022-09-29"
     },
     {
-      "char": "真理",
+      "scCharName": "真理",
+      "charId": "char_195_glassb",
       "rarity": 5,
       "batches": [
         {
@@ -435,7 +466,8 @@
       "releaseDate": "2022-10-13"
     },
     {
-      "char": "水月",
+      "scCharName": "水月",
+      "charId": "char_437_mizuki",
       "rarity": 6,
       "batches": [
         {
@@ -447,7 +479,8 @@
       "releaseDate": "2022-10-13"
     },
     {
-      "char": "食铁兽",
+      "scCharName": "食铁兽",
+      "charId": "char_241_panda",
       "rarity": 5,
       "batches": [
         {
@@ -459,7 +492,8 @@
       "releaseDate": "2022-10-27"
     },
     {
-      "char": "诗怀雅",
+      "scCharName": "诗怀雅",
+      "charId": "char_308_swire",
       "rarity": 5,
       "batches": [
         {
@@ -471,7 +505,8 @@
       "releaseDate": "2022-10-27"
     },
     {
-      "char": "年",
+      "scCharName": "年",
+      "charId": "char_2014_nian",
       "rarity": 6,
       "batches": [
         {
@@ -483,7 +518,8 @@
       "releaseDate": "2022-10-27"
     },
     {
-      "char": "令",
+      "scCharName": "令",
+      "charId": "char_2023_ling",
       "rarity": 6,
       "batches": [
         {
@@ -495,7 +531,8 @@
       "releaseDate": "2022-10-27"
     },
     {
-      "char": "陈",
+      "scCharName": "陈",
+      "charId": "char_010_chen",
       "rarity": 6,
       "batches": [
         {
@@ -507,7 +544,8 @@
       "releaseDate": "2022-11-17"
     },
     {
-      "char": "乌有",
+      "scCharName": "乌有",
+      "charId": "char_455_nothin",
       "rarity": 5,
       "batches": [
         {
@@ -519,7 +557,8 @@
       "releaseDate": "2022-11-17"
     },
     {
-      "char": "槐琥",
+      "scCharName": "槐琥",
+      "charId": "char_243_waaifu",
       "rarity": 5,
       "batches": [
         {
@@ -531,7 +570,8 @@
       "releaseDate": "2022-12-15"
     },
     {
-      "char": "芙兰卡",
+      "scCharName": "芙兰卡",
+      "charId": "char_106_franka",
       "rarity": 5,
       "batches": [
         {
@@ -548,7 +588,8 @@
       "releaseDate": "2022-12-29"
     },
     {
-      "char": "菲亚梅塔",
+      "scCharName": "菲亚梅塔",
+      "charId": "char_300_phenxi",
       "rarity": 6,
       "batches": [
         {
@@ -560,7 +601,8 @@
       "releaseDate": "2022-12-29"
     },
     {
-      "char": "号角",
+      "scCharName": "号角",
+      "charId": "char_4039_horn",
       "rarity": 6,
       "batches": [
         {
@@ -572,7 +614,8 @@
       "releaseDate": "2023-01-17"
     },
     {
-      "char": "石棉",
+      "scCharName": "石棉",
+      "charId": "char_378_asbest",
       "rarity": 5,
       "batches": [
         {
@@ -584,7 +627,8 @@
       "releaseDate": "2023-01-31"
     },
     {
-      "char": "絮雨",
+      "scCharName": "絮雨",
+      "charId": "char_436_whispr",
       "rarity": 5,
       "batches": [
         {
@@ -596,7 +640,8 @@
       "releaseDate": "2023-01-31"
     },
     {
-      "char": "归溟幽灵鲨",
+      "scCharName": "归溟幽灵鲨",
+      "charId": "char_1023_ghost2",
       "rarity": 6,
       "batches": [
         {
@@ -608,7 +653,8 @@
       "releaseDate": "2023-01-31"
     },
     {
-      "char": "艾丽妮",
+      "scCharName": "艾丽妮",
+      "charId": "char_4009_irene",
       "rarity": 6,
       "batches": [
         {
@@ -620,7 +666,8 @@
       "releaseDate": "2023-01-31"
     },
     {
-      "char": "斯卡蒂",
+      "scCharName": "斯卡蒂",
+      "charId": "char_263_skadi",
       "rarity": 6,
       "batches": [
         {
@@ -632,7 +679,8 @@
       "releaseDate": "2023-03-28"
     },
     {
-      "char": "吽",
+      "scCharName": "吽",
+      "charId": "char_226_hmau",
       "rarity": 5,
       "batches": [
         {
@@ -649,7 +697,8 @@
       "releaseDate": "2023-03-28"
     },
     {
-      "char": "奥斯塔",
+      "scCharName": "奥斯塔",
+      "charId": "char_346_aosta",
       "rarity": 5,
       "batches": [
         {
@@ -661,7 +710,8 @@
       "releaseDate": "2023-03-28"
     },
     {
-      "char": "熔泉",
+      "scCharName": "熔泉",
+      "charId": "char_363_toddi",
       "rarity": 5,
       "batches": [
         {
@@ -673,7 +723,8 @@
       "releaseDate": "2023-03-28"
     },
     {
-      "char": "黑键",
+      "scCharName": "黑键",
+      "charId": "char_4046_ebnhlz",
       "rarity": 6,
       "batches": [
         {
@@ -685,7 +736,8 @@
       "releaseDate": "2023-03-28"
     },
     {
-      "char": "濯尘芙蓉",
+      "scCharName": "濯尘芙蓉",
+      "charId": "char_1024_hbisc2",
       "rarity": 5,
       "batches": [
         {
@@ -697,7 +749,8 @@
       "releaseDate": "2023-03-28"
     },
     {
-      "char": "赫默",
+      "scCharName": "赫默",
+      "charId": "char_108_silent",
       "rarity": 5,
       "batches": [
         {
@@ -709,7 +762,8 @@
       "releaseDate": "2023-04-13"
     },
     {
-      "char": "伊芙利特",
+      "scCharName": "伊芙利特",
+      "charId": "char_134_ifrit",
       "rarity": 6,
       "batches": [
         {
@@ -721,7 +775,8 @@
       "releaseDate": "2023-04-13"
     },
     {
-      "char": "蓝毒",
+      "scCharName": "蓝毒",
+      "charId": "char_129_bluep",
       "rarity": 5,
       "batches": [
         {
@@ -733,7 +788,8 @@
       "releaseDate": "2023-04-13"
     },
     {
-      "char": "承曦格雷伊",
+      "scCharName": "承曦格雷伊",
+      "charId": "char_1027_greyy2",
       "rarity": 5,
       "batches": [
         {
@@ -745,7 +801,8 @@
       "releaseDate": "2023-04-13"
     },
     {
-      "char": "凛冬",
+      "scCharName": "凛冬",
+      "charId": "char_115_headbr",
       "rarity": 5,
       "batches": [
         {
@@ -762,7 +819,8 @@
       "releaseDate": "2023-05-04"
     },
     {
-      "char": "温蒂",
+      "scCharName": "温蒂",
+      "charId": "char_400_weedy",
       "rarity": 6,
       "batches": [
         {
@@ -779,7 +837,8 @@
       "releaseDate": "2023-05-16"
     },
     {
-      "char": "极光",
+      "scCharName": "极光",
+      "charId": "char_422_aurora",
       "rarity": 5,
       "batches": [
         {
@@ -791,7 +850,8 @@
       "releaseDate": "2023-05-16"
     },
     {
-      "char": "可颂",
+      "scCharName": "可颂",
+      "charId": "char_201_moeshd",
       "rarity": 5,
       "batches": [
         {
@@ -803,7 +863,8 @@
       "releaseDate": "2023-05-30"
     },
     {
-      "char": "绮良",
+      "scCharName": "绮良",
+      "charId": "char_478_kirara",
       "rarity": 5,
       "batches": [
         {
@@ -815,7 +876,8 @@
       "releaseDate": "2023-05-30"
     },
     {
-      "char": "棘刺",
+      "scCharName": "棘刺",
+      "charId": "char_293_thorns",
       "rarity": 6,
       "batches": [
         {
@@ -827,7 +889,8 @@
       "releaseDate": "2023-06-20"
     },
     {
-      "char": "燧石",
+      "scCharName": "燧石",
+      "charId": "char_415_flint",
       "rarity": 5,
       "batches": [
         {
@@ -839,7 +902,8 @@
       "releaseDate": "2023-06-20"
     },
     {
-      "char": "四月",
+      "scCharName": "四月",
+      "charId": "char_365_aprl",
       "rarity": 5,
       "batches": [
         {
@@ -851,7 +915,8 @@
       "releaseDate": "2023-06-20"
     },
     {
-      "char": "百炼嘉维尔",
+      "scCharName": "百炼嘉维尔",
+      "charId": "char_1026_gvial2",
       "rarity": 6,
       "batches": [
         {
@@ -863,7 +928,8 @@
       "releaseDate": "2023-06-20"
     },
     {
-      "char": "天火",
+      "scCharName": "天火",
+      "charId": "char_166_skfire",
       "rarity": 5,
       "batches": [
         {
@@ -875,7 +941,8 @@
       "releaseDate": "2023-07-13"
     },
     {
-      "char": "麦哲伦",
+      "scCharName": "麦哲伦",
+      "charId": "char_248_mgllan",
       "rarity": 6,
       "batches": [
         {
@@ -887,7 +954,8 @@
       "releaseDate": "2023-07-13"
     },
     {
-      "char": "蜜蜡",
+      "scCharName": "蜜蜡",
+      "charId": "char_344_beewax",
       "rarity": 5,
       "batches": [
         {
@@ -899,7 +967,8 @@
       "releaseDate": "2023-07-27"
     },
     {
-      "char": "卡涅利安",
+      "scCharName": "卡涅利安",
+      "charId": "char_426_billro",
       "rarity": 6,
       "batches": [
         {
@@ -911,7 +980,8 @@
       "releaseDate": "2023-07-27"
     },
     {
-      "char": "洛洛",
+      "scCharName": "洛洛",
+      "charId": "char_4040_rockr",
       "rarity": 5,
       "batches": [
         {
@@ -923,7 +993,8 @@
       "releaseDate": "2023-08-10"
     },
     {
-      "char": "掠风",
+      "scCharName": "掠风",
+      "charId": "char_433_windft",
       "rarity": 5,
       "batches": [
         {
@@ -935,7 +1006,8 @@
       "releaseDate": "2023-08-10"
     },
     {
-      "char": "星极",
+      "scCharName": "星极",
+      "charId": "char_274_astesi",
       "rarity": 5,
       "batches": [
         {
@@ -952,7 +1024,8 @@
       "releaseDate": "2023-08-29"
     },
     {
-      "char": "陨星",
+      "scCharName": "陨星",
+      "charId": "char_219_meteo",
       "rarity": 5,
       "batches": [
         {
@@ -964,7 +1037,8 @@
       "releaseDate": "2023-09-12"
     },
     {
-      "char": "极境",
+      "scCharName": "极境",
+      "charId": "char_401_elysm",
       "rarity": 5,
       "batches": [
         {
@@ -976,7 +1050,8 @@
       "releaseDate": "2023-09-12"
     },
     {
-      "char": "琴柳",
+      "scCharName": "琴柳",
+      "charId": "char_479_sleach",
       "rarity": 6,
       "batches": [
         {
@@ -993,7 +1068,8 @@
       "releaseDate": "2023-10-19"
     },
     {
-      "char": "和弦",
+      "scCharName": "和弦",
+      "charId": "char_297_hamoni",
       "rarity": 5,
       "batches": [
         {
@@ -1005,7 +1081,8 @@
       "releaseDate": "2023-10-19"
     },
     {
-      "char": "空弦",
+      "scCharName": "空弦",
+      "charId": "char_332_archet",
       "rarity": 6,
       "batches": [
         {
@@ -1017,7 +1094,8 @@
       "releaseDate": "2023-11-02"
     },
     {
-      "char": "蚀清",
+      "scCharName": "蚀清",
+      "charId": "char_489_serum",
       "rarity": 5,
       "batches": [
         {
@@ -1029,7 +1107,8 @@
       "releaseDate": "2023-11-02"
     },
     {
-      "char": "阿",
+      "scCharName": "阿",
+      "charId": "char_225_haak",
       "rarity": 6,
       "batches": [
         {
@@ -1041,7 +1120,8 @@
       "releaseDate": "2023-11-21"
     },
     {
-      "char": "夕",
+      "scCharName": "夕",
+      "charId": "char_2015_dusk",
       "rarity": 6,
       "batches": [
         {
@@ -1053,7 +1133,8 @@
       "releaseDate": "2023-11-21"
     },
     {
-      "char": "桑葚",
+      "scCharName": "桑葚",
+      "charId": "char_473_mberry",
       "rarity": 5,
       "batches": [
         {
@@ -1065,7 +1146,8 @@
       "releaseDate": "2023-11-21"
     },
     {
-      "char": "老鲤",
+      "scCharName": "老鲤",
+      "charId": "char_322_lmlee",
       "rarity": 6,
       "batches": [
         {
@@ -1077,7 +1159,8 @@
       "releaseDate": "2023-11-21"
     },
     {
-      "char": "重岳",
+      "scCharName": "重岳",
+      "charId": "char_2024_chyue",
       "rarity": 6,
       "batches": [
         {
@@ -1089,7 +1172,8 @@
       "releaseDate": "2023-11-21"
     },
     {
-      "char": "月禾",
+      "scCharName": "月禾",
+      "charId": "char_343_tknogi",
       "rarity": 5,
       "batches": [
         {
@@ -1101,7 +1185,8 @@
       "releaseDate": "2023-12-12"
     },
     {
-      "char": "鸿雪",
+      "scCharName": "鸿雪",
+      "charId": "char_4055_bgsnow",
       "rarity": 6,
       "batches": [
         {
@@ -1113,7 +1198,8 @@
       "releaseDate": "2023-12-12"
     },
     {
-      "char": "贾维",
+      "scCharName": "贾维",
+      "charId": "char_349_chiave",
       "rarity": 5,
       "batches": [
         {
@@ -1125,7 +1211,8 @@
       "releaseDate": "2024-01-09"
     },
     {
-      "char": "爱丽丝",
+      "scCharName": "爱丽丝",
+      "charId": "char_338_iris",
       "rarity": 5,
       "batches": [
         {
@@ -1137,7 +1224,8 @@
       "releaseDate": "2024-01-09"
     },
     {
-      "char": "夜半",
+      "scCharName": "夜半",
+      "charId": "char_476_blkngt",
       "rarity": 5,
       "batches": [
         {
@@ -1149,7 +1237,8 @@
       "releaseDate": "2024-01-09"
     },
     {
-      "char": "夏栎",
+      "scCharName": "夏栎",
+      "charId": "char_492_quercu",
       "rarity": 5,
       "batches": [
         {
@@ -1161,7 +1250,8 @@
       "releaseDate": "2024-01-09"
     },
     {
-      "char": "巫恋",
+      "scCharName": "巫恋",
+      "charId": "char_254_vodfox",
       "rarity": 5,
       "batches": [
         {
@@ -1173,7 +1263,8 @@
       "releaseDate": "2024-02-06"
     },
     {
-      "char": "莱恩哈特",
+      "scCharName": "莱恩哈特",
+      "charId": "char_373_lionhd",
       "rarity": 5,
       "batches": [
         {
@@ -1185,7 +1276,8 @@
       "releaseDate": "2024-03-07"
     },
     {
-      "char": "断崖",
+      "scCharName": "断崖",
+      "charId": "char_294_ayer",
       "rarity": 5,
       "batches": [
         {
@@ -1197,7 +1289,8 @@
       "releaseDate": "2024-03-07"
     },
     {
-      "char": "格劳克斯",
+      "scCharName": "格劳克斯",
+      "charId": "char_326_glacus",
       "rarity": 5,
       "batches": [
         {
@@ -1209,7 +1302,8 @@
       "releaseDate": "2024-03-19"
     },
     {
-      "char": "慑砂",
+      "scCharName": "慑砂",
+      "charId": "char_379_sesa",
       "rarity": 5,
       "batches": [
         {
@@ -1221,7 +1315,8 @@
       "releaseDate": "2024-03-19"
     },
     {
-      "char": "多萝西",
+      "scCharName": "多萝西",
+      "charId": "char_4048_doroth",
       "rarity": 6,
       "batches": [
         {
@@ -1233,7 +1328,8 @@
       "releaseDate": "2024-03-19"
     },
     {
-      "char": "明椒",
+      "scCharName": "明椒",
+      "charId": "char_4071_peper",
       "rarity": 5,
       "batches": [
         {
@@ -1245,7 +1341,8 @@
       "releaseDate": "2024-03-19"
     },
     {
-      "char": "风丸",
+      "scCharName": "风丸",
+      "charId": "char_4016_kazema",
       "rarity": 5,
       "batches": [
         {
@@ -1262,7 +1359,8 @@
       "releaseDate": "2024-04-09"
     },
     {
-      "char": "晓歌",
+      "scCharName": "晓歌",
+      "charId": "char_497_ctable",
       "rarity": 5,
       "batches": [
         {
@@ -1274,7 +1372,8 @@
       "releaseDate": "2024-04-09"
     },
     {
-      "char": "送葬人",
+      "scCharName": "送葬人",
+      "charId": "char_279_excu",
       "rarity": 5,
       "batches": [
         {
@@ -1291,7 +1390,8 @@
       "releaseDate": "2024-04-25"
     },
     {
-      "char": "惊蛰",
+      "scCharName": "惊蛰",
+      "charId": "char_306_leizi",
       "rarity": 5,
       "batches": [
         {
@@ -1303,7 +1403,8 @@
       "releaseDate": "2024-04-25"
     },
     {
-      "char": "卡夫卡",
+      "scCharName": "卡夫卡",
+      "charId": "char_214_kafka",
       "rarity": 5,
       "batches": [
         {
@@ -1315,7 +1416,8 @@
       "releaseDate": "2024-05-14"
     },
     {
-      "char": "火哨",
+      "scCharName": "火哨",
+      "charId": "char_493_firwhl",
       "rarity": 5,
       "batches": [
         {
@@ -1327,7 +1429,8 @@
       "releaseDate": "2024-05-14"
     },
     {
-      "char": "赤冬",
+      "scCharName": "赤冬",
+      "charId": "char_475_akafyu",
       "rarity": 5,
       "batches": [
         {
@@ -1339,7 +1442,8 @@
       "releaseDate": "2024-06-13"
     },
     {
-      "char": "但书",
+      "scCharName": "但书",
+      "charId": "char_4032_provs",
       "rarity": 5,
       "batches": [
         {
@@ -1351,7 +1455,8 @@
       "releaseDate": "2024-06-13"
     },
     {
-      "char": "缪尔赛思",
+      "scCharName": "缪尔赛思",
+      "charId": "char_249_mlyss",
       "rarity": 6,
       "batches": [
         {
@@ -1363,7 +1468,8 @@
       "releaseDate": "2024-06-13"
     },
     {
-      "char": "羽毛笔",
+      "scCharName": "羽毛笔",
+      "charId": "char_421_crow",
       "rarity": 5,
       "batches": [
         {
@@ -1375,7 +1481,8 @@
       "releaseDate": "2024-08-08"
     },
     {
-      "char": "圣约送葬人",
+      "scCharName": "圣约送葬人",
+      "charId": "char_1032_excu2",
       "rarity": 6,
       "batches": [
         {
@@ -1387,7 +1494,8 @@
       "releaseDate": "2024-08-08"
     },
     {
-      "char": "涤火杰西卡",
+      "scCharName": "涤火杰西卡",
+      "charId": "char_1034_jesca2",
       "rarity": 6,
       "batches": [
         {
@@ -1399,7 +1507,8 @@
       "releaseDate": "2024-08-08"
     },
     {
-      "char": "苇草",
+      "scCharName": "苇草",
+      "charId": "char_261_sddrag",
       "rarity": 5,
       "batches": [
         {
@@ -1411,7 +1520,8 @@
       "releaseDate": "2024-09-05"
     },
     {
-      "char": "杏仁",
+      "scCharName": "杏仁",
+      "charId": "char_4105_almond",
       "rarity": 5,
       "batches": [
         {
@@ -1423,7 +1533,8 @@
       "releaseDate": "2024-09-05"
     },
     {
-      "char": "早露",
+      "scCharName": "早露",
+      "charId": "char_197_poca",
       "rarity": 6,
       "batches": [
         {
@@ -1435,7 +1546,8 @@
       "releaseDate": "2024-09-24"
     },
     {
-      "char": "寒檀",
+      "scCharName": "寒檀",
+      "charId": "char_341_sntlla",
       "rarity": 5,
       "batches": [
         {
@@ -1447,7 +1559,8 @@
       "releaseDate": "2024-09-24"
     },
     {
-      "char": "塑心",
+      "scCharName": "塑心",
+      "charId": "char_245_cello",
       "rarity": 6,
       "batches": [
         {
@@ -1459,7 +1572,8 @@
       "releaseDate": "2024-09-24"
     },
     {
-      "char": "灵知",
+      "scCharName": "灵知",
+      "charId": "char_206_gnosis",
       "rarity": 6,
       "batches": [
         {
@@ -1471,7 +1585,8 @@
       "releaseDate": "2024-10-31"
     },
     {
-      "char": "烈夏",
+      "scCharName": "烈夏",
+      "charId": "char_194_leto",
       "rarity": 5,
       "batches": [
         {
@@ -1483,7 +1598,8 @@
       "releaseDate": "2024-10-31"
     },
     {
-      "char": "玫拉",
+      "scCharName": "玫拉",
+      "charId": "char_4006_melnte",
       "rarity": 5,
       "batches": [
         {
@@ -1495,7 +1611,8 @@
       "releaseDate": "2024-12-04"
     },
     {
-      "char": "青枳",
+      "scCharName": "青枳",
+      "charId": "char_488_buildr",
       "rarity": 5,
       "batches": [
         {
@@ -1507,7 +1624,8 @@
       "releaseDate": "2024-12-04"
     },
     {
-      "char": "仇白",
+      "scCharName": "仇白",
+      "charId": "char_4082_qiubai",
       "rarity": 6,
       "batches": [
         {
@@ -1519,7 +1637,8 @@
       "releaseDate": "2025-01-20"
     },
     {
-      "char": "铎铃",
+      "scCharName": "铎铃",
+      "charId": "char_4083_chimes",
       "rarity": 5,
       "batches": [
         {
@@ -1531,7 +1650,8 @@
       "releaseDate": "2025-01-20"
     },
     {
-      "char": "黍",
+      "scCharName": "黍",
+      "charId": "char_2025_shu",
       "rarity": 6,
       "batches": [
         {
@@ -1543,7 +1663,8 @@
       "releaseDate": "2025-01-20"
     },
     {
-      "char": "子月",
+      "scCharName": "子月",
+      "charId": "char_4014_lunacu",
       "rarity": 5,
       "batches": [
         {
@@ -1555,7 +1676,8 @@
       "releaseDate": "2025-02-11"
     },
     {
-      "char": "斥罪",
+      "scCharName": "斥罪",
+      "charId": "char_4065_judge",
       "rarity": 6,
       "batches": [
         {
@@ -1567,7 +1689,8 @@
       "releaseDate": "2025-02-11"
     },
     {
-      "char": "空构",
+      "scCharName": "空构",
+      "charId": "char_4015_spuria",
       "rarity": 5,
       "batches": [
         {
@@ -1579,7 +1702,8 @@
       "releaseDate": "2025-02-11"
     },
     {
-      "char": "闪灵",
+      "scCharName": "闪灵",
+      "charId": "char_147_shining",
       "rarity": 6,
       "batches": [
         {
@@ -1591,7 +1715,8 @@
       "releaseDate": "2025-03-06"
     },
     {
-      "char": "推进之王",
+      "scCharName": "推进之王",
+      "charId": "char_112_siege",
       "rarity": 6,
       "batches": [
         {
@@ -1603,7 +1728,8 @@
       "releaseDate": "2025-03-06"
     },
     {
-      "char": "灰喉",
+      "scCharName": "灰喉",
+      "charId": "char_367_swllow",
       "rarity": 5,
       "batches": [
         {
@@ -1615,7 +1741,8 @@
       "releaseDate": "2025-03-06"
     },
     {
-      "char": "阿斯卡纶",
+      "scCharName": "阿斯卡纶",
+      "charId": "char_4132_ascln",
       "rarity": 6,
       "batches": [
         {
@@ -1627,7 +1754,8 @@
       "releaseDate": "2025-03-06"
     },
     {
-      "char": "阿罗玛",
+      "scCharName": "阿罗玛",
+      "charId": "char_446_aroma",
       "rarity": 5,
       "batches": [
         {
@@ -1639,7 +1767,8 @@
       "releaseDate": "2025-03-06"
     },
     {
-      "char": "海霓",
+      "scCharName": "海霓",
+      "charId": "char_4079_haini",
       "rarity": 5,
       "batches": [
         {
@@ -1651,7 +1780,8 @@
       "releaseDate": "2025-03-31"
     },
     {
-      "char": "泥岩",
+      "scCharName": "泥岩",
+      "charId": "char_311_mudrok",
       "rarity": 6,
       "batches": [
         {
@@ -1663,7 +1793,8 @@
       "releaseDate": "2025-04-24"
     },
     {
-      "char": "洋灰",
+      "scCharName": "洋灰",
+      "charId": "char_464_cement",
       "rarity": 5,
       "batches": [
         {
@@ -1675,7 +1806,8 @@
       "releaseDate": "2025-04-24"
     },
     {
-      "char": "纯烬艾雅法拉",
+      "scCharName": "纯烬艾雅法拉",
+      "charId": "char_1016_agoat2",
       "rarity": 6,
       "batches": [
         {
@@ -1687,7 +1819,8 @@
       "releaseDate": "2025-04-24"
     },
     {
-      "char": "衡沙",
+      "scCharName": "衡沙",
+      "charId": "char_4140_lasher",
       "rarity": 5,
       "batches": [
         {
@@ -1699,7 +1832,8 @@
       "releaseDate": "2025-04-24"
     },
     {
-      "char": "温米",
+      "scCharName": "温米",
+      "charId": "char_4081_warmy",
       "rarity": 5,
       "batches": [
         {
@@ -1711,7 +1845,8 @@
       "releaseDate": "2025-05-15"
     },
     {
-      "char": "森蚺",
+      "scCharName": "森蚺",
+      "charId": "char_416_zumama",
       "rarity": 6,
       "batches": [
         {
@@ -1723,7 +1858,8 @@
       "releaseDate": "2025-06-03"
     },
     {
-      "char": "澄闪",
+      "scCharName": "澄闪",
+      "charId": "char_377_gdglow",
       "rarity": 6,
       "batches": [
         {
@@ -1735,7 +1871,8 @@
       "releaseDate": "2025-06-03"
     },
     {
-      "char": "渡桥",
+      "scCharName": "渡桥",
+      "charId": "char_4147_mitm",
       "rarity": 5,
       "batches": [
         {
@@ -1747,7 +1884,8 @@
       "releaseDate": "2025-06-03"
     },
     {
-      "char": "白铁",
+      "scCharName": "白铁",
+      "charId": "char_4072_ironmn",
       "rarity": 6,
       "batches": [
         {
@@ -1759,7 +1897,8 @@
       "releaseDate": "2025-07-18"
     },
     {
-      "char": "深律",
+      "scCharName": "深律",
+      "charId": "char_4109_baslin",
       "rarity": 5,
       "batches": [
         {
@@ -1771,7 +1910,8 @@
       "releaseDate": "2025-07-18"
     },
     {
-      "char": "特克诺",
+      "scCharName": "特克诺",
+      "charId": "char_4164_tecno",
       "rarity": 5,
       "batches": [
         {
@@ -1783,7 +1923,8 @@
       "releaseDate": "2025-08-11"
     },
     {
-      "char": "林",
+      "scCharName": "林",
+      "charId": "char_4080_lin",
       "rarity": 6,
       "batches": [
         {
@@ -1795,7 +1936,8 @@
       "releaseDate": "2025-09-16"
     },
     {
-      "char": "小满",
+      "scCharName": "小满",
+      "charId": "char_4122_grabds",
       "rarity": 5,
       "batches": [
         {
@@ -1807,7 +1949,8 @@
       "releaseDate": "2025-09-16"
     },
     {
-      "char": "余",
+      "scCharName": "余",
+      "charId": "char_2026_yu",
       "rarity": 6,
       "batches": [
         {
@@ -1819,7 +1962,8 @@
       "releaseDate": "2025-09-16"
     },
     {
-      "char": "远牙",
+      "scCharName": "远牙",
+      "charId": "char_430_fartth",
       "rarity": 6,
       "batches": [
         {
@@ -1831,7 +1975,8 @@
       "releaseDate": "2025-10-17"
     },
     {
-      "char": "凯尔希",
+      "scCharName": "凯尔希",
+      "charId": "char_003_kalts",
       "rarity": 6,
       "batches": [
         {
@@ -1843,7 +1988,8 @@
       "releaseDate": "2025-10-31"
     },
     {
-      "char": "诺威尔",
+      "scCharName": "诺威尔",
+      "charId": "char_4173_nowell",
       "rarity": 5,
       "batches": [
         {
@@ -1855,7 +2001,8 @@
       "releaseDate": "2025-11-28"
     },
     {
-      "char": "阿兰娜",
+      "scCharName": "阿兰娜",
+      "charId": "char_4178_alanna",
       "rarity": 5,
       "batches": [
         {
@@ -1867,7 +2014,8 @@
       "releaseDate": "2025-11-28"
     },
     {
-      "char": "薇薇安娜",
+      "scCharName": "薇薇安娜",
+      "charId": "char_4098_vvana",
       "rarity": 6,
       "batches": [
         {
@@ -1879,7 +2027,8 @@
       "releaseDate": "2025-12-29"
     },
     {
-      "char": "娜仁图亚",
+      "scCharName": "娜仁图亚",
+      "charId": "char_4138_narant",
       "rarity": 6,
       "batches": [
         {
@@ -1891,7 +2040,8 @@
       "releaseDate": "2025-12-29"
     },
     {
-      "char": "嵯峨",
+      "scCharName": "嵯峨",
+      "charId": "char_362_saga",
       "rarity": 6,
       "batches": [
         {
@@ -1903,7 +2053,8 @@
       "releaseDate": "2026-01-26"
     },
     {
-      "char": "莱伊",
+      "scCharName": "莱伊",
+      "charId": "char_4117_ray",
       "rarity": 6,
       "batches": [
         {
@@ -1920,7 +2071,8 @@
       "releaseDate": "2026-01-26"
     },
     {
-      "char": "录武官",
+      "scCharName": "录武官",
+      "charId": "char_4196_reckpr",
       "rarity": 5,
       "batches": [
         {
@@ -1932,7 +2084,8 @@
       "releaseDate": "2026-01-26"
     },
     {
-      "char": "星熊",
+      "scCharName": "星熊",
+      "charId": "char_136_hsguma",
       "rarity": 6,
       "batches": [
         {
@@ -1944,7 +2097,8 @@
       "releaseDate": "2026-02-26"
     },
     {
-      "char": "灰毫",
+      "scCharName": "灰毫",
+      "charId": "char_431_ashlok",
       "rarity": 5,
       "batches": [
         {
@@ -1956,7 +2110,8 @@
       "releaseDate": "2026-04-01"
     },
     {
-      "char": "妮芙",
+      "scCharName": "妮芙",
+      "charId": "char_4146_nymph",
       "rarity": 6,
       "batches": [
         {
@@ -1968,7 +2123,8 @@
       "releaseDate": "2026-04-01"
     },
     {
-      "char": "荒芜拉普兰德",
+      "scCharName": "荒芜拉普兰德",
+      "charId": "char_1038_whitw2",
       "rarity": 6,
       "batches": [
         {
@@ -1980,7 +2136,8 @@
       "releaseDate": "2026-04-01"
     },
     {
-      "char": "波卜",
+      "scCharName": "波卜",
+      "charId": "char_487_bobb",
       "rarity": 5,
       "batches": [
         {
@@ -1992,7 +2149,8 @@
       "releaseDate": "2026-04-22"
     },
     {
-      "char": "蒂比",
+      "scCharName": "蒂比",
+      "charId": "char_4191_tippi",
       "rarity": 5,
       "batches": [
         {
@@ -2004,7 +2162,8 @@
       "releaseDate": "2026-04-22"
     },
     {
-      "char": "真言",
+      "scCharName": "真言",
+      "charId": "char_4204_mantra",
       "rarity": 6,
       "batches": [
         {
@@ -2016,7 +2175,8 @@
       "releaseDate": "2026-04-22"
     },
     {
-      "char": "锏",
+      "scCharName": "锏",
+      "charId": "char_4116_blkkgt",
       "rarity": 6,
       "batches": [
         {
@@ -2028,7 +2188,8 @@
       "releaseDate": "2026-06-10"
     },
     {
-      "char": "吉星",
+      "scCharName": "吉星",
+      "charId": "char_4203_kichi",
       "rarity": 5,
       "batches": [
         {
@@ -2040,7 +2201,8 @@
       "releaseDate": "2026-06-10"
     },
     {
-      "char": "雪猎",
+      "scCharName": "雪猎",
+      "charId": "char_4211_snhunt",
       "rarity": 5,
       "batches": [
         {
@@ -2052,7 +2214,8 @@
       "releaseDate": "2026-06-10"
     },
     {
-      "char": "塞雷娅",
+      "scCharName": "塞雷娅",
+      "charId": "char_202_demkni",
       "rarity": 6,
       "batches": [
         {
@@ -2064,7 +2227,8 @@
       "releaseDate": "2026-07-06"
     },
     {
-      "char": "焰尾",
+      "scCharName": "焰尾",
+      "charId": "char_420_flamtl",
       "rarity": 6,
       "batches": [
         {
@@ -2076,7 +2240,8 @@
       "releaseDate": "2026-07-22"
     },
     {
-      "char": "刺玫",
+      "scCharName": "刺玫",
+      "charId": "char_494_vendla",
       "rarity": 5,
       "batches": [
         {
@@ -2088,7 +2253,8 @@
       "releaseDate": "2026-07-22"
     },
     {
-      "char": "钼铅",
+      "scCharName": "钼铅",
+      "charId": "char_4171_wulfen",
       "rarity": 5,
       "batches": [
         {
@@ -2100,7 +2266,8 @@
       "releaseDate": "2026-07-22"
     },
     {
-      "char": "望",
+      "scCharName": "望",
+      "charId": "char_2027_wang",
       "rarity": 6,
       "batches": [
         {
@@ -2112,7 +2279,8 @@
       "releaseDate": "2026-08-18"
     },
     {
-      "char": "折桠",
+      "scCharName": "折桠",
+      "charId": "char_4207_branch",
       "rarity": 5,
       "batches": [
         {

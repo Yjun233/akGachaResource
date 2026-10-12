@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-10",
+  "generatedAt": "2026-10-12",
   "source": "https://prts.wiki",
   "skins": [
     {
-      "char": "子月",
+      "scCharName": "子月",
+      "charId": "char_4014_lunacu",
       "skinIndex": 1,
       "name": "棠云巧梦",
       "group": "0011/韵系列/I",
@@ -44,7 +45,8 @@
       "warnings": []
     },
     {
-      "char": "小满",
+      "scCharName": "小满",
+      "charId": "char_4122_grabds",
       "skinIndex": 1,
       "name": "步芳兰",
       "group": "0011/韵系列/III",
@@ -93,7 +95,8 @@
       "warnings": []
     },
     {
-      "char": "白面鸮",
+      "scCharName": "白面鸮",
+      "charId": "char_128_plosis",
       "skinIndex": 2,
       "name": "抚云间",
       "group": "0011/韵系列/IV",
@@ -142,7 +145,8 @@
       "warnings": []
     },
     {
-      "char": "铎铃",
+      "scCharName": "铎铃",
+      "charId": "char_4083_chimes",
       "skinIndex": 1,
       "name": "松间月",
       "group": "0011/韵系列/V",
@@ -183,7 +187,8 @@
       "warnings": []
     },
     {
-      "char": "鸿雪",
+      "scCharName": "鸿雪",
+      "charId": "char_4055_bgsnow",
       "skinIndex": 2,
       "name": "行梦侧畔",
       "group": "0011/韵系列/VII",
@@ -208,7 +213,8 @@
       "warnings": []
     },
     {
-      "char": "巫恋",
+      "scCharName": "巫恋",
+      "charId": "char_254_vodfox",
       "skinIndex": 2,
       "name": "绣云鹤",
       "group": "0011/韵系列/VIII",
@@ -241,7 +247,8 @@
       "warnings": []
     },
     {
-      "char": "裁度",
+      "scCharName": "裁度",
+      "charId": "char_4155_talr",
       "skinIndex": 1,
       "name": "桂影窗",
       "group": "0011/韵系列/IX",
@@ -274,7 +281,8 @@
       "warnings": []
     },
     {
-      "char": "折桠",
+      "scCharName": "折桠",
+      "charId": "char_4207_branch",
       "skinIndex": 1,
       "name": "撷香霭",
       "group": "0011/韵系列/X",
@@ -299,7 +307,8 @@
       "warnings": []
     },
     {
-      "char": "录武官",
+      "scCharName": "录武官",
+      "charId": "char_4196_reckpr",
       "skinIndex": 1,
       "name": "照寰瀛",
       "group": "0011/韵系列/XII",
@@ -324,7 +333,8 @@
       "warnings": []
     },
     {
-      "char": "星熊",
+      "scCharName": "星熊",
+      "charId": "char_136_hsguma",
       "skinIndex": 1,
       "name": "狩标浪人",
       "group": "0011/飙系列",
@@ -365,7 +375,8 @@
       "warnings": []
     },
     {
-      "char": "刻俄柏",
+      "scCharName": "刻俄柏",
+      "charId": "char_2013_cerber",
       "skinIndex": 2,
       "name": "无拘无束",
       "group": "0011/飙系列/II",
@@ -406,7 +417,8 @@
       "warnings": []
     },
     {
-      "char": "槐琥",
+      "scCharName": "槐琥",
+      "charId": "char_243_waaifu",
       "skinIndex": 1,
       "name": "街道狂花",
       "group": "0011/飙系列/II",
@@ -447,7 +459,8 @@
       "warnings": []
     },
     {
-      "char": "石棉",
+      "scCharName": "石棉",
+      "charId": "char_378_asbest",
       "skinIndex": 1,
       "name": "幽谷奏鸣",
       "group": "0011/飙系列/III",
@@ -473,7 +486,8 @@
       "warnings": []
     },
     {
-      "char": "远牙",
+      "scCharName": "远牙",
+      "charId": "char_430_fartth",
       "skinIndex": 1,
       "name": "捉风",
       "group": "0011/飙系列/Ⅴ",
@@ -522,7 +536,8 @@
       "warnings": []
     },
     {
-      "char": "明椒",
+      "scCharName": "明椒",
+      "charId": "char_4071_peper",
       "skinIndex": 1,
       "name": "来路",
       "group": "0011/飙系列/Ⅴ",
@@ -563,7 +578,8 @@
       "warnings": []
     },
     {
-      "char": "老鲤",
+      "scCharName": "老鲤",
+      "charId": "char_322_lmlee",
       "skinIndex": 3,
       "name": "鉴浮生",
       "group": "0011/飙系列/X",
@@ -588,7 +604,8 @@
       "warnings": []
     },
     {
-      "char": "斩业星熊",
+      "scCharName": "斩业星熊",
+      "charId": "char_1044_hsgma2",
       "skinIndex": 1,
       "name": "一闪极意",
       "group": "0011/飙系列/XI",
@@ -613,7 +630,8 @@
       "warnings": []
     },
     {
-      "char": "陈",
+      "scCharName": "陈",
+      "charId": "char_010_chen",
       "skinIndex": 1,
       "name": "岁红霞",
       "group": "0011制造/II",
@@ -654,7 +672,8 @@
       "warnings": []
     },
     {
-      "char": "诗怀雅",
+      "scCharName": "诗怀雅",
+      "charId": "char_308_swire",
       "skinIndex": 1,
       "name": "富贵荣华",
       "group": "0011制造/II",
@@ -703,7 +722,8 @@
       "warnings": []
     },
     {
-      "char": "雷蛇",
+      "scCharName": "雷蛇",
+      "charId": "char_107_liskam",
       "skinIndex": 1,
       "name": "春竜",
       "group": "0011制造/II",
@@ -744,7 +764,8 @@
       "warnings": []
     },
     {
-      "char": "年",
+      "scCharName": "年",
+      "charId": "char_2014_nian",
       "skinIndex": 1,
       "name": "乐逍遥",
       "group": "0011制造/III",
@@ -809,7 +830,8 @@
       "warnings": []
     },
     {
-      "char": "阿",
+      "scCharName": "阿",
+      "charId": "char_225_haak",
       "skinIndex": 1,
       "name": "百面郎中",
       "group": "0011制造/III",
@@ -850,7 +872,8 @@
       "warnings": []
     },
     {
-      "char": "吽",
+      "scCharName": "吽",
+      "charId": "char_226_hmau",
       "skinIndex": 1,
       "name": "一介车夫",
       "group": "0011制造/III",
@@ -891,7 +914,8 @@
       "warnings": []
     },
     {
-      "char": "絮雨",
+      "scCharName": "絮雨",
+      "charId": "char_436_whispr",
       "skinIndex": 1,
       "name": "孤寒峭",
       "group": "0011制造/III",
@@ -924,7 +948,8 @@
       "warnings": []
     },
     {
-      "char": "阿",
+      "scCharName": "阿",
+      "charId": "char_225_haak",
       "skinIndex": 2,
       "name": "妙手玄心",
       "group": "0011制造/IV",
@@ -950,7 +975,8 @@
       "warnings": []
     },
     {
-      "char": "夕",
+      "scCharName": "夕",
+      "charId": "char_2015_dusk",
       "skinIndex": 1,
       "name": "染尘烟",
       "group": "0011制造/VI",
@@ -1015,7 +1041,8 @@
       "warnings": []
     },
     {
-      "char": "乌有",
+      "scCharName": "乌有",
+      "charId": "char_455_nothin",
       "skinIndex": 1,
       "name": "冷山月",
       "group": "0011制造/VI",
@@ -1056,7 +1083,8 @@
       "warnings": []
     },
     {
-      "char": "食铁兽",
+      "scCharName": "食铁兽",
+      "charId": "char_241_panda",
       "skinIndex": 2,
       "name": "且试箸",
       "group": "0011制造/VI",
@@ -1097,7 +1125,8 @@
       "warnings": []
     },
     {
-      "char": "夜半",
+      "scCharName": "夜半",
+      "charId": "char_476_blkngt",
       "skinIndex": 2,
       "name": "枝头馥",
       "group": "0011制造/VII",
@@ -1122,7 +1151,8 @@
       "warnings": []
     },
     {
-      "char": "令",
+      "scCharName": "令",
+      "charId": "char_2023_ling",
       "skinIndex": 1,
       "name": "濯缨",
       "group": "0011制造/VIII",
@@ -1171,7 +1201,8 @@
       "warnings": []
     },
     {
-      "char": "晓歌",
+      "scCharName": "晓歌",
+      "charId": "char_497_ctable",
       "skinIndex": 1,
       "name": "灯如昼",
       "group": "0011制造/VIII",
@@ -1212,7 +1243,8 @@
       "warnings": []
     },
     {
-      "char": "桑葚",
+      "scCharName": "桑葚",
+      "charId": "char_473_mberry",
       "skinIndex": 2,
       "name": "照冰轮",
       "group": "0011制造/VIII",
@@ -1253,7 +1285,8 @@
       "warnings": []
     },
     {
-      "char": "重岳",
+      "scCharName": "重岳",
+      "charId": "char_2024_chyue",
       "skinIndex": 1,
       "name": "何处栖",
       "group": "0011制造/IX",
@@ -1294,7 +1327,8 @@
       "warnings": []
     },
     {
-      "char": "林",
+      "scCharName": "林",
+      "charId": "char_4080_lin",
       "skinIndex": 1,
       "name": "列瑶台",
       "group": "0011制造/IX",
@@ -1335,7 +1369,8 @@
       "warnings": []
     },
     {
-      "char": "杏仁",
+      "scCharName": "杏仁",
+      "charId": "char_4105_almond",
       "skinIndex": 1,
       "name": "“杏仁”拼盘",
       "group": "0011制造/XI",
@@ -1368,7 +1403,8 @@
       "warnings": []
     },
     {
-      "char": "黍",
+      "scCharName": "黍",
+      "charId": "char_2025_shu",
       "skinIndex": 1,
       "name": "春日宴",
       "group": "0011制造/XI",
@@ -1401,7 +1437,8 @@
       "warnings": []
     },
     {
-      "char": "左乐",
+      "scCharName": "左乐",
+      "charId": "char_4121_zuole",
       "skinIndex": 1,
       "name": "少年游",
       "group": "0011制造/XI",
@@ -1434,7 +1471,8 @@
       "warnings": []
     },
     {
-      "char": "令",
+      "scCharName": "令",
+      "charId": "char_2023_ling",
       "skinIndex": 3,
       "name": "方遒卷",
       "group": "0011制造/XII",
@@ -1459,7 +1497,8 @@
       "warnings": []
     },
     {
-      "char": "夕",
+      "scCharName": "夕",
+      "charId": "char_2015_dusk",
       "skinIndex": 2,
       "name": "青玉砚",
       "group": "0011制造/XII",
@@ -1484,7 +1523,8 @@
       "warnings": []
     },
     {
-      "char": "余",
+      "scCharName": "余",
+      "charId": "char_2026_yu",
       "skinIndex": 1,
       "name": "愿清晓",
       "group": "0011制造/XII",
@@ -1509,7 +1549,8 @@
       "warnings": []
     },
     {
-      "char": "寻澜",
+      "scCharName": "寻澜",
+      "charId": "char_4052_surfer",
       "skinIndex": 1,
       "name": "共凭栏",
       "group": "0011制造/XII",
@@ -1534,7 +1575,8 @@
       "warnings": []
     },
     {
-      "char": "黑",
+      "scCharName": "黑",
+      "charId": "char_340_shwaz",
       "skinIndex": 1,
       "name": "厚礼",
       "group": "冰原信使/I",
@@ -1567,7 +1609,8 @@
       "warnings": []
     },
     {
-      "char": "银灰",
+      "scCharName": "银灰",
+      "charId": "char_172_svrash",
       "skinIndex": 1,
       "name": "约克的寒风",
       "group": "冰原信使/I",
@@ -1600,7 +1643,8 @@
       "warnings": []
     },
     {
-      "char": "初雪",
+      "scCharName": "初雪",
+      "charId": "char_174_slbell",
       "skinIndex": 1,
       "name": "开斯特之霜",
       "group": "冰原信使/I",
@@ -1641,7 +1685,8 @@
       "warnings": []
     },
     {
-      "char": "温蒂",
+      "scCharName": "温蒂",
+      "charId": "char_400_weedy",
       "skinIndex": 1,
       "name": "糖果仙子",
       "group": "冰原信使/II",
@@ -1682,7 +1727,8 @@
       "warnings": []
     },
     {
-      "char": "极境",
+      "scCharName": "极境",
+      "charId": "char_401_elysm",
       "skinIndex": 1,
       "name": "雪夜回音",
       "group": "冰原信使/II",
@@ -1723,7 +1769,8 @@
       "warnings": []
     },
     {
-      "char": "守林人",
+      "scCharName": "守林人",
+      "charId": "char_158_milu",
       "skinIndex": 2,
       "name": "覆雪",
       "group": "冰原信使/II",
@@ -1764,7 +1811,8 @@
       "warnings": []
     },
     {
-      "char": "卡涅利安",
+      "scCharName": "卡涅利安",
+      "charId": "char_426_billro",
       "skinIndex": 1,
       "name": "霍恩洛厄的寒沙",
       "group": "冰原信使/III",
@@ -1805,7 +1853,8 @@
       "warnings": []
     },
     {
-      "char": "莱恩哈特",
+      "scCharName": "莱恩哈特",
+      "charId": "char_373_lionhd",
       "skinIndex": 2,
       "name": "希望巡游",
       "group": "冰原信使/III",
@@ -1854,7 +1903,8 @@
       "warnings": []
     },
     {
-      "char": "卡夫卡",
+      "scCharName": "卡夫卡",
+      "charId": "char_214_kafka",
       "skinIndex": 1,
       "name": "纸板仙子",
       "group": "冰原信使/III",
@@ -1895,7 +1945,8 @@
       "warnings": []
     },
     {
-      "char": "澄闪",
+      "scCharName": "澄闪",
+      "charId": "char_377_gdglow",
       "skinIndex": 1,
       "name": "喜夜侍者",
       "group": "冰原信使/V",
@@ -1936,7 +1987,8 @@
       "warnings": []
     },
     {
-      "char": "承曦格雷伊",
+      "scCharName": "承曦格雷伊",
+      "charId": "char_1027_greyy2",
       "skinIndex": 1,
       "name": "演出后的王子",
       "group": "冰原信使/V",
@@ -1977,7 +2029,8 @@
       "warnings": []
     },
     {
-      "char": "斥罪",
+      "scCharName": "斥罪",
+      "charId": "char_4065_judge",
       "skinIndex": 1,
       "name": "偶尔醉陶",
       "group": "冰原信使/VI",
@@ -2018,7 +2071,8 @@
       "warnings": []
     },
     {
-      "char": "月禾",
+      "scCharName": "月禾",
+      "charId": "char_343_tknogi",
       "skinIndex": 2,
       "name": "舞",
       "group": "冰原信使/VI",
@@ -2059,7 +2113,8 @@
       "warnings": []
     },
     {
-      "char": "焰影苇草",
+      "scCharName": "焰影苇草",
+      "charId": "char_1020_reed2",
       "skinIndex": 3,
       "name": "闪焰之夜",
       "group": "冰原信使/VIII",
@@ -2084,7 +2139,8 @@
       "warnings": []
     },
     {
-      "char": "历阵锐枪芬",
+      "scCharName": "历阵锐枪芬",
+      "charId": "char_1036_fang2",
       "skinIndex": 1,
       "name": "纯净乐段",
       "group": "冰原信使/VIII",
@@ -2109,7 +2165,8 @@
       "warnings": []
     },
     {
-      "char": "能天使",
+      "scCharName": "能天使",
+      "charId": "char_103_angel",
       "skinIndex": 2,
       "name": "城市骑手",
       "group": "肯德基",
@@ -2134,7 +2191,8 @@
       "warnings": []
     },
     {
-      "char": "伊芙利特",
+      "scCharName": "伊芙利特",
+      "charId": "char_134_ifrit",
       "skinIndex": 2,
       "name": "儿童派对",
       "group": "肯德基",
@@ -2159,7 +2217,8 @@
       "warnings": []
     },
     {
-      "char": "可颂",
+      "scCharName": "可颂",
+      "charId": "char_201_moeshd",
       "skinIndex": 1,
       "name": "清晨七点",
       "group": "肯德基",
@@ -2184,7 +2243,8 @@
       "warnings": []
     },
     {
-      "char": "崖心",
+      "scCharName": "崖心",
+      "charId": "char_173_slchan",
       "skinIndex": 2,
       "name": "高原访客",
       "group": "WWF",
@@ -2209,7 +2269,8 @@
       "warnings": []
     },
     {
-      "char": "棘刺",
+      "scCharName": "棘刺",
+      "charId": "char_293_thorns",
       "skinIndex": 1,
       "name": "惬意",
       "group": "i.t",
@@ -2250,7 +2311,8 @@
       "warnings": []
     },
     {
-      "char": "史尔特尔",
+      "scCharName": "史尔特尔",
+      "charId": "char_350_surtr",
       "skinIndex": 1,
       "name": "自由//失效",
       "group": "i.t",
@@ -2299,7 +2361,8 @@
       "warnings": []
     },
     {
-      "char": "凛冬",
+      "scCharName": "凛冬",
+      "charId": "char_115_headbr",
       "skinIndex": 2,
       "name": "乌萨斯IO79",
       "group": "i.t",
@@ -2340,7 +2403,8 @@
       "warnings": []
     },
     {
-      "char": "铃兰",
+      "scCharName": "铃兰",
+      "charId": "char_358_lisa",
       "skinIndex": 2,
       "name": "春之颂",
       "group": "罗小黑战记",
@@ -2365,7 +2429,8 @@
       "warnings": []
     },
     {
-      "char": "洛洛",
+      "scCharName": "洛洛",
+      "charId": "char_4040_rockr",
       "skinIndex": 1,
       "name": "欢唱之前",
       "group": "罗小黑战记",
@@ -2390,7 +2455,8 @@
       "warnings": []
     },
     {
-      "char": "令",
+      "scCharName": "令",
+      "charId": "char_2023_ling",
       "skinIndex": 2,
       "name": "崖高梦远",
       "group": "国家地理",
@@ -2415,7 +2481,8 @@
       "warnings": []
     },
     {
-      "char": "仇白",
+      "scCharName": "仇白",
+      "charId": "char_4082_qiubai",
       "skinIndex": 1,
       "name": "霜林醉",
       "group": "国家地理",
@@ -2440,7 +2507,8 @@
       "warnings": []
     },
     {
-      "char": "芙兰卡",
+      "scCharName": "芙兰卡",
+      "charId": "char_106_franka",
       "skinIndex": 1,
       "name": "林虹之间",
       "group": "国家地理",
@@ -2465,7 +2533,8 @@
       "warnings": []
     },
     {
-      "char": "老鲤",
+      "scCharName": "老鲤",
+      "charId": "char_322_lmlee",
       "skinIndex": 2,
       "name": "坊间凉茶铺",
       "group": "三丽鸥家族",
@@ -2498,7 +2567,8 @@
       "warnings": []
     },
     {
-      "char": "澄闪",
+      "scCharName": "澄闪",
+      "charId": "char_377_gdglow",
       "skinIndex": 3,
       "name": "花房茶话会",
       "group": "三丽鸥家族",
@@ -2531,7 +2601,8 @@
       "warnings": []
     },
     {
-      "char": "涤火杰西卡",
+      "scCharName": "涤火杰西卡",
+      "charId": "char_1034_jesca2",
       "skinIndex": 1,
       "name": "《上任达维镇》",
       "group": "中国电影资料馆",
@@ -2564,7 +2635,8 @@
       "warnings": []
     },
     {
-      "char": "年",
+      "scCharName": "年",
+      "charId": "char_2014_nian",
       "skinIndex": 2,
       "name": "霹雳导演",
       "group": "中国电影资料馆",
@@ -2597,7 +2669,8 @@
       "warnings": []
     },
     {
-      "char": "重岳",
+      "scCharName": "重岳",
+      "charId": "char_2024_chyue",
       "skinIndex": 2,
       "name": "全能演员",
       "group": "中国电影资料馆",
@@ -2630,7 +2703,8 @@
       "warnings": []
     },
     {
-      "char": "艾雅法拉",
+      "scCharName": "艾雅法拉",
+      "charId": "char_180_amgoat",
       "skinIndex": 2,
       "name": "绵绒小魔女",
       "group": "三丽鸥家族/II",
@@ -2655,7 +2729,8 @@
       "warnings": []
     },
     {
-      "char": "圣约送葬人",
+      "scCharName": "圣约送葬人",
+      "charId": "char_1032_excu2",
       "skinIndex": 2,
       "name": "蒸汽寻踪者",
       "group": "三丽鸥家族/II",
@@ -2680,7 +2755,8 @@
       "warnings": []
     },
     {
-      "char": "早露",
+      "scCharName": "早露",
+      "charId": "char_197_poca",
       "skinIndex": 2,
       "name": "常伴我身",
       "group": "轻松小熊",
@@ -2705,7 +2781,8 @@
       "warnings": []
     },
     {
-      "char": "伊芙利特",
+      "scCharName": "伊芙利特",
+      "charId": "char_134_ifrit",
       "skinIndex": 3,
       "name": "轻松旅途",
       "group": "轻松小熊",
@@ -2730,7 +2807,8 @@
       "warnings": []
     },
     {
-      "char": "娜仁图亚",
+      "scCharName": "娜仁图亚",
+      "charId": "char_4138_narant",
       "skinIndex": 2,
       "name": "率直诚实之人",
       "group": "小马宝莉",
@@ -2755,7 +2833,8 @@
       "warnings": []
     },
     {
-      "char": "林",
+      "scCharName": "林",
+      "charId": "char_4080_lin",
       "skinIndex": 3,
       "name": "求知的魔法",
       "group": "小马宝莉",
@@ -2780,7 +2859,8 @@
       "warnings": []
     },
     {
-      "char": "瑕光",
+      "scCharName": "瑕光",
+      "charId": "char_423_blemsh",
       "skinIndex": 2,
       "name": "善良坚强之心",
       "group": "小马宝莉",
@@ -2805,7 +2885,8 @@
       "warnings": []
     },
     {
-      "char": "缄默德克萨斯",
+      "scCharName": "缄默德克萨斯",
+      "charId": "char_1028_texas2",
       "skinIndex": 1,
       "name": "破翼者",
       "group": "命途迭代",
@@ -2864,13 +2945,22 @@
           "note": "",
           "longTime": false,
           "seq": 5
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 6
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "浊心斯卡蒂",
+      "scCharName": "浊心斯卡蒂",
+      "charId": "char_1012_skadi2",
       "skinIndex": 2,
       "name": "红女爵",
       "group": "命途迭代/II",
@@ -2921,13 +3011,22 @@
           "note": "",
           "longTime": false,
           "seq": 4
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 5
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "蓝毒",
+      "scCharName": "蓝毒",
+      "charId": "char_129_bluep",
       "skinIndex": 2,
       "name": "哀律西昂夜曲",
       "group": "命途迭代/II",
@@ -2968,7 +3067,8 @@
       "warnings": []
     },
     {
-      "char": "玛恩纳",
+      "scCharName": "玛恩纳",
+      "charId": "char_4064_mlynar",
       "skinIndex": 2,
       "name": "苍茫怒号",
       "group": "命途迭代/III",
@@ -3009,7 +3109,8 @@
       "warnings": []
     },
     {
-      "char": "阿斯卡纶",
+      "scCharName": "阿斯卡纶",
+      "charId": "char_4132_ascln",
       "skinIndex": 1,
       "name": "趋光之暗",
       "group": "命途迭代/IV",
@@ -3034,7 +3135,8 @@
       "warnings": []
     },
     {
-      "char": "新约能天使",
+      "scCharName": "新约能天使",
+      "charId": "char_1041_angel2",
       "skinIndex": 1,
       "name": "寻翼之歌",
       "group": "命途迭代/VI",
@@ -3059,7 +3161,8 @@
       "warnings": []
     },
     {
-      "char": "遥",
+      "scCharName": "遥",
+      "charId": "char_4202_haruka",
       "skinIndex": 1,
       "name": "常世之幻",
       "group": "命途迭代/VI",
@@ -3084,7 +3187,8 @@
       "warnings": []
     },
     {
-      "char": "诺威尔",
+      "scCharName": "诺威尔",
+      "charId": "char_4173_nowell",
       "skinIndex": 1,
       "name": "幽蓝渡灵师",
       "group": "命途迭代/VI",
@@ -3109,7 +3213,8 @@
       "warnings": []
     },
     {
-      "char": "风笛",
+      "scCharName": "风笛",
+      "charId": "char_222_bpipe",
       "skinIndex": 1,
       "name": "皇后一号",
       "group": "啸风",
@@ -3135,7 +3240,8 @@
       "warnings": []
     },
     {
-      "char": "贾维",
+      "scCharName": "贾维",
+      "charId": "char_349_chiave",
       "skinIndex": 1,
       "name": "一人车队",
       "group": "啸风/II",
@@ -3160,7 +3266,8 @@
       "warnings": []
     },
     {
-      "char": "德克萨斯",
+      "scCharName": "德克萨斯",
+      "charId": "char_102_texas",
       "skinIndex": 1,
       "name": "寒冬信使",
       "group": "寒武纪/I",
@@ -3201,7 +3308,8 @@
       "warnings": []
     },
     {
-      "char": "幽灵鲨",
+      "scCharName": "幽灵鲨",
+      "charId": "char_143_ghost",
       "skinIndex": 1,
       "name": "暗流",
       "group": "寒武纪/I",
@@ -3242,7 +3350,8 @@
       "warnings": []
     },
     {
-      "char": "赫默",
+      "scCharName": "赫默",
+      "charId": "char_108_silent",
       "skinIndex": 2,
       "name": "霜息",
       "group": "寒武纪/II",
@@ -3267,7 +3376,8 @@
       "warnings": []
     },
     {
-      "char": "温米",
+      "scCharName": "温米",
+      "charId": "char_4081_warmy",
       "skinIndex": 1,
       "name": "街角暖绒",
       "group": "寒武纪/IV",
@@ -3294,13 +3404,22 @@
           "note": "",
           "longTime": false,
           "seq": 1
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 2
         }
       ],
       "dynamic": false,
       "warnings": []
     },
     {
-      "char": "隐德来希",
+      "scCharName": "隐德来希",
+      "charId": "char_4010_etlchi",
       "skinIndex": 1,
       "name": "耀目之蓝",
       "group": "寒武纪/V",
@@ -3325,7 +3444,8 @@
       "warnings": []
     },
     {
-      "char": "烛煌",
+      "scCharName": "烛煌",
+      "charId": "char_1040_blaze2",
       "skinIndex": 1,
       "name": "夜归人",
       "group": "寒武纪/V",
@@ -3350,7 +3470,8 @@
       "warnings": []
     },
     {
-      "char": "夜莺",
+      "scCharName": "夜莺",
+      "charId": "char_179_cgbird",
       "skinIndex": 1,
       "name": "挽歌",
       "group": "巫异盛宴",
@@ -3391,7 +3512,8 @@
       "warnings": []
     },
     {
-      "char": "华法琳",
+      "scCharName": "华法琳",
+      "charId": "char_171_bldsk",
       "skinIndex": 1,
       "name": "盛宴",
       "group": "巫异盛宴",
@@ -3440,7 +3562,8 @@
       "warnings": []
     },
     {
-      "char": "瑕光",
+      "scCharName": "瑕光",
+      "charId": "char_423_blemsh",
       "skinIndex": 1,
       "name": "异月灾裔",
       "group": "巫异盛宴/II",
@@ -3489,7 +3612,8 @@
       "warnings": []
     },
     {
-      "char": "巫恋",
+      "scCharName": "巫恋",
+      "charId": "char_254_vodfox",
       "skinIndex": 1,
       "name": "魔城回响",
       "group": "巫异盛宴/II",
@@ -3538,7 +3662,8 @@
       "warnings": []
     },
     {
-      "char": "老鲤",
+      "scCharName": "老鲤",
+      "charId": "char_322_lmlee",
       "skinIndex": 1,
       "name": "手到牌来",
       "group": "巫异盛宴/III",
@@ -3595,7 +3720,8 @@
       "warnings": []
     },
     {
-      "char": "爱丽丝",
+      "scCharName": "爱丽丝",
+      "charId": "char_338_iris",
       "skinIndex": 1,
       "name": "镜中来访",
       "group": "巫异盛宴/III",
@@ -3636,7 +3762,8 @@
       "warnings": []
     },
     {
-      "char": "风丸",
+      "scCharName": "风丸",
+      "charId": "char_4016_kazema",
       "skinIndex": 1,
       "name": "幻影轻悄",
       "group": "巫异盛宴/III",
@@ -3685,7 +3812,8 @@
       "warnings": []
     },
     {
-      "char": "多萝西",
+      "scCharName": "多萝西",
+      "charId": "char_4048_doroth",
       "skinIndex": 1,
       "name": "命运主宰",
       "group": "巫异盛宴/IV",
@@ -3726,7 +3854,8 @@
       "warnings": []
     },
     {
-      "char": "菲亚梅塔",
+      "scCharName": "菲亚梅塔",
+      "charId": "char_300_phenxi",
       "skinIndex": 1,
       "name": "至圣誓言",
       "group": "巫异盛宴/IV",
@@ -3767,7 +3896,8 @@
       "warnings": []
     },
     {
-      "char": "夏栎",
+      "scCharName": "夏栎",
+      "charId": "char_492_quercu",
       "skinIndex": 2,
       "name": "树影吟游",
       "group": "巫异盛宴/IV",
@@ -3808,7 +3938,8 @@
       "warnings": []
     },
     {
-      "char": "絮雨",
+      "scCharName": "絮雨",
+      "charId": "char_436_whispr",
       "skinIndex": 2,
       "name": "幽邃隐修",
       "group": "巫异盛宴/IV",
@@ -3849,7 +3980,8 @@
       "warnings": []
     },
     {
-      "char": "锏",
+      "scCharName": "锏",
+      "charId": "char_4116_blkkgt",
       "skinIndex": 1,
       "name": "暗月的影子",
       "group": "巫异盛宴/V",
@@ -3898,7 +4030,8 @@
       "warnings": []
     },
     {
-      "char": "煌",
+      "scCharName": "煌",
+      "charId": "char_017_huang",
       "skinIndex": 2,
       "name": "易爆蓝焰",
       "group": "巫异盛宴/V",
@@ -3939,7 +4072,8 @@
       "warnings": []
     },
     {
-      "char": "深律",
+      "scCharName": "深律",
+      "charId": "char_4109_baslin",
       "skinIndex": 1,
       "name": "夜空星芒",
       "group": "巫异盛宴/V",
@@ -3980,7 +4114,8 @@
       "warnings": []
     },
     {
-      "char": "和弦",
+      "scCharName": "和弦",
+      "charId": "char_297_hamoni",
       "skinIndex": 2,
       "name": "装点",
       "group": "待予花冠/I",
@@ -4021,7 +4156,8 @@
       "warnings": []
     },
     {
-      "char": "夜魔",
+      "scCharName": "夜魔",
+      "charId": "char_164_nightm",
       "skinIndex": 2,
       "name": "湖畔的少女",
       "group": "待予花冠/II",
@@ -4054,7 +4190,8 @@
       "warnings": []
     },
     {
-      "char": "濯尘芙蓉",
+      "scCharName": "濯尘芙蓉",
+      "charId": "char_1024_hbisc2",
       "skinIndex": 1,
       "name": "浪漫满厢",
       "group": "待予花冠/II",
@@ -4087,7 +4224,8 @@
       "warnings": []
     },
     {
-      "char": "塞雷娅",
+      "scCharName": "塞雷娅",
+      "charId": "char_202_demkni",
       "skinIndex": 2,
       "name": "铁律",
       "group": "忒斯特收藏/III",
@@ -4128,7 +4266,8 @@
       "warnings": []
     },
     {
-      "char": "傀影",
+      "scCharName": "傀影",
+      "charId": "char_250_phatom",
       "skinIndex": 2,
       "name": "焦点",
       "group": "忒斯特收藏/V",
@@ -4153,7 +4292,8 @@
       "warnings": []
     },
     {
-      "char": "水月",
+      "scCharName": "水月",
+      "charId": "char_437_mizuki",
       "skinIndex": 1,
       "name": "夏日餮宴",
       "group": "忒斯特收藏/VIII",
@@ -4178,7 +4318,8 @@
       "warnings": []
     },
     {
-      "char": "能天使",
+      "scCharName": "能天使",
+      "charId": "char_103_angel",
       "skinIndex": 3,
       "name": "午夜邮差",
       "group": "忒斯特收藏/IX",
@@ -4196,7 +4337,8 @@
       "warnings": []
     },
     {
-      "char": "嵯峨",
+      "scCharName": "嵯峨",
+      "charId": "char_362_saga",
       "skinIndex": 1,
       "name": "彼有",
       "group": "忒斯特收藏/X",
@@ -4237,7 +4379,8 @@
       "warnings": []
     },
     {
-      "char": "陈",
+      "scCharName": "陈",
+      "charId": "char_010_chen",
       "skinIndex": 2,
       "name": "初晴",
       "group": "忒斯特收藏/XI",
@@ -4254,7 +4397,8 @@
       "warnings": []
     },
     {
-      "char": "塑心",
+      "scCharName": "塑心",
+      "charId": "char_245_cello",
       "skinIndex": 1,
       "name": "无我唯识",
       "group": "忒斯特收藏/XIII",
@@ -4297,13 +4441,22 @@
           "note": "",
           "longTime": false,
           "seq": 3
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 4
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "圣约送葬人",
+      "scCharName": "圣约送葬人",
+      "charId": "char_1032_excu2",
       "skinIndex": 1,
       "name": "众志归一",
       "group": "忒斯特收藏/XIII",
@@ -4338,13 +4491,22 @@
           "note": "",
           "longTime": false,
           "seq": 2
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 3
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "维什戴尔",
+      "scCharName": "维什戴尔",
+      "charId": "char_1035_wisdel",
       "skinIndex": 1,
       "name": "超新星",
       "group": "忒斯特收藏/XV",
@@ -4379,13 +4541,22 @@
           "note": "",
           "longTime": false,
           "seq": 2
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 3
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "空弦",
+      "scCharName": "空弦",
+      "charId": "char_332_archet",
       "skinIndex": 2,
       "name": "至虔者荣光",
       "group": "忒斯特收藏/XV",
@@ -4418,7 +4589,8 @@
       "warnings": []
     },
     {
-      "char": "凯尔希",
+      "scCharName": "凯尔希",
+      "charId": "char_003_kalts",
       "skinIndex": 2,
       "name": "时遗",
       "group": "忒斯特收藏/XVI",
@@ -4435,7 +4607,8 @@
       "warnings": []
     },
     {
-      "char": "荒芜拉普兰德",
+      "scCharName": "荒芜拉普兰德",
+      "charId": "char_1038_whitw2",
       "skinIndex": 1,
       "name": "无序的谦卑",
       "group": "忒斯特收藏/XVII",
@@ -4462,13 +4635,22 @@
           "note": "",
           "longTime": false,
           "seq": 1
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 2
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "迷迭香",
+      "scCharName": "迷迭香",
+      "charId": "char_391_rosmon",
       "skinIndex": 2,
       "name": "轻盈一梦",
       "group": "忒斯特收藏/XVIII",
@@ -4495,13 +4677,22 @@
           "note": "",
           "longTime": false,
           "seq": 1
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 2
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "左乐",
+      "scCharName": "左乐",
+      "charId": "char_4121_zuole",
       "skinIndex": 2,
       "name": "无息破局",
       "group": "忒斯特收藏/XVIII",
@@ -4526,7 +4717,8 @@
       "warnings": []
     },
     {
-      "char": "焰尾",
+      "scCharName": "焰尾",
+      "charId": "char_420_flamtl",
       "skinIndex": 1,
       "name": "小健将",
       "group": "成就之星/II",
@@ -4575,7 +4767,8 @@
       "warnings": []
     },
     {
-      "char": "奥斯塔",
+      "scCharName": "奥斯塔",
+      "charId": "char_346_aosta",
       "skinIndex": 1,
       "name": "光铳调试员",
       "group": "成就之星/II",
@@ -4616,7 +4809,8 @@
       "warnings": []
     },
     {
-      "char": "绮良",
+      "scCharName": "绮良",
+      "charId": "char_478_kirara",
       "skinIndex": 1,
       "name": "前沿玩家",
       "group": "成就之星/II",
@@ -4657,7 +4851,8 @@
       "warnings": []
     },
     {
-      "char": "惊蛰",
+      "scCharName": "惊蛰",
+      "charId": "char_306_leizi",
       "skinIndex": 1,
       "name": "遗迹游学者",
       "group": "成就之星/III",
@@ -4706,7 +4901,8 @@
       "warnings": []
     },
     {
-      "char": "艾丽妮",
+      "scCharName": "艾丽妮",
+      "charId": "char_4009_irene",
       "skinIndex": 2,
       "name": "至高判决",
       "group": "成就之星/III",
@@ -4747,7 +4943,8 @@
       "warnings": []
     },
     {
-      "char": "慑砂",
+      "scCharName": "慑砂",
+      "charId": "char_379_sesa",
       "skinIndex": 1,
       "name": "万物有灵",
       "group": "成就之星/V",
@@ -4780,7 +4977,8 @@
       "warnings": []
     },
     {
-      "char": "水月",
+      "scCharName": "水月",
+      "charId": "char_437_mizuki",
       "skinIndex": 2,
       "name": "永恒玩家",
       "group": "成就之星/VI",
@@ -4821,7 +5019,8 @@
       "warnings": []
     },
     {
-      "char": "司霆惊蛰",
+      "scCharName": "司霆惊蛰",
+      "charId": "char_1043_leizi2",
       "skinIndex": 1,
       "name": "血翼蔷薇",
       "group": "成就之星/VIII",
@@ -4846,7 +5045,8 @@
       "warnings": []
     },
     {
-      "char": "维什戴尔",
+      "scCharName": "维什戴尔",
+      "charId": "char_1035_wisdel",
       "skinIndex": 2,
       "name": "绝对主角",
       "group": "成就之星/IX",
@@ -4863,7 +5063,8 @@
       "warnings": []
     },
     {
-      "char": "刺玫",
+      "scCharName": "刺玫",
+      "charId": "char_494_vendla",
       "skinIndex": 1,
       "name": "蔷薇之谜",
       "group": "成就之星/X",
@@ -4888,7 +5089,8 @@
       "warnings": []
     },
     {
-      "char": "塞雷娅",
+      "scCharName": "塞雷娅",
+      "charId": "char_202_demkni",
       "skinIndex": 1,
       "name": "坚城",
       "group": "斗争血脉/I",
@@ -4937,7 +5139,8 @@
       "warnings": []
     },
     {
-      "char": "安洁莉娜",
+      "scCharName": "安洁莉娜",
+      "charId": "char_291_aglina",
       "skinIndex": 1,
       "name": "质素访客",
       "group": "斗争血脉/I",
@@ -4986,7 +5189,8 @@
       "warnings": []
     },
     {
-      "char": "拉普兰德",
+      "scCharName": "拉普兰德",
+      "charId": "char_140_whitew",
       "skinIndex": 1,
       "name": "典雅噩兆",
       "group": "斗争血脉/I",
@@ -5035,7 +5239,8 @@
       "warnings": []
     },
     {
-      "char": "送葬人",
+      "scCharName": "送葬人",
+      "charId": "char_279_excu",
       "skinIndex": 1,
       "name": "无题密令",
       "group": "斗争血脉/I",
@@ -5084,7 +5289,8 @@
       "warnings": []
     },
     {
-      "char": "灰喉",
+      "scCharName": "灰喉",
+      "charId": "char_367_swllow",
       "skinIndex": 1,
       "name": "归巢",
       "group": "斗争血脉/I",
@@ -5125,7 +5331,8 @@
       "warnings": []
     },
     {
-      "char": "赫拉格",
+      "scCharName": "赫拉格",
+      "charId": "char_188_helage",
       "skinIndex": 1,
       "name": "歧路幻影",
       "group": "斗争血脉/II",
@@ -5166,7 +5373,8 @@
       "warnings": []
     },
     {
-      "char": "山",
+      "scCharName": "山",
+      "charId": "char_264_f12yin",
       "skinIndex": 1,
       "name": "乌云",
       "group": "斗争血脉/III",
@@ -5215,7 +5423,8 @@
       "warnings": []
     },
     {
-      "char": "森蚺",
+      "scCharName": "森蚺",
+      "charId": "char_416_zumama",
       "skinIndex": 1,
       "name": "熔锻铸匠",
       "group": "斗争血脉/III",
@@ -5256,7 +5465,8 @@
       "warnings": []
     },
     {
-      "char": "断崖",
+      "scCharName": "断崖",
+      "charId": "char_294_ayer",
       "skinIndex": 1,
       "name": "受验者",
       "group": "斗争血脉/III",
@@ -5305,7 +5515,8 @@
       "warnings": []
     },
     {
-      "char": "燧石",
+      "scCharName": "燧石",
+      "charId": "char_415_flint",
       "skinIndex": 1,
       "name": "绚烂夏花",
       "group": "斗争血脉/III",
@@ -5346,7 +5557,8 @@
       "warnings": []
     },
     {
-      "char": "浊心斯卡蒂",
+      "scCharName": "浊心斯卡蒂",
+      "charId": "char_1012_skadi2",
       "skinIndex": 1,
       "name": "升华",
       "group": "斗争血脉/IV",
@@ -5421,13 +5633,22 @@
           "note": "",
           "longTime": false,
           "seq": 7
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 8
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "灵知",
+      "scCharName": "灵知",
+      "charId": "char_206_gnosis",
       "skinIndex": 1,
       "name": "先驱",
       "group": "斗争血脉/IV",
@@ -5476,7 +5697,8 @@
       "warnings": []
     },
     {
-      "char": "极光",
+      "scCharName": "极光",
+      "charId": "char_422_aurora",
       "skinIndex": 1,
       "name": "极昼捕手",
       "group": "斗争血脉/IV",
@@ -5517,7 +5739,8 @@
       "warnings": []
     },
     {
-      "char": "凯尔希",
+      "scCharName": "凯尔希",
+      "charId": "char_003_kalts",
       "skinIndex": 1,
       "name": "残余",
       "group": "斗争血脉/VI",
@@ -5566,7 +5789,8 @@
       "warnings": []
     },
     {
-      "char": "归溟幽灵鲨",
+      "scCharName": "归溟幽灵鲨",
+      "charId": "char_1023_ghost2",
       "skinIndex": 1,
       "name": "生而为一",
       "group": "斗争血脉/VI",
@@ -5633,13 +5857,22 @@
           "note": "",
           "longTime": false,
           "seq": 6
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 7
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "假日威龙陈",
+      "scCharName": "假日威龙陈",
+      "charId": "char_1013_chen2",
       "skinIndex": 1,
       "name": "万重山",
       "group": "斗争血脉/VI",
@@ -5688,7 +5921,8 @@
       "warnings": []
     },
     {
-      "char": "黑键",
+      "scCharName": "黑键",
+      "charId": "char_4046_ebnhlz",
       "skinIndex": 1,
       "name": "变奏",
       "group": "斗争血脉/VI",
@@ -5729,7 +5963,8 @@
       "warnings": []
     },
     {
-      "char": "缪尔赛思",
+      "scCharName": "缪尔赛思",
+      "charId": "char_249_mlyss",
       "skinIndex": 1,
       "name": "新枝",
       "group": "斗争血脉/VIII",
@@ -5780,13 +6015,22 @@
           "note": "",
           "longTime": false,
           "seq": 4
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 5
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "伊内丝",
+      "scCharName": "伊内丝",
+      "charId": "char_4087_ines",
       "skinIndex": 1,
       "name": "燃烧天穹下",
       "group": "斗争血脉/VIII",
@@ -5835,7 +6079,8 @@
       "warnings": []
     },
     {
-      "char": "棘刺",
+      "scCharName": "棘刺",
+      "charId": "char_293_thorns",
       "skinIndex": 2,
       "name": "锋潮",
       "group": "斗争血脉/VIII",
@@ -5876,7 +6121,8 @@
       "warnings": []
     },
     {
-      "char": "菲亚梅塔",
+      "scCharName": "菲亚梅塔",
+      "charId": "char_300_phenxi",
       "skinIndex": 2,
       "name": "审判日",
       "group": "斗争血脉/IX",
@@ -5909,7 +6155,8 @@
       "warnings": []
     },
     {
-      "char": "Mon3tr",
+      "scCharName": "Mon3tr",
+      "charId": "char_4179_monstr",
       "skinIndex": 1,
       "name": "锋锐",
       "group": "斗争血脉/XI",
@@ -5934,7 +6181,8 @@
       "warnings": []
     },
     {
-      "char": "聆音",
+      "scCharName": "聆音",
+      "charId": "char_4187_graceb",
       "skinIndex": 1,
       "name": "追想涤尘",
       "group": "斗争血脉/XI",
@@ -5959,7 +6207,8 @@
       "warnings": []
     },
     {
-      "char": "白面鸮",
+      "scCharName": "白面鸮",
+      "charId": "char_128_plosis",
       "skinIndex": 1,
       "name": "幽静",
       "group": "时代/III",
@@ -5984,7 +6233,8 @@
       "warnings": []
     },
     {
-      "char": "狮蝎",
+      "scCharName": "狮蝎",
+      "charId": "char_215_mantic",
       "skinIndex": 1,
       "name": "无形悼挽",
       "group": "时代/IV",
@@ -6010,7 +6260,8 @@
       "warnings": []
     },
     {
-      "char": "夜魔",
+      "scCharName": "夜魔",
+      "charId": "char_164_nightm",
       "skinIndex": 1,
       "name": "光影",
       "group": "时代/IV",
@@ -6043,7 +6294,8 @@
       "warnings": []
     },
     {
-      "char": "莫斯提马",
+      "scCharName": "莫斯提马",
+      "charId": "char_213_mostma",
       "skinIndex": 1,
       "name": "除魅",
       "group": "时代/V",
@@ -6084,7 +6336,8 @@
       "warnings": []
     },
     {
-      "char": "星极",
+      "scCharName": "星极",
+      "charId": "char_274_astesi",
       "skinIndex": 1,
       "name": "寻耀",
       "group": "时代/V",
@@ -6117,7 +6370,8 @@
       "warnings": []
     },
     {
-      "char": "W",
+      "scCharName": "W",
+      "charId": "char_113_cqbw",
       "skinIndex": 1,
       "name": "恍惚",
       "group": "时代/VII",
@@ -6216,13 +6470,22 @@
           "note": "",
           "longTime": false,
           "seq": 10
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 11
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "德克萨斯",
+      "scCharName": "德克萨斯",
+      "charId": "char_102_texas",
       "skinIndex": 2,
       "name": "意志",
       "group": "时代/VII",
@@ -6271,7 +6534,8 @@
       "warnings": []
     },
     {
-      "char": "蜜蜡",
+      "scCharName": "蜜蜡",
+      "charId": "char_344_beewax",
       "skinIndex": 1,
       "name": "白沙",
       "group": "时代/IX",
@@ -6320,7 +6584,8 @@
       "warnings": []
     },
     {
-      "char": "月禾",
+      "scCharName": "月禾",
+      "charId": "char_343_tknogi",
       "skinIndex": 1,
       "name": "伦式巫女",
       "group": "时代/IX",
@@ -6361,7 +6626,8 @@
       "warnings": []
     },
     {
-      "char": "帕拉斯",
+      "scCharName": "帕拉斯",
+      "charId": "char_485_pallas",
       "skinIndex": 1,
       "name": "传承",
       "group": "时代/XII",
@@ -6402,7 +6668,8 @@
       "warnings": []
     },
     {
-      "char": "早露",
+      "scCharName": "早露",
+      "charId": "char_197_poca",
       "skinIndex": 1,
       "name": "杰作",
       "group": "时代/XII",
@@ -6443,7 +6710,8 @@
       "warnings": []
     },
     {
-      "char": "安哲拉",
+      "scCharName": "安哲拉",
+      "charId": "char_218_cuttle",
       "skinIndex": 1,
       "name": "暗矢",
       "group": "时代/XII",
@@ -6484,7 +6752,8 @@
       "warnings": []
     },
     {
-      "char": "琴柳",
+      "scCharName": "琴柳",
+      "charId": "char_479_sleach",
       "skinIndex": 1,
       "name": "识芳",
       "group": "时代/XIV",
@@ -6525,7 +6794,8 @@
       "warnings": []
     },
     {
-      "char": "桑葚",
+      "scCharName": "桑葚",
+      "charId": "char_473_mberry",
       "skinIndex": 1,
       "name": "植药",
       "group": "时代/XIV",
@@ -6566,7 +6836,8 @@
       "warnings": []
     },
     {
-      "char": "山",
+      "scCharName": "山",
+      "charId": "char_264_f12yin",
       "skinIndex": 2,
       "name": "读者",
       "group": "时代/XV",
@@ -6615,7 +6886,8 @@
       "warnings": []
     },
     {
-      "char": "赤冬",
+      "scCharName": "赤冬",
+      "charId": "char_475_akafyu",
       "skinIndex": 1,
       "name": "心性",
       "group": "时代/XV",
@@ -6656,7 +6928,8 @@
       "warnings": []
     },
     {
-      "char": "异客",
+      "scCharName": "异客",
+      "charId": "char_472_pasngr",
       "skinIndex": 1,
       "name": "今昔须臾之梦",
       "group": "时代/XVII",
@@ -6707,13 +6980,22 @@
           "note": "",
           "longTime": false,
           "seq": 4
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 5
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "耀骑士临光",
+      "scCharName": "耀骑士临光",
+      "charId": "char_1014_nearl2",
       "skinIndex": 1,
       "name": "复现荣光",
       "group": "时代/XVII",
@@ -6796,13 +7078,22 @@
           "note": "",
           "longTime": false,
           "seq": 8
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 9
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "迷迭香",
+      "scCharName": "迷迭香",
+      "charId": "char_391_rosmon",
       "skinIndex": 1,
       "name": "拥抱新生",
       "group": "时代/XVII",
@@ -6885,13 +7176,22 @@
           "note": "",
           "longTime": false,
           "seq": 8
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 9
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "空",
+      "scCharName": "空",
+      "charId": "char_101_sora",
       "skinIndex": 2,
       "name": "如歌",
       "group": "时代/XVII",
@@ -6932,7 +7232,8 @@
       "warnings": []
     },
     {
-      "char": "夏栎",
+      "scCharName": "夏栎",
+      "charId": "char_492_quercu",
       "skinIndex": 1,
       "name": "遥乡之径",
       "group": "时代/XVII",
@@ -6957,7 +7258,8 @@
       "warnings": []
     },
     {
-      "char": "帕拉斯",
+      "scCharName": "帕拉斯",
+      "charId": "char_485_pallas",
       "skinIndex": 2,
       "name": "山川的酿造",
       "group": "时代/XIX",
@@ -6982,7 +7284,8 @@
       "warnings": []
     },
     {
-      "char": "狮蝎",
+      "scCharName": "狮蝎",
+      "charId": "char_215_mantic",
       "skinIndex": 2,
       "name": "面纱之下",
       "group": "时代/XX",
@@ -7023,7 +7326,8 @@
       "warnings": []
     },
     {
-      "char": "铃兰",
+      "scCharName": "铃兰",
+      "charId": "char_358_lisa",
       "skinIndex": 3,
       "name": "雪霁",
       "group": "时代/XXII",
@@ -7080,7 +7384,8 @@
       "warnings": []
     },
     {
-      "char": "星极",
+      "scCharName": "星极",
+      "charId": "char_274_astesi",
       "skinIndex": 3,
       "name": "奇工妙想",
       "group": "时代/XXIII",
@@ -7106,7 +7411,8 @@
       "warnings": []
     },
     {
-      "char": "号角",
+      "scCharName": "号角",
+      "charId": "char_4039_horn",
       "skinIndex": 1,
       "name": "化花",
       "group": "时代/XXIV",
@@ -7155,7 +7461,8 @@
       "warnings": []
     },
     {
-      "char": "和弦",
+      "scCharName": "和弦",
+      "charId": "char_297_hamoni",
       "skinIndex": 1,
       "name": "邀约",
       "group": "时代/XXIV",
@@ -7196,7 +7503,8 @@
       "warnings": []
     },
     {
-      "char": "玛恩纳",
+      "scCharName": "玛恩纳",
+      "charId": "char_4064_mlynar",
       "skinIndex": 1,
       "name": "远路",
       "group": "时代/XXVIII",
@@ -7239,13 +7547,22 @@
           "note": "",
           "longTime": false,
           "seq": 3
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 4
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "风笛",
+      "scCharName": "风笛",
+      "charId": "char_222_bpipe",
       "skinIndex": 2,
       "name": "皇家近卫",
       "group": "时代/XXVIII",
@@ -7294,7 +7611,8 @@
       "warnings": []
     },
     {
-      "char": "灰毫",
+      "scCharName": "灰毫",
+      "charId": "char_431_ashlok",
       "skinIndex": 1,
       "name": "卡利斯卡群枪",
       "group": "时代/XXVIII",
@@ -7343,7 +7661,8 @@
       "warnings": []
     },
     {
-      "char": "焰影苇草",
+      "scCharName": "焰影苇草",
+      "charId": "char_1020_reed2",
       "skinIndex": 1,
       "name": "博物",
       "group": "时代/XXX",
@@ -7392,7 +7711,8 @@
       "warnings": []
     },
     {
-      "char": "仇白",
+      "scCharName": "仇白",
+      "charId": "char_4082_qiubai",
       "skinIndex": 2,
       "name": "礼遇",
       "group": "时代/XXXI",
@@ -7441,7 +7761,8 @@
       "warnings": []
     },
     {
-      "char": "蚀清",
+      "scCharName": "蚀清",
+      "charId": "char_489_serum",
       "skinIndex": 1,
       "name": "逸趣",
       "group": "时代/XXXI",
@@ -7482,7 +7803,8 @@
       "warnings": []
     },
     {
-      "char": "洋灰",
+      "scCharName": "洋灰",
+      "charId": "char_464_cement",
       "skinIndex": 1,
       "name": "全新业务",
       "group": "时代/XXXI",
@@ -7523,7 +7845,8 @@
       "warnings": []
     },
     {
-      "char": "斥罪",
+      "scCharName": "斥罪",
+      "charId": "char_4065_judge",
       "skinIndex": 2,
       "name": "记叙",
       "group": "时代/XXXIII",
@@ -7564,7 +7887,8 @@
       "warnings": []
     },
     {
-      "char": "玫拉",
+      "scCharName": "玫拉",
+      "charId": "char_4006_melnte",
       "skinIndex": 1,
       "name": "赴宴",
       "group": "时代/XXXIII",
@@ -7605,7 +7929,8 @@
       "warnings": []
     },
     {
-      "char": "纯烬艾雅法拉",
+      "scCharName": "纯烬艾雅法拉",
+      "charId": "char_1016_agoat2",
       "skinIndex": 1,
       "name": "远行前的野餐",
       "group": "时代/XXXIV",
@@ -7654,7 +7979,8 @@
       "warnings": []
     },
     {
-      "char": "青枳",
+      "scCharName": "青枳",
+      "charId": "char_488_buildr",
       "skinIndex": 1,
       "name": "晚风休憩",
       "group": "时代/XXXIV",
@@ -7695,7 +8021,8 @@
       "warnings": []
     },
     {
-      "char": "缄默德克萨斯",
+      "scCharName": "缄默德克萨斯",
+      "charId": "char_1028_texas2",
       "skinIndex": 2,
       "name": "幽兰秘辛",
       "group": "时代/XXXVI",
@@ -7738,13 +8065,22 @@
           "note": "",
           "longTime": false,
           "seq": 3
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 4
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "薇薇安娜",
+      "scCharName": "薇薇安娜",
+      "charId": "char_4098_vvana",
       "skinIndex": 1,
       "name": "寄自奥格尼斯科",
       "group": "时代/XXXIX",
@@ -7777,7 +8113,8 @@
       "warnings": []
     },
     {
-      "char": "风笛",
+      "scCharName": "风笛",
+      "charId": "char_222_bpipe",
       "skinIndex": 3,
       "name": "风笛声声",
       "group": "时代/XXXIX",
@@ -7818,7 +8155,8 @@
       "warnings": []
     },
     {
-      "char": "妮芙",
+      "scCharName": "妮芙",
+      "charId": "char_4146_nymph",
       "skinIndex": 1,
       "name": "甜美配方",
       "group": "时代/XLI",
@@ -7851,7 +8189,8 @@
       "warnings": []
     },
     {
-      "char": "晓歌",
+      "scCharName": "晓歌",
+      "charId": "char_497_ctable",
       "skinIndex": 2,
       "name": "湖畔歌者",
       "group": "时代/XLIII",
@@ -7884,7 +8223,8 @@
       "warnings": []
     },
     {
-      "char": "海霓",
+      "scCharName": "海霓",
+      "charId": "char_4079_haini",
       "skinIndex": 1,
       "name": "翻涌",
       "group": "时代/XLIV",
@@ -7909,7 +8249,8 @@
       "warnings": []
     },
     {
-      "char": "乌尔比安",
+      "scCharName": "乌尔比安",
+      "charId": "char_4145_ulpia",
       "skinIndex": 1,
       "name": "注目深渊",
       "group": "时代/XLVII",
@@ -7934,7 +8275,8 @@
       "warnings": []
     },
     {
-      "char": "维娜·维多利亚",
+      "scCharName": "维娜·维多利亚",
+      "charId": "char_1019_siege2",
       "skinIndex": 1,
       "name": "光耀之途",
       "group": "时代/XLIX",
@@ -7953,13 +8295,22 @@
           "end": "2025-11-29",
           "note": "",
           "longTime": false
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 1
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "霍尔海雅",
+      "scCharName": "霍尔海雅",
+      "charId": "char_4027_heyak",
       "skinIndex": 2,
       "name": "恒久祭礼",
       "group": "时代/XLIX",
@@ -7978,13 +8329,22 @@
           "end": "2025-11-29",
           "note": "",
           "longTime": false
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 1
         }
       ],
       "dynamic": false,
       "warnings": []
     },
     {
-      "char": "阿罗玛",
+      "scCharName": "阿罗玛",
+      "charId": "char_446_aroma",
       "skinIndex": 1,
       "name": "舒心野趣",
       "group": "时代/LIV",
@@ -8009,7 +8369,8 @@
       "warnings": []
     },
     {
-      "char": "忍冬",
+      "scCharName": "忍冬",
+      "charId": "char_4026_vulpis",
       "skinIndex": 1,
       "name": "失焦",
       "group": "时代/LV",
@@ -8034,7 +8395,8 @@
       "warnings": []
     },
     {
-      "char": "纯烬艾雅法拉",
+      "scCharName": "纯烬艾雅法拉",
+      "charId": "char_1016_agoat2",
       "skinIndex": 2,
       "name": "后来的故事",
       "group": "时代/LVII",
@@ -8059,7 +8421,8 @@
       "warnings": []
     },
     {
-      "char": "蒂比",
+      "scCharName": "蒂比",
+      "charId": "char_4191_tippi",
       "skinIndex": 1,
       "name": "清新布景",
       "group": "时代/LVII",
@@ -8084,7 +8447,8 @@
       "warnings": []
     },
     {
-      "char": "绮良",
+      "scCharName": "绮良",
+      "charId": "char_478_kirara",
       "skinIndex": 2,
       "name": "轻闲快照",
       "group": "时代/LVII",
@@ -8109,7 +8473,8 @@
       "warnings": []
     },
     {
-      "char": "空构",
+      "scCharName": "空构",
+      "charId": "char_4015_spuria",
       "skinIndex": 1,
       "name": "慵怠哼唱",
       "group": "时代/LVIII",
@@ -8134,7 +8499,8 @@
       "warnings": []
     },
     {
-      "char": "食铁兽",
+      "scCharName": "食铁兽",
+      "charId": "char_241_panda",
       "skinIndex": 1,
       "name": "片场一角",
       "group": "玛尔特/I",
@@ -8159,7 +8525,8 @@
       "warnings": []
     },
     {
-      "char": "凛冬",
+      "scCharName": "凛冬",
+      "charId": "char_115_headbr",
       "skinIndex": 1,
       "name": "整装待发",
       "group": "玛尔特/II",
@@ -8192,7 +8559,8 @@
       "warnings": []
     },
     {
-      "char": "蓝毒",
+      "scCharName": "蓝毒",
+      "charId": "char_129_bluep",
       "skinIndex": 1,
       "name": "浅滩律动",
       "group": "玛尔特/III",
@@ -8218,7 +8586,8 @@
       "warnings": []
     },
     {
-      "char": "布洛卡",
+      "scCharName": "布洛卡",
+      "charId": "char_356_broca",
       "skinIndex": 1,
       "name": "组间休息",
       "group": "玛尔特/IV",
@@ -8244,7 +8613,8 @@
       "warnings": []
     },
     {
-      "char": "斯卡蒂",
+      "scCharName": "斯卡蒂",
+      "charId": "char_263_skadi",
       "skinIndex": 2,
       "name": "下一顿午茶",
       "group": "玛尔特/V",
@@ -8293,7 +8663,8 @@
       "warnings": []
     },
     {
-      "char": "引星棘刺",
+      "scCharName": "引星棘刺",
+      "charId": "char_1039_thorn2",
       "skinIndex": 1,
       "name": "无际之帆",
       "group": "玛尔特/IX",
@@ -8326,7 +8697,8 @@
       "warnings": []
     },
     {
-      "char": "山",
+      "scCharName": "山",
+      "charId": "char_264_f12yin",
       "skinIndex": 3,
       "name": "硬派速度",
       "group": "玛尔特/XIII",
@@ -8351,7 +8723,8 @@
       "warnings": []
     },
     {
-      "char": "钼铅",
+      "scCharName": "钼铅",
+      "charId": "char_4171_wulfen",
       "skinIndex": 1,
       "name": "跃动节拍",
       "group": "玛尔特/XIV",
@@ -8376,7 +8749,8 @@
       "warnings": []
     },
     {
-      "char": "闪灵",
+      "scCharName": "闪灵",
+      "charId": "char_147_shining",
       "skinIndex": 1,
       "name": "静谧午夜 DN02",
       "group": "珊瑚海岸/I",
@@ -8417,7 +8791,8 @@
       "warnings": []
     },
     {
-      "char": "天火",
+      "scCharName": "天火",
+      "charId": "char_166_skfire",
       "skinIndex": 1,
       "name": "温差 RT.RX01",
       "group": "珊瑚海岸/I",
@@ -8458,7 +8833,8 @@
       "warnings": []
     },
     {
-      "char": "伊芙利特",
+      "scCharName": "伊芙利特",
+      "charId": "char_134_ifrit",
       "skinIndex": 1,
       "name": "日晒 SS.SP",
       "group": "珊瑚海岸/I",
@@ -8499,7 +8875,8 @@
       "warnings": []
     },
     {
-      "char": "空",
+      "scCharName": "空",
+      "charId": "char_101_sora",
       "skinIndex": 1,
       "name": "夏卉 FA361",
       "group": "珊瑚海岸/I",
@@ -8540,7 +8917,8 @@
       "warnings": []
     },
     {
-      "char": "临光",
+      "scCharName": "临光",
+      "charId": "char_148_nearl",
       "skinIndex": 1,
       "name": "灿阳朝露 SD01",
       "group": "珊瑚海岸/II",
@@ -8581,7 +8959,8 @@
       "warnings": []
     },
     {
-      "char": "斯卡蒂",
+      "scCharName": "斯卡蒂",
+      "charId": "char_263_skadi",
       "skinIndex": 1,
       "name": "驭浪 WR04",
       "group": "珊瑚海岸/III",
@@ -8638,7 +9017,8 @@
       "warnings": []
     },
     {
-      "char": "普罗旺斯",
+      "scCharName": "普罗旺斯",
+      "charId": "char_145_prove",
       "skinIndex": 1,
       "name": "悠然假日 HD08",
       "group": "珊瑚海岸/III",
@@ -8695,7 +9075,8 @@
       "warnings": []
     },
     {
-      "char": "白金",
+      "scCharName": "白金",
+      "charId": "char_204_platnm",
       "skinIndex": 1,
       "name": "灿阳朝露 SD05",
       "group": "珊瑚海岸/III",
@@ -8744,7 +9125,8 @@
       "warnings": []
     },
     {
-      "char": "银灰",
+      "scCharName": "银灰",
+      "charId": "char_172_svrash",
       "skinIndex": 2,
       "name": "探寻者 SKm01",
       "group": "珊瑚海岸/IV",
@@ -8793,7 +9175,8 @@
       "warnings": []
     },
     {
-      "char": "刻俄柏",
+      "scCharName": "刻俄柏",
+      "charId": "char_2013_cerber",
       "skinIndex": 1,
       "name": "夏卉 FA333",
       "group": "珊瑚海岸/IV",
@@ -8842,7 +9225,8 @@
       "warnings": []
     },
     {
-      "char": "可颂",
+      "scCharName": "可颂",
+      "charId": "char_201_moeshd",
       "skinIndex": 2,
       "name": "探寻者 SK03",
       "group": "珊瑚海岸/IV",
@@ -8891,7 +9275,8 @@
       "warnings": []
     },
     {
-      "char": "艾雅法拉",
+      "scCharName": "艾雅法拉",
+      "charId": "char_180_amgoat",
       "skinIndex": 1,
       "name": "夏卉 FA018",
       "group": "珊瑚海岸/V",
@@ -8932,7 +9317,8 @@
       "warnings": []
     },
     {
-      "char": "安洁莉娜",
+      "scCharName": "安洁莉娜",
+      "charId": "char_291_aglina",
       "skinIndex": 2,
       "name": "夏卉 FA017",
       "group": "珊瑚海岸/V",
@@ -8981,7 +9367,8 @@
       "warnings": []
     },
     {
-      "char": "红",
+      "scCharName": "红",
+      "charId": "char_144_red",
       "skinIndex": 1,
       "name": "轻风 LB01",
       "group": "珊瑚海岸/VI",
@@ -9022,7 +9409,8 @@
       "warnings": []
     },
     {
-      "char": "泥岩",
+      "scCharName": "泥岩",
+      "charId": "char_311_mudrok",
       "skinIndex": 1,
       "name": "静谧午夜 DN06",
       "group": "珊瑚海岸/VI",
@@ -9071,7 +9459,8 @@
       "warnings": []
     },
     {
-      "char": "华法琳",
+      "scCharName": "华法琳",
+      "charId": "char_171_bldsk",
       "skinIndex": 2,
       "name": "悠然假日 HD31",
       "group": "珊瑚海岸/VII",
@@ -9097,7 +9486,8 @@
       "warnings": []
     },
     {
-      "char": "卡涅利安",
+      "scCharName": "卡涅利安",
+      "charId": "char_426_billro",
       "skinIndex": 2,
       "name": "灿阳朝露 SD08",
       "group": "珊瑚海岸/VIII",
@@ -9130,7 +9520,8 @@
       "warnings": []
     },
     {
-      "char": "夜半",
+      "scCharName": "夜半",
+      "charId": "char_476_blkngt",
       "skinIndex": 1,
       "name": "夏卉 FA641",
       "group": "珊瑚海岸/VIII",
@@ -9163,7 +9554,8 @@
       "warnings": []
     },
     {
-      "char": "史尔特尔",
+      "scCharName": "史尔特尔",
+      "charId": "char_350_surtr",
       "skinIndex": 2,
       "name": "缤纷奇境 CW03",
       "group": "珊瑚海岸/IX",
@@ -9228,7 +9620,8 @@
       "warnings": []
     },
     {
-      "char": "羽毛笔",
+      "scCharName": "羽毛笔",
+      "charId": "char_421_crow",
       "skinIndex": 1,
       "name": "夏卉 FA210",
       "group": "珊瑚海岸/IX",
@@ -9269,7 +9662,8 @@
       "warnings": []
     },
     {
-      "char": "极境",
+      "scCharName": "极境",
+      "charId": "char_401_elysm",
       "skinIndex": 2,
       "name": "灿阳朝露 SDm11",
       "group": "珊瑚海岸/IX",
@@ -9310,7 +9704,8 @@
       "warnings": []
     },
     {
-      "char": "琴柳",
+      "scCharName": "琴柳",
+      "charId": "char_479_sleach",
       "skinIndex": 2,
       "name": "夏卉 FA317",
       "group": "珊瑚海岸/XI",
@@ -9351,7 +9746,8 @@
       "warnings": []
     },
     {
-      "char": "白铁",
+      "scCharName": "白铁",
+      "charId": "char_4072_ironmn",
       "skinIndex": 1,
       "name": "沙滩护卫 GT003",
       "group": "珊瑚海岸/XI",
@@ -9392,7 +9788,8 @@
       "warnings": []
     },
     {
-      "char": "蜜蜡",
+      "scCharName": "蜜蜡",
+      "charId": "char_344_beewax",
       "skinIndex": 2,
       "name": "悠然假日 HD61",
       "group": "珊瑚海岸/XI",
@@ -9441,7 +9838,8 @@
       "warnings": []
     },
     {
-      "char": "百炼嘉维尔",
+      "scCharName": "百炼嘉维尔",
+      "charId": "char_1026_gvial2",
       "skinIndex": 1,
       "name": "悠然假日 HD26",
       "group": "珊瑚海岸/XII",
@@ -9498,7 +9896,8 @@
       "warnings": []
     },
     {
-      "char": "澄闪",
+      "scCharName": "澄闪",
+      "charId": "char_377_gdglow",
       "skinIndex": 2,
       "name": "夏卉 FA394",
       "group": "珊瑚海岸/XII",
@@ -9547,7 +9946,8 @@
       "warnings": []
     },
     {
-      "char": "寒檀",
+      "scCharName": "寒檀",
+      "charId": "char_341_sntlla",
       "skinIndex": 1,
       "name": "悠然假日 HD71",
       "group": "珊瑚海岸/XV",
@@ -9572,7 +9972,8 @@
       "warnings": []
     },
     {
-      "char": "星熊",
+      "scCharName": "星熊",
+      "charId": "char_136_hsguma",
       "skinIndex": 2,
       "name": "探寻者 SK97",
       "group": "珊瑚海岸/XVI",
@@ -9597,7 +9998,8 @@
       "warnings": []
     },
     {
-      "char": "焰影苇草",
+      "scCharName": "焰影苇草",
+      "charId": "char_1020_reed2",
       "skinIndex": 2,
       "name": "夏卉 FA075",
       "group": "珊瑚海岸/XVII",
@@ -9638,7 +10040,8 @@
       "warnings": []
     },
     {
-      "char": "提丰",
+      "scCharName": "提丰",
+      "charId": "char_2012_typhon",
       "skinIndex": 2,
       "name": "温差 RT.RX07",
       "group": "珊瑚海岸/XVII",
@@ -9671,7 +10074,8 @@
       "warnings": []
     },
     {
-      "char": "但书",
+      "scCharName": "但书",
+      "charId": "char_4032_provs",
       "skinIndex": 2,
       "name": "悠然假日 HD78",
       "group": "珊瑚海岸/XVII",
@@ -9704,7 +10108,8 @@
       "warnings": []
     },
     {
-      "char": "林",
+      "scCharName": "林",
+      "charId": "char_4080_lin",
       "skinIndex": 2,
       "name": "夏卉 FA137",
       "group": "珊瑚海岸/XIX",
@@ -9729,7 +10134,8 @@
       "warnings": []
     },
     {
-      "char": "假日威龙陈",
+      "scCharName": "假日威龙陈",
+      "charId": "char_1013_chen2",
       "skinIndex": 2,
       "name": "悠然假日 HD79",
       "group": "珊瑚海岸/XX",
@@ -9762,7 +10168,8 @@
       "warnings": []
     },
     {
-      "char": "死芒",
+      "scCharName": "死芒",
+      "charId": "char_450_necras",
       "skinIndex": 1,
       "name": "夏卉 FA161",
       "group": "珊瑚海岸/XX",
@@ -9795,7 +10202,8 @@
       "warnings": []
     },
     {
-      "char": "莱伊",
+      "scCharName": "莱伊",
+      "charId": "char_4117_ray",
       "skinIndex": 2,
       "name": "夏卉 FA098",
       "group": "珊瑚海岸/XXII",
@@ -9820,7 +10228,8 @@
       "warnings": []
     },
     {
-      "char": "陨星",
+      "scCharName": "陨星",
+      "charId": "char_219_meteo",
       "skinIndex": 2,
       "name": "夏卉 FA240",
       "group": "珊瑚海岸/XXII",
@@ -9845,7 +10254,8 @@
       "warnings": []
     },
     {
-      "char": "能天使",
+      "scCharName": "能天使",
+      "charId": "char_103_angel",
       "skinIndex": 1,
       "name": "野地秘行",
       "group": "生命之地/I",
@@ -9886,7 +10296,8 @@
       "warnings": []
     },
     {
-      "char": "崖心",
+      "scCharName": "崖心",
+      "charId": "char_173_slchan",
       "skinIndex": 1,
       "name": "孤攀客",
       "group": "生命之地/I",
@@ -9927,7 +10338,8 @@
       "warnings": []
     },
     {
-      "char": "推进之王",
+      "scCharName": "推进之王",
+      "charId": "char_112_siege",
       "skinIndex": 1,
       "name": "遗石",
       "group": "生命之地/II",
@@ -9960,7 +10372,8 @@
       "warnings": []
     },
     {
-      "char": "守林人",
+      "scCharName": "守林人",
+      "charId": "char_158_milu",
       "skinIndex": 1,
       "name": "枯柏",
       "group": "生命之地/II",
@@ -9993,7 +10406,8 @@
       "warnings": []
     },
     {
-      "char": "铃兰",
+      "scCharName": "铃兰",
+      "charId": "char_358_lisa",
       "skinIndex": 1,
       "name": "弃土花开",
       "group": "生命之地/III",
@@ -10034,7 +10448,8 @@
       "warnings": []
     },
     {
-      "char": "莱恩哈特",
+      "scCharName": "莱恩哈特",
+      "charId": "char_373_lionhd",
       "skinIndex": 1,
       "name": "宝藏行家",
       "group": "生命之地/III",
@@ -10075,7 +10490,8 @@
       "warnings": []
     },
     {
-      "char": "四月",
+      "scCharName": "四月",
+      "charId": "char_365_aprl",
       "skinIndex": 1,
       "name": "远望",
       "group": "生命之地/III",
@@ -10108,7 +10524,8 @@
       "warnings": []
     },
     {
-      "char": "普罗旺斯",
+      "scCharName": "普罗旺斯",
+      "charId": "char_145_prove",
       "skinIndex": 2,
       "name": "荒原行者",
       "group": "生命之地/V",
@@ -10133,7 +10550,8 @@
       "warnings": []
     },
     {
-      "char": "鸿雪",
+      "scCharName": "鸿雪",
+      "charId": "char_4055_bgsnow",
       "skinIndex": 1,
       "name": "字句中的雪原",
       "group": "生命之地/VII",
@@ -10182,7 +10600,8 @@
       "warnings": []
     },
     {
-      "char": "但书",
+      "scCharName": "但书",
+      "charId": "char_4032_provs",
       "skinIndex": 1,
       "name": "秋高气爽",
       "group": "生命之地/VII",
@@ -10223,7 +10642,8 @@
       "warnings": []
     },
     {
-      "char": "提丰",
+      "scCharName": "提丰",
+      "charId": "char_2012_typhon",
       "skinIndex": 1,
       "name": "北地引路人",
       "group": "生命之地/IX",
@@ -10248,7 +10668,8 @@
       "warnings": []
     },
     {
-      "char": "泥岩",
+      "scCharName": "泥岩",
+      "charId": "char_311_mudrok",
       "skinIndex": 3,
       "name": "砾瓦",
       "group": "生命之地/X",
@@ -10273,7 +10694,8 @@
       "warnings": []
     },
     {
-      "char": "承曦格雷伊",
+      "scCharName": "承曦格雷伊",
+      "charId": "char_1027_greyy2",
       "skinIndex": 3,
       "name": "千尺俯瞰",
       "group": "生命之地/XII",
@@ -10298,7 +10720,8 @@
       "warnings": []
     },
     {
-      "char": "娜仁图亚",
+      "scCharName": "娜仁图亚",
+      "charId": "char_4138_narant",
       "skinIndex": 1,
       "name": "链锯陪护者",
       "group": "破格视界",
@@ -10331,7 +10754,8 @@
       "warnings": []
     },
     {
-      "char": "渡桥",
+      "scCharName": "渡桥",
+      "charId": "char_4147_mitm",
       "skinIndex": 1,
       "name": "无影灯下",
       "group": "破格视界",
@@ -10364,7 +10788,8 @@
       "warnings": []
     },
     {
-      "char": "承曦格雷伊",
+      "scCharName": "承曦格雷伊",
+      "charId": "char_1027_greyy2",
       "skinIndex": 2,
       "name": "生化沉溺",
       "group": "破格视界",
@@ -10397,7 +10822,8 @@
       "warnings": []
     },
     {
-      "char": "傀影",
+      "scCharName": "傀影",
+      "charId": "char_250_phatom",
       "skinIndex": 1,
       "name": "梦魇之梦",
       "group": "缠梦古堡",
@@ -10430,7 +10856,8 @@
       "warnings": []
     },
     {
-      "char": "梅尔",
+      "scCharName": "梅尔",
+      "charId": "char_242_otter",
       "skinIndex": 1,
       "name": "庭院寻梦尖兵",
       "group": "缠梦古堡",
@@ -10463,7 +10890,8 @@
       "warnings": []
     },
     {
-      "char": "格劳克斯",
+      "scCharName": "格劳克斯",
+      "charId": "char_326_glacus",
       "skinIndex": 1,
       "name": "广场扫荡客",
       "group": "缠梦古堡",
@@ -10496,7 +10924,8 @@
       "warnings": []
     },
     {
-      "char": "麦哲伦",
+      "scCharName": "麦哲伦",
+      "charId": "char_248_mgllan",
       "skinIndex": 1,
       "name": "回味冰霜雪",
       "group": "罗德厨房",
@@ -10529,7 +10958,8 @@
       "warnings": []
     },
     {
-      "char": "真理",
+      "scCharName": "真理",
+      "charId": "char_195_glassb",
       "skinIndex": 1,
       "name": "书味",
       "group": "罗德厨房",
@@ -10562,7 +10992,8 @@
       "warnings": []
     },
     {
-      "char": "波卜",
+      "scCharName": "波卜",
+      "charId": "char_487_bobb",
       "skinIndex": 1,
       "name": "温情烘焙",
       "group": "罗德厨房/IV",
@@ -10595,7 +11026,8 @@
       "warnings": []
     },
     {
-      "char": "夜莺",
+      "scCharName": "夜莺",
+      "charId": "char_179_cgbird",
       "skinIndex": 2,
       "name": "流辉",
       "group": "错位巡礼/I",
@@ -10636,7 +11068,8 @@
       "warnings": []
     },
     {
-      "char": "赫德雷",
+      "scCharName": "赫德雷",
+      "charId": "char_4088_hodrer",
       "skinIndex": 1,
       "name": "沉思之庭",
       "group": "错位巡礼/I",
@@ -10677,7 +11110,8 @@
       "warnings": []
     },
     {
-      "char": "温蒂",
+      "scCharName": "温蒂",
+      "charId": "char_400_weedy",
       "skinIndex": 2,
       "name": "倾听",
       "group": "错位巡礼/I",
@@ -10718,7 +11152,8 @@
       "warnings": []
     },
     {
-      "char": "佩佩",
+      "scCharName": "佩佩",
+      "charId": "char_4058_pepe",
       "skinIndex": 1,
       "name": "星移",
       "group": "错位巡礼/II",
@@ -10751,7 +11186,8 @@
       "warnings": []
     },
     {
-      "char": "衡沙",
+      "scCharName": "衡沙",
+      "charId": "char_4140_lasher",
       "skinIndex": 1,
       "name": "憩羽",
       "group": "错位巡礼/III",
@@ -10784,7 +11220,8 @@
       "warnings": []
     },
     {
-      "char": "酒神",
+      "scCharName": "酒神",
+      "charId": "char_1042_phatm2",
       "skinIndex": 1,
       "name": "真我自扼",
       "group": "错位巡礼/IV",
@@ -10809,7 +11246,8 @@
       "warnings": []
     },
     {
-      "char": "真言",
+      "scCharName": "真言",
+      "charId": "char_4204_mantra",
       "skinIndex": 1,
       "name": "万籁俱寂",
       "group": "错位巡礼/IV",
@@ -10834,7 +11272,8 @@
       "warnings": []
     },
     {
-      "char": "烈夏",
+      "scCharName": "烈夏",
+      "charId": "char_194_leto",
       "skinIndex": 1,
       "name": "来日欢歌",
       "group": "错位巡礼/IV",
@@ -10859,7 +11298,8 @@
       "warnings": []
     },
     {
-      "char": "空弦",
+      "scCharName": "空弦",
+      "charId": "char_332_archet",
       "skinIndex": 1,
       "name": "宣传策略",
       "group": "闪耀阶梯",
@@ -10900,7 +11340,8 @@
       "warnings": []
     },
     {
-      "char": "星极",
+      "scCharName": "星极",
+      "charId": "char_274_astesi",
       "skinIndex": 2,
       "name": "殿堂上的游禽",
       "group": "闪耀阶梯",
@@ -10941,7 +11382,8 @@
       "warnings": []
     },
     {
-      "char": "莱伊",
+      "scCharName": "莱伊",
+      "charId": "char_4117_ray",
       "skinIndex": 1,
       "name": "梦幻高空",
       "group": "闪耀阶梯/II",
@@ -10974,7 +11416,8 @@
       "warnings": []
     },
     {
-      "char": "陨星",
+      "scCharName": "陨星",
+      "charId": "char_219_meteo",
       "skinIndex": 1,
       "name": "石墨",
       "group": "雷神开拓者",
@@ -11007,7 +11450,8 @@
       "warnings": []
     },
     {
-      "char": "赫默",
+      "scCharName": "赫默",
+      "charId": "char_108_silent",
       "skinIndex": 1,
       "name": "漆匠",
       "group": "雷神开拓者",
@@ -11048,7 +11492,8 @@
       "warnings": []
     },
     {
-      "char": "黑",
+      "scCharName": "黑",
+      "charId": "char_340_shwaz",
       "skinIndex": 2,
       "name": "天际线",
       "group": "雷神推进者",
@@ -11089,7 +11534,8 @@
       "warnings": []
     },
     {
-      "char": "雷蛇",
+      "scCharName": "雷蛇",
+      "charId": "char_107_liskam",
       "skinIndex": 2,
       "name": "超载",
       "group": "雷神推进者",
@@ -11130,7 +11576,8 @@
       "warnings": []
     },
     {
-      "char": "推进之王",
+      "scCharName": "推进之王",
+      "charId": "char_112_siege",
       "skinIndex": 2,
       "name": "摧城",
       "group": "雷神推进者/II",
@@ -11163,7 +11610,8 @@
       "warnings": []
     },
     {
-      "char": "煌",
+      "scCharName": "煌",
+      "charId": "char_017_huang",
       "skinIndex": 1,
       "name": "爆裂菲林",
       "group": "音律联觉",
@@ -11212,7 +11660,8 @@
       "warnings": []
     },
     {
-      "char": "泥岩",
+      "scCharName": "泥岩",
+      "charId": "char_311_mudrok",
       "skinIndex": 2,
       "name": "黑曜石",
       "group": "音律联觉/II",
@@ -11269,7 +11718,8 @@
       "warnings": []
     },
     {
-      "char": "苇草",
+      "scCharName": "苇草",
+      "charId": "char_261_sddrag",
       "skinIndex": 1,
       "name": "翡翠假日",
       "group": "音律联觉/II",
@@ -11318,7 +11768,8 @@
       "warnings": []
     },
     {
-      "char": "艾丽妮",
+      "scCharName": "艾丽妮",
+      "charId": "char_4009_irene",
       "skinIndex": 1,
       "name": "飞羽",
       "group": "音律联觉/III",
@@ -11359,7 +11810,8 @@
       "warnings": []
     },
     {
-      "char": "银灰",
+      "scCharName": "银灰",
+      "charId": "char_172_svrash",
       "skinIndex": 3,
       "name": "不融冰",
       "group": "音律联觉/IV",
@@ -11400,7 +11852,8 @@
       "warnings": []
     },
     {
-      "char": "霍尔海雅",
+      "scCharName": "霍尔海雅",
+      "charId": "char_4027_heyak",
       "skinIndex": 1,
       "name": "历世流风",
       "group": "音律联觉/IV",
@@ -11441,7 +11894,8 @@
       "warnings": []
     },
     {
-      "char": "琳琅诗怀雅",
+      "scCharName": "琳琅诗怀雅",
+      "charId": "char_1033_swire2",
       "skinIndex": 1,
       "name": "律动方格",
       "group": "音律联觉/IV",
@@ -11482,7 +11936,8 @@
       "warnings": []
     },
     {
-      "char": "伊内丝",
+      "scCharName": "伊内丝",
+      "charId": "char_4087_ines",
       "skinIndex": 2,
       "name": "蝶舞华章",
       "group": "音律联觉/V",
@@ -11515,7 +11970,8 @@
       "warnings": []
     },
     {
-      "char": "白铁",
+      "scCharName": "白铁",
+      "charId": "char_4072_ironmn",
       "skinIndex": 2,
       "name": "空心王冠",
       "group": "音律联觉/V",
@@ -11548,7 +12004,8 @@
       "warnings": []
     },
     {
-      "char": "缪尔赛思",
+      "scCharName": "缪尔赛思",
+      "charId": "char_249_mlyss",
       "skinIndex": 2,
       "name": "漫步于黄金之梦",
       "group": "音律联觉/VI",
@@ -11591,13 +12048,22 @@
           "note": "",
           "longTime": false,
           "seq": 3
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-10-24",
+          "end": "2026-11-21",
+          "note": "",
+          "longTime": false,
+          "seq": 4
         }
       ],
       "dynamic": true,
       "warnings": []
     },
     {
-      "char": "逻各斯",
+      "scCharName": "逻各斯",
+      "charId": "char_4133_logos",
       "skinIndex": 1,
       "name": "辉煌的静谧",
       "group": "音律联觉/VI",
@@ -11630,7 +12096,8 @@
       "warnings": []
     },
     {
-      "char": "莫斯提马",
+      "scCharName": "莫斯提马",
+      "charId": "char_213_mostma",
       "skinIndex": 2,
       "name": "幻语乐痕",
       "group": "音律联觉/VI",
@@ -11663,7 +12130,8 @@
       "warnings": []
     },
     {
-      "char": "史尔特尔",
+      "scCharName": "史尔特尔",
+      "charId": "char_350_surtr",
       "skinIndex": 3,
       "name": "超然序曲",
       "group": "音律联觉/VII",
@@ -11688,7 +12156,8 @@
       "warnings": []
     },
     {
-      "char": "妮芙",
+      "scCharName": "妮芙",
+      "charId": "char_4146_nymph",
       "skinIndex": 2,
       "name": "繁花梦幻谈",
       "group": "音律联觉/VII",
@@ -11713,7 +12182,8 @@
       "warnings": []
     },
     {
-      "char": "塞雷娅",
+      "scCharName": "塞雷娅",
+      "charId": "char_202_demkni",
       "skinIndex": 3,
       "name": "黑白冷峻",
       "group": "音律联觉/VIII",
@@ -11738,7 +12208,8 @@
       "warnings": []
     },
     {
-      "char": "蕾缪安",
+      "scCharName": "蕾缪安",
+      "charId": "char_4193_lemuen",
       "skinIndex": 1,
       "name": "暮星安魂曲",
       "group": "音律联觉/VIII",
@@ -11763,7 +12234,8 @@
       "warnings": []
     },
     {
-      "char": "死芒",
+      "scCharName": "死芒",
+      "charId": "char_450_necras",
       "skinIndex": 2,
       "name": "晶化信念",
       "group": "音律联觉/VIII",
@@ -11788,7 +12260,8 @@
       "warnings": []
     },
     {
-      "char": "圣聆初雪",
+      "scCharName": "圣聆初雪",
+      "charId": "char_1046_sbell2",
       "skinIndex": 1,
       "name": "曙光祝颂",
       "group": "音律联觉/IX",

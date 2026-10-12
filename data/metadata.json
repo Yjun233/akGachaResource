@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-10",
-  "enGeneratedAt": "2026-10-10",
+  "generatedAt": "2026-10-12",
+  "enGeneratedAt": "2026-10-12",
   "tcGeneratedAt": "2026-10-09",
   "cla": {
     "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
     "sc": {
-      "generatedAt": "2026-10-09",
+      "generatedAt": "2026-10-12",
       "count": 90
     },
     "en": {
-      "generatedAt": "2026-10-08",
+      "generatedAt": "2026-10-12",
       "count": 75
     },
     "tc": {
-      "generatedAt": "2026-10-09",
+      "generatedAt": "2026-10-12",
       "count": 67
     }
   },

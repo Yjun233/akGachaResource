@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-06",
+  "generatedAt": "2026-10-12",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "skins": [
     {
-      "char": "W",
+      "scCharName": "W",
+      "charId": "char_113_cqbw",
       "skinIndex": 1,
       "name": "Fugue",
       "onShelf": [
@@ -17,7 +18,8 @@
       ]
     },
     {
-      "char": "临光",
+      "scCharName": "临光",
+      "charId": "char_148_nearl",
       "skinIndex": 1,
       "name": "Shining Dew SD01",
       "onShelf": [
@@ -31,7 +33,8 @@
       ]
     },
     {
-      "char": "乌尔比安",
+      "scCharName": "乌尔比安",
+      "charId": "char_4145_ulpia",
       "skinIndex": 1,
       "name": "Staring into the Abyss",
       "onShelf": [
@@ -45,7 +48,8 @@
       ]
     },
     {
-      "char": "乌有",
+      "scCharName": "乌有",
+      "charId": "char_455_nothin",
       "skinIndex": 1,
       "name": "Pale Rising Moon",
       "onShelf": [
@@ -59,7 +63,8 @@
       ]
     },
     {
-      "char": "仇白",
+      "scCharName": "仇白",
+      "charId": "char_4082_qiubai",
       "skinIndex": 1,
       "name": "Wine-flushed is Woods of Rime",
       "onShelf": [
@@ -73,7 +78,8 @@
       ]
     },
     {
-      "char": "仇白",
+      "scCharName": "仇白",
+      "charId": "char_4082_qiubai",
       "skinIndex": 2,
       "name": "Courtesy",
       "onShelf": [
@@ -87,7 +93,8 @@
       ]
     },
     {
-      "char": "令",
+      "scCharName": "令",
+      "charId": "char_2023_ling",
       "skinIndex": 1,
       "name": "It Does Wash the Strings",
       "onShelf": [
@@ -101,7 +108,8 @@
       ]
     },
     {
-      "char": "令",
+      "scCharName": "令",
+      "charId": "char_2023_ling",
       "skinIndex": 2,
       "name": "Towering is Cliff of Nostalgia",
       "onShelf": [
@@ -115,7 +123,8 @@
       ]
     },
     {
-      "char": "令",
+      "scCharName": "令",
+      "charId": "char_2023_ling",
       "skinIndex": 3,
       "name": "A Gallant Dream",
       "onShelf": [
@@ -129,7 +138,8 @@
       ]
     },
     {
-      "char": "伊内丝",
+      "scCharName": "伊内丝",
+      "charId": "char_4087_ines",
       "skinIndex": 1,
       "name": "Under the Flaming Dome",
       "onShelf": [
@@ -143,7 +153,8 @@
       ]
     },
     {
-      "char": "伊内丝",
+      "scCharName": "伊内丝",
+      "charId": "char_4087_ines",
       "skinIndex": 2,
       "name": "Melodic Flutter",
       "onShelf": [
@@ -157,7 +168,8 @@
       ]
     },
     {
-      "char": "伊芙利特",
+      "scCharName": "伊芙利特",
+      "charId": "char_134_ifrit",
       "skinIndex": 1,
       "name": "Sunburn SS.SP",
       "onShelf": [
@@ -171,7 +183,8 @@
       ]
     },
     {
-      "char": "伊芙利特",
+      "scCharName": "伊芙利特",
+      "charId": "char_134_ifrit",
       "skinIndex": 2,
       "name": "Relaxing Trip",
       "onShelf": [
@@ -185,7 +198,8 @@
       ]
     },
     {
-      "char": "但书",
+      "scCharName": "但书",
+      "charId": "char_4032_provs",
       "skinIndex": 1,
       "name": "High Autumn",
       "onShelf": [
@@ -199,7 +213,8 @@
       ]
     },
     {
-      "char": "但书",
+      "scCharName": "但书",
+      "charId": "char_4032_provs",
       "skinIndex": 2,
       "name": "Holiday HD78",
       "onShelf": [
@@ -213,7 +228,8 @@
       ]
     },
     {
-      "char": "余",
+      "scCharName": "余",
+      "charId": "char_2026_yu",
       "skinIndex": 1,
       "name": "Clear Morning View",
       "onShelf": [
@@ -227,7 +243,8 @@
       ]
     },
     {
-      "char": "佩佩",
+      "scCharName": "佩佩",
+      "charId": "char_4058_pepe",
       "skinIndex": 1,
       "name": "Nuit of the Nightsky",
       "onShelf": [
@@ -241,7 +258,8 @@
       ]
     },
     {
-      "char": "假日威龙陈",
+      "scCharName": "假日威龙陈",
+      "charId": "char_1013_chen2",
       "skinIndex": 1,
       "name": "Ten Thousand Mountains",
       "onShelf": [
@@ -255,7 +273,8 @@
       ]
     },
     {
-      "char": "假日威龙陈",
+      "scCharName": "假日威龙陈",
+      "charId": "char_1013_chen2",
       "skinIndex": 2,
       "name": "Holiday HD79",
       "onShelf": [
@@ -269,7 +288,8 @@
       ]
     },
     {
-      "char": "傀影",
+      "scCharName": "傀影",
+      "charId": "char_250_phatom",
       "skinIndex": 1,
       "name": "Dream Within a Dreammare",
       "onShelf": [
@@ -283,7 +303,8 @@
       ]
     },
     {
-      "char": "凛冬",
+      "scCharName": "凛冬",
+      "charId": "char_115_headbr",
       "skinIndex": 1,
       "name": "Ready to Go",
       "onShelf": [
@@ -297,7 +318,8 @@
       ]
     },
     {
-      "char": "凛冬",
+      "scCharName": "凛冬",
+      "charId": "char_115_headbr",
       "skinIndex": 2,
       "name": "Ursus IO79",
       "onShelf": [
@@ -311,7 +333,8 @@
       ]
     },
     {
-      "char": "凯尔希",
+      "scCharName": "凯尔希",
+      "charId": "char_003_kalts",
       "skinIndex": 1,
       "name": "Remnant",
       "onShelf": [
@@ -325,7 +348,8 @@
       ]
     },
     {
-      "char": "初雪",
+      "scCharName": "初雪",
+      "charId": "char_174_slbell",
       "skinIndex": 1,
       "name": "Caster's Frost",
       "onShelf": [
@@ -339,7 +363,8 @@
       ]
     },
     {
-      "char": "刻俄柏",
+      "scCharName": "刻俄柏",
+      "charId": "char_2013_cerber",
       "skinIndex": 1,
       "name": "Summer Flowers FA333",
       "onShelf": [
@@ -353,7 +378,8 @@
       ]
     },
     {
-      "char": "刻俄柏",
+      "scCharName": "刻俄柏",
+      "charId": "char_2013_cerber",
       "skinIndex": 2,
       "name": "Unfettered",
       "onShelf": [
@@ -367,7 +393,8 @@
       ]
     },
     {
-      "char": "华法琳",
+      "scCharName": "华法琳",
+      "charId": "char_171_bldsk",
       "skinIndex": 1,
       "name": "the feast",
       "onShelf": [
@@ -381,7 +408,8 @@
       ]
     },
     {
-      "char": "卡夫卡",
+      "scCharName": "卡夫卡",
+      "charId": "char_214_kafka",
       "skinIndex": 1,
       "name": "Cardboard Fairy",
       "onShelf": [
@@ -395,7 +423,8 @@
       ]
     },
     {
-      "char": "卡涅利安",
+      "scCharName": "卡涅利安",
+      "charId": "char_426_billro",
       "skinIndex": 1,
       "name": "Hohenlohe Chillysand",
       "onShelf": [
@@ -409,7 +438,8 @@
       ]
     },
     {
-      "char": "卡涅利安",
+      "scCharName": "卡涅利安",
+      "charId": "char_426_billro",
       "skinIndex": 2,
       "name": "Shining Dew SD08",
       "onShelf": [
@@ -423,7 +453,8 @@
       ]
     },
     {
-      "char": "历阵锐枪芬",
+      "scCharName": "历阵锐枪芬",
+      "charId": "char_1036_fang2",
       "skinIndex": 1,
       "name": "A Pure Pianissimo",
       "onShelf": [
@@ -437,7 +468,8 @@
       ]
     },
     {
-      "char": "可颂",
+      "scCharName": "可颂",
+      "charId": "char_201_moeshd",
       "skinIndex": 1,
       "name": "Seeker SK03",
       "onShelf": [
@@ -451,7 +483,8 @@
       ]
     },
     {
-      "char": "史尔特尔",
+      "scCharName": "史尔特尔",
+      "charId": "char_350_surtr",
       "skinIndex": 1,
       "name": "Liberté//Échec",
       "onShelf": [
@@ -465,7 +498,8 @@
       ]
     },
     {
-      "char": "史尔特尔",
+      "scCharName": "史尔特尔",
+      "charId": "char_350_surtr",
       "skinIndex": 2,
       "name": "Colorful Wonderland CW03",
       "onShelf": [
@@ -479,7 +513,8 @@
       ]
     },
     {
-      "char": "史尔特尔",
+      "scCharName": "史尔特尔",
+      "charId": "char_350_surtr",
       "skinIndex": 3,
       "name": "Prelude to Transcendence",
       "onShelf": [
@@ -493,7 +528,8 @@
       ]
     },
     {
-      "char": "号角",
+      "scCharName": "号角",
+      "charId": "char_4039_horn",
       "skinIndex": 1,
       "name": "To Effloresce Whitely",
       "onShelf": [
@@ -507,7 +543,8 @@
       ]
     },
     {
-      "char": "司霆惊蛰",
+      "scCharName": "司霆惊蛰",
+      "charId": "char_1043_leizi2",
       "skinIndex": 1,
       "name": "The Bloodwing Rose",
       "onShelf": [
@@ -521,7 +558,8 @@
       ]
     },
     {
-      "char": "吽",
+      "scCharName": "吽",
+      "charId": "char_226_hmau",
       "skinIndex": 1,
       "name": "Just A Driver",
       "onShelf": [
@@ -535,7 +573,8 @@
       ]
     },
     {
-      "char": "和弦",
+      "scCharName": "和弦",
+      "charId": "char_297_hamoni",
       "skinIndex": 1,
       "name": "Invitation",
       "onShelf": [
@@ -549,7 +588,8 @@
       ]
     },
     {
-      "char": "和弦",
+      "scCharName": "和弦",
+      "charId": "char_297_hamoni",
       "skinIndex": 2,
       "name": "Decoration",
       "onShelf": [
@@ -563,7 +603,8 @@
       ]
     },
     {
-      "char": "四月",
+      "scCharName": "四月",
+      "charId": "char_365_aprl",
       "skinIndex": 1,
       "name": "Faraway Gaze",
       "onShelf": [
@@ -577,7 +618,8 @@
       ]
     },
     {
-      "char": "圣约送葬人",
+      "scCharName": "圣约送葬人",
+      "charId": "char_1032_excu2",
       "skinIndex": 1,
       "name": "Allmind As One",
       "onShelf": [
@@ -591,7 +633,8 @@
       ]
     },
     {
-      "char": "圣约送葬人",
+      "scCharName": "圣约送葬人",
+      "charId": "char_1032_excu2",
       "skinIndex": 2,
       "name": "The Train Runner",
       "onShelf": [
@@ -605,7 +648,8 @@
       ]
     },
     {
-      "char": "塑心",
+      "scCharName": "塑心",
+      "charId": "char_245_cello",
       "skinIndex": 1,
       "name": "Diversity Oneness",
       "onShelf": [
@@ -619,7 +663,8 @@
       ]
     },
     {
-      "char": "塞雷娅",
+      "scCharName": "塞雷娅",
+      "charId": "char_202_demkni",
       "skinIndex": 1,
       "name": "Stronghold",
       "onShelf": [
@@ -633,7 +678,8 @@
       ]
     },
     {
-      "char": "塞雷娅",
+      "scCharName": "塞雷娅",
+      "charId": "char_202_demkni",
       "skinIndex": 2,
       "name": "The Law",
       "onShelf": [
@@ -647,7 +693,8 @@
       ]
     },
     {
-      "char": "塞雷娅",
+      "scCharName": "塞雷娅",
+      "charId": "char_202_demkni",
       "skinIndex": 3,
       "name": "Unstained, Unshaken",
       "onShelf": [
@@ -661,7 +708,8 @@
       ]
     },
     {
-      "char": "夏栎",
+      "scCharName": "夏栎",
+      "charId": "char_492_quercu",
       "skinIndex": 1,
       "name": "The Bard's Tale",
       "onShelf": [
@@ -675,7 +723,8 @@
       ]
     },
     {
-      "char": "夕",
+      "scCharName": "夕",
+      "charId": "char_2015_dusk",
       "skinIndex": 1,
       "name": "Everything Is a Miracle",
       "onShelf": [
@@ -689,7 +738,8 @@
       ]
     },
     {
-      "char": "夕",
+      "scCharName": "夕",
+      "charId": "char_2015_dusk",
       "skinIndex": 2,
       "name": "Hazy Jade",
       "onShelf": [
@@ -703,7 +753,8 @@
       ]
     },
     {
-      "char": "多萝西",
+      "scCharName": "多萝西",
+      "charId": "char_4048_doroth",
       "skinIndex": 1,
       "name": "Hand of Destiny",
       "onShelf": [
@@ -717,7 +768,8 @@
       ]
     },
     {
-      "char": "夜半",
+      "scCharName": "夜半",
+      "charId": "char_476_blkngt",
       "skinIndex": 1,
       "name": "Summer Flowers FA641",
       "onShelf": [
@@ -731,7 +783,8 @@
       ]
     },
     {
-      "char": "夜莺",
+      "scCharName": "夜莺",
+      "charId": "char_179_cgbird",
       "skinIndex": 1,
       "name": "an elegy",
       "onShelf": [
@@ -745,7 +798,8 @@
       ]
     },
     {
-      "char": "夜莺",
+      "scCharName": "夜莺",
+      "charId": "char_179_cgbird",
       "skinIndex": 2,
       "name": "Iakhu of Flows",
       "onShelf": [
@@ -759,7 +813,8 @@
       ]
     },
     {
-      "char": "夜魔",
+      "scCharName": "夜魔",
+      "charId": "char_164_nightm",
       "skinIndex": 1,
       "name": "The Ferry Girl",
       "onShelf": [
@@ -773,7 +828,8 @@
       ]
     },
     {
-      "char": "天火",
+      "scCharName": "天火",
+      "charId": "char_166_skfire",
       "skinIndex": 1,
       "name": "Temperature Difference RT.RX01",
       "onShelf": [
@@ -787,7 +843,8 @@
       ]
     },
     {
-      "char": "奥斯塔",
+      "scCharName": "奥斯塔",
+      "charId": "char_346_aosta",
       "skinIndex": 1,
       "name": "Light Gun Adjuster",
       "onShelf": [
@@ -801,7 +858,8 @@
       ]
     },
     {
-      "char": "妮芙",
+      "scCharName": "妮芙",
+      "charId": "char_4146_nymph",
       "skinIndex": 1,
       "name": "Sweetness to the Heart",
       "onShelf": [
@@ -815,7 +873,8 @@
       ]
     },
     {
-      "char": "妮芙",
+      "scCharName": "妮芙",
+      "charId": "char_4146_nymph",
       "skinIndex": 2,
       "name": "Blooming Reverie",
       "onShelf": [
@@ -829,7 +888,8 @@
       ]
     },
     {
-      "char": "娜仁图亚",
+      "scCharName": "娜仁图亚",
+      "charId": "char_4138_narant",
       "skinIndex": 1,
       "name": "The Chainsaw Nurse",
       "onShelf": [
@@ -843,7 +903,8 @@
       ]
     },
     {
-      "char": "子月",
+      "scCharName": "子月",
+      "charId": "char_4014_lunacu",
       "skinIndex": 1,
       "name": "Clouds Float Like Ideas of Art",
       "onShelf": [
@@ -857,7 +918,8 @@
       ]
     },
     {
-      "char": "守林人",
+      "scCharName": "守林人",
+      "charId": "char_158_milu",
       "skinIndex": 1,
       "name": "Wilted Cypress",
       "onShelf": [
@@ -871,7 +933,8 @@
       ]
     },
     {
-      "char": "守林人",
+      "scCharName": "守林人",
+      "charId": "char_158_milu",
       "skinIndex": 2,
       "name": "Snowywatch",
       "onShelf": [
@@ -885,7 +948,8 @@
       ]
     },
     {
-      "char": "安哲拉",
+      "scCharName": "安哲拉",
+      "charId": "char_218_cuttle",
       "skinIndex": 1,
       "name": "Silent Arrow",
       "onShelf": [
@@ -899,7 +963,8 @@
       ]
     },
     {
-      "char": "安洁莉娜",
+      "scCharName": "安洁莉娜",
+      "charId": "char_291_aglina",
       "skinIndex": 1,
       "name": "Distinguished Visitor",
       "onShelf": [
@@ -913,7 +978,8 @@
       ]
     },
     {
-      "char": "安洁莉娜",
+      "scCharName": "安洁莉娜",
+      "charId": "char_291_aglina",
       "skinIndex": 2,
       "name": "Summer Flowers FA017",
       "onShelf": [
@@ -927,7 +993,8 @@
       ]
     },
     {
-      "char": "寻澜",
+      "scCharName": "寻澜",
+      "charId": "char_4052_surfer",
       "skinIndex": 1,
       "name": "By the Lamplight",
       "onShelf": [
@@ -941,7 +1008,8 @@
       ]
     },
     {
-      "char": "小满",
+      "scCharName": "小满",
+      "charId": "char_4122_grabds",
       "skinIndex": 1,
       "name": "Fragrant Pace",
       "onShelf": [
@@ -955,7 +1023,8 @@
       ]
     },
     {
-      "char": "山",
+      "scCharName": "山",
+      "charId": "char_264_f12yin",
       "skinIndex": 1,
       "name": "Dark Cloud",
       "onShelf": [
@@ -969,7 +1038,8 @@
       ]
     },
     {
-      "char": "山",
+      "scCharName": "山",
+      "charId": "char_264_f12yin",
       "skinIndex": 2,
       "name": "Book Reader",
       "onShelf": [
@@ -983,7 +1053,8 @@
       ]
     },
     {
-      "char": "崖心",
+      "scCharName": "崖心",
+      "charId": "char_173_slchan",
       "skinIndex": 1,
       "name": "Lone Climber",
       "onShelf": [
@@ -997,7 +1068,8 @@
       ]
     },
     {
-      "char": "嵯峨",
+      "scCharName": "嵯峨",
+      "charId": "char_362_saga",
       "skinIndex": 1,
       "name": "There They Be",
       "onShelf": [
@@ -1011,7 +1083,8 @@
       ]
     },
     {
-      "char": "左乐",
+      "scCharName": "左乐",
+      "charId": "char_4121_zuole",
       "skinIndex": 1,
       "name": "Youthful Journey",
       "onShelf": [
@@ -1025,7 +1098,8 @@
       ]
     },
     {
-      "char": "左乐",
+      "scCharName": "左乐",
+      "charId": "char_4121_zuole",
       "skinIndex": 2,
       "name": "Quiet Move",
       "onShelf": [
@@ -1039,7 +1113,8 @@
       ]
     },
     {
-      "char": "巫恋",
+      "scCharName": "巫恋",
+      "charId": "char_254_vodfox",
       "skinIndex": 1,
       "name": "Echo of the Horrorlair",
       "onShelf": [
@@ -1053,7 +1128,8 @@
       ]
     },
     {
-      "char": "巫恋",
+      "scCharName": "巫恋",
+      "charId": "char_254_vodfox",
       "skinIndex": 2,
       "name": "Celestial Crane",
       "onShelf": [
@@ -1067,7 +1143,8 @@
       ]
     },
     {
-      "char": "帕拉斯",
+      "scCharName": "帕拉斯",
+      "charId": "char_485_pallas",
       "skinIndex": 1,
       "name": "Heritage",
       "onShelf": [
@@ -1081,7 +1158,8 @@
       ]
     },
     {
-      "char": "年",
+      "scCharName": "年",
+      "charId": "char_2014_nian",
       "skinIndex": 1,
       "name": "Unfettered Freedom",
       "onShelf": [
@@ -1095,7 +1173,8 @@
       ]
     },
     {
-      "char": "年",
+      "scCharName": "年",
+      "charId": "char_2014_nian",
       "skinIndex": 2,
       "name": "Thunderbolt Director",
       "onShelf": [
@@ -1109,7 +1188,8 @@
       ]
     },
     {
-      "char": "幽灵鲨",
+      "scCharName": "幽灵鲨",
+      "charId": "char_143_ghost",
       "skinIndex": 1,
       "name": "Undercurrent",
       "onShelf": [
@@ -1123,7 +1203,8 @@
       ]
     },
     {
-      "char": "异客",
+      "scCharName": "异客",
+      "charId": "char_472_pasngr",
       "skinIndex": 1,
       "name": "Dream In A Moment",
       "onShelf": [
@@ -1137,7 +1218,8 @@
       ]
     },
     {
-      "char": "引星棘刺",
+      "scCharName": "引星棘刺",
+      "charId": "char_1039_thorn2",
       "skinIndex": 1,
       "name": "Boundless Sail",
       "onShelf": [
@@ -1151,7 +1233,8 @@
       ]
     },
     {
-      "char": "归溟幽灵鲨",
+      "scCharName": "归溟幽灵鲨",
+      "charId": "char_1023_ghost2",
       "skinIndex": 1,
       "name": "Born as One",
       "onShelf": [
@@ -1165,7 +1248,8 @@
       ]
     },
     {
-      "char": "德克萨斯",
+      "scCharName": "德克萨斯",
+      "charId": "char_102_texas",
       "skinIndex": 1,
       "name": "Winter Messenger",
       "onShelf": [
@@ -1179,7 +1263,8 @@
       ]
     },
     {
-      "char": "德克萨斯",
+      "scCharName": "德克萨斯",
+      "charId": "char_102_texas",
       "skinIndex": 2,
       "name": "Willpower",
       "onShelf": [
@@ -1193,7 +1278,8 @@
       ]
     },
     {
-      "char": "惊蛰",
+      "scCharName": "惊蛰",
+      "charId": "char_306_leizi",
       "skinIndex": 1,
       "name": "The Archivist and Her Pilgrimage",
       "onShelf": [
@@ -1207,7 +1293,8 @@
       ]
     },
     {
-      "char": "慑砂",
+      "scCharName": "慑砂",
+      "charId": "char_379_sesa",
       "skinIndex": 1,
       "name": "To Evoke the Anima",
       "onShelf": [
@@ -1221,7 +1308,8 @@
       ]
     },
     {
-      "char": "承曦格雷伊",
+      "scCharName": "承曦格雷伊",
+      "charId": "char_1027_greyy2",
       "skinIndex": 1,
       "name": "Aftershow",
       "onShelf": [
@@ -1235,7 +1323,8 @@
       ]
     },
     {
-      "char": "承曦格雷伊",
+      "scCharName": "承曦格雷伊",
+      "charId": "char_1027_greyy2",
       "skinIndex": 2,
       "name": "Biochemical Submergence",
       "onShelf": [
@@ -1249,7 +1338,8 @@
       ]
     },
     {
-      "char": "拉普兰德",
+      "scCharName": "拉普兰德",
+      "charId": "char_140_whitew",
       "skinIndex": 1,
       "name": "Refined Horrormare",
       "onShelf": [
@@ -1263,7 +1353,8 @@
       ]
     },
     {
-      "char": "推进之王",
+      "scCharName": "推进之王",
+      "charId": "char_112_siege",
       "skinIndex": 1,
       "name": "City Destroyer",
       "onShelf": [
@@ -1277,7 +1368,8 @@
       ]
     },
     {
-      "char": "提丰",
+      "scCharName": "提丰",
+      "charId": "char_2012_typhon",
       "skinIndex": 1,
       "name": "Temperature Difference RT.RX07",
       "onShelf": [
@@ -1291,7 +1383,8 @@
       ]
     },
     {
-      "char": "斥罪",
+      "scCharName": "斥罪",
+      "charId": "char_4065_judge",
       "skinIndex": 1,
       "name": "Occasionally Flushed",
       "onShelf": [
@@ -1305,7 +1398,8 @@
       ]
     },
     {
-      "char": "斥罪",
+      "scCharName": "斥罪",
+      "charId": "char_4065_judge",
       "skinIndex": 2,
       "name": "Scribing",
       "onShelf": [
@@ -1319,7 +1413,8 @@
       ]
     },
     {
-      "char": "断崖",
+      "scCharName": "断崖",
+      "charId": "char_294_ayer",
       "skinIndex": 1,
       "name": "Tested One",
       "onShelf": [
@@ -1333,7 +1428,8 @@
       ]
     },
     {
-      "char": "斯卡蒂",
+      "scCharName": "斯卡蒂",
+      "charId": "char_263_skadi",
       "skinIndex": 1,
       "name": "Waverider WR04",
       "onShelf": [
@@ -1347,7 +1443,8 @@
       ]
     },
     {
-      "char": "斯卡蒂",
+      "scCharName": "斯卡蒂",
+      "charId": "char_263_skadi",
       "skinIndex": 2,
       "name": "The Next Afternoon Tea",
       "onShelf": [
@@ -1361,7 +1458,8 @@
       ]
     },
     {
-      "char": "早露",
+      "scCharName": "早露",
+      "charId": "char_197_poca",
       "skinIndex": 1,
       "name": "Masterpiece",
       "onShelf": [
@@ -1375,7 +1473,8 @@
       ]
     },
     {
-      "char": "早露",
+      "scCharName": "早露",
+      "charId": "char_197_poca",
       "skinIndex": 2,
       "name": "Forever Together",
       "onShelf": [
@@ -1389,7 +1488,8 @@
       ]
     },
     {
-      "char": "明椒",
+      "scCharName": "明椒",
+      "charId": "char_4071_peper",
       "skinIndex": 1,
       "name": "The Road to Here",
       "onShelf": [
@@ -1403,7 +1503,8 @@
       ]
     },
     {
-      "char": "星极",
+      "scCharName": "星极",
+      "charId": "char_274_astesi",
       "skinIndex": 1,
       "name": "Starseeker",
       "onShelf": [
@@ -1417,7 +1518,8 @@
       ]
     },
     {
-      "char": "星极",
+      "scCharName": "星极",
+      "charId": "char_274_astesi",
       "skinIndex": 2,
       "name": "Frlibe on the Palace",
       "onShelf": [
@@ -1431,7 +1533,8 @@
       ]
     },
     {
-      "char": "星熊",
+      "scCharName": "星熊",
+      "charId": "char_136_hsguma",
       "skinIndex": 1,
       "name": "Ronin Huntress",
       "onShelf": [
@@ -1445,7 +1548,8 @@
       ]
     },
     {
-      "char": "晓歌",
+      "scCharName": "晓歌",
+      "charId": "char_497_ctable",
       "skinIndex": 1,
       "name": "Illumination That of Daylights",
       "onShelf": [
@@ -1459,7 +1563,8 @@
       ]
     },
     {
-      "char": "晓歌",
+      "scCharName": "晓歌",
+      "charId": "char_497_ctable",
       "skinIndex": 2,
       "name": "Bard by the Lake",
       "onShelf": [
@@ -1473,7 +1578,8 @@
       ]
     },
     {
-      "char": "普罗旺斯",
+      "scCharName": "普罗旺斯",
+      "charId": "char_145_prove",
       "skinIndex": 1,
       "name": "Holiday HD08",
       "onShelf": [
@@ -1487,7 +1593,8 @@
       ]
     },
     {
-      "char": "月禾",
+      "scCharName": "月禾",
+      "charId": "char_343_tknogi",
       "skinIndex": 1,
       "name": "Londinium Style Miko",
       "onShelf": [
@@ -1501,7 +1608,8 @@
       ]
     },
     {
-      "char": "月禾",
+      "scCharName": "月禾",
+      "charId": "char_343_tknogi",
       "skinIndex": 2,
       "name": "Dance",
       "onShelf": [
@@ -1515,7 +1623,8 @@
       ]
     },
     {
-      "char": "杏仁",
+      "scCharName": "杏仁",
+      "charId": "char_4105_almond",
       "skinIndex": 1,
       "name": "Almond Platter",
       "onShelf": [
@@ -1529,7 +1638,8 @@
       ]
     },
     {
-      "char": "极光",
+      "scCharName": "极光",
+      "charId": "char_422_aurora",
       "skinIndex": 1,
       "name": "Polar Catcher",
       "onShelf": [
@@ -1543,7 +1653,8 @@
       ]
     },
     {
-      "char": "极境",
+      "scCharName": "极境",
+      "charId": "char_401_elysm",
       "skinIndex": 1,
       "name": "Snowy Echo",
       "onShelf": [
@@ -1557,7 +1668,8 @@
       ]
     },
     {
-      "char": "极境",
+      "scCharName": "极境",
+      "charId": "char_401_elysm",
       "skinIndex": 2,
       "name": "Shining Dew SDm11",
       "onShelf": [
@@ -1571,7 +1683,8 @@
       ]
     },
     {
-      "char": "林",
+      "scCharName": "林",
+      "charId": "char_4080_lin",
       "skinIndex": 1,
       "name": "Heavenly Mirage",
       "onShelf": [
@@ -1585,7 +1698,8 @@
       ]
     },
     {
-      "char": "林",
+      "scCharName": "林",
+      "charId": "char_4080_lin",
       "skinIndex": 2,
       "name": "Summer Flowers FA137",
       "onShelf": [
@@ -1599,7 +1713,8 @@
       ]
     },
     {
-      "char": "格劳克斯",
+      "scCharName": "格劳克斯",
+      "charId": "char_326_glacus",
       "skinIndex": 1,
       "name": "Exterminator in the Square",
       "onShelf": [
@@ -1613,7 +1728,8 @@
       ]
     },
     {
-      "char": "桑葚",
+      "scCharName": "桑葚",
+      "charId": "char_473_mberry",
       "skinIndex": 1,
       "name": "Plant Crude Drug",
       "onShelf": [
@@ -1627,7 +1743,8 @@
       ]
     },
     {
-      "char": "桑葚",
+      "scCharName": "桑葚",
+      "charId": "char_473_mberry",
       "skinIndex": 2,
       "name": "Reflection That of the Moons",
       "onShelf": [
@@ -1641,7 +1758,8 @@
       ]
     },
     {
-      "char": "梅尔",
+      "scCharName": "梅尔",
+      "charId": "char_242_otter",
       "skinIndex": 1,
       "name": "Visionblazer in the Courtyard",
       "onShelf": [
@@ -1655,7 +1773,8 @@
       ]
     },
     {
-      "char": "棘刺",
+      "scCharName": "棘刺",
+      "charId": "char_293_thorns",
       "skinIndex": 1,
       "name": "Cómodo",
       "onShelf": [
@@ -1669,7 +1788,8 @@
       ]
     },
     {
-      "char": "棘刺",
+      "scCharName": "棘刺",
+      "charId": "char_293_thorns",
       "skinIndex": 2,
       "name": "Blade-cleaved Tides",
       "onShelf": [
@@ -1683,7 +1803,8 @@
       ]
     },
     {
-      "char": "森蚺",
+      "scCharName": "森蚺",
+      "charId": "char_416_zumama",
       "skinIndex": 1,
       "name": "Forgemaster",
       "onShelf": [
@@ -1697,7 +1818,8 @@
       ]
     },
     {
-      "char": "槐琥",
+      "scCharName": "槐琥",
+      "charId": "char_243_waaifu",
       "skinIndex": 1,
       "name": "Wild Flower of Street",
       "onShelf": [
@@ -1711,7 +1833,8 @@
       ]
     },
     {
-      "char": "死芒",
+      "scCharName": "死芒",
+      "charId": "char_450_necras",
       "skinIndex": 1,
       "name": "Summer Flowers FA161",
       "onShelf": [
@@ -1725,7 +1848,8 @@
       ]
     },
     {
-      "char": "死芒",
+      "scCharName": "死芒",
+      "charId": "char_450_necras",
       "skinIndex": 2,
       "name": "As Clear As Crystal",
       "onShelf": [
@@ -1739,7 +1863,8 @@
       ]
     },
     {
-      "char": "水月",
+      "scCharName": "水月",
+      "charId": "char_437_mizuki",
       "skinIndex": 1,
       "name": "A Player Forever",
       "onShelf": [
@@ -1753,7 +1878,8 @@
       ]
     },
     {
-      "char": "波卜",
+      "scCharName": "波卜",
+      "charId": "char_487_bobb",
       "skinIndex": 1,
       "name": "Heartwarming Baking",
       "onShelf": [
@@ -1767,7 +1893,8 @@
       ]
     },
     {
-      "char": "泥岩",
+      "scCharName": "泥岩",
+      "charId": "char_311_mudrok",
       "skinIndex": 1,
       "name": "Silent Night DN06",
       "onShelf": [
@@ -1781,7 +1908,8 @@
       ]
     },
     {
-      "char": "泥岩",
+      "scCharName": "泥岩",
+      "charId": "char_311_mudrok",
       "skinIndex": 2,
       "name": "Obsidian",
       "onShelf": [
@@ -1795,7 +1923,8 @@
       ]
     },
     {
-      "char": "洋灰",
+      "scCharName": "洋灰",
+      "charId": "char_464_cement",
       "skinIndex": 1,
       "name": "New Business",
       "onShelf": [
@@ -1809,7 +1938,8 @@
       ]
     },
     {
-      "char": "洛洛",
+      "scCharName": "洛洛",
+      "charId": "char_4040_rockr",
       "skinIndex": 1,
       "name": "Before Singing",
       "onShelf": [
@@ -1823,7 +1953,8 @@
       ]
     },
     {
-      "char": "浊心斯卡蒂",
+      "scCharName": "浊心斯卡蒂",
+      "charId": "char_1012_skadi2",
       "skinIndex": 1,
       "name": "Sublimation",
       "onShelf": [
@@ -1837,7 +1968,8 @@
       ]
     },
     {
-      "char": "浊心斯卡蒂",
+      "scCharName": "浊心斯卡蒂",
+      "charId": "char_1012_skadi2",
       "skinIndex": 2,
       "name": "Red Countess",
       "onShelf": [
@@ -1851,7 +1983,8 @@
       ]
     },
     {
-      "char": "海霓",
+      "scCharName": "海霓",
+      "charId": "char_4079_haini",
       "skinIndex": 1,
       "name": "Tidal Bore",
       "onShelf": [
@@ -1865,7 +1998,8 @@
       ]
     },
     {
-      "char": "涤火杰西卡",
+      "scCharName": "涤火杰西卡",
+      "charId": "char_1034_jesca2",
       "skinIndex": 1,
       "name": "'Ride to Davistown'",
       "onShelf": [
@@ -1879,7 +2013,8 @@
       ]
     },
     {
-      "char": "深律",
+      "scCharName": "深律",
+      "charId": "char_4109_baslin",
       "skinIndex": 1,
       "name": "Starry Night Sky",
       "onShelf": [
@@ -1893,7 +2028,8 @@
       ]
     },
     {
-      "char": "渡桥",
+      "scCharName": "渡桥",
+      "charId": "char_4147_mitm",
       "skinIndex": 1,
       "name": "Under Surgical Lights",
       "onShelf": [
@@ -1907,7 +2043,8 @@
       ]
     },
     {
-      "char": "温米",
+      "scCharName": "温米",
+      "charId": "char_4081_warmy",
       "skinIndex": 1,
       "name": "Warm Velvet At the Corner",
       "onShelf": [
@@ -1921,7 +2058,8 @@
       ]
     },
     {
-      "char": "温蒂",
+      "scCharName": "温蒂",
+      "charId": "char_400_weedy",
       "skinIndex": 1,
       "name": "Candy Cape",
       "onShelf": [
@@ -1935,7 +2073,8 @@
       ]
     },
     {
-      "char": "温蒂",
+      "scCharName": "温蒂",
+      "charId": "char_400_weedy",
       "skinIndex": 2,
       "name": "Sedjem",
       "onShelf": [
@@ -1949,7 +2088,8 @@
       ]
     },
     {
-      "char": "澄闪",
+      "scCharName": "澄闪",
+      "charId": "char_377_gdglow",
       "skinIndex": 1,
       "name": "Maiden for the Bright Night",
       "onShelf": [
@@ -1963,7 +2103,8 @@
       ]
     },
     {
-      "char": "澄闪",
+      "scCharName": "澄闪",
+      "charId": "char_377_gdglow",
       "skinIndex": 2,
       "name": "Summer Flowers FA394",
       "onShelf": [
@@ -1977,7 +2118,8 @@
       ]
     },
     {
-      "char": "澄闪",
+      "scCharName": "澄闪",
+      "charId": "char_377_gdglow",
       "skinIndex": 3,
       "name": "Party In The Garden",
       "onShelf": [
@@ -1991,7 +2133,8 @@
       ]
     },
     {
-      "char": "濯尘芙蓉",
+      "scCharName": "濯尘芙蓉",
+      "charId": "char_1024_hbisc2",
       "skinIndex": 1,
       "name": "Romance Overflow",
       "onShelf": [
@@ -2005,7 +2148,8 @@
       ]
     },
     {
-      "char": "灰喉",
+      "scCharName": "灰喉",
+      "charId": "char_367_swllow",
       "skinIndex": 1,
       "name": "Homecoming",
       "onShelf": [
@@ -2019,7 +2163,8 @@
       ]
     },
     {
-      "char": "灰毫",
+      "scCharName": "灰毫",
+      "charId": "char_431_ashlok",
       "skinIndex": 1,
       "name": "Lances of Kaliskas",
       "onShelf": [
@@ -2033,7 +2178,8 @@
       ]
     },
     {
-      "char": "灵知",
+      "scCharName": "灵知",
+      "charId": "char_206_gnosis",
       "skinIndex": 1,
       "name": "Forerunner",
       "onShelf": [
@@ -2047,7 +2193,8 @@
       ]
     },
     {
-      "char": "烛煌",
+      "scCharName": "烛煌",
+      "charId": "char_1040_blaze2",
       "skinIndex": 1,
       "name": "Homecoming Night",
       "onShelf": [
@@ -2061,7 +2208,8 @@
       ]
     },
     {
-      "char": "焰尾",
+      "scCharName": "焰尾",
+      "charId": "char_420_flamtl",
       "skinIndex": 1,
       "name": "Sport For All",
       "onShelf": [
@@ -2075,7 +2223,8 @@
       ]
     },
     {
-      "char": "焰影苇草",
+      "scCharName": "焰影苇草",
+      "charId": "char_1020_reed2",
       "skinIndex": 1,
       "name": "Curator",
       "onShelf": [
@@ -2089,7 +2238,8 @@
       ]
     },
     {
-      "char": "焰影苇草",
+      "scCharName": "焰影苇草",
+      "charId": "char_1020_reed2",
       "skinIndex": 2,
       "name": "Summer Flowers FA075",
       "onShelf": [
@@ -2103,7 +2253,8 @@
       ]
     },
     {
-      "char": "焰影苇草",
+      "scCharName": "焰影苇草",
+      "charId": "char_1020_reed2",
       "skinIndex": 3,
       "name": "Glowing Flame in the Night",
       "onShelf": [
@@ -2117,7 +2268,8 @@
       ]
     },
     {
-      "char": "煌",
+      "scCharName": "煌",
+      "charId": "char_017_huang",
       "skinIndex": 1,
       "name": "Burst Feline",
       "onShelf": [
@@ -2131,7 +2283,8 @@
       ]
     },
     {
-      "char": "煌",
+      "scCharName": "煌",
+      "charId": "char_017_huang",
       "skinIndex": 2,
       "name": "Explosive Blue Flame",
       "onShelf": [
@@ -2145,7 +2298,8 @@
       ]
     },
     {
-      "char": "燧石",
+      "scCharName": "燧石",
+      "charId": "char_415_flint",
       "skinIndex": 1,
       "name": "Gorgeous Flower",
       "onShelf": [
@@ -2159,7 +2313,8 @@
       ]
     },
     {
-      "char": "爱丽丝",
+      "scCharName": "爱丽丝",
+      "charId": "char_338_iris",
       "skinIndex": 1,
       "name": "Mirror Visitor",
       "onShelf": [
@@ -2173,7 +2328,8 @@
       ]
     },
     {
-      "char": "狮蝎",
+      "scCharName": "狮蝎",
+      "charId": "char_215_mantic",
       "skinIndex": 1,
       "name": "Under A Veil",
       "onShelf": [
@@ -2187,7 +2343,8 @@
       ]
     },
     {
-      "char": "玛恩纳",
+      "scCharName": "玛恩纳",
+      "charId": "char_4064_mlynar",
       "skinIndex": 1,
       "name": "W Dali",
       "onShelf": [
@@ -2201,7 +2358,8 @@
       ]
     },
     {
-      "char": "玛恩纳",
+      "scCharName": "玛恩纳",
+      "charId": "char_4064_mlynar",
       "skinIndex": 2,
       "name": "Roar Against the Wilds",
       "onShelf": [
@@ -2215,7 +2373,8 @@
       ]
     },
     {
-      "char": "玫拉",
+      "scCharName": "玫拉",
+      "charId": "char_4006_melnte",
       "skinIndex": 1,
       "name": "For the Banquet",
       "onShelf": [
@@ -2229,7 +2388,8 @@
       ]
     },
     {
-      "char": "琳琅诗怀雅",
+      "scCharName": "琳琅诗怀雅",
+      "charId": "char_1033_swire2",
       "skinIndex": 1,
       "name": "Rhythmic Blocks",
       "onShelf": [
@@ -2243,7 +2403,8 @@
       ]
     },
     {
-      "char": "琴柳",
+      "scCharName": "琴柳",
+      "charId": "char_479_sleach",
       "skinIndex": 1,
       "name": "Appreciate Fragrance",
       "onShelf": [
@@ -2257,7 +2418,8 @@
       ]
     },
     {
-      "char": "琴柳",
+      "scCharName": "琴柳",
+      "charId": "char_479_sleach",
       "skinIndex": 2,
       "name": "Summer Flowers FA317",
       "onShelf": [
@@ -2271,7 +2433,8 @@
       ]
     },
     {
-      "char": "瑕光",
+      "scCharName": "瑕光",
+      "charId": "char_423_blemsh",
       "skinIndex": 1,
       "name": "Moon Catastrborn",
       "onShelf": [
@@ -2285,7 +2448,8 @@
       ]
     },
     {
-      "char": "白金",
+      "scCharName": "白金",
+      "charId": "char_204_platnm",
       "skinIndex": 1,
       "name": "Shining Dew SD05",
       "onShelf": [
@@ -2299,7 +2463,8 @@
       ]
     },
     {
-      "char": "白铁",
+      "scCharName": "白铁",
+      "charId": "char_4072_ironmn",
       "skinIndex": 1,
       "name": "Beach Guard GT003",
       "onShelf": [
@@ -2313,7 +2478,8 @@
       ]
     },
     {
-      "char": "白铁",
+      "scCharName": "白铁",
+      "charId": "char_4072_ironmn",
       "skinIndex": 2,
       "name": "Empty Crown",
       "onShelf": [
@@ -2327,7 +2493,8 @@
       ]
     },
     {
-      "char": "白面鸮",
+      "scCharName": "白面鸮",
+      "charId": "char_128_plosis",
       "skinIndex": 1,
       "name": "Among the Clouds",
       "onShelf": [
@@ -2341,7 +2508,8 @@
       ]
     },
     {
-      "char": "百炼嘉维尔",
+      "scCharName": "百炼嘉维尔",
+      "charId": "char_1026_gvial2",
       "skinIndex": 1,
       "name": "Holiday HD26",
       "onShelf": [
@@ -2355,7 +2523,8 @@
       ]
     },
     {
-      "char": "真理",
+      "scCharName": "真理",
+      "charId": "char_195_glassb",
       "skinIndex": 1,
       "name": "Bibliosmia",
       "onShelf": [
@@ -2369,7 +2538,8 @@
       ]
     },
     {
-      "char": "空",
+      "scCharName": "空",
+      "charId": "char_101_sora",
       "skinIndex": 1,
       "name": "Summer Flowers FA361",
       "onShelf": [
@@ -2383,7 +2553,8 @@
       ]
     },
     {
-      "char": "空",
+      "scCharName": "空",
+      "charId": "char_101_sora",
       "skinIndex": 2,
       "name": "Melodiosa",
       "onShelf": [
@@ -2397,7 +2568,8 @@
       ]
     },
     {
-      "char": "空弦",
+      "scCharName": "空弦",
+      "charId": "char_332_archet",
       "skinIndex": 1,
       "name": "Publicity Strategy",
       "onShelf": [
@@ -2411,7 +2583,8 @@
       ]
     },
     {
-      "char": "空弦",
+      "scCharName": "空弦",
+      "charId": "char_332_archet",
       "skinIndex": 2,
       "name": "Glory of the Devout",
       "onShelf": [
@@ -2425,7 +2598,8 @@
       ]
     },
     {
-      "char": "絮雨",
+      "scCharName": "絮雨",
+      "charId": "char_436_whispr",
       "skinIndex": 1,
       "name": "Priory of Abyss",
       "onShelf": [
@@ -2439,7 +2613,8 @@
       ]
     },
     {
-      "char": "红",
+      "scCharName": "红",
+      "charId": "char_144_red",
       "skinIndex": 1,
       "name": "Light Breeze LB01",
       "onShelf": [
@@ -2453,7 +2628,8 @@
       ]
     },
     {
-      "char": "纯烬艾雅法拉",
+      "scCharName": "纯烬艾雅法拉",
+      "charId": "char_1016_agoat2",
       "skinIndex": 1,
       "name": "A Picnic Before A Long Trip",
       "onShelf": [
@@ -2467,7 +2643,8 @@
       ]
     },
     {
-      "char": "绮良",
+      "scCharName": "绮良",
+      "charId": "char_478_kirara",
       "skinIndex": 1,
       "name": "Trendsetting Player",
       "onShelf": [
@@ -2481,7 +2658,8 @@
       ]
     },
     {
-      "char": "维什戴尔",
+      "scCharName": "维什戴尔",
+      "charId": "char_1035_wisdel",
       "skinIndex": 1,
       "name": "Supernova",
       "onShelf": [
@@ -2495,7 +2673,8 @@
       ]
     },
     {
-      "char": "维娜·维多利亚",
+      "scCharName": "维娜·维多利亚",
+      "charId": "char_1019_siege2",
       "skinIndex": 1,
       "name": "Glorious Path",
       "onShelf": [
@@ -2509,7 +2688,8 @@
       ]
     },
     {
-      "char": "缄默德克萨斯",
+      "scCharName": "缄默德克萨斯",
+      "charId": "char_1028_texas2",
       "skinIndex": 1,
       "name": "Wingbreaker",
       "onShelf": [
@@ -2523,7 +2703,8 @@
       ]
     },
     {
-      "char": "缄默德克萨斯",
+      "scCharName": "缄默德克萨斯",
+      "charId": "char_1028_texas2",
       "skinIndex": 2,
       "name": "Il Segreto Della Notte",
       "onShelf": [
@@ -2537,7 +2718,8 @@
       ]
     },
     {
-      "char": "缪尔赛思",
+      "scCharName": "缪尔赛思",
+      "charId": "char_249_mlyss",
       "skinIndex": 1,
       "name": "Young Branch",
       "onShelf": [
@@ -2551,7 +2733,8 @@
       ]
     },
     {
-      "char": "缪尔赛思",
+      "scCharName": "缪尔赛思",
+      "charId": "char_249_mlyss",
       "skinIndex": 2,
       "name": "Golden Reverie",
       "onShelf": [
@@ -2565,7 +2748,8 @@
       ]
     },
     {
-      "char": "羽毛笔",
+      "scCharName": "羽毛笔",
+      "charId": "char_421_crow",
       "skinIndex": 1,
       "name": "Summer Flowers FA210",
       "onShelf": [
@@ -2579,7 +2763,8 @@
       ]
     },
     {
-      "char": "耀骑士临光",
+      "scCharName": "耀骑士临光",
+      "charId": "char_1014_nearl2",
       "skinIndex": 1,
       "name": "Relight",
       "onShelf": [
@@ -2593,7 +2778,8 @@
       ]
     },
     {
-      "char": "老鲤",
+      "scCharName": "老鲤",
+      "charId": "char_322_lmlee",
       "skinIndex": 1,
       "name": "Trust Your Eyes",
       "onShelf": [
@@ -2607,7 +2793,8 @@
       ]
     },
     {
-      "char": "老鲤",
+      "scCharName": "老鲤",
+      "charId": "char_322_lmlee",
       "skinIndex": 2,
       "name": "Remedy In A Cup Of Leung Cha",
       "onShelf": [
@@ -2621,7 +2808,8 @@
       ]
     },
     {
-      "char": "能天使",
+      "scCharName": "能天使",
+      "charId": "char_103_angel",
       "skinIndex": 1,
       "name": "Wild Operation",
       "onShelf": [
@@ -2635,7 +2823,8 @@
       ]
     },
     {
-      "char": "艾丽妮",
+      "scCharName": "艾丽妮",
+      "charId": "char_4009_irene",
       "skinIndex": 1,
       "name": "Voyage of Feathers",
       "onShelf": [
@@ -2649,7 +2838,8 @@
       ]
     },
     {
-      "char": "艾丽妮",
+      "scCharName": "艾丽妮",
+      "charId": "char_4009_irene",
       "skinIndex": 2,
       "name": "The Adjudicatrix and Her Resolve",
       "onShelf": [
@@ -2663,7 +2853,8 @@
       ]
     },
     {
-      "char": "艾雅法拉",
+      "scCharName": "艾雅法拉",
+      "charId": "char_180_amgoat",
       "skinIndex": 1,
       "name": "Summer Flowers FA018",
       "onShelf": [
@@ -2677,7 +2868,8 @@
       ]
     },
     {
-      "char": "艾雅法拉",
+      "scCharName": "艾雅法拉",
+      "charId": "char_180_amgoat",
       "skinIndex": 2,
       "name": "Fluffy Little Witch",
       "onShelf": [
@@ -2691,7 +2883,8 @@
       ]
     },
     {
-      "char": "芙兰卡",
+      "scCharName": "芙兰卡",
+      "charId": "char_106_franka",
       "skinIndex": 1,
       "name": "Rainforest, Me, Rainbow",
       "onShelf": [
@@ -2705,7 +2898,8 @@
       ]
     },
     {
-      "char": "苇草",
+      "scCharName": "苇草",
+      "charId": "char_261_sddrag",
       "skinIndex": 1,
       "name": "Emerald Holiday",
       "onShelf": [
@@ -2719,7 +2913,8 @@
       ]
     },
     {
-      "char": "荒芜拉普兰德",
+      "scCharName": "荒芜拉普兰德",
+      "charId": "char_1038_whitw2",
       "skinIndex": 1,
       "name": "Unruly Humbleness",
       "onShelf": [
@@ -2733,7 +2928,8 @@
       ]
     },
     {
-      "char": "莫斯提马",
+      "scCharName": "莫斯提马",
+      "charId": "char_213_mostma",
       "skinIndex": 1,
       "name": "Spellbreaker",
       "onShelf": [
@@ -2747,7 +2943,8 @@
       ]
     },
     {
-      "char": "莫斯提马",
+      "scCharName": "莫斯提马",
+      "charId": "char_213_mostma",
       "skinIndex": 2,
       "name": "Ethereal Harmony",
       "onShelf": [
@@ -2761,7 +2958,8 @@
       ]
     },
     {
-      "char": "莱伊",
+      "scCharName": "莱伊",
+      "charId": "char_4117_ray",
       "skinIndex": 1,
       "name": "Dreaming High",
       "onShelf": [
@@ -2775,7 +2973,8 @@
       ]
     },
     {
-      "char": "莱恩哈特",
+      "scCharName": "莱恩哈特",
+      "charId": "char_373_lionhd",
       "skinIndex": 1,
       "name": "Finder in the Rough",
       "onShelf": [
@@ -2789,7 +2988,8 @@
       ]
     },
     {
-      "char": "莱恩哈特",
+      "scCharName": "莱恩哈特",
+      "charId": "char_373_lionhd",
       "skinIndex": 2,
       "name": "Hope Cruise",
       "onShelf": [
@@ -2803,7 +3003,8 @@
       ]
     },
     {
-      "char": "菲亚梅塔",
+      "scCharName": "菲亚梅塔",
+      "charId": "char_300_phenxi",
       "skinIndex": 1,
       "name": "Divine Oath",
       "onShelf": [
@@ -2817,7 +3018,8 @@
       ]
     },
     {
-      "char": "菲亚梅塔",
+      "scCharName": "菲亚梅塔",
+      "charId": "char_300_phenxi",
       "skinIndex": 2,
       "name": "Judgment Day",
       "onShelf": [
@@ -2831,7 +3033,8 @@
       ]
     },
     {
-      "char": "蓝毒",
+      "scCharName": "蓝毒",
+      "charId": "char_129_bluep",
       "skinIndex": 1,
       "name": "Nocturne of Elysia",
       "onShelf": [
@@ -2845,7 +3048,8 @@
       ]
     },
     {
-      "char": "蕾缪安",
+      "scCharName": "蕾缪安",
+      "charId": "char_4193_lemuen",
       "skinIndex": 1,
       "name": "Requiem Vesperis",
       "onShelf": [
@@ -2859,7 +3063,8 @@
       ]
     },
     {
-      "char": "薇薇安娜",
+      "scCharName": "薇薇安娜",
+      "charId": "char_4098_vvana",
       "skinIndex": 1,
       "name": "Sent from Ognisko",
       "onShelf": [
@@ -2873,7 +3078,8 @@
       ]
     },
     {
-      "char": "蚀清",
+      "scCharName": "蚀清",
+      "charId": "char_489_serum",
       "skinIndex": 1,
       "name": "Leisure",
       "onShelf": [
@@ -2887,7 +3093,8 @@
       ]
     },
     {
-      "char": "蜜蜡",
+      "scCharName": "蜜蜡",
+      "charId": "char_344_beewax",
       "skinIndex": 1,
       "name": "Weißer Sand",
       "onShelf": [
@@ -2901,7 +3108,8 @@
       ]
     },
     {
-      "char": "蜜蜡",
+      "scCharName": "蜜蜡",
+      "charId": "char_344_beewax",
       "skinIndex": 2,
       "name": "Holiday HD61",
       "onShelf": [
@@ -2915,7 +3123,8 @@
       ]
     },
     {
-      "char": "衡沙",
+      "scCharName": "衡沙",
+      "charId": "char_4140_lasher",
       "skinIndex": 1,
       "name": "Horus' Rest",
       "onShelf": [
@@ -2929,7 +3138,8 @@
       ]
     },
     {
-      "char": "裁度",
+      "scCharName": "裁度",
+      "charId": "char_4155_talr",
       "skinIndex": 1,
       "name": "Autumn Shadow",
       "onShelf": [
@@ -2943,7 +3153,8 @@
       ]
     },
     {
-      "char": "诗怀雅",
+      "scCharName": "诗怀雅",
+      "charId": "char_308_swire",
       "skinIndex": 1,
       "name": "Honor and Splendor",
       "onShelf": [
@@ -2957,7 +3168,8 @@
       ]
     },
     {
-      "char": "赤冬",
+      "scCharName": "赤冬",
+      "charId": "char_475_akafyu",
       "skinIndex": 1,
       "name": "Temperament",
       "onShelf": [
@@ -2971,7 +3183,8 @@
       ]
     },
     {
-      "char": "赫德雷",
+      "scCharName": "赫德雷",
+      "charId": "char_4088_hodrer",
       "skinIndex": 1,
       "name": "Courtyard of Neka",
       "onShelf": [
@@ -2985,7 +3198,8 @@
       ]
     },
     {
-      "char": "赫拉格",
+      "scCharName": "赫拉格",
+      "charId": "char_188_helage",
       "skinIndex": 1,
       "name": "Octopath Illusion",
       "onShelf": [
@@ -2999,7 +3213,8 @@
       ]
     },
     {
-      "char": "赫默",
+      "scCharName": "赫默",
+      "charId": "char_108_silent",
       "skinIndex": 1,
       "name": "Lacquer",
       "onShelf": [
@@ -3013,7 +3228,8 @@
       ]
     },
     {
-      "char": "远牙",
+      "scCharName": "远牙",
+      "charId": "char_430_fartth",
       "skinIndex": 1,
       "name": "Hear the Wind Sing",
       "onShelf": [
@@ -3027,7 +3243,8 @@
       ]
     },
     {
-      "char": "迷迭香",
+      "scCharName": "迷迭香",
+      "charId": "char_391_rosmon",
       "skinIndex": 1,
       "name": "Become Anew",
       "onShelf": [
@@ -3041,7 +3258,8 @@
       ]
     },
     {
-      "char": "迷迭香",
+      "scCharName": "迷迭香",
+      "charId": "char_391_rosmon",
       "skinIndex": 2,
       "name": "An Airy Dream",
       "onShelf": [
@@ -3055,7 +3273,8 @@
       ]
     },
     {
-      "char": "送葬人",
+      "scCharName": "送葬人",
+      "charId": "char_279_excu",
       "skinIndex": 1,
       "name": "Titleless Code",
       "onShelf": [
@@ -3069,7 +3288,8 @@
       ]
     },
     {
-      "char": "逻各斯",
+      "scCharName": "逻各斯",
+      "charId": "char_4133_logos",
       "skinIndex": 1,
       "name": "Radiant Serenity",
       "onShelf": [
@@ -3083,7 +3303,8 @@
       ]
     },
     {
-      "char": "重岳",
+      "scCharName": "重岳",
+      "charId": "char_2024_chyue",
       "skinIndex": 1,
       "name": "Alighting",
       "onShelf": [
@@ -3097,7 +3318,8 @@
       ]
     },
     {
-      "char": "重岳",
+      "scCharName": "重岳",
+      "charId": "char_2024_chyue",
       "skinIndex": 2,
       "name": "All-Round Actor",
       "onShelf": [
@@ -3111,7 +3333,8 @@
       ]
     },
     {
-      "char": "铃兰",
+      "scCharName": "铃兰",
+      "charId": "char_358_lisa",
       "skinIndex": 1,
       "name": "Lostlands Flowering",
       "onShelf": [
@@ -3125,7 +3348,8 @@
       ]
     },
     {
-      "char": "铃兰",
+      "scCharName": "铃兰",
+      "charId": "char_358_lisa",
       "skinIndex": 2,
       "name": "Spring Praise",
       "onShelf": [
@@ -3139,7 +3363,8 @@
       ]
     },
     {
-      "char": "铃兰",
+      "scCharName": "铃兰",
+      "charId": "char_358_lisa",
       "skinIndex": 3,
       "name": "Yukibare",
       "onShelf": [
@@ -3153,7 +3378,8 @@
       ]
     },
     {
-      "char": "铎铃",
+      "scCharName": "铎铃",
+      "charId": "char_4083_chimes",
       "skinIndex": 1,
       "name": "Moon under the Pines",
       "onShelf": [
@@ -3167,7 +3393,8 @@
       ]
     },
     {
-      "char": "银灰",
+      "scCharName": "银灰",
+      "charId": "char_172_svrash",
       "skinIndex": 1,
       "name": "York's Bise",
       "onShelf": [
@@ -3181,7 +3408,8 @@
       ]
     },
     {
-      "char": "银灰",
+      "scCharName": "银灰",
+      "charId": "char_172_svrash",
       "skinIndex": 2,
       "name": "Seeker SKm01",
       "onShelf": [
@@ -3195,7 +3423,8 @@
       ]
     },
     {
-      "char": "银灰",
+      "scCharName": "银灰",
+      "charId": "char_172_svrash",
       "skinIndex": 3,
       "name": "Never-melting Ice",
       "onShelf": [
@@ -3209,7 +3438,8 @@
       ]
     },
     {
-      "char": "锏",
+      "scCharName": "锏",
+      "charId": "char_4116_blkkgt",
       "skinIndex": 1,
       "name": "The Shadow of the Dark Moon",
       "onShelf": [
@@ -3223,7 +3453,8 @@
       ]
     },
     {
-      "char": "闪灵",
+      "scCharName": "闪灵",
+      "charId": "char_147_shining",
       "skinIndex": 1,
       "name": "Silent Night DN02",
       "onShelf": [
@@ -3237,7 +3468,8 @@
       ]
     },
     {
-      "char": "阿",
+      "scCharName": "阿",
+      "charId": "char_225_haak",
       "skinIndex": 1,
       "name": "Doctor of Faces",
       "onShelf": [
@@ -3251,7 +3483,8 @@
       ]
     },
     {
-      "char": "阿斯卡纶",
+      "scCharName": "阿斯卡纶",
+      "charId": "char_4132_ascln",
       "skinIndex": 1,
       "name": "Phototaxis",
       "onShelf": [
@@ -3265,7 +3498,8 @@
       ]
     },
     {
-      "char": "陈",
+      "scCharName": "陈",
+      "charId": "char_010_chen",
       "skinIndex": 1,
       "name": "Ageless Afterglow",
       "onShelf": [
@@ -3279,7 +3513,8 @@
       ]
     },
     {
-      "char": "陨星",
+      "scCharName": "陨星",
+      "charId": "char_219_meteo",
       "skinIndex": 1,
       "name": "Graphite",
       "onShelf": [
@@ -3293,7 +3528,8 @@
       ]
     },
     {
-      "char": "隐德来希",
+      "scCharName": "隐德来希",
+      "charId": "char_4010_etlchi",
       "skinIndex": 1,
       "name": "Dazzling Blue",
       "onShelf": [
@@ -3307,7 +3543,8 @@
       ]
     },
     {
-      "char": "雷蛇",
+      "scCharName": "雷蛇",
+      "charId": "char_107_liskam",
       "skinIndex": 1,
       "name": "Spring Vouivre",
       "onShelf": [
@@ -3321,7 +3558,8 @@
       ]
     },
     {
-      "char": "雷蛇",
+      "scCharName": "雷蛇",
+      "charId": "char_107_liskam",
       "skinIndex": 2,
       "name": "Overload",
       "onShelf": [
@@ -3335,7 +3573,8 @@
       ]
     },
     {
-      "char": "霍尔海雅",
+      "scCharName": "霍尔海雅",
+      "charId": "char_4027_heyak",
       "skinIndex": 1,
       "name": "Carriage of the Winds of Time",
       "onShelf": [
@@ -3349,7 +3588,8 @@
       ]
     },
     {
-      "char": "霍尔海雅",
+      "scCharName": "霍尔海雅",
+      "charId": "char_4027_heyak",
       "skinIndex": 2,
       "name": "Ritual of Immortality",
       "onShelf": [
@@ -3363,7 +3603,8 @@
       ]
     },
     {
-      "char": "青枳",
+      "scCharName": "青枳",
+      "charId": "char_488_buildr",
       "skinIndex": 1,
       "name": "To Rest in Night Breezes",
       "onShelf": [
@@ -3377,7 +3618,8 @@
       ]
     },
     {
-      "char": "风丸",
+      "scCharName": "风丸",
+      "charId": "char_4016_kazema",
       "skinIndex": 1,
       "name": "Like Illusion",
       "onShelf": [
@@ -3391,7 +3633,8 @@
       ]
     },
     {
-      "char": "风笛",
+      "scCharName": "风笛",
+      "charId": "char_222_bpipe",
       "skinIndex": 1,
       "name": "Royal Guardswoman",
       "onShelf": [
@@ -3405,7 +3648,8 @@
       ]
     },
     {
-      "char": "风笛",
+      "scCharName": "风笛",
+      "charId": "char_222_bpipe",
       "skinIndex": 2,
       "name": "Echo of Bagpipes",
       "onShelf": [
@@ -3419,7 +3663,8 @@
       ]
     },
     {
-      "char": "食铁兽",
+      "scCharName": "食铁兽",
+      "charId": "char_241_panda",
       "skinIndex": 1,
       "name": "Dojo Star",
       "onShelf": [
@@ -3433,7 +3678,8 @@
       ]
     },
     {
-      "char": "食铁兽",
+      "scCharName": "食铁兽",
+      "charId": "char_241_panda",
       "skinIndex": 2,
       "name": "Gourmet",
       "onShelf": [
@@ -3447,7 +3693,8 @@
       ]
     },
     {
-      "char": "鸿雪",
+      "scCharName": "鸿雪",
+      "charId": "char_4055_bgsnow",
       "skinIndex": 1,
       "name": "Snowy Plains in Words",
       "onShelf": [
@@ -3461,7 +3708,8 @@
       ]
     },
     {
-      "char": "鸿雪",
+      "scCharName": "鸿雪",
+      "charId": "char_4055_bgsnow",
       "skinIndex": 2,
       "name": "Beside Dreams",
       "onShelf": [
@@ -3475,7 +3723,8 @@
       ]
     },
     {
-      "char": "麦哲伦",
+      "scCharName": "麦哲伦",
+      "charId": "char_248_mgllan",
       "skinIndex": 1,
       "name": "Shaved-Ice Memories",
       "onShelf": [
@@ -3489,7 +3738,8 @@
       ]
     },
     {
-      "char": "黍",
+      "scCharName": "黍",
+      "charId": "char_2025_shu",
       "skinIndex": 1,
       "name": "Spring Feast",
       "onShelf": [
@@ -3503,7 +3753,8 @@
       ]
     },
     {
-      "char": "黑",
+      "scCharName": "黑",
+      "charId": "char_340_shwaz",
       "skinIndex": 1,
       "name": "Presents",
       "onShelf": [
@@ -3517,7 +3768,8 @@
       ]
     },
     {
-      "char": "黑",
+      "scCharName": "黑",
+      "charId": "char_340_shwaz",
       "skinIndex": 2,
       "name": "Skyline",
       "onShelf": [
@@ -3531,7 +3783,8 @@
       ]
     },
     {
-      "char": "黑键",
+      "scCharName": "黑键",
+      "charId": "char_4046_ebnhlz",
       "skinIndex": 1,
       "name": "Eine Variation",
       "onShelf": [
