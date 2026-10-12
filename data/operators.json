@@ -336,7 +336,7 @@
   "char_4231_clemnt": {
     "scName": "克莱门莎",
     "enName": "Clementia",
-    "jpName": "Clementia",
+    "jpName": "クレメンティア",
     "charId": "char_4231_clemnt",
     "rarity": 6,
     "scReleaseDate": "2026-10-09",
@@ -417,8 +417,8 @@
   },
   "char_1052_kalts2": {
     "scName": "凯尔希·思衡托",
-    "enName": "Kal'tsit·Esperanta",
-    "jpName": "Kal'tsit·Esperanta",
+    "enName": "Kal'tsit Esperanta",
+    "jpName": "ケルシー・エスペランタ",
     "charId": "char_1052_kalts2",
     "rarity": 6,
     "scReleaseDate": "2026-05-01",
@@ -1480,8 +1480,8 @@
   },
   "char_393_toledo": {
     "scName": "德·托莱多",
-    "enName": "de Toledo",
-    "jpName": "de Toledo",
+    "enName": "De Toledo",
+    "jpName": "De Toledo",
     "charId": "char_393_toledo",
     "rarity": 5,
     "scReleaseDate": "2026-10-09",
