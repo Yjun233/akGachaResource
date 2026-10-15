@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12",
+  "generatedAt": "2026-10-15",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "modules": [
     {
@@ -239,6 +239,13 @@
       "seq": 1,
       "name": "The Dauntless",
       "date": "2024-11-01"
+    },
+    {
+      "scCharName": "可露希尔",
+      "charId": "char_4228_closur",
+      "seq": 1,
+      "name": "Little Trophy for Herself",
+      "date": "2026-10-14"
     },
     {
       "scCharName": "可颂",
@@ -689,6 +696,13 @@
       "date": "2023-01-13"
     },
     {
+      "scCharName": "归溟幽灵鲨",
+      "charId": "char_1023_ghost2",
+      "seq": 3,
+      "name": "Specter the Unchained's Specialized Badge",
+      "date": "2026-10-14"
+    },
+    {
       "scCharName": "录武官",
       "charId": "char_4196_reckpr",
       "seq": 1,
@@ -785,6 +799,13 @@
       "seq": 2,
       "name": "Shadow of the Icefield",
       "date": "2025-12-11"
+    },
+    {
+      "scCharName": "提丰",
+      "charId": "char_2012_typhon",
+      "seq": 3,
+      "name": "Typhon's Specialized Badge",
+      "date": "2026-10-14"
     },
     {
       "scCharName": "撷英调香师",
@@ -1322,7 +1343,7 @@
       "scCharName": "琳琅诗怀雅",
       "charId": "char_1033_swire2",
       "seq": 3,
-      "name": "Swire the Elegant Wit's Badge",
+      "name": "Swire the Elegant Wit's Specialized Badge",
       "date": "2026-01-16"
     },
     {
@@ -1513,6 +1534,13 @@
       "seq": 1,
       "name": "Blueberry & Dark Chocolate",
       "date": "2023-05-23"
+    },
+    {
+      "scCharName": "缄默德克萨斯",
+      "charId": "char_1028_texas2",
+      "seq": 2,
+      "name": "'New Car and New Life'",
+      "date": "2026-10-14"
     },
     {
       "scCharName": "缇缇",
@@ -1746,6 +1774,13 @@
       "date": "2025-04-25"
     },
     {
+      "scCharName": "裂响",
+      "charId": "char_4225_tanya",
+      "seq": 1,
+      "name": "'The Rinsing'",
+      "date": "2026-10-14"
+    },
+    {
       "scCharName": "诗怀雅",
       "charId": "char_308_swire",
       "seq": 1,
@@ -1940,6 +1975,13 @@
       "seq": 1,
       "name": "'Footnotes of the Past'",
       "date": "2024-06-21"
+    },
+    {
+      "scCharName": "锏",
+      "charId": "char_4116_blkkgt",
+      "seq": 2,
+      "name": "New Contract",
+      "date": "2026-10-14"
     },
     {
       "scCharName": "闪灵",

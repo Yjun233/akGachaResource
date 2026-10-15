@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12",
-  "dataVersion": "Stream:\nChange:\nVersionControl:51.10.0",
+  "generatedAt": "2026-10-15",
+  "dataVersion": "Stream:\nChange:\nVersionControl:52.0.0",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "banners": {
     "20231024_classic_0001": {
@@ -5905,6 +5905,267 @@
         }
       ],
       "scName": "中坚甄选12",
+      "enName": null
+    },
+    "20261020_clafes_0013": {
+      "type": "clafes",
+      "startDate": "2026-10-20",
+      "endDate": "2026-11-03",
+      "upOperators": [
+        {
+          "scCharName": "艾雅法拉",
+          "charId": "char_180_amgoat",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "银灰",
+          "charId": "char_172_svrash",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "早露",
+          "charId": "char_197_poca",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "温蒂",
+          "charId": "char_400_weedy",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "史尔特尔",
+          "charId": "char_350_surtr",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "瑕光",
+          "charId": "char_423_blemsh",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "空弦",
+          "charId": "char_332_archet",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "异客",
+          "charId": "char_472_pasngr",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "凯尔希",
+          "charId": "char_003_kalts",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "灵知",
+          "charId": "char_206_gnosis",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "澄闪",
+          "charId": "char_377_gdglow",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "多萝西",
+          "charId": "char_4048_doroth",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "凛冬",
+          "charId": "char_115_headbr",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "蓝毒",
+          "charId": "char_129_bluep",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "天火",
+          "charId": "char_166_skfire",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "赫默",
+          "charId": "char_108_silent",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "可颂",
+          "charId": "char_201_moeshd",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "守林人",
+          "charId": "char_158_milu",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "夜魔",
+          "charId": "char_164_nightm",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "星极",
+          "charId": "char_274_astesi",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "送葬人",
+          "charId": "char_279_excu",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "灰喉",
+          "charId": "char_367_swllow",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "惊蛰",
+          "charId": "char_306_leizi",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "巫恋",
+          "charId": "char_254_vodfox",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "月禾",
+          "charId": "char_343_tknogi",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "蜜蜡",
+          "charId": "char_344_beewax",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "安哲拉",
+          "charId": "char_218_cuttle",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "四月",
+          "charId": "char_365_aprl",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "爱丽丝",
+          "charId": "char_338_iris",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "绮良",
+          "charId": "char_478_kirara",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "羽毛笔",
+          "charId": "char_421_crow",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "桑葚",
+          "charId": "char_473_mberry",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "蚀清",
+          "charId": "char_489_serum",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "极光",
+          "charId": "char_422_aurora",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "夜半",
+          "charId": "char_476_blkngt",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "夏栎",
+          "charId": "char_492_quercu",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "scName": "中坚甄选13",
       "enName": null
     }
   }
