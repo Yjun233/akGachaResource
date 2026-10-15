@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12",
+  "generatedAt": "2026-10-15",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "memoirs": [
     {
@@ -2290,6 +2290,32 @@
         }
       ],
       "releaseDate": "2026-09-16"
+    },
+    {
+      "scCharName": "怒潮凛冬",
+      "charId": "char_1051_headb2",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "Cycle",
+          "date": "2026-10-14"
+        }
+      ],
+      "releaseDate": "2026-10-14"
+    },
+    {
+      "scCharName": "可露希尔",
+      "charId": "char_4228_closur",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "The Art of Being Everywhere at Once",
+          "date": "2026-10-14"
+        }
+      ],
+      "releaseDate": "2026-10-14"
     }
   ]
 }

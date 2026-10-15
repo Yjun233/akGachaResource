@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-10-12",
+  "generatedAt": "2026-10-15",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "skins": [
+    {
+      "scCharName": "Mon3tr",
+      "charId": "char_4179_monstr",
+      "skinIndex": 1,
+      "name": "Sharpened Claws",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-14",
+          "end": "2026-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
     {
       "scCharName": "W",
       "charId": "char_113_cqbw",
@@ -1458,6 +1473,21 @@
       ]
     },
     {
+      "scCharName": "新约能天使",
+      "charId": "char_1041_angel2",
+      "skinIndex": 1,
+      "name": "The Legend Seeker",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-14",
+          "end": "2026-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
       "scCharName": "早露",
       "charId": "char_197_poca",
       "skinIndex": 1,
@@ -2808,6 +2838,21 @@
       ]
     },
     {
+      "scCharName": "聆音",
+      "charId": "char_4187_graceb",
+      "skinIndex": 1,
+      "name": "Purification of the Past",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-14",
+          "end": "2026-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
       "scCharName": "能天使",
       "charId": "char_103_angel",
       "skinIndex": 1,
@@ -3168,6 +3213,21 @@
       ]
     },
     {
+      "scCharName": "诺威尔",
+      "charId": "char_4173_nowell",
+      "skinIndex": 1,
+      "name": "The Spirit Farer",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-14",
+          "end": "2026-10-28",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
       "scCharName": "赤冬",
       "charId": "char_475_akafyu",
       "skinIndex": 1,
@@ -3297,6 +3357,21 @@
           "kind": "首发",
           "start": "2025-09-17",
           "end": "2025-10-01",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "scCharName": "遥",
+      "charId": "char_4202_haruka",
+      "skinIndex": 1,
+      "name": "Stranded in Utopia",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-14",
+          "end": "2026-10-28",
           "note": "",
           "longTime": false
         }
