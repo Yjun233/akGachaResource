@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12",
+  "generatedAt": "2026-10-16",
   "source": "https://prts.wiki",
   "skins": [
     {
@@ -2877,6 +2877,84 @@
           "kind": "首发",
           "start": "2026-07-03",
           "end": "2026-07-24",
+          "note": "",
+          "longTime": false
+        }
+      ],
+      "dynamic": false,
+      "warnings": []
+    },
+    {
+      "scCharName": "黍",
+      "charId": "char_2025_shu",
+      "skinIndex": 2,
+      "name": "源远流长",
+      "group": "国家图书馆",
+      "series": "国家图书馆",
+      "isCrossover": true,
+      "obtain": [
+        "源石购买"
+      ],
+      "obtainRaw": "采购中心",
+      "firstPrice": 21,
+      "firstPriceUnit": null,
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-16",
+          "end": "2026-11-06",
+          "note": "",
+          "longTime": false
+        }
+      ],
+      "dynamic": false,
+      "warnings": []
+    },
+    {
+      "scCharName": "烛煌",
+      "charId": "char_1040_blaze2",
+      "skinIndex": 2,
+      "name": "夜行烛火",
+      "group": "国家图书馆",
+      "series": "国家图书馆",
+      "isCrossover": true,
+      "obtain": [
+        "源石购买"
+      ],
+      "obtainRaw": "采购中心",
+      "firstPrice": 18,
+      "firstPriceUnit": null,
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-16",
+          "end": "2026-11-06",
+          "note": "",
+          "longTime": false
+        }
+      ],
+      "dynamic": false,
+      "warnings": []
+    },
+    {
+      "scCharName": "琳琅诗怀雅",
+      "charId": "char_1033_swire2",
+      "skinIndex": 2,
+      "name": "盛世之象",
+      "group": "国家图书馆",
+      "series": "国家图书馆",
+      "isCrossover": true,
+      "obtain": [
+        "源石购买"
+      ],
+      "obtainRaw": "采购中心",
+      "firstPrice": 18,
+      "firstPriceUnit": null,
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-16",
+          "end": "2026-11-06",
           "note": "",
           "longTime": false
         }
