@@ -14949,5 +14949,49 @@
     ],
     "rerunKind": "首发",
     "canRerun": true
+  },
+  "20261022_double_0196": {
+    "scName": "常驻标准寻访196",
+    "enName": null,
+    "type": "double",
+    "startDate": "2026-10-22",
+    "endDate": "2026-11-05",
+    "upOperators": [
+      {
+        "scCharName": "怒潮凛冬",
+        "charId": "char_1051_headb2",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "妮芙",
+        "charId": "char_4146_nymph",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "玫拉",
+        "charId": "char_4006_melnte",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "雪猎",
+        "charId": "char_4211_snhunt",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "波卜",
+        "charId": "char_487_bobb",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": true
+      }
+    ]
   }
 }

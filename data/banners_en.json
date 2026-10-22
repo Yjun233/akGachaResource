@@ -8179,8 +8179,8 @@
         "isShop": false
       },
       {
-        "scCharName": "夏栎",
-        "charId": "char_492_quercu",
+        "scCharName": "卡夫卡",
+        "charId": "char_214_kafka",
         "rarity": 5,
         "isLimited": false,
         "isShop": false
@@ -8408,6 +8408,13 @@
         "isShop": false
       },
       {
+        "scCharName": "极光",
+        "charId": "char_422_aurora",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
         "scCharName": "濯尘芙蓉",
         "charId": "char_1024_hbisc2",
         "rarity": 5,
@@ -8417,13 +8424,6 @@
       {
         "scCharName": "爱丽丝",
         "charId": "char_338_iris",
-        "rarity": 5,
-        "isLimited": false,
-        "isShop": false
-      },
-      {
-        "scCharName": "卡夫卡",
-        "charId": "char_214_kafka",
         "rarity": 5,
         "isLimited": false,
         "isShop": false
@@ -13614,6 +13614,50 @@
         "rarity": 5,
         "isLimited": false,
         "isShop": false
+      }
+    ]
+  },
+  "20261023_double_0178": {
+    "scName": "常驻标准寻访178",
+    "enName": null,
+    "type": "double",
+    "startDate": "2026-10-23",
+    "endDate": "2026-11-06",
+    "upOperators": [
+      {
+        "scCharName": "伊内丝",
+        "charId": "char_4087_ines",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "左乐",
+        "charId": "char_4121_zuole",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "但书",
+        "charId": "char_4032_provs",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "录武官",
+        "charId": "char_4196_reckpr",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "空构",
+        "charId": "char_4015_spuria",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": true
       }
     ]
   }
