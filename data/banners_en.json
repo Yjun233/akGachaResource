@@ -13660,5 +13660,98 @@
         "isShop": true
       }
     ]
+  },
+  "20261028_stdfes_0007": {
+    "scName": "定向甄选7",
+    "enName": null,
+    "type": "stdfes",
+    "startDate": "2026-10-28",
+    "endDate": "2026-11-11",
+    "upOperators": [
+      {
+        "scCharName": "司霆惊蛰",
+        "charId": "char_1043_leizi2",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "圣聆初雪",
+        "charId": "char_1046_sbell2",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "提丰",
+        "charId": "char_2012_typhon",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "逻各斯",
+        "charId": "char_4133_logos",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "引星棘刺",
+        "charId": "char_1039_thorn2",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "斥罪",
+        "charId": "char_4065_judge",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "撷英调香师",
+        "charId": "char_1022_flwr2",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "波卜",
+        "charId": "char_487_bobb",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "阿罗玛",
+        "charId": "char_446_aroma",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "阿兰娜",
+        "charId": "char_4178_alanna",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "渡桥",
+        "charId": "char_4147_mitm",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "寒檀",
+        "charId": "char_341_sntlla",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }
