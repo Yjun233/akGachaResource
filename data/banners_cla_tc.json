@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12",
-  "dataVersion": "Stream:\nChange:\nVersionControl:51.4.0",
+  "generatedAt": "2026-10-26",
+  "dataVersion": "Stream:\nChange:\nVersionControl:51.6.0",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "banners": {
     "20240222_classic_0001": {
@@ -2421,6 +2421,50 @@
         }
       ],
       "scName": "常驻中坚寻访55",
+      "enName": null
+    },
+    "20261029_classic_0056": {
+      "type": "classic",
+      "startDate": "2026-10-29",
+      "endDate": "2026-11-12",
+      "upOperators": [
+        {
+          "scCharName": "帕拉斯",
+          "charId": "char_485_pallas",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "陈",
+          "charId": "char_010_chen",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "scCharName": "羽毛笔",
+          "charId": "char_421_crow",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "赤冬",
+          "charId": "char_475_akafyu",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "诗怀雅",
+          "charId": "char_308_swire",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "scName": "常驻中坚寻访56",
       "enName": null
     },
     "20240404_clafes_0001": {

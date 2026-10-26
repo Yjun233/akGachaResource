@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12",
+  "generatedAt": "2026-10-26",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "skins": [
     {
@@ -687,6 +687,21 @@
           "kind": "首发",
           "start": "2021-10-28",
           "end": "2021-11-11",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "scCharName": "塞雷娅",
+      "charId": "char_202_demkni",
+      "skinIndex": 3,
+      "name": "黑白冷峻",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-26",
+          "end": "2026-11-09",
           "note": "",
           "longTime": false
         }
@@ -1827,6 +1842,21 @@
           "kind": "首发",
           "start": "2026-02-26",
           "end": "2026-03-12",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "scCharName": "死芒",
+      "charId": "char_450_necras",
+      "skinIndex": 2,
+      "name": "晶化信念",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-26",
+          "end": "2026-11-09",
           "note": "",
           "longTime": false
         }
@@ -3012,6 +3042,21 @@
           "kind": "首发",
           "start": "2025-03-06",
           "end": "2025-03-20",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "scCharName": "蕾缪安",
+      "charId": "char_4193_lemuen",
+      "skinIndex": 1,
+      "name": "暮星安魂曲",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-10-26",
+          "end": "2026-11-09",
           "note": "",
           "longTime": false
         }
