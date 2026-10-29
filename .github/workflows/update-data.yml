@@ -46,7 +46,15 @@ jobs:
     env:
       TZ: Asia/Shanghai         # 让提交信息里的日期是北京时间
     steps:
+      # ⚠️ **必须完整历史**（fetch-depth: 0）：`build:avatars` 之后要跑
+      #    `scripts/gen-avatar-shas.mjs`，它靠 `git log -- avatars` 找出「每个头像最后
+      #    被改动的那次提交 sha」并写进 `data/avatar_shas.json`（站点据此拼头像 URL）。
+      #    浅克隆只有最近一次提交 → 所有头像都会被算成 HEAD 的 sha（虽然不至于 404，
+      #    但每批新头像都会把全体 URL 重新洗一遍，白让访客重下 4.6MB）。
+      #    仓库很小（.git 约 14MB），拉全量不心疼。
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -165,6 +173,7 @@ jobs:
           prefix: data
           purge-files: |
             operators.json metadata.json
+            avatar_shas.json
             banners_sc.json banners_en.json banners_tc.json
             banners_cla_sc.json banners_cla_en.json banners_cla_tc.json
             modules_sc.json modules_en.json modules_tc.json

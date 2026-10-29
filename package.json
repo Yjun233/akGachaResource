@@ -10,7 +10,7 @@
     "build:data:tc": "node scripts/fetch-data-tc.mjs",
     "build:gamedata": "node scripts/fetch-gamedata.mjs",
     "build:skins": "node scripts/fetch-skins.mjs",
-    "build:avatars": "node scripts/fetch-avatars.mjs",
+    "build:avatars": "node scripts/fetch-avatars.mjs && node scripts/gen-avatar-shas.mjs",
     "build": "npm run build:data && npm run build:data:en && npm run build:data:tc && npm run build:gamedata && npm run build:skins && npm run build:avatars"
   },
   "dependencies": {
