@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12",
-  "dataVersion": "Stream://torappu-data/v078/rel78.0\nChange:124981 on 2026/10/08\nVersionControl:78.0.0",
+  "generatedAt": "2026-10-29",
+  "dataVersion": "Stream://torappu-data/v078/rel78.0\nChange:126729 on 2026/10/22\nVersionControl:78.4.0",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "banners": {
     "20230406_classic_0001": {
@@ -3345,6 +3345,50 @@
         }
       ],
       "scName": "常驻中坚寻访76",
+      "enName": null
+    },
+    "20261029_classic_0077": {
+      "type": "classic",
+      "startDate": "2026-10-29",
+      "endDate": "2026-11-12",
+      "upOperators": [
+        {
+          "scCharName": "莫斯提马",
+          "charId": "char_213_mostma",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "阿",
+          "charId": "char_225_haak",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "scCharName": "月禾",
+          "charId": "char_343_tknogi",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "红",
+          "charId": "char_144_red",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "普罗旺斯",
+          "charId": "char_145_prove",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "scName": "常驻中坚寻访77",
       "enName": null
     },
     "20230518_clafes_0001": {

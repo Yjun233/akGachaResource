@@ -13102,5 +13102,35 @@
     ],
     "rerunKind": "复刻",
     "canRerun": false
+  },
+  "20261102_limcel_klxekexsht": {
+    "scName": "承诺",
+    "enName": "Sealed With Time",
+    "type": "limcel",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-16",
+    "upOperators": [
+      {
+        "scCharName": "可露希尔",
+        "charId": "char_4228_closur",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "凯尔希·思衡托",
+        "charId": "char_1052_kalts2",
+        "rarity": 6,
+        "isLimited": true,
+        "isShop": false
+      },
+      {
+        "scCharName": "裂响",
+        "charId": "char_4225_tanya",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }

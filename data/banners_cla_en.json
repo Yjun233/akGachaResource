@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15",
-  "dataVersion": "Stream:\nChange:\nVersionControl:52.0.0",
+  "generatedAt": "2026-10-29",
+  "dataVersion": "Stream:\nChange:\nVersionControl:52.2.0",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "banners": {
     "20231024_classic_0001": {
@@ -2773,6 +2773,50 @@
         }
       ],
       "scName": "常驻中坚寻访63",
+      "enName": null
+    },
+    "20261103_classic_0064": {
+      "type": "classic",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-17",
+      "upOperators": [
+        {
+          "scCharName": "森蚺",
+          "charId": "char_416_zumama",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "琴柳",
+          "charId": "char_479_sleach",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "scCharName": "絮雨",
+          "charId": "char_436_whispr",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "灰毫",
+          "charId": "char_431_ashlok",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "芙兰卡",
+          "charId": "char_106_franka",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        }
+      ],
+      "scName": "常驻中坚寻访64",
       "enName": null
     },
     "20231205_clafes_0001": {
