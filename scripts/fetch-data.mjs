@@ -484,11 +484,37 @@ const SEQ_PREFIX = {
  * **别再把它加回来** —— 否则跟站点常量会两处维护、容易走样。
  */
 
+/**
+ * 本站**明确不收录**的卡池类型关键词（用户 2026-10-30 定）。
+ *
+ * 背景：【**卫戍寻访**】（2026-11-08 开的「感谢庆典」定向寻访，10 个固定六星）是
+ * **本站 11 种类型之外**的新形态，用户明确「不收录」。它有两种可能被误收的路径：
+ *   ① PRTS 放进「卡池一览/限时寻访 → 非标准寻访」小节 —— 那一节的判据是
+ *      「名字必须含『限定寻访』」，本身就能挡住（除非 PRTS 用了怪写法）；
+ *   ② PRTS 放进**标准寻访**小节 —— 那里是按六星数量猜类型的，10 个六星会掉进
+ *      「未识别」分支，历史上那个分支是**兜底成 `joint` 序号 0**（见下面的改动）。
+ *
+ * ⚠️ 匹配对象是**整行 wikitext**（`rowText`），不是解析出来的名字 ——
+ *    这样即使 PRTS 把关键词藏在链接目标里（`[[卫戍寻访|某标题]]`）也挡得住。
+ * ⚠️ 只往这里加**确定不收录**的类型。加了以后跑一次 `build:data`，
+ *    日志会打印「按规则跳过 N 个卡池」以及具体是哪几个。
+ */
+const SKIP_BANNER_KEYWORDS = ['卫戍寻访'];
+
+/** 该行是否属于「本站不收录」的卡池类型 —— 命中则返回关键词，否则 null */
+export function bannerSkipReason(rowText) {
+  const text = String(rowText || '');
+  return SKIP_BANNER_KEYWORDS.find((k) => text.includes(k)) || null;
+}
+
 /** 由各卡池页面构建卡池列表
- *  @param opMeta (name) => { stars, scReleaseDate } —— 用于判断「首次 UP」（实装日期 == 卡池开始日期） */
-function buildBanners(pages, opMeta) {
+ *  @param opMeta (name) => { stars, scReleaseDate } —— 用于判断「首次 UP」（实装日期 == 卡池开始日期）
+ *  @returns {{ list, warnings, skipped }} `skipped` = 按规则主动跳过的卡池（不收录 / 类型未识别） */
+export function buildBanners(pages, opMeta) {
   const banners = [];
   const warnings = [];
+  /** 主动跳过的卡池：`{ startDate, name, reason }` —— 打日志用，不进 warnings（不是错误） */
+  const skipped = [];
 
   const metaOf = (n) => (opMeta ? opMeta(n) : { stars: 0, scReleaseDate: null });
 
@@ -559,6 +585,14 @@ function buildBanners(pages, opMeta) {
       const isSelection = rowText.includes('可甄选6★干员');
       const datePart = startDate.replace(/-/g, '');
 
+      /* ① 本站不收录的类型（卫戍寻访 等）—— 不看它在哪个小节，直接跳过。
+         这里挡在 isNonStandard 之前，所以「PRTS 换个位置/换个写法」也漏不进来。 */
+      const skipHit = bannerSkipReason(rowText) || bannerSkipReason(name);
+      if (skipHit) {
+        skipped.push({ startDate, name, reason: `本站不收录（${skipHit}）` });
+        continue;
+      }
+
       if (isNonStandard) {
         // 限定寻访以外（联动 / 跨年欢庆）一律排除
         if (!name.includes('限定寻访')) continue;
@@ -610,9 +644,17 @@ function buildBanners(pages, opMeta) {
         } else if (sixCount === 0) {
           type = 'five';
         } else {
-          warnings.push(`限时寻访标准池类型未识别（${sixCount} 个六星）: ${name} ${startDate}`);
-          type = 'joint';
-          serial = 0;
+          /* 未识别的多六星池 → **不收录**（2026-10-30 改）。
+             ⚠️ 这里以前是「兜底成 `joint` 序号 0」（`${日期}_joint_0000` / 叫「联合行动0」）。
+                那是个**静默错收**的入口：任何新形态的多六星池（例如 2026-11-08 的【卫戍寻访】，
+                10 个固定六星）都会变成一条假「联合行动0」混进统计，而站点侧
+                「type 必须在 11 种之内」那类断言**查不出来**（`joint` 是合法 type）。
+                实际数据里 23 条 `joint` 全是「联合行动NN」、序号 0001~0023，**从没出现过 0000**，
+                说明这个兜底从来没被真正需要过 —— 所以改成「宁可漏，不要错」。
+                ⚠️ 将来 PRTS 真出了要收的新系列，往上面 `seqType` 那个三元链里加一行即可，
+                   加完看日志里的「按规则跳过」条数是否归零。 */
+          skipped.push({ startDate, name, reason: `未识别的卡池类型（${sixCount} 个六星）` });
+          continue;
         }
 
         const isSeq = type === 'joint' || type === 'stdfes' || type === 'mainfes';
@@ -641,7 +683,7 @@ function buildBanners(pages, opMeta) {
   const list = [...seen.values()].sort((a, b) =>
     a.startDate === b.startDate ? a.id.localeCompare(b.id) : a.startDate.localeCompare(b.startDate),
   );
-  return { list, warnings };
+  return { list, warnings, skipped };
 }
 
 /** 按 ==标题== 切分页面内容 */
@@ -914,7 +956,10 @@ async function main() {
   };
 
   // 组装卡池 + 解析 UP 干员
-  const { list, warnings } = buildBanners(pages, opMeta);
+  const { list, warnings, skipped } = buildBanners(pages, opMeta);
+  for (const s of skipped) {
+    console.log(`  · 按规则跳过：${s.startDate} ${s.name} —— ${s.reason}`);
+  }
 
   const banners = {};
   let dropped = 0;
@@ -1247,7 +1292,13 @@ function validate(operators, banners, meta) {
   console.log('· 数据校验通过');
 }
 
-main().catch((e) => {
-  console.error('\n✗ 构建失败: ' + e.message);
-  process.exit(1);
-});
+/* 只有「直接 node 跑本文件」时才执行主流程。
+   被 `import` 进来时（本地实验 / 以后的解析单测）只拿导出的纯函数，**不联网、不写盘**。 */
+const isMain = !!process.argv[1]
+  && path.resolve(process.argv[1]).toLowerCase() === fileURLToPath(import.meta.url).toLowerCase();
+if (isMain) {
+  main().catch((e) => {
+    console.error('\n✗ 构建失败: ' + e.message);
+    process.exit(1);
+  });
+}

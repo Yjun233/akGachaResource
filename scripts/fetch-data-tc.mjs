@@ -247,6 +247,12 @@ async function main() {
   const usedCn = new Map();
   const matchedCn = [];
   const skippedCollab = [];
+  /* 轮换表 J 列（tag）写这些字样的整行跳过 —— 本站不收录的类型。
+     「联动」是国服口径同样不收；「卫戍」是 2026-11-08 起的新形态【卫戍寻访】，
+     用户 2026-10-30 定不收录（同一份名单也写在 fetch-data.mjs 的 `SKIP_BANNER_KEYWORDS`）。
+     ⚠️ 填表时 J 列写了「卫戍」就会被挡；不写的话 10 个六星会掉进下面的 else 分支
+        → 找不到对应单六池 → 跳过（有 warning，不会错收）。六星恰为 3/4/6 个才会被猜成系列池。 */
+  const SKIP_LIMIT_TAGS = ['联动', '卫戍'];
 
   const opInfo = (name, where) => {
     const op = cnByName.get(name);
@@ -303,9 +309,10 @@ async function main() {
   const limitsSorted = limits.slice().sort((a, b) => a.start.localeCompare(b.start) || a.row - b.row);
   for (const L of limitsSorted) {
     const where = `轮换 r${L.row}`;
-    /* J 列写「联动」的整行跳过（国服口径同样不收联动） */
-    if (L.tag.includes('联动')) {
-      skippedCollab.push(`${where} ${L.start} ${[...L.six, ...L.five].join('+')}`);
+    /* J 列写了「联动」/「卫戍」等本站不收录的字样的整行跳过（见 SKIP_LIMIT_TAGS） */
+    const skipTag = SKIP_LIMIT_TAGS.find((t) => L.tag.includes(t));
+    if (skipTag) {
+      skippedCollab.push(`${where} ${L.start} [${skipTag}] ${[...L.six, ...L.five].join('+')}`);
       continue;
     }
     const fullKey = setKeyOf([...L.six, ...L.five]);
@@ -553,7 +560,7 @@ async function main() {
   const noRel = Object.values(cnOperators).filter((o) => !o.tcReleaseDate).map((o) => o.scName);
   if (noRel.length) console.log(`  繁中服尚未实装的干员（无 tcReleaseDate）${noRel.length} 位：${noRel.join('、')}`);
   if (skippedCollab.length) {
-    console.log(`  跳过联动卡池 ${skippedCollab.length} 个：${skippedCollab.join('；')}`);
+    console.log(`  跳过不收录的卡池 ${skippedCollab.length} 个（联动 / 卫戍 等）：${skippedCollab.join('；')}`);
   }
   console.log(`  反查国服得到名称的池子 ${matchedCn.length} 个`);
   for (const m of matchedCn) console.log(`    ${m}`);
