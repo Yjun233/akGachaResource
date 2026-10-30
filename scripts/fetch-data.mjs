@@ -488,16 +488,17 @@ const SEQ_PREFIX = {
  * 本站**明确不收录**的卡池类型关键词（用户 2026-10-30 定）。
  *
  * 背景：【**卫戍寻访**】（2026-11-08 开的「感谢庆典」定向寻访，10 个固定六星）是
- * **本站 11 种类型之外**的新形态，用户明确「不收录」。它有两种可能被误收的路径：
+ * **本站 11 种类型之外**的新形态，用户明确「不收录」。它可能被误收的两条路径：
  *   ① PRTS 放进「卡池一览/限时寻访 → 非标准寻访」小节 —— 那一节的判据是
  *      「名字必须含『限定寻访』」，本身就能挡住（除非 PRTS 用了怪写法）；
- *   ② PRTS 放进**标准寻访**小节 —— 那里是按六星数量猜类型的，10 个六星会掉进
- *      「未识别」分支，历史上那个分支是**兜底成 `joint` 序号 0**（见下面的改动）。
+ *   ② PRTS 放进**标准寻访**小节 —— 那里没这个判据，只能靠下面的关键词挡。
  *
+ * ⚠️ **只有「明确知道不要的」才进这个名单** —— 用户 2026-10-30 特意强调：
+ *    **不认识的**不该挡（编辑手误给现有池增删了干员、或将来出真·新系列，都要照收 + 打 warning，
+ *    这样能在站点上一眼看见、回去纠正）。所以名单是**黑名单**，「未识别」分支是**照收**。
  * ⚠️ 匹配对象是**整行 wikitext**（`rowText`），不是解析出来的名字 ——
  *    这样即使 PRTS 把关键词藏在链接目标里（`[[卫戍寻访|某标题]]`）也挡得住。
- * ⚠️ 只往这里加**确定不收录**的类型。加了以后跑一次 `build:data`，
- *    日志会打印「按规则跳过 N 个卡池」以及具体是哪几个。
+ * ⚠️ 加了以后跑一次 `build:data`，日志会打印「· 按规则跳过：<日期> <名字> —— 本站不收录（<关键词>）」。
  */
 const SKIP_BANNER_KEYWORDS = ['卫戍寻访'];
 
@@ -507,13 +508,32 @@ export function bannerSkipReason(rowText) {
   return SKIP_BANNER_KEYWORDS.find((k) => text.includes(k)) || null;
 }
 
+/**
+ * 这几类 warning **必须人工核对**，在 GitHub Actions 上会被额外挂成注解（run 页面顶部黄条）——
+ * 否则它们只躺在几千行日志中间，等于没提醒。2026-10-30 加。
+ * ⚠️ 「类型未识别」之所以重要：编辑手误（给某个池多写/少写一个干员）就会命中它，
+ *    而那种池现在是**照收**的（用户要求：不许静默跳过），所以必须让它显眼。
+ */
+const MUST_SEE_WARNINGS = ['类型未识别', 'ID 重复', '缺少名称'];
+
+/** 该条 warning 是否要挂成 GitHub Actions 注解 */
+export function isMustSeeWarning(w) {
+  return MUST_SEE_WARNINGS.some((k) => String(w).includes(k));
+}
+
+/** GitHub Actions 的注解行（换行会被截断，先压成一行） */
+export function ghaWarningLine(w) {
+  return `::warning::${String(w).replace(/\r?\n/g, ' ')}`;
+}
+
 /** 由各卡池页面构建卡池列表
  *  @param opMeta (name) => { stars, scReleaseDate } —— 用于判断「首次 UP」（实装日期 == 卡池开始日期）
- *  @returns {{ list, warnings, skipped }} `skipped` = 按规则主动跳过的卡池（不收录 / 类型未识别） */
+ *  @returns {{ list, warnings, skipped }} `skipped` = **按名单主动不收录**的卡池（只有这一种；
+ *           未识别的类型是**照收**的，走 warnings） */
 export function buildBanners(pages, opMeta) {
   const banners = [];
   const warnings = [];
-  /** 主动跳过的卡池：`{ startDate, name, reason }` —— 打日志用，不进 warnings（不是错误） */
+  /** 按名单主动跳过的卡池：`{ startDate, name, reason }` —— 打日志用，不进 warnings（不是错误） */
   const skipped = [];
 
   const metaOf = (n) => (opMeta ? opMeta(n) : { stars: 0, scReleaseDate: null });
@@ -630,6 +650,8 @@ export function buildBanners(pages, opMeta) {
 
         let type;
         let serial = null;
+        /** 走到「未识别的多六星池」分支时置 true —— 决定 id / 展示名用**拼音**而不是系列序号 */
+        let unrecognized = false;
         if (seqType) {
           type = seqType;
           const fromCell = serialFromCell(linkCell);
@@ -644,20 +666,24 @@ export function buildBanners(pages, opMeta) {
         } else if (sixCount === 0) {
           type = 'five';
         } else {
-          /* 未识别的多六星池 → **不收录**（2026-10-30 改）。
-             ⚠️ 这里以前是「兜底成 `joint` 序号 0」（`${日期}_joint_0000` / 叫「联合行动0」）。
-                那是个**静默错收**的入口：任何新形态的多六星池（例如 2026-11-08 的【卫戍寻访】，
-                10 个固定六星）都会变成一条假「联合行动0」混进统计，而站点侧
-                「type 必须在 11 种之内」那类断言**查不出来**（`joint` 是合法 type）。
-                实际数据里 23 条 `joint` 全是「联合行动NN」、序号 0001~0023，**从没出现过 0000**，
-                说明这个兜底从来没被真正需要过 —— 所以改成「宁可漏，不要错」。
-                ⚠️ 将来 PRTS 真出了要收的新系列，往上面 `seqType` 那个三元链里加一行即可，
-                   加完看日志里的「按规则跳过」条数是否归零。 */
-          skipped.push({ startDate, name, reason: `未识别的卡池类型（${sixCount} 个六星）` });
-          continue;
+          /* 未识别的多六星池 → **照收**（`joint`）+ 打 warning（2026-10-30 定：**不静默跳过**）。
+             ⚠️ 这个分支最常被「编辑手误」命中，例如给某个单六池多写了一个六星（1 → 2 个六星）。
+                用户明确要求：**这种情况不该挡** —— 收进来能在站点上一眼看见那条对不上任何
+                「联合行动」的卡池，才方便回去纠正；静默跳过只会让数据「看起来干净」而问题潜伏。
+                所以判据是「**已知不要的**才挡（见上面的 `SKIP_BANNER_KEYWORDS`），
+                **不认识的**一律收下并报警」。
+             ⚠️ 但不再叫「联合行动0」、也不再占 `joint` 的序号 —— `serial` 保持 null，
+                下面的 `isSeq` 为 false，于是 id 用**名字拼音**、展示名用**原始卡池名**。
+                这样既不会让「联合行动1..23」的序号出现空洞/0000，
+                也保留了真实池名，便于对照 PRTS 原文。
+             ⚠️ 真·新系列（如 2026-11-08 的【卫戍寻访】）如果将来要收，往上面 `seqType`
+                那个三元链里加一行关键词即可；不想收就往 `SKIP_BANNER_KEYWORDS` 加词。 */
+          warnings.push(`限时寻访标准池类型未识别（${sixCount} 个六星，暂按 joint 收、请人工核对）: ${name} ${startDate}`);
+          type = 'joint';
+          unrecognized = true;
         }
 
-        const isSeq = type === 'joint' || type === 'stdfes' || type === 'mainfes';
+        const isSeq = !unrecognized && (type === 'joint' || type === 'stdfes' || type === 'mainfes');
         const suffix = isSeq ? pad4(serial) : pinyinInitials(name);
         banners.push({
           id: `${datePart}_${type}_${suffix}`,
@@ -1234,6 +1260,14 @@ async function main() {
     console.warn(`\n⚠ 共 ${warnings.length} 条警告：`);
     for (const w of warnings.slice(0, 40)) console.warn('  - ' + w);
     if (warnings.length > 40) console.warn(`  ... 其余 ${warnings.length - 40} 条已省略`);
+    /* 在 GitHub Actions 上，把「必须人工核对」的几类再挂成**注解**（run 页面顶部的黄条）。
+       ⚠️ 注解不会让 job 失败（工作流那几步本来就是 continue-on-error）；
+          这里也刻意不 fail —— 手误要的是「被看见」，不是「挡住整轮更新」。 */
+    if (process.env.GITHUB_ACTIONS === 'true') {
+      for (const w of warnings.filter(isMustSeeWarning).slice(0, 10)) {
+        console.log(ghaWarningLine(w));
+      }
+    }
   }
 
   if (!wrote.length) {
