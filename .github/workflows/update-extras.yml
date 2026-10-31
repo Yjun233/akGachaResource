@@ -47,21 +47,60 @@ jobs:
 
       # 只读公开的 PRTS Wiki，**不需要任何令牌**。
       # 数据没更新时脚本不会写盘、也不会动 generatedAt（见 fetch-skins.mjs）。
+      #
+      # ⚠️⚠️ **必须 `continue-on-error`**（2026-10-31 补上，之前漏了）：
+      #    Actions 里每一步默认等价于 `if: success()` —— 前面一失败，**后面的步骤全部跳过**。
+      #    2026-10-31 真的踩到：PRTS 一次 `fetch failed` 让这步挂掉，
+      #    于是「官方解包 extras」那步**根本没跑**（用户报的就是这个），
+      #    连提交都没发生 —— 明明两块数据来源不同、谁挂都不该牵连谁。
+      #    现在：三步互不牵连，各自 continue-on-error；成功的部分照常提交，
+      #    最后由末尾「汇总」步骤把 job 标红（想红但别丢数据）。
       - name: 抓取国服皮肤（PRTS Wiki）
+        id: skins
+        continue-on-error: true
         run: npm run build:skins
 
       # 官方解包：模组 / 密录（三服）+ en·tw 皮肤。自带 `data_version.txt` 短路，
       # 版本没变时只下几个几十字节的版本文件就返回。
       # ⚠️ `--only=extras` —— 中坚由主工作流负责，这里不重复跑。
+      # ⚠️ `if: !cancelled()` 不能省：光有 `continue-on-error` 只表示「本步失败不算失败」，
+      #    但**是否执行**仍取决于默认的 `success()` 条件。前面 skins 挂了就必须靠它照跑。
       - name: 抓取官方解包 extras（模组 / 密录 / en·tw 皮肤）
+        id: extras
+        if: ${{ !cancelled() }}
         continue-on-error: true
         run: npm run build:gamedata -- --only=extras
 
       # 本工作流会动到这几个文件（**不含**卡池与 metadata），所以只刷它们。
+      # ⚠️ 同样要 `if: !cancelled()` —— 否则前面任何一步失败，抓到的那块数据就白抓了。
+      #    无改动时 action 内部只打 notice、不会失败（见 commit-and-purge 的 diff 步骤）。
       - uses: ./.github/actions/commit-and-purge
+        if: ${{ !cancelled() }}
         with:
           prefix: data(extras)
           purge-files: |
             skins_sc.json skins_en.json skins_tc.json
             memoirs_sc.json memoirs_en.json memoirs_tc.json
             modules_sc.json modules_en.json modules_tc.json
+
+      # 汇总：任何一步真失败就把 job 标红。
+      # ⚠️ 用 `steps.*.outcome` 而不是 `conclusion` —— 后者被 continue-on-error 抹成 success。
+      # ⚠️ 只把 `failure` 当失败：`skipped`（例如 tokens 没配）不算。
+      - name: 汇总各步骤结果
+        if: ${{ !cancelled() }}
+        env:
+          OUT_SKINS: ${{ steps.skins.outcome }}
+          OUT_EXTRAS: ${{ steps.extras.outcome }}
+        run: |
+          bad=0
+          check() {
+            if [ "$2" = "failure" ]; then
+              echo "::error::$1 失败（数据已尽量提交，请到上面对应步骤看原因）"
+              bad=1
+            else
+              echo "· $1：$2"
+            fi
+          }
+          check "抓取国服皮肤（PRTS）" "$OUT_SKINS"
+          check "抓取官方解包 extras" "$OUT_EXTRAS"
+          exit "$bad"

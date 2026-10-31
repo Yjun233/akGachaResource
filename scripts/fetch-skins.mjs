@@ -69,22 +69,44 @@ const warn = (msg) => warnings.push(msg);
 
 /* ---------------------------------------------------------------- HTTP */
 
-/** 带重试的 API 调用（PRTS 偶尔 5xx / 网络抖动；不带重试会静默少数据） */
-async function fetchJson(params, tries = 4) {
+/**
+ * 带重试的 API 调用。PRTS 会偶发 5xx / 连接被重置 / TLS 握手失败 —— 不重试就会静默少数据。
+ *
+ * ⚠️ 2026-10-31 改：与 `fetch-data.mjs` 的 `requestJson` 对齐（原来 4 次 × 0.6/1.2/1.8s，
+ *    总窗口只有 3.6 秒，一次持续几秒的网络抖动就能把整步打挂 —— 当天真的发生了：
+ *    `{"action":"query","list":"allpages","apprefix":"时装回廊/"}` 报 `fetch failed`，
+ *    连带整个 extras 工作流的解包步骤被跳过）。
+ *    · 重试 5 次、退避 1.2/2.4/3.6/4.8s（总窗口约 12 秒）；
+ *    · 每次失败都打一行，并把 `e.cause` 展开 —— undici 的 "fetch failed" 本身没有信息量，
+ *      真正的原因（ENOTFOUND / ECONNRESET / 超时 / TLS …）只在 cause 里，这是 CI 排查的唯一线索；
+ *    · 加 60 秒超时：不然「对端不响应」会让 fetch 一直挂着，重试根本没机会发生。
+ */
+async function fetchJson(params, { tries = 5, timeoutMs = 60_000 } = {}) {
   const url = `${API}?${new URLSearchParams({ format: 'json', ...params })}`;
+  let lastErr;
   for (let i = 0; i < tries; i += 1) {
     try {
-      const res = await fetch(url, { headers: HEADERS });
+      const res = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(timeoutMs) });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
       if (json.error) throw new Error(`API error: ${json.error.info || JSON.stringify(json.error)}`);
       return json;
     } catch (e) {
-      if (i === tries - 1) throw new Error(`请求失败 (${JSON.stringify(params).slice(0, 140)}): ${e.message}`);
-      await sleep(600 * (i + 1));
+      lastErr = e;
+      const c = e && e.cause;
+      /* 超时抛的是 TimeoutError（DOMException，没有 cause）—— 单独标出来，否则日志里只剩一句
+         「The operation was aborted due to timeout」，看的人不知道是我们设的 60 秒。 */
+      const detail = c
+        ? `${c.code || c.name || ''} ${c.message || ''}`.trim()
+        : (e && e.name === 'TimeoutError' ? `超时（>${Math.round(timeoutMs / 1000)}s）` : '');
+      console.error(`  · 第 ${i + 1}/${tries} 次请求失败: ${e.message}${detail ? ' ← ' + detail : ''}`);
+      if (i < tries - 1) await sleep(1200 * (i + 1));
     }
   }
-  return {};
+  const c = lastErr && lastErr.cause;
+  const tail = c ? `${c.code || c.name || ''} ${c.message || ''}`.trim() : '';
+  throw new Error(`请求失败 (${JSON.stringify(params).slice(0, 140)}): `
+    + `${lastErr && lastErr.message}${tail ? ' ← ' + tail : ''}`);
 }
 
 /** 取页面原文 */
