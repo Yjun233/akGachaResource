@@ -16,6 +16,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "为了明日"
   },
   "char_113_cqbw": {
@@ -37,6 +38,7 @@
     ],
     "group": null,
     "subGroup": "babel",
+    "profession": "狙击",
     "actLine": "为了明日"
   },
   "char_148_nearl": {
@@ -58,6 +60,7 @@
     ],
     "group": null,
     "subGroup": "followers",
+    "profession": "重装",
     "actLine": null
   },
   "char_4224_turdus": {
@@ -77,6 +80,7 @@
     "alter": [],
     "group": "ursus",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "燎原"
   },
   "char_4145_ulpia": {
@@ -96,6 +100,7 @@
     "alter": [],
     "group": "egir",
     "subGroup": "abyssal",
+    "profession": "近卫",
     "actLine": "自海渊的一瞥"
   },
   "char_455_nothin": {
@@ -115,6 +120,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "岁岁今朝"
   },
   "char_1015_aglna2": {
@@ -136,6 +142,7 @@
     ],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "夏日律动"
   },
   "char_4082_qiubai": {
@@ -155,6 +162,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "岁岁今朝"
   },
   "char_2023_ling": {
@@ -174,6 +182,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
+    "profession": "辅助",
     "actLine": "岁岁今朝"
   },
   "char_4087_ines": {
@@ -193,6 +202,7 @@
     "alter": [],
     "group": null,
     "subGroup": "babel",
+    "profession": "先锋",
     "actLine": "为了明日"
   },
   "char_134_ifrit": {
@@ -212,6 +222,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
+    "profession": "术师",
     "actLine": null
   },
   "char_4032_provs": {
@@ -231,6 +242,7 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "霓虹之下"
   },
   "char_2026_yu": {
@@ -250,6 +262,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
+    "profession": "重装",
     "actLine": "岁岁今朝"
   },
   "char_4058_pepe": {
@@ -269,6 +282,7 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "夏日律动"
   },
   "char_4234_pedro": {
@@ -288,6 +302,7 @@
     "alter": [],
     "group": "bolivar",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "泰拉奇谈"
   },
   "char_1013_chen2": {
@@ -310,6 +325,7 @@
     ],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "夏日律动"
   },
   "char_250_phatom": {
@@ -331,6 +347,7 @@
     ],
     "group": "victoria",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "方舟"
   },
   "char_4231_clemnt": {
@@ -350,6 +367,7 @@
     "alter": [],
     "group": "egir",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "自海渊的一瞥"
   },
   "char_115_headbr": {
@@ -371,6 +389,7 @@
     ],
     "group": "ursus",
     "subGroup": "student",
+    "profession": "先锋",
     "actLine": null
   },
   "char_1045_svash2": {
@@ -392,6 +411,7 @@
     ],
     "group": "kjerag",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": "山雪与银铁"
   },
   "char_003_kalts": {
@@ -413,6 +433,7 @@
     ],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "自海渊的一瞥"
   },
   "char_1052_kalts2": {
@@ -434,6 +455,7 @@
     ],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "为了明日"
   },
   "char_174_slbell": {
@@ -455,6 +477,7 @@
     ],
     "group": "kjerag",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": null
   },
   "char_494_vendla": {
@@ -474,6 +497,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "为了明日"
   },
   "char_2013_cerber": {
@@ -493,6 +517,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "泰拉奇谈"
   },
   "char_171_bldsk": {
@@ -512,6 +537,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": null
   },
   "char_214_kafka": {
@@ -531,6 +557,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "摘取未来之人"
   },
   "char_426_billro": {
@@ -550,6 +577,7 @@
     "alter": [],
     "group": "leithanien",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "泰拉奇谈"
   },
   "char_1036_fang2": {
@@ -569,6 +597,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": "为了明日"
   },
   "char_4228_closur": {
@@ -588,6 +617,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": "为了明日"
   },
   "char_201_moeshd": {
@@ -607,6 +637,7 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "penguin",
+    "profession": "重装",
     "actLine": null
   },
   "char_350_surtr": {
@@ -626,6 +657,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "泰拉奇谈"
   },
   "char_4039_horn": {
@@ -645,6 +677,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "为了明日"
   },
   "char_1043_leizi2": {
@@ -666,6 +699,7 @@
     ],
     "group": "yan",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "岁岁今朝"
   },
   "char_4203_kichi": {
@@ -685,6 +719,7 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "夏日律动"
   },
   "char_226_hmau": {
@@ -704,6 +739,7 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "lee",
+    "profession": "重装",
     "actLine": "岁岁今朝"
   },
   "char_297_hamoni": {
@@ -723,6 +759,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": "tara",
+    "profession": "术师",
     "actLine": "薪火重燃"
   },
   "char_4214_cairn": {
@@ -742,6 +779,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "摘取未来之人"
   },
   "char_4237_jcinta": {
@@ -761,6 +799,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": "夏日律动"
   },
   "char_365_aprl": {
@@ -780,6 +819,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "泰拉奇谈"
   },
   "char_1032_excu2": {
@@ -801,6 +841,7 @@
     ],
     "group": "laterano",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "那被祝福的"
   },
   "char_1046_sbell2": {
@@ -822,6 +863,7 @@
     ],
     "group": "kjerag",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "山雪与银铁"
   },
   "char_245_cello": {
@@ -841,6 +883,7 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "那被祝福的"
   },
   "char_202_demkni": {
@@ -860,6 +903,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
+    "profession": "重装",
     "actLine": null
   },
   "char_4031_liesel": {
@@ -879,6 +923,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "七丘的新芽"
   },
   "char_492_quercu": {
@@ -898,6 +943,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "泰拉奇谈"
   },
   "char_2015_dusk": {
@@ -917,6 +963,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
+    "profession": "术师",
     "actLine": "岁岁今朝"
   },
   "char_4048_doroth": {
@@ -936,6 +983,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
+    "profession": "特种",
     "actLine": "摘取未来之人"
   },
   "char_476_blkngt": {
@@ -955,6 +1003,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": "岁岁今朝"
   },
   "char_179_cgbird": {
@@ -974,6 +1023,7 @@
     "alter": [],
     "group": null,
     "subGroup": "followers",
+    "profession": "医疗",
     "actLine": null
   },
   "char_164_nightm": {
@@ -993,6 +1043,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "自海渊的一瞥"
   },
   "char_166_skfire": {
@@ -1012,6 +1063,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "术师",
     "actLine": null
   },
   "char_346_aosta": {
@@ -1031,6 +1083,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": "chiave",
+    "profession": "狙击",
     "actLine": "霓虹之下"
   },
   "char_4146_nymph": {
@@ -1050,6 +1103,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "泰拉奇谈"
   },
   "char_4138_narant": {
@@ -1069,6 +1123,7 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "夏日律动"
   },
   "char_4212_nasti": {
@@ -1088,6 +1143,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
+    "profession": "辅助",
     "actLine": "摘取未来之人"
   },
   "char_4014_lunacu": {
@@ -1107,6 +1163,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "七丘的新芽"
   },
   "char_158_milu": {
@@ -1126,6 +1183,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": null
   },
   "char_218_cuttle": {
@@ -1145,6 +1203,7 @@
     "alter": [],
     "group": "egir",
     "subGroup": "abyssal",
+    "profession": "狙击",
     "actLine": "夏日律动"
   },
   "char_291_aglina": {
@@ -1166,6 +1225,7 @@
     ],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": null
   },
   "char_341_sntlla": {
@@ -1185,6 +1245,7 @@
     "alter": [],
     "group": "sami",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "泰拉奇谈"
   },
   "char_4052_surfer": {
@@ -1204,6 +1265,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "blacksteel",
+    "profession": "先锋",
     "actLine": "岁岁今朝"
   },
   "char_4122_grabds": {
@@ -1223,6 +1285,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "岁岁今朝"
   },
   "char_264_f12yin": {
@@ -1242,6 +1305,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "摘取未来之人"
   },
   "char_173_slchan": {
@@ -1261,6 +1325,7 @@
     "alter": [],
     "group": "kjerag",
     "subGroup": null,
+    "profession": "特种",
     "actLine": null
   },
   "char_362_saga": {
@@ -1280,6 +1345,7 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": "岁岁今朝"
   },
   "char_4121_zuole": {
@@ -1299,6 +1365,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "岁岁今朝"
   },
   "char_254_vodfox": {
@@ -1318,6 +1385,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "方舟"
   },
   "char_356_broca": {
@@ -1337,6 +1405,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": "chiave",
+    "profession": "近卫",
     "actLine": null
   },
   "char_485_pallas": {
@@ -1356,6 +1425,7 @@
     "alter": [],
     "group": "minos",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": null
   },
   "char_2014_nian": {
@@ -1375,6 +1445,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
+    "profession": "重装",
     "actLine": "岁岁今朝"
   },
   "char_143_ghost": {
@@ -1396,6 +1467,7 @@
     ],
     "group": "egir",
     "subGroup": "abyssal",
+    "profession": "近卫",
     "actLine": null
   },
   "char_472_pasngr": {
@@ -1415,6 +1487,7 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "方舟"
   },
   "char_1039_thorn2": {
@@ -1436,6 +1509,7 @@
     ],
     "group": "iberia",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "自海渊的一瞥"
   },
   "char_1023_ghost2": {
@@ -1457,6 +1531,7 @@
     ],
     "group": "egir",
     "subGroup": "abyssal",
+    "profession": "特种",
     "actLine": "自海渊的一瞥"
   },
   "char_4196_reckpr": {
@@ -1476,6 +1551,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "岁岁今朝"
   },
   "char_393_toledo": {
@@ -1495,6 +1571,7 @@
     "alter": [],
     "group": "iberia",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "自海渊的一瞥"
   },
   "char_102_texas": {
@@ -1516,6 +1593,7 @@
     ],
     "group": "lungmen",
     "subGroup": "penguin",
+    "profession": "先锋",
     "actLine": null
   },
   "char_4026_vulpis": {
@@ -1535,6 +1613,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": "七丘的新芽"
   },
   "char_1051_headb2": {
@@ -1556,6 +1635,7 @@
     ],
     "group": "ursus",
     "subGroup": "student",
+    "profession": "近卫",
     "actLine": "燎原"
   },
   "char_306_leizi": {
@@ -1577,6 +1657,7 @@
     ],
     "group": "yan",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "泰拉奇谈"
   },
   "char_379_sesa": {
@@ -1596,6 +1677,7 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": null
   },
   "char_1027_greyy2": {
@@ -1615,6 +1697,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "摘取未来之人"
   },
   "char_4207_branch": {
@@ -1634,6 +1717,7 @@
     "alter": [],
     "group": "ursus",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "为了明日"
   },
   "char_140_whitew": {
@@ -1655,6 +1739,7 @@
     ],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": null
   },
   "char_433_windft": {
@@ -1674,6 +1759,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "自海渊的一瞥"
   },
   "char_112_siege": {
@@ -1695,6 +1781,7 @@
     ],
     "group": "victoria",
     "subGroup": "glasgow",
+    "profession": "先锋",
     "actLine": null
   },
   "char_2012_typhon": {
@@ -1714,6 +1801,7 @@
     "alter": [],
     "group": "sami",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "泰拉奇谈"
   },
   "char_1022_flwr2": {
@@ -1733,6 +1821,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "泰拉奇谈"
   },
   "char_4065_judge": {
@@ -1752,6 +1841,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "七丘的新芽"
   },
   "char_1044_hsgma2": {
@@ -1773,6 +1863,7 @@
     ],
     "group": "lungmen",
     "subGroup": "lgd",
+    "profession": "重装",
     "actLine": "夏日律动"
   },
   "char_294_ayer": {
@@ -1792,6 +1883,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "高塔迷影"
   },
   "char_263_skadi": {
@@ -1813,6 +1905,7 @@
     ],
     "group": "egir",
     "subGroup": "abyssal",
+    "profession": "近卫",
     "actLine": "自海渊的一瞥"
   },
   "char_1041_angel2": {
@@ -1834,6 +1927,7 @@
     ],
     "group": "lungmen",
     "subGroup": "penguin",
+    "profession": "特种",
     "actLine": "那被祝福的"
   },
   "char_197_poca": {
@@ -1853,6 +1947,7 @@
     "alter": [],
     "group": "ursus",
     "subGroup": "student",
+    "profession": "狙击",
     "actLine": "燎原"
   },
   "char_4071_peper": {
@@ -1872,6 +1967,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "为了明日"
   },
   "char_274_astesi": {
@@ -1891,6 +1987,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "夏日律动"
   },
   "char_136_hsguma": {
@@ -1912,6 +2009,7 @@
     ],
     "group": "lungmen",
     "subGroup": "lgd",
+    "profession": "重装",
     "actLine": null
   },
   "char_497_ctable": {
@@ -1931,6 +2029,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": "夏日律动"
   },
   "char_145_prove": {
@@ -1950,6 +2049,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": null
   },
   "char_343_tknogi": {
@@ -1969,6 +2069,7 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": null
   },
   "char_2027_wang": {
@@ -1988,6 +2089,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
+    "profession": "特种",
     "actLine": "岁岁今朝"
   },
   "char_4105_almond": {
@@ -2007,6 +2109,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "blacksteel",
+    "profession": "特种",
     "actLine": "泰拉奇谈"
   },
   "char_422_aurora": {
@@ -2026,6 +2129,7 @@
     "alter": [],
     "group": "kjerag",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "山雪与银铁"
   },
   "char_401_elysm": {
@@ -2045,6 +2149,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": "为了明日"
   },
   "char_4080_lin": {
@@ -2064,6 +2169,7 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "岁岁今朝"
   },
   "char_326_glacus": {
@@ -2083,6 +2189,7 @@
     "alter": [],
     "group": "iberia",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "夏日律动"
   },
   "char_473_mberry": {
@@ -2102,6 +2209,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "为了明日"
   },
   "char_242_otter": {
@@ -2121,6 +2229,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
+    "profession": "辅助",
     "actLine": null
   },
   "char_293_thorns": {
@@ -2142,6 +2251,7 @@
     ],
     "group": "iberia",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "夏日律动"
   },
   "char_416_zumama": {
@@ -2161,6 +2271,7 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "夏日律动"
   },
   "char_243_waaifu": {
@@ -2180,6 +2291,7 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "lee",
+    "profession": "特种",
     "actLine": "泰拉奇谈"
   },
   "char_450_necras": {
@@ -2199,6 +2311,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": "tara",
+    "profession": "术师",
     "actLine": "方舟"
   },
   "char_437_mizuki": {
@@ -2218,6 +2331,7 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "夏日律动"
   },
   "char_487_bobb": {
@@ -2237,6 +2351,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "方舟"
   },
   "char_311_mudrok": {
@@ -2256,6 +2371,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "为了明日"
   },
   "char_464_cement": {
@@ -2275,6 +2391,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "为了明日"
   },
   "char_4040_rockr": {
@@ -2294,6 +2411,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "为了明日"
   },
   "char_1012_skadi2": {
@@ -2315,6 +2433,7 @@
     ],
     "group": "egir",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "自海渊的一瞥"
   },
   "char_4079_haini": {
@@ -2334,6 +2453,7 @@
     "alter": [],
     "group": "egir",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "自海渊的一瞥"
   },
   "char_1034_jesca2": {
@@ -2353,6 +2473,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "blacksteel",
+    "profession": "重装",
     "actLine": "泰拉奇谈"
   },
   "char_4109_baslin": {
@@ -2372,6 +2493,7 @@
     "alter": [],
     "group": "leithanien",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "那被祝福的"
   },
   "char_4147_mitm": {
@@ -2391,6 +2513,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": "泰拉奇谈"
   },
   "char_4081_warmy": {
@@ -2410,6 +2533,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "泰拉奇谈"
   },
   "char_400_weedy": {
@@ -2429,6 +2553,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "为了明日"
   },
   "char_377_gdglow": {
@@ -2448,6 +2573,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "泰拉奇谈"
   },
   "char_1024_hbisc2": {
@@ -2467,6 +2593,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "高塔迷影"
   },
   "char_493_firwhl": {
@@ -2486,6 +2613,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "岁岁今朝"
   },
   "char_367_swllow": {
@@ -2505,6 +2633,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "为了明日"
   },
   "char_431_ashlok": {
@@ -2524,6 +2653,7 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": "pinus",
+    "profession": "重装",
     "actLine": "霓虹之下"
   },
   "char_206_gnosis": {
@@ -2543,6 +2673,7 @@
     "alter": [],
     "group": "kjerag",
     "subGroup": "karlan",
+    "profession": "辅助",
     "actLine": "山雪与银铁"
   },
   "char_194_leto": {
@@ -2562,6 +2693,7 @@
     "alter": [],
     "group": "ursus",
     "subGroup": "student",
+    "profession": "近卫",
     "actLine": "山雪与银铁"
   },
   "char_1040_blaze2": {
@@ -2583,6 +2715,7 @@
     ],
     "group": "rhodes",
     "subGroup": "elite",
+    "profession": "术师",
     "actLine": "岁岁今朝"
   },
   "char_420_flamtl": {
@@ -2602,6 +2735,7 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": "pinus",
+    "profession": "先锋",
     "actLine": "霓虹之下"
   },
   "char_1020_reed2": {
@@ -2623,6 +2757,7 @@
     ],
     "group": "victoria",
     "subGroup": "tara",
+    "profession": "医疗",
     "actLine": "薪火重燃"
   },
   "char_017_huang": {
@@ -2644,6 +2779,7 @@
     ],
     "group": "rhodes",
     "subGroup": "elite",
+    "profession": "近卫",
     "actLine": "为了明日"
   },
   "char_363_toddi": {
@@ -2663,6 +2799,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "方舟"
   },
   "char_415_flint": {
@@ -2682,6 +2819,7 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "夏日律动"
   },
   "char_338_iris": {
@@ -2701,6 +2839,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "泰拉奇谈"
   },
   "char_4164_tecno": {
@@ -2720,6 +2859,7 @@
     "alter": [],
     "group": "bolivar",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "自海渊的一瞥"
   },
   "char_215_mantic": {
@@ -2739,6 +2879,7 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
+    "profession": "特种",
     "actLine": null
   },
   "char_4064_mlynar": {
@@ -2758,6 +2899,7 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "霓虹之下"
   },
   "char_4006_melnte": {
@@ -2777,6 +2919,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "摘取未来之人"
   },
   "char_4235_thumpy": {
@@ -2796,6 +2939,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "夏日律动"
   },
   "char_1033_swire2": {
@@ -2817,6 +2961,7 @@
     ],
     "group": "lungmen",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "夏日律动"
   },
   "char_479_sleach": {
@@ -2836,6 +2981,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": "为了明日"
   },
   "char_423_blemsh": {
@@ -2855,6 +3001,7 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "霓虹之下"
   },
   "char_204_platnm": {
@@ -2874,6 +3021,7 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": null
   },
   "char_4072_ironmn": {
@@ -2893,6 +3041,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "为了明日"
   },
   "char_128_plosis": {
@@ -2912,6 +3061,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
+    "profession": "医疗",
     "actLine": null
   },
   "char_1026_gvial2": {
@@ -2931,6 +3081,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "夏日律动"
   },
   "char_195_glassb": {
@@ -2950,6 +3101,7 @@
     "alter": [],
     "group": "ursus",
     "subGroup": "student",
+    "profession": "辅助",
     "actLine": null
   },
   "char_4204_mantra": {
@@ -2969,6 +3121,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": "elite",
+    "profession": "术师",
     "actLine": "为了明日"
   },
   "char_378_asbest": {
@@ -2988,6 +3141,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "重装",
     "actLine": null
   },
   "char_101_sora": {
@@ -3007,6 +3161,7 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "penguin",
+    "profession": "辅助",
     "actLine": null
   },
   "char_332_archet": {
@@ -3026,6 +3181,7 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "泰拉奇谈"
   },
   "char_4015_spuria": {
@@ -3045,6 +3201,7 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "那被祝福的"
   },
   "char_436_whispr": {
@@ -3064,6 +3221,7 @@
     "alter": [],
     "group": "iberia",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "为了明日"
   },
   "char_144_red": {
@@ -3083,6 +3241,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": "sweep",
+    "profession": "特种",
     "actLine": null
   },
   "char_1016_agoat2": {
@@ -3104,6 +3263,7 @@
     ],
     "group": "leithanien",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "夏日律动"
   },
   "char_478_kirara": {
@@ -3123,6 +3283,7 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "泰拉奇谈"
   },
   "char_1035_wisdel": {
@@ -3144,6 +3305,7 @@
     ],
     "group": null,
     "subGroup": "babel",
+    "profession": "狙击",
     "actLine": "为了明日"
   },
   "char_1019_siege2": {
@@ -3165,6 +3327,7 @@
     ],
     "group": "victoria",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "方舟"
   },
   "char_1028_texas2": {
@@ -3186,6 +3349,7 @@
     ],
     "group": "lungmen",
     "subGroup": "penguin",
+    "profession": "特种",
     "actLine": "七丘的新芽"
   },
   "char_4056_titi": {
@@ -3205,6 +3369,7 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "泰拉奇谈"
   },
   "char_249_mlyss": {
@@ -3224,6 +3389,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
+    "profession": "先锋",
     "actLine": "摘取未来之人"
   },
   "char_421_crow": {
@@ -3243,6 +3409,7 @@
     "alter": [],
     "group": "bolivar",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "夏日律动"
   },
   "char_1014_nearl2": {
@@ -3264,6 +3431,7 @@
     ],
     "group": "kazimierz",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "霓虹之下"
   },
   "char_322_lmlee": {
@@ -3283,6 +3451,7 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "lee",
+    "profession": "特种",
     "actLine": "岁岁今朝"
   },
   "char_4187_graceb": {
@@ -3302,6 +3471,7 @@
     "alter": [],
     "group": "bolivar",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "那被祝福的"
   },
   "char_103_angel": {
@@ -3323,6 +3493,7 @@
     ],
     "group": "lungmen",
     "subGroup": "penguin",
+    "profession": "狙击",
     "actLine": null
   },
   "char_4009_irene": {
@@ -3342,6 +3513,7 @@
     "alter": [],
     "group": "iberia",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "自海渊的一瞥"
   },
   "char_180_amgoat": {
@@ -3363,6 +3535,7 @@
     ],
     "group": "leithanien",
     "subGroup": null,
+    "profession": "术师",
     "actLine": null
   },
   "char_106_franka": {
@@ -3382,6 +3555,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "blacksteel",
+    "profession": "近卫",
     "actLine": null
   },
   "char_261_sddrag": {
@@ -3403,6 +3577,7 @@
     ],
     "group": "victoria",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": null
   },
   "char_1038_whitw2": {
@@ -3424,6 +3599,7 @@
     ],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "七丘的新芽"
   },
   "char_213_mostma": {
@@ -3443,6 +3619,7 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "泰拉奇谈"
   },
   "char_4117_ray": {
@@ -3462,6 +3639,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "泰拉奇谈"
   },
   "char_373_lionhd": {
@@ -3481,6 +3659,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "燎原"
   },
   "char_300_phenxi": {
@@ -3500,6 +3679,7 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "那被祝福的"
   },
   "char_4191_tippi": {
@@ -3519,6 +3699,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "泰拉奇谈"
   },
   "char_129_bluep": {
@@ -3538,6 +3719,7 @@
     "alter": [],
     "group": "iberia",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": null
   },
   "char_4193_lemuen": {
@@ -3557,6 +3739,7 @@
     "alter": [],
     "group": "laterano",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "那被祝福的"
   },
   "char_4098_vvana": {
@@ -3576,6 +3759,7 @@
     "alter": [],
     "group": "leithanien",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "那被祝福的"
   },
   "char_489_serum": {
@@ -3595,6 +3779,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "霓虹之下"
   },
   "char_344_beewax": {
@@ -3614,6 +3799,7 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
+    "profession": "术师",
     "actLine": null
   },
   "char_4140_lasher": {
@@ -3633,6 +3819,7 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "夏日律动"
   },
   "char_4155_talr": {
@@ -3652,6 +3839,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "七丘的新芽"
   },
   "char_4225_tanya": {
@@ -3671,6 +3859,7 @@
     "alter": [],
     "group": "ursus",
     "subGroup": null,
+    "profession": "重装",
     "actLine": "为了明日"
   },
   "char_308_swire": {
@@ -3692,6 +3881,7 @@
     ],
     "group": "lungmen",
     "subGroup": "lgd",
+    "profession": "近卫",
     "actLine": null
   },
   "char_4173_nowell": {
@@ -3711,6 +3901,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "方舟"
   },
   "char_4229_aphris": {
@@ -3730,6 +3921,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "泰拉奇谈"
   },
   "char_4037_demetr": {
@@ -3749,6 +3941,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "七丘的新芽"
   },
   "char_349_chiave": {
@@ -3768,6 +3961,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": "chiave",
+    "profession": "先锋",
     "actLine": null
   },
   "char_475_akafyu": {
@@ -3787,6 +3981,7 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "自海渊的一瞥"
   },
   "char_1050_chen3": {
@@ -3809,6 +4004,7 @@
     ],
     "group": "yan",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "岁岁今朝"
   },
   "char_4088_hodrer": {
@@ -3828,6 +4024,7 @@
     "alter": [],
     "group": null,
     "subGroup": "babel",
+    "profession": "近卫",
     "actLine": "为了明日"
   },
   "char_188_helage": {
@@ -3847,6 +4044,7 @@
     "alter": [],
     "group": "ursus",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "夏日律动"
   },
   "char_108_silent": {
@@ -3866,6 +4064,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
+    "profession": "医疗",
     "actLine": null
   },
   "char_430_fartth": {
@@ -3885,6 +4084,7 @@
     "alter": [],
     "group": "kazimierz",
     "subGroup": "pinus",
+    "profession": "狙击",
     "actLine": "霓虹之下"
   },
   "char_391_rosmon": {
@@ -3904,6 +4104,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": "elite",
+    "profession": "狙击",
     "actLine": "为了明日"
   },
   "char_279_excu": {
@@ -3925,6 +4126,7 @@
     ],
     "group": "laterano",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "泰拉奇谈"
   },
   "char_4133_logos": {
@@ -3944,6 +4146,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": "elite",
+    "profession": "术师",
     "actLine": "为了明日"
   },
   "char_4202_haruka": {
@@ -3963,6 +4166,7 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "夏日律动"
   },
   "char_1042_phatm2": {
@@ -3984,6 +4188,7 @@
     ],
     "group": "victoria",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "泰拉奇谈"
   },
   "char_2024_chyue": {
@@ -4003,6 +4208,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
+    "profession": "近卫",
     "actLine": "岁岁今朝"
   },
   "char_4171_wulfen": {
@@ -4022,6 +4228,7 @@
     "alter": [],
     "group": "sargon",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "方舟"
   },
   "char_358_lisa": {
@@ -4041,6 +4248,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "高塔迷影"
   },
   "char_4083_chimes": {
@@ -4060,6 +4268,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "岁岁今朝"
   },
   "char_172_svrash": {
@@ -4081,6 +4290,7 @@
     ],
     "group": "kjerag",
     "subGroup": "karlan",
+    "profession": "近卫",
     "actLine": null
   },
   "char_4116_blkkgt": {
@@ -4100,6 +4310,7 @@
     "alter": [],
     "group": "kjerag",
     "subGroup": "karlan",
+    "profession": "近卫",
     "actLine": "山雪与银铁"
   },
   "char_147_shining": {
@@ -4119,6 +4330,7 @@
     "alter": [],
     "group": null,
     "subGroup": "followers",
+    "profession": "医疗",
     "actLine": null
   },
   "char_225_haak": {
@@ -4138,6 +4350,7 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": "lee",
+    "profession": "特种",
     "actLine": "岁岁今朝"
   },
   "char_4178_alanna": {
@@ -4157,6 +4370,7 @@
     "alter": [],
     "group": "rim",
     "subGroup": null,
+    "profession": "辅助",
     "actLine": "为了明日"
   },
   "char_4132_ascln": {
@@ -4176,6 +4390,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": "sweep",
+    "profession": "特种",
     "actLine": "方舟"
   },
   "char_446_aroma": {
@@ -4195,6 +4410,7 @@
     "alter": [],
     "group": "siracusa",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "方舟"
   },
   "char_010_chen": {
@@ -4217,6 +4433,7 @@
     ],
     "group": "lungmen",
     "subGroup": "lgd",
+    "profession": "近卫",
     "actLine": null
   },
   "char_219_meteo": {
@@ -4236,6 +4453,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": null
   },
   "char_4010_etlchi": {
@@ -4255,6 +4473,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "近卫",
     "actLine": "方舟"
   },
   "char_4211_snhunt": {
@@ -4274,6 +4493,7 @@
     "alter": [],
     "group": "kjerag",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "山雪与银铁"
   },
   "char_107_liskam": {
@@ -4293,6 +4513,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "blacksteel",
+    "profession": "重装",
     "actLine": null
   },
   "char_4027_heyak": {
@@ -4312,6 +4533,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "摘取未来之人"
   },
   "char_488_buildr": {
@@ -4331,6 +4553,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "siesta",
+    "profession": "先锋",
     "actLine": "夏日律动"
   },
   "char_4016_kazema": {
@@ -4350,6 +4573,7 @@
     "alter": [],
     "group": "higashi",
     "subGroup": null,
+    "profession": "特种",
     "actLine": "那被祝福的"
   },
   "char_222_bpipe": {
@@ -4369,6 +4593,7 @@
     "alter": [],
     "group": "victoria",
     "subGroup": null,
+    "profession": "先锋",
     "actLine": null
   },
   "char_4222_taraxa": {
@@ -4388,6 +4613,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": null,
+    "profession": "医疗",
     "actLine": "岁岁今朝"
   },
   "char_241_panda": {
@@ -4407,6 +4633,7 @@
     "alter": [],
     "group": "lungmen",
     "subGroup": null,
+    "profession": "特种",
     "actLine": null
   },
   "char_4055_bgsnow": {
@@ -4426,6 +4653,7 @@
     "alter": [],
     "group": "rhodes",
     "subGroup": null,
+    "profession": "狙击",
     "actLine": "夏日律动"
   },
   "char_248_mgllan": {
@@ -4445,6 +4673,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "rhine",
+    "profession": "辅助",
     "actLine": "泰拉奇谈"
   },
   "char_2025_shu": {
@@ -4464,6 +4693,7 @@
     "alter": [],
     "group": "yan",
     "subGroup": "sui",
+    "profession": "重装",
     "actLine": "岁岁今朝"
   },
   "char_340_shwaz": {
@@ -4483,6 +4713,7 @@
     "alter": [],
     "group": "columbia",
     "subGroup": "siesta",
+    "profession": "狙击",
     "actLine": "夏日律动"
   },
   "char_4046_ebnhlz": {
@@ -4502,6 +4733,7 @@
     "alter": [],
     "group": "leithanien",
     "subGroup": null,
+    "profession": "术师",
     "actLine": "高塔迷影"
   }
 }
