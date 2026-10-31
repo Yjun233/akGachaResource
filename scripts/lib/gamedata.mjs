@@ -111,6 +111,31 @@ export async function loadNames(dir, { local = null } = {}) {
  * @returns {Promise<Map<string, {name:string|null, appellation:string|null,
  *   nationId:string|null, groupId:string|null, teamId:string|null}>>}
  */
+/**
+ * 解包 `character_table.json` 的 **`profession`** → 中文职业名（写进 `operators.json` 的 `profession`，
+ * 用户 2026-11-01 要求新增）。
+ *
+ * 解包原值是**大写英文代号**（`PIONEER` / `WARRIOR` / …），只有这 8 种。
+ * 存**中文**而不是原始代号：① 与 `obtainMethod` 这类"给人看的枚举"一致；
+ * ② 游戏哪天改译名，数据重跑就跟着变，站点侧不用再维护一张映射表。
+ * ⚠️ 解包里还有 `TOKEN`（召唤物）/ `TRAP`（陷阱）两个值，它们不是干员，走不到这里。
+ * ⚠️ **三服一致**（同一个 charId 的职业在任何服务器都一样）→ 只读 cn 一张表即可，
+ *    与 `nationId` / `groupId` 同理。
+ */
+export const PROFESSION_LABEL = {
+  PIONEER: '先锋',
+  WARRIOR: '近卫',
+  TANK: '重装',
+  SNIPER: '狙击',
+  CASTER: '术师',
+  MEDIC: '医疗',
+  SUPPORT: '辅助',
+  SPECIAL: '特种',
+};
+
+/** 原始代号 → 中文职业名。认不出的原始值**原样返回**（将来若新增第九职业，至少不丢信息）。 */
+export const professionLabel = (raw) => (raw ? (PROFESSION_LABEL[raw] || raw) : null);
+
 export async function loadCharInfo(dir, { local = null } = {}) {
   const tbl = await loadTable(dir, 'character_table.json', { local });
   const out = new Map();
@@ -122,6 +147,7 @@ export async function loadCharInfo(dir, { local = null } = {}) {
       nationId: v.nationId || null,
       groupId: v.groupId || null,
       teamId: v.teamId || null,
+      profession: v.profession || null,
     });
   }
   return out;

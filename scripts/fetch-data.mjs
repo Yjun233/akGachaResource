@@ -76,7 +76,7 @@ import { fileURLToPath } from 'node:url';
 import { pinyin } from 'pinyin-pro';
 import { metaStable, orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
-import { buildAlterMap, loadCharInfo, loadNames, loadSpCharGroups } from './lib/gamedata.mjs';
+import { buildAlterMap, loadCharInfo, loadNames, loadSpCharGroups, professionLabel } from './lib/gamedata.mjs';
 import { loadActivityTables, resolveOperatorActivities, canRerunOf, rerunKindOf } from './lib/op-activity.mjs';
 import { fetchWikiOperatorMap } from './lib/wiki-gg.mjs';
 import './lib/http.mjs';
@@ -806,6 +806,10 @@ async function main() {
          下面统一填；拿不到表时沿用旧值。 */
       group: prev.group ?? null,
       subGroup: prev.subGroup ?? null,
+      /* 职业（官方解包 `character_table.json` 的 `profession`，2026-11-01 加）——
+         存**中文**（`先锋` / `近卫` / …），取值三服一致 → 只读 cn。
+         认不出的原始代号原样保留（见 lib/gamedata.mjs 的 professionLabel）。 */
+      profession: prev.profession ?? null,
       /* 实装活动剧情线（国服口径，**纯解包推导**）—— 见 `lib/op-activity.mjs`。
          ⚠️ **只在带 `--with-activities` 时才算**，其余轮次从旧文件回填（下面统一处理）。 */
       actLine: prev.actLine ?? null,
@@ -857,7 +861,9 @@ async function main() {
   let cnApp = new Map();
   try {
     for (const [id, v] of await loadCharInfo('cn', { local: GAMEDATA_LOCAL })) {
-      affMap.set(id, { nationId: v.nationId, groupId: v.groupId, teamId: v.teamId });
+      affMap.set(id, {
+        nationId: v.nationId, groupId: v.groupId, teamId: v.teamId, profession: v.profession,
+      });
       if (v.appellation) cnApp.set(id, v.appellation);
     }
   } catch (err) {
@@ -866,22 +872,43 @@ async function main() {
   let affNation = 0;
   let affSub = 0;
   let affFromPrev = 0;
+  let profN = 0;
+  const profCount = {};
   for (const [charId, op] of Object.entries(operators)) {
     const a = affMap.get(charId);
     const pv = prevOperators[charId];
     if (a) {
       op.group = a.nationId;
       op.subGroup = a.groupId || a.teamId;
+      op.profession = professionLabel(a.profession);
     } else {
       op.group = pv?.group ?? null;
       op.subGroup = pv?.subGroup ?? null;
+      op.profession = pv?.profession ?? null;
       if (pv && ('group' in pv)) affFromPrev += 1;
     }
     if (op.group) affNation += 1;
     if (op.subGroup) affSub += 1;
+    if (op.profession) {
+      profN += 1;
+      profCount[op.profession] = (profCount[op.profession] || 0) + 1;
+    }
   }
   console.log(`· 阵营：${affNation} 位有 group（国家/地区）、${affSub} 位有 subGroup（组织/小队）`
     + (affMap.size ? '' : `（表没读到，${affFromPrev} 位沿用旧值）`));
+  const profDetail = Object.entries(profCount)
+    .sort((x, y) => y[1] - x[1])
+    .map(([k, n]) => `${k} ${n}`).join(' / ');
+  console.log(`· 职业：${profN} 位有 profession`
+    + (profDetail ? `（${profDetail}）` : '')
+    + (affMap.size ? '' : '（表没读到，沿用旧值）'));
+  /* ⚠️ 表**读到了**却有人没有 profession → charId 对不上 / 新干员还没进表。
+     这种情况不会让脚本失败，但数据里会出现 null，站点那边会当成「职业未知」——
+     打一条 warning 放到 CI 日志里，别让它静默。 */
+  if (affMap.size && profN < Object.keys(operators).length) {
+    const missing = Object.keys(operators).length - profN;
+    console.warn(`⚠ 职业：${missing} 位没有 profession（cn 表读到 ${affMap.size} 条，可能 charId 对不上或新干员未入库）`);
+  }
 
   /* ---- en / jp 本地化名（2026-10-12 加；同日补上 wiki.gg 中间层）----
      用户定：**解包（对应服）拿不到时先以 wiki.gg 为准，wiki 也没有才退到国服 `appellation`**。
@@ -1310,7 +1337,7 @@ function validate(operators, banners, meta) {
   }
   for (const [cid, op] of Object.entries(operators)) {
     for (const f of ['scName', 'enName', 'jpName', 'charId', 'rarity', 'scReleaseDate',
-      'enReleaseDate', 'tcReleaseDate', 'obtainMethod', 'isLimited', 'scClassicDate']) {
+      'enReleaseDate', 'tcReleaseDate', 'obtainMethod', 'isLimited', 'scClassicDate', 'profession']) {
       if (op[f] === undefined) problems.push(`干员 ${cid} 缺少字段 ${f}`);
     }
     if ('name' in op) problems.push(`干员 ${cid} 仍有已废弃的字段 name`);
