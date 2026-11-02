@@ -13141,15 +13141,15 @@
     "endDate": "2026-11-17",
     "upOperators": [
       {
-        "scCharName": "林",
-        "charId": "char_4080_lin",
+        "scCharName": "左乐",
+        "charId": "char_4121_zuole",
         "rarity": 6,
         "isLimited": false,
         "isShop": false
       },
       {
-        "scCharName": "左乐",
-        "charId": "char_4121_zuole",
+        "scCharName": "林",
+        "charId": "char_4080_lin",
         "rarity": 6,
         "isLimited": false,
         "isShop": true
