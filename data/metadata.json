@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-11-02",
   "enGeneratedAt": "2026-10-23",
-  "tcGeneratedAt": "2026-10-29",
+  "tcGeneratedAt": "2026-11-02",
   "cla": {
     "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
     "sc": {
@@ -39,9 +39,9 @@
       "id": "tc",
       "label": "繁中服",
       "available": true,
-      "bannerCount": 306,
+      "bannerCount": 307,
       "earliestBanner": "2020-06-29",
-      "latestBanner": "2026-11-02"
+      "latestBanner": "2026-11-03"
     }
   ],
   "source": "https://prts.wiki",
