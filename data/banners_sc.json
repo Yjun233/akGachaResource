@@ -14993,5 +14993,35 @@
         "isShop": true
       }
     ]
+  },
+  "20261101_limcel_jxth": {
+    "scName": "将雪投火",
+    "enName": null,
+    "type": "limcel",
+    "startDate": "2026-11-01",
+    "endDate": "2026-11-15",
+    "upOperators": [
+      {
+        "scCharName": "塔露拉",
+        "charId": "char_4247_oxi",
+        "rarity": 6,
+        "isLimited": true,
+        "isShop": false
+      },
+      {
+        "scCharName": "冻河",
+        "charId": "char_4244_tocka",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "奥尔佳",
+        "charId": "char_4245_alga",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }

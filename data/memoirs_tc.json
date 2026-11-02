@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12",
+  "generatedAt": "2026-11-02",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "memoirs": [
     {
@@ -2290,6 +2290,32 @@
         }
       ],
       "releaseDate": "2026-10-08"
+    },
+    {
+      "scCharName": "怒潮凛冬",
+      "charId": "char_1051_headb2",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "循環",
+          "date": "2026-11-02"
+        }
+      ],
+      "releaseDate": "2026-11-02"
+    },
+    {
+      "scCharName": "可露希尔",
+      "charId": "char_4228_closur",
+      "rarity": 6,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "分身有術",
+          "date": "2026-11-02"
+        }
+      ],
+      "releaseDate": "2026-11-02"
     }
   ]
 }

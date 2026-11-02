@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12",
+  "generatedAt": "2026-11-02",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "modules": [
     {
@@ -239,6 +239,13 @@
       "seq": 1,
       "name": "一往無前",
       "date": "2025-03-06"
+    },
+    {
+      "scCharName": "可露希尔",
+      "charId": "char_4228_closur",
+      "seq": 1,
+      "name": "給自己的小獎杯",
+      "date": "2026-11-02"
     },
     {
       "scCharName": "可颂",
@@ -689,6 +696,13 @@
       "date": "2023-06-20"
     },
     {
+      "scCharName": "归溟幽灵鲨",
+      "charId": "char_1023_ghost2",
+      "seq": 3,
+      "name": "歸溟幽靈鯊特限證章",
+      "date": "2026-11-02"
+    },
+    {
       "scCharName": "录武官",
       "charId": "char_4196_reckpr",
       "seq": 1,
@@ -785,6 +799,13 @@
       "seq": 2,
       "name": "冰原的影子",
       "date": "2026-01-26"
+    },
+    {
+      "scCharName": "提丰",
+      "charId": "char_2012_typhon",
+      "seq": 3,
+      "name": "提豐特限證章",
+      "date": "2026-11-02"
     },
     {
       "scCharName": "撷英调香师",
@@ -1515,6 +1536,13 @@
       "date": "2023-09-12"
     },
     {
+      "scCharName": "缄默德克萨斯",
+      "charId": "char_1028_texas2",
+      "seq": 2,
+      "name": "“新車和新生活”",
+      "date": "2026-11-02"
+    },
+    {
       "scCharName": "缇缇",
       "charId": "char_4056_titi",
       "seq": 1,
@@ -1746,6 +1774,13 @@
       "date": "2025-06-27"
     },
     {
+      "scCharName": "裂响",
+      "charId": "char_4225_tanya",
+      "seq": 1,
+      "name": "“漂洗”",
+      "date": "2026-11-02"
+    },
+    {
       "scCharName": "诗怀雅",
       "charId": "char_308_swire",
       "seq": 1,
@@ -1940,6 +1975,13 @@
       "seq": 1,
       "name": "“過往的註腳”",
       "date": "2024-10-31"
+    },
+    {
+      "scCharName": "锏",
+      "charId": "char_4116_blkkgt",
+      "seq": 2,
+      "name": "新合約",
+      "date": "2026-11-02"
     },
     {
       "scCharName": "闪灵",

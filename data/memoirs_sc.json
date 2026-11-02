@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12",
+  "generatedAt": "2026-11-02",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "memoirs": [
     {
@@ -1211,6 +1211,11 @@
           "batch": 1,
           "name": "荒地生灵",
           "date": "2023-02-14"
+        },
+        {
+          "batch": 2,
+          "name": "赏金猎人转行后",
+          "date": "2026-11-01"
         }
       ],
       "releaseDate": "2023-02-14"
@@ -2409,6 +2414,32 @@
         }
       ],
       "releaseDate": "2026-10-09"
+    },
+    {
+      "scCharName": "裁度",
+      "charId": "char_4155_talr",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "体面的本分",
+          "date": "2026-11-01"
+        }
+      ],
+      "releaseDate": "2026-11-01"
+    },
+    {
+      "scCharName": "嘉辛塔",
+      "charId": "char_4237_jcinta",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "破土而出",
+          "date": "2026-11-01"
+        }
+      ],
+      "releaseDate": "2026-11-01"
     }
   ]
 }

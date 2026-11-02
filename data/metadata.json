@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01",
+  "generatedAt": "2026-11-02",
   "enGeneratedAt": "2026-10-23",
   "tcGeneratedAt": "2026-10-29",
   "cla": {
@@ -13,8 +13,8 @@
       "count": 77
     },
     "tc": {
-      "generatedAt": "2026-10-26",
-      "count": 68
+      "generatedAt": "2026-11-02",
+      "count": 69
     }
   },
   "defaultServer": "sc",
@@ -23,9 +23,9 @@
       "id": "sc",
       "label": "国服",
       "available": true,
-      "bannerCount": 346,
+      "bannerCount": 347,
       "earliestBanner": "2019-04-30",
-      "latestBanner": "2026-10-22"
+      "latestBanner": "2026-11-01"
     },
     {
       "id": "en",
@@ -52,5 +52,5 @@
     "arknights.wiki.gg",
     "金山文档·繁中卡池统计表（AirScript 云端读取）"
   ],
-  "operatorCount": 232
+  "operatorCount": 235
 }

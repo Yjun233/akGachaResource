@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12",
+  "generatedAt": "2026-11-02",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "modules": [
     {
@@ -171,6 +171,13 @@
       "date": "2022-11-01"
     },
     {
+      "scCharName": "凛御银灰",
+      "charId": "char_1045_svash2",
+      "seq": 1,
+      "name": "邀约",
+      "date": "2026-11-01"
+    },
+    {
       "scCharName": "凯尔希",
       "charId": "char_003_kalts",
       "seq": 1,
@@ -295,6 +302,13 @@
       "seq": 2,
       "name": "旧日新装",
       "date": "2024-10-09"
+    },
+    {
+      "scCharName": "号角",
+      "charId": "char_4039_horn",
+      "seq": 3,
+      "name": "号角特限证章",
+      "date": "2026-11-01"
     },
     {
       "scCharName": "司霆惊蛰",
@@ -477,6 +491,13 @@
       "seq": 1,
       "name": "阻燃处理方案",
       "date": "2022-03-15"
+    },
+    {
+      "scCharName": "奥尔佳",
+      "charId": "char_4245_alga",
+      "seq": 1,
+      "name": "来自昨天",
+      "date": "2026-11-01"
     },
     {
       "scCharName": "奥斯塔",
@@ -1632,6 +1653,13 @@
       "seq": 2,
       "name": "落叶四季",
       "date": "2025-05-01"
+    },
+    {
+      "scCharName": "缪尔赛思",
+      "charId": "char_249_mlyss",
+      "seq": 3,
+      "name": "“缪尔赛思和朋友们”",
+      "date": "2026-11-01"
     },
     {
       "scCharName": "羽毛笔",
