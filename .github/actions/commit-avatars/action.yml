@@ -1,0 +1,47 @@
+name: 先单独提交新头像，再重建 sha 清单
+description: >
+  `scripts/gen-avatar-shas.mjs` 的 sha 取自 `git log -- avatars`（= 该文件**最后一次被改动**的
+  那次提交），所以「本轮刚下载、还没提交」的新头像在 git 历史里查不到 → 不会写进
+  `data/avatar_shas.json` → 站点退回全局 `AVATARS_SHA`（一个不含新图的旧提交）→ **线上 404**，
+  要等下一轮（一周）才补上。
+
+  这个 action 把**图片本身**先单独提交一次（图片不走 CDN purge，不需要刷缓存），
+  再跑一遍清单生成 —— 此时 git 历史里已经有它们了，**当轮**就能写进 `avatar_shas.json`
+  （末尾那次 `commit-and-purge` 照旧把它带上）。
+
+  ⚠️ 调用前 `actions/checkout@v4` 必须配 **`fetch-depth: 0`** —— 浅克隆读不到历史，
+  清单会退化成「只有最近一次提交动过的头像」，等于把其余全打回全局 sha。
+  ⚠️ 只提交 `avatars/`（`-- avatars` 限定路径），不碰工作区里其它待提交的 data 文件。
+
+inputs:
+  prefix:
+    description: '提交信息前缀（最终形如「<prefix>: 2026-11-03 更新 3 个」）'
+    required: false
+    default: avatars
+
+runs:
+  using: composite
+  steps:
+    - name: 有新头像就先单独提交（只提交 avatars/）
+      id: commit
+      shell: bash
+      run: |
+        if [ -z "$(git status --porcelain -- avatars)" ]; then
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          echo "::notice::没有新头像，跳过（清单照旧由 build:avatars 里那次生成）"
+          exit 0
+        fi
+        git config user.name  "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -- avatars
+        N=$(git diff --cached --name-only -- avatars | wc -l | tr -d ' ')
+        git commit -m "${{ inputs.prefix }}: $(date +%Y-%m-%d) 更新 $N 个" -- avatars
+        git push
+        echo "changed=true" >> "$GITHUB_OUTPUT"
+        echo "::notice::已单独提交 $N 个头像文件（仅图片，data/ 留给末尾那次提交）"
+
+    # 只有真提交了才重跑 —— 没新头像时 `build:avatars` 里那次已经是最新结果
+    - name: 重建 sha 清单
+      if: steps.commit.outputs.changed == 'true'
+      shell: bash
+      run: node scripts/gen-avatar-shas.mjs

@@ -52,6 +52,7 @@ jobs:
       #    浅克隆只有最近一次提交 → 所有头像都会被算成 HEAD 的 sha（虽然不至于 404，
       #    但每批新头像都会把全体 URL 重新洗一遍，白让访客重下 4.6MB）。
       #    仓库很小（.git 约 14MB），拉全量不心疼。
+      #    ⚠️ 下面 `commit-avatars` 那步会**先提交一次图片**再重生成清单，同样依赖完整历史。
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -114,6 +115,15 @@ jobs:
         env:
           AVATAR_MIRRORS: ''
         run: npm run build:avatars
+
+      # ⚠️ 新头像必须**先提交、再生成 sha 清单**（2026-11-03 加，见 action 自己的说明）：
+      #    `gen-avatar-shas.mjs` 的 sha 来自 `git log -- avatars` —— 「这一轮刚下载、还没提交」
+      #    的新头像拿不到 sha，于是清单里缺它们，站点退回全局 `AVATARS_SHA`（不含新图的旧提交）
+      #    → 线上 404，要等**下一轮**（一周）才补上。
+      #    实测代价：2026-11-02 快照新增 3 位干员，头像明明已经在 `avatars/` 里，
+      #    `avatar_shas.json` 却停在 10-29 的 232 条（站点 `verify:data` 的两条头像哨兵一直红）。
+      #    action 里只提交 `avatars/`，`data/avatar_shas.json` 仍由末尾那次统一提交 + 刷缓存。
+      - uses: ./.github/actions/commit-avatars
 
       # 国际服（wiki.gg）。必须在国服之后：它要读国服的 operators.json / banners_sc.json
       # 来对齐 charId、中文名与「双五寻访」，并把 enName / enReleaseDate / enClassicDate

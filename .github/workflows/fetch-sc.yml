@@ -20,7 +20,14 @@ jobs:
     env:
       TZ: Asia/Shanghai         # 让提交信息里的日期是北京时间
     steps:
+      # ⚠️ **必须完整历史**（fetch-depth: 0）：`build:avatars` 会跑
+      #    `scripts/gen-avatar-shas.mjs`，它靠 `git log -- avatars` 取「每个头像最后一次被改动」
+      #    的提交 sha。浅克隆只有最近一次提交 → 清单会退化成「只有那次提交动过的头像」
+      #    （其余全部打回全局 `AVATARS_SHA`），**等于把已有清单写坏**（2026-11-03 修 ——
+      #    之前这条工作流漏了这个参数，与主工作流不一致）。
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -48,6 +55,9 @@ jobs:
           AVATAR_MIRRORS: ''
         run: npm run build:avatars
 
+      # ⚠️ 新头像要**先提交、再生成 sha 清单**，否则清单里缺它们、线上 404（见 action 说明）
+      - uses: ./.github/actions/commit-avatars
+
       # 顺带把**官方解包数据**里的国服中坚（常驻中坚寻访 + 中坚甄选）也刷一遍。
       # 它自带 `data_version.txt` 短路，版本没变时几乎不耗时。
       # 顺带把国服的模组 / 密录也刷一遍（**国服皮肤不在此列** —— 它走 PRTS）。
@@ -63,4 +73,5 @@ jobs:
           prefix: data(sc)
           purge-files: |
             operators.json metadata.json banners_sc.json banners_cla_sc.json
+            avatar_shas.json
             modules_sc.json memoirs_sc.json
