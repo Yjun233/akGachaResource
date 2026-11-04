@@ -57,6 +57,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
+import { sortUpOperators } from './lib/banner-ops.mjs';
 import { makeMidBatchResolver, dryRun } from './lib/mid-batches.mjs';
 import { wikiApi, fetchWikiOperatorMap } from './lib/wiki-gg.mjs';
 import './lib/http.mjs';
@@ -482,9 +483,12 @@ async function main() {
         /* ⚠️ 这里只剥掉排查用的 `nameEn`。
            2026-10-12 之前**连 `charId` 一起剥**（那个字段当时国服侧也没有、schema 里不存在）；
            现在三服 schema 统一要求 `upOperators` 带 `charId`，所以必须留着。 */
-        upOperators: upOperators
-          .map(({ nameEn, ...rest }) => rest)
-          .sort((a, b) => (b.rarity - a.rarity) || Number(a.isShop) - Number(b.isShop)),
+        /* 统一排序（2026-11-04）：口径见 `lib/banner-ops.mjs`，实装日**只认国服**，
+           与国服 / 繁中服排出来的是同一个顺序。 */
+        upOperators: sortUpOperators(
+          upOperators.map(({ nameEn, ...rest }) => rest),
+          { type: finalType, releaseOf: (o) => cnByCharId[o.charId]?.scReleaseDate ?? null },
+        ),
         _forcedFive: forcedFive,
         /* 英文卡池名只在「限定 / 单六 / 双五」上有（这三类三服的叫法不同）；
            带序号的池子三服同名，没有英文名。下面统一处理时会把 name 换成国服中文名。 */

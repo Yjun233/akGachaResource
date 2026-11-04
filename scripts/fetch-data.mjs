@@ -76,6 +76,7 @@ import { fileURLToPath } from 'node:url';
 import { pinyin } from 'pinyin-pro';
 import { metaStable, orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
+import { sortUpOperators } from './lib/banner-ops.mjs';
 import { buildAlterMap, loadCharInfo, loadNames, loadSpCharGroups, professionLabel } from './lib/gamedata.mjs';
 import { loadActivityTables, resolveOperatorActivities, canRerunOf, rerunKindOf } from './lib/op-activity.mjs';
 import { fetchWikiOperatorMap } from './lib/wiki-gg.mjs';
@@ -1040,15 +1041,21 @@ async function main() {
         isShop: isShopArg(a.args),
       });
     }
-    // 确保 6★ 在前、5★ 在后，便于展示
-    upOperators.sort((x, y) => (y.rarity - x.rarity) || Number(x.isShop) - Number(y.isShop));
+    /* 统一排序（2026-11-04 用户定，口径见 `lib/banner-ops.mjs` 的文件头）：
+       星级 → 限定/首发/进店 → 实装日从早到晚 → charId 数字。
+       ⚠️ 实装日**只认国服 `scReleaseDate`**（实装先后是游戏设定，三服一致）——
+          用各服自己的 release 日会让同一期在三服排出不同顺序。 */
+    const sortedUps = sortUpOperators(upOperators, {
+      type: b.type,
+      releaseOf: (o) => opByScName.get(o.scCharName)?.scReleaseDate ?? null,
+    });
     banners[b.id] = {
       scName: b.name,       // 国服中文名（2026-10-12 起去掉了重复的 `name`，只留这一列）
       enName: null,         // 国际服英文名，第二遍回填
       type: b.type,
       startDate: b.startDate,
       endDate: b.endDate,
-      upOperators,
+      upOperators: sortedUps,
     };
   }
   console.log(`· 卡池 ${Object.keys(banners).length} 个（剔除 4★ 记录 ${dropped} 条）`);

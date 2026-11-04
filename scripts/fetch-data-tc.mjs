@@ -64,6 +64,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { pinyin } from 'pinyin-pro';
+import { sortUpOperators } from './lib/banner-ops.mjs';
 import { orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
 import { readSheets as readAirScriptSheets, resolveConfig } from './lib/airscript.mjs';
@@ -279,7 +280,12 @@ async function main() {
     }
     return out;
   };
-  const sortUps = (ups) => ups.slice().sort((a, b) => (b.rarity - a.rarity) || Number(a.isShop) - Number(b.isShop));
+  /* 统一排序（2026-11-04）：口径见 `lib/banner-ops.mjs`（星级 → 限定/首发/进店 → 实装日 → charId）。
+     ⚠️ 实装日只认国服 `scReleaseDate` —— 三服必须排出同一个顺序。 */
+  const sortUps = (ups, type) => sortUpOperators(ups, {
+    type,
+    releaseOf: (o) => cnByName.get(o.scCharName)?.scReleaseDate ?? null,
+  });
 
   /* `ref` = 反查到的**国服对应卡池**（只有限定 / 单六 / 双五三类有）—— 先留在这里，
      最后要把它的 `rerunKind` / `canRerun` 沿用过去（见下面构造 `out` 的那段）。 */
@@ -287,7 +293,7 @@ async function main() {
     const id = `${start.replace(/-/g, '')}_${type}_${suffix}`;
     banners.push({
       id, name, type, startDate: start, endDate: end,
-      upOperators: sortUps(upOperators), _where: where, _ref: ref,
+      upOperators: sortUps(upOperators, type), _where: where, _ref: ref,
     });
   };
 

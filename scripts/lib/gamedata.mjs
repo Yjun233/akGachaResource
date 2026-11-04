@@ -23,12 +23,13 @@
  *    `CLASSIC` / `CLASSIC_DOUBLE` 的 `dynMeta`：
  *      `main6RarityCharId` = **进店六星**，`sub6RarityCharId` = 陪跑六星，
  *      `rare5CharList[0]`  = **进店五星**，`rare5CharList[1..2]` = 陪跑五星。
- *    ⚠️ 我们 `banners_<server>.json` 里 `upOperators` 的**既有排序**是
- *       `[陪跑6★, 进店6★, 陪跑5★…, 进店5★]`（把官方的 index0 挪到最后），
- *       这里**照抄那个顺序**，免得无谓地改动站点显示与逐格对比。
+ *    ⚠️ 2026-11-04 起 `upOperators` **不再照抄官方的 index 顺序**，统一走
+ *       `lib/banner-ops.mjs` 的 `sortUpOperators()`（用户定的口径）：
+ *       星级 → 进店/陪跑 → 实装日 → charId 数字。中坚属于「进店 → 陪跑」那一类。
  */
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { sortUpOperators } from './banner-ops.mjs';
 
 const REPO = 'ArknightsAssets/ArknightsGamedata';
 const REF = 'master';
@@ -254,11 +255,17 @@ function makeOp(charId, nameOf, rarity, isShop) {
  *
  * @param {object} gacha        `gacha_table.json` 的解析结果
  * @param {Record<string,string>} nameOf charId → 名字（**三服统一用 cn 的名字表**）
+ * @param {object} [opts]
+ * @param {(charId:string)=>string|null} [opts.releaseOf] charId → 国服实装日（排 `upOperators` 用）
  * @returns {{classic: object[], clafes: object[]}} 已按开始日升序、并且**已编好 id / scName**
  */
-export function extractMid(gacha, nameOf) {
+export function extractMid(gacha, nameOf, { releaseOf = null } = {}) {
   const pools = (gacha && gacha.gachaPoolClient) || [];
   const named = (id) => nameOf[id] || null;
+  /* ⚠️ `sortUpOperators` 的回调收的是**整个 op 对象**，而解包侧只方便按 charId 查
+     （名字/实装日都在 cn 表里按 charId 索引）→ 这里包一层，别直接把它塞进去
+     （2026-11-04 第一版就是直接传的，结果实装日全成 null、甄选池退化成按 charId 排）。 */
+  const relOfOp = releaseOf ? (op) => releaseOf(op.charId) : null;
 
   /* ---- 常驻中坚寻访：CLASSIC + CLASSIC_DOUBLE（同一个东西，2025-03 换代，见预研 §3） ---- */
   const classic = pools
@@ -278,7 +285,12 @@ export function extractMid(gacha, nameOf) {
         ...r5.slice(1).map((id) => makeOp(id, nameOf, 5, false)),     // 陪跑五星
         r5[0] ? makeOp(r5[0], nameOf, 5, true) : null,              // 进店五星（官方 index0）
       ].filter((o) => o.scCharName);
-      return { type: 'classic', startDate: unixDate(p.openTime), endDate: unixDate(p.endTime), upOperators: ups };
+      return {
+        type: 'classic',
+        startDate: unixDate(p.openTime),
+        endDate: unixDate(p.endTime),
+        upOperators: sortUpOperators(ups, { type: 'classic', releaseOf: relOfOp }),
+      };
     });
 
   /* ---- 中坚甄选：FESCLASSIC，`rarityPickCharDict` 是**候选池**（玩家自选），口径与我们现有数据一致 ---- */
@@ -291,7 +303,12 @@ export function extractMid(gacha, nameOf) {
         ...(d.TIER_6 || []).map((c) => makeOp(c, nameOf, 6, false)),
         ...(d.TIER_5 || []).map((c) => makeOp(c, nameOf, 5, false)),
       ].filter((o) => o.scCharName);
-      return { type: 'clafes', startDate: unixDate(p.openTime), endDate: unixDate(p.endTime), upOperators: ups };
+      return {
+        type: 'clafes',
+        startDate: unixDate(p.openTime),
+        endDate: unixDate(p.endTime),
+        upOperators: sortUpOperators(ups, { type: 'clafes', releaseOf: relOfOp }),
+      };
     });
 
   assignIds(classic);

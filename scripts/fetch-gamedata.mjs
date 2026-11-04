@@ -228,6 +228,20 @@ async function loadOperatorIndex() {
   return { names, rarity };
 }
 
+/** `charId → 国服实装日` —— 只给中坚卡 `upOperators` 的排序用（口径见 `lib/banner-ops.mjs`）。
+ *  ⚠️ 与 `loadOperatorIndex` 分开读：那个只在做 extras 时才读，而中坚每次都要排。
+ *  读不到就返回 `() => null`，排序退化成「星级 → 进店/陪跑 → charId」，不至于把整轮跑挂。 */
+async function loadReleaseIndex() {
+  try {
+    const raw = JSON.parse(await fs.readFile(path.join(DATA, 'operators.json'), 'utf8'));
+    const rel = {};
+    for (const [id, op] of Object.entries(raw)) rel[id] = op?.scReleaseDate ?? null;
+    return (charId) => (charId ? rel[charId] ?? null : null);
+  } catch {
+    return () => null;
+  }
+}
+
 /** 某服本轮 extras 会产出哪些文件（⚠️ **国服不含皮肤** —— 那由 `fetch-skins.mjs` 从 PRTS 出） */
 const extrasFilesOf = (server) =>
   ['modules', 'memoirs', ...(server === 'sc' ? [] : ['skins'])].map((k) => `${k}_${server}.json`);
@@ -306,6 +320,8 @@ async function main() {
   /* extras 的口径白名单（`operators.json` = **参与过寻访 UP 的干员**，不是全量五六星名册）——
      官方表里 509 个模组 / 439 位密录远比口径大，靠它筛。只在真的要做 extras 时读。 */
   const OP_INDEX = DO_EXTRAS ? await loadOperatorIndex() : { names: new Set(), rarity: {} };
+  /* 中坚的 `upOperators` 排序要用国服实装日 —— 只在真的产中坚时读 */
+  const releaseOf = DO_MID ? await loadReleaseIndex() : () => null;
   if (DO_EXTRAS) console.log(`operators.json：${OP_INDEX.names.size} 位（extras 只收这些干员）`);
 
   let problems = 0;
@@ -358,7 +374,7 @@ async function main() {
     let mid = null;
     if (DO_MID) {
       const gacha = await loadTable(dir, 'gacha_table.json', { local: LOCAL });
-      mid = extractMid(gacha, await nameOf());
+      mid = extractMid(gacha, await nameOf(), { releaseOf });
       if (DUMP) {
         console.log(`\n--- ${server} 抽出的前 2 条 ---`);
         console.log(JSON.stringify([...mid.classic.slice(0, 1), ...mid.clafes.slice(0, 1)], null, 1));
