@@ -1947,7 +1947,7 @@
     ]
   },
   "20210624_single_sr": {
-    "scName": "燃钢之心 暴躁铁皮",
+    "scName": "燃钢之心:暴躁铁皮",
     "enName": "Heart of Steel, The Rage Ironhide",
     "type": "single",
     "startDate": "2021-06-24",
@@ -13095,6 +13095,13 @@
       {
         "scCharName": "钼铅",
         "charId": "char_4171_wulfen",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "洋灰",
+        "charId": "char_464_cement",
         "rarity": 5,
         "isLimited": false,
         "isShop": false
