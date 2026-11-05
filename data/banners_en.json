@@ -13760,5 +13760,49 @@
         "isShop": false
       }
     ]
+  },
+  "20261106_double_0179": {
+    "scName": "常驻标准寻访179",
+    "enName": null,
+    "type": "double",
+    "startDate": "2026-11-06",
+    "endDate": "2026-11-20",
+    "upOperators": [
+      {
+        "scCharName": "鸿雪",
+        "charId": "char_4055_bgsnow",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "薇薇安娜",
+        "charId": "char_4098_vvana",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "青枳",
+        "charId": "char_488_buildr",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "子月",
+        "charId": "char_4014_lunacu",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "风絮",
+        "charId": "char_4222_taraxa",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }

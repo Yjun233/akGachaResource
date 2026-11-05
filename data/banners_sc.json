@@ -15023,5 +15023,49 @@
         "isShop": false
       }
     ]
+  },
+  "20261105_double_0197": {
+    "scName": "常驻标准寻访197",
+    "enName": null,
+    "type": "double",
+    "startDate": "2026-11-05",
+    "endDate": "2026-11-19",
+    "upOperators": [
+      {
+        "scCharName": "薇薇安娜",
+        "charId": "char_4098_vvana",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "隐德来希",
+        "charId": "char_4010_etlchi",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "深律",
+        "charId": "char_4109_baslin",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "但书",
+        "charId": "char_4032_provs",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "阿罗玛",
+        "charId": "char_446_aroma",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }
