@@ -36,11 +36,15 @@ const IPV4 = /^\d{1,3}(?:\.\d{1,3}){3}$/;
 /** 备用 UDP 解析源（国内公共 DNS；教育网 / 运营商的本地 DNS 有时会给远端不可达的节点） */
 const UDP_SERVERS = ['119.29.29.29', '114.114.114.114', '223.5.5.5'];
 
-/** 备用 DoH 源（UDP 53 被拦或被劫持时的最后一条路；dns.google 在部分网络不通，尽力而为） */
+/** 备用 DoH 源（UDP 53 被拦或被劫持时的最后一条路）
+ *  ⚠️ 云厂商那两家在国内最稳，`dns.google` / Cloudflare 是**给 CI 用的**：
+ *     GitHub runner 在海外，问国内 DNS 常常直接超时，反而这两家能给出海外可达的节点。
+ *     国内环境里它们通常不通 —— 4 秒超时后自然跳过，不拖慢整体（各家是并行的）。 */
 const DOH_SOURCES = [
   ['DoH 223.5.5.5', 'https://223.5.5.5/resolve', { accept: 'application/dns-json' }],
   ['DoH doh.pub', 'https://doh.pub/dns-query', { accept: 'application/dns-json' }],
   ['DoH dns.google', 'https://dns.google/resolve', { accept: 'application/dns-json' }],
+  ['DoH cloudflare', 'https://cloudflare-dns.com/dns-query', { accept: 'application/dns-json' }],
 ];
 
 /** host → { ip, source, at }（成功结果缓存，避免每次失败都重新探活） */
