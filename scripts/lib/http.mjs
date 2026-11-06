@@ -23,6 +23,10 @@ const proxy =
   process.env.HTTPS_PROXY || process.env.https_proxy ||
   process.env.HTTP_PROXY || process.env.http_proxy || '';
 
+/* 有没有接管代理 —— 调用方据此决定要不要做「钉 IP」兜底：
+   走代理时由代理侧解析，钉 IP 反而会把代理绕过去（见 lib/prts-net.mjs 文件头）。 */
+export const PROXY = proxy;
+
 if (proxy) {
   try {
     setGlobalDispatcher(new ProxyAgent(proxy));

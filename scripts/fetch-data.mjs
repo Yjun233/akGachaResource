@@ -80,7 +80,8 @@ import { sortUpOperators } from './lib/banner-ops.mjs';
 import { buildAlterMap, loadCharInfo, loadNames, loadSpCharGroups, professionLabel } from './lib/gamedata.mjs';
 import { loadActivityTables, resolveOperatorActivities, canRerunOf, rerunKindOf } from './lib/op-activity.mjs';
 import { fetchWikiOperatorMap } from './lib/wiki-gg.mjs';
-import './lib/http.mjs';
+import { PROXY } from './lib/http.mjs';
+import { attemptedAddresses, pinTo, unpin, usableIp } from './lib/prts-net.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -143,8 +144,22 @@ function limitedSubtype(rowText, startDate) {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/* 「地址连不上」类错误 —— 只有这类换 DNS 重新解析才有意义（见 lib/prts-net.mjs 文件头）。
+   ⚠️ 别把普通 socket 错误 / HTTP 状态码塞进来：那类东西重试同一个地址就能过去。 */
+const CONNECT_ERRORS = new Set([
+  'UND_ERR_CONNECT_TIMEOUT', 'ETIMEDOUT', 'ECONNREFUSED', 'ENETUNREACH', 'EHOSTUNREACH',
+]);
+
+const PRTS_HOST = new URL(API).hostname;
+
+/* 当前钉住的 IP —— 抓取脚本会并发发几个请求，它们同时失败时都会走到兜底，
+   这里收一下：IP 没变就只当成「继续用」，不再重复换 dispatcher、也不再刷日志。 */
+let pinnedIp = '';
+
 async function requestJson(params, { tries = 5, method = 'GET' } = {}) {
   let lastErr;
+  /* 已经连不上的地址（跨重试累积）—— 兜底换 IP 时排除掉，否则备选清单里还会挑回它 */
+  const bad = new Set();
   for (let i = 0; i < tries; i++) {
     try {
       let res;
@@ -169,6 +184,27 @@ async function requestJson(params, { tries = 5, method = 'GET' } = {}) {
       const c = e && e.cause;
       const detail = c ? `${c.code || c.name || ''} ${c.message || ''}`.trim() : '';
       console.error(`  · 第 ${i + 1}/${tries} 次请求失败: ${e.message}${detail ? ' ← ' + detail : ''}`);
+
+      /* 连不上（典型：DNS 把域名解析到本地不可达的那批 CDN 节点）——
+         这种失败**等再久也没用**，必须换地址重试。2026-11-06 实证见 lib/prts-net.mjs。 */
+      if (CONNECT_ERRORS.has(c && c.code)) {
+        for (const ip of attemptedAddresses(e)) bad.add(ip);
+        if (!PROXY && i < tries - 1) {
+          const pick = await usableIp(PRTS_HOST, { exclude: [...bad] });
+          if (pick) {
+            if (pick.ip !== pinnedIp) {
+              pinTo(PRTS_HOST, pick.ip);
+              pinnedIp = pick.ip;
+              console.error(`  · 解析到的地址都连不上，改钉 ${pick.ip}（来自 ${pick.source}）重试`);
+            }
+            bad.add(pick.ip);
+            continue; /* ⚠️ 不 sleep：这一轮已经耗在建连超时上了 */
+          }
+          console.error('  · 备用解析也没找到能连上的地址，退回系统解析重试');
+          unpin(); /* 上一轮钉的地址已经进了 bad，别再钉着它 */
+          pinnedIp = '';
+        }
+      }
       await sleep(1200 * (i + 1));
     }
   }
