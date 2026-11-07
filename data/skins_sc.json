@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16",
+  "generatedAt": "2026-11-07",
   "source": "https://prts.wiki",
   "skins": [
     {
@@ -3233,6 +3233,14 @@
           "end": "2026-05-29",
           "note": "",
           "longTime": false
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-11-01",
+          "end": "2026-11-29",
+          "note": "",
+          "longTime": false,
+          "seq": 1
         }
       ],
       "dynamic": true,
@@ -3336,6 +3344,32 @@
           "kind": "首发",
           "start": "2025-10-21",
           "end": "2025-11-11",
+          "note": "",
+          "longTime": false
+        }
+      ],
+      "dynamic": false,
+      "warnings": []
+    },
+    {
+      "scCharName": "阿兰娜",
+      "charId": "char_4178_alanna",
+      "skinIndex": 1,
+      "name": "赤土拉力",
+      "group": "啸风/III",
+      "series": "啸风",
+      "isCrossover": false,
+      "obtain": [
+        "活动赠送"
+      ],
+      "obtainRaw": "活动获得",
+      "firstPrice": null,
+      "firstPriceUnit": null,
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-11-01",
+          "end": "2026-11-15",
           "note": "",
           "longTime": false
         }
@@ -4792,6 +4826,32 @@
         }
       ],
       "dynamic": false,
+      "warnings": []
+    },
+    {
+      "scCharName": "凛御银灰",
+      "charId": "char_1045_svash2",
+      "skinIndex": 1,
+      "name": "雪覆伦城",
+      "group": "忒斯特收藏/XXII",
+      "series": "忒斯特收藏",
+      "isCrossover": false,
+      "obtain": [
+        "源石购买"
+      ],
+      "obtainRaw": "采购中心",
+      "firstPrice": 27,
+      "firstPriceUnit": null,
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-11-01",
+          "end": "2026-11-29",
+          "note": "",
+          "longTime": false
+        }
+      ],
+      "dynamic": true,
       "warnings": []
     },
     {
@@ -7330,6 +7390,14 @@
           "end": "2022-11-15",
           "note": "",
           "longTime": false
+        },
+        {
+          "kind": "复刻",
+          "start": "2026-11-01",
+          "end": "2026-11-29",
+          "note": "时间啊，向前！往期复刻",
+          "longTime": false,
+          "seq": 1
         }
       ],
       "dynamic": false,
@@ -8569,6 +8637,58 @@
           "kind": "首发",
           "start": "2026-09-29",
           "end": "2026-10-23",
+          "note": "",
+          "longTime": false
+        }
+      ],
+      "dynamic": false,
+      "warnings": []
+    },
+    {
+      "scCharName": "薇薇安娜",
+      "charId": "char_4098_vvana",
+      "skinIndex": 2,
+      "name": "还愿礼",
+      "group": "时代/LIX",
+      "series": "时代",
+      "isCrossover": false,
+      "obtain": [
+        "源石购买"
+      ],
+      "obtainRaw": "采购中心",
+      "firstPrice": 21,
+      "firstPriceUnit": null,
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-11-01",
+          "end": "2026-11-29",
+          "note": "",
+          "longTime": false
+        }
+      ],
+      "dynamic": true,
+      "warnings": []
+    },
+    {
+      "scCharName": "号角",
+      "charId": "char_4039_horn",
+      "skinIndex": 2,
+      "name": "锋光初现",
+      "group": "时代/LIX",
+      "series": "时代",
+      "isCrossover": false,
+      "obtain": [
+        "源石购买"
+      ],
+      "obtainRaw": "采购中心",
+      "firstPrice": 18,
+      "firstPriceUnit": null,
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-11-01",
+          "end": "2026-11-29",
           "note": "",
           "longTime": false
         }
