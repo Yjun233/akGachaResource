@@ -5,22 +5,26 @@
  * 产出 `data/banners_en.json`，并把国际服相关的字段写回 `data/operators.json` 与 `data/metadata.json`。
  *
  * 数据来源：
- *   1. `Category:Headhunting banners` 里的 `Headhunting/Banners/<年份>` 页面，
- *      每个卡池是页面里的一个 `{{Banners cell}}` 模板
- *      （⚠️ wiki 上也有写成 `{{Banners_cell}}` 下划线的，两种都要认，见 `CELL_OPEN`）。
- *   2. `{{Banners cell}}` 的关键参数：
- *        |type        卡池类型，见下方 TYPE_MAP
- *        |no          序号（常驻 / 中坚 / 联合行动 / 定向甄选 / 前路回响 用）
- *        |name        卡池英文名（限定 / 单六 / 双五 用）
- *        |cnstart / cnend        国服时间
- *        |globalstart / globalend 国际服时间   ← **国际服认这两个**
- *        |start / end 常驻标准寻访 / 常驻中坚寻访 / 中坚甄选 的国际服时间
- *                     （这三类国际服的池子与国服不同，wiki.gg 的页面里只列国际服的，
- *                       所以用 start/end 而不是 globalstart/globalend）
- *        |operators   干员英文名，逗号分隔（6★ 在前）
- *        |operators1 / operators2  甄选类池子拆成两段（1 = 六星池，2 = 五星池）
- *        |store       与 operators 一一对应的 0/1，1 = 可商店兑换
- *        |limited     与 operators 一一对应的 0/1/2（只有限定寻访有）：
+ *   1. **Cargo `Banners` 表**（2026-11-10 起为主路径，`action=cargoquery`，一次查询拿全部）：
+ *      那 7 个 `Headhunting/Banners/<年份>` 页里的每个 `{{Banners cell}}` 都会执行模板内部的
+ *      `{{#cargo_store: _table=Banners …}}` —— **这张表就是页面的投影**，页面一保存就写表，
+ *      **没有延迟**（实测逐页行数与模板调用数完全一致 48/48、78/78、76/76、66/66；
+ *      切换前后产出**逐字节相同**）。
+ *      ⚠️ 兜底：Cargo 请求失败 / 返回 0 行时自动回退到「抓页面 + 解析模板」；
+ *         也可以 `--templates` 强制走它（两条路径对撞用）。
+ *   2. 读哪些字段（括号里是旧模板参数，兜底路径仍按那套解析）：
+ *        bannerType  卡池类型，见下方 TYPE_MAP
+ *        no          序号（常驻 / 中坚 / 联合行动 / 定向甄选 / 前路回响 用）
+ *        name        卡池英文名（限定 / 单六 / 双五 用）
+ *        startTimeCN / endTimeCN            国服时间（不用）
+ *        startTimeGlobal / endTimeGlobal    国际服时间   ← **优先认这两个**
+ *        startTime / endTime                常驻标准寻访 / 常驻中坚寻访 / 中坚甄选 的国际服时间
+ *                                           （这三类国际服的池子与国服不同，页面里只列国际服的，
+ *                                             所以落在这一对字段上；两种字段并存，取任一非空）
+ *        operators   干员英文名，逗号分隔（模板里 `operators` + `operators1` + `operators2`
+ *                    用 `{{#lstsep:…}}` 合并后存的，所以甄选类池子的两段也在里面）
+ *        store       与 operators 一一对应的 0/1，1 = 可商店兑换
+ *        limited     与 operators 一一对应的 0/1/2（只有限定寻访有）：
  *                      0 = 普通 UP 干员   1 = 本期限定干员   2 = **5 倍权值**的往期限定干员
  *                    ⚠️ 值为 2 的那些**不算 UP**（用户口径）：它们只是复刻规则里
  *                       5 倍权重的往期限定，wiki.gg 却把它们和真正的 UP 并排写在
@@ -47,6 +51,7 @@
  * 用法：
  *   node scripts/fetch-data-en.mjs            # 抓取并写盘（内容没变则不写）
  *   node scripts/fetch-data-en.mjs --dry      # 只抓取与统计，不写盘
+ *   node scripts/fetch-data-en.mjs --templates  # 强制走旧的「页面模板解析」路径（应急 / 对撞）
  *
  * ⚠️ 国际服比国服更新慢，所以不会出现「国际服有、国服没有」的干员。
  *    遇到对不上的干员（多半是 4★）会被剔掉并计入警告。
@@ -81,6 +86,8 @@ const SERVER = 'en';
  * → 开服干员的国际服实装日**锚定为开服日**，不依赖 wiki 那张事件表是否补全。 */
 const EN_LAUNCH_DATE = '2020-01-16';
 const CN_LAUNCH_DATE = '2019-04-30';
+/* ⚠️ 只在**兜底路径**用（Cargo 失败 / `--templates`）—— 主路径读 Cargo `Banners` 表，
+   见下面 `fetchBannersFromCargo()` 的文件头说明。 */
 const YEAR_PAGES = ['2020', '2021', '2022', '2023', '2024', '2025', '2026'];
 
 /** wiki.gg 的 type → 本站的 type。未列出的（联动等）一律忽略。 */
@@ -238,6 +245,99 @@ async function fetchBannerPages() {
   return pages;
 }
 
+/* ---------------- 卡池来源：Cargo `Banners` 表（2026-11-10 起为主，模板降为兜底） ----------------
+ * 为什么换：原来要抓 7 个年度页、正则切 `{{Banners cell}}`，还得分空格 / 下划线两种写法
+ * （认错一个就**静默漏整条池**）。而那 7 个页里的每一个 cell 都会执行
+ * `Template:Banners cell` 内部的 `{{#cargo_store: _table=Banners …}}` ——
+ * 也就是说**这张 Cargo 表就是那几个页面的投影**，页面一保存就写表，不存在延迟。
+ *
+ * 2026-11-10 实测：逐页行数与模板调用数完全一致（2020 48/48、2024 78/78、2025 76/76、2026 66/66）；
+ * 与 `banners_en.json` 现有 320 期按「开池日 + 结束日」对撞 **320/320 全中、日期一字不差**。
+ *
+ * 收益：① 一次查询替掉 7 个页面抓取；② 不怕模板写法变体（store 在模板内部执行）；
+ *      ③ 顺带拿到 `startTimeCN` / `startTimeTW`（本脚本暂不用，留给跨服校验）。
+ * 剩下的唯一风险是「模板参数改名导致某个 store 字段变空」—— 盯字段填充率即可
+ * （2026-11-10：operators 422/425、bannerType 424/425、国际服时间 411/425）。
+ */
+
+/** Cargo 行 → 与 `parseCells()` 同形状的 cell（主循环只认这几个键） */
+function cargoRowToCell(c) {
+  return {
+    type: c.bannerType,
+    name: c.name,
+    no: c.no,
+    /* ⚠️ 与旧逻辑 `cell.globalstart || cell.start` 完全同序：global 优先。
+       两种字段并存是 wiki 的录入习惯（2026-11-10 统计 startTime 244 行 / startTimeGlobal 167 行），
+       所以不能只认其中一个。 */
+    globalstart: c.startTimeGlobal || c.startTime,
+    globalend: c.endTimeGlobal || c.endTime,
+    /* 模板里是 `{{#lstsep:{{{operators}}},{{{operators1}}},{{{operators2}}}|,|,}}` 合并后存的，
+       所以这一段已经包含联合行动等池子的第二、三段干员，无需再分开收。 */
+    operators: c.operators,
+    store: c.store,
+    limited: c.limited,
+  };
+}
+
+/** 直接读 Cargo 表，按 `_pageName` 分组返回（形状与 `cellsFromTemplates()` 一致） */
+async function fetchBannersFromCargo() {
+  console.log('· 抓取卡池表（Cargo: Banners）...');
+  const groups = {};
+  let total = 0;
+  for (let offset = 0; ; offset += 500) {
+    const json = await wikiApi({
+      action: 'cargoquery',
+      tables: 'Banners',
+      fields: 'name,no,bannerType,operators,store,limited,'
+        + 'startTime,endTime,startTimeGlobal,endTimeGlobal,_pageName',
+      limit: 500,
+      offset,
+    });
+    const rows = json.cargoquery || [];
+    for (const r of rows) {
+      const src = r.title._pageName || 'Banners';
+      (groups[src] ||= []).push(cargoRowToCell(r.title));
+      total += 1;
+    }
+    if (rows.length < 500) break;
+    if (offset > 5000) break; /* 安全阀 */
+  }
+  console.log(`  → ${total} 行（${Object.keys(groups).length} 个来源页）`);
+  return groups;
+}
+
+/** 旧路径：抓年度页 + 正则切 `{{Banners cell}}`（只在 Cargo 失败时兜底，或 `--templates` 强制用） */
+async function cellsFromTemplates(warnings) {
+  const pages = await fetchBannerPages();
+  const groups = {};
+  for (const [year, text] of Object.entries(pages)) {
+    /* 有没被识别出来的 {{Banners…}} 写法就直接报出来（漏一条就是漏一个卡池） */
+    const unmatched = unmatchedBannerTemplates(text);
+    if (unmatched.length) {
+      warnings.push(`[${year}] 有 ${unmatched.length} 个 {{Banners…}} 模板没被识别（wiki 换写法了？）：`
+        + unmatched.slice(0, 4).join(' / '));
+    }
+    groups[year] = parseCells(text);
+  }
+  return groups;
+}
+
+/** 取卡池行：Cargo 为主，模板兜底 */
+async function loadBannerCells(warnings) {
+  if (process.argv.includes('--templates')) {
+    console.log('· 已指定 --templates：走旧的页面模板解析');
+    return cellsFromTemplates(warnings);
+  }
+  try {
+    const groups = await fetchBannersFromCargo();
+    if (!Object.keys(groups).length) throw new Error('Cargo 返回 0 行');
+    return groups;
+  } catch (e) {
+    warnings.push(`Cargo 取卡池失败（${e.message}），回退到页面模板解析`);
+    return cellsFromTemplates(warnings);
+  }
+}
+
 // ---------------------------------------------------------------- 国际服上线日期
 
 /**
@@ -324,23 +424,23 @@ async function main() {
     if (!byEnName.has(key)) byEnName.set(key, charId);
   }
 
-  const pages = await fetchBannerPages();
+  /* ⚠️ `warnings` 要在取卡池之前建好：Cargo 失败回退模板时，兜底日志要写进同一个数组 */
+  const warnings = [];
+  const bannerCells = await loadBannerCells(warnings);
   const enReleaseDates = await fetchEnReleaseDates();
 
-  const warnings = [];
   const skippedTypes = new Map();
   const banners = [];
   let dropped4 = 0;
   let dropped5x = 0;
+  /** 没有国际服日期的行（多为 `Banners/Upcoming` 的预告池） */
+  const skippedNoDate = [];
 
-  for (const [year, text] of Object.entries(pages)) {
-    /* 有没被识别出来的 {{Banners…}} 写法就直接报出来（漏一条就是漏一个卡池） */
-    const unmatched = unmatchedBannerTemplates(text);
-    if (unmatched.length) {
-      warnings.push(`[${year}] 有 ${unmatched.length} 个 {{Banners…}} 模板没被识别（wiki 换写法了？）：`
-        + unmatched.slice(0, 4).join(' / '));
-    }
-    for (const cell of parseCells(text)) {
+  /* `bannerCells` 是按来源页分组的数据（Cargo 的 `_pageName` / 兜底的年份）。
+     日志里的 `[year]` 只取最后一段（`Headhunting/Banners/2020` → `2020`），与改动前一致。 */
+  for (const [page, cellList] of Object.entries(bannerCells)) {
+    const year = String(page).split('/').pop();
+    for (const cell of cellList) {
       const rawType = String(cell.type || '').trim().toLowerCase();
       if (!rawType) continue;
       if (SKIP_TYPES.includes(rawType)) {
@@ -358,7 +458,9 @@ async function main() {
       const startDate = toDate(cell.globalstart || cell.start);
       const endDate = toDate(cell.globalend || cell.end);
       if (!startDate) {
-        warnings.push(`[${year}] 没有国际服开始日期，跳过: type=${rawType} name=${cell.name || ''}`);
+        /* 主要是 `Headhunting/Banners/Upcoming` 里的预告池（wiki 上还没排期）。
+           Cargo 会把这张页也一起给出来，逐条 warning 会刷屏 → 收进数组末尾汇总一行。 */
+        skippedNoDate.push(`${rawType}${cell.name ? ' ' + cell.name : ''}`);
         continue;
       }
 
@@ -680,6 +782,10 @@ async function main() {
   console.log(`  isShop：${withShop} 个池子有进店标记（本脚本只产 double 带 store 参数，共 ${storePools} 个池子）`);
   if (skippedTypes.size) {
     console.log(`  忽略的类型：${[...skippedTypes].map(([k, v]) => `${k}×${v}`).join('、')}`);
+  }
+  if (skippedNoDate.length) {
+    console.log(`  没有国际服日期而跳过 ${skippedNoDate.length} 条（预告池 / 国服独有）：`
+      + `${skippedNoDate.slice(0, 5).join('、')}${skippedNoDate.length > 5 ? ' …' : ''}`);
   }
   console.log(`  ${dry ? '（--dry，未写盘）' : (wrote.length ? `实际写入：${wrote.join('、')}` : '数据无变化，未写盘')}`);
 
