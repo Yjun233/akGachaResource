@@ -13183,5 +13183,98 @@
         "isShop": false
       }
     ]
+  },
+  "20261116_stdfes_0007": {
+    "scName": "定向甄选7",
+    "enName": null,
+    "type": "stdfes",
+    "startDate": "2026-11-16",
+    "endDate": "2026-11-30",
+    "upOperators": [
+      {
+        "scCharName": "斥罪",
+        "charId": "char_4065_judge",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "提丰",
+        "charId": "char_2012_typhon",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "乌尔比安",
+        "charId": "char_4145_ulpia",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "隐德来希",
+        "charId": "char_4010_etlchi",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "司霆惊蛰",
+        "charId": "char_1043_leizi2",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "圣聆初雪",
+        "charId": "char_1046_sbell2",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "寒檀",
+        "charId": "char_341_sntlla",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "青枳",
+        "charId": "char_488_buildr",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "海霓",
+        "charId": "char_4079_haini",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "渡桥",
+        "charId": "char_4147_mitm",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "诺威尔",
+        "charId": "char_4173_nowell",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "撷英调香师",
+        "charId": "char_1022_flwr2",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }
