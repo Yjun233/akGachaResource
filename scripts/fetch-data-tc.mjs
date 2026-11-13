@@ -64,7 +64,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { pinyin } from 'pinyin-pro';
-import { sortUpOperators } from './lib/banner-ops.mjs';
+import { resortSeriesBanners, sortUpOperators } from './lib/banner-ops.mjs';
 import { orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
 import { readSheets as readAirScriptSheets, resolveConfig } from './lib/airscript.mjs';
@@ -433,6 +433,14 @@ async function main() {
       out[b.id].canRerun = ref ? (ref.canRerun ?? false) : false;
     }
   }
+
+  /* 复刻 / 返场池的「首发组」要沿用同系列首发池（2026-11-13，见 lib/banner-ops.mjs 文件头）——
+     用户报的就是繁中服「未致蒙尘·复刻」：陪跑「寻澜」比首发五星「波卜」还晚实装，
+     按「本池最晚那批」判首发会把寻澜排到前面。 */
+  const resorted = resortSeriesBanners(out, {
+    releaseOf: (o) => cnByName.get(o.scCharName)?.scReleaseDate ?? null,
+  });
+  if (resorted) console.log(`  复刻池首发组归位：调整了 ${resorted} 个池的干员顺序`);
 
   /* ---- 第二遍：回填 enName ----
      ⚠️ 必须**按开始日升序**逐个查（out 就是按 list 的顺序插入的）—— 复刻池与首跑池

@@ -62,7 +62,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
-import { sortUpOperators } from './lib/banner-ops.mjs';
+import { resortSeriesBanners, sortUpOperators } from './lib/banner-ops.mjs';
 import { makeMidBatchResolver, dryRun } from './lib/mid-batches.mjs';
 import { wikiApi, fetchWikiOperatorMap } from './lib/wiki-gg.mjs';
 import './lib/http.mjs';
@@ -661,6 +661,13 @@ async function main() {
       out[b.id].canRerun = hit ? (hit.canRerun ?? false) : false;
     }
   }
+
+  /* 复刻 / 返场池的「首发组」要沿用同系列首发池（2026-11-13，见 lib/banner-ops.mjs 文件头）——
+     放在 `out` 建好之后，因为分组键用的是**反查后的国服名**（`scName`），比英文名可靠。 */
+  const resorted = resortSeriesBanners(out, {
+    releaseOf: (o) => cnByCharId[o.charId]?.scReleaseDate ?? null,
+  });
+  if (resorted) console.log(`  复刻池首发组归位：调整了 ${resorted} 个池的干员顺序`);
 
   // —— per-干员：enName / enClassicDate / enReleaseDate
   const firstBannerDate = new Map();   // charId → 第一次出现在国际服卡池的日期

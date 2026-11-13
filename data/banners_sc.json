@@ -7786,15 +7786,15 @@
         "isShop": false
       },
       {
-        "scCharName": "子月",
-        "charId": "char_4014_lunacu",
+        "scCharName": "濯尘芙蓉",
+        "charId": "char_1024_hbisc2",
         "rarity": 5,
         "isLimited": false,
         "isShop": false
       },
       {
-        "scCharName": "濯尘芙蓉",
-        "charId": "char_1024_hbisc2",
+        "scCharName": "子月",
+        "charId": "char_4014_lunacu",
         "rarity": 5,
         "isLimited": false,
         "isShop": false
@@ -10954,15 +10954,15 @@
         "isShop": false
       },
       {
-        "scCharName": "小满",
-        "charId": "char_4122_grabds",
+        "scCharName": "烈夏",
+        "charId": "char_194_leto",
         "rarity": 5,
         "isLimited": false,
         "isShop": false
       },
       {
-        "scCharName": "烈夏",
-        "charId": "char_194_leto",
+        "scCharName": "小满",
+        "charId": "char_4122_grabds",
         "rarity": 5,
         "isLimited": false,
         "isShop": false

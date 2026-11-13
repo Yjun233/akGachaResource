@@ -16,17 +16,20 @@
  *    ⚠️ 站点侧所有渲染（卡池列表两列、复制文本、跨服弹窗）本来就按星级分组，
  *       所以这条只影响 JSON 自身的阅读顺序，不改任何显示。
  *
- * 📌 为什么「首发」不用「去找同系列首发池」来判：
- *   复刻池的名单**会换人**（实测 27 个复刻/返场池与首发池名单不同，比如「永不落幕·复刻」
- *   把衡沙换成了阿兰娜），而且历史上同一个系列的池名有 `·复刻` / ` 复刻` / `:暴躁铁皮` 三种写法，
- *   按名字归组会静默漏掉 21 个。所以改用一条不依赖名字、也不会看错的判据：
+ * 📌 「首发」怎么判（2026-11-13 修正）：
+ *   ① **首发池**（同系列里开始日最早的那期）：本池里实装最晚的那批 = 当期新登场的干员。
+ *   ② **复刻 / 返场池**：**沿用首发池的首发组**（按 charId 认人），不再自己算「本池最晚那批」。
  *
- *   > **本池里实装最晚的那批 = 该系列首发时的新干员。**（首发池：新干员实装日 == 池开始日，
- *   > 天然是最晚的；复刻池：陪跑的都是老干员，也天然早于当初的首发干员。）
+ *   ⚠️ 原判据（所有池一律取「本池实装最晚的那批」）在繁中服翻车：用户 2026-11-13 报
+ *      「未致蒙尘·复刻」的五星顺序不对 —— 该池陪跑是「寻澜」（2025-01-22 实装），
+ *      比首发五星「波卜」（2024-10-09）还晚，于是寻澜被当成首发排到波卜前面。
+ *      实测三服共 **7 个复刻池**都受影响（不协和音程 复刻 ×3、游邦者·复刻、沉向深渊的锚·复刻、
+ *      如死亦终·复刻、未致蒙尘·复刻），原理相同：**复刻池的陪跑可能比原首发干员更新**。
  *
- *   唯一「都算首发」的边界是**开服那批池子**（银灰色的荣耀 / 龙门特别行动专员寻访 / 火舞之人）——
- *   里面全是 2019-04-30 同一天实装的开服干员，没有新老之分，于是整池归首发组、
- *   组内自然退化成「按 charId 数字」（6★ 的 charId 恰好更小，银灰仍在最前）。
+ *   当年不敢按名字归组，是怕「复刻池换人 + 池名三种写法」；现在三服的 `scName` 都已统一反查成
+ *   国服名，去掉后缀（`\s*[·:：]?\s*(复刻|返场)$`）就能稳定配对：
+ *   `未致蒙尘` / `未致蒙尘·复刻`、`不羁逆流` / `不羁逆流 返场`、`燃钢之心:暴躁铁皮` / `… 返场`。
+ *   复刻池若一个首发干员都没有（整池换人）→ 交集为空 → 退回纯日期序，不会排错。
  */
 
 /** 只有这三类按 `isLimited` 分组（实测限定干员全是六星，28 条无一例外） */
@@ -34,6 +37,12 @@ export const LIMITED_TYPES = new Set(['limcel', 'limspr', 'limsum']);
 
 /** 只有这两类按「是不是本系列首发的新干员」分组 */
 export const SERIES_TYPES = new Set(['single', 'five']);
+
+/** 复刻 / 返场池名的后缀：`未致蒙尘·复刻`、`不羁逆流 返场` 都去掉 */
+const SERIES_SUFFIX = /\s*[·:：]?\s*(复刻|返场)$/;
+
+/** `未致蒙尘·复刻` → `未致蒙尘`（**只用于找同系列首发池**，不要拿它当展示名） */
+export const seriesKeyOf = (name) => String(name ?? '').replace(SERIES_SUFFIX, '').trim();
 
 /** `char_4247_oxi` → 4247；认不出（null / 怪格式）→ null */
 export const charIdNumber = (charId) => {
@@ -66,9 +75,12 @@ const byDateAsc = (a, b) => {
  * @param {(op:object)=>string|null} [ctx.releaseOf] 取该干员的**实装日**（`YYYY-MM-DD`）；
  *        三服都用**国服实装日**（`scReleaseDate`）—— 实装先后是游戏设定，三服一致，
  *        用同一个来源才能让三服同一期排出同一个顺序。
+ * @param {Set<string>|string[]} [ctx.firstRunIds] 直接指定「首发组」（charId）。
+ *        **复刻 / 返场池要用同系列首发池的那批人**（见 `resortSeriesBanners()`）；
+ *        不传则退回「本池实装最晚的那批」——那只对**首发池**成立。
  * @returns {Array<object>} 新数组
  */
-export function sortUpOperators(ops, { type, releaseOf } = {}) {
+export function sortUpOperators(ops, { type, releaseOf, firstRunIds } = {}) {
   const list = Array.isArray(ops) ? ops : [];
   if (list.length < 2) return list.slice();
 
@@ -83,9 +95,15 @@ export function sortUpOperators(ops, { type, releaseOf } = {}) {
     rel.set(op, d);
   }
 
-  /* 单六 / 双五：先定出「首发组」= 本池里实装最晚的那批 */
   let firstRun = null;
-  if (SERIES_TYPES.has(type)) {
+  if (firstRunIds) {
+    /* 调用方已经定好首发组（复刻池沿用首发池）—— 按 charId 认人；
+       一个都对不上（整池换人）就置 null，退回纯日期序，别硬套。 */
+    const ids = firstRunIds instanceof Set ? firstRunIds : new Set(firstRunIds);
+    const hit = list.filter((op) => op.charId && ids.has(op.charId));
+    firstRun = hit.length ? new Set(hit) : null;
+  } else if (SERIES_TYPES.has(type)) {
+    /* 只有「首发池」才适用：本池里实装最晚的那批 = 当期新登场的干员 */
     let latest = null;
     for (const d of rel.values()) if (d && (!latest || d > latest)) latest = d;
     firstRun = new Set(latest ? list.filter((op) => rel.get(op) === latest) : list);
@@ -112,4 +130,66 @@ export function sortUpOperators(ops, { type, releaseOf } = {}) {
     /* 兜底：charId 都认不出（不该发生）时按名字，保证结果稳定可复现 */
     return String(a.scCharName ?? '').localeCompare(String(b.scCharName ?? ''));
   });
+}
+
+/** 某一期（**必须是首发池**）的首发组 charId —— 口径与 `sortUpOperators` 内部那条完全一致 */
+function firstRunIdsOf(ops, releaseOf) {
+  const list = Array.isArray(ops) ? ops : [];
+  const rel = new Map();
+  for (const op of list) {
+    if (!op.charId) continue;
+    let d = null;
+    try {
+      d = releaseOf ? releaseOf(op) || null : null;
+    } catch {
+      d = null;
+    }
+    rel.set(op, d);
+  }
+  let latest = null;
+  for (const d of rel.values()) if (d && (!latest || d > latest)) latest = d;
+  const out = new Set();
+  if (!latest) return out;
+  for (const op of list) if (op.charId && rel.get(op) === latest) out.add(op.charId);
+  return out;
+}
+
+/**
+ * 对**一整份 banners** 做一次「复刻池首发组归位」的重排（原地改写 `upOperators`）。
+ *
+ * 为什么要单独一趟：排序发生在逐池构建的那一刻，那时还看不到同系列的首发池。
+ * 三服脚本都是「先按原口径排一遍 → 数据齐了再调本函数精修」，调用点在写盘之前。
+ *
+ * @param {object|Array<object>} banners  对象（id → banner）或数组；每项要有
+ *        `{ type, startDate, upOperators, scName|name }`
+ * @param {object} ctx
+ * @param {(op:object)=>string|null} [ctx.releaseOf] 同 `sortUpOperators`
+ * @returns {number} 实际改了顺序的池数（给日志看）
+ */
+export function resortSeriesBanners(banners, { releaseOf } = {}) {
+  const list = Array.isArray(banners) ? banners : Object.values(banners || {});
+  const groups = new Map();
+  for (const b of list) {
+    if (!b || !SERIES_TYPES.has(b.type)) continue;
+    const key = seriesKeyOf(b.scName ?? b.name);
+    if (!key) continue;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(b);
+  }
+
+  let changed = 0;
+  for (const series of groups.values()) {
+    if (series.length < 2) continue;
+    /* 同系列按开始日升序：第一期是首发池，复刻 / 返场必然排在它后面 */
+    series.sort((a, b) => String(a.startDate).localeCompare(String(b.startDate)));
+    const firstRunIds = firstRunIdsOf(series[0].upOperators, releaseOf);
+    if (!firstRunIds.size) continue;
+    for (let i = 1; i < series.length; i += 1) {
+      const b = series[i];
+      const before = b.upOperators.map((o) => o.charId).join('|');
+      b.upOperators = sortUpOperators(b.upOperators, { type: b.type, releaseOf, firstRunIds });
+      if (b.upOperators.map((o) => o.charId).join('|') !== before) changed += 1;
+    }
+  }
+  return changed;
 }

@@ -7458,15 +7458,15 @@
         "isShop": false
       },
       {
-        "scCharName": "子月",
-        "charId": "char_4014_lunacu",
+        "scCharName": "濯尘芙蓉",
+        "charId": "char_1024_hbisc2",
         "rarity": 5,
         "isLimited": false,
         "isShop": false
       },
       {
-        "scCharName": "濯尘芙蓉",
-        "charId": "char_1024_hbisc2",
+        "scCharName": "子月",
+        "charId": "char_4014_lunacu",
         "rarity": 5,
         "isLimited": false,
         "isShop": false
@@ -10912,15 +10912,15 @@
         "isShop": false
       },
       {
-        "scCharName": "历阵锐枪芬",
-        "charId": "char_1036_fang2",
+        "scCharName": "阿罗玛",
+        "charId": "char_446_aroma",
         "rarity": 5,
         "isLimited": false,
         "isShop": false
       },
       {
-        "scCharName": "阿罗玛",
-        "charId": "char_446_aroma",
+        "scCharName": "历阵锐枪芬",
+        "charId": "char_1036_fang2",
         "rarity": 5,
         "isLimited": false,
         "isShop": false
@@ -11668,15 +11668,15 @@
         "isShop": false
       },
       {
-        "scCharName": "寻澜",
-        "charId": "char_4052_surfer",
+        "scCharName": "波卜",
+        "charId": "char_487_bobb",
         "rarity": 5,
         "isLimited": false,
         "isShop": false
       },
       {
-        "scCharName": "波卜",
-        "charId": "char_487_bobb",
+        "scCharName": "寻澜",
+        "charId": "char_4052_surfer",
         "rarity": 5,
         "isLimited": false,
         "isShop": false

@@ -76,7 +76,7 @@ import { fileURLToPath } from 'node:url';
 import { pinyin } from 'pinyin-pro';
 import { metaStable, orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
-import { sortUpOperators } from './lib/banner-ops.mjs';
+import { resortSeriesBanners, sortUpOperators } from './lib/banner-ops.mjs';
 import { buildAlterMap, loadCharInfo, loadNames, loadSpCharGroups, professionLabel } from './lib/gamedata.mjs';
 import { loadActivityTables, resolveOperatorActivities, canRerunOf, rerunKindOf } from './lib/op-activity.mjs';
 import { fetchWikiOperatorMap } from './lib/wiki-gg.mjs';
@@ -1095,6 +1095,12 @@ async function main() {
     };
   }
   console.log(`· 卡池 ${Object.keys(banners).length} 个（剔除 4★ 记录 ${dropped} 条）`);
+  /* 复刻 / 返场池的「首发组」要沿用同系列首发池（2026-11-13，见 lib/banner-ops.mjs 文件头）——
+     逐池排序那一刻还看不到别的池，所以整套数据齐了再精修一遍。 */
+  const resorted = resortSeriesBanners(banners, {
+    releaseOf: (o) => opByScName.get(o.scCharName)?.scReleaseDate ?? null,
+  });
+  if (resorted) console.log(`  复刻池首发组归位：调整了 ${resorted} 个池的干员顺序`);
   if (droppedNames.length) {
     console.log(`  被剔除的 4★（含 obtainMethod，用于核对筛选口径）: `
       + droppedNames.slice(0, 30).join('、'));
