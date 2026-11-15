@@ -40,11 +40,22 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import './lib/http.mjs';
+import { loadTable } from './lib/gamedata.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data');
 const DRY = process.argv.includes('--dry');
+
+/* 解包商店表的来源（只为「特典皮肤的上架窗口」用）。
+   ⚠️ 本机 `raw.githubusercontent.com` 会被 HTTP_PROXY 挡（CONNECT tunnel 502），本地跑二选一：
+      · `--local <解包仓库副本>`，或
+      · `GAMEDATA_BASE=https://cdn.jsdelivr.net/gh/ArknightsAssets/ArknightsGamedata@master`
+   走 jsDelivr 的坑见 `lib/gamedata.mjs` 文件头。CI 里 raw 直连正常，不用管。 */
+const GAMEDATA_LOCAL = (() => {
+  const i = process.argv.indexOf('--local');
+  return i > 0 && process.argv[i + 1] ? process.argv[i + 1] : null;
+})();
 
 /* 「合作款」在 PRTS 里是**时装回廊下的一个系列页**（不是从「时装组名称」派生的分类）。
    实测：25 个系列页互不重叠（合计 520 套、无一套出现在两页）→ 按「皮肤所在页面」判定无歧义。
@@ -53,14 +64,11 @@ const DRY = process.argv.includes('--dry');
 const CROSSOVER_PAGE = '时装回廊/合作款';
 
 /* 「特典获得」的皮肤（动画 / 音律联觉组合包的赠品）在 `{{干员时装}}` 里**没有 `限时时间` 字段**，
-   时间写在组合包那一侧：
-     {{充值组合包/限时|名称=焰烬曙明组合包|期间=2025/09/25 16:00 → 2025/11/06 03:59
-                      |内容={{皮肤头像|凯尔希|45px|2}} …}}
-   这一页（采购中心/组合包）就含**全部 509 个**限时包（151 KB），所以只抓它，不用逐页枚举。
-   ⚠️ 反查手段（2026-11-15 用过）：`action=query&list=embeddedin&eititle=Template:充值组合包/限时`
-      —— 共 10 个页面，其余是动画页 / 音律联觉页，内容都在这一页里。
-   ⚠️ `insource:` 搜索在 PRTS 上不起作用（返回 0 条），别指望它。 */
-const COMBO_PAGE = '采购中心/组合包';
+   而解包 `skin_table.json` 里它们的 `displaySkin.getTime` 也全是 `0`（官方就没给上架时间）。
+   时间只存在于**解包商店表** `shop_client_table.json` 的 `recommendList[].startDatetime/endDatetime`
+   （按 `tagName` = 礼包名认），见下面 `COMBO_SKIN_MAP` 那段。
+   ⚠️ 2026-11-15 之前这里是抓 PRTS 的 `采购中心/组合包`（`{{充值组合包/限时}}`）——
+      那张表会**漏场次**（冬隐归路 / 变格形象各少一场），已换成解包。 */
 
 const API = 'https://prts.wiki/api.php';
 const HEADERS = {
@@ -230,70 +238,68 @@ function toShelfEntry(skinName, kind, seq, w) {
   return item;
 }
 
-/* ------------------------------------------------- 组合包 → 特典皮肤的上架窗口 */
+/* ------------------------------------------- 特典皮肤：从解包商店表补上架窗口 */
 
-/** `期间` 字段 → 多个窗口（实测有 `<br>` 串两段的情况，如「黎明前奏组合包」2023 / 2024 两轮） */
-function parseComboPeriods(value) {
-  const v = stripRef(String(value || ''));
-  if (!v.trim()) return [];
-  const out = [];
-  for (const seg of v.split(/<br\s*\/?>|\n/)) {
-    const dates = [...seg.replace(/\{\{[^}]*\}\}/g, ' ').matchAll(DATE_RE)]
-      .map((m) => `${m[1]}-${pad2(m[2])}-${pad2(m[3])}`);
-    if (dates.length < 2 || dates[1] < dates[0]) continue;
-    out.push({ start: dates[0], end: dates[1] });
-  }
-  return out;
+/**
+ * 「限时组合包」→ 本仓数据里的皮肤（`干员名/皮肤序号`）。
+ *
+ * ⚠️ **解包能给礼包的全部场次，但给不出「礼包里含哪些皮肤」** ——
+ *   `shop_client_table.json` 的推荐位只有 `tagName` + `param1=GP_Once_xxx`（礼包 id），
+ *   `skinId` 是空串；礼包明细在**服务端**表里，公开解包（58 张 excel）没有；
+ *   `item_table.json` 里也搜不到。所以这一层只能人工维护。
+ *
+ * 怎么维护：套用新特典皮肤时在这里加一行。**忘了加不会被静默吞掉** ——
+ * 报告末尾会打印「补完仍然没有任何上架窗口：xxx」，点名到皮肤。
+ * 礼包名就是 `shop_client_table.json` 里 `recommendList[].tagName`（= 游戏内礼包名）。
+ */
+const COMBO_SKIN_MAP = {
+  焰烬曙明组合包: '凯尔希/2',
+  冬隐归路组合包: '陈/2',
+  黎明前奏组合包: '能天使/3',
+  变格形象组合包: '维什戴尔/2',
+};
+
+/** 解包时间戳是 **UTC 秒** → 北京时间日期（`1758787200` = 2025-09-25 16:00 北京） */
+function tsToDate(ts) {
+  const n = Number(ts);
+  if (!Number.isFinite(n) || n <= 0) return null;
+  return new Date((n + 8 * 3600) * 1000).toISOString().slice(0, 10);
 }
 
 /**
- * `内容` 里的 `{{皮肤头像|凯尔希|45px|2}}` → `[{ op: '凯尔希', idx: 2 }]`。
- * 参数顺序实测 = 「干员 / 尺寸 / 皮肤序号」，序号可缺省（= 1）。
- * ⚠️ 尺寸是 `45px`（带 px），别把纯数字误当序号 —— 所以只认 `^\d+$` 且先跳过 `\d+px`。
+ * 读解包商店表，把「限时组合包」的每一场（首发 + 复刻）映射到皮肤 → Map「干员名/序号」→ 窗口[]。
+ *
+ * 📌 为什么用解包而不是 PRTS 的 `采购中心/组合包`（2026-11-15 换）：
+ *   - 时间更全：解包里「冬隐归路组合包」「变格形象组合包」各有 **2 场**，PRTS 那张表各只写了 1 场；
+ *   - 与 PRTS 的时间逐条吻合（1758787200 → 2025-09-25 16:00，与 wiki 的 `2025/09/25 16:00` 一致）；
+ *   - 少抓一张 151 KB 的页面。
+ *   代价就是上面那张要人工维护的映射表。
+ *
+ * ⚠️ 读不到表时**只告警、不失败** —— 特典皮肤会退化成「没有窗口」，其余数据照常产出。
  */
-function parseComboSkins(content) {
-  const out = [];
-  for (const m of String(content || '').matchAll(/\{\{皮肤头像\s*\|([^}]*)\}\}/g)) {
-    const parts = m[1].split('|').map((x) => x.trim());
-    const op = plain(parts[0]);
-    if (!op) continue;
-    let idx = null;
-    for (const p of parts.slice(1)) {
-      if (/^\d+px$/i.test(p)) continue;
-      if (/^\d+$/.test(p)) idx = Number(p);
-    }
-    out.push({ op, idx: idx || 1 });
-  }
-  return out;
-}
-
-/** 抓 `采购中心/组合包` → Map「干员名/皮肤序号」→ 窗口数组 */
 async function fetchComboWindows() {
-  console.log(`· 抓取限时组合包（${COMBO_PAGE}）里的特典皮肤窗口 ...`);
-  const text = await fetchWikitext(COMBO_PAGE);
-  const blocks = splitBlocks(text, '充值组合包/限时');
-  /* 兜底断言（同 `{{干员时装}}` 那条）：原文出现次数 vs 解析条数，切块写错立刻暴露 */
-  const appeared = (text.match(/\{\{充值组合包\/限时/g) || []).length;
-  if (appeared !== blocks.length) {
-    warn(`[组合包] 原文出现 ${appeared} 个 {{充值组合包/限时}}，只解析出 ${blocks.length} 个`);
-  }
+  console.log('· 读取解包商店表（shop_client_table.json）里的限时组合包 ...');
   const map = new Map();
-  let combos = 0;
-  for (const b of blocks) {
-    const p = parseParams(b);
-    const periods = parseComboPeriods(p['期间']);
-    if (!periods.length) continue;
-    const packs = parseComboSkins(p['内容']);
-    if (!packs.length) continue;
-    combos += 1;
-    const pkg = plain(p['名称'] || '') || null;
-    for (const { op, idx } of packs) {
-      const key = `${op}/${idx}`;
-      if (!map.has(key)) map.set(key, []);
-      for (const w of periods) map.get(key).push({ ...w, note: pkg });
-    }
+  let table;
+  try {
+    table = await loadTable('cn', 'shop_client_table.json', { local: GAMEDATA_LOCAL });
+  } catch (e) {
+    warn(`[组合包] 解包商店表读取失败（${e.message}）—— 特典皮肤将没有上架窗口`);
+    return map;
   }
-  console.log(`  → ${combos} 个组合包含皮肤，覆盖 ${map.size} 套`);
+  const rows = table.recommendList || [];
+  let combos = 0;
+  for (const r of rows) {
+    const key = COMBO_SKIN_MAP[r.tagName];
+    if (!key) continue;
+    const start = tsToDate(r.startDatetime);
+    const end = tsToDate(r.endDatetime);
+    if (!start || !end || end < start) continue;
+    combos += 1;
+    if (!map.has(key)) map.set(key, []);
+    map.get(key).push({ start, end, note: r.tagName });
+  }
+  console.log(`  → ${combos} 个组合包场次，覆盖 ${map.size} 套皮肤`);
   return map;
 }
 
@@ -338,7 +344,8 @@ async function main() {
   } while (cont.apcontinue);
   console.log(`· 时装回廊 ${pages.length} 个系列页`);
 
-  /* 「特典获得」的皮肤在 `{{干员时装}}` 里没有时间字段，得从限时组合包那边补（见 COMBO_PAGE） */
+  /* 「特典获得」的皮肤没有时间字段（PRTS 与解包皮肤表都没有），得从解包商店的限时组合包那边补
+     —— 见上面的 `COMBO_SKIN_MAP` / `fetchComboWindows()` */
   const comboWindows = await fetchComboWindows();
 
   const rawSkins = [];
