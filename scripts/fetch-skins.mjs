@@ -52,6 +52,16 @@ const DRY = process.argv.includes('--dry');
    ⚠️ 别改成按 series 白名单硬编码 —— 以后新增联动品牌就要改代码。 */
 const CROSSOVER_PAGE = '时装回廊/合作款';
 
+/* 「特典获得」的皮肤（动画 / 音律联觉组合包的赠品）在 `{{干员时装}}` 里**没有 `限时时间` 字段**，
+   时间写在组合包那一侧：
+     {{充值组合包/限时|名称=焰烬曙明组合包|期间=2025/09/25 16:00 → 2025/11/06 03:59
+                      |内容={{皮肤头像|凯尔希|45px|2}} …}}
+   这一页（采购中心/组合包）就含**全部 509 个**限时包（151 KB），所以只抓它，不用逐页枚举。
+   ⚠️ 反查手段（2026-11-15 用过）：`action=query&list=embeddedin&eititle=Template:充值组合包/限时`
+      —— 共 10 个页面，其余是动画页 / 音律联觉页，内容都在这一页里。
+   ⚠️ `insource:` 搜索在 PRTS 上不起作用（返回 0 条），别指望它。 */
+const COMBO_PAGE = '采购中心/组合包';
+
 const API = 'https://prts.wiki/api.php';
 const HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
@@ -138,8 +148,11 @@ const linkText = plain;
 function splitBlocks(text, tplName) {
   return String(text)
     .split(/\n\{\{/)
-    .filter((s) => s.startsWith(`${tplName}\n`) || s.startsWith(`${tplName}|`))
-    .map((s) => s.slice(tplName.length).replace(/\}\}\s*$/, '').replace(/^\n/, ''));
+    /* ⚠️ 模板名后面不一定是 `\n` 或 `|` —— 2026-11-15 实测 `采购中心/组合包` 里有 1 个是
+       `{{充值组合包/限时\t\n|名称=…`（**制表符**），只认 `\n`/`|` 会静默少解析 1 个包。
+       放宽成「模板名之后是空白或 `|`」，两边（干员时装 / 充值组合包）都受益。 */
+    .filter((s) => s.startsWith(tplName) && /^[\s|]/.test(s.slice(tplName.length)))
+    .map((s) => s.slice(tplName.length).replace(/\}\}\s*$/, '').replace(/^\s*\n/, ''));
 }
 
 /** 把 `|键 = 值` 行解析成对象 */
@@ -217,6 +230,73 @@ function toShelfEntry(skinName, kind, seq, w) {
   return item;
 }
 
+/* ------------------------------------------------- 组合包 → 特典皮肤的上架窗口 */
+
+/** `期间` 字段 → 多个窗口（实测有 `<br>` 串两段的情况，如「黎明前奏组合包」2023 / 2024 两轮） */
+function parseComboPeriods(value) {
+  const v = stripRef(String(value || ''));
+  if (!v.trim()) return [];
+  const out = [];
+  for (const seg of v.split(/<br\s*\/?>|\n/)) {
+    const dates = [...seg.replace(/\{\{[^}]*\}\}/g, ' ').matchAll(DATE_RE)]
+      .map((m) => `${m[1]}-${pad2(m[2])}-${pad2(m[3])}`);
+    if (dates.length < 2 || dates[1] < dates[0]) continue;
+    out.push({ start: dates[0], end: dates[1] });
+  }
+  return out;
+}
+
+/**
+ * `内容` 里的 `{{皮肤头像|凯尔希|45px|2}}` → `[{ op: '凯尔希', idx: 2 }]`。
+ * 参数顺序实测 = 「干员 / 尺寸 / 皮肤序号」，序号可缺省（= 1）。
+ * ⚠️ 尺寸是 `45px`（带 px），别把纯数字误当序号 —— 所以只认 `^\d+$` 且先跳过 `\d+px`。
+ */
+function parseComboSkins(content) {
+  const out = [];
+  for (const m of String(content || '').matchAll(/\{\{皮肤头像\s*\|([^}]*)\}\}/g)) {
+    const parts = m[1].split('|').map((x) => x.trim());
+    const op = plain(parts[0]);
+    if (!op) continue;
+    let idx = null;
+    for (const p of parts.slice(1)) {
+      if (/^\d+px$/i.test(p)) continue;
+      if (/^\d+$/.test(p)) idx = Number(p);
+    }
+    out.push({ op, idx: idx || 1 });
+  }
+  return out;
+}
+
+/** 抓 `采购中心/组合包` → Map「干员名/皮肤序号」→ 窗口数组 */
+async function fetchComboWindows() {
+  console.log(`· 抓取限时组合包（${COMBO_PAGE}）里的特典皮肤窗口 ...`);
+  const text = await fetchWikitext(COMBO_PAGE);
+  const blocks = splitBlocks(text, '充值组合包/限时');
+  /* 兜底断言（同 `{{干员时装}}` 那条）：原文出现次数 vs 解析条数，切块写错立刻暴露 */
+  const appeared = (text.match(/\{\{充值组合包\/限时/g) || []).length;
+  if (appeared !== blocks.length) {
+    warn(`[组合包] 原文出现 ${appeared} 个 {{充值组合包/限时}}，只解析出 ${blocks.length} 个`);
+  }
+  const map = new Map();
+  let combos = 0;
+  for (const b of blocks) {
+    const p = parseParams(b);
+    const periods = parseComboPeriods(p['期间']);
+    if (!periods.length) continue;
+    const packs = parseComboSkins(p['内容']);
+    if (!packs.length) continue;
+    combos += 1;
+    const pkg = plain(p['名称'] || '') || null;
+    for (const { op, idx } of packs) {
+      const key = `${op}/${idx}`;
+      if (!map.has(key)) map.set(key, []);
+      for (const w of periods) map.get(key).push({ ...w, note: pkg });
+    }
+  }
+  console.log(`  → ${combos} 个组合包含皮肤，覆盖 ${map.size} 套`);
+  return map;
+}
+
 /* --------------------------------------------------- 「获得途径」归一化 */
 
 /**
@@ -258,6 +338,9 @@ async function main() {
   } while (cont.apcontinue);
   console.log(`· 时装回廊 ${pages.length} 个系列页`);
 
+  /* 「特典获得」的皮肤在 `{{干员时装}}` 里没有时间字段，得从限时组合包那边补（见 COMBO_PAGE） */
+  const comboWindows = await fetchComboWindows();
+
   const rawSkins = [];
   for (const page of pages) {
     const text = await fetchWikitext(page);
@@ -286,6 +369,10 @@ async function main() {
   const skins = [];
   const allKeptSkus = new Set();
   const siteKeptSkus = new Set();
+  /** 靠「限时组合包」补上窗口的皮肤（特典类），日志里列出来便于核对 */
+  const comboFilledSkus = [];
+  /** 补完之后仍然一个窗口都没有的（目前只剩不在采购中心里的组合包，如「绝对主角」） */
+  const noWindow = [];
   for (const p of rawSkins) {
     stat.total += 1;
     const name = plain(p['干员名']);
@@ -323,6 +410,25 @@ async function main() {
     if (keptHere) { allKeptSkus.add(sku); if (isSite) siteKeptSkus.add(sku); }
     if (!isSite) continue; // 口径 1：只落盘本站干员
     onShelf.sort((a, b) => (a.start < b.start ? -1 : a.start > b.start ? 1 : 0));
+
+    /* 一个窗口都没有的皮肤（全部是「特典获得」）：用组合包在售期间补上。
+       ⚠️ **只补空的那种** —— 已有窗口的皮肤不掺和，免得同一段在售期被记两遍
+       （礼包与商店窗口可能重叠），也让改动面停在「本来就没数据」的那几套上。
+       这批窗口对站点只用于「皮肤 × 卡池窗口是否有交集」的判断（`upHistory.js` 不看 kind），
+       所以标 `kind: '特典'` 不会影响任何渲染。 */
+    if (!onShelf.length) {
+      const key = `${name}/${Number(p['皮肤序号']) || 1}`;
+      const extra = comboWindows.get(key);
+      if (extra && extra.length) {
+        for (const w of extra) {
+          onShelf.push({ kind: '特典', start: w.start, end: w.end, note: w.note, longTime: false });
+        }
+        onShelf.sort((a, b) => (a.start < b.start ? -1 : a.start > b.start ? 1 : 0));
+        comboFilledSkus.push(sku);
+      } else {
+        noWindow.push(sku);
+      }
+    }
     const { obtain, obtainRaw } = normalizeObtain(p['获得途径']);
     const group = plain(p['时装组名称']) || null;
     const priceNum = Number((/^(\d+)/.exec(plain(p['价格'])) || [])[1]);
@@ -361,6 +467,12 @@ async function main() {
   console.log(`  └ 只留本站干员：从 ${stat.total} 套筛出 ${skins.length} 套（其中 ${siteKeptSkus.size} 套有≥1 个窗口）/ 保留 ${stat.site.kept} 个窗口`);
   console.log(`  其中 longTime（end = start + 14）：${longCount}`);
   console.log(`  其中「合作款」（联动皮肤）：${skins.filter((s) => s.isCrossover).length} 套`);
+  if (comboFilledSkus.length) {
+    console.log(`  其中靠「限时组合包」补上窗口的特典皮肤 ${comboFilledSkus.length} 套：${comboFilledSkus.join('、')}`);
+  }
+  if (noWindow.length) {
+    console.log(`  ⚠ 补完仍然没有任何上架窗口：${noWindow.length} 套 —— ${noWindow.join('、')}`);
+  }
   console.log(`  获取途径分布（按主类别）：${JSON.stringify(obtainDist)}`);
 
   if (DRY) {
