@@ -327,6 +327,8 @@ async function main() {
   if (DO_EXTRAS) console.log(`operators.json：${OP_INDEX.names.size} 位（extras 只收这些干员）`);
 
   let problems = 0;
+  /** 国服 `uniequip_table.json` 的缓存（en / tc 的模组 `type` 也从它取，只读一次） */
+  let cnUeCache = null;
   for (const server of SERVERS) {
     const dir = SERVER_DIR[server];
     const file = path.join(DATA, `banners_cla_${server}.json`);
@@ -387,9 +389,14 @@ async function main() {
     if (DO_EXTRAS) {
       const names = await nameOf();
       const ue = await loadTable(dir, 'uniequip_table.json', { local: LOCAL });
+      /* 模组的 `type`（解包 `typeName2`）**统一按国服表取** —— 2026-11-15 实测三服同一
+         `uniEquipId` 的取值 0 处不同。但 `date` / `name` / `seq` 仍用**本服**表：
+         三服推出日不同（474 条全不同），且 en / tw 比国服少 31 个模组。
+         `cnUeCache` 在 server 循环外，en → tc 只多读一次。 */
+      if (!cnUeCache) cnUeCache = dir === 'cn' ? ue : await loadTable('cn', 'uniequip_table.json', { local: LOCAL });
       const hb = await loadTable(dir, 'handbook_info_table.json', { local: LOCAL });
       extras = {
-        modules: extractModules(ue, names, OP_INDEX.names),
+        modules: extractModules(ue, names, OP_INDEX.names, { typeSource: cnUeCache }),
         memoirs: extractMemoirs(hb, names, OP_INDEX.names, OP_INDEX.rarity),
       };
       /* ⚠️ **国服皮肤不在这条线上** —— 它由 `fetch-skins.mjs` 从 PRTS 抓（那里有真实的复刻 /

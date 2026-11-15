@@ -47,13 +47,26 @@ const byCharThen = (seqKey) => (a, b) =>
 
 /**
  * 模组 → `modules_<server>.json` 的 `modules[]`
- * @param {object} uniequip `uniequip_table.json`
+ * @param {object} uniequip `uniequip_table.json`（**本服**那份：`date` / `name` / 序号都要用它）
  * @param {Record<string,string>} nameOf charId → **中文名**（三服统一）
  * @param {Set<string>} opNames 口径白名单（`operators.json` 里的干员名）
+ * @param {{typeSource?: object}} [opts] `typeSource` = **国服**的 `uniequip_table.json`；
+ *        给了就按 `uniEquipId` 从它取 `type`（= `typeName2`）。
+ *        ⚠️ 为什么不直接用本服表：`typeName2` 是**代码**，2026-11-15 实测三服同一 id
+ *        **完全一致（0 处不同）**，所以统一按国服取，口径只有一处来源。
+ *        ⚠️ 但**不能连 `date` 一起用国服表**：三服推出日不同（实测 474 条日期全不同），
+ *        而且 en / tw 比国服少 31 个模组 —— 站点要靠「本服推出日 ∈ 卡池窗口」判断标记。
  */
-export function extractModules(uniequip, nameOf, opNames) {
+export function extractModules(uniequip, nameOf, opNames, { typeSource = null } = {}) {
   const dict = (uniequip && uniequip.equipDict) || {};
   const charEquip = (uniequip && uniequip.charEquip) || {};
+
+  /* `uniEquipId → typeName2`（默认取本服表；调用方给了国服表就用国服那份） */
+  const typeOf = new Map();
+  for (const e of Object.values((typeSource && typeSource.equipDict) || dict)) {
+    if (e && e.uniEquipId) typeOf.set(e.uniEquipId, e.typeName2 ?? null);
+  }
+
   const out = [];
   for (const [charId, ids] of Object.entries(charEquip)) {
     const char = nameOf[charId];
@@ -67,11 +80,12 @@ export function extractModules(uniequip, nameOf, opNames) {
       out.push({
         scCharName: char, charId, seq: i + 1,
         name: e.uniEquipName, date: unixDate(e.uniEquipGetTime),
-        /* 模组类型代号（`uniequip_table.json` 的 `typeName2`）：X / Y / D / A / B。
-           ⚠️ 是**代码不是文案**，三服一致（en 表里同样是 X/Y/A/D/B）。
-           含义见同表的 `equipTypeInfos`：X、Y、D 是普通模组，A、B 的 `isSpecial` 为 true（特殊模组）。
-           2026-11-15 用户要求加这个字段。 */
-        type: e.typeName2 ?? null,
+        /* 模组类型代号：X / Y / D / A / B（对照同表 `equipTypeInfos`：X、Y、D 是普通模组，
+           A、B 的 `isSpecial` 为 true）。国服表取不到时退回本服。 */
+        type: typeOf.get(e.uniEquipId) ?? e.typeName2 ?? null,
+        /* 解包的 `uniEquipId`（`uniequip_002_mgllan` 这种）—— 落盘时**改名叫 `moduleId`**，
+           避开解包那套 `uniEquip*` 前缀，跟本仓库的 `charId` / `skinIndex` 风格对齐 */
+        moduleId: e.uniEquipId ?? null,
       });
     });
   }

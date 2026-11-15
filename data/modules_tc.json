@@ -8,7 +8,8 @@
       "seq": 1,
       "name": "記憶存檔",
       "date": "2026-07-06",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_monstr"
     },
     {
       "scCharName": "W",
@@ -16,7 +17,8 @@
       "seq": 1,
       "name": "傭兵的行囊",
       "date": "2022-12-29",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_cqbw"
     },
     {
       "scCharName": "W",
@@ -24,7 +26,8 @@
       "seq": 2,
       "name": "刺棱鈍刃",
       "date": "2024-03-19",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_cqbw"
     },
     {
       "scCharName": "临光",
@@ -32,7 +35,8 @@
       "seq": 1,
       "name": "改良騎士盾牌",
       "date": "2023-03-28",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_nearl"
     },
     {
       "scCharName": "乌啾",
@@ -40,7 +44,8 @@
       "seq": 1,
       "name": "“睡前故事”",
       "date": "2026-10-08",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_turdus"
     },
     {
       "scCharName": "乌尔比安",
@@ -48,7 +53,8 @@
       "seq": 1,
       "name": "烏爾比安的衣櫥",
       "date": "2025-06-03",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_ulpia"
     },
     {
       "scCharName": "乌有",
@@ -56,7 +62,8 @@
       "seq": 1,
       "name": "“簷下聽雨”",
       "date": "2022-01-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_nothin"
     },
     {
       "scCharName": "仇白",
@@ -64,7 +71,8 @@
       "seq": 1,
       "name": "雪浸過的斗笠",
       "date": "2025-03-06",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_qiubai"
     },
     {
       "scCharName": "令",
@@ -72,7 +80,8 @@
       "seq": 1,
       "name": "詩短夢長",
       "date": "2022-01-25",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_ling"
     },
     {
       "scCharName": "伊内丝",
@@ -80,7 +89,8 @@
       "seq": 1,
       "name": "角部“護理”套組",
       "date": "2025-10-31",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_ines"
     },
     {
       "scCharName": "伊芙利特",
@@ -88,7 +98,8 @@
       "seq": 1,
       "name": "“同熔”",
       "date": "2023-12-12",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_ifrit"
     },
     {
       "scCharName": "伊芙利特",
@@ -96,7 +107,8 @@
       "seq": 2,
       "name": "“熱成形記憶”",
       "date": "2025-03-31",
-      "type": "D"
+      "type": "D",
+      "moduleId": "uniequip_003_ifrit"
     },
     {
       "scCharName": "但书",
@@ -104,7 +116,8 @@
       "seq": 1,
       "name": "黛絲特的畢業禮",
       "date": "2023-05-16",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_provs"
     },
     {
       "scCharName": "余",
@@ -112,7 +125,8 @@
       "seq": 1,
       "name": "人間百味",
       "date": "2026-08-18",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_yu"
     },
     {
       "scCharName": "佩佩",
@@ -120,7 +134,8 @@
       "seq": 1,
       "name": "晴雨",
       "date": "2025-09-16",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_pepe"
     },
     {
       "scCharName": "佩佩",
@@ -128,7 +143,8 @@
       "seq": 2,
       "name": "佩佩特限證章",
       "date": "2026-02-26",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_003_pepe"
     },
     {
       "scCharName": "假日威龙陈",
@@ -136,7 +152,8 @@
       "seq": 1,
       "name": "沙灘戰鬥套裝",
       "date": "2025-05-15",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_chen2"
     },
     {
       "scCharName": "假日威龙陈",
@@ -144,7 +161,8 @@
       "seq": 2,
       "name": "假期的最後一天",
       "date": "2026-02-26",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_chen2"
     },
     {
       "scCharName": "傀影",
@@ -152,7 +170,8 @@
       "seq": 1,
       "name": "克里斯汀小姐的毛氈",
       "date": "2021-11-01",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_phatom"
     },
     {
       "scCharName": "傀影",
@@ -160,7 +179,8 @@
       "seq": 2,
       "name": "“如影隨形”",
       "date": "2024-06-13",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_phatom"
     },
     {
       "scCharName": "傀影",
@@ -168,7 +188,8 @@
       "seq": 3,
       "name": "傀影特限證章",
       "date": "2025-04-24",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_phatom"
     },
     {
       "scCharName": "凛冬",
@@ -176,7 +197,8 @@
       "seq": 1,
       "name": "冬將軍的畢業禮物",
       "date": "2023-09-12",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_headbr"
     },
     {
       "scCharName": "凯尔希",
@@ -184,7 +206,8 @@
       "seq": 1,
       "name": "Mon2tr",
       "date": "2023-07-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_kalts"
     },
     {
       "scCharName": "凯尔希",
@@ -192,7 +215,8 @@
       "seq": 2,
       "name": "醫者",
       "date": "2024-03-19",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_kalts"
     },
     {
       "scCharName": "凯尔希",
@@ -200,7 +224,8 @@
       "seq": 3,
       "name": "凱爾希特限證章",
       "date": "2025-04-24",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_kalts"
     },
     {
       "scCharName": "初雪",
@@ -208,7 +233,8 @@
       "seq": 1,
       "name": "“續針”",
       "date": "2024-03-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_slbell"
     },
     {
       "scCharName": "刺玫",
@@ -216,7 +242,8 @@
       "seq": 1,
       "name": "碎片",
       "date": "2024-10-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_vendla"
     },
     {
       "scCharName": "刻俄柏",
@@ -224,7 +251,8 @@
       "seq": 1,
       "name": "“很乾的麵包”",
       "date": "2023-11-21",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_cerber"
     },
     {
       "scCharName": "刻俄柏",
@@ -232,7 +260,8 @@
       "seq": 2,
       "name": "“我打的刀”",
       "date": "2024-02-22",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_cerber"
     },
     {
       "scCharName": "华法琳",
@@ -240,7 +269,8 @@
       "seq": 1,
       "name": "應急儲備",
       "date": "2023-07-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_bldsk"
     },
     {
       "scCharName": "卡夫卡",
@@ -248,7 +278,8 @@
       "seq": 1,
       "name": "魔方掛墜",
       "date": "2021-11-01",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_kafka"
     },
     {
       "scCharName": "卡涅利安",
@@ -256,7 +287,8 @@
       "seq": 1,
       "name": "風信子與匕首",
       "date": "2024-02-22",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_billro"
     },
     {
       "scCharName": "卡涅利安",
@@ -264,7 +296,8 @@
       "seq": 2,
       "name": "鄉音",
       "date": "2024-10-31",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_billro"
     },
     {
       "scCharName": "历阵锐枪芬",
@@ -272,7 +305,8 @@
       "seq": 1,
       "name": "一往無前",
       "date": "2025-03-06",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_fang2"
     },
     {
       "scCharName": "可露希尔",
@@ -280,7 +314,8 @@
       "seq": 1,
       "name": "給自己的小獎杯",
       "date": "2026-11-02",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_closur"
     },
     {
       "scCharName": "可颂",
@@ -288,7 +323,8 @@
       "seq": 1,
       "name": "作戰靴",
       "date": "2023-05-16",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_moeshd"
     },
     {
       "scCharName": "史尔特尔",
@@ -296,7 +332,8 @@
       "seq": 1,
       "name": "薩米的不滅心臟碎片",
       "date": "2025-08-11",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_surtr"
     },
     {
       "scCharName": "史尔特尔",
@@ -304,7 +341,8 @@
       "seq": 2,
       "name": "旅遊必需品",
       "date": "2026-10-08",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_surtr"
     },
     {
       "scCharName": "号角",
@@ -312,7 +350,8 @@
       "seq": 1,
       "name": "“典範之人”",
       "date": "2024-09-05",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_horn"
     },
     {
       "scCharName": "号角",
@@ -320,7 +359,8 @@
       "seq": 2,
       "name": "舊日新裝",
       "date": "2025-07-18",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_horn"
     },
     {
       "scCharName": "司霆惊蛰",
@@ -328,7 +368,8 @@
       "seq": 1,
       "name": "“一念”",
       "date": "2026-01-26",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_leizi2"
     },
     {
       "scCharName": "吉星",
@@ -336,7 +377,8 @@
       "seq": 1,
       "name": "可疑的宣傳頁",
       "date": "2026-02-26",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_kichi"
     },
     {
       "scCharName": "吽",
@@ -344,7 +386,8 @@
       "seq": 1,
       "name": "八點檔情景劇錄影帶",
       "date": "2023-03-28",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_hmau"
     },
     {
       "scCharName": "和弦",
@@ -352,7 +395,8 @@
       "seq": 1,
       "name": "情報人員資料夾",
       "date": "2023-10-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_hamoni"
     },
     {
       "scCharName": "响石",
@@ -360,7 +404,8 @@
       "seq": 1,
       "name": "“降落傘”",
       "date": "2026-08-18",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_cairn"
     },
     {
       "scCharName": "四月",
@@ -368,7 +413,8 @@
       "seq": 1,
       "name": "高保真通訊耳機",
       "date": "2023-04-13",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_aprl"
     },
     {
       "scCharName": "圣约送葬人",
@@ -376,7 +422,8 @@
       "seq": 1,
       "name": "待解答",
       "date": "2024-04-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_excu2"
     },
     {
       "scCharName": "圣约送葬人",
@@ -384,7 +431,8 @@
       "seq": 2,
       "name": "已知悉",
       "date": "2026-04-22",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_excu2"
     },
     {
       "scCharName": "圣聆初雪",
@@ -392,7 +440,8 @@
       "seq": 1,
       "name": "千分之一的心",
       "date": "2026-06-10",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_sbell2"
     },
     {
       "scCharName": "塑心",
@@ -400,7 +449,8 @@
       "seq": 1,
       "name": "強弱法",
       "date": "2025-06-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_cello"
     },
     {
       "scCharName": "塑心",
@@ -408,7 +458,8 @@
       "seq": 2,
       "name": "音樂家的旅程",
       "date": "2026-04-01",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_cello"
     },
     {
       "scCharName": "塞雷娅",
@@ -416,7 +467,8 @@
       "seq": 1,
       "name": "閒置的拳擊手套",
       "date": "2023-03-28",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_demkni"
     },
     {
       "scCharName": "塞雷娅",
@@ -424,7 +476,8 @@
       "seq": 2,
       "name": "科技新星",
       "date": "2023-11-21",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_demkni"
     },
     {
       "scCharName": "复奏",
@@ -432,7 +485,8 @@
       "seq": 1,
       "name": "“暮約”",
       "date": "2026-09-14",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_liesel"
     },
     {
       "scCharName": "夏栎",
@@ -440,7 +494,8 @@
       "seq": 1,
       "name": "鏽枝",
       "date": "2024-08-08",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_quercu"
     },
     {
       "scCharName": "夕",
@@ -448,7 +503,8 @@
       "seq": 1,
       "name": "無題長卷",
       "date": "2022-12-29",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_dusk"
     },
     {
       "scCharName": "夕",
@@ -456,7 +512,8 @@
       "seq": 2,
       "name": "“終夜無寐”",
       "date": "2023-07-27",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_dusk"
     },
     {
       "scCharName": "夕",
@@ -464,7 +521,8 @@
       "seq": 3,
       "name": "夕特限證章",
       "date": "2025-09-16",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_dusk"
     },
     {
       "scCharName": "多萝西",
@@ -472,7 +530,8 @@
       "seq": 1,
       "name": "童話書",
       "date": "2024-02-22",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_doroth"
     },
     {
       "scCharName": "多萝西",
@@ -480,7 +539,8 @@
       "seq": 2,
       "name": "夢中人",
       "date": "2025-12-29",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_doroth"
     },
     {
       "scCharName": "夜半",
@@ -488,7 +548,8 @@
       "seq": 1,
       "name": "星星與瞌睡蟲",
       "date": "2025-02-11",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_blkngt"
     },
     {
       "scCharName": "夜莺",
@@ -496,7 +557,8 @@
       "seq": 1,
       "name": "“封閉的希望”",
       "date": "2021-09-17",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_cgbird"
     },
     {
       "scCharName": "夜莺",
@@ -504,7 +566,8 @@
       "seq": 2,
       "name": "“鶯歌”",
       "date": "2025-04-24",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_cgbird"
     },
     {
       "scCharName": "夜魔",
@@ -512,7 +575,8 @@
       "seq": 1,
       "name": "“兩生花”",
       "date": "2023-11-21",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_nightm"
     },
     {
       "scCharName": "天火",
@@ -520,7 +584,8 @@
       "seq": 1,
       "name": "阻燃處理方案",
       "date": "2022-12-29",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_skfire"
     },
     {
       "scCharName": "奥斯塔",
@@ -528,7 +593,8 @@
       "seq": 1,
       "name": "逃亡路上的緊急小包",
       "date": "2025-05-15",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_aosta"
     },
     {
       "scCharName": "妮芙",
@@ -536,7 +602,8 @@
       "seq": 1,
       "name": "心聲",
       "date": "2026-02-26",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_nymph"
     },
     {
       "scCharName": "妮芙",
@@ -544,7 +611,8 @@
       "seq": 2,
       "name": "煩惱問診匣",
       "date": "2026-10-08",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_nymph"
     },
     {
       "scCharName": "娜仁图亚",
@@ -552,7 +620,8 @@
       "seq": 1,
       "name": "“吹盡狂沙”",
       "date": "2026-04-22",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_narant"
     },
     {
       "scCharName": "娜斯提",
@@ -560,7 +629,8 @@
       "seq": 1,
       "name": "工程師們",
       "date": "2026-07-06",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_nasti"
     },
     {
       "scCharName": "子月",
@@ -568,7 +638,8 @@
       "seq": 1,
       "name": "“移動的窩”",
       "date": "2023-09-12",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_lunacu"
     },
     {
       "scCharName": "守林人",
@@ -576,7 +647,8 @@
       "seq": 1,
       "name": "野戰狙擊套裝",
       "date": "2021-09-17",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_milu"
     },
     {
       "scCharName": "安哲拉",
@@ -584,7 +656,8 @@
       "seq": 1,
       "name": "槍支調試工具組",
       "date": "2021-09-17",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_cuttle"
     },
     {
       "scCharName": "安洁莉娜",
@@ -592,7 +665,8 @@
       "seq": 1,
       "name": "重力校準模組",
       "date": "2023-01-17",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_aglina"
     },
     {
       "scCharName": "安洁莉娜",
@@ -600,7 +674,8 @@
       "seq": 2,
       "name": "實驗用反重力模組",
       "date": "2023-07-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_aglina"
     },
     {
       "scCharName": "安洁莉娜",
@@ -608,7 +683,8 @@
       "seq": 3,
       "name": "安潔莉娜特限證章",
       "date": "2025-06-27",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_aglina"
     },
     {
       "scCharName": "寒檀",
@@ -616,7 +692,8 @@
       "seq": 1,
       "name": "“冰焰”",
       "date": "2024-06-13",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_sntlla"
     },
     {
       "scCharName": "寻澜",
@@ -624,7 +701,8 @@
       "seq": 1,
       "name": "佳餚",
       "date": "2025-10-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_surfer"
     },
     {
       "scCharName": "小满",
@@ -632,7 +710,8 @@
       "seq": 1,
       "name": "在田野上",
       "date": "2025-01-20",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_grabds"
     },
     {
       "scCharName": "山",
@@ -640,7 +719,8 @@
       "seq": 1,
       "name": "“自由的代價”",
       "date": "2025-01-20",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_f12yin"
     },
     {
       "scCharName": "山",
@@ -648,7 +728,8 @@
       "seq": 2,
       "name": "“夜深人靜”",
       "date": "2025-12-29",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_f12yin"
     },
     {
       "scCharName": "崖心",
@@ -656,7 +737,8 @@
       "seq": 1,
       "name": "“凌絕頂”",
       "date": "2023-06-20",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_slchan"
     },
     {
       "scCharName": "嵯峨",
@@ -664,7 +746,8 @@
       "seq": 1,
       "name": "身向雲泥",
       "date": "2023-09-12",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_saga"
     },
     {
       "scCharName": "嵯峨",
@@ -672,7 +755,8 @@
       "seq": 2,
       "name": "何處尋馱？",
       "date": "2024-08-08",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_saga"
     },
     {
       "scCharName": "左乐",
@@ -680,7 +764,8 @@
       "seq": 1,
       "name": "“豈苦夜長”",
       "date": "2025-01-20",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_zuole"
     },
     {
       "scCharName": "左乐",
@@ -688,7 +773,8 @@
       "seq": 2,
       "name": "秉燭人的記錄",
       "date": "2025-09-16",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_zuole"
     },
     {
       "scCharName": "巫恋",
@@ -696,7 +782,8 @@
       "seq": 1,
       "name": "布藝蘋果",
       "date": "2024-03-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_vodfox"
     },
     {
       "scCharName": "布洛卡",
@@ -704,7 +791,8 @@
       "seq": 1,
       "name": "“兄弟”",
       "date": "2024-06-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_broca"
     },
     {
       "scCharName": "帕拉斯",
@@ -712,7 +800,8 @@
       "seq": 1,
       "name": "“故鄉的山岩”",
       "date": "2021-08-03",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_pallas"
     },
     {
       "scCharName": "帕拉斯",
@@ -720,7 +809,8 @@
       "seq": 2,
       "name": "“赫里亞之輝”",
       "date": "2023-04-13",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_pallas"
     },
     {
       "scCharName": "年",
@@ -728,7 +818,8 @@
       "seq": 1,
       "name": "混沌陣列",
       "date": "2023-05-16",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_nian"
     },
     {
       "scCharName": "年",
@@ -736,7 +827,8 @@
       "seq": 2,
       "name": "“請勿叩門”",
       "date": "2024-02-22",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_nian"
     },
     {
       "scCharName": "幽灵鲨",
@@ -744,7 +836,8 @@
       "seq": 1,
       "name": "幽明燭光",
       "date": "2024-06-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_ghost"
     },
     {
       "scCharName": "异客",
@@ -752,7 +845,8 @@
       "seq": 1,
       "name": "電磁調節器",
       "date": "2021-11-01",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_pasngr"
     },
     {
       "scCharName": "异客",
@@ -760,7 +854,8 @@
       "seq": 2,
       "name": "王權金幣",
       "date": "2023-03-28",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_pasngr"
     },
     {
       "scCharName": "异客",
@@ -768,7 +863,8 @@
       "seq": 3,
       "name": "異客特限證章",
       "date": "2026-08-18",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_pasngr"
     },
     {
       "scCharName": "引星棘刺",
@@ -776,7 +872,8 @@
       "seq": 1,
       "name": "三面的金幣",
       "date": "2025-10-17",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_thorn2"
     },
     {
       "scCharName": "归溟幽灵鲨",
@@ -784,7 +881,8 @@
       "seq": 1,
       "name": "“唱片”收藏箱",
       "date": "2023-01-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_ghost2"
     },
     {
       "scCharName": "归溟幽灵鲨",
@@ -792,7 +890,8 @@
       "seq": 2,
       "name": "未竟之美",
       "date": "2023-06-20",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_ghost2"
     },
     {
       "scCharName": "归溟幽灵鲨",
@@ -800,7 +899,8 @@
       "seq": 3,
       "name": "歸溟幽靈鯊特限證章",
       "date": "2026-11-02",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_ghost2"
     },
     {
       "scCharName": "录武官",
@@ -808,7 +908,8 @@
       "seq": 1,
       "name": "未完成的錄武簿",
       "date": "2026-01-26",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_reckpr"
     },
     {
       "scCharName": "德克萨斯",
@@ -816,7 +917,8 @@
       "seq": 1,
       "name": "外勤私人補給包",
       "date": "2023-09-12",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_texas"
     },
     {
       "scCharName": "忍冬",
@@ -824,7 +926,8 @@
       "seq": 1,
       "name": "殺手也有假期",
       "date": "2025-06-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_vulpis"
     },
     {
       "scCharName": "怒潮凛冬",
@@ -832,7 +935,8 @@
       "seq": 1,
       "name": "遲到的勛章",
       "date": "2026-10-08",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_headb2"
     },
     {
       "scCharName": "惊蛰",
@@ -840,7 +944,8 @@
       "seq": 1,
       "name": "“天地通明”",
       "date": "2021-11-01",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_leizi"
     },
     {
       "scCharName": "慑砂",
@@ -848,7 +953,8 @@
       "seq": 1,
       "name": "“靈魂共鳴”",
       "date": "2022-12-29",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_sesa"
     },
     {
       "scCharName": "承曦格雷伊",
@@ -856,7 +962,8 @@
       "seq": 1,
       "name": "新型電控設備技術原型",
       "date": "2024-03-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_greyy2"
     },
     {
       "scCharName": "折桠",
@@ -864,7 +971,8 @@
       "seq": 1,
       "name": "“時間的痕跡”",
       "date": "2026-04-22",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_branch"
     },
     {
       "scCharName": "拉普兰德",
@@ -872,7 +980,8 @@
       "seq": 1,
       "name": "“幼狼的牙齒”",
       "date": "2025-03-06",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_whitew"
     },
     {
       "scCharName": "掠风",
@@ -880,7 +989,8 @@
       "seq": 1,
       "name": "“靈機一動”",
       "date": "2024-04-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_windft"
     },
     {
       "scCharName": "推进之王",
@@ -888,7 +998,8 @@
       "seq": 1,
       "name": "“糖果盒”",
       "date": "2023-09-12",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_siege"
     },
     {
       "scCharName": "推进之王",
@@ -896,7 +1007,8 @@
       "seq": 2,
       "name": "“初諾”",
       "date": "2023-12-12",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_siege"
     },
     {
       "scCharName": "提丰",
@@ -904,7 +1016,8 @@
       "seq": 1,
       "name": "自然的包容",
       "date": "2024-06-13",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_typhon"
     },
     {
       "scCharName": "提丰",
@@ -912,7 +1025,8 @@
       "seq": 2,
       "name": "冰原的影子",
       "date": "2026-01-26",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_typhon"
     },
     {
       "scCharName": "提丰",
@@ -920,7 +1034,8 @@
       "seq": 3,
       "name": "提豐特限證章",
       "date": "2026-11-02",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_typhon"
     },
     {
       "scCharName": "撷英调香师",
@@ -928,7 +1043,8 @@
       "seq": 1,
       "name": "“雙月的呼吸”",
       "date": "2026-07-22",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_flwr2"
     },
     {
       "scCharName": "斥罪",
@@ -936,7 +1052,8 @@
       "seq": 1,
       "name": "通往未來的荊棘之路",
       "date": "2024-09-24",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_judge"
     },
     {
       "scCharName": "斥罪",
@@ -944,7 +1061,8 @@
       "seq": 2,
       "name": "“無罪”",
       "date": "2025-03-31",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_judge"
     },
     {
       "scCharName": "斩业星熊",
@@ -952,7 +1070,8 @@
       "seq": 1,
       "name": "無跡",
       "date": "2026-06-10",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_hsgma2"
     },
     {
       "scCharName": "断崖",
@@ -960,7 +1079,8 @@
       "seq": 1,
       "name": "荒野便攜提神劑",
       "date": "2025-03-06",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_ayer"
     },
     {
       "scCharName": "斯卡蒂",
@@ -968,7 +1088,8 @@
       "seq": 1,
       "name": "潮濕的劍袋",
       "date": "2022-01-25",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_skadi"
     },
     {
       "scCharName": "斯卡蒂",
@@ -976,7 +1097,8 @@
       "seq": 2,
       "name": "往日殘夢",
       "date": "2023-03-28",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_skadi"
     },
     {
       "scCharName": "新约能天使",
@@ -984,7 +1106,8 @@
       "seq": 1,
       "name": "新朋友聖城生活套組",
       "date": "2025-11-28",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_angel2"
     },
     {
       "scCharName": "早露",
@@ -992,7 +1115,8 @@
       "seq": 1,
       "name": "攻城器械訓練裝置",
       "date": "2023-10-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_poca"
     },
     {
       "scCharName": "早露",
@@ -1000,7 +1124,8 @@
       "seq": 2,
       "name": "“心”",
       "date": "2026-07-22",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_poca"
     },
     {
       "scCharName": "明椒",
@@ -1008,7 +1133,8 @@
       "seq": 1,
       "name": "“多彩人生”",
       "date": "2026-07-06",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_peper"
     },
     {
       "scCharName": "星极",
@@ -1016,7 +1142,8 @@
       "seq": 1,
       "name": "未卜星圖",
       "date": "2025-08-11",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_astesi"
     },
     {
       "scCharName": "星熊",
@@ -1024,7 +1151,8 @@
       "seq": 1,
       "name": "友人們的贈禮",
       "date": "2023-05-16",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_hsguma"
     },
     {
       "scCharName": "星熊",
@@ -1032,7 +1160,8 @@
       "seq": 2,
       "name": "護身符",
       "date": "2023-09-12",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_hsguma"
     },
     {
       "scCharName": "晓歌",
@@ -1040,7 +1169,8 @@
       "seq": 1,
       "name": "“不發聲者”",
       "date": "2025-10-31",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_ctable"
     },
     {
       "scCharName": "普罗旺斯",
@@ -1048,7 +1178,8 @@
       "seq": 1,
       "name": "尾巴養護套裝",
       "date": "2023-01-17",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_prove"
     },
     {
       "scCharName": "月禾",
@@ -1056,7 +1187,8 @@
       "seq": 1,
       "name": "朧夜微明",
       "date": "2024-08-08",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_tknogi"
     },
     {
       "scCharName": "望",
@@ -1064,7 +1196,8 @@
       "seq": 1,
       "name": "獸形棋盒",
       "date": "2026-08-18",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_wang"
     },
     {
       "scCharName": "杏仁",
@@ -1072,7 +1205,8 @@
       "seq": 1,
       "name": "“畢業設計”",
       "date": "2024-08-08",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_almond"
     },
     {
       "scCharName": "极光",
@@ -1080,7 +1214,8 @@
       "seq": 1,
       "name": "盾用攝製模組",
       "date": "2023-01-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_aurora"
     },
     {
       "scCharName": "极境",
@@ -1088,7 +1223,8 @@
       "seq": 1,
       "name": "應急通訊指南",
       "date": "2024-06-13",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_elysm"
     },
     {
       "scCharName": "林",
@@ -1096,7 +1232,8 @@
       "seq": 1,
       "name": "“七竅玲瓏”",
       "date": "2024-02-22",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_lin"
     },
     {
       "scCharName": "林",
@@ -1104,7 +1241,8 @@
       "seq": 2,
       "name": "“情與義”",
       "date": "2025-09-16",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_lin"
     },
     {
       "scCharName": "格劳克斯",
@@ -1112,7 +1250,8 @@
       "seq": 1,
       "name": "外骨骼裝備",
       "date": "2023-01-17",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_glacus"
     },
     {
       "scCharName": "桑葚",
@@ -1120,7 +1259,8 @@
       "seq": 1,
       "name": "寧心靜神",
       "date": "2025-04-24",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_mberry"
     },
     {
       "scCharName": "梅尔",
@@ -1128,7 +1268,8 @@
       "seq": 1,
       "name": "咪波控制終端XP",
       "date": "2021-08-03",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_otter"
     },
     {
       "scCharName": "棘刺",
@@ -1136,7 +1277,8 @@
       "seq": 1,
       "name": "“鹽與沙”",
       "date": "2025-03-06",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_thorns"
     },
     {
       "scCharName": "棘刺",
@@ -1144,7 +1286,8 @@
       "seq": 2,
       "name": "沙蝕",
       "date": "2025-11-28",
-      "type": "D"
+      "type": "D",
+      "moduleId": "uniequip_003_thorns"
     },
     {
       "scCharName": "森蚺",
@@ -1152,7 +1295,8 @@
       "seq": 1,
       "name": "祖瑪瑪的工具箱",
       "date": "2023-01-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_zumama"
     },
     {
       "scCharName": "森蚺",
@@ -1160,7 +1304,8 @@
       "seq": 2,
       "name": "“小小的醜東西”",
       "date": "2023-05-16",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_zumama"
     },
     {
       "scCharName": "森蚺",
@@ -1168,7 +1313,8 @@
       "seq": 3,
       "name": "森蚺特限證章",
       "date": "2025-09-16",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_zumama"
     },
     {
       "scCharName": "槐琥",
@@ -1176,7 +1322,8 @@
       "seq": 1,
       "name": "紅眉詠春拳譜",
       "date": "2021-11-01",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_waaifu"
     },
     {
       "scCharName": "死芒",
@@ -1184,7 +1331,8 @@
       "seq": 1,
       "name": "未處理的遺產",
       "date": "2025-12-29",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_necras"
     },
     {
       "scCharName": "水月",
@@ -1192,7 +1340,8 @@
       "seq": 1,
       "name": "使者之約",
       "date": "2023-06-20",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_mizuki"
     },
     {
       "scCharName": "水月",
@@ -1200,7 +1349,8 @@
       "seq": 2,
       "name": "深藍之籽",
       "date": "2023-10-19",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_mizuki"
     },
     {
       "scCharName": "水月",
@@ -1208,7 +1358,8 @@
       "seq": 3,
       "name": "水月特限證章",
       "date": "2025-11-28",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_mizuki"
     },
     {
       "scCharName": "波卜",
@@ -1216,7 +1367,8 @@
       "seq": 1,
       "name": "社工課程二手教材",
       "date": "2025-06-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_bobb"
     },
     {
       "scCharName": "泥岩",
@@ -1224,7 +1376,8 @@
       "seq": 1,
       "name": "土石的根系",
       "date": "2024-09-24",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_mudrok"
     },
     {
       "scCharName": "泥岩",
@@ -1232,7 +1385,8 @@
       "seq": 2,
       "name": "沃土的願景",
       "date": "2025-10-31",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_mudrok"
     },
     {
       "scCharName": "洋灰",
@@ -1240,7 +1394,8 @@
       "seq": 1,
       "name": "工程記錄儀",
       "date": "2024-02-22",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_cement"
     },
     {
       "scCharName": "洛洛",
@@ -1248,7 +1403,8 @@
       "seq": 1,
       "name": "未命名的無人機",
       "date": "2024-10-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_rockr"
     },
     {
       "scCharName": "浊心斯卡蒂",
@@ -1256,7 +1412,8 @@
       "seq": 1,
       "name": "蛻化的殘跡",
       "date": "2025-07-18",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_skadi2"
     },
     {
       "scCharName": "浊心斯卡蒂",
@@ -1264,7 +1421,8 @@
       "seq": 2,
       "name": "新生代",
       "date": "2026-10-08",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_skadi2"
     },
     {
       "scCharName": "海霓",
@@ -1272,7 +1430,8 @@
       "seq": 1,
       "name": "多功能測繪儀-改良版",
       "date": "2025-03-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_haini"
     },
     {
       "scCharName": "涤火杰西卡",
@@ -1280,7 +1439,8 @@
       "seq": 1,
       "name": "“私家英雄”",
       "date": "2024-12-18",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_jesca2"
     },
     {
       "scCharName": "涤火杰西卡",
@@ -1288,7 +1448,8 @@
       "seq": 2,
       "name": "未曾風化",
       "date": "2026-09-14",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_jesca2"
     },
     {
       "scCharName": "深律",
@@ -1296,7 +1457,8 @@
       "seq": 1,
       "name": "受賜玩物",
       "date": "2024-09-24",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_baslin"
     },
     {
       "scCharName": "渡桥",
@@ -1304,7 +1466,8 @@
       "seq": 1,
       "name": "內斂鋒芒",
       "date": "2025-05-15",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_mitm"
     },
     {
       "scCharName": "温米",
@@ -1312,7 +1475,8 @@
       "seq": 1,
       "name": "贈別之味",
       "date": "2026-02-26",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_warmy"
     },
     {
       "scCharName": "温蒂",
@@ -1320,7 +1484,8 @@
       "seq": 1,
       "name": "仿生海龍改型",
       "date": "2023-12-12",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_weedy"
     },
     {
       "scCharName": "温蒂",
@@ -1328,7 +1493,8 @@
       "seq": 2,
       "name": "新型仿生原型",
       "date": "2024-10-31",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_weedy"
     },
     {
       "scCharName": "澄闪",
@@ -1336,7 +1502,8 @@
       "seq": 1,
       "name": "“辛勞之翼”",
       "date": "2024-10-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_gdglow"
     },
     {
       "scCharName": "澄闪",
@@ -1344,7 +1511,8 @@
       "seq": 2,
       "name": "夢想終將實現",
       "date": "2026-01-26",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_gdglow"
     },
     {
       "scCharName": "濯尘芙蓉",
@@ -1352,7 +1520,8 @@
       "seq": 1,
       "name": "結晶胸花",
       "date": "2024-10-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_hbisc2"
     },
     {
       "scCharName": "火哨",
@@ -1360,7 +1529,8 @@
       "seq": 1,
       "name": "“成長的足跡”",
       "date": "2024-09-05",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_firwhl"
     },
     {
       "scCharName": "灰喉",
@@ -1368,7 +1538,8 @@
       "seq": 1,
       "name": "母愛的倒影",
       "date": "2023-04-13",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_swllow"
     },
     {
       "scCharName": "灰毫",
@@ -1376,7 +1547,8 @@
       "seq": 1,
       "name": "出門必備套裝",
       "date": "2024-09-05",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_ashlok"
     },
     {
       "scCharName": "灵知",
@@ -1384,7 +1556,8 @@
       "seq": 1,
       "name": "“誓言”",
       "date": "2024-03-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_gnosis"
     },
     {
       "scCharName": "灵知",
@@ -1392,7 +1565,8 @@
       "seq": 2,
       "name": "一號計劃模型",
       "date": "2025-10-17",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_gnosis"
     },
     {
       "scCharName": "灵知",
@@ -1400,7 +1574,8 @@
       "seq": 3,
       "name": "靈知特限證章",
       "date": "2026-06-10",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_gnosis"
     },
     {
       "scCharName": "烈夏",
@@ -1408,7 +1583,8 @@
       "seq": 1,
       "name": "舊衣服",
       "date": "2025-03-06",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_leto"
     },
     {
       "scCharName": "烛煌",
@@ -1416,7 +1592,8 @@
       "seq": 1,
       "name": "熱切的期盼",
       "date": "2026-02-26",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_blaze2"
     },
     {
       "scCharName": "焰尾",
@@ -1424,7 +1601,8 @@
       "seq": 1,
       "name": "紅松的起點",
       "date": "2023-09-12",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_flamtl"
     },
     {
       "scCharName": "焰尾",
@@ -1432,7 +1610,8 @@
       "seq": 2,
       "name": "她們的未來",
       "date": "2024-04-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_flamtl"
     },
     {
       "scCharName": "焰影苇草",
@@ -1440,7 +1619,8 @@
       "seq": 1,
       "name": "“贈予紅龍的花冠”",
       "date": "2024-10-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_reed2"
     },
     {
       "scCharName": "煌",
@@ -1448,7 +1628,8 @@
       "seq": 1,
       "name": "過載的武器與過熱的心臟",
       "date": "2024-06-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_huang"
     },
     {
       "scCharName": "煌",
@@ -1456,7 +1637,8 @@
       "seq": 2,
       "name": "“稍後回來”",
       "date": "2026-04-01",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_huang"
     },
     {
       "scCharName": "熔泉",
@@ -1464,7 +1646,8 @@
       "seq": 1,
       "name": "弩箭調試箱",
       "date": "2023-10-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_toddi"
     },
     {
       "scCharName": "燧石",
@@ -1472,7 +1655,8 @@
       "seq": 1,
       "name": "這些花朵的含義",
       "date": "2025-01-20",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_flint"
     },
     {
       "scCharName": "爱丽丝",
@@ -1480,7 +1664,8 @@
       "seq": 1,
       "name": "夢之城堡立體書",
       "date": "2023-03-28",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_iris"
     },
     {
       "scCharName": "特克诺",
@@ -1488,7 +1673,8 @@
       "seq": 1,
       "name": "烤肉店官方優惠章",
       "date": "2025-12-29",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_tecno"
     },
     {
       "scCharName": "狮蝎",
@@ -1496,7 +1682,8 @@
       "seq": 1,
       "name": "訓練用尾部防護套裝",
       "date": "2023-06-20",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_mantic"
     },
     {
       "scCharName": "玛恩纳",
@@ -1504,7 +1691,8 @@
       "seq": 1,
       "name": "“鞘中人”",
       "date": "2025-11-28",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_mlynar"
     },
     {
       "scCharName": "玫拉",
@@ -1512,7 +1700,8 @@
       "seq": 1,
       "name": "香薰耳墜",
       "date": "2024-03-19",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_melnte"
     },
     {
       "scCharName": "琳琅诗怀雅",
@@ -1520,7 +1709,8 @@
       "seq": 1,
       "name": "“金幣輝煌”",
       "date": "2024-06-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_swire2"
     },
     {
       "scCharName": "琳琅诗怀雅",
@@ -1528,7 +1718,8 @@
       "seq": 2,
       "name": "詩懷雅的龍門美食指南",
       "date": "2025-05-15",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_swire2"
     },
     {
       "scCharName": "琳琅诗怀雅",
@@ -1536,7 +1727,8 @@
       "seq": 3,
       "name": "琳瑯詩懷雅特限證章",
       "date": "2026-02-26",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_swire2"
     },
     {
       "scCharName": "琴柳",
@@ -1544,7 +1736,8 @@
       "seq": 1,
       "name": "牧人的歌",
       "date": "2024-06-13",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_sleach"
     },
     {
       "scCharName": "琴柳",
@@ -1552,7 +1745,8 @@
       "seq": 2,
       "name": "“友誼萬歲”",
       "date": "2025-10-17",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_sleach"
     },
     {
       "scCharName": "瑕光",
@@ -1560,7 +1754,8 @@
       "seq": 1,
       "name": "工匠團的迴響",
       "date": "2023-03-28",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_blemsh"
     },
     {
       "scCharName": "瑕光",
@@ -1568,7 +1763,8 @@
       "seq": 2,
       "name": "“長騎”",
       "date": "2024-04-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_blemsh"
     },
     {
       "scCharName": "白金",
@@ -1576,7 +1772,8 @@
       "seq": 1,
       "name": "獨自旅行套裝",
       "date": "2023-04-13",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_platnm"
     },
     {
       "scCharName": "白铁",
@@ -1584,7 +1781,8 @@
       "seq": 1,
       "name": "鐵鉗號·爬行者",
       "date": "2024-04-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_ironmn"
     },
     {
       "scCharName": "白铁",
@@ -1592,7 +1790,8 @@
       "seq": 2,
       "name": "海布里印記",
       "date": "2025-07-18",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_ironmn"
     },
     {
       "scCharName": "白面鸮",
@@ -1600,7 +1799,8 @@
       "seq": 1,
       "name": "醫療環境分析裝置",
       "date": "2021-09-17",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_plosis"
     },
     {
       "scCharName": "百炼嘉维尔",
@@ -1608,7 +1808,8 @@
       "seq": 1,
       "name": "嘉維爾的折磨",
       "date": "2024-06-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_gvial2"
     },
     {
       "scCharName": "百炼嘉维尔",
@@ -1616,7 +1817,8 @@
       "seq": 2,
       "name": "好鋸多磨",
       "date": "2026-01-26",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_gvial2"
     },
     {
       "scCharName": "真理",
@@ -1624,7 +1826,8 @@
       "seq": 1,
       "name": "讀書筆記",
       "date": "2023-01-17",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_glassb"
     },
     {
       "scCharName": "真言",
@@ -1632,7 +1835,8 @@
       "seq": 1,
       "name": "中樞神經探測模組",
       "date": "2026-04-22",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_mantra"
     },
     {
       "scCharName": "石棉",
@@ -1640,7 +1844,8 @@
       "seq": 1,
       "name": "“石棉大戰雙頭鉗獸”",
       "date": "2026-06-10",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_asbest"
     },
     {
       "scCharName": "空",
@@ -1648,7 +1853,8 @@
       "seq": 1,
       "name": "“齊唱”",
       "date": "2025-07-18",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_sora"
     },
     {
       "scCharName": "空弦",
@@ -1656,7 +1862,8 @@
       "seq": 1,
       "name": "“明天的種子”",
       "date": "2023-04-13",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_archet"
     },
     {
       "scCharName": "空弦",
@@ -1664,7 +1871,8 @@
       "seq": 2,
       "name": "舊日重現",
       "date": "2023-10-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_archet"
     },
     {
       "scCharName": "空弦",
@@ -1672,7 +1880,8 @@
       "seq": 3,
       "name": "空弦特限證章",
       "date": "2025-11-28",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_archet"
     },
     {
       "scCharName": "空构",
@@ -1680,7 +1889,8 @@
       "seq": 1,
       "name": "無人機噴塗套裝",
       "date": "2024-04-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_spuria"
     },
     {
       "scCharName": "絮雨",
@@ -1688,7 +1898,8 @@
       "seq": 1,
       "name": "古樸的急救箱",
       "date": "2023-01-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_whispr"
     },
     {
       "scCharName": "红",
@@ -1696,7 +1907,8 @@
       "seq": 1,
       "name": "神秘的道具包",
       "date": "2021-11-01",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_red"
     },
     {
       "scCharName": "纯烬艾雅法拉",
@@ -1704,7 +1916,8 @@
       "seq": 1,
       "name": "想要留住的聲音",
       "date": "2025-04-24",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_agoat2"
     },
     {
       "scCharName": "纯烬艾雅法拉",
@@ -1712,7 +1925,8 @@
       "seq": 2,
       "name": "想要留下的生命",
       "date": "2026-09-14",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_agoat2"
     },
     {
       "scCharName": "绮良",
@@ -1720,7 +1934,8 @@
       "seq": 1,
       "name": "《鬧鬧生存挑戰3 連線版》",
       "date": "2023-06-20",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_kirara"
     },
     {
       "scCharName": "维什戴尔",
@@ -1728,7 +1943,8 @@
       "seq": 1,
       "name": "“祖宗發射器”",
       "date": "2025-03-06",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_wisdel"
     },
     {
       "scCharName": "维娜·维多利亚",
@@ -1736,7 +1952,8 @@
       "seq": 1,
       "name": "城主的冒險",
       "date": "2025-08-11",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_siege2"
     },
     {
       "scCharName": "维娜·维多利亚",
@@ -1744,7 +1961,8 @@
       "seq": 2,
       "name": "秩序聖“球”",
       "date": "2026-06-10",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_siege2"
     },
     {
       "scCharName": "缄默德克萨斯",
@@ -1752,7 +1970,8 @@
       "seq": 1,
       "name": "藍莓與黑巧",
       "date": "2023-09-12",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_texas2"
     },
     {
       "scCharName": "缄默德克萨斯",
@@ -1760,7 +1979,8 @@
       "seq": 2,
       "name": "“新車和新生活”",
       "date": "2026-11-02",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_texas2"
     },
     {
       "scCharName": "缇缇",
@@ -1768,7 +1988,8 @@
       "seq": 1,
       "name": "遠方的禮物",
       "date": "2026-07-22",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_titi"
     },
     {
       "scCharName": "缪尔赛思",
@@ -1776,7 +1997,8 @@
       "seq": 1,
       "name": "梳妝流形",
       "date": "2025-02-11",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_mlyss"
     },
     {
       "scCharName": "缪尔赛思",
@@ -1784,7 +2006,8 @@
       "seq": 2,
       "name": "落葉四季",
       "date": "2025-11-28",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_mlyss"
     },
     {
       "scCharName": "羽毛笔",
@@ -1792,7 +2015,8 @@
       "seq": 1,
       "name": "水藍色黎明",
       "date": "2024-04-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_crow"
     },
     {
       "scCharName": "耀骑士临光",
@@ -1800,7 +2024,8 @@
       "seq": 1,
       "name": "耀陽鋒刃",
       "date": "2022-01-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_nearl2"
     },
     {
       "scCharName": "耀骑士临光",
@@ -1808,7 +2033,8 @@
       "seq": 2,
       "name": "“騎士家族”",
       "date": "2024-09-24",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_nearl2"
     },
     {
       "scCharName": "老鲤",
@@ -1816,7 +2042,8 @@
       "seq": 1,
       "name": "“無問吉凶”",
       "date": "2022-01-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_lmlee"
     },
     {
       "scCharName": "老鲤",
@@ -1824,7 +2051,8 @@
       "seq": 2,
       "name": "“但思善惡”",
       "date": "2024-10-31",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_lmlee"
     },
     {
       "scCharName": "能天使",
@@ -1832,7 +2060,8 @@
       "seq": 1,
       "name": "能天使的傑作",
       "date": "2023-04-13",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_angel"
     },
     {
       "scCharName": "能天使",
@@ -1840,7 +2069,8 @@
       "seq": 2,
       "name": "歡迎光臨，企鵝物流",
       "date": "2025-08-11",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_angel"
     },
     {
       "scCharName": "艾丽妮",
@@ -1848,7 +2078,8 @@
       "seq": 1,
       "name": "厚重的經卷",
       "date": "2023-01-31",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_irene"
     },
     {
       "scCharName": "艾丽妮",
@@ -1856,7 +2087,8 @@
       "seq": 2,
       "name": "審判官口糧",
       "date": "2025-06-03",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_irene"
     },
     {
       "scCharName": "艾丽妮",
@@ -1864,7 +2096,8 @@
       "seq": 3,
       "name": "艾麗妮特限證章",
       "date": "2026-08-18",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_irene"
     },
     {
       "scCharName": "艾雅法拉",
@@ -1872,7 +2105,8 @@
       "seq": 1,
       "name": "“錯過的聲音”",
       "date": "2023-11-21",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_amgoat"
     },
     {
       "scCharName": "艾雅法拉",
@@ -1880,7 +2114,8 @@
       "seq": 2,
       "name": "寵物大賽第一名",
       "date": "2026-04-22",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_amgoat"
     },
     {
       "scCharName": "芙兰卡",
@@ -1888,7 +2123,8 @@
       "seq": 1,
       "name": "尖端鋁熱單元",
       "date": "2022-01-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_franka"
     },
     {
       "scCharName": "苇草",
@@ -1896,7 +2132,8 @@
       "seq": 1,
       "name": "槍刃清潔套裝",
       "date": "2021-12-21",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_sddrag"
     },
     {
       "scCharName": "荒芜拉普兰德",
@@ -1904,7 +2141,8 @@
       "seq": 1,
       "name": "狼時",
       "date": "2025-06-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_whitw2"
     },
     {
       "scCharName": "莫斯提马",
@@ -1912,7 +2150,8 @@
       "seq": 1,
       "name": "鎖與匙之家",
       "date": "2022-12-29",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_mostma"
     },
     {
       "scCharName": "莫斯提马",
@@ -1920,7 +2159,8 @@
       "seq": 2,
       "name": "資深萬國信使訂製斗篷",
       "date": "2025-05-15",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_mostma"
     },
     {
       "scCharName": "莱伊",
@@ -1928,7 +2168,8 @@
       "seq": 1,
       "name": "《跳舞的月光》",
       "date": "2025-03-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_ray"
     },
     {
       "scCharName": "莱伊",
@@ -1936,7 +2177,8 @@
       "seq": 2,
       "name": "證明什麼？",
       "date": "2026-07-06",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_ray"
     },
     {
       "scCharName": "莱恩哈特",
@@ -1944,7 +2186,8 @@
       "seq": 1,
       "name": "傳承與開拓",
       "date": "2022-12-29",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_lionhd"
     },
     {
       "scCharName": "菲亚梅塔",
@@ -1952,7 +2195,8 @@
       "seq": 1,
       "name": "“律外”特種彈藥配給組",
       "date": "2022-12-29",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_phenxi"
     },
     {
       "scCharName": "菲亚梅塔",
@@ -1960,7 +2204,8 @@
       "seq": 2,
       "name": "漫長的旅途",
       "date": "2024-09-05",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_phenxi"
     },
     {
       "scCharName": "蓝毒",
@@ -1968,7 +2213,8 @@
       "seq": 1,
       "name": "標準比色卡",
       "date": "2023-04-13",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_bluep"
     },
     {
       "scCharName": "蕾缪安",
@@ -1976,7 +2222,8 @@
       "seq": 1,
       "name": "“彈匣與花窗”",
       "date": "2025-11-28",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_lemuen"
     },
     {
       "scCharName": "薇薇安娜",
@@ -1984,7 +2231,8 @@
       "seq": 1,
       "name": "目不能及之處",
       "date": "2025-08-11",
-      "type": "D"
+      "type": "D",
+      "moduleId": "uniequip_002_vvana"
     },
     {
       "scCharName": "薇薇安娜",
@@ -1992,7 +2240,8 @@
       "seq": 2,
       "name": "“最後一行”",
       "date": "2026-07-22",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_vvana"
     },
     {
       "scCharName": "蚀清",
@@ -2000,7 +2249,8 @@
       "seq": 1,
       "name": "無可抹消",
       "date": "2023-12-12",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_serum"
     },
     {
       "scCharName": "蜜蜡",
@@ -2008,7 +2258,8 @@
       "seq": 1,
       "name": "“司祭的祝福”",
       "date": "2024-02-22",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_beewax"
     },
     {
       "scCharName": "衡沙",
@@ -2016,7 +2267,8 @@
       "seq": 1,
       "name": "過往留痕",
       "date": "2025-04-24",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_lasher"
     },
     {
       "scCharName": "裁度",
@@ -2024,7 +2276,8 @@
       "seq": 1,
       "name": "頭面人物",
       "date": "2025-06-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_talr"
     },
     {
       "scCharName": "裂响",
@@ -2032,7 +2285,8 @@
       "seq": 1,
       "name": "“漂洗”",
       "date": "2026-11-02",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_tanya"
     },
     {
       "scCharName": "诗怀雅",
@@ -2040,7 +2294,8 @@
       "seq": 1,
       "name": "防身口紅",
       "date": "2021-08-03",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_swire"
     },
     {
       "scCharName": "诺威尔",
@@ -2048,7 +2303,8 @@
       "seq": 1,
       "name": "致祖父",
       "date": "2025-08-26",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_nowell"
     },
     {
       "scCharName": "贝洛内",
@@ -2056,7 +2312,8 @@
       "seq": 1,
       "name": "實用的工具",
       "date": "2026-09-14",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_demetr"
     },
     {
       "scCharName": "贾维",
@@ -2064,7 +2321,8 @@
       "seq": 1,
       "name": "自製千斤頂",
       "date": "2023-09-12",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_chiave"
     },
     {
       "scCharName": "赤冬",
@@ -2072,7 +2330,8 @@
       "seq": 1,
       "name": "武將甲胄",
       "date": "2023-10-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_akafyu"
     },
     {
       "scCharName": "赤刃明霄陈",
@@ -2080,7 +2339,8 @@
       "seq": 1,
       "name": "記憶殘頁",
       "date": "2026-08-18",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_chen3"
     },
     {
       "scCharName": "赫德雷",
@@ -2088,7 +2348,8 @@
       "seq": 1,
       "name": "新的生活",
       "date": "2025-06-03",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_hodrer"
     },
     {
       "scCharName": "赫德雷",
@@ -2096,7 +2357,8 @@
       "seq": 2,
       "name": "筆跡",
       "date": "2026-07-22",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_hodrer"
     },
     {
       "scCharName": "赫拉格",
@@ -2104,7 +2366,8 @@
       "seq": 1,
       "name": "藏鋒",
       "date": "2023-10-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_helage"
     },
     {
       "scCharName": "赫拉格",
@@ -2112,7 +2375,8 @@
       "seq": 2,
       "name": "“熱的雪”",
       "date": "2024-06-13",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_helage"
     },
     {
       "scCharName": "赫默",
@@ -2120,7 +2384,8 @@
       "seq": 1,
       "name": "緊急防衛程式",
       "date": "2023-07-27",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_silent"
     },
     {
       "scCharName": "远牙",
@@ -2128,7 +2393,8 @@
       "seq": 1,
       "name": "首戰支援套組",
       "date": "2021-10-15",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_fartth"
     },
     {
       "scCharName": "远牙",
@@ -2136,7 +2402,8 @@
       "seq": 2,
       "name": "支持者來信",
       "date": "2023-06-20",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_fartth"
     },
     {
       "scCharName": "迷迭香",
@@ -2144,7 +2411,8 @@
       "seq": 1,
       "name": "“記事”",
       "date": "2024-03-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_rosmon"
     },
     {
       "scCharName": "迷迭香",
@@ -2152,7 +2420,8 @@
       "seq": 2,
       "name": "迷迭香特限證章",
       "date": "2025-06-27",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_003_rosmon"
     },
     {
       "scCharName": "送葬人",
@@ -2160,7 +2429,8 @@
       "seq": 1,
       "name": "執行者隨身包",
       "date": "2025-05-15",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_excu"
     },
     {
       "scCharName": "逻各斯",
@@ -2168,7 +2438,8 @@
       "seq": 1,
       "name": "來自河谷的筆盒",
       "date": "2025-03-06",
-      "type": "D"
+      "type": "D",
+      "moduleId": "uniequip_002_logos"
     },
     {
       "scCharName": "逻各斯",
@@ -2176,7 +2447,8 @@
       "seq": 2,
       "name": "《語義範式百科》",
       "date": "2025-10-31",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_logos"
     },
     {
       "scCharName": "遥",
@@ -2184,7 +2456,8 @@
       "seq": 1,
       "name": "遲來的紀念",
       "date": "2026-02-26",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_haruka"
     },
     {
       "scCharName": "酒神",
@@ -2192,7 +2465,8 @@
       "seq": 1,
       "name": "酒神之心",
       "date": "2025-12-29",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_phatm2"
     },
     {
       "scCharName": "重岳",
@@ -2200,7 +2474,8 @@
       "seq": 1,
       "name": "“自晦及明”",
       "date": "2025-01-20",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_chyue"
     },
     {
       "scCharName": "重岳",
@@ -2208,7 +2483,8 @@
       "seq": 2,
       "name": "“朔”",
       "date": "2025-08-11",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_chyue"
     },
     {
       "scCharName": "钼铅",
@@ -2216,7 +2492,8 @@
       "seq": 1,
       "name": "礦石展覽櫃",
       "date": "2025-10-17",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_wulfen"
     },
     {
       "scCharName": "铃兰",
@@ -2224,7 +2501,8 @@
       "seq": 1,
       "name": "懷中御守",
       "date": "2023-01-17",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_lisa"
     },
     {
       "scCharName": "铃兰",
@@ -2232,7 +2510,8 @@
       "seq": 2,
       "name": "孩子們",
       "date": "2024-10-31",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_lisa"
     },
     {
       "scCharName": "铎铃",
@@ -2240,7 +2519,8 @@
       "seq": 1,
       "name": "致繼任者",
       "date": "2025-06-03",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_chimes"
     },
     {
       "scCharName": "银灰",
@@ -2248,7 +2528,8 @@
       "seq": 1,
       "name": "雪境羽獸護理套組",
       "date": "2025-03-06",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_svrash"
     },
     {
       "scCharName": "锏",
@@ -2256,7 +2537,8 @@
       "seq": 1,
       "name": "“過往的註腳”",
       "date": "2024-10-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_blkkgt"
     },
     {
       "scCharName": "锏",
@@ -2264,7 +2546,8 @@
       "seq": 2,
       "name": "新合約",
       "date": "2026-11-02",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_blkkgt"
     },
     {
       "scCharName": "闪灵",
@@ -2272,7 +2555,8 @@
       "seq": 1,
       "name": "乾枯劍鞘",
       "date": "2023-07-27",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_shining"
     },
     {
       "scCharName": "闪灵",
@@ -2280,7 +2564,8 @@
       "seq": 2,
       "name": "“使徒”",
       "date": "2023-12-12",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_shining"
     },
     {
       "scCharName": "阿",
@@ -2288,7 +2573,8 @@
       "seq": 1,
       "name": "什錦果味醫用箱",
       "date": "2024-04-25",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_haak"
     },
     {
       "scCharName": "阿",
@@ -2296,7 +2582,8 @@
       "seq": 2,
       "name": "毒醫殘章",
       "date": "2026-09-14",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_haak"
     },
     {
       "scCharName": "阿兰娜",
@@ -2304,7 +2591,8 @@
       "seq": 1,
       "name": "“隨身保險桿”",
       "date": "2025-10-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_alanna"
     },
     {
       "scCharName": "阿斯卡纶",
@@ -2312,7 +2600,8 @@
       "seq": 1,
       "name": "“無形，無情”",
       "date": "2025-02-11",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_ascln"
     },
     {
       "scCharName": "阿斯卡纶",
@@ -2320,7 +2609,8 @@
       "seq": 2,
       "name": "“阿斯卡綸的眼睛”",
       "date": "2025-12-29",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_ascln"
     },
     {
       "scCharName": "阿罗玛",
@@ -2328,7 +2618,8 @@
       "seq": 1,
       "name": "檸檬味的童年",
       "date": "2025-02-11",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_aroma"
     },
     {
       "scCharName": "陈",
@@ -2336,7 +2627,8 @@
       "seq": 1,
       "name": "羅德島制式劍",
       "date": "2021-12-21",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_chen"
     },
     {
       "scCharName": "陈",
@@ -2344,7 +2636,8 @@
       "seq": 2,
       "name": "往昔時光",
       "date": "2024-08-08",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_chen"
     },
     {
       "scCharName": "陨星",
@@ -2352,7 +2645,8 @@
       "seq": 1,
       "name": "無名的身份牌",
       "date": "2022-12-29",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_meteo"
     },
     {
       "scCharName": "隐德来希",
@@ -2360,7 +2654,8 @@
       "seq": 1,
       "name": "易枯萎的航船",
       "date": "2025-08-26",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_etlchi"
     },
     {
       "scCharName": "隐德来希",
@@ -2368,7 +2663,8 @@
       "seq": 2,
       "name": "玫瑰色故事集",
       "date": "2026-07-22",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_etlchi"
     },
     {
       "scCharName": "雪猎",
@@ -2376,7 +2672,8 @@
       "seq": 1,
       "name": "過去的狩獵",
       "date": "2026-06-10",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_snhunt"
     },
     {
       "scCharName": "雷蛇",
@@ -2384,7 +2681,8 @@
       "seq": 1,
       "name": "震撼存儲",
       "date": "2024-12-18",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_liskam"
     },
     {
       "scCharName": "霍尔海雅",
@@ -2392,7 +2690,8 @@
       "seq": 1,
       "name": "“圖書館”",
       "date": "2024-03-19",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_heyak"
     },
     {
       "scCharName": "霍尔海雅",
@@ -2400,7 +2699,8 @@
       "seq": 2,
       "name": "羽蛇的時間博物館",
       "date": "2025-02-11",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_heyak"
     },
     {
       "scCharName": "霍尔海雅",
@@ -2408,7 +2708,8 @@
       "seq": 3,
       "name": "霍爾海雅特限證章",
       "date": "2026-06-10",
-      "type": "A"
+      "type": "A",
+      "moduleId": "uniequip_004_heyak"
     },
     {
       "scCharName": "青枳",
@@ -2416,7 +2717,8 @@
       "seq": 1,
       "name": "尋鄉人的啟明星",
       "date": "2024-06-27",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_buildr"
     },
     {
       "scCharName": "风丸",
@@ -2424,7 +2726,8 @@
       "seq": 1,
       "name": "舊物",
       "date": "2023-01-31",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_kazema"
     },
     {
       "scCharName": "风笛",
@@ -2432,7 +2735,8 @@
       "seq": 1,
       "name": "破城矛彈夾",
       "date": "2021-12-21",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_bpipe"
     },
     {
       "scCharName": "风笛",
@@ -2440,7 +2744,8 @@
       "seq": 2,
       "name": "“棍棒與口袋”",
       "date": "2024-09-24",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_bpipe"
     },
     {
       "scCharName": "食铁兽",
@@ -2448,7 +2753,8 @@
       "seq": 1,
       "name": "尚蜀風味自製辣醬",
       "date": "2023-12-12",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_panda"
     },
     {
       "scCharName": "鸿雪",
@@ -2456,7 +2762,8 @@
       "seq": 1,
       "name": "打字機色帶",
       "date": "2023-06-20",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_002_bgsnow"
     },
     {
       "scCharName": "鸿雪",
@@ -2464,7 +2771,8 @@
       "seq": 2,
       "name": "儀式感",
       "date": "2025-10-17",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_003_bgsnow"
     },
     {
       "scCharName": "麦哲伦",
@@ -2472,7 +2780,8 @@
       "seq": 1,
       "name": "專業無人機操作模組",
       "date": "2021-08-03",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_mgllan"
     },
     {
       "scCharName": "麦哲伦",
@@ -2480,7 +2789,8 @@
       "seq": 2,
       "name": "教學用龍騰無人機",
       "date": "2023-04-13",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_mgllan"
     },
     {
       "scCharName": "黍",
@@ -2488,7 +2798,8 @@
       "seq": 1,
       "name": "“欽天司時”",
       "date": "2025-01-20",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_shu"
     },
     {
       "scCharName": "黑",
@@ -2496,7 +2807,8 @@
       "seq": 1,
       "name": "定製弩配件套裝",
       "date": "2023-01-17",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_shwaz"
     },
     {
       "scCharName": "黑",
@@ -2504,7 +2816,8 @@
       "seq": 2,
       "name": "老剃刀",
       "date": "2023-09-12",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_shwaz"
     },
     {
       "scCharName": "黑键",
@@ -2512,7 +2825,8 @@
       "seq": 1,
       "name": "源石骰子收納盒",
       "date": "2023-03-28",
-      "type": "X"
+      "type": "X",
+      "moduleId": "uniequip_002_ebnhlz"
     },
     {
       "scCharName": "黑键",
@@ -2520,7 +2834,8 @@
       "seq": 2,
       "name": "“樂理闡釋者”",
       "date": "2023-05-16",
-      "type": "Y"
+      "type": "Y",
+      "moduleId": "uniequip_003_ebnhlz"
     },
     {
       "scCharName": "黑键",
@@ -2528,7 +2843,8 @@
       "seq": 3,
       "name": "朽壞傳承",
       "date": "2024-09-05",
-      "type": "D"
+      "type": "D",
+      "moduleId": "uniequip_004_ebnhlz"
     }
   ]
 }
