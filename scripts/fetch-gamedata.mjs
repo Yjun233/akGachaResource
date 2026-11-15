@@ -38,7 +38,9 @@
  *   --local <dir>        从本地解包仓库副本读**全部**表（完全不联网）
  *   --local-names <dir>  只把 `character_table.json` 走本地、其余走网络
  *                        （本地开发的常用姿势：jsDelivr **供不了 21MB 的 character_table**，见下）
- *   --force              忽略「内容没变不写盘」，强制写
+ *   --force              忽略「内容没变不写盘」，**并跳过 `data_version` 短路**
+ *                        （⚠️ 改过抽取字段之后必须带它：版本没变时脚本会整段跳过，
+ *                        新字段就永远进不了数据 —— 2026-11-15 加模组 `type` 时踩到）
  *
  * ⚠️ **`raw.githubusercontent.com` 在本机被 HTTP_PROXY 挡掉**（CONNECT tunnel 502），
  *    **jsDelivr 可以当镜像但只到 20MB**：`character_table.json`（cn 21.6MB / en 19.8MB）

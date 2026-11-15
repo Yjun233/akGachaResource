@@ -67,6 +67,11 @@ export function extractModules(uniequip, nameOf, opNames) {
       out.push({
         scCharName: char, charId, seq: i + 1,
         name: e.uniEquipName, date: unixDate(e.uniEquipGetTime),
+        /* 模组类型代号（`uniequip_table.json` 的 `typeName2`）：X / Y / D / A / B。
+           ⚠️ 是**代码不是文案**，三服一致（en 表里同样是 X/Y/A/D/B）。
+           含义见同表的 `equipTypeInfos`：X、Y、D 是普通模组，A、B 的 `isSpecial` 为 true（特殊模组）。
+           2026-11-15 用户要求加这个字段。 */
+        type: e.typeName2 ?? null,
       });
     });
   }
