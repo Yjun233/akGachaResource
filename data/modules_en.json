@@ -67,7 +67,7 @@
       "charId": "char_455_nothin",
       "seq": 1,
       "name": "'Shelter from the Rain'",
-      "date": "2022-01-25",
+      "date": "2022-09-16",
       "jpName": "「檐下聴雨」",
       "type": "X",
       "moduleId": "uniequip_002_nothin"
@@ -87,7 +87,7 @@
       "charId": "char_2023_ling",
       "seq": 1,
       "name": "Fond Dream with Poetry",
-      "date": "2022-01-25",
+      "date": "2022-09-16",
       "jpName": "詩は短く、夢は長く",
       "type": "Y",
       "moduleId": "uniequip_002_ling"
@@ -187,7 +187,7 @@
       "charId": "char_250_phatom",
       "seq": 1,
       "name": "Miss Christine's Felt",
-      "date": "2021-11-01",
+      "date": "2022-09-16",
       "jpName": "レディのフェルト細工",
       "type": "X",
       "moduleId": "uniequip_002_phatom"
@@ -307,7 +307,7 @@
       "charId": "char_214_kafka",
       "seq": 1,
       "name": "Rubik's Cube Pendant",
-      "date": "2021-11-01",
+      "date": "2022-09-16",
       "jpName": "キューブ型ペンダント",
       "type": "Y",
       "moduleId": "uniequip_002_kafka"
@@ -617,7 +617,7 @@
       "charId": "char_179_cgbird",
       "seq": 1,
       "name": "'Closed Hope'",
-      "date": "2021-09-17",
+      "date": "2022-09-16",
       "jpName": "「籠の中の希望」",
       "type": "X",
       "moduleId": "uniequip_002_cgbird"
@@ -727,7 +727,7 @@
       "charId": "char_158_milu",
       "seq": 1,
       "name": "Field Sniper Equipment",
-      "date": "2021-09-17",
+      "date": "2022-09-16",
       "jpName": "野戦用狙撃装備",
       "type": "Y",
       "moduleId": "uniequip_002_milu"
@@ -737,7 +737,7 @@
       "charId": "char_218_cuttle",
       "seq": 1,
       "name": "Gunsmithing Toolkit",
-      "date": "2021-09-17",
+      "date": "2022-09-16",
       "jpName": "銃器整備用工具箱",
       "type": "X",
       "moduleId": "uniequip_002_cuttle"
@@ -897,7 +897,7 @@
       "charId": "char_485_pallas",
       "seq": 1,
       "name": "'Ούρος'",
-      "date": "2021-08-03",
+      "date": "2022-09-16",
       "jpName": "「故郷の山岩」",
       "type": "X",
       "moduleId": "uniequip_002_pallas"
@@ -947,7 +947,7 @@
       "charId": "char_472_pasngr",
       "seq": 1,
       "name": "Electromagnetic Regulator",
-      "date": "2021-11-01",
+      "date": "2022-09-16",
       "jpName": "電磁調節器",
       "type": "X",
       "moduleId": "uniequip_002_pasngr"
@@ -1067,7 +1067,7 @@
       "charId": "char_306_leizi",
       "seq": 1,
       "name": "'All the Thunderlight'",
-      "date": "2021-11-01",
+      "date": "2022-09-16",
       "jpName": "「天地通明」",
       "type": "X",
       "moduleId": "uniequip_002_leizi"
@@ -1227,7 +1227,7 @@
       "charId": "char_263_skadi",
       "seq": 1,
       "name": "Moist Sword Bag",
-      "date": "2022-01-25",
+      "date": "2022-09-16",
       "jpName": "湿ったソードバッグ",
       "type": "Y",
       "moduleId": "uniequip_002_skadi"
@@ -1427,7 +1427,7 @@
       "charId": "char_242_otter",
       "seq": 1,
       "name": "'Meeboo' Control Terminal XP",
-      "date": "2021-08-03",
+      "date": "2022-09-16",
       "jpName": "ミーボコントロール端末XP",
       "type": "X",
       "moduleId": "uniequip_002_otter"
@@ -1487,7 +1487,7 @@
       "charId": "char_243_waaifu",
       "seq": 1,
       "name": "The Classic of Hung Mei Wing Chun",
-      "date": "2021-11-01",
+      "date": "2022-09-16",
       "jpName": "紅眉詠春拳譜",
       "type": "X",
       "moduleId": "uniequip_002_waaifu"
@@ -2017,7 +2017,7 @@
       "charId": "char_128_plosis",
       "seq": 1,
       "name": "Medic Environment Analyze System",
-      "date": "2021-09-17",
+      "date": "2022-09-16",
       "jpName": "医療環境分析装置",
       "type": "X",
       "moduleId": "uniequip_002_plosis"
@@ -2137,7 +2137,7 @@
       "charId": "char_144_red",
       "seq": 1,
       "name": "Mystery Prop Pack",
-      "date": "2021-11-01",
+      "date": "2022-09-16",
       "jpName": "謎多き戦術バッグ",
       "type": "Y",
       "moduleId": "uniequip_002_red"
@@ -2267,7 +2267,7 @@
       "charId": "char_1014_nearl2",
       "seq": 1,
       "name": "Blade of Blazing Sun",
-      "date": "2022-01-25",
+      "date": "2022-09-16",
       "jpName": "ブレイジングブレイド",
       "type": "X",
       "moduleId": "uniequip_002_nearl2"
@@ -2287,7 +2287,7 @@
       "charId": "char_322_lmlee",
       "seq": 1,
       "name": "'Wandering'",
-      "date": "2022-01-25",
+      "date": "2022-09-16",
       "jpName": "「無問吉凶」",
       "type": "X",
       "moduleId": "uniequip_002_lmlee"
@@ -2377,7 +2377,7 @@
       "charId": "char_106_franka",
       "seq": 1,
       "name": "Cutting-edge Thermite Unit",
-      "date": "2022-01-25",
+      "date": "2022-09-16",
       "jpName": "刃先テルミットユニット",
       "type": "X",
       "moduleId": "uniequip_002_franka"
@@ -2387,7 +2387,7 @@
       "charId": "char_261_sddrag",
       "seq": 1,
       "name": "Spear Clean Suit",
-      "date": "2021-12-21",
+      "date": "2022-09-16",
       "jpName": "槍用クリーニングセット",
       "type": "Y",
       "moduleId": "uniequip_002_sddrag"
@@ -2567,7 +2567,7 @@
       "charId": "char_308_swire",
       "seq": 1,
       "name": "Self-defense Lipstick",
-      "date": "2021-08-03",
+      "date": "2022-09-16",
       "jpName": "防犯ルージュ",
       "type": "X",
       "moduleId": "uniequip_002_swire"
@@ -2677,7 +2677,7 @@
       "charId": "char_430_fartth",
       "seq": 1,
       "name": "First-show Support Set",
-      "date": "2021-10-15",
+      "date": "2022-09-16",
       "jpName": "デビュー戦サポートセット",
       "type": "X",
       "moduleId": "uniequip_002_fartth"
@@ -2937,7 +2937,7 @@
       "charId": "char_010_chen",
       "seq": 1,
       "name": "Rhodes Island Standard Combat Sword",
-      "date": "2021-12-21",
+      "date": "2022-09-16",
       "jpName": "ロドス制式刀剣",
       "type": "X",
       "moduleId": "uniequip_002_chen"
@@ -3057,7 +3057,7 @@
       "charId": "char_222_bpipe",
       "seq": 1,
       "name": "Piledriver Spear Magazine",
-      "date": "2021-12-21",
+      "date": "2022-09-16",
       "jpName": "破城矛マガジン",
       "type": "X",
       "moduleId": "uniequip_002_bpipe"
@@ -3107,7 +3107,7 @@
       "charId": "char_248_mgllan",
       "seq": 1,
       "name": "Drone Control Module.P",
-      "date": "2021-08-03",
+      "date": "2022-09-16",
       "jpName": "ドローン操作専門モジュール",
       "type": "X",
       "moduleId": "uniequip_002_mgllan"
