@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15",
+  "generatedAt": "2026-11-16",
   "source": "https://prts.wiki",
   "skins": [
     {
@@ -8753,6 +8753,24 @@
           "longTime": false
         }
       ],
+      "dynamic": false,
+      "warnings": []
+    },
+    {
+      "scCharName": "麦哲伦",
+      "charId": "char_248_mgllan",
+      "skinIndex": 2,
+      "name": "绿影之下",
+      "group": "时代/LX",
+      "series": "时代",
+      "isCrossover": false,
+      "obtain": [
+        "集成战略"
+      ],
+      "obtainRaw": "集成战略",
+      "firstPrice": null,
+      "firstPriceUnit": null,
+      "onShelf": [],
       "dynamic": false,
       "warnings": []
     },

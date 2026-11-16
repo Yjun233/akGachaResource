@@ -39,8 +39,9 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import './lib/http.mjs';
+import { PROXY } from './lib/http.mjs';
 import { loadTable } from './lib/gamedata.mjs';
+import { attemptedAddresses, pinTo, unpin, usableIp } from './lib/prts-net.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -98,10 +99,31 @@ const warn = (msg) => warnings.push(msg);
  *    · 每次失败都打一行，并把 `e.cause` 展开 —— undici 的 "fetch failed" 本身没有信息量，
  *      真正的原因（ENOTFOUND / ECONNRESET / 超时 / TLS …）只在 cause 里，这是 CI 排查的唯一线索；
  *    · 加 60 秒超时：不然「对端不响应」会让 fetch 一直挂着，重试根本没机会发生。
+ * ⚠️ **2026-11-16 补**：光重试还不够 —— 如果 DNS 把 `prts.wiki` 解析到一批连不通的 CDN 节点，
+ *    5 次重试都是拿**同一份**解析结果去敲同一批死地址，表现为「第一次就失败、后面全失败」，
+ *    十几秒后整步挂掉（2026-11-16 那次 CI 就是这样，日志里只有一串
+ *    `UND_ERR_CONNECT_TIMEOUT`）。国服卡池脚本（`fetch-data.mjs`）早就有这条兜底，
+ *    皮肤脚本一直只做了重试 → 现在对齐：连不上就**换一份解析**（多源 DNS + TCP 探活 + 只钉这个域名），
+ *    实现在 `lib/prts-net.mjs`。正常抓取零开销（懒加载）。
  */
+
+/* 「地址连不上」类错误 —— 只有这类换 DNS 重新解析才有意义（见 lib/prts-net.mjs 文件头）。
+   ⚠️ 别把普通 socket 错误 / HTTP 状态码塞进来：那类东西重试同一个地址就能过去。 */
+const CONNECT_ERRORS = new Set([
+  'UND_ERR_CONNECT_TIMEOUT', 'ETIMEDOUT', 'ECONNREFUSED', 'ENETUNREACH', 'EHOSTUNREACH',
+]);
+
+const PRTS_HOST = new URL(API).hostname;
+
+/* 当前钉住的 IP —— 25 个系列页是**并发**抓的，它们同时失败时都会走到兜底，
+   这里收一下：IP 没变就只当成「继续用」，不重复换 dispatcher、也不刷日志。 */
+let pinnedIp = '';
+
 async function fetchJson(params, { tries = 5, timeoutMs = 60_000 } = {}) {
   const url = `${API}?${new URLSearchParams({ format: 'json', ...params })}`;
   let lastErr;
+  /* 已经连不上的地址（跨重试累积）—— 兜底换 IP 时排除掉，否则备选清单里还会挑回它 */
+  const bad = new Set();
   for (let i = 0; i < tries; i += 1) {
     try {
       const res = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(timeoutMs) });
@@ -118,6 +140,27 @@ async function fetchJson(params, { tries = 5, timeoutMs = 60_000 } = {}) {
         ? `${c.code || c.name || ''} ${c.message || ''}`.trim()
         : (e && e.name === 'TimeoutError' ? `超时（>${Math.round(timeoutMs / 1000)}s）` : '');
       console.error(`  · 第 ${i + 1}/${tries} 次请求失败: ${e.message}${detail ? ' ← ' + detail : ''}`);
+
+      /* 连不上（典型：DNS 把域名解析到本地不可达的那批 CDN 节点）——
+         这种失败**等再久也没用**，必须换地址重试。 */
+      if (CONNECT_ERRORS.has(c && c.code)) {
+        for (const ip of attemptedAddresses(e)) bad.add(ip);
+        if (!PROXY && i < tries - 1) {
+          const pick = await usableIp(PRTS_HOST, { exclude: [...bad] });
+          if (pick) {
+            if (pick.ip !== pinnedIp) {
+              pinTo(PRTS_HOST, pick.ip);
+              pinnedIp = pick.ip;
+              console.error(`  · 解析到的地址都连不上，改钉 ${pick.ip}（来自 ${pick.source}）重试`);
+            }
+            bad.add(pick.ip);
+            continue; /* ⚠️ 不 sleep：这一轮已经耗在建连超时上了 */
+          }
+          console.error('  · 备用解析也没找到能连上的地址，退回系统解析重试');
+          unpin(); /* 上一轮钉的地址已经进了 bad，别再钉着它 */
+          pinnedIp = '';
+        }
+      }
       if (i < tries - 1) await sleep(1200 * (i + 1));
     }
   }
