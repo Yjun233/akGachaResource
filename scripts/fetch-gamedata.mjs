@@ -61,6 +61,7 @@ import {
   loadNames,
   extractMid,
   toBannerMap,
+  tzOf,
 } from './lib/gamedata.mjs';
 import { extractModules, extractMemoirs, extractSkins, WINDOW_DAYS } from './lib/gamedata-extras.mjs';
 import { orderMeta } from './lib/meta.mjs';
@@ -347,6 +348,11 @@ async function main() {
        **`en/` 只留作英文名来源**（`nameSource`）；日期与名字口径见 `gamedata-extras.mjs`。 */
     const contentDir = server === 'en' ? SERVER_DIR.jp : dir;
     const nameDir = server === 'en' ? dir : null;
+    /* 时区按**内容源目录**取：时间戳是那份表的，换算成「该服玩家看到的那一天」才对。
+       en 的内容来自 jp → 用 +9；将来若把内容源切回 en（−7），这里自动跟着变。
+       `nameTz` 只用于密录里「取较早日期」的比较（英文名源的日期）。 */
+    const tz = tzOf(contentDir);
+    const nameTz = nameDir ? tzOf(nameDir) : tz;
     const file = path.join(DATA, `banners_cla_${server}.json`);
     /* ⚠️ 版本号用**整段文本**（trim 过），不要只取第一行 —— 三服 `data_version.txt` 长这样：
          cn: `Stream://torappu-data/v077/rel77.0` / `Change:123576 on 2026/09/17` / `VersionControl:77.6.0`
@@ -394,7 +400,7 @@ async function main() {
     let mid = null;
     if (DO_MID) {
       const gacha = await loadTable(contentDir, 'gacha_table.json', { local: LOCAL });
-      mid = extractMid(gacha, await nameOf(), { releaseOf });
+      mid = extractMid(gacha, await nameOf(), { releaseOf, tz });
       if (DUMP) {
         console.log(`\n--- ${server} 抽出的前 2 条 ---`);
         console.log(JSON.stringify([...mid.classic.slice(0, 1), ...mid.clafes.slice(0, 1)], null, 1));
@@ -420,14 +426,14 @@ async function main() {
         }
         : null;
       extras = {
-        modules: extractModules(ue, names, OP_INDEX.names, { typeSource: cnUeCache, nameSource: ns?.ue ?? null }),
-        memoirs: extractMemoirs(hb, names, OP_INDEX.names, OP_INDEX.rarity, { nameSource: ns?.hb ?? null }),
+        modules: extractModules(ue, names, OP_INDEX.names, { typeSource: cnUeCache, nameSource: ns?.ue ?? null, tz }),
+        memoirs: extractMemoirs(hb, names, OP_INDEX.names, OP_INDEX.rarity, { nameSource: ns?.hb ?? null, tz, nameTz }),
       };
       /* ⚠️ **国服皮肤不在这条线上** —— 它由 `fetch-skins.mjs` 从 PRTS 抓（那里有真实的复刻 /
          下架窗口）。官方只有「首发上架日」这一个点，所以只给 en/tw 出（窗口按 `WINDOW_DAYS` 天兜底）。 */
       if (server !== 'sc') {
         const sk = await loadTable(contentDir, 'skin_table.json', { local: LOCAL });
-        extras.skins = extractSkins(sk, names, OP_INDEX.names, { nameSource: ns?.sk ?? null });
+        extras.skins = extractSkins(sk, names, OP_INDEX.names, { nameSource: ns?.sk ?? null, tz });
       }
     }
 

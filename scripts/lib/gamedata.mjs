@@ -232,7 +232,32 @@ export function buildAlterMap(spCharGroups, validIds) {
 }
 
 /** Unix 秒 → 北京时间日期（`YYYY-MM-DD`）。官方 openTime/endTime 都是**秒** */
-export const unixDate = (sec) => new Date((Number(sec) + 8 * 3600) * 1000).toISOString().slice(0, 10);
+/**
+ * 各服解包目录的**时区偏移**（小时）—— 用来把 UTC 时间戳换成「该服玩家看到的那一天」。
+ *
+ * ⚠️⚠️ **不能一律 +8**（2026-11-16 用户指出）：解包时间戳是 UTC 秒，而各服都按**当地中午前后**
+ * 开池 / 上架，换算成本地时间后其实是**同一天**：
+ *     `uniequip_002_mgllan`：国服 08-03 04:00Z（北京 12:00）/ 日服 03:00Z（东京 12:00）/
+ *     国际服 19:00Z（美西 12:00）—— 三服都是 08-03。
+ * 之前统一 +8 会把国际服那条推到 **08-04**，看起来像「国际服比国服晚一天」。
+ * 实测 491 条模组：各服按自己的时区取日期 → **491/491 一致**；统一按北京时间只有 321/491。
+ *
+ * · `cn` 北京 +8、`tw` 台北 +8（与国服同区）
+ * · `jp` 东京 +9
+ * · `en` 美西 −7（国际服按太平洋时间作息；实测 −4/−5/−7/−8 对**日期**结果都一样，
+ *   因为时间戳都在 12:00~19:00Z，怎么偏都不跨天）
+ */
+export const SERVER_TZ = { cn: 8, tw: 8, jp: 9, en: -7 };
+
+/** 目录 → 时区偏移；认不出来的退回 +8（国服口径） */
+export const tzOf = (dir) => (dir in SERVER_TZ ? SERVER_TZ[dir] : 8);
+
+/**
+ * UTC 秒 → `YYYY-MM-DD`（按**该服的时区**取日期）。
+ * @param {number} sec 解包时间戳（UTC 秒）
+ * @param {number} [tz] 时区偏移（小时），默认 +8 = 国服口径。见 `SERVER_TZ`
+ */
+export const unixDate = (sec, tz = 8) => new Date((Number(sec) + tz * 3600) * 1000).toISOString().slice(0, 10);
 
 /**
  * 组一个 `upOperators` 项 —— 字段名与 `banners_<server>.json` 一致
@@ -259,7 +284,7 @@ function makeOp(charId, nameOf, rarity, isShop) {
  * @param {(charId:string)=>string|null} [opts.releaseOf] charId → 国服实装日（排 `upOperators` 用）
  * @returns {{classic: object[], clafes: object[]}} 已按开始日升序、并且**已编好 id / scName**
  */
-export function extractMid(gacha, nameOf, { releaseOf = null } = {}) {
+export function extractMid(gacha, nameOf, { releaseOf = null, tz = 8 } = {}) {
   const pools = (gacha && gacha.gachaPoolClient) || [];
   const named = (id) => nameOf[id] || null;
   /* ⚠️ `sortUpOperators` 的回调收的是**整个 op 对象**，而解包侧只方便按 charId 查
@@ -287,8 +312,8 @@ export function extractMid(gacha, nameOf, { releaseOf = null } = {}) {
       ].filter((o) => o.scCharName);
       return {
         type: 'classic',
-        startDate: unixDate(p.openTime),
-        endDate: unixDate(p.endTime),
+        startDate: unixDate(p.openTime, tz),
+        endDate: unixDate(p.endTime, tz),
         upOperators: sortUpOperators(ups, { type: 'classic', releaseOf: relOfOp }),
       };
     });
@@ -305,8 +330,8 @@ export function extractMid(gacha, nameOf, { releaseOf = null } = {}) {
       ].filter((o) => o.scCharName);
       return {
         type: 'clafes',
-        startDate: unixDate(p.openTime),
-        endDate: unixDate(p.endTime),
+        startDate: unixDate(p.openTime, tz),
+        endDate: unixDate(p.endTime, tz),
         upOperators: sortUpOperators(ups, { type: 'clafes', releaseOf: relOfOp }),
       };
     });

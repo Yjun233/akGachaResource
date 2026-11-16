@@ -61,7 +61,7 @@ const byCharThen = (seqKey) => (a, b) =>
  *        ⚠️ 但**不能连 `date` 一起用国服表**：三服推出日不同（实测 474 条日期全不同），
  *        而且 en / tw 比国服少 31 个模组 —— 站点要靠「本服推出日 ∈ 卡池窗口」判断标记。
  */
-export function extractModules(uniequip, nameOf, opNames, { typeSource = null, nameSource = null } = {}) {
+export function extractModules(uniequip, nameOf, opNames, { typeSource = null, nameSource = null, tz = 8 } = {}) {
   const dict = (uniequip && uniequip.equipDict) || {};
   const charEquip = (uniequip && uniequip.charEquip) || {};
   /* 名字的来源（国际服：`uniequip` 是**日服**表，英文名要从 **en** 表按 `uniEquipId` 取）。
@@ -92,7 +92,7 @@ export function extractModules(uniequip, nameOf, opNames, { typeSource = null, n
       const time = enTime > 0 && enTime < e.uniEquipGetTime ? enTime : e.uniEquipGetTime;
       out.push({
         scCharName: char, charId, seq: i + 1,
-        name: (en && en.uniEquipName) || e.uniEquipName, date: unixDate(time),
+        name: (en && en.uniEquipName) || e.uniEquipName, date: unixDate(time, tz),
         ...(nameSource ? { jpName: e.uniEquipName ?? null } : {}),
         /* 模组类型代号：X / Y / D / A / B（对照同表 `equipTypeInfos`：X、Y、D 是普通模组，
            A、B 的 `isSpecial` 为 true）。国服表取不到时退回本服。 */
@@ -116,13 +116,13 @@ export function extractModules(uniequip, nameOf, opNames, { typeSource = null, n
  * @param {Record<string,number>} rarityOf 干员名 → 星级（`operators.json`；本站只收 5/6★）
  */
 /** 把 `handbookAvgList` 按上线日聚成批次（`name` 用 `|` 分隔同一天的那几篇） */
-function memoirBatches(v) {
+function memoirBatches(v, tz = 8) {
   if (!Array.isArray(v && v.handbookAvgList)) return null;
   const dated = v.handbookAvgList.filter((a) => a && a.storyGetTime > 0);
   if (!dated.length) return null;
   const byDate = new Map();
   for (const a of dated) {
-    const d = unixDate(a.storyGetTime);
+    const d = unixDate(a.storyGetTime, tz);
     if (!byDate.has(d)) byDate.set(d, []);
     byDate.get(d).push(a.storySetName);
   }
@@ -131,7 +131,7 @@ function memoirBatches(v) {
     .map(([date, names]) => ({ date, name: names.join('|') }));
 }
 
-export function extractMemoirs(handbook, nameOf, opNames, rarityOf = {}, { nameSource = null } = {}) {
+export function extractMemoirs(handbook, nameOf, opNames, rarityOf = {}, { nameSource = null, tz = 8, nameTz = tz } = {}) {
   const dict = (handbook && handbook.handbookDict) || {};
   /* 名字来源（国际服：`handbook` 是**日服**表，英文名从 **en** 表按 charId 取） */
   const enDict = (nameSource && nameSource.handbookDict) || {};
@@ -140,13 +140,13 @@ export function extractMemoirs(handbook, nameOf, opNames, rarityOf = {}, { nameS
     const char = nameOf[charId];
     if (!char || !opNames.has(char)) continue;
     /* ⚠️ 有 56 个条目的 handbookAvgList **不是数组**（实测 cn），不挡会直接崩 */
-    const jp = memoirBatches(v);
+    const jp = memoirBatches(v, tz);
     if (!jp) continue;
     /* 与 en 表**按批次下标**配对（两服的批次划分一致）：
        · `name` 用英文（没有对应的就退回日文）；
        · `date` 取较早的那个（日服先上线；真实排期不同的取更早的，与模组同一口径）；
        · `jpName` 只在「本服表其实是日服」时给（即传了 `nameSource`）。 */
-    const en = nameSource ? memoirBatches(enDict[charId]) : null;
+    const en = nameSource ? memoirBatches(enDict[charId], nameTz) : null;
     const paired = jp.map((b, i) => {
       const e = en && en[i] && en.length === jp.length ? en[i] : null;
       const date = e && e.date < b.date ? e.date : b.date;
@@ -179,7 +179,7 @@ export function extractMemoirs(handbook, nameOf, opNames, rarityOf = {}, { nameS
  * ⚠️ 只收**在售**的：`getTime > 0` 的皮肤里混着「活动获得 / 任务奖励 / 特典 / 集成战略」
  * 这类免费皮肤，它们对 `getTime` 是「推出时间」而不是「上架时间」，留着会造出假标记。
  */
-export function extractSkins(skin, nameOf, opNames, { nameSource = null } = {}) {
+export function extractSkins(skin, nameOf, opNames, { nameSource = null, tz = 8 } = {}) {
   const table = (skin && skin.charSkins) || {};
   /* 名字来源（国际服：`skin` 是**日服**表，英文名按 `charId#idx` 从 **en** 表取） */
   const enTable = (nameSource && nameSource.charSkins) || {};
@@ -206,7 +206,7 @@ export function extractSkins(skin, nameOf, opNames, { nameSource = null } = {}) 
     const { charId, list } = entry;
     list.sort((a, b) => a.time - b.time);
     list.forEach((x, i) => {
-      const start = unixDate(x.time);
+      const start = unixDate(x.time, tz);
       out.push({
         scCharName: char,
         charId,
