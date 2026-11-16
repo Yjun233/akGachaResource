@@ -15067,5 +15067,84 @@
         "isShop": false
       }
     ]
+  },
+  "20261115_joint_0024": {
+    "scName": "联合行动24",
+    "enName": null,
+    "type": "joint",
+    "startDate": "2026-11-15",
+    "endDate": "2026-11-29",
+    "upOperators": [
+      {
+        "scCharName": "焰影苇草",
+        "charId": "char_1020_reed2",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "林",
+        "charId": "char_4080_lin",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "赤刃明霄陈",
+        "charId": "char_1050_chen3",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "可露希尔",
+        "charId": "char_4228_closur",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "青枳",
+        "charId": "char_488_buildr",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "刺玫",
+        "charId": "char_494_vendla",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "历阵锐枪芬",
+        "charId": "char_1036_fang2",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "诺威尔",
+        "charId": "char_4173_nowell",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "钼铅",
+        "charId": "char_4171_wulfen",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "佩德洛",
+        "charId": "char_4234_pedro",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }

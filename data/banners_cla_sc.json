@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-12",
-  "dataVersion": "Stream://torappu-data/v079/rel79.0\nChange:127796 on 2026/11/05\nVersionControl:79.2.0",
+  "generatedAt": "2026-11-16",
+  "dataVersion": "Stream://torappu-data/v079/rel79.0\nChange:128540 on 2026/11/13\nVersionControl:79.4.0",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "banners": {
     "20230406_classic_0001": {
@@ -3389,6 +3389,50 @@
         }
       ],
       "scName": "常驻中坚寻访77",
+      "enName": null
+    },
+    "20261126_classic_0078": {
+      "type": "classic",
+      "startDate": "2026-11-26",
+      "endDate": "2026-12-10",
+      "upOperators": [
+        {
+          "scCharName": "山",
+          "charId": "char_264_f12yin",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "scCharName": "黑键",
+          "charId": "char_4046_ebnhlz",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "卡夫卡",
+          "charId": "char_214_kafka",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "scCharName": "拉普兰德",
+          "charId": "char_140_whitew",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "布洛卡",
+          "charId": "char_356_broca",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "scName": "常驻中坚寻访78",
       "enName": null
     },
     "20230518_clafes_0001": {
