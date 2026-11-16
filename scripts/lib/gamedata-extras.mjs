@@ -27,7 +27,7 @@
  *     （解包路径上 charId 本来就有，不需要按名字反查）。
  */
 import { unixDate } from './gamedata.mjs';
-import { enModuleDateOverride, EN_MODULE_LAUNCH_DATE } from './en-module-dates.mjs';
+import { enModuleDateOverride } from './en-module-dates.mjs';
 
 /** 无复刻窗口时的兜底窗口长度（天）—— 官方只有首发日 */
 export const WINDOW_DAYS = 14;
@@ -82,26 +82,35 @@ export function extractModules(uniequip, nameOf, opNames, { typeSource = null, n
     const char = nameOf[charId];
     if (!char || !opNames.has(char)) continue;
     const adv = (ids || [])
-      .map((id) => dict[id])
-      .filter((e) => e && e.type === 'ADVANCED' && e.uniEquipGetTime > 0)
+      .map((id) => {
+        const e = dict[id];
+        if (!e || e.type !== 'ADVANCED' || !(e.uniEquipGetTime > 0)) return null;
+        const en = enDict[e.uniEquipId] || null;
+        /* 日期取**两者较早**的那个：日服比国际服早 10~16 小时上线（跨天就差一天，用户 2026-11-16
+           确认「早一天才是正确的」）；而极少数**真实排期不同**的（联动等，en 反而更早），
+           取更早的那个才不会把上线日志写成更晚的日期。 */
+        const enTime = en && en.uniEquipGetTime > 0 ? en.uniEquipGetTime : 0;
+        let time = enTime > 0 && enTime < e.uniEquipGetTime ? enTime : e.uniEquipGetTime;
+        /* ⚠️ 早期那批模组的时间戳被官方照搬成了国服的（2021-08 ~ 2022-01），而国际服模组系统
+           2022-01-14 才上线 —— 见 `lib/en-module-dates.mjs`（日期取自日服官网公告）。
+           `nameSource` 存在 = 正在出 en 的数据，这里按公告日期覆盖掉。
+           排序也用覆盖后的时间，免得 seq 跟着错日期走（取当天 12:00Z，怎么偏都不跨天）。 */
+        const ov = nameSource ? enModuleDateOverride(e.uniEquipId) : null;
+        if (ov) {
+          overrides += 1;
+          time = Date.parse(`${ov}T12:00:00Z`) / 1000;
+        }
+        return { e, en, time, ov };
+      })
+      .filter(Boolean)
       /* ⚠️ 自己按时间升序编号，**不用** `charEquipOrder`（见文件头说明） */
-      .sort((a, b) => a.uniEquipGetTime - b.uniEquipGetTime);
-    adv.forEach((e, i) => {
-      const en = enDict[e.uniEquipId] || null;
-      /* 日期取**两者较早**的那个：日服比国际服早 10~16 小时上线（跨天就差一天，用户 2026-11-16
-         确认「早一天才是正确的」）；而极少数**真实排期不同**的（联动等，en 反而更早），
-         取更早的那个才不会把上线日志写成更晚的日期。 */
-      const enTime = en && en.uniEquipGetTime > 0 ? en.uniEquipGetTime : 0;
-      let time = enTime > 0 && enTime < e.uniEquipGetTime ? enTime : e.uniEquipGetTime;
-      /* ⚠️ 国际服早期那 43 个模组的时间戳被官方照搬成了国服的（2021-08 ~ 2022-01），
-         而国际服模组功能 2022-09-16 才上线 —— 见 lib/en-module-dates.mjs 的证据链。
-         `nameSource` 存在 = 正在出 en 的数据，这里直接按上线日覆盖掉。
-         取当天 12:00Z 再按内容源时区换算，保证不会因为时区滑到前后一天。 */
-      const ov = nameSource ? enModuleDateOverride(e.uniEquipId) : null;
-      if (ov) { time = Date.parse(`${ov}T12:00:00Z`) / 1000; overrides += 1; }
+      .sort((a, b) => a.time - b.time);
+    adv.forEach(({ e, en, time, ov }, i) => {
       out.push({
         scCharName: char, charId, seq: i + 1,
-        name: (en && en.uniEquipName) || e.uniEquipName, date: unixDate(time, tz),
+        name: (en && en.uniEquipName) || e.uniEquipName,
+        /* 有覆盖就用公告日期原样落盘（不再经时区换算，免得滑到前后一天） */
+        date: ov || unixDate(time, tz),
         ...(nameSource ? { jpName: e.uniEquipName ?? null } : {}),
         /* 模组类型代号：X / Y / D / A / B（对照同表 `equipTypeInfos`：X、Y、D 是普通模组，
            A、B 的 `isSpecial` 为 true）。国服表取不到时退回本服。 */
@@ -114,7 +123,7 @@ export function extractModules(uniequip, nameOf, opNames, { typeSource = null, n
   }
   out.sort(byCharThen('seq'));
   if (overrides) {
-    console.log(`  · 早期模组日期覆盖：${overrides} 条 → ${EN_MODULE_LAUNCH_DATE}（时间戳照搬国服）`);
+    console.log(`  · 模组上线日覆盖：${overrides} 条（解包时间戳照搬国服，改用日服公告日期）`);
   }
   return out;
 }
