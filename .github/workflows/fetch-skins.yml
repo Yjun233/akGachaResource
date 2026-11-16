@@ -1,0 +1,67 @@
+name: 更新皮肤（PRTS Wiki）
+
+# 每周六**北京时间 13:17** 跑一次（也支持在网页上手动触发）。
+#
+# ⚠️ 2026-11-16 从「更新皮肤与官方解包 extras」里**拆出来**：
+#    两块数据的来源完全不同（PRTS 页面 / 官方解包表），挂在一个 job 里时
+#    ① 一方挂了另一方也跟着红；② 提交信息只能糊成一句「data(extras)」；
+#    ③ 想单独重跑一块就得连另一块一起跑。拆开后各自独立：跑、红、重跑都互不影响。
+#    解包那条见 `update-gamedata.yml`。
+#
+# ⚠️ 本工作流读仓库里的 `data/operators.json` 当**干员白名单** → 必须排在国服抓取之后。
+#    国服是周四 / 周五跑，周六跑正好能带上那一周新增的干员。
+# ⚠️ 只产出 `skins_sc.json`（**国服**皮肤，含复刻 / 下架窗口 —— UP 历史页的三角标记靠它）。
+#    en / tc 皮肤由解包那条工作流产出，别混。
+# ⚠️ Actions 的 cron 一律 UTC（北京 = UTC+8），13:17 → `17 5`。
+#    与主工作流一样避开整点，并**同样前移**：平台自 2026-08-26 起定时任务普遍迟到 5~7 小时，
+#    再按 18:17 排就会落到深夜。这条没有换池时效要求，**一场就够**（主工作流才需要兜底场）。
+#    实测与对策 → `akGachaDocs/resource/定时任务延迟预研.md`。
+"on":
+  schedule:
+    - cron: '17 5 * * 6'   # 6 = 周六
+  workflow_dispatch:        # 也支持手动触发
+
+permissions:
+  contents: write               # 需要用 GITHUB_TOKEN 推送
+
+# ⚠️ 五条工作流**共用同一个并发组** → 互相串行，避免同时 push 撞车。
+concurrency:
+  group: data-fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch-skins:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai         # 让提交信息里的日期是北京时间
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # 脚本 import 了 scripts/lib/http.mjs，那里要用 undici 包 → 必须装依赖。
+      - name: 安装依赖
+        run: npm ci
+
+      # 只读公开的 PRTS Wiki，**不需要任何令牌**。
+      # 数据没更新时脚本不会写盘、也不会动 generatedAt（见 fetch-skins.mjs）。
+      #
+      # ⚠️ 这一步**不加 continue-on-error**（拆出来之后没这个必要了）：
+      #    脚本是「全部算完、最后一次性写盘」，中途失败不会有半截数据要抢救；
+      #    失败了就该红，红了就该有人去看 —— 以前加它是怕牵连同 job 里的解包步骤。
+      # ⚠️ PRTS 偶发连接不通：脚本里已有「换一份 DNS 解析 + 钉 IP」的兜底
+      #    （lib/prts-net.mjs），与国服卡池脚本同一套。日志里看到
+      #    `UND_ERR_CONNECT_TIMEOUT` 刷屏就是那个问题又来了。
+      - name: 抓取国服皮肤（PRTS Wiki）
+        run: npm run build:skins
+
+      # 只刷本工作流产出的文件（**不含**卡池 / 解包 extras / metadata）。
+      # `if: !cancelled()` —— 上面万一失败但已经写盘了，抓到的那部分照样提交。
+      - uses: ./.github/actions/commit-and-purge
+        if: ${{ !cancelled() }}
+        with:
+          prefix: data(skins)
+          purge-files: |
+            skins_sc.json

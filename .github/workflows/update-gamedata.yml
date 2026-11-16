@@ -1,0 +1,67 @@
+name: 更新官方解包 extras（模组 / 密录 / en·tc 皮肤）
+
+# 每周六**北京时间 13:47** 跑一次（也支持在网页上手动触发）。
+#
+# ⚠️ 2026-11-16 从「更新皮肤与官方解包 extras」里**拆出来**（另一半见 `fetch-skins.yml`）：
+#    本工作流只做**官方解包**（ArknightsGamedata 的那几张 excel），
+#    不再顺手抓 PRTS 皮肤 —— 两块数据来源不同，挂在一起只会互相牵连。
+#
+# ⚠️ 它读仓库里的 `data/operators.json` 当**干员白名单** → 必须排在国服抓取之后
+#    （国服周四 / 周五跑，周六跑正好带上那一周新增的干员）。
+# ⚠️ `--only=extras`：中坚（`banners_cla_*`）由主工作流负责，这里不重复跑。
+#    产出 = `modules_*` / `memoirs_*` / `skins_en` / `skins_tc`。
+#
+# ⚠️ Actions 的 cron 一律 UTC（北京 = UTC+8），13:47 → `47 5`；比皮肤那条错开 30 分钟，
+#    给「共用一个并发组」留余量（真撞上也只是排队，不会丢数据）。
+#    平台自 2026-08-26 起定时任务普遍迟到 5~7 小时 → 与前几条一样前移。
+#    实测与对策 → `akGachaDocs/resource/定时任务延迟预研.md`。
+"on":
+  schedule:
+    - cron: '47 5 * * 6'   # 6 = 周六
+  workflow_dispatch:        # 也支持手动触发
+
+permissions:
+  contents: write               # 需要用 GITHUB_TOKEN 推送
+
+# ⚠️ 五条工作流**共用同一个并发组** → 互相串行，避免同时 push 撞车。
+concurrency:
+  group: data-fetch
+  cancel-in-progress: false
+
+jobs:
+  update-gamedata:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai         # 让提交信息里的日期是北京时间
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # 脚本 import 了 scripts/lib/http.mjs，那里要用 undici 包 → 必须装依赖。
+      # 不需要 Python（本工作流不碰头像）。
+      - name: 安装依赖
+        run: npm ci
+
+      # 官方解包：模组 / 密录（三服）+ en·tc 皮肤。自带 `data_version.txt` 短路，
+      # 版本没变时只下几个几十字节的版本文件就返回。
+      #
+      # ⚠️ 不加 `continue-on-error`：脚本是**分服写盘**的（每服算完就写），
+      #    中途挂了留下的半截数据由下面那步照常提交；失败本身要让 job 变红 ——
+      #    加了 continue-on-error 反而会把红抹成绿。要「提交残值」靠的是 `!cancelled()`。
+      - name: 抓取官方解包 extras（模组 / 密录 / en·tc 皮肤）
+        run: npm run build:gamedata -- --only=extras
+
+      # 本工作流会动到这几个文件（**不含**卡池、国服皮肤与 metadata），所以只刷它们。
+      # ⚠️ `if: !cancelled()` —— 否则前面一失败，已经写盘的那几个服的数据就白抓了。
+      #    无改动时 action 内部只打 notice、不会失败（见 commit-and-purge 的 diff 步骤）。
+      - uses: ./.github/actions/commit-and-purge
+        if: ${{ !cancelled() }}
+        with:
+          prefix: data(gamedata)
+          purge-files: |
+            skins_en.json skins_tc.json
+            memoirs_sc.json memoirs_en.json memoirs_tc.json
+            modules_sc.json modules_en.json modules_tc.json
