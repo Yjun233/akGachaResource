@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15",
+  "generatedAt": "2026-11-16",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "skins": [
     {
@@ -7,6 +7,7 @@
       "charId": "char_4179_monstr",
       "skinIndex": 1,
       "name": "Sharpened Claws",
+      "jpName": "尖鋭",
       "onShelf": [
         {
           "kind": "首发",
@@ -22,11 +23,12 @@
       "charId": "char_113_cqbw",
       "skinIndex": 1,
       "name": "Fugue",
+      "jpName": "うわの空",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-05-01",
-          "end": "2020-05-15",
+          "start": "2020-04-30",
+          "end": "2020-05-14",
           "note": "",
           "longTime": false
         }
@@ -37,11 +39,12 @@
       "charId": "char_148_nearl",
       "skinIndex": 1,
       "name": "Shining Dew SD01",
+      "jpName": "炎陽煌く露SD01",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-02-05",
-          "end": "2021-02-19",
+          "start": "2021-02-04",
+          "end": "2021-02-18",
           "note": "",
           "longTime": false
         }
@@ -52,6 +55,7 @@
       "charId": "char_4145_ulpia",
       "skinIndex": 1,
       "name": "Staring into the Abyss",
+      "jpName": "深淵をのぞく者",
       "onShelf": [
         {
           "kind": "首发",
@@ -67,6 +71,7 @@
       "charId": "char_455_nothin",
       "skinIndex": 1,
       "name": "Pale Rising Moon",
+      "jpName": "冷山月",
       "onShelf": [
         {
           "kind": "首发",
@@ -82,11 +87,12 @@
       "charId": "char_4082_qiubai",
       "skinIndex": 1,
       "name": "Wine-flushed is Woods of Rime",
+      "jpName": "霜林酔",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-03-20",
-          "end": "2024-04-03",
+          "start": "2024-03-19",
+          "end": "2024-04-02",
           "note": "",
           "longTime": false
         }
@@ -97,6 +103,7 @@
       "charId": "char_4082_qiubai",
       "skinIndex": 2,
       "name": "Courtesy",
+      "jpName": "礼をもって",
       "onShelf": [
         {
           "kind": "首发",
@@ -112,11 +119,12 @@
       "charId": "char_2023_ling",
       "skinIndex": 1,
       "name": "It Does Wash the Strings",
+      "jpName": "濯冠纓",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-07-29",
-          "end": "2023-08-12",
+          "start": "2023-07-28",
+          "end": "2023-08-11",
           "note": "",
           "longTime": false
         }
@@ -127,11 +135,12 @@
       "charId": "char_2023_ling",
       "skinIndex": 2,
       "name": "Towering is Cliff of Nostalgia",
+      "jpName": "崖高く夢遠し",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-03-20",
-          "end": "2024-04-03",
+          "start": "2024-03-19",
+          "end": "2024-04-02",
           "note": "",
           "longTime": false
         }
@@ -142,6 +151,7 @@
       "charId": "char_2023_ling",
       "skinIndex": 3,
       "name": "A Gallant Dream",
+      "jpName": "大道遊",
       "onShelf": [
         {
           "kind": "首发",
@@ -157,11 +167,12 @@
       "charId": "char_4087_ines",
       "skinIndex": 1,
       "name": "Under the Flaming Dome",
+      "jpName": "燃ゆる蒼穹の下",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-11-01",
-          "end": "2024-11-15",
+          "start": "2024-10-31",
+          "end": "2024-11-14",
           "note": "",
           "longTime": false
         }
@@ -172,11 +183,12 @@
       "charId": "char_4087_ines",
       "skinIndex": 2,
       "name": "Melodic Flutter",
+      "jpName": "胡蝶の舞",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-09-17",
-          "end": "2025-10-01",
+          "start": "2025-09-16",
+          "end": "2025-09-30",
           "note": "",
           "longTime": false
         }
@@ -187,11 +199,12 @@
       "charId": "char_134_ifrit",
       "skinIndex": 1,
       "name": "Sunburn SS.SP",
+      "jpName": "サンライトSS.SP",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-04-30",
-          "end": "2020-05-14",
+          "start": "2020-04-29",
+          "end": "2020-05-13",
           "note": "",
           "longTime": false
         }
@@ -202,6 +215,7 @@
       "charId": "char_134_ifrit",
       "skinIndex": 2,
       "name": "Relaxing Trip",
+      "jpName": "旅はごゆるりと",
       "onShelf": [
         {
           "kind": "首发",
@@ -217,11 +231,12 @@
       "charId": "char_4032_provs",
       "skinIndex": 1,
       "name": "High Autumn",
+      "jpName": "晴れ渡る秋空",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-08-23",
-          "end": "2023-09-06",
+          "start": "2023-08-22",
+          "end": "2023-09-05",
           "note": "",
           "longTime": false
         }
@@ -232,6 +247,7 @@
       "charId": "char_4032_provs",
       "skinIndex": 2,
       "name": "Holiday HD78",
+      "jpName": "ホリデーHD78",
       "onShelf": [
         {
           "kind": "首发",
@@ -247,6 +263,7 @@
       "charId": "char_2026_yu",
       "skinIndex": 1,
       "name": "Clear Morning View",
+      "jpName": "望昧爽",
       "onShelf": [
         {
           "kind": "首发",
@@ -262,6 +279,7 @@
       "charId": "char_4058_pepe",
       "skinIndex": 1,
       "name": "Nuit of the Nightsky",
+      "jpName": "星巡りの調べ",
       "onShelf": [
         {
           "kind": "首发",
@@ -277,11 +295,12 @@
       "charId": "char_1013_chen2",
       "skinIndex": 1,
       "name": "Ten Thousand Mountains",
+      "jpName": "万重山",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-11-08",
-          "end": "2023-11-22",
+          "start": "2023-11-07",
+          "end": "2023-11-21",
           "note": "",
           "longTime": false
         }
@@ -292,6 +311,7 @@
       "charId": "char_1013_chen2",
       "skinIndex": 2,
       "name": "Holiday HD79",
+      "jpName": "ホリデーHD79",
       "onShelf": [
         {
           "kind": "首发",
@@ -307,11 +327,12 @@
       "charId": "char_250_phatom",
       "skinIndex": 1,
       "name": "Dream Within a Dreammare",
+      "jpName": "終わらぬ悪夢",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-04-09",
-          "end": "2021-04-23",
+          "start": "2021-04-08",
+          "end": "2021-04-22",
           "note": "",
           "longTime": false
         }
@@ -322,11 +343,12 @@
       "charId": "char_115_headbr",
       "skinIndex": 1,
       "name": "Ready to Go",
+      "jpName": "整備完了",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-09-11",
-          "end": "2020-09-25",
+          "start": "2020-09-10",
+          "end": "2020-09-24",
           "note": "",
           "longTime": false
         }
@@ -337,6 +359,7 @@
       "charId": "char_115_headbr",
       "skinIndex": 2,
       "name": "Ursus IO79",
+      "jpName": "ウルサスIO79",
       "onShelf": [
         {
           "kind": "首发",
@@ -352,11 +375,12 @@
       "charId": "char_003_kalts",
       "skinIndex": 1,
       "name": "Remnant",
+      "jpName": "名残",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-11-08",
-          "end": "2023-11-22",
+          "start": "2023-11-07",
+          "end": "2023-11-21",
           "note": "",
           "longTime": false
         }
@@ -367,11 +391,28 @@
       "charId": "char_174_slbell",
       "skinIndex": 1,
       "name": "Caster's Frost",
+      "jpName": "カスターの霜",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-07-01",
-          "end": "2020-07-15",
+          "start": "2020-06-30",
+          "end": "2020-07-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "scCharName": "刺玫",
+      "charId": "char_494_vendla",
+      "skinIndex": 1,
+      "name": "謎抱く薔薇",
+      "jpName": "謎抱く薔薇",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-11-16",
+          "end": "2026-11-30",
           "note": "",
           "longTime": false
         }
@@ -382,11 +423,12 @@
       "charId": "char_2013_cerber",
       "skinIndex": 1,
       "name": "Summer Flowers FA333",
+      "jpName": "夏の花弁FA333",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-02-26",
-          "end": "2021-03-12",
+          "start": "2021-02-25",
+          "end": "2021-03-11",
           "note": "",
           "longTime": false
         }
@@ -397,6 +439,7 @@
       "charId": "char_2013_cerber",
       "skinIndex": 2,
       "name": "Unfettered",
+      "jpName": "自由奔放",
       "onShelf": [
         {
           "kind": "首发",
@@ -412,6 +455,7 @@
       "charId": "char_171_bldsk",
       "skinIndex": 1,
       "name": "the feast",
+      "jpName": "盛宴",
       "onShelf": [
         {
           "kind": "首发",
@@ -427,6 +471,7 @@
       "charId": "char_214_kafka",
       "skinIndex": 1,
       "name": "Cardboard Fairy",
+      "jpName": "紙細工の妖精",
       "onShelf": [
         {
           "kind": "首发",
@@ -442,6 +487,7 @@
       "charId": "char_426_billro",
       "skinIndex": 1,
       "name": "Hohenlohe Chillysand",
+      "jpName": "ホーエンローエの氷砂",
       "onShelf": [
         {
           "kind": "首发",
@@ -457,6 +503,7 @@
       "charId": "char_426_billro",
       "skinIndex": 2,
       "name": "Shining Dew SD08",
+      "jpName": "炎陽煌く露SD08",
       "onShelf": [
         {
           "kind": "首发",
@@ -472,6 +519,7 @@
       "charId": "char_1036_fang2",
       "skinIndex": 1,
       "name": "A Pure Pianissimo",
+      "jpName": "無垢なるピアニッシモ",
       "onShelf": [
         {
           "kind": "首发",
@@ -487,11 +535,12 @@
       "charId": "char_201_moeshd",
       "skinIndex": 1,
       "name": "Seeker SK03",
+      "jpName": "シーカーSK03",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-02-26",
-          "end": "2021-03-12",
+          "start": "2021-02-25",
+          "end": "2021-03-11",
           "note": "",
           "longTime": false
         }
@@ -502,6 +551,7 @@
       "charId": "char_350_surtr",
       "skinIndex": 1,
       "name": "Liberté//Échec",
+      "jpName": "自由//失効",
       "onShelf": [
         {
           "kind": "首发",
@@ -517,6 +567,7 @@
       "charId": "char_350_surtr",
       "skinIndex": 2,
       "name": "Colorful Wonderland CW03",
+      "jpName": "極彩の楽園CW03",
       "onShelf": [
         {
           "kind": "首发",
@@ -532,6 +583,7 @@
       "charId": "char_350_surtr",
       "skinIndex": 3,
       "name": "Prelude to Transcendence",
+      "jpName": "超然たる前奏曲",
       "onShelf": [
         {
           "kind": "首发",
@@ -547,6 +599,7 @@
       "charId": "char_4039_horn",
       "skinIndex": 1,
       "name": "To Effloresce Whitely",
+      "jpName": "花となりて",
       "onShelf": [
         {
           "kind": "首发",
@@ -562,6 +615,7 @@
       "charId": "char_1043_leizi2",
       "skinIndex": 1,
       "name": "The Bloodwing Rose",
+      "jpName": "血翼ノ薔薇",
       "onShelf": [
         {
           "kind": "首发",
@@ -577,11 +631,12 @@
       "charId": "char_226_hmau",
       "skinIndex": 1,
       "name": "Just A Driver",
+      "jpName": "小粋車夫",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-07-31",
-          "end": "2021-08-14",
+          "start": "2021-07-30",
+          "end": "2021-08-13",
           "note": "",
           "longTime": false
         }
@@ -592,6 +647,7 @@
       "charId": "char_297_hamoni",
       "skinIndex": 1,
       "name": "Invitation",
+      "jpName": "お誘い",
       "onShelf": [
         {
           "kind": "首发",
@@ -607,6 +663,7 @@
       "charId": "char_297_hamoni",
       "skinIndex": 2,
       "name": "Decoration",
+      "jpName": "おめかし",
       "onShelf": [
         {
           "kind": "首发",
@@ -622,11 +679,12 @@
       "charId": "char_365_aprl",
       "skinIndex": 1,
       "name": "Faraway Gaze",
+      "jpName": "遠望",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-03-26",
-          "end": "2021-04-09",
+          "start": "2021-03-25",
+          "end": "2021-04-08",
           "note": "",
           "longTime": false
         }
@@ -637,11 +695,12 @@
       "charId": "char_1032_excu2",
       "skinIndex": 1,
       "name": "Allmind As One",
+      "jpName": "絶対の集合知",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-04-25",
-          "end": "2025-05-09",
+          "start": "2025-04-24",
+          "end": "2025-05-08",
           "note": "",
           "longTime": false
         }
@@ -652,6 +711,7 @@
       "charId": "char_1032_excu2",
       "skinIndex": 2,
       "name": "The Train Runner",
+      "jpName": "蒸気を追いかけて",
       "onShelf": [
         {
           "kind": "首发",
@@ -667,11 +727,12 @@
       "charId": "char_245_cello",
       "skinIndex": 1,
       "name": "Diversity Oneness",
+      "jpName": "無我の唯一識",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-04-25",
-          "end": "2025-05-09",
+          "start": "2025-04-24",
+          "end": "2025-05-08",
           "note": "",
           "longTime": false
         }
@@ -682,11 +743,12 @@
       "charId": "char_202_demkni",
       "skinIndex": 1,
       "name": "Stronghold",
+      "jpName": "堅城",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-12-31",
-          "end": "2021-01-14",
+          "start": "2020-12-30",
+          "end": "2021-01-13",
           "note": "",
           "longTime": false
         }
@@ -697,11 +759,12 @@
       "charId": "char_202_demkni",
       "skinIndex": 2,
       "name": "The Law",
+      "jpName": "鉄の掟",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-06-23",
-          "end": "2021-07-07",
+          "start": "2021-06-22",
+          "end": "2021-07-06",
           "note": "",
           "longTime": false
         }
@@ -712,6 +775,7 @@
       "charId": "char_202_demkni",
       "skinIndex": 3,
       "name": "Unstained, Unshaken",
+      "jpName": "揺るぎなき黒白",
       "onShelf": [
         {
           "kind": "首发",
@@ -727,6 +791,7 @@
       "charId": "char_492_quercu",
       "skinIndex": 1,
       "name": "The Bard's Tale",
+      "jpName": "木陰の吟遊詩人",
       "onShelf": [
         {
           "kind": "首发",
@@ -742,6 +807,7 @@
       "charId": "char_2015_dusk",
       "skinIndex": 1,
       "name": "Everything Is a Miracle",
+      "jpName": "染塵煙",
       "onShelf": [
         {
           "kind": "首发",
@@ -757,6 +823,7 @@
       "charId": "char_2015_dusk",
       "skinIndex": 2,
       "name": "Hazy Jade",
+      "jpName": "青玉硯",
       "onShelf": [
         {
           "kind": "首发",
@@ -772,6 +839,7 @@
       "charId": "char_4048_doroth",
       "skinIndex": 1,
       "name": "Hand of Destiny",
+      "jpName": "運命の支配者",
       "onShelf": [
         {
           "kind": "首发",
@@ -787,6 +855,7 @@
       "charId": "char_476_blkngt",
       "skinIndex": 1,
       "name": "Summer Flowers FA641",
+      "jpName": "夏の花弁FA641",
       "onShelf": [
         {
           "kind": "首发",
@@ -802,6 +871,7 @@
       "charId": "char_179_cgbird",
       "skinIndex": 1,
       "name": "an elegy",
+      "jpName": "挽歌",
       "onShelf": [
         {
           "kind": "首发",
@@ -817,11 +887,12 @@
       "charId": "char_179_cgbird",
       "skinIndex": 2,
       "name": "Iakhu of Flows",
+      "jpName": "流麗なる光",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-01-17",
-          "end": "2025-01-31",
+          "start": "2025-01-16",
+          "end": "2025-01-30",
           "note": "",
           "longTime": false
         }
@@ -832,11 +903,12 @@
       "charId": "char_164_nightm",
       "skinIndex": 1,
       "name": "The Ferry Girl",
+      "jpName": "湖畔の少女",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-08-08",
-          "end": "2025-08-22",
+          "start": "2025-08-07",
+          "end": "2025-08-21",
           "note": "",
           "longTime": false
         }
@@ -847,11 +919,12 @@
       "charId": "char_166_skfire",
       "skinIndex": 1,
       "name": "Temperature Difference RT.RX01",
+      "jpName": "温度差RT.RX01",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-04-30",
-          "end": "2020-05-14",
+          "start": "2020-04-29",
+          "end": "2020-05-13",
           "note": "",
           "longTime": false
         }
@@ -862,6 +935,7 @@
       "charId": "char_346_aosta",
       "skinIndex": 1,
       "name": "Light Gun Adjuster",
+      "jpName": "ライトガンテスター",
       "onShelf": [
         {
           "kind": "首发",
@@ -877,6 +951,7 @@
       "charId": "char_4146_nymph",
       "skinIndex": 1,
       "name": "Sweetness to the Heart",
+      "jpName": "甘美な真心",
       "onShelf": [
         {
           "kind": "首发",
@@ -892,6 +967,7 @@
       "charId": "char_4146_nymph",
       "skinIndex": 2,
       "name": "Blooming Reverie",
+      "jpName": "爛漫たる幻想曲",
       "onShelf": [
         {
           "kind": "首发",
@@ -907,6 +983,7 @@
       "charId": "char_4138_narant",
       "skinIndex": 1,
       "name": "The Chainsaw Nurse",
+      "jpName": "チェーンソーナース",
       "onShelf": [
         {
           "kind": "首发",
@@ -922,6 +999,7 @@
       "charId": "char_4014_lunacu",
       "skinIndex": 1,
       "name": "Clouds Float Like Ideas of Art",
+      "jpName": "海棠の夢",
       "onShelf": [
         {
           "kind": "首发",
@@ -937,11 +1015,12 @@
       "charId": "char_158_milu",
       "skinIndex": 1,
       "name": "Wilted Cypress",
+      "jpName": "枯れ柏",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-05-28",
-          "end": "2020-06-11",
+          "start": "2020-05-27",
+          "end": "2020-06-10",
           "note": "",
           "longTime": false
         }
@@ -952,11 +1031,12 @@
       "charId": "char_158_milu",
       "skinIndex": 2,
       "name": "Snowywatch",
+      "jpName": "白い狩人",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-06-23",
-          "end": "2021-07-07",
+          "start": "2021-06-22",
+          "end": "2021-07-06",
           "note": "",
           "longTime": false
         }
@@ -967,6 +1047,7 @@
       "charId": "char_218_cuttle",
       "skinIndex": 1,
       "name": "Silent Arrow",
+      "jpName": "暗矢",
       "onShelf": [
         {
           "kind": "首发",
@@ -982,11 +1063,12 @@
       "charId": "char_291_aglina",
       "skinIndex": 1,
       "name": "Distinguished Visitor",
+      "jpName": "要因たる訪問者",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-12-31",
-          "end": "2021-01-14",
+          "start": "2020-12-30",
+          "end": "2021-01-13",
           "note": "",
           "longTime": false
         }
@@ -997,11 +1079,12 @@
       "charId": "char_291_aglina",
       "skinIndex": 2,
       "name": "Summer Flowers FA017",
+      "jpName": "夏の花弁FA017",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2022-02-05",
-          "end": "2022-02-19",
+          "start": "2022-02-04",
+          "end": "2022-02-18",
           "note": "",
           "longTime": false
         }
@@ -1012,6 +1095,7 @@
       "charId": "char_4052_surfer",
       "skinIndex": 1,
       "name": "By the Lamplight",
+      "jpName": "憑勾欄",
       "onShelf": [
         {
           "kind": "首发",
@@ -1027,6 +1111,7 @@
       "charId": "char_4122_grabds",
       "skinIndex": 1,
       "name": "Fragrant Pace",
+      "jpName": "歩芳蘭",
       "onShelf": [
         {
           "kind": "首发",
@@ -1042,11 +1127,12 @@
       "charId": "char_264_f12yin",
       "skinIndex": 1,
       "name": "Dark Cloud",
+      "jpName": "烏雲",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-10-22",
-          "end": "2021-11-05",
+          "start": "2021-10-21",
+          "end": "2021-11-04",
           "note": "",
           "longTime": false
         }
@@ -1057,11 +1143,12 @@
       "charId": "char_264_f12yin",
       "skinIndex": 2,
       "name": "Book Reader",
+      "jpName": "読書家",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-04-01",
-          "end": "2023-04-15",
+          "start": "2023-03-31",
+          "end": "2023-04-14",
           "note": "",
           "longTime": false
         }
@@ -1072,11 +1159,12 @@
       "charId": "char_173_slchan",
       "skinIndex": 1,
       "name": "Lone Climber",
+      "jpName": "登山家",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-02-27",
-          "end": "2020-03-12",
+          "start": "2020-02-26",
+          "end": "2020-03-11",
           "note": "",
           "longTime": false
         }
@@ -1087,6 +1175,7 @@
       "charId": "char_362_saga",
       "skinIndex": 1,
       "name": "There They Be",
+      "jpName": "彼有",
       "onShelf": [
         {
           "kind": "首发",
@@ -1102,11 +1191,12 @@
       "charId": "char_4121_zuole",
       "skinIndex": 1,
       "name": "Youthful Journey",
+      "jpName": "少年游",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-07-18",
-          "end": "2025-08-01",
+          "start": "2025-07-17",
+          "end": "2025-07-31",
           "note": "",
           "longTime": false
         }
@@ -1117,6 +1207,7 @@
       "charId": "char_4121_zuole",
       "skinIndex": 2,
       "name": "Quiet Move",
+      "jpName": "静かなる一手",
       "onShelf": [
         {
           "kind": "首发",
@@ -1132,6 +1223,7 @@
       "charId": "char_254_vodfox",
       "skinIndex": 1,
       "name": "Echo of the Horrorlair",
+      "jpName": "魔城の呼び声",
       "onShelf": [
         {
           "kind": "首发",
@@ -1147,6 +1239,7 @@
       "charId": "char_254_vodfox",
       "skinIndex": 2,
       "name": "Celestial Crane",
+      "jpName": "繍雲鶴",
       "onShelf": [
         {
           "kind": "首发",
@@ -1162,6 +1255,7 @@
       "charId": "char_485_pallas",
       "skinIndex": 1,
       "name": "Heritage",
+      "jpName": "伝承",
       "onShelf": [
         {
           "kind": "首发",
@@ -1177,11 +1271,12 @@
       "charId": "char_2014_nian",
       "skinIndex": 1,
       "name": "Unfettered Freedom",
+      "jpName": "楽逍遥",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-07-31",
-          "end": "2021-08-14",
+          "start": "2021-07-30",
+          "end": "2021-08-13",
           "note": "",
           "longTime": false
         }
@@ -1192,11 +1287,12 @@
       "charId": "char_2014_nian",
       "skinIndex": 2,
       "name": "Thunderbolt Director",
+      "jpName": "風雲の名監督",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-06-13",
-          "end": "2025-06-27",
+          "start": "2025-06-12",
+          "end": "2025-06-26",
           "note": "",
           "longTime": false
         }
@@ -1207,11 +1303,12 @@
       "charId": "char_143_ghost",
       "skinIndex": 1,
       "name": "Undercurrent",
+      "jpName": "暗流",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-02-06",
-          "end": "2020-02-20",
+          "start": "2020-02-05",
+          "end": "2020-02-19",
           "note": "",
           "longTime": false
         }
@@ -1222,6 +1319,7 @@
       "charId": "char_472_pasngr",
       "skinIndex": 1,
       "name": "Dream In A Moment",
+      "jpName": "玉響の今在",
       "onShelf": [
         {
           "kind": "首发",
@@ -1237,6 +1335,7 @@
       "charId": "char_1039_thorn2",
       "skinIndex": 1,
       "name": "Boundless Sail",
+      "jpName": "無辺の帆",
       "onShelf": [
         {
           "kind": "首发",
@@ -1252,11 +1351,12 @@
       "charId": "char_1023_ghost2",
       "skinIndex": 1,
       "name": "Born as One",
+      "jpName": "対なる一人",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-11-08",
-          "end": "2023-11-22",
+          "start": "2023-11-07",
+          "end": "2023-11-21",
           "note": "",
           "longTime": false
         }
@@ -1267,11 +1367,12 @@
       "charId": "char_102_texas",
       "skinIndex": 1,
       "name": "Winter Messenger",
+      "jpName": "冬の使者",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-02-06",
-          "end": "2020-02-20",
+          "start": "2020-02-05",
+          "end": "2020-02-19",
           "note": "",
           "longTime": false
         }
@@ -1282,11 +1383,28 @@
       "charId": "char_102_texas",
       "skinIndex": 2,
       "name": "Willpower",
+      "jpName": "意志",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-05-01",
-          "end": "2020-05-15",
+          "start": "2020-04-30",
+          "end": "2020-05-14",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "scCharName": "忍冬",
+      "charId": "char_4026_vulpis",
+      "skinIndex": 1,
+      "name": "焦点の外に",
+      "jpName": "焦点の外に",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-11-16",
+          "end": "2026-11-30",
           "note": "",
           "longTime": false
         }
@@ -1297,11 +1415,12 @@
       "charId": "char_306_leizi",
       "skinIndex": 1,
       "name": "The Archivist and Her Pilgrimage",
+      "jpName": "遺跡の遊学者",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-03-11",
-          "end": "2025-03-25",
+          "start": "2025-03-10",
+          "end": "2025-03-24",
           "note": "",
           "longTime": false
         }
@@ -1312,6 +1431,7 @@
       "charId": "char_379_sesa",
       "skinIndex": 1,
       "name": "To Evoke the Anima",
+      "jpName": "万物に魂有り",
       "onShelf": [
         {
           "kind": "首发",
@@ -1327,6 +1447,7 @@
       "charId": "char_1027_greyy2",
       "skinIndex": 1,
       "name": "Aftershow",
+      "jpName": "終演後の王子様",
       "onShelf": [
         {
           "kind": "首发",
@@ -1342,6 +1463,7 @@
       "charId": "char_1027_greyy2",
       "skinIndex": 2,
       "name": "Biochemical Submergence",
+      "jpName": "トキシックホリック",
       "onShelf": [
         {
           "kind": "首发",
@@ -1357,11 +1479,12 @@
       "charId": "char_140_whitew",
       "skinIndex": 1,
       "name": "Refined Horrormare",
+      "jpName": "典雅なる凶兆",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-12-31",
-          "end": "2021-01-14",
+          "start": "2020-12-30",
+          "end": "2021-01-13",
           "note": "",
           "longTime": false
         }
@@ -1372,6 +1495,7 @@
       "charId": "char_112_siege",
       "skinIndex": 1,
       "name": "City Destroyer",
+      "jpName": "破城",
       "onShelf": [
         {
           "kind": "首发",
@@ -1387,6 +1511,7 @@
       "charId": "char_2012_typhon",
       "skinIndex": 1,
       "name": "Temperature Difference RT.RX07",
+      "jpName": "温度差RT.RX07",
       "onShelf": [
         {
           "kind": "首发",
@@ -1402,6 +1527,7 @@
       "charId": "char_4065_judge",
       "skinIndex": 1,
       "name": "Occasionally Flushed",
+      "jpName": "たまの深酒",
       "onShelf": [
         {
           "kind": "首发",
@@ -1417,6 +1543,7 @@
       "charId": "char_4065_judge",
       "skinIndex": 2,
       "name": "Scribing",
+      "jpName": "書き記す者",
       "onShelf": [
         {
           "kind": "首发",
@@ -1432,11 +1559,12 @@
       "charId": "char_294_ayer",
       "skinIndex": 1,
       "name": "Tested One",
+      "jpName": "潜入者",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-10-22",
-          "end": "2021-11-05",
+          "start": "2021-10-21",
+          "end": "2021-11-04",
           "note": "",
           "longTime": false
         }
@@ -1447,11 +1575,12 @@
       "charId": "char_263_skadi",
       "skinIndex": 1,
       "name": "Waverider WR04",
+      "jpName": "ウェーブライダーWR04",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-01-21",
-          "end": "2021-02-04",
+          "start": "2021-01-20",
+          "end": "2021-02-03",
           "note": "",
           "longTime": false
         }
@@ -1462,11 +1591,12 @@
       "charId": "char_263_skadi",
       "skinIndex": 2,
       "name": "The Next Afternoon Tea",
+      "jpName": "次のおやつは",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-11-29",
-          "end": "2023-12-13",
+          "start": "2023-11-28",
+          "end": "2023-12-12",
           "note": "",
           "longTime": false
         }
@@ -1477,6 +1607,7 @@
       "charId": "char_1041_angel2",
       "skinIndex": 1,
       "name": "The Legend Seeker",
+      "jpName": "翼の探求者",
       "onShelf": [
         {
           "kind": "首发",
@@ -1492,6 +1623,7 @@
       "charId": "char_197_poca",
       "skinIndex": 1,
       "name": "Masterpiece",
+      "jpName": "傑作",
       "onShelf": [
         {
           "kind": "首发",
@@ -1507,6 +1639,7 @@
       "charId": "char_197_poca",
       "skinIndex": 2,
       "name": "Forever Together",
+      "jpName": "いつもあなたのそばに",
       "onShelf": [
         {
           "kind": "首发",
@@ -1522,6 +1655,7 @@
       "charId": "char_4071_peper",
       "skinIndex": 1,
       "name": "The Road to Here",
+      "jpName": "来た道",
       "onShelf": [
         {
           "kind": "首发",
@@ -1537,11 +1671,12 @@
       "charId": "char_274_astesi",
       "skinIndex": 1,
       "name": "Starseeker",
+      "jpName": "星尋ね",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-10-29",
-          "end": "2020-11-12",
+          "start": "2020-10-28",
+          "end": "2020-11-11",
           "note": "",
           "longTime": false
         }
@@ -1552,6 +1687,7 @@
       "charId": "char_274_astesi",
       "skinIndex": 2,
       "name": "Frlibe on the Palace",
+      "jpName": "翼広げしフレリーべ",
       "onShelf": [
         {
           "kind": "首发",
@@ -1567,11 +1703,12 @@
       "charId": "char_136_hsguma",
       "skinIndex": 1,
       "name": "Ronin Huntress",
+      "jpName": "流離いの旗印",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-09-11",
-          "end": "2020-09-25",
+          "start": "2020-09-10",
+          "end": "2020-09-24",
           "note": "",
           "longTime": false
         }
@@ -1582,11 +1719,12 @@
       "charId": "char_497_ctable",
       "skinIndex": 1,
       "name": "Illumination That of Daylights",
+      "jpName": "灯如昼",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-07-29",
-          "end": "2023-08-12",
+          "start": "2023-07-28",
+          "end": "2023-08-11",
           "note": "",
           "longTime": false
         }
@@ -1597,6 +1735,7 @@
       "charId": "char_497_ctable",
       "skinIndex": 2,
       "name": "Bard by the Lake",
+      "jpName": "湖畔に響く囀り",
       "onShelf": [
         {
           "kind": "首发",
@@ -1612,11 +1751,12 @@
       "charId": "char_145_prove",
       "skinIndex": 1,
       "name": "Holiday HD08",
+      "jpName": "ホリデーHD08",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-01-21",
-          "end": "2021-02-04",
+          "start": "2021-01-20",
+          "end": "2021-02-03",
           "note": "",
           "longTime": false
         }
@@ -1627,6 +1767,7 @@
       "charId": "char_343_tknogi",
       "skinIndex": 1,
       "name": "Londinium Style Miko",
+      "jpName": "ロンディニウム式巫女",
       "onShelf": [
         {
           "kind": "首发",
@@ -1642,6 +1783,7 @@
       "charId": "char_343_tknogi",
       "skinIndex": 2,
       "name": "Dance",
+      "jpName": "舞",
       "onShelf": [
         {
           "kind": "首发",
@@ -1657,11 +1799,12 @@
       "charId": "char_4105_almond",
       "skinIndex": 1,
       "name": "Almond Platter",
+      "jpName": "「アーモンド」ミックス",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-07-18",
-          "end": "2025-08-01",
+          "start": "2025-07-17",
+          "end": "2025-07-31",
           "note": "",
           "longTime": false
         }
@@ -1672,6 +1815,7 @@
       "charId": "char_422_aurora",
       "skinIndex": 1,
       "name": "Polar Catcher",
+      "jpName": "白夜踏破",
       "onShelf": [
         {
           "kind": "首发",
@@ -1687,11 +1831,12 @@
       "charId": "char_401_elysm",
       "skinIndex": 1,
       "name": "Snowy Echo",
+      "jpName": "雪夜の思い出",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-06-23",
-          "end": "2021-07-07",
+          "start": "2021-06-22",
+          "end": "2021-07-06",
           "note": "",
           "longTime": false
         }
@@ -1702,6 +1847,7 @@
       "charId": "char_401_elysm",
       "skinIndex": 2,
       "name": "Shining Dew SDm11",
+      "jpName": "炎陽煌く露SDm11",
       "onShelf": [
         {
           "kind": "首发",
@@ -1717,6 +1863,7 @@
       "charId": "char_4080_lin",
       "skinIndex": 1,
       "name": "Heavenly Mirage",
+      "jpName": "列瑶台",
       "onShelf": [
         {
           "kind": "首发",
@@ -1732,6 +1879,7 @@
       "charId": "char_4080_lin",
       "skinIndex": 2,
       "name": "Summer Flowers FA137",
+      "jpName": "夏の花弁FA137",
       "onShelf": [
         {
           "kind": "首发",
@@ -1747,11 +1895,12 @@
       "charId": "char_326_glacus",
       "skinIndex": 1,
       "name": "Exterminator in the Square",
+      "jpName": "広場の掃討者",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-04-09",
-          "end": "2021-04-23",
+          "start": "2021-04-08",
+          "end": "2021-04-22",
           "note": "",
           "longTime": false
         }
@@ -1762,6 +1911,7 @@
       "charId": "char_473_mberry",
       "skinIndex": 1,
       "name": "Plant Crude Drug",
+      "jpName": "薬師",
       "onShelf": [
         {
           "kind": "首发",
@@ -1777,11 +1927,12 @@
       "charId": "char_473_mberry",
       "skinIndex": 2,
       "name": "Reflection That of the Moons",
+      "jpName": "照氷輪",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-07-29",
-          "end": "2023-08-12",
+          "start": "2023-07-28",
+          "end": "2023-08-11",
           "note": "",
           "longTime": false
         }
@@ -1792,11 +1943,12 @@
       "charId": "char_242_otter",
       "skinIndex": 1,
       "name": "Visionblazer in the Courtyard",
+      "jpName": "庭園の探夢者",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-04-09",
-          "end": "2021-04-23",
+          "start": "2021-04-08",
+          "end": "2021-04-22",
           "note": "",
           "longTime": false
         }
@@ -1807,6 +1959,7 @@
       "charId": "char_293_thorns",
       "skinIndex": 1,
       "name": "Cómodo",
+      "jpName": "満喫",
       "onShelf": [
         {
           "kind": "首发",
@@ -1822,11 +1975,12 @@
       "charId": "char_293_thorns",
       "skinIndex": 2,
       "name": "Blade-cleaved Tides",
+      "jpName": "切先の潮騒",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-11-01",
-          "end": "2024-11-15",
+          "start": "2024-10-31",
+          "end": "2024-11-14",
           "note": "",
           "longTime": false
         }
@@ -1837,11 +1991,12 @@
       "charId": "char_416_zumama",
       "skinIndex": 1,
       "name": "Forgemaster",
+      "jpName": "熔冶工匠",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-10-22",
-          "end": "2021-11-05",
+          "start": "2021-10-21",
+          "end": "2021-11-04",
           "note": "",
           "longTime": false
         }
@@ -1852,6 +2007,7 @@
       "charId": "char_243_waaifu",
       "skinIndex": 1,
       "name": "Wild Flower of Street",
+      "jpName": "ストリートフラワー",
       "onShelf": [
         {
           "kind": "首发",
@@ -1867,6 +2023,7 @@
       "charId": "char_450_necras",
       "skinIndex": 1,
       "name": "Summer Flowers FA161",
+      "jpName": "夏の花弁FA161",
       "onShelf": [
         {
           "kind": "首发",
@@ -1882,6 +2039,7 @@
       "charId": "char_450_necras",
       "skinIndex": 2,
       "name": "As Clear As Crystal",
+      "jpName": "澄みゆく意志",
       "onShelf": [
         {
           "kind": "首发",
@@ -1897,6 +2055,7 @@
       "charId": "char_437_mizuki",
       "skinIndex": 1,
       "name": "A Player Forever",
+      "jpName": "果てなき遊び心",
       "onShelf": [
         {
           "kind": "首发",
@@ -1912,6 +2071,7 @@
       "charId": "char_487_bobb",
       "skinIndex": 1,
       "name": "Heartwarming Baking",
+      "jpName": "ほっこりベーキング",
       "onShelf": [
         {
           "kind": "首发",
@@ -1927,6 +2087,7 @@
       "charId": "char_311_mudrok",
       "skinIndex": 1,
       "name": "Silent Night DN06",
+      "jpName": "安息の午夜DN06",
       "onShelf": [
         {
           "kind": "首发",
@@ -1942,6 +2103,7 @@
       "charId": "char_311_mudrok",
       "skinIndex": 2,
       "name": "Obsidian",
+      "jpName": "オブシディアン",
       "onShelf": [
         {
           "kind": "首发",
@@ -1957,6 +2119,7 @@
       "charId": "char_464_cement",
       "skinIndex": 1,
       "name": "New Business",
+      "jpName": "事業開拓",
       "onShelf": [
         {
           "kind": "首发",
@@ -1972,11 +2135,12 @@
       "charId": "char_4040_rockr",
       "skinIndex": 1,
       "name": "Before Singing",
+      "jpName": "歌の前に",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-04-08",
-          "end": "2023-04-22",
+          "start": "2023-04-07",
+          "end": "2023-04-21",
           "note": "",
           "longTime": false
         }
@@ -1987,6 +2151,7 @@
       "charId": "char_1012_skadi2",
       "skinIndex": 1,
       "name": "Sublimation",
+      "jpName": "昇華",
       "onShelf": [
         {
           "kind": "首发",
@@ -2002,11 +2167,12 @@
       "charId": "char_1012_skadi2",
       "skinIndex": 2,
       "name": "Red Countess",
+      "jpName": "レッドカウンテス",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-11-01",
-          "end": "2024-11-15",
+          "start": "2024-10-31",
+          "end": "2024-11-14",
           "note": "",
           "longTime": false
         }
@@ -2017,6 +2183,7 @@
       "charId": "char_4079_haini",
       "skinIndex": 1,
       "name": "Tidal Bore",
+      "jpName": "潮波",
       "onShelf": [
         {
           "kind": "首发",
@@ -2032,11 +2199,12 @@
       "charId": "char_1034_jesca2",
       "skinIndex": 1,
       "name": "'Ride to Davistown'",
+      "jpName": "『デイヴィスタウンへ赴く』",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-06-13",
-          "end": "2025-06-27",
+          "start": "2025-06-12",
+          "end": "2025-06-26",
           "note": "",
           "longTime": false
         }
@@ -2047,6 +2215,7 @@
       "charId": "char_4109_baslin",
       "skinIndex": 1,
       "name": "Starry Night Sky",
+      "jpName": "夜天に輝く星",
       "onShelf": [
         {
           "kind": "首发",
@@ -2062,6 +2231,7 @@
       "charId": "char_4147_mitm",
       "skinIndex": 1,
       "name": "Under Surgical Lights",
+      "jpName": "サージカルライト",
       "onShelf": [
         {
           "kind": "首发",
@@ -2077,11 +2247,12 @@
       "charId": "char_4081_warmy",
       "skinIndex": 1,
       "name": "Warm Velvet At the Corner",
+      "jpName": "街角の温もり",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-04-25",
-          "end": "2025-05-09",
+          "start": "2025-04-24",
+          "end": "2025-05-08",
           "note": "",
           "longTime": false
         }
@@ -2092,11 +2263,12 @@
       "charId": "char_400_weedy",
       "skinIndex": 1,
       "name": "Candy Cape",
+      "jpName": "キャンディフェアリー",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-06-23",
-          "end": "2021-07-07",
+          "start": "2021-06-22",
+          "end": "2021-07-06",
           "note": "",
           "longTime": false
         }
@@ -2107,11 +2279,12 @@
       "charId": "char_400_weedy",
       "skinIndex": 2,
       "name": "Sedjem",
+      "jpName": "耳を傾けて",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-01-17",
-          "end": "2025-01-31",
+          "start": "2025-01-16",
+          "end": "2025-01-30",
           "note": "",
           "longTime": false
         }
@@ -2122,6 +2295,7 @@
       "charId": "char_377_gdglow",
       "skinIndex": 1,
       "name": "Maiden for the Bright Night",
+      "jpName": "しあわせの使い",
       "onShelf": [
         {
           "kind": "首发",
@@ -2137,11 +2311,12 @@
       "charId": "char_377_gdglow",
       "skinIndex": 2,
       "name": "Summer Flowers FA394",
+      "jpName": "夏の花弁FA394",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-01-17",
-          "end": "2024-01-31",
+          "start": "2024-01-16",
+          "end": "2024-01-30",
           "note": "",
           "longTime": false
         }
@@ -2152,11 +2327,12 @@
       "charId": "char_377_gdglow",
       "skinIndex": 3,
       "name": "Party In The Garden",
+      "jpName": "ハローティーパーティ",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-12-21",
-          "end": "2025-01-04",
+          "start": "2024-12-20",
+          "end": "2025-01-03",
           "note": "",
           "longTime": false
         }
@@ -2167,11 +2343,12 @@
       "charId": "char_1024_hbisc2",
       "skinIndex": 1,
       "name": "Romance Overflow",
+      "jpName": "溢るる浪漫",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-08-08",
-          "end": "2025-08-22",
+          "start": "2025-08-07",
+          "end": "2025-08-21",
           "note": "",
           "longTime": false
         }
@@ -2182,11 +2359,12 @@
       "charId": "char_367_swllow",
       "skinIndex": 1,
       "name": "Homecoming",
+      "jpName": "帰巣",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-12-31",
-          "end": "2021-01-14",
+          "start": "2020-12-30",
+          "end": "2021-01-13",
           "note": "",
           "longTime": false
         }
@@ -2197,11 +2375,12 @@
       "charId": "char_431_ashlok",
       "skinIndex": 1,
       "name": "Lances of Kaliskas",
+      "jpName": "カリスカの槍先",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-05-01",
-          "end": "2024-05-15",
+          "start": "2024-04-30",
+          "end": "2024-05-14",
           "note": "",
           "longTime": false
         }
@@ -2212,6 +2391,7 @@
       "charId": "char_206_gnosis",
       "skinIndex": 1,
       "name": "Forerunner",
+      "jpName": "先駆",
       "onShelf": [
         {
           "kind": "首发",
@@ -2227,6 +2407,7 @@
       "charId": "char_1040_blaze2",
       "skinIndex": 1,
       "name": "Homecoming Night",
+      "jpName": "灯りが待つ場所へ",
       "onShelf": [
         {
           "kind": "首发",
@@ -2242,6 +2423,7 @@
       "charId": "char_420_flamtl",
       "skinIndex": 1,
       "name": "Sport For All",
+      "jpName": "サイバー闘技者",
       "onShelf": [
         {
           "kind": "首发",
@@ -2257,11 +2439,12 @@
       "charId": "char_1020_reed2",
       "skinIndex": 1,
       "name": "Curator",
+      "jpName": "歴史に囲まれて",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-07-10",
-          "end": "2024-07-24",
+          "start": "2024-07-09",
+          "end": "2024-07-23",
           "note": "",
           "longTime": false
         }
@@ -2272,6 +2455,7 @@
       "charId": "char_1020_reed2",
       "skinIndex": 2,
       "name": "Summer Flowers FA075",
+      "jpName": "夏の花弁FA075",
       "onShelf": [
         {
           "kind": "首发",
@@ -2287,6 +2471,7 @@
       "charId": "char_1020_reed2",
       "skinIndex": 3,
       "name": "Glowing Flame in the Night",
+      "jpName": "燃え輝く夜",
       "onShelf": [
         {
           "kind": "首发",
@@ -2302,11 +2487,12 @@
       "charId": "char_017_huang",
       "skinIndex": 1,
       "name": "Burst Feline",
+      "jpName": "爆裂フェリーン",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-10-22",
-          "end": "2021-11-05",
+          "start": "2021-10-21",
+          "end": "2021-11-04",
           "note": "",
           "longTime": false
         }
@@ -2317,6 +2503,7 @@
       "charId": "char_017_huang",
       "skinIndex": 2,
       "name": "Explosive Blue Flame",
+      "jpName": "爆ぜる蒼炎",
       "onShelf": [
         {
           "kind": "首发",
@@ -2332,11 +2519,12 @@
       "charId": "char_415_flint",
       "skinIndex": 1,
       "name": "Gorgeous Flower",
+      "jpName": "紫藤繚乱",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-10-22",
-          "end": "2021-11-05",
+          "start": "2021-10-21",
+          "end": "2021-11-04",
           "note": "",
           "longTime": false
         }
@@ -2347,11 +2535,12 @@
       "charId": "char_338_iris",
       "skinIndex": 1,
       "name": "Mirror Visitor",
+      "jpName": "鏡からの来訪者",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-04-28",
-          "end": "2023-05-12",
+          "start": "2023-04-27",
+          "end": "2023-05-11",
           "note": "",
           "longTime": false
         }
@@ -2362,11 +2551,12 @@
       "charId": "char_215_mantic",
       "skinIndex": 1,
       "name": "Under A Veil",
+      "jpName": "ヴェールの下に",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-08-23",
-          "end": "2023-09-06",
+          "start": "2023-08-22",
+          "end": "2023-09-05",
           "note": "",
           "longTime": false
         }
@@ -2377,11 +2567,12 @@
       "charId": "char_4064_mlynar",
       "skinIndex": 1,
       "name": "W Dali",
+      "jpName": "遠き道のり",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-05-01",
-          "end": "2024-05-15",
+          "start": "2024-04-30",
+          "end": "2024-05-14",
           "note": "",
           "longTime": false
         }
@@ -2392,6 +2583,7 @@
       "charId": "char_4064_mlynar",
       "skinIndex": 2,
       "name": "Roar Against the Wilds",
+      "jpName": "反逆の咆哮",
       "onShelf": [
         {
           "kind": "首发",
@@ -2407,6 +2599,7 @@
       "charId": "char_4006_melnte",
       "skinIndex": 1,
       "name": "For the Banquet",
+      "jpName": "宴会に赴く",
       "onShelf": [
         {
           "kind": "首发",
@@ -2422,11 +2615,12 @@
       "charId": "char_1033_swire2",
       "skinIndex": 1,
       "name": "Rhythmic Blocks",
+      "jpName": "リズミックブロック",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-11-01",
-          "end": "2024-11-15",
+          "start": "2024-10-31",
+          "end": "2024-11-14",
           "note": "",
           "longTime": false
         }
@@ -2437,6 +2631,7 @@
       "charId": "char_479_sleach",
       "skinIndex": 1,
       "name": "Appreciate Fragrance",
+      "jpName": "満開",
       "onShelf": [
         {
           "kind": "首发",
@@ -2452,6 +2647,7 @@
       "charId": "char_479_sleach",
       "skinIndex": 2,
       "name": "Summer Flowers FA317",
+      "jpName": "夏の花弁FA317",
       "onShelf": [
         {
           "kind": "首发",
@@ -2467,6 +2663,7 @@
       "charId": "char_423_blemsh",
       "skinIndex": 1,
       "name": "Moon Catastrborn",
+      "jpName": "異月の災裔",
       "onShelf": [
         {
           "kind": "首发",
@@ -2482,11 +2679,12 @@
       "charId": "char_204_platnm",
       "skinIndex": 1,
       "name": "Shining Dew SD05",
+      "jpName": "炎陽煌く露SD05",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-01-21",
-          "end": "2021-02-04",
+          "start": "2021-01-20",
+          "end": "2021-02-03",
           "note": "",
           "longTime": false
         }
@@ -2497,6 +2695,7 @@
       "charId": "char_4072_ironmn",
       "skinIndex": 1,
       "name": "Beach Guard GT003",
+      "jpName": "砂浜の番人GT003",
       "onShelf": [
         {
           "kind": "首发",
@@ -2512,11 +2711,12 @@
       "charId": "char_4072_ironmn",
       "skinIndex": 2,
       "name": "Empty Crown",
+      "jpName": "空っぽの王冠",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-09-17",
-          "end": "2025-10-01",
+          "start": "2025-09-16",
+          "end": "2025-09-30",
           "note": "",
           "longTime": false
         }
@@ -2527,6 +2727,7 @@
       "charId": "char_128_plosis",
       "skinIndex": 1,
       "name": "Among the Clouds",
+      "jpName": "雲間奏",
       "onShelf": [
         {
           "kind": "首发",
@@ -2542,11 +2743,12 @@
       "charId": "char_1026_gvial2",
       "skinIndex": 1,
       "name": "Holiday HD26",
+      "jpName": "ホリデーHD26",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-01-17",
-          "end": "2024-01-31",
+          "start": "2024-01-16",
+          "end": "2024-01-30",
           "note": "",
           "longTime": false
         }
@@ -2557,11 +2759,12 @@
       "charId": "char_195_glassb",
       "skinIndex": 1,
       "name": "Bibliosmia",
+      "jpName": "書の味わい",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-09-30",
-          "end": "2020-10-14",
+          "start": "2020-09-29",
+          "end": "2020-10-13",
           "note": "",
           "longTime": false
         }
@@ -2572,11 +2775,12 @@
       "charId": "char_101_sora",
       "skinIndex": 1,
       "name": "Summer Flowers FA361",
+      "jpName": "夏の花弁FA361",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-04-30",
-          "end": "2020-05-14",
+          "start": "2020-04-29",
+          "end": "2020-05-13",
           "note": "",
           "longTime": false
         }
@@ -2587,6 +2791,7 @@
       "charId": "char_101_sora",
       "skinIndex": 2,
       "name": "Melodiosa",
+      "jpName": "メロディオーソ",
       "onShelf": [
         {
           "kind": "首发",
@@ -2602,6 +2807,7 @@
       "charId": "char_332_archet",
       "skinIndex": 1,
       "name": "Publicity Strategy",
+      "jpName": "PR戦略",
       "onShelf": [
         {
           "kind": "首发",
@@ -2617,6 +2823,7 @@
       "charId": "char_332_archet",
       "skinIndex": 2,
       "name": "Glory of the Devout",
+      "jpName": "敬虔なる栄光",
       "onShelf": [
         {
           "kind": "首发",
@@ -2632,6 +2839,7 @@
       "charId": "char_436_whispr",
       "skinIndex": 1,
       "name": "Priory of Abyss",
+      "jpName": "幽遠のシスター",
       "onShelf": [
         {
           "kind": "首发",
@@ -2647,6 +2855,7 @@
       "charId": "char_144_red",
       "skinIndex": 1,
       "name": "Light Breeze LB01",
+      "jpName": "そよ風LB01",
       "onShelf": [
         {
           "kind": "首发",
@@ -2662,11 +2871,12 @@
       "charId": "char_1016_agoat2",
       "skinIndex": 1,
       "name": "A Picnic Before A Long Trip",
+      "jpName": "遠き旅へのピクニック",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-01-17",
-          "end": "2025-01-31",
+          "start": "2025-01-16",
+          "end": "2025-01-30",
           "note": "",
           "longTime": false
         }
@@ -2677,6 +2887,7 @@
       "charId": "char_478_kirara",
       "skinIndex": 1,
       "name": "Trendsetting Player",
+      "jpName": "トレンディゲーマー",
       "onShelf": [
         {
           "kind": "首发",
@@ -2692,6 +2903,7 @@
       "charId": "char_1035_wisdel",
       "skinIndex": 1,
       "name": "Supernova",
+      "jpName": "超新星",
       "onShelf": [
         {
           "kind": "首发",
@@ -2707,6 +2919,7 @@
       "charId": "char_1019_siege2",
       "skinIndex": 1,
       "name": "Glorious Path",
+      "jpName": "栄光溢れる道",
       "onShelf": [
         {
           "kind": "首发",
@@ -2722,11 +2935,12 @@
       "charId": "char_1028_texas2",
       "skinIndex": 1,
       "name": "Wingbreaker",
+      "jpName": "ウィングブレイカー",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-05-01",
-          "end": "2024-05-15",
+          "start": "2024-04-30",
+          "end": "2024-05-14",
           "note": "",
           "longTime": false
         }
@@ -2737,11 +2951,12 @@
       "charId": "char_1028_texas2",
       "skinIndex": 2,
       "name": "Il Segreto Della Notte",
+      "jpName": "夜に秘する幽蘭",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-04-25",
-          "end": "2025-05-09",
+          "start": "2025-04-24",
+          "end": "2025-05-08",
           "note": "",
           "longTime": false
         }
@@ -2752,11 +2967,12 @@
       "charId": "char_249_mlyss",
       "skinIndex": 1,
       "name": "Young Branch",
+      "jpName": "新梢",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-11-01",
-          "end": "2024-11-15",
+          "start": "2024-10-31",
+          "end": "2024-11-14",
           "note": "",
           "longTime": false
         }
@@ -2767,11 +2983,12 @@
       "charId": "char_249_mlyss",
       "skinIndex": 2,
       "name": "Golden Reverie",
+      "jpName": "黄金色の夢郷",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-09-17",
-          "end": "2025-10-01",
+          "start": "2025-09-16",
+          "end": "2025-09-30",
           "note": "",
           "longTime": false
         }
@@ -2782,6 +2999,7 @@
       "charId": "char_421_crow",
       "skinIndex": 1,
       "name": "Summer Flowers FA210",
+      "jpName": "夏の花弁FA210",
       "onShelf": [
         {
           "kind": "首发",
@@ -2797,6 +3015,7 @@
       "charId": "char_1014_nearl2",
       "skinIndex": 1,
       "name": "Relight",
+      "jpName": "栄光の再臨",
       "onShelf": [
         {
           "kind": "首发",
@@ -2812,11 +3031,12 @@
       "charId": "char_322_lmlee",
       "skinIndex": 1,
       "name": "Trust Your Eyes",
+      "jpName": "お目を拝借",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-04-28",
-          "end": "2023-05-12",
+          "start": "2023-04-27",
+          "end": "2023-05-11",
           "note": "",
           "longTime": false
         }
@@ -2827,11 +3047,12 @@
       "charId": "char_322_lmlee",
       "skinIndex": 2,
       "name": "Remedy In A Cup Of Leung Cha",
+      "jpName": "まちなか涼茶舗",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-12-21",
-          "end": "2025-01-04",
+          "start": "2024-12-20",
+          "end": "2025-01-03",
           "note": "",
           "longTime": false
         }
@@ -2842,6 +3063,7 @@
       "charId": "char_4187_graceb",
       "skinIndex": 1,
       "name": "Purification of the Past",
+      "jpName": "記憶の岸辺で",
       "onShelf": [
         {
           "kind": "首发",
@@ -2857,11 +3079,12 @@
       "charId": "char_103_angel",
       "skinIndex": 1,
       "name": "Wild Operation",
+      "jpName": "荒野潜行",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-02-27",
-          "end": "2020-03-12",
+          "start": "2020-02-26",
+          "end": "2020-03-11",
           "note": "",
           "longTime": false
         }
@@ -2872,11 +3095,12 @@
       "charId": "char_4009_irene",
       "skinIndex": 1,
       "name": "Voyage of Feathers",
+      "jpName": "飛び立つ羽",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-11-08",
-          "end": "2023-11-22",
+          "start": "2023-11-07",
+          "end": "2023-11-21",
           "note": "",
           "longTime": false
         }
@@ -2887,11 +3111,12 @@
       "charId": "char_4009_irene",
       "skinIndex": 2,
       "name": "The Adjudicatrix and Her Resolve",
+      "jpName": "至高の判決",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-03-11",
-          "end": "2025-03-25",
+          "start": "2025-03-10",
+          "end": "2025-03-24",
           "note": "",
           "longTime": false
         }
@@ -2902,11 +3127,12 @@
       "charId": "char_180_amgoat",
       "skinIndex": 1,
       "name": "Summer Flowers FA018",
+      "jpName": "夏の花弁FA018",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2022-02-05",
-          "end": "2022-02-19",
+          "start": "2022-02-04",
+          "end": "2022-02-18",
           "note": "",
           "longTime": false
         }
@@ -2917,6 +3143,7 @@
       "charId": "char_180_amgoat",
       "skinIndex": 2,
       "name": "Fluffy Little Witch",
+      "jpName": "ふわもこマジック",
       "onShelf": [
         {
           "kind": "首发",
@@ -2932,11 +3159,12 @@
       "charId": "char_106_franka",
       "skinIndex": 1,
       "name": "Rainforest, Me, Rainbow",
+      "jpName": "深緑にかかる虹",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-03-20",
-          "end": "2024-04-03",
+          "start": "2024-03-19",
+          "end": "2024-04-02",
           "note": "",
           "longTime": false
         }
@@ -2947,6 +3175,7 @@
       "charId": "char_261_sddrag",
       "skinIndex": 1,
       "name": "Emerald Holiday",
+      "jpName": "エメラルドホリデー",
       "onShelf": [
         {
           "kind": "首发",
@@ -2962,6 +3191,7 @@
       "charId": "char_1038_whitw2",
       "skinIndex": 1,
       "name": "Unruly Humbleness",
+      "jpName": "身勝手な忠誠",
       "onShelf": [
         {
           "kind": "首发",
@@ -2977,11 +3207,12 @@
       "charId": "char_213_mostma",
       "skinIndex": 1,
       "name": "Spellbreaker",
+      "jpName": "魑魅払い",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-10-29",
-          "end": "2020-11-12",
+          "start": "2020-10-28",
+          "end": "2020-11-11",
           "note": "",
           "longTime": false
         }
@@ -2992,11 +3223,12 @@
       "charId": "char_213_mostma",
       "skinIndex": 2,
       "name": "Ethereal Harmony",
+      "jpName": "夢幻の調べ",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-09-17",
-          "end": "2025-10-01",
+          "start": "2025-09-16",
+          "end": "2025-09-30",
           "note": "",
           "longTime": false
         }
@@ -3007,6 +3239,7 @@
       "charId": "char_4117_ray",
       "skinIndex": 1,
       "name": "Dreaming High",
+      "jpName": "夢の高みへ",
       "onShelf": [
         {
           "kind": "首发",
@@ -3022,11 +3255,12 @@
       "charId": "char_373_lionhd",
       "skinIndex": 1,
       "name": "Finder in the Rough",
+      "jpName": "秘宝の専門家",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-03-26",
-          "end": "2021-04-09",
+          "start": "2021-03-25",
+          "end": "2021-04-08",
           "note": "",
           "longTime": false
         }
@@ -3037,6 +3271,7 @@
       "charId": "char_373_lionhd",
       "skinIndex": 2,
       "name": "Hope Cruise",
+      "jpName": "希望の運び手",
       "onShelf": [
         {
           "kind": "首发",
@@ -3052,6 +3287,7 @@
       "charId": "char_300_phenxi",
       "skinIndex": 1,
       "name": "Divine Oath",
+      "jpName": "至聖の誓言",
       "onShelf": [
         {
           "kind": "首发",
@@ -3067,6 +3303,7 @@
       "charId": "char_300_phenxi",
       "skinIndex": 2,
       "name": "Judgment Day",
+      "jpName": "裁きの日",
       "onShelf": [
         {
           "kind": "首发",
@@ -3082,11 +3319,12 @@
       "charId": "char_129_bluep",
       "skinIndex": 1,
       "name": "Nocturne of Elysia",
+      "jpName": "エリシアの夜想曲",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-11-01",
-          "end": "2024-11-15",
+          "start": "2024-10-31",
+          "end": "2024-11-14",
           "note": "",
           "longTime": false
         }
@@ -3097,6 +3335,7 @@
       "charId": "char_4193_lemuen",
       "skinIndex": 1,
       "name": "Requiem Vesperis",
+      "jpName": "夕星の鎮魂歌",
       "onShelf": [
         {
           "kind": "首发",
@@ -3112,11 +3351,12 @@
       "charId": "char_4098_vvana",
       "skinIndex": 1,
       "name": "Sent from Ognisko",
+      "jpName": "オグニスコより",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-08-08",
-          "end": "2025-08-22",
+          "start": "2025-08-07",
+          "end": "2025-08-21",
           "note": "",
           "longTime": false
         }
@@ -3127,6 +3367,7 @@
       "charId": "char_489_serum",
       "skinIndex": 1,
       "name": "Leisure",
+      "jpName": "気ままな休日",
       "onShelf": [
         {
           "kind": "首发",
@@ -3142,6 +3383,7 @@
       "charId": "char_344_beewax",
       "skinIndex": 1,
       "name": "Weißer Sand",
+      "jpName": "ホワイトサンド",
       "onShelf": [
         {
           "kind": "首发",
@@ -3157,6 +3399,7 @@
       "charId": "char_344_beewax",
       "skinIndex": 2,
       "name": "Holiday HD61",
+      "jpName": "ホリデーHD61",
       "onShelf": [
         {
           "kind": "首发",
@@ -3172,6 +3415,7 @@
       "charId": "char_4140_lasher",
       "skinIndex": 1,
       "name": "Horus' Rest",
+      "jpName": "止まり木",
       "onShelf": [
         {
           "kind": "首发",
@@ -3187,6 +3431,7 @@
       "charId": "char_4155_talr",
       "skinIndex": 1,
       "name": "Autumn Shadow",
+      "jpName": "桂影窓",
       "onShelf": [
         {
           "kind": "首发",
@@ -3202,11 +3447,12 @@
       "charId": "char_308_swire",
       "skinIndex": 1,
       "name": "Honor and Splendor",
+      "jpName": "富貴栄華",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-07-30",
-          "end": "2020-08-13",
+          "start": "2020-07-29",
+          "end": "2020-08-12",
           "note": "",
           "longTime": false
         }
@@ -3217,6 +3463,7 @@
       "charId": "char_4173_nowell",
       "skinIndex": 1,
       "name": "The Spirit Farer",
+      "jpName": "幽冥の渡し守",
       "onShelf": [
         {
           "kind": "首发",
@@ -3232,11 +3479,12 @@
       "charId": "char_475_akafyu",
       "skinIndex": 1,
       "name": "Temperament",
+      "jpName": "心技",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-04-01",
-          "end": "2023-04-15",
+          "start": "2023-03-31",
+          "end": "2023-04-14",
           "note": "",
           "longTime": false
         }
@@ -3247,11 +3495,12 @@
       "charId": "char_4088_hodrer",
       "skinIndex": 1,
       "name": "Courtyard of Neka",
+      "jpName": "思索の庭",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-01-17",
-          "end": "2025-01-31",
+          "start": "2025-01-16",
+          "end": "2025-01-30",
           "note": "",
           "longTime": false
         }
@@ -3262,11 +3511,12 @@
       "charId": "char_188_helage",
       "skinIndex": 1,
       "name": "Octopath Illusion",
+      "jpName": "岐路幻影",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-10-01",
-          "end": "2021-10-15",
+          "start": "2021-09-30",
+          "end": "2021-10-14",
           "note": "",
           "longTime": false
         }
@@ -3277,11 +3527,12 @@
       "charId": "char_108_silent",
       "skinIndex": 1,
       "name": "Lacquer",
+      "jpName": "漆匠",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-03-26",
-          "end": "2020-04-09",
+          "start": "2020-03-25",
+          "end": "2020-04-08",
           "note": "",
           "longTime": false
         }
@@ -3292,6 +3543,7 @@
       "charId": "char_430_fartth",
       "skinIndex": 1,
       "name": "Hear the Wind Sing",
+      "jpName": "風をとらえて",
       "onShelf": [
         {
           "kind": "首发",
@@ -3307,6 +3559,7 @@
       "charId": "char_391_rosmon",
       "skinIndex": 1,
       "name": "Become Anew",
+      "jpName": "始まりを抱く",
       "onShelf": [
         {
           "kind": "首发",
@@ -3322,6 +3575,7 @@
       "charId": "char_391_rosmon",
       "skinIndex": 2,
       "name": "An Airy Dream",
+      "jpName": "ふわり夢を駆ける",
       "onShelf": [
         {
           "kind": "首发",
@@ -3337,11 +3591,12 @@
       "charId": "char_279_excu",
       "skinIndex": 1,
       "name": "Titleless Code",
+      "jpName": "無題の密命",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-12-31",
-          "end": "2021-01-14",
+          "start": "2020-12-30",
+          "end": "2021-01-13",
           "note": "",
           "longTime": false
         }
@@ -3352,11 +3607,12 @@
       "charId": "char_4133_logos",
       "skinIndex": 1,
       "name": "Radiant Serenity",
+      "jpName": "輝耀なる静謐",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-09-17",
-          "end": "2025-10-01",
+          "start": "2025-09-16",
+          "end": "2025-09-30",
           "note": "",
           "longTime": false
         }
@@ -3367,6 +3623,7 @@
       "charId": "char_4202_haruka",
       "skinIndex": 1,
       "name": "Stranded in Utopia",
+      "jpName": "常世ノ幻",
       "onShelf": [
         {
           "kind": "首发",
@@ -3382,6 +3639,7 @@
       "charId": "char_2024_chyue",
       "skinIndex": 1,
       "name": "Alighting",
+      "jpName": "何処棲",
       "onShelf": [
         {
           "kind": "首发",
@@ -3397,11 +3655,12 @@
       "charId": "char_2024_chyue",
       "skinIndex": 2,
       "name": "All-Round Actor",
+      "jpName": "万能俳優",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-06-13",
-          "end": "2025-06-27",
+          "start": "2025-06-12",
+          "end": "2025-06-26",
           "note": "",
           "longTime": false
         }
@@ -3412,11 +3671,12 @@
       "charId": "char_358_lisa",
       "skinIndex": 1,
       "name": "Lostlands Flowering",
+      "jpName": "荒地に咲く花",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-03-26",
-          "end": "2021-04-09",
+          "start": "2021-03-25",
+          "end": "2021-04-08",
           "note": "",
           "longTime": false
         }
@@ -3427,11 +3687,12 @@
       "charId": "char_358_lisa",
       "skinIndex": 2,
       "name": "Spring Praise",
+      "jpName": "春陽讃歌",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-04-08",
-          "end": "2023-04-22",
+          "start": "2023-04-07",
+          "end": "2023-04-21",
           "note": "",
           "longTime": false
         }
@@ -3442,6 +3703,7 @@
       "charId": "char_358_lisa",
       "skinIndex": 3,
       "name": "Yukibare",
+      "jpName": "雪晴",
       "onShelf": [
         {
           "kind": "首发",
@@ -3457,6 +3719,7 @@
       "charId": "char_4083_chimes",
       "skinIndex": 1,
       "name": "Moon under the Pines",
+      "jpName": "松間月",
       "onShelf": [
         {
           "kind": "首发",
@@ -3472,11 +3735,12 @@
       "charId": "char_172_svrash",
       "skinIndex": 1,
       "name": "York's Bise",
+      "jpName": "ヨークの寒風",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-07-01",
-          "end": "2020-07-15",
+          "start": "2020-06-30",
+          "end": "2020-07-14",
           "note": "",
           "longTime": false
         }
@@ -3487,11 +3751,12 @@
       "charId": "char_172_svrash",
       "skinIndex": 2,
       "name": "Seeker SKm01",
+      "jpName": "シーカーSKm01",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-02-26",
-          "end": "2021-03-12",
+          "start": "2021-02-25",
+          "end": "2021-03-11",
           "note": "",
           "longTime": false
         }
@@ -3502,11 +3767,12 @@
       "charId": "char_172_svrash",
       "skinIndex": 3,
       "name": "Never-melting Ice",
+      "jpName": "不融氷",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-11-01",
-          "end": "2024-11-15",
+          "start": "2024-10-31",
+          "end": "2024-11-14",
           "note": "",
           "longTime": false
         }
@@ -3517,6 +3783,7 @@
       "charId": "char_4116_blkkgt",
       "skinIndex": 1,
       "name": "The Shadow of the Dark Moon",
+      "jpName": "暗月の影",
       "onShelf": [
         {
           "kind": "首发",
@@ -3532,11 +3799,12 @@
       "charId": "char_147_shining",
       "skinIndex": 1,
       "name": "Silent Night DN02",
+      "jpName": "安息の午夜DN02",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-04-30",
-          "end": "2020-05-14",
+          "start": "2020-04-29",
+          "end": "2020-05-13",
           "note": "",
           "longTime": false
         }
@@ -3547,11 +3815,12 @@
       "charId": "char_225_haak",
       "skinIndex": 1,
       "name": "Doctor of Faces",
+      "jpName": "百面郎中",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-07-31",
-          "end": "2021-08-14",
+          "start": "2021-07-30",
+          "end": "2021-08-13",
           "note": "",
           "longTime": false
         }
@@ -3562,6 +3831,7 @@
       "charId": "char_4132_ascln",
       "skinIndex": 1,
       "name": "Phototaxis",
+      "jpName": "光を払う闇",
       "onShelf": [
         {
           "kind": "首发",
@@ -3577,11 +3847,12 @@
       "charId": "char_010_chen",
       "skinIndex": 1,
       "name": "Ageless Afterglow",
+      "jpName": "歳紅霞",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-07-30",
-          "end": "2020-08-13",
+          "start": "2020-07-29",
+          "end": "2020-08-12",
           "note": "",
           "longTime": false
         }
@@ -3592,11 +3863,12 @@
       "charId": "char_219_meteo",
       "skinIndex": 1,
       "name": "Graphite",
+      "jpName": "石墨",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-03-26",
-          "end": "2020-04-09",
+          "start": "2020-03-25",
+          "end": "2020-04-08",
           "note": "",
           "longTime": false
         }
@@ -3607,6 +3879,7 @@
       "charId": "char_4010_etlchi",
       "skinIndex": 1,
       "name": "Dazzling Blue",
+      "jpName": "蒼き眩耀",
       "onShelf": [
         {
           "kind": "首发",
@@ -3622,11 +3895,12 @@
       "charId": "char_107_liskam",
       "skinIndex": 1,
       "name": "Spring Vouivre",
+      "jpName": "春竜",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-07-30",
-          "end": "2020-08-13",
+          "start": "2020-07-29",
+          "end": "2020-08-12",
           "note": "",
           "longTime": false
         }
@@ -3637,11 +3911,12 @@
       "charId": "char_107_liskam",
       "skinIndex": 2,
       "name": "Overload",
+      "jpName": "オーバーロード",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-08-19",
-          "end": "2021-09-02",
+          "start": "2021-08-18",
+          "end": "2021-09-01",
           "note": "",
           "longTime": false
         }
@@ -3652,11 +3927,12 @@
       "charId": "char_4027_heyak",
       "skinIndex": 1,
       "name": "Carriage of the Winds of Time",
+      "jpName": "悠久の風に吹かれ",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-11-01",
-          "end": "2024-11-15",
+          "start": "2024-10-31",
+          "end": "2024-11-14",
           "note": "",
           "longTime": false
         }
@@ -3667,6 +3943,7 @@
       "charId": "char_4027_heyak",
       "skinIndex": 2,
       "name": "Ritual of Immortality",
+      "jpName": "とこしえの祭礼",
       "onShelf": [
         {
           "kind": "首发",
@@ -3682,11 +3959,12 @@
       "charId": "char_488_buildr",
       "skinIndex": 1,
       "name": "To Rest in Night Breezes",
+      "jpName": "夜風に憩いて",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-01-17",
-          "end": "2025-01-31",
+          "start": "2025-01-16",
+          "end": "2025-01-30",
           "note": "",
           "longTime": false
         }
@@ -3697,11 +3975,12 @@
       "charId": "char_4016_kazema",
       "skinIndex": 1,
       "name": "Like Illusion",
+      "jpName": "軽やかな幻影",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-04-28",
-          "end": "2023-05-12",
+          "start": "2023-04-27",
+          "end": "2023-05-11",
           "note": "",
           "longTime": false
         }
@@ -3712,11 +3991,12 @@
       "charId": "char_222_bpipe",
       "skinIndex": 1,
       "name": "Royal Guardswoman",
+      "jpName": "ロイヤルガード",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2024-05-01",
-          "end": "2024-05-15",
+          "start": "2024-04-30",
+          "end": "2024-05-14",
           "note": "",
           "longTime": false
         }
@@ -3727,11 +4007,12 @@
       "charId": "char_222_bpipe",
       "skinIndex": 2,
       "name": "Echo of Bagpipes",
+      "jpName": "こだます風笛",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-08-08",
-          "end": "2025-08-22",
+          "start": "2025-08-07",
+          "end": "2025-08-21",
           "note": "",
           "longTime": false
         }
@@ -3742,11 +4023,12 @@
       "charId": "char_241_panda",
       "skinIndex": 1,
       "name": "Dojo Star",
+      "jpName": "スタジオの一角",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-07-01",
-          "end": "2020-07-15",
+          "start": "2020-06-30",
+          "end": "2020-07-14",
           "note": "",
           "longTime": false
         }
@@ -3757,6 +4039,7 @@
       "charId": "char_241_panda",
       "skinIndex": 2,
       "name": "Gourmet",
+      "jpName": "箸乱舞",
       "onShelf": [
         {
           "kind": "首发",
@@ -3772,11 +4055,12 @@
       "charId": "char_4055_bgsnow",
       "skinIndex": 1,
       "name": "Snowy Plains in Words",
+      "jpName": "行間にある雪原",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-08-23",
-          "end": "2023-09-06",
+          "start": "2023-08-22",
+          "end": "2023-09-05",
           "note": "",
           "longTime": false
         }
@@ -3787,6 +4071,7 @@
       "charId": "char_4055_bgsnow",
       "skinIndex": 2,
       "name": "Beside Dreams",
+      "jpName": "夢境行",
       "onShelf": [
         {
           "kind": "首发",
@@ -3802,11 +4087,12 @@
       "charId": "char_248_mgllan",
       "skinIndex": 1,
       "name": "Shaved-Ice Memories",
+      "jpName": "やみつきかき氷",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-09-30",
-          "end": "2020-10-14",
+          "start": "2020-09-29",
+          "end": "2020-10-13",
           "note": "",
           "longTime": false
         }
@@ -3817,11 +4103,12 @@
       "charId": "char_2025_shu",
       "skinIndex": 1,
       "name": "Spring Feast",
+      "jpName": "春日宴",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2025-07-18",
-          "end": "2025-08-01",
+          "start": "2025-07-17",
+          "end": "2025-07-31",
           "note": "",
           "longTime": false
         }
@@ -3832,11 +4119,12 @@
       "charId": "char_340_shwaz",
       "skinIndex": 1,
       "name": "Presents",
+      "jpName": "ギフト",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2020-07-01",
-          "end": "2020-07-15",
+          "start": "2020-06-30",
+          "end": "2020-07-14",
           "note": "",
           "longTime": false
         }
@@ -3847,11 +4135,12 @@
       "charId": "char_340_shwaz",
       "skinIndex": 2,
       "name": "Skyline",
+      "jpName": "スカイライン",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2021-08-19",
-          "end": "2021-09-02",
+          "start": "2021-08-18",
+          "end": "2021-09-01",
           "note": "",
           "longTime": false
         }
@@ -3862,11 +4151,12 @@
       "charId": "char_4046_ebnhlz",
       "skinIndex": 1,
       "name": "Eine Variation",
+      "jpName": "変奏",
       "onShelf": [
         {
           "kind": "首发",
-          "start": "2023-11-08",
-          "end": "2023-11-22",
+          "start": "2023-11-07",
+          "end": "2023-11-21",
           "note": "",
           "longTime": false
         }

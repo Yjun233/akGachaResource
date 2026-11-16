@@ -31,8 +31,12 @@ import { unixDate } from './gamedata.mjs';
 /** 无复刻窗口时的兜底窗口长度（天）—— 官方只有首发日 */
 export const WINDOW_DAYS = 14;
 
-/** 「在售」判据（三个语言的「采购中心 / Store」） */
-const ON_SALE_RE = /(采购中心|採購中心|Store)/;
+/**
+ * 「在售」判据（四个语言的「采购中心 / Store」）。
+ * ⚠️ 2026-11-16 加日服 `購買部` —— 国际服的**内容源改成日服目录**后，皮肤的
+ *    `obtainApproach` 是日文（`購買部` / `イベント` / `統合戦略`…），只认前三种会得 0 条。
+ */
+const ON_SALE_RE = /(采购中心|採購中心|Store|購買部)/;
 
 const addDays = (date, n) => {
   const d = new Date(`${date}T00:00:00Z`);
@@ -57,9 +61,12 @@ const byCharThen = (seqKey) => (a, b) =>
  *        ⚠️ 但**不能连 `date` 一起用国服表**：三服推出日不同（实测 474 条日期全不同），
  *        而且 en / tw 比国服少 31 个模组 —— 站点要靠「本服推出日 ∈ 卡池窗口」判断标记。
  */
-export function extractModules(uniequip, nameOf, opNames, { typeSource = null } = {}) {
+export function extractModules(uniequip, nameOf, opNames, { typeSource = null, nameSource = null } = {}) {
   const dict = (uniequip && uniequip.equipDict) || {};
   const charEquip = (uniequip && uniequip.charEquip) || {};
+  /* 名字的来源（国际服：`uniequip` 是**日服**表，英文名要从 **en** 表按 `uniEquipId` 取）。
+     给了 `nameSource` 就意味「本服表是日服」→ 输出同时带 `jpName`。 */
+  const enDict = (nameSource && nameSource.equipDict) || {};
 
   /* `uniEquipId → typeName2`（默认取本服表；调用方给了国服表就用国服那份） */
   const typeOf = new Map();
@@ -77,9 +84,16 @@ export function extractModules(uniequip, nameOf, opNames, { typeSource = null } 
       /* ⚠️ 自己按时间升序编号，**不用** `charEquipOrder`（见文件头说明） */
       .sort((a, b) => a.uniEquipGetTime - b.uniEquipGetTime);
     adv.forEach((e, i) => {
+      const en = enDict[e.uniEquipId] || null;
+      /* 日期取**两者较早**的那个：日服比国际服早 10~16 小时上线（跨天就差一天，用户 2026-11-16
+         确认「早一天才是正确的」）；而极少数**真实排期不同**的（联动等，en 反而更早），
+         取更早的那个才不会把上线日志写成更晚的日期。 */
+      const enTime = en && en.uniEquipGetTime > 0 ? en.uniEquipGetTime : 0;
+      const time = enTime > 0 && enTime < e.uniEquipGetTime ? enTime : e.uniEquipGetTime;
       out.push({
         scCharName: char, charId, seq: i + 1,
-        name: e.uniEquipName, date: unixDate(e.uniEquipGetTime),
+        name: (en && en.uniEquipName) || e.uniEquipName, date: unixDate(time),
+        ...(nameSource ? { jpName: e.uniEquipName ?? null } : {}),
         /* 模组类型代号：X / Y / D / A / B（对照同表 `equipTypeInfos`：X、Y、D 是普通模组，
            A、B 的 `isSpecial` 为 true）。国服表取不到时退回本服。 */
         type: typeOf.get(e.uniEquipId) ?? e.typeName2 ?? null,
@@ -101,25 +115,52 @@ export function extractModules(uniequip, nameOf, opNames, { typeSource = null } 
  * @param {Set<string>} opNames 口径白名单
  * @param {Record<string,number>} rarityOf 干员名 → 星级（`operators.json`；本站只收 5/6★）
  */
-export function extractMemoirs(handbook, nameOf, opNames, rarityOf = {}) {
+/** 把 `handbookAvgList` 按上线日聚成批次（`name` 用 `|` 分隔同一天的那几篇） */
+function memoirBatches(v) {
+  if (!Array.isArray(v && v.handbookAvgList)) return null;
+  const dated = v.handbookAvgList.filter((a) => a && a.storyGetTime > 0);
+  if (!dated.length) return null;
+  const byDate = new Map();
+  for (const a of dated) {
+    const d = unixDate(a.storyGetTime);
+    if (!byDate.has(d)) byDate.set(d, []);
+    byDate.get(d).push(a.storySetName);
+  }
+  return [...byDate.entries()]
+    .sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
+    .map(([date, names]) => ({ date, name: names.join('|') }));
+}
+
+export function extractMemoirs(handbook, nameOf, opNames, rarityOf = {}, { nameSource = null } = {}) {
   const dict = (handbook && handbook.handbookDict) || {};
+  /* 名字来源（国际服：`handbook` 是**日服**表，英文名从 **en** 表按 charId 取） */
+  const enDict = (nameSource && nameSource.handbookDict) || {};
   const out = [];
   for (const [charId, v] of Object.entries(dict)) {
     const char = nameOf[charId];
     if (!char || !opNames.has(char)) continue;
     /* ⚠️ 有 56 个条目的 handbookAvgList **不是数组**（实测 cn），不挡会直接崩 */
-    if (!Array.isArray(v.handbookAvgList)) continue;
-    const dated = v.handbookAvgList.filter((a) => a && a.storyGetTime > 0);
-    if (!dated.length) continue;
-    const byDate = new Map();
-    for (const a of dated) {
-      const d = unixDate(a.storyGetTime);
-      if (!byDate.has(d)) byDate.set(d, []);
-      byDate.get(d).push(a.storySetName);
-    }
-    const batches = [...byDate.entries()]
-      .sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0))
-      .map(([date, names], i) => ({ batch: i + 1, name: names.join('|'), date }));
+    const jp = memoirBatches(v);
+    if (!jp) continue;
+    /* 与 en 表**按批次下标**配对（两服的批次划分一致）：
+       · `name` 用英文（没有对应的就退回日文）；
+       · `date` 取较早的那个（日服先上线；真实排期不同的取更早的，与模组同一口径）；
+       · `jpName` 只在「本服表其实是日服」时给（即传了 `nameSource`）。 */
+    const en = nameSource ? memoirBatches(enDict[charId]) : null;
+    const paired = jp.map((b, i) => {
+      const e = en && en[i] && en.length === jp.length ? en[i] : null;
+      const date = e && e.date < b.date ? e.date : b.date;
+      return {
+        date,
+        name: (e && e.name) || b.name,
+        ...(nameSource ? { jpName: b.name } : {}),
+      };
+    });
+    paired.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+    const batches = paired.map((b, i) => ({
+      batch: i + 1, name: b.name, date: b.date,
+      ...(b.jpName !== undefined ? { jpName: b.jpName } : {}),
+    }));
     out.push({
       scCharName: char, charId, rarity: rarityOf[char] ?? null, batches,
       releaseDate: batches[0].date,
@@ -138,31 +179,43 @@ export function extractMemoirs(handbook, nameOf, opNames, rarityOf = {}) {
  * ⚠️ 只收**在售**的：`getTime > 0` 的皮肤里混着「活动获得 / 任务奖励 / 特典 / 集成战略」
  * 这类免费皮肤，它们对 `getTime` 是「推出时间」而不是「上架时间」，留着会造出假标记。
  */
-export function extractSkins(skin, nameOf, opNames) {
+export function extractSkins(skin, nameOf, opNames, { nameSource = null } = {}) {
   const table = (skin && skin.charSkins) || {};
+  /* 名字来源（国际服：`skin` 是**日服**表，英文名按 `charId#idx` 从 **en** 表取） */
+  const enTable = (nameSource && nameSource.charSkins) || {};
   const byChar = new Map();
-  for (const s of Object.values(table)) {
+  for (const [key, s] of Object.entries(table)) {
     const d = s.displaySkin || {};
     if (!(d.getTime > 0)) continue;
     if (!ON_SALE_RE.test(d.obtainApproach || '')) continue;
     const char = nameOf[s.charId];
     if (!char || !opNames.has(char)) continue;
     if (!byChar.has(char)) byChar.set(char, { charId: s.charId || null, list: [] });
-    byChar.get(char).list.push({ name: d.skinName, start: unixDate(d.getTime) });
+    const enDs = (enTable[key] && enTable[key].displaySkin) || null;
+    /* 日期取较早的那个（日服先上线；真实排期不同的取更早的）—— 与模组同一套口径 */
+    const enTime = enDs && enDs.getTime > 0 ? enDs.getTime : 0;
+    const time = enTime > 0 && enTime < d.getTime ? enTime : d.getTime;
+    byChar.get(char).list.push({
+      name: (enDs && enDs.skinName) || d.skinName,
+      jpName: nameSource ? (d.skinName ?? null) : undefined,
+      time,
+    });
   }
   const out = [];
   for (const [char, entry] of byChar) {
     const { charId, list } = entry;
-    list.sort((a, b) => (a.start < b.start ? -1 : a.start > b.start ? 1 : 0));
+    list.sort((a, b) => a.time - b.time);
     list.forEach((x, i) => {
+      const start = unixDate(x.time);
       out.push({
         scCharName: char,
         charId,
         /* 与 PRTS 版同义：该干员的第几套时装。官方没有这个字段，按首发日升序自己编号 */
         skinIndex: i + 1,
         name: x.name,
+        ...(x.jpName !== undefined ? { jpName: x.jpName } : {}),
         onShelf: [
-          { kind: '首发', start: x.start, end: addDays(x.start, WINDOW_DAYS), note: '', longTime: false },
+          { kind: '首发', start, end: addDays(start, WINDOW_DAYS), note: '', longTime: false },
         ],
       });
     });

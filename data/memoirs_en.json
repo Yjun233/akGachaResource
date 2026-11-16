@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15",
+  "generatedAt": "2026-11-16",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "memoirs": [
     {
@@ -10,12 +10,14 @@
         {
           "batch": 1,
           "name": "Distance",
-          "date": "2021-03-17"
+          "date": "2021-03-17",
+          "jpName": "距離"
         },
         {
           "batch": 2,
           "name": "To the Stage!",
-          "date": "2025-04-25"
+          "date": "2025-04-24",
+          "jpName": "輝きへのステップ"
         }
       ],
       "releaseDate": "2021-03-17"
@@ -28,7 +30,8 @@
         {
           "batch": 1,
           "name": "Dangerous Road",
-          "date": "2021-03-17"
+          "date": "2021-03-17",
+          "jpName": "険しい道のり"
         }
       ],
       "releaseDate": "2021-03-17"
@@ -41,7 +44,8 @@
         {
           "batch": 1,
           "name": "On My Way",
-          "date": "2021-06-22"
+          "date": "2021-06-22",
+          "jpName": "途上"
         }
       ],
       "releaseDate": "2021-06-22"
@@ -54,12 +58,14 @@
         {
           "batch": 1,
           "name": "Coworkers",
-          "date": "2021-06-22"
+          "date": "2021-06-22",
+          "jpName": "カンパニー"
         },
         {
           "batch": 2,
           "name": "A Perilous Road",
-          "date": "2022-07-14"
+          "date": "2022-07-14",
+          "jpName": "険しき道を征く"
         }
       ],
       "releaseDate": "2021-06-22"
@@ -72,7 +78,8 @@
         {
           "batch": 1,
           "name": "Heart of a Scholar|Volcano",
-          "date": "2021-06-22"
+          "date": "2021-06-22",
+          "jpName": "学者の心|火山"
         }
       ],
       "releaseDate": "2021-06-22"
@@ -85,12 +92,14 @@
         {
           "batch": 1,
           "name": "The First Step Towards Trust",
-          "date": "2021-06-22"
+          "date": "2021-06-22",
+          "jpName": "信頼への第一歩"
         },
         {
           "batch": 2,
           "name": "Broca's Anger",
-          "date": "2025-10-14"
+          "date": "2025-10-14",
+          "jpName": "怒れるブローカ"
         }
       ],
       "releaseDate": "2021-06-22"
@@ -103,7 +112,8 @@
         {
           "batch": 1,
           "name": "XXL Honey Biscuit",
-          "date": "2021-06-22"
+          "date": "2021-06-22",
+          "jpName": "特大クッキー"
         }
       ],
       "releaseDate": "2021-06-22"
@@ -116,7 +126,8 @@
         {
           "batch": 1,
           "name": "Cooperation",
-          "date": "2021-06-22"
+          "date": "2021-06-22",
+          "jpName": "協力"
         }
       ],
       "releaseDate": "2021-06-22"
@@ -129,12 +140,14 @@
         {
           "batch": 1,
           "name": "One Packed Daily Schedule",
-          "date": "2021-07-13"
+          "date": "2021-07-13",
+          "jpName": "仕事三昧"
         },
         {
           "batch": 2,
           "name": "Heart of Creation",
-          "date": "2023-03-01"
+          "date": "2023-02-28",
+          "jpName": "創り出す心"
         }
       ],
       "releaseDate": "2021-07-13"
@@ -147,12 +160,14 @@
         {
           "batch": 1,
           "name": "'Monster'",
-          "date": "2021-07-30"
+          "date": "2021-07-30",
+          "jpName": "モンスター"
         },
         {
           "batch": 2,
           "name": "Rarely Serious",
-          "date": "2022-10-19"
+          "date": "2022-10-19",
+          "jpName": "たまには真剣に"
         }
       ],
       "releaseDate": "2021-07-30"
@@ -165,7 +180,8 @@
         {
           "batch": 1,
           "name": "'Package with No Recipient'",
-          "date": "2021-07-30"
+          "date": "2021-07-30",
+          "jpName": "受取人のない荷物"
         }
       ],
       "releaseDate": "2021-07-30"
@@ -178,7 +194,8 @@
         {
           "batch": 1,
           "name": "'Apple Pie Party, Now Preparing!'|'Still Waiting'",
-          "date": "2021-08-18"
+          "date": "2021-08-18",
+          "jpName": "リンゴパーティー準備中！|待つ"
         }
       ],
       "releaseDate": "2021-08-18"
@@ -191,12 +208,14 @@
         {
           "batch": 1,
           "name": "'The Day We Left Home'",
-          "date": "2021-08-18"
+          "date": "2021-08-18",
+          "jpName": "故郷を去る日"
         },
         {
           "batch": 2,
           "name": "Just Another Day",
-          "date": "2025-04-25"
+          "date": "2025-04-24",
+          "jpName": "平凡な一日"
         }
       ],
       "releaseDate": "2021-08-18"
@@ -209,7 +228,8 @@
         {
           "batch": 1,
           "name": "Guaranteed Success",
-          "date": "2021-09-30"
+          "date": "2021-09-30",
+          "jpName": "絶対に、確実に"
         }
       ],
       "releaseDate": "2021-09-30"
@@ -222,12 +242,14 @@
         {
           "batch": 1,
           "name": "Incoming Mail",
-          "date": "2021-09-30"
+          "date": "2021-09-30",
+          "jpName": "届いた手紙"
         },
         {
           "batch": 2,
           "name": "Constants Within Changes",
-          "date": "2022-10-05"
+          "date": "2022-10-04",
+          "jpName": "変化中の不変"
         }
       ],
       "releaseDate": "2021-09-30"
@@ -240,12 +262,14 @@
         {
           "batch": 1,
           "name": "Merry Christmas!",
-          "date": "2021-09-30"
+          "date": "2021-09-30",
+          "jpName": "メリークリスマス！"
         },
         {
           "batch": 2,
           "name": "I, Namely I",
-          "date": "2022-01-14"
+          "date": "2022-01-14",
+          "jpName": "私は「私」"
         }
       ],
       "releaseDate": "2021-09-30"
@@ -258,7 +282,8 @@
         {
           "batch": 1,
           "name": "Fate",
-          "date": "2021-09-30"
+          "date": "2021-09-30",
+          "jpName": "命の行方"
         }
       ],
       "releaseDate": "2021-09-30"
@@ -271,7 +296,8 @@
         {
           "batch": 1,
           "name": "A Song and a Blue Feather",
-          "date": "2021-10-21"
+          "date": "2021-10-21",
+          "jpName": "青い羽根と歌"
         }
       ],
       "releaseDate": "2021-10-21"
@@ -284,12 +310,14 @@
         {
           "batch": 1,
           "name": "Unexpected Annoyance",
-          "date": "2021-10-21"
+          "date": "2021-10-21",
+          "jpName": "予想外の悩み"
         },
         {
           "batch": 2,
           "name": "Sinner's Path",
-          "date": "2023-05-23"
+          "date": "2023-05-23",
+          "jpName": "罪へと赴く"
         }
       ],
       "releaseDate": "2021-10-21"
@@ -302,12 +330,14 @@
         {
           "batch": 1,
           "name": "Atop the Skyscrapers",
-          "date": "2021-12-09"
+          "date": "2021-12-09",
+          "jpName": "高層ビルの上で"
         },
         {
           "batch": 2,
           "name": "Journey's Footnote",
-          "date": "2025-10-14"
+          "date": "2025-10-14",
+          "jpName": "旅の脚注"
         }
       ],
       "releaseDate": "2021-12-09"
@@ -320,7 +350,8 @@
         {
           "batch": 1,
           "name": "Will You?",
-          "date": "2021-12-29"
+          "date": "2021-12-29",
+          "jpName": "意思を問う"
         }
       ],
       "releaseDate": "2021-12-29"
@@ -333,7 +364,8 @@
         {
           "batch": 1,
           "name": "Belonging|Pathways",
-          "date": "2022-01-14"
+          "date": "2022-01-14",
+          "jpName": "帰属|道"
         }
       ],
       "releaseDate": "2022-01-14"
@@ -346,7 +378,8 @@
         {
           "batch": 1,
           "name": "Deep, Dark Dream",
-          "date": "2022-04-28"
+          "date": "2022-04-28",
+          "jpName": "真暗の夢"
         }
       ],
       "releaseDate": "2022-04-28"
@@ -359,7 +392,8 @@
         {
           "batch": 1,
           "name": "Bubbles",
-          "date": "2022-04-28"
+          "date": "2022-04-28",
+          "jpName": "泡沫"
         }
       ],
       "releaseDate": "2022-04-28"
@@ -372,7 +406,8 @@
         {
           "batch": 1,
           "name": "Starting Point",
-          "date": "2022-04-28"
+          "date": "2022-04-28",
+          "jpName": "起点"
         }
       ],
       "releaseDate": "2022-04-28"
@@ -385,7 +420,8 @@
         {
           "batch": 1,
           "name": "Dead Silence",
-          "date": "2022-05-26"
+          "date": "2022-05-26",
+          "jpName": "黙して語らず"
         }
       ],
       "releaseDate": "2022-05-26"
@@ -398,7 +434,8 @@
         {
           "batch": 1,
           "name": "Ready to Serve",
-          "date": "2022-05-26"
+          "date": "2022-05-26",
+          "jpName": "望むままに"
         }
       ],
       "releaseDate": "2022-05-26"
@@ -411,7 +448,8 @@
         {
           "batch": 1,
           "name": "Unpredictable|Unbreakable Ice",
-          "date": "2022-06-30"
+          "date": "2022-06-30",
+          "jpName": "測り難き者|堅固な氷"
         }
       ],
       "releaseDate": "2022-06-30"
@@ -424,12 +462,14 @@
         {
           "batch": 1,
           "name": "Heart of the Cliffs",
-          "date": "2022-06-30"
+          "date": "2022-06-30",
+          "jpName": "崖上の心"
         },
         {
           "batch": 2,
           "name": "New Peaks",
-          "date": "2024-07-31"
+          "date": "2024-07-31",
+          "jpName": "次なる頂へ"
         }
       ],
       "releaseDate": "2022-06-30"
@@ -442,7 +482,8 @@
         {
           "batch": 1,
           "name": "Beyond the Snowy Mountain",
-          "date": "2022-06-30"
+          "date": "2022-06-30",
+          "jpName": "雪山の外"
         }
       ],
       "releaseDate": "2022-06-30"
@@ -455,12 +496,14 @@
         {
           "batch": 1,
           "name": "Let's Go, Let's Go",
-          "date": "2022-07-14"
+          "date": "2022-07-14",
+          "jpName": "さあ、行こう"
         },
         {
           "batch": 2,
           "name": "Before I Say Goodbye",
-          "date": "2024-03-06"
+          "date": "2024-03-05",
+          "jpName": "いつかの日に別れを"
         }
       ],
       "releaseDate": "2022-07-14"
@@ -473,7 +516,8 @@
         {
           "batch": 1,
           "name": "The Fifth Contact",
-          "date": "2022-07-14"
+          "date": "2022-07-14",
+          "jpName": "第五種接近遭遇"
         }
       ],
       "releaseDate": "2022-07-14"
@@ -486,7 +530,8 @@
         {
           "batch": 1,
           "name": "Nosedive",
-          "date": "2022-07-29"
+          "date": "2022-07-29",
+          "jpName": "一落千丈"
         }
       ],
       "releaseDate": "2022-07-29"
@@ -499,7 +544,8 @@
         {
           "batch": 1,
           "name": "Day Before the Job",
-          "date": "2022-07-29"
+          "date": "2022-07-29",
+          "jpName": "就任前夜"
         }
       ],
       "releaseDate": "2022-07-29"
@@ -512,7 +558,8 @@
         {
           "batch": 1,
           "name": "A Thousand Years in a Sigh",
-          "date": "2022-07-29"
+          "date": "2022-07-29",
+          "jpName": "千年一嘆"
         }
       ],
       "releaseDate": "2022-07-29"
@@ -525,7 +572,8 @@
         {
           "batch": 1,
           "name": "From a Long Dream Woken",
-          "date": "2022-07-29"
+          "date": "2022-07-29",
+          "jpName": "白日の酔夢"
         }
       ],
       "releaseDate": "2022-07-29"
@@ -538,7 +586,8 @@
         {
           "batch": 1,
           "name": "In One Effort",
-          "date": "2022-08-18"
+          "date": "2022-08-18",
+          "jpName": "一気呵成"
         }
       ],
       "releaseDate": "2022-08-18"
@@ -551,7 +600,8 @@
         {
           "batch": 1,
           "name": "Drowning",
-          "date": "2022-08-18"
+          "date": "2022-08-18",
+          "jpName": "落水者"
         }
       ],
       "releaseDate": "2022-08-18"
@@ -564,12 +614,14 @@
         {
           "batch": 1,
           "name": "Symbols of the Past",
-          "date": "2022-09-16"
+          "date": "2022-09-16",
+          "jpName": "在りし日の象徴"
         },
         {
           "batch": 2,
           "name": "To a Standstill",
-          "date": "2024-03-20"
+          "date": "2024-03-19",
+          "jpName": "足休め"
         }
       ],
       "releaseDate": "2022-09-16"
@@ -582,7 +634,8 @@
         {
           "batch": 1,
           "name": "Paradisus",
-          "date": "2022-09-16"
+          "date": "2022-09-16",
+          "jpName": "楽園"
         }
       ],
       "releaseDate": "2022-09-16"
@@ -595,10 +648,11 @@
         {
           "batch": 1,
           "name": "What Martial Arts Serve",
-          "date": "2022-10-05"
+          "date": "2022-10-04",
+          "jpName": "武とは何ぞや"
         }
       ],
-      "releaseDate": "2022-10-05"
+      "releaseDate": "2022-10-04"
     },
     {
       "scCharName": "号角",
@@ -608,7 +662,8 @@
         {
           "batch": 1,
           "name": "Solo",
-          "date": "2022-10-19"
+          "date": "2022-10-19",
+          "jpName": "独奏曲"
         }
       ],
       "releaseDate": "2022-10-19"
@@ -621,7 +676,8 @@
         {
           "batch": 1,
           "name": "Strange Sights",
-          "date": "2022-11-03"
+          "date": "2022-11-03",
+          "jpName": "奇景"
         }
       ],
       "releaseDate": "2022-11-03"
@@ -634,7 +690,8 @@
         {
           "batch": 1,
           "name": "Before the Rain",
-          "date": "2022-11-03"
+          "date": "2022-11-03",
+          "jpName": "雨降る前に"
         }
       ],
       "releaseDate": "2022-11-03"
@@ -647,7 +704,8 @@
         {
           "batch": 1,
           "name": "Selfhood",
-          "date": "2022-11-03"
+          "date": "2022-11-03",
+          "jpName": "自分"
         }
       ],
       "releaseDate": "2022-11-03"
@@ -660,7 +718,8 @@
         {
           "batch": 1,
           "name": "Lantern's Twilight",
-          "date": "2022-11-03"
+          "date": "2022-11-03",
+          "jpName": "ほのかな灯り"
         }
       ],
       "releaseDate": "2022-11-03"
@@ -673,7 +732,8 @@
         {
           "batch": 1,
           "name": "Endless Journey",
-          "date": "2022-11-27"
+          "date": "2022-11-27",
+          "jpName": "果てなき旅路"
         }
       ],
       "releaseDate": "2022-11-27"
@@ -686,12 +746,14 @@
         {
           "batch": 1,
           "name": "South Wall",
-          "date": "2022-11-27"
+          "date": "2022-11-27",
+          "jpName": "壊れない壁"
         },
         {
           "batch": 2,
           "name": "Conspiracy",
-          "date": "2026-07-16"
+          "date": "2026-07-16",
+          "jpName": "陰謀"
         }
       ],
       "releaseDate": "2022-11-27"
@@ -704,7 +766,8 @@
         {
           "batch": 1,
           "name": "Future Woven",
-          "date": "2022-11-27"
+          "date": "2022-11-27",
+          "jpName": "明日を紡ぐ"
         }
       ],
       "releaseDate": "2022-11-27"
@@ -717,7 +780,8 @@
         {
           "batch": 1,
           "name": "Armor and Crossbow",
-          "date": "2022-11-27"
+          "date": "2022-11-27",
+          "jpName": "装甲と重弩"
         }
       ],
       "releaseDate": "2022-11-27"
@@ -730,7 +794,8 @@
         {
           "batch": 1,
           "name": "Lone Lamp",
-          "date": "2022-11-27"
+          "date": "2022-11-27",
+          "jpName": "灯の隻影"
         }
       ],
       "releaseDate": "2022-11-27"
@@ -743,7 +808,8 @@
         {
           "batch": 1,
           "name": "Nameless Flower",
-          "date": "2022-11-27"
+          "date": "2022-11-27",
+          "jpName": "名もなき花"
         }
       ],
       "releaseDate": "2022-11-27"
@@ -756,7 +822,8 @@
         {
           "batch": 1,
           "name": "Anniversary",
-          "date": "2023-01-13"
+          "date": "2023-01-13",
+          "jpName": "記念日"
         }
       ],
       "releaseDate": "2023-01-13"
@@ -769,7 +836,8 @@
         {
           "batch": 1,
           "name": "Warrior's Due",
-          "date": "2023-01-13"
+          "date": "2023-01-13",
+          "jpName": "一人前の戦士"
         }
       ],
       "releaseDate": "2023-01-13"
@@ -782,7 +850,8 @@
         {
           "batch": 1,
           "name": "Hunter's Vision",
-          "date": "2023-01-13"
+          "date": "2023-01-13",
+          "jpName": "狩人の視線"
         }
       ],
       "releaseDate": "2023-01-13"
@@ -795,7 +864,8 @@
         {
           "batch": 1,
           "name": "In the Name of Alcohol!",
-          "date": "2023-01-13"
+          "date": "2023-01-13",
+          "jpName": "アルコールの名のもとに！"
         }
       ],
       "releaseDate": "2023-01-13"
@@ -808,10 +878,11 @@
         {
           "batch": 1,
           "name": "Old Classmate",
-          "date": "2023-02-04"
+          "date": "2023-02-03",
+          "jpName": "昔の学友"
         }
       ],
-      "releaseDate": "2023-02-04"
+      "releaseDate": "2023-02-03"
     },
     {
       "scCharName": "麦哲伦",
@@ -821,10 +892,11 @@
         {
           "batch": 1,
           "name": "Cycle of Life",
-          "date": "2023-02-04"
+          "date": "2023-02-03",
+          "jpName": "命は巡る"
         }
       ],
-      "releaseDate": "2023-02-04"
+      "releaseDate": "2023-02-03"
     },
     {
       "scCharName": "凛冬",
@@ -834,15 +906,17 @@
         {
           "batch": 1,
           "name": "Strong Meets Stronger",
-          "date": "2023-03-01"
+          "date": "2023-02-28",
+          "jpName": "強さに果てはなし"
         },
         {
           "batch": 2,
           "name": "Burning on a Winter Night",
-          "date": "2023-12-06"
+          "date": "2023-12-05",
+          "jpName": "冬の夜に燃える"
         }
       ],
-      "releaseDate": "2023-03-01"
+      "releaseDate": "2023-02-28"
     },
     {
       "scCharName": "赫默",
@@ -852,7 +926,8 @@
         {
           "batch": 1,
           "name": "New to the Workforce",
-          "date": "2023-03-14"
+          "date": "2023-03-14",
+          "jpName": "新入社員"
         }
       ],
       "releaseDate": "2023-03-14"
@@ -865,7 +940,8 @@
         {
           "batch": 1,
           "name": "Team Captain",
-          "date": "2023-03-14"
+          "date": "2023-03-14",
+          "jpName": "小隊長"
         }
       ],
       "releaseDate": "2023-03-14"
@@ -878,7 +954,8 @@
         {
           "batch": 1,
           "name": "Untouchable",
-          "date": "2023-03-14"
+          "date": "2023-03-14",
+          "jpName": "遥か遠く"
         }
       ],
       "releaseDate": "2023-03-14"
@@ -891,7 +968,8 @@
         {
           "batch": 1,
           "name": "Light, He Wrote",
-          "date": "2023-03-14"
+          "date": "2023-03-14",
+          "jpName": "綴られる光"
         }
       ],
       "releaseDate": "2023-03-14"
@@ -904,15 +982,17 @@
         {
           "batch": 1,
           "name": "Together Aboard",
-          "date": "2023-04-01"
+          "date": "2023-03-31",
+          "jpName": "同舟"
         },
         {
           "batch": 2,
           "name": "The Sea Breeze on the Salt Flat",
-          "date": "2025-11-13"
+          "date": "2025-11-13",
+          "jpName": "塩海に吹く風"
         }
       ],
-      "releaseDate": "2023-04-01"
+      "releaseDate": "2023-03-31"
     },
     {
       "scCharName": "极光",
@@ -922,10 +1002,11 @@
         {
           "batch": 1,
           "name": "What She Saw",
-          "date": "2023-04-01"
+          "date": "2023-03-31",
+          "jpName": "彼女の見たいもの"
         }
       ],
-      "releaseDate": "2023-04-01"
+      "releaseDate": "2023-03-31"
     },
     {
       "scCharName": "可颂",
@@ -935,10 +1016,11 @@
         {
           "batch": 1,
           "name": "The Business",
-          "date": "2023-04-15"
+          "date": "2023-04-14",
+          "jpName": "商売とは"
         }
       ],
-      "releaseDate": "2023-04-15"
+      "releaseDate": "2023-04-14"
     },
     {
       "scCharName": "绮良",
@@ -948,10 +1030,11 @@
         {
           "batch": 1,
           "name": "Secret Ending|No-Damage Clear",
-          "date": "2023-04-15"
+          "date": "2023-04-14",
+          "jpName": "隠しエンディング|ノーダメージクリア"
         }
       ],
-      "releaseDate": "2023-04-15"
+      "releaseDate": "2023-04-14"
     },
     {
       "scCharName": "洛洛",
@@ -961,10 +1044,11 @@
         {
           "batch": 1,
           "name": "Six Hundred Pounds",
-          "date": "2023-04-28"
+          "date": "2023-04-27",
+          "jpName": "600ポンド"
         }
       ],
-      "releaseDate": "2023-04-28"
+      "releaseDate": "2023-04-27"
     },
     {
       "scCharName": "陨星",
@@ -974,7 +1058,8 @@
         {
           "batch": 1,
           "name": "Firefly's Light",
-          "date": "2023-05-23"
+          "date": "2023-05-23",
+          "jpName": "一灯の蛍火"
         }
       ],
       "releaseDate": "2023-05-23"
@@ -987,12 +1072,14 @@
         {
           "batch": 1,
           "name": "Revelation",
-          "date": "2023-05-23"
+          "date": "2023-05-23",
+          "jpName": "照らし出す光"
         },
         {
           "batch": 2,
           "name": "Return to Radiance",
-          "date": "2024-06-21"
+          "date": "2024-06-21",
+          "jpName": "再び輝くために"
         }
       ],
       "releaseDate": "2023-05-23"
@@ -1005,7 +1092,8 @@
         {
           "batch": 1,
           "name": "Long Journey",
-          "date": "2023-05-23"
+          "date": "2023-05-23",
+          "jpName": "長き旅路"
         }
       ],
       "releaseDate": "2023-05-23"
@@ -1018,7 +1106,8 @@
         {
           "batch": 1,
           "name": "Trail of Sands",
-          "date": "2023-05-23"
+          "date": "2023-05-23",
+          "jpName": "黄砂の帰路"
         }
       ],
       "releaseDate": "2023-05-23"
@@ -1031,7 +1120,8 @@
         {
           "batch": 1,
           "name": "Protector's Nature",
-          "date": "2023-05-23"
+          "date": "2023-05-23",
+          "jpName": "保護者の本能"
         }
       ],
       "releaseDate": "2023-05-23"
@@ -1044,7 +1134,8 @@
         {
           "batch": 1,
           "name": "Lone Dance at the Old Factory",
-          "date": "2023-05-23"
+          "date": "2023-05-23",
+          "jpName": "古工場のダンス"
         }
       ],
       "releaseDate": "2023-05-23"
@@ -1057,12 +1148,14 @@
         {
           "batch": 1,
           "name": "A Pair of Fowlbeasts",
-          "date": "2023-07-13"
+          "date": "2023-07-13",
+          "jpName": "つがいの羽獣"
         },
         {
           "batch": 2,
           "name": "Flowers by the Temples of Your Head",
-          "date": "2024-01-17"
+          "date": "2024-01-16",
+          "jpName": "耳元の花"
         }
       ],
       "releaseDate": "2023-07-13"
@@ -1075,7 +1168,8 @@
         {
           "batch": 1,
           "name": "Solitary Dancer",
-          "date": "2023-07-13"
+          "date": "2023-07-13",
+          "jpName": "孤独なダンサー"
         }
       ],
       "releaseDate": "2023-07-13"
@@ -1088,10 +1182,11 @@
         {
           "batch": 1,
           "name": "A Night of Terror",
-          "date": "2023-07-29"
+          "date": "2023-07-28",
+          "jpName": "肝を冷やす夜"
         }
       ],
-      "releaseDate": "2023-07-29"
+      "releaseDate": "2023-07-28"
     },
     {
       "scCharName": "夕",
@@ -1101,10 +1196,11 @@
         {
           "batch": 1,
           "name": "Dawn and Dusk",
-          "date": "2023-07-29"
+          "date": "2023-07-28",
+          "jpName": "一朝一夕"
         }
       ],
-      "releaseDate": "2023-07-29"
+      "releaseDate": "2023-07-28"
     },
     {
       "scCharName": "桑葚",
@@ -1114,10 +1210,11 @@
         {
           "batch": 1,
           "name": "A Prayer for Peace",
-          "date": "2023-07-29"
+          "date": "2023-07-28",
+          "jpName": "安全祈願"
         }
       ],
-      "releaseDate": "2023-07-29"
+      "releaseDate": "2023-07-28"
     },
     {
       "scCharName": "老鲤",
@@ -1127,10 +1224,11 @@
         {
           "batch": 1,
           "name": "Three Square Meals a Day",
-          "date": "2023-07-29"
+          "date": "2023-07-28",
+          "jpName": "一日三食"
         }
       ],
-      "releaseDate": "2023-07-29"
+      "releaseDate": "2023-07-28"
     },
     {
       "scCharName": "重岳",
@@ -1140,10 +1238,11 @@
         {
           "batch": 1,
           "name": "Once Upon a Time, I Wandered Afar",
-          "date": "2023-07-29"
+          "date": "2023-07-28",
+          "jpName": "昔我往きて、君と携行す"
         }
       ],
-      "releaseDate": "2023-07-29"
+      "releaseDate": "2023-07-28"
     },
     {
       "scCharName": "空弦",
@@ -1153,10 +1252,11 @@
         {
           "batch": 1,
           "name": "Idol Promotion",
-          "date": "2023-08-12"
+          "date": "2023-08-11",
+          "jpName": "アイドルのプロモーション"
         }
       ],
-      "releaseDate": "2023-08-12"
+      "releaseDate": "2023-08-11"
     },
     {
       "scCharName": "蚀清",
@@ -1166,10 +1266,11 @@
         {
           "batch": 1,
           "name": "Corroserum's Badge",
-          "date": "2023-08-12"
+          "date": "2023-08-11",
+          "jpName": "コロセラムのIDカード"
         }
       ],
-      "releaseDate": "2023-08-12"
+      "releaseDate": "2023-08-11"
     },
     {
       "scCharName": "贾维",
@@ -1179,10 +1280,11 @@
         {
           "batch": 1,
           "name": "Masterpiece",
-          "date": "2023-08-23"
+          "date": "2023-08-22",
+          "jpName": "代表作"
         }
       ],
-      "releaseDate": "2023-08-23"
+      "releaseDate": "2023-08-22"
     },
     {
       "scCharName": "爱丽丝",
@@ -1192,10 +1294,11 @@
         {
           "batch": 1,
           "name": "The Candy House",
-          "date": "2023-08-23"
+          "date": "2023-08-22",
+          "jpName": "お菓子の家"
         }
       ],
-      "releaseDate": "2023-08-23"
+      "releaseDate": "2023-08-22"
     },
     {
       "scCharName": "夜半",
@@ -1205,10 +1308,11 @@
         {
           "batch": 1,
           "name": "Souls of the Wilderness",
-          "date": "2023-08-23"
+          "date": "2023-08-22",
+          "jpName": "荒野に生まれ"
         }
       ],
-      "releaseDate": "2023-08-23"
+      "releaseDate": "2023-08-22"
     },
     {
       "scCharName": "夏栎",
@@ -1218,10 +1322,11 @@
         {
           "batch": 1,
           "name": "Final Moments|The Sprouts of Life",
-          "date": "2023-08-23"
+          "date": "2023-08-22",
+          "jpName": "終の道|命の芽吹き"
         }
       ],
-      "releaseDate": "2023-08-23"
+      "releaseDate": "2023-08-22"
     },
     {
       "scCharName": "月禾",
@@ -1231,7 +1336,8 @@
         {
           "batch": 1,
           "name": "An Ordinary Sunset",
-          "date": "2023-09-07"
+          "date": "2023-09-07",
+          "jpName": "いつもの夕日"
         }
       ],
       "releaseDate": "2023-09-07"
@@ -1244,7 +1350,8 @@
         {
           "batch": 1,
           "name": "Fallen Inktrails",
-          "date": "2023-09-07"
+          "date": "2023-09-07",
+          "jpName": "インクの染み"
         }
       ],
       "releaseDate": "2023-09-07"
@@ -1257,10 +1364,11 @@
         {
           "batch": 1,
           "name": "A Curse Without Words",
-          "date": "2023-10-02"
+          "date": "2023-10-01",
+          "jpName": "文字なき呪い"
         }
       ],
-      "releaseDate": "2023-10-02"
+      "releaseDate": "2023-10-01"
     },
     {
       "scCharName": "格劳克斯",
@@ -1270,10 +1378,11 @@
         {
           "batch": 1,
           "name": "On My Own Two Legs",
-          "date": "2023-11-08"
+          "date": "2023-11-07",
+          "jpName": "この両足で"
         }
       ],
-      "releaseDate": "2023-11-08"
+      "releaseDate": "2023-11-07"
     },
     {
       "scCharName": "慑砂",
@@ -1283,10 +1392,11 @@
         {
           "batch": 1,
           "name": "Fatal Attraction",
-          "date": "2023-11-08"
+          "date": "2023-11-07",
+          "jpName": "死に至らしめる誘惑"
         }
       ],
-      "releaseDate": "2023-11-08"
+      "releaseDate": "2023-11-07"
     },
     {
       "scCharName": "多萝西",
@@ -1296,10 +1406,11 @@
         {
           "batch": 1,
           "name": "Where is the Friend's House?",
-          "date": "2023-11-08"
+          "date": "2023-11-07",
+          "jpName": "友の故郷はいずこ"
         }
       ],
-      "releaseDate": "2023-11-08"
+      "releaseDate": "2023-11-07"
     },
     {
       "scCharName": "明椒",
@@ -1309,10 +1420,11 @@
         {
           "batch": 1,
           "name": "Mercenary Youth",
-          "date": "2023-11-08"
+          "date": "2023-11-07",
+          "jpName": "傭兵の少女"
         }
       ],
-      "releaseDate": "2023-11-08"
+      "releaseDate": "2023-11-07"
     },
     {
       "scCharName": "莱恩哈特",
@@ -1322,10 +1434,11 @@
         {
           "batch": 1,
           "name": "Living in Darkness",
-          "date": "2023-11-29"
+          "date": "2023-11-28",
+          "jpName": "暗闇の生還"
         }
       ],
-      "releaseDate": "2023-11-29"
+      "releaseDate": "2023-11-28"
     },
     {
       "scCharName": "断崖",
@@ -1335,10 +1448,11 @@
         {
           "batch": 1,
           "name": "Seeker in the Sands",
-          "date": "2023-11-29"
+          "date": "2023-11-28",
+          "jpName": "黄砂の追跡"
         }
       ],
-      "releaseDate": "2023-11-29"
+      "releaseDate": "2023-11-28"
     },
     {
       "scCharName": "风丸",
@@ -1348,15 +1462,17 @@
         {
           "batch": 1,
           "name": "One Should, One Must",
-          "date": "2023-12-06"
+          "date": "2023-12-05",
+          "jpName": "為すべきこと"
         },
         {
           "batch": 2,
           "name": "In a Crowd",
-          "date": "2026-01-16"
+          "date": "2026-01-16",
+          "jpName": "人混みの中で"
         }
       ],
-      "releaseDate": "2023-12-06"
+      "releaseDate": "2023-12-05"
     },
     {
       "scCharName": "晓歌",
@@ -1366,10 +1482,11 @@
         {
           "batch": 1,
           "name": "A Fowl Through the Window",
-          "date": "2023-12-06"
+          "date": "2023-12-05",
+          "jpName": "窓から飛び込んだ羽獣"
         }
       ],
-      "releaseDate": "2023-12-06"
+      "releaseDate": "2023-12-05"
     },
     {
       "scCharName": "送葬人",
@@ -1379,12 +1496,14 @@
         {
           "batch": 1,
           "name": "Executor",
-          "date": "2023-12-21"
+          "date": "2023-12-21",
+          "jpName": "執行人"
         },
         {
           "batch": 2,
           "name": "Enemy",
-          "date": "2024-04-16"
+          "date": "2024-04-16",
+          "jpName": "敵"
         }
       ],
       "releaseDate": "2023-12-21"
@@ -1397,7 +1516,8 @@
         {
           "batch": 1,
           "name": "One Who Controls Lightning",
-          "date": "2023-12-21"
+          "date": "2023-12-21",
+          "jpName": "雷を司る者"
         }
       ],
       "releaseDate": "2023-12-21"
@@ -1410,10 +1530,11 @@
         {
           "batch": 1,
           "name": "Let's Keep That a Secret",
-          "date": "2024-01-06"
+          "date": "2024-01-05",
+          "jpName": "秘密を交わして"
         }
       ],
-      "releaseDate": "2024-01-06"
+      "releaseDate": "2024-01-05"
     },
     {
       "scCharName": "火哨",
@@ -1423,10 +1544,11 @@
         {
           "batch": 1,
           "name": "The Lone Goer",
-          "date": "2024-01-06"
+          "date": "2024-01-05",
+          "jpName": "独り行く者"
         }
       ],
-      "releaseDate": "2024-01-06"
+      "releaseDate": "2024-01-05"
     },
     {
       "scCharName": "赤冬",
@@ -1436,7 +1558,8 @@
         {
           "batch": 1,
           "name": "Swordswoman from a Distant Land",
-          "date": "2024-02-27"
+          "date": "2024-02-27",
+          "jpName": "異郷の剣士"
         }
       ],
       "releaseDate": "2024-02-27"
@@ -1449,7 +1572,8 @@
         {
           "batch": 1,
           "name": "Hypothetically Just",
-          "date": "2024-02-27"
+          "date": "2024-02-27",
+          "jpName": "法に基づく公正"
         }
       ],
       "releaseDate": "2024-02-27"
@@ -1462,7 +1586,8 @@
         {
           "batch": 1,
           "name": "April Showers",
-          "date": "2024-02-27"
+          "date": "2024-02-27",
+          "jpName": "根なしの雨"
         }
       ],
       "releaseDate": "2024-02-27"
@@ -1475,10 +1600,11 @@
         {
           "batch": 1,
           "name": "Plumas de Tenacidad",
-          "date": "2024-03-20"
+          "date": "2024-03-19",
+          "jpName": "強靭な羽根"
         }
       ],
-      "releaseDate": "2024-03-20"
+      "releaseDate": "2024-03-19"
     },
     {
       "scCharName": "圣约送葬人",
@@ -1488,10 +1614,11 @@
         {
           "batch": 1,
           "name": "Azure",
-          "date": "2024-03-20"
+          "date": "2024-03-19",
+          "jpName": "青"
         }
       ],
-      "releaseDate": "2024-03-20"
+      "releaseDate": "2024-03-19"
     },
     {
       "scCharName": "涤火杰西卡",
@@ -1501,10 +1628,11 @@
         {
           "batch": 1,
           "name": "Insignia",
-          "date": "2024-03-20"
+          "date": "2024-03-19",
+          "jpName": "保安官バッジ"
         }
       ],
-      "releaseDate": "2024-03-20"
+      "releaseDate": "2024-03-19"
     },
     {
       "scCharName": "苇草",
@@ -1514,7 +1642,8 @@
         {
           "batch": 1,
           "name": "Heart Like a Reed",
-          "date": "2024-04-16"
+          "date": "2024-04-16",
+          "jpName": "葦の心"
         }
       ],
       "releaseDate": "2024-04-16"
@@ -1527,7 +1656,8 @@
         {
           "batch": 1,
           "name": "Long-Haul",
-          "date": "2024-04-16"
+          "date": "2024-04-16",
+          "jpName": "航海"
         }
       ],
       "releaseDate": "2024-04-16"
@@ -1540,10 +1670,11 @@
         {
           "batch": 1,
           "name": "Yesterday's Morrow",
-          "date": "2024-05-01"
+          "date": "2024-04-30",
+          "jpName": "昨日の明日"
         }
       ],
-      "releaseDate": "2024-05-01"
+      "releaseDate": "2024-04-30"
     },
     {
       "scCharName": "寒檀",
@@ -1553,10 +1684,11 @@
         {
           "batch": 1,
           "name": "Stirring Future's Snowflakes",
-          "date": "2024-05-01"
+          "date": "2024-04-30",
+          "jpName": "明日に咲く雪花"
         }
       ],
-      "releaseDate": "2024-05-01"
+      "releaseDate": "2024-04-30"
     },
     {
       "scCharName": "塑心",
@@ -1566,10 +1698,11 @@
         {
           "batch": 1,
           "name": "Himmelszelt und Federwolke",
-          "date": "2024-05-01"
+          "date": "2024-04-30",
+          "jpName": "空と雲"
         }
       ],
-      "releaseDate": "2024-05-01"
+      "releaseDate": "2024-04-30"
     },
     {
       "scCharName": "灵知",
@@ -1579,7 +1712,8 @@
         {
           "batch": 1,
           "name": "Starting Point",
-          "date": "2024-06-21"
+          "date": "2024-06-21",
+          "jpName": "起点"
         }
       ],
       "releaseDate": "2024-06-21"
@@ -1592,7 +1726,8 @@
         {
           "batch": 1,
           "name": "Hide-and-Seek",
-          "date": "2024-06-21"
+          "date": "2024-06-21",
+          "jpName": "かくれんぼ"
         }
       ],
       "releaseDate": "2024-06-21"
@@ -1605,10 +1740,11 @@
         {
           "batch": 1,
           "name": "Lost Time",
-          "date": "2024-07-10"
+          "date": "2024-07-09",
+          "jpName": "失った時間"
         }
       ],
-      "releaseDate": "2024-07-10"
+      "releaseDate": "2024-07-09"
     },
     {
       "scCharName": "青枳",
@@ -1618,10 +1754,11 @@
         {
           "batch": 1,
           "name": "The Fowlbeast That Returned",
-          "date": "2024-07-10"
+          "date": "2024-07-09",
+          "jpName": "戻ってきた羽獣"
         }
       ],
-      "releaseDate": "2024-07-10"
+      "releaseDate": "2024-07-09"
     },
     {
       "scCharName": "仇白",
@@ -1631,7 +1768,8 @@
         {
           "batch": 1,
           "name": "Thawing as the Winter",
-          "date": "2024-07-31"
+          "date": "2024-07-31",
+          "jpName": "雪解けの如く"
         }
       ],
       "releaseDate": "2024-07-31"
@@ -1644,7 +1782,8 @@
         {
           "batch": 1,
           "name": "Once a Leaf Has Fallen...",
-          "date": "2024-07-31"
+          "date": "2024-07-31",
+          "jpName": "枯れ葉は何処に"
         }
       ],
       "releaseDate": "2024-07-31"
@@ -1657,7 +1796,8 @@
         {
           "batch": 1,
           "name": "...Ask What I Seek",
-          "date": "2024-07-31"
+          "date": "2024-07-31",
+          "jpName": "何が為に"
         }
       ],
       "releaseDate": "2024-07-31"
@@ -1670,7 +1810,8 @@
         {
           "batch": 1,
           "name": "To Dance With Somebody",
-          "date": "2024-10-10"
+          "date": "2024-10-10",
+          "jpName": "人と共に舞う"
         }
       ],
       "releaseDate": "2024-10-10"
@@ -1683,7 +1824,8 @@
         {
           "batch": 1,
           "name": "Under My Umbrella",
-          "date": "2024-10-10"
+          "date": "2024-10-10",
+          "jpName": "あなたに傘を"
         }
       ],
       "releaseDate": "2024-10-10"
@@ -1696,7 +1838,8 @@
         {
           "batch": 1,
           "name": "A Gunshot Rings Out",
-          "date": "2024-10-10"
+          "date": "2024-10-10",
+          "jpName": "反響する銃声"
         }
       ],
       "releaseDate": "2024-10-10"
@@ -1709,10 +1852,11 @@
         {
           "batch": 1,
           "name": "On a Rainy Night",
-          "date": "2024-11-01"
+          "date": "2024-10-31",
+          "jpName": "雨降る夜"
         }
       ],
-      "releaseDate": "2024-11-01"
+      "releaseDate": "2024-10-31"
     },
     {
       "scCharName": "推进之王",
@@ -1722,10 +1866,11 @@
         {
           "batch": 1,
           "name": "Miraged Sun",
-          "date": "2024-11-01"
+          "date": "2024-10-31",
+          "jpName": "幻日"
         }
       ],
-      "releaseDate": "2024-11-01"
+      "releaseDate": "2024-10-31"
     },
     {
       "scCharName": "灰喉",
@@ -1735,10 +1880,11 @@
         {
           "batch": 1,
           "name": "All Roads...",
-          "date": "2024-11-01"
+          "date": "2024-10-31",
+          "jpName": "異なる道"
         }
       ],
-      "releaseDate": "2024-11-01"
+      "releaseDate": "2024-10-31"
     },
     {
       "scCharName": "阿斯卡纶",
@@ -1748,10 +1894,11 @@
         {
           "batch": 1,
           "name": "The Ones Who Walk With You",
-          "date": "2024-11-01"
+          "date": "2024-10-31",
+          "jpName": "同行者"
         }
       ],
-      "releaseDate": "2024-11-01"
+      "releaseDate": "2024-10-31"
     },
     {
       "scCharName": "阿罗玛",
@@ -1761,10 +1908,11 @@
         {
           "batch": 1,
           "name": "Come And Join Us",
-          "date": "2024-11-01"
+          "date": "2024-10-31",
+          "jpName": "入職の誘い"
         }
       ],
-      "releaseDate": "2024-11-01"
+      "releaseDate": "2024-10-31"
     },
     {
       "scCharName": "海霓",
@@ -1774,7 +1922,8 @@
         {
           "batch": 1,
           "name": "The Hopeful Ones",
-          "date": "2024-12-03"
+          "date": "2024-12-03",
+          "jpName": "希望を抱く人"
         }
       ],
       "releaseDate": "2024-12-03"
@@ -1787,10 +1936,11 @@
         {
           "batch": 1,
           "name": "In Kazdel",
-          "date": "2025-01-17"
+          "date": "2025-01-16",
+          "jpName": "カズデルにて"
         }
       ],
-      "releaseDate": "2025-01-17"
+      "releaseDate": "2025-01-16"
     },
     {
       "scCharName": "洋灰",
@@ -1800,10 +1950,11 @@
         {
           "batch": 1,
           "name": "Sun in the Mine",
-          "date": "2025-01-17"
+          "date": "2025-01-16",
+          "jpName": "坑道の中の太陽"
         }
       ],
-      "releaseDate": "2025-01-17"
+      "releaseDate": "2025-01-16"
     },
     {
       "scCharName": "纯烬艾雅法拉",
@@ -1813,10 +1964,11 @@
         {
           "batch": 1,
           "name": "The First Step Into Night",
-          "date": "2025-01-17"
+          "date": "2025-01-16",
+          "jpName": "闇夜から歩き出して"
         }
       ],
-      "releaseDate": "2025-01-17"
+      "releaseDate": "2025-01-16"
     },
     {
       "scCharName": "衡沙",
@@ -1826,10 +1978,11 @@
         {
           "batch": 1,
           "name": "Things Left Behind",
-          "date": "2025-01-17"
+          "date": "2025-01-16",
+          "jpName": "失くし物"
         }
       ],
-      "releaseDate": "2025-01-17"
+      "releaseDate": "2025-01-16"
     },
     {
       "scCharName": "温米",
@@ -1839,7 +1992,8 @@
         {
           "batch": 1,
           "name": "Unfinished Ending",
-          "date": "2025-02-07"
+          "date": "2025-02-07",
+          "jpName": "未完の結末"
         }
       ],
       "releaseDate": "2025-02-07"
@@ -1852,10 +2006,11 @@
         {
           "batch": 1,
           "name": "Jungle Fantasy",
-          "date": "2025-03-11"
+          "date": "2025-03-10",
+          "jpName": "ジャングル・ファンタジア"
         }
       ],
-      "releaseDate": "2025-03-11"
+      "releaseDate": "2025-03-10"
     },
     {
       "scCharName": "澄闪",
@@ -1865,10 +2020,11 @@
         {
           "batch": 1,
           "name": "A Complete Surprise",
-          "date": "2025-03-11"
+          "date": "2025-03-10",
+          "jpName": "思いがけない出来事"
         }
       ],
-      "releaseDate": "2025-03-11"
+      "releaseDate": "2025-03-10"
     },
     {
       "scCharName": "渡桥",
@@ -1878,10 +2034,11 @@
         {
           "batch": 1,
           "name": "Written in Black and White",
-          "date": "2025-03-11"
+          "date": "2025-03-10",
+          "jpName": "書き記されたもの"
         }
       ],
-      "releaseDate": "2025-03-11"
+      "releaseDate": "2025-03-10"
     },
     {
       "scCharName": "白铁",
@@ -1891,7 +2048,8 @@
         {
           "batch": 1,
           "name": "Bad Mesh",
-          "date": "2025-04-08"
+          "date": "2025-04-08",
+          "jpName": "嚙み合わない歯車"
         }
       ],
       "releaseDate": "2025-04-08"
@@ -1904,7 +2062,8 @@
         {
           "batch": 1,
           "name": "Aufführung im Abendrot",
-          "date": "2025-04-08"
+          "date": "2025-04-08",
+          "jpName": "夕焼けの演奏"
         }
       ],
       "releaseDate": "2025-04-08"
@@ -1917,7 +2076,8 @@
         {
           "batch": 1,
           "name": "A Dance Together",
-          "date": "2025-06-05"
+          "date": "2025-06-05",
+          "jpName": "一緒に踊ろう"
         }
       ],
       "releaseDate": "2025-06-05"
@@ -1930,10 +2090,11 @@
         {
           "batch": 1,
           "name": "Out with the Old, In with the New",
-          "date": "2025-07-18"
+          "date": "2025-07-17",
+          "jpName": "新旧交わる時"
         }
       ],
-      "releaseDate": "2025-07-18"
+      "releaseDate": "2025-07-17"
     },
     {
       "scCharName": "小满",
@@ -1943,10 +2104,11 @@
         {
           "batch": 1,
           "name": "Reliving Old Dreams",
-          "date": "2025-07-18"
+          "date": "2025-07-17",
+          "jpName": "懐かしき夢の追憶"
         }
       ],
-      "releaseDate": "2025-07-18"
+      "releaseDate": "2025-07-17"
     },
     {
       "scCharName": "余",
@@ -1956,10 +2118,11 @@
         {
           "batch": 1,
           "name": "A Hundred Years in Daily Steps",
-          "date": "2025-07-18"
+          "date": "2025-07-17",
+          "jpName": "百年一日"
         }
       ],
-      "releaseDate": "2025-07-18"
+      "releaseDate": "2025-07-17"
     },
     {
       "scCharName": "远牙",
@@ -1969,7 +2132,8 @@
         {
           "batch": 1,
           "name": "Where She Belongs",
-          "date": "2025-08-28"
+          "date": "2025-08-28",
+          "jpName": "居場所"
         }
       ],
       "releaseDate": "2025-08-28"
@@ -1982,10 +2146,11 @@
         {
           "batch": 1,
           "name": "End of a Long Journey",
-          "date": "2025-09-17"
+          "date": "2025-09-16",
+          "jpName": "長き旅路の果てに"
         }
       ],
-      "releaseDate": "2025-09-17"
+      "releaseDate": "2025-09-16"
     },
     {
       "scCharName": "诺威尔",
@@ -1995,7 +2160,8 @@
         {
           "batch": 1,
           "name": "When Our Lives Began",
-          "date": "2025-10-14"
+          "date": "2025-10-14",
+          "jpName": "我らの人生が始まる時"
         }
       ],
       "releaseDate": "2025-10-14"
@@ -2008,7 +2174,8 @@
         {
           "batch": 1,
           "name": "One More Time",
-          "date": "2025-10-14"
+          "date": "2025-10-14",
+          "jpName": "再会"
         }
       ],
       "releaseDate": "2025-10-14"
@@ -2021,7 +2188,8 @@
         {
           "batch": 1,
           "name": "The Unpoetic Poet",
-          "date": "2025-11-13"
+          "date": "2025-11-13",
+          "jpName": "詩を詠まぬ詩人"
         }
       ],
       "releaseDate": "2025-11-13"
@@ -2034,7 +2202,8 @@
         {
           "batch": 1,
           "name": "Where Doth Treasure Lie",
-          "date": "2025-11-13"
+          "date": "2025-11-13",
+          "jpName": "宝物のありか"
         }
       ],
       "releaseDate": "2025-11-13"
@@ -2047,7 +2216,8 @@
         {
           "batch": 1,
           "name": "Perhaps Not Empty",
-          "date": "2025-12-11"
+          "date": "2025-12-11",
+          "jpName": "未だ必ずしも空ならず"
         }
       ],
       "releaseDate": "2025-12-11"
@@ -2060,12 +2230,14 @@
         {
           "batch": 1,
           "name": "Fins on the Night Desert",
-          "date": "2025-12-11"
+          "date": "2025-12-11",
+          "jpName": "夜の砂漠の鱗獣の群れ"
         },
         {
           "batch": 2,
           "name": "Dancer Beneath the Moon",
-          "date": "2026-06-22"
+          "date": "2026-06-22",
+          "jpName": "月下に踊る"
         }
       ],
       "releaseDate": "2025-12-11"
@@ -2078,7 +2250,8 @@
         {
           "batch": 1,
           "name": "Need Not the Sword",
-          "date": "2025-12-11"
+          "date": "2025-12-11",
+          "jpName": "何ぞ剣を用いん"
         }
       ],
       "releaseDate": "2025-12-11"
@@ -2091,7 +2264,8 @@
         {
           "batch": 1,
           "name": "After the Choice",
-          "date": "2026-01-16"
+          "date": "2026-01-16",
+          "jpName": "決断の後"
         }
       ],
       "releaseDate": "2026-01-16"
@@ -2104,7 +2278,8 @@
         {
           "batch": 1,
           "name": "Duel",
-          "date": "2026-02-10"
+          "date": "2026-02-10",
+          "jpName": "決闘"
         }
       ],
       "releaseDate": "2026-02-10"
@@ -2117,7 +2292,8 @@
         {
           "batch": 1,
           "name": "Leaping Glimmer",
-          "date": "2026-02-10"
+          "date": "2026-02-10",
+          "jpName": "躍動するきらめき"
         }
       ],
       "releaseDate": "2026-02-10"
@@ -2130,7 +2306,8 @@
         {
           "batch": 1,
           "name": "A Game of Scents",
-          "date": "2026-02-10"
+          "date": "2026-02-10",
+          "jpName": "匂いの遊戯"
         }
       ],
       "releaseDate": "2026-02-10"
@@ -2143,7 +2320,8 @@
         {
           "batch": 1,
           "name": "Someone to Walk With",
-          "date": "2026-03-19"
+          "date": "2026-03-19",
+          "jpName": "誰が共に歩むか"
         }
       ],
       "releaseDate": "2026-03-19"
@@ -2156,7 +2334,8 @@
         {
           "batch": 1,
           "name": "Acceptance Speech",
-          "date": "2026-03-19"
+          "date": "2026-03-19",
+          "jpName": "受賞コメント"
         }
       ],
       "releaseDate": "2026-03-19"
@@ -2169,7 +2348,8 @@
         {
           "batch": 1,
           "name": "Ever-Present",
-          "date": "2026-03-19"
+          "date": "2026-03-19",
+          "jpName": "遍在"
         }
       ],
       "releaseDate": "2026-03-19"
@@ -2182,7 +2362,8 @@
         {
           "batch": 1,
           "name": "A Knight's Journey",
-          "date": "2026-04-14"
+          "date": "2026-04-14",
+          "jpName": "騎士の旅路"
         }
       ],
       "releaseDate": "2026-04-14"
@@ -2195,7 +2376,8 @@
         {
           "batch": 1,
           "name": "Lucky Stars",
-          "date": "2026-04-14"
+          "date": "2026-04-14",
+          "jpName": "幸運はすぐそばに"
         }
       ],
       "releaseDate": "2026-04-14"
@@ -2208,7 +2390,8 @@
         {
           "batch": 1,
           "name": "One Last Bolt Towards the Mountains",
-          "date": "2026-04-14"
+          "date": "2026-04-14",
+          "jpName": "山々に放った最後の一矢"
         }
       ],
       "releaseDate": "2026-04-14"
@@ -2221,7 +2404,8 @@
         {
           "batch": 1,
           "name": "Fertile Soil",
-          "date": "2026-05-21"
+          "date": "2026-05-21",
+          "jpName": "沃土"
         }
       ],
       "releaseDate": "2026-05-21"
@@ -2234,7 +2418,8 @@
         {
           "batch": 1,
           "name": "Like a Blazing Fire",
-          "date": "2026-06-22"
+          "date": "2026-06-22",
+          "jpName": "焔のように燃え上がれ"
         }
       ],
       "releaseDate": "2026-06-22"
@@ -2247,7 +2432,8 @@
         {
           "batch": 1,
           "name": "Something New",
-          "date": "2026-06-22"
+          "date": "2026-06-22",
+          "jpName": "新しいもの"
         }
       ],
       "releaseDate": "2026-06-22"
@@ -2260,7 +2446,8 @@
         {
           "batch": 1,
           "name": "The Final Adventure",
-          "date": "2026-06-22"
+          "date": "2026-06-22",
+          "jpName": "最後の探検"
         }
       ],
       "releaseDate": "2026-06-22"
@@ -2273,7 +2460,8 @@
         {
           "batch": 1,
           "name": "Final Round",
-          "date": "2026-07-16"
+          "date": "2026-07-16",
+          "jpName": "終局"
         }
       ],
       "releaseDate": "2026-07-16"
@@ -2286,7 +2474,8 @@
         {
           "batch": 1,
           "name": "Painkillers",
-          "date": "2026-09-16"
+          "date": "2026-09-16",
+          "jpName": "痛み止め"
         }
       ],
       "releaseDate": "2026-09-16"
@@ -2299,7 +2488,8 @@
         {
           "batch": 1,
           "name": "Cycle",
-          "date": "2026-10-14"
+          "date": "2026-10-14",
+          "jpName": "循環"
         }
       ],
       "releaseDate": "2026-10-14"
@@ -2312,10 +2502,25 @@
         {
           "batch": 1,
           "name": "The Art of Being Everywhere at Once",
-          "date": "2026-10-14"
+          "date": "2026-10-14",
+          "jpName": "ロボットの手も借りたい"
         }
       ],
       "releaseDate": "2026-10-14"
+    },
+    {
+      "scCharName": "寻澜",
+      "charId": "char_4052_surfer",
+      "rarity": 5,
+      "batches": [
+        {
+          "batch": 1,
+          "name": "頂上からの景色",
+          "date": "2026-11-16",
+          "jpName": "頂上からの景色"
+        }
+      ],
+      "releaseDate": "2026-11-16"
     }
   ]
 }

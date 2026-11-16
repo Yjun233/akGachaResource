@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-04",
-  "dataVersion": "Stream:\nChange:\nVersionControl:52.2.0",
+  "generatedAt": "2026-11-16",
+  "dataVersion": "Stream:\nChange:\nVersionControl:52.6.0",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "banners": {
     "20231024_classic_0001": {
@@ -2817,6 +2817,50 @@
         }
       ],
       "scName": "常驻中坚寻访64",
+      "enName": null
+    },
+    "20261117_classic_0065": {
+      "type": "classic",
+      "startDate": "2026-11-17",
+      "endDate": "2026-12-01",
+      "upOperators": [
+        {
+          "scCharName": "温蒂",
+          "charId": "char_400_weedy",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "scCharName": "傀影",
+          "charId": "char_250_phatom",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "空",
+          "charId": "char_101_sora",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "scCharName": "普罗旺斯",
+          "charId": "char_145_prove",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "乌有",
+          "charId": "char_455_nothin",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "scName": "常驻中坚寻访65",
       "enName": null
     },
     "20231205_clafes_0001": {

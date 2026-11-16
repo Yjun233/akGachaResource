@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15",
+  "generatedAt": "2026-11-16",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "modules": [
     {
@@ -8,6 +8,7 @@
       "seq": 1,
       "name": "Ten Thousand Years of Memories",
       "date": "2026-05-21",
+      "jpName": "記憶アーカイブ",
       "type": "X",
       "moduleId": "uniequip_002_monstr"
     },
@@ -17,6 +18,7 @@
       "seq": 1,
       "name": "Mercenary's Bag",
       "date": "2022-09-16",
+      "jpName": "傭兵の鞄",
       "type": "X",
       "moduleId": "uniequip_002_cqbw"
     },
@@ -25,7 +27,8 @@
       "charId": "char_113_cqbw",
       "seq": 2,
       "name": "Lost Dull Knife",
-      "date": "2023-11-08",
+      "date": "2023-11-07",
+      "jpName": "鈍い刃",
       "type": "Y",
       "moduleId": "uniequip_003_cqbw"
     },
@@ -35,6 +38,7 @@
       "seq": 1,
       "name": "Improved Knight Shield",
       "date": "2022-12-27",
+      "jpName": "改良型の騎士用盾",
       "type": "X",
       "moduleId": "uniequip_002_nearl"
     },
@@ -44,6 +48,7 @@
       "seq": 1,
       "name": "'Nighttime Stories'",
       "date": "2026-09-16",
+      "jpName": "「おやすみ前の物語」",
       "type": "X",
       "moduleId": "uniequip_002_turdus"
     },
@@ -52,7 +57,8 @@
       "charId": "char_4145_ulpia",
       "seq": 1,
       "name": "Vestiarium Ulpiani",
-      "date": "2025-03-11",
+      "date": "2025-03-10",
+      "jpName": "ウルピアヌスのクローゼット",
       "type": "X",
       "moduleId": "uniequip_002_ulpia"
     },
@@ -61,7 +67,8 @@
       "charId": "char_455_nothin",
       "seq": 1,
       "name": "'Shelter from the Rain'",
-      "date": "2022-01-26",
+      "date": "2022-01-25",
+      "jpName": "「檐下聴雨」",
       "type": "X",
       "moduleId": "uniequip_002_nothin"
     },
@@ -70,7 +77,8 @@
       "charId": "char_4082_qiubai",
       "seq": 1,
       "name": "A Weathered Snow Hat",
-      "date": "2024-11-01",
+      "date": "2024-10-31",
+      "jpName": "雪に濡れる笠",
       "type": "X",
       "moduleId": "uniequip_002_qiubai"
     },
@@ -79,7 +87,8 @@
       "charId": "char_2023_ling",
       "seq": 1,
       "name": "Fond Dream with Poetry",
-      "date": "2022-01-26",
+      "date": "2022-01-25",
+      "jpName": "詩は短く、夢は長く",
       "type": "Y",
       "moduleId": "uniequip_002_ling"
     },
@@ -88,7 +97,8 @@
       "charId": "char_4087_ines",
       "seq": 1,
       "name": "'Horncare Set'",
-      "date": "2025-09-17",
+      "date": "2025-09-16",
+      "jpName": "角「ケア」セット",
       "type": "Y",
       "moduleId": "uniequip_002_ines"
     },
@@ -98,6 +108,7 @@
       "seq": 1,
       "name": "'Syntexis'",
       "date": "2023-09-07",
+      "jpName": "「シンテクシス」",
       "type": "X",
       "moduleId": "uniequip_002_ifrit"
     },
@@ -107,6 +118,7 @@
       "seq": 2,
       "name": "'Thermoformed Memory'",
       "date": "2024-12-03",
+      "jpName": "「熱成形された記憶」",
       "type": "D",
       "moduleId": "uniequip_003_ifrit"
     },
@@ -115,7 +127,8 @@
       "charId": "char_4032_provs",
       "seq": 1,
       "name": "Deszcz's Graduate Memento",
-      "date": "2023-04-01",
+      "date": "2023-03-31",
+      "jpName": "デーシュットの卒業祝い",
       "type": "X",
       "moduleId": "uniequip_002_provs"
     },
@@ -125,6 +138,7 @@
       "seq": 1,
       "name": "Tastes of Life",
       "date": "2026-07-16",
+      "jpName": "人間百味",
       "type": "X",
       "moduleId": "uniequip_002_yu"
     },
@@ -133,7 +147,8 @@
       "charId": "char_4058_pepe",
       "seq": 1,
       "name": "Rain or Shine",
-      "date": "2025-07-18",
+      "date": "2025-07-17",
+      "jpName": "晴れか雨か",
       "type": "X",
       "moduleId": "uniequip_002_pepe"
     },
@@ -143,6 +158,7 @@
       "seq": 2,
       "name": "Pepe's Specialized Badge",
       "date": "2026-01-16",
+      "jpName": "ペペの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_003_pepe"
     },
@@ -152,6 +168,7 @@
       "seq": 1,
       "name": "Beach Combat Suit",
       "date": "2025-02-07",
+      "jpName": "ビーチ用コンバットセット",
       "type": "X",
       "moduleId": "uniequip_002_chen2"
     },
@@ -161,6 +178,7 @@
       "seq": 2,
       "name": "The Last Day of Holiday",
       "date": "2026-01-16",
+      "jpName": "休みの最終日",
       "type": "Y",
       "moduleId": "uniequip_003_chen2"
     },
@@ -169,7 +187,8 @@
       "charId": "char_250_phatom",
       "seq": 1,
       "name": "Miss Christine's Felt",
-      "date": "2021-11-02",
+      "date": "2021-11-01",
+      "jpName": "レディのフェルト細工",
       "type": "X",
       "moduleId": "uniequip_002_phatom"
     },
@@ -179,6 +198,7 @@
       "seq": 2,
       "name": "'Think of Me'",
       "date": "2024-02-27",
+      "jpName": "「影のように」",
       "type": "Y",
       "moduleId": "uniequip_003_phatom"
     },
@@ -187,7 +207,8 @@
       "charId": "char_250_phatom",
       "seq": 3,
       "name": "Phantom's Specialized Badge",
-      "date": "2025-01-17",
+      "date": "2025-01-16",
+      "jpName": "ファントムの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_phatom"
     },
@@ -197,6 +218,7 @@
       "seq": 1,
       "name": "A Graduation Gift for Генерал Мороз",
       "date": "2023-05-23",
+      "jpName": "冬将軍の卒業記念品",
       "type": "X",
       "moduleId": "uniequip_002_headbr"
     },
@@ -206,6 +228,7 @@
       "seq": 1,
       "name": "Mon2tr",
       "date": "2023-05-23",
+      "jpName": "Mon2tr",
       "type": "X",
       "moduleId": "uniequip_002_kalts"
     },
@@ -214,7 +237,8 @@
       "charId": "char_003_kalts",
       "seq": 2,
       "name": "Panacea",
-      "date": "2023-11-08",
+      "date": "2023-11-07",
+      "jpName": "医師",
       "type": "Y",
       "moduleId": "uniequip_003_kalts"
     },
@@ -223,7 +247,8 @@
       "charId": "char_003_kalts",
       "seq": 3,
       "name": "Kal'tsit's Specialized Badge",
-      "date": "2025-01-17",
+      "date": "2025-01-16",
+      "jpName": "ケルシーの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_kalts"
     },
@@ -232,7 +257,8 @@
       "charId": "char_174_slbell",
       "seq": 1,
       "name": "'Knitting of a Future'",
-      "date": "2023-11-08",
+      "date": "2023-11-07",
+      "jpName": "「編み物の続き」",
       "type": "X",
       "moduleId": "uniequip_002_slbell"
     },
@@ -242,6 +268,7 @@
       "seq": 1,
       "name": "Broken Rose",
       "date": "2024-06-21",
+      "jpName": "砕かれた薔薇",
       "type": "X",
       "moduleId": "uniequip_002_vendla"
     },
@@ -250,7 +277,8 @@
       "charId": "char_2013_cerber",
       "seq": 1,
       "name": "'Really Dry Bread'",
-      "date": "2023-07-29",
+      "date": "2023-07-28",
+      "jpName": "「カチカチのパン」",
       "type": "X",
       "moduleId": "uniequip_002_cerber"
     },
@@ -260,6 +288,7 @@
       "seq": 2,
       "name": "'Knife, I Made'",
       "date": "2023-10-24",
+      "jpName": "「おいらが打ったナイフ」",
       "type": "Y",
       "moduleId": "uniequip_003_cerber"
     },
@@ -269,6 +298,7 @@
       "seq": 1,
       "name": "Emergency Reserves",
       "date": "2023-05-23",
+      "jpName": "緊急用予備血液",
       "type": "X",
       "moduleId": "uniequip_002_bldsk"
     },
@@ -277,7 +307,8 @@
       "charId": "char_214_kafka",
       "seq": 1,
       "name": "Rubik's Cube Pendant",
-      "date": "2021-11-02",
+      "date": "2021-11-01",
+      "jpName": "キューブ型ペンダント",
       "type": "Y",
       "moduleId": "uniequip_002_kafka"
     },
@@ -287,6 +318,7 @@
       "seq": 1,
       "name": "Hyacinth and Dagger",
       "date": "2023-10-24",
+      "jpName": "ヒヤシンスと短剣",
       "type": "X",
       "moduleId": "uniequip_002_billro"
     },
@@ -296,6 +328,7 @@
       "seq": 2,
       "name": "Always Have Your Back",
       "date": "2024-06-21",
+      "jpName": "故郷の音",
       "type": "Y",
       "moduleId": "uniequip_003_billro"
     },
@@ -304,7 +337,8 @@
       "charId": "char_1036_fang2",
       "seq": 1,
       "name": "The Dauntless",
-      "date": "2024-11-01",
+      "date": "2024-10-31",
+      "jpName": "たゆまず進め",
       "type": "X",
       "moduleId": "uniequip_002_fang2"
     },
@@ -314,6 +348,7 @@
       "seq": 1,
       "name": "Little Trophy for Herself",
       "date": "2026-10-14",
+      "jpName": "自分に贈る小さなトロフィー",
       "type": "X",
       "moduleId": "uniequip_002_closur"
     },
@@ -322,7 +357,8 @@
       "charId": "char_201_moeshd",
       "seq": 1,
       "name": "Combat Boots",
-      "date": "2023-04-01",
+      "date": "2023-03-31",
+      "jpName": "ミリタリーブーツ",
       "type": "Y",
       "moduleId": "uniequip_002_moeshd"
     },
@@ -332,6 +368,7 @@
       "seq": 1,
       "name": "Heart of Sami",
       "date": "2025-06-05",
+      "jpName": "サーミの不滅なる心臓の欠片",
       "type": "X",
       "moduleId": "uniequip_002_surtr"
     },
@@ -341,6 +378,7 @@
       "seq": 2,
       "name": "Travel Necessities",
       "date": "2026-09-16",
+      "jpName": "旅の必需品",
       "type": "Y",
       "moduleId": "uniequip_003_surtr"
     },
@@ -350,6 +388,7 @@
       "seq": 1,
       "name": "Exemplars",
       "date": "2024-04-16",
+      "jpName": "「模範たる人」",
       "type": "X",
       "moduleId": "uniequip_002_horn"
     },
@@ -359,6 +398,7 @@
       "seq": 2,
       "name": "Old Clothes, New Days",
       "date": "2025-04-08",
+      "jpName": "過ぎし日の新装",
       "type": "Y",
       "moduleId": "uniequip_003_horn"
     },
@@ -368,6 +408,7 @@
       "seq": 1,
       "name": "'Within a Thought'",
       "date": "2025-12-11",
+      "jpName": "「一念」",
       "type": "X",
       "moduleId": "uniequip_002_leizi2"
     },
@@ -377,6 +418,7 @@
       "seq": 1,
       "name": "A Suspicious Pamphlet",
       "date": "2026-01-16",
+      "jpName": "怪しいチラシ",
       "type": "X",
       "moduleId": "uniequip_002_kichi"
     },
@@ -386,6 +428,7 @@
       "seq": 1,
       "name": "Popular Sitcom Tapes",
       "date": "2022-12-27",
+      "jpName": "八時台メロドラマのDVD",
       "type": "Y",
       "moduleId": "uniequip_002_hmau"
     },
@@ -395,6 +438,7 @@
       "seq": 1,
       "name": "The Spy's Dossiers",
       "date": "2023-07-13",
+      "jpName": "諜報員ファイル",
       "type": "X",
       "moduleId": "uniequip_002_hamoni"
     },
@@ -404,6 +448,7 @@
       "seq": 1,
       "name": "'Parachute'",
       "date": "2026-07-16",
+      "jpName": "「パラシュート」",
       "type": "X",
       "moduleId": "uniequip_002_cairn"
     },
@@ -413,6 +458,7 @@
       "seq": 1,
       "name": "Hi-Fi Headset",
       "date": "2023-03-14",
+      "jpName": "ハイファイヘッドホン",
       "type": "Y",
       "moduleId": "uniequip_002_aprl"
     },
@@ -422,6 +468,7 @@
       "seq": 1,
       "name": "Unanswered",
       "date": "2023-12-21",
+      "jpName": "回答を求めて",
       "type": "X",
       "moduleId": "uniequip_002_excu2"
     },
@@ -431,6 +478,7 @@
       "seq": 2,
       "name": "Acknowledged",
       "date": "2026-03-19",
+      "jpName": "了承済み",
       "type": "Y",
       "moduleId": "uniequip_003_excu2"
     },
@@ -440,6 +488,7 @@
       "seq": 1,
       "name": "A Thousandth of A Heart",
       "date": "2026-04-14",
+      "jpName": "千分の一の心",
       "type": "Y",
       "moduleId": "uniequip_002_sbell2"
     },
@@ -448,7 +497,8 @@
       "charId": "char_245_cello",
       "seq": 1,
       "name": "The Decrescendo",
-      "date": "2025-04-25",
+      "date": "2025-04-24",
+      "jpName": "デクレシェンド",
       "type": "X",
       "moduleId": "uniequip_002_cello"
     },
@@ -458,6 +508,7 @@
       "seq": 2,
       "name": "'Tuning on the Heart'",
       "date": "2026-02-10",
+      "jpName": "音楽家の旅路",
       "type": "Y",
       "moduleId": "uniequip_003_cello"
     },
@@ -467,6 +518,7 @@
       "seq": 1,
       "name": "Unused Boxing Gloves",
       "date": "2022-12-27",
+      "jpName": "仕舞い込まれたグローブ",
       "type": "X",
       "moduleId": "uniequip_002_demkni"
     },
@@ -475,7 +527,8 @@
       "charId": "char_202_demkni",
       "seq": 2,
       "name": "Technology Rising Star Award",
-      "date": "2023-07-29",
+      "date": "2023-07-28",
+      "jpName": "研究界の新星",
       "type": "Y",
       "moduleId": "uniequip_003_demkni"
     },
@@ -485,6 +538,7 @@
       "seq": 1,
       "name": "'Dusk Covenant'",
       "date": "2026-08-13",
+      "jpName": "「夕暮れ時の約束」",
       "type": "Y",
       "moduleId": "uniequip_002_liesel"
     },
@@ -493,7 +547,8 @@
       "charId": "char_492_quercu",
       "seq": 1,
       "name": "Rusty Stick",
-      "date": "2024-03-20",
+      "date": "2024-03-19",
+      "jpName": "錆びついた枝",
       "type": "X",
       "moduleId": "uniequip_002_quercu"
     },
@@ -503,6 +558,7 @@
       "seq": 1,
       "name": "Untitled Scroll",
       "date": "2022-09-16",
+      "jpName": "無題の巻物",
       "type": "X",
       "moduleId": "uniequip_002_dusk"
     },
@@ -512,6 +568,7 @@
       "seq": 2,
       "name": "'All Told, A Sleepless Night'",
       "date": "2023-05-23",
+      "jpName": "「終夜寐ねられず」",
       "type": "Y",
       "moduleId": "uniequip_003_dusk"
     },
@@ -520,7 +577,8 @@
       "charId": "char_2015_dusk",
       "seq": 3,
       "name": "Dusk's Specialized Badge",
-      "date": "2025-07-18",
+      "date": "2025-07-17",
+      "jpName": "シーの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_dusk"
     },
@@ -530,6 +588,7 @@
       "seq": 1,
       "name": "Story Book",
       "date": "2023-10-24",
+      "jpName": "童話の本",
       "type": "Y",
       "moduleId": "uniequip_002_doroth"
     },
@@ -539,6 +598,7 @@
       "seq": 2,
       "name": "In My Dreams",
       "date": "2025-11-13",
+      "jpName": "夢の中で",
       "type": "X",
       "moduleId": "uniequip_003_doroth"
     },
@@ -548,6 +608,7 @@
       "seq": 1,
       "name": "The Stars and The Sleepyhead",
       "date": "2024-10-10",
+      "jpName": "星々と寝坊助",
       "type": "X",
       "moduleId": "uniequip_002_blkngt"
     },
@@ -556,7 +617,8 @@
       "charId": "char_179_cgbird",
       "seq": 1,
       "name": "'Closed Hope'",
-      "date": "2021-09-18",
+      "date": "2021-09-17",
+      "jpName": "「籠の中の希望」",
       "type": "X",
       "moduleId": "uniequip_002_cgbird"
     },
@@ -565,7 +627,8 @@
       "charId": "char_179_cgbird",
       "seq": 2,
       "name": "'Nocturnal Echoes'",
-      "date": "2025-01-17",
+      "date": "2025-01-16",
+      "jpName": "「小夜啼鳥の歌」",
       "type": "Y",
       "moduleId": "uniequip_003_cgbird"
     },
@@ -574,7 +637,8 @@
       "charId": "char_164_nightm",
       "seq": 1,
       "name": "'The Double'",
-      "date": "2023-07-29",
+      "date": "2023-07-28",
+      "jpName": "「二輪咲き」",
       "type": "Y",
       "moduleId": "uniequip_002_nightm"
     },
@@ -584,6 +648,7 @@
       "seq": 1,
       "name": "Fire Retardant Treatment",
       "date": "2022-09-16",
+      "jpName": "防炎処理案",
       "type": "Y",
       "moduleId": "uniequip_002_skfire"
     },
@@ -593,6 +658,7 @@
       "seq": 1,
       "name": "Emergency Kit",
       "date": "2025-02-07",
+      "jpName": "逃亡用の緊急キット",
       "type": "X",
       "moduleId": "uniequip_002_aosta"
     },
@@ -602,6 +668,7 @@
       "seq": 1,
       "name": "'Aspiration'",
       "date": "2026-01-16",
+      "jpName": "心に響く音",
       "type": "X",
       "moduleId": "uniequip_002_nymph"
     },
@@ -611,6 +678,7 @@
       "seq": 2,
       "name": "Consultation Toolkit",
       "date": "2026-09-16",
+      "jpName": "お悩み相談箱",
       "type": "Y",
       "moduleId": "uniequip_003_nymph"
     },
@@ -620,8 +688,19 @@
       "seq": 1,
       "name": "'Those Buried in Sand'",
       "date": "2026-03-19",
+      "jpName": "「黄砂の果てに」",
       "type": "X",
       "moduleId": "uniequip_002_narant"
+    },
+    {
+      "scCharName": "娜仁图亚",
+      "charId": "char_4138_narant",
+      "seq": 2,
+      "name": "「我らがボスへ」",
+      "date": "2026-11-16",
+      "jpName": "「我らがボスへ」",
+      "type": "Y",
+      "moduleId": "uniequip_003_narant"
     },
     {
       "scCharName": "娜斯提",
@@ -629,6 +708,7 @@
       "seq": 1,
       "name": "The Engineers",
       "date": "2026-05-21",
+      "jpName": "エンジニアたち",
       "type": "X",
       "moduleId": "uniequip_002_nasti"
     },
@@ -638,6 +718,7 @@
       "seq": 1,
       "name": "'A Hidey-Hole That Moves'",
       "date": "2023-05-23",
+      "jpName": "移動式の「巣」",
       "type": "Y",
       "moduleId": "uniequip_002_lunacu"
     },
@@ -646,7 +727,8 @@
       "charId": "char_158_milu",
       "seq": 1,
       "name": "Field Sniper Equipment",
-      "date": "2021-09-18",
+      "date": "2021-09-17",
+      "jpName": "野戦用狙撃装備",
       "type": "Y",
       "moduleId": "uniequip_002_milu"
     },
@@ -655,7 +737,8 @@
       "charId": "char_218_cuttle",
       "seq": 1,
       "name": "Gunsmithing Toolkit",
-      "date": "2021-09-18",
+      "date": "2021-09-17",
+      "jpName": "銃器整備用工具箱",
       "type": "X",
       "moduleId": "uniequip_002_cuttle"
     },
@@ -665,6 +748,7 @@
       "seq": 1,
       "name": "Gravity Calibration Module",
       "date": "2022-10-19",
+      "jpName": "重力校正モジュール",
       "type": "Y",
       "moduleId": "uniequip_002_aglina"
     },
@@ -674,6 +758,7 @@
       "seq": 2,
       "name": "Experimental Anti-Gravity Module",
       "date": "2023-05-23",
+      "jpName": "実験用反重力モジュール",
       "type": "X",
       "moduleId": "uniequip_003_aglina"
     },
@@ -682,7 +767,8 @@
       "charId": "char_291_aglina",
       "seq": 3,
       "name": "Angelina's Specialized Badge",
-      "date": "2025-04-25",
+      "date": "2025-04-24",
+      "jpName": "アンジェリーナの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_aglina"
     },
@@ -692,6 +778,7 @@
       "seq": 1,
       "name": "Ice Brazier",
       "date": "2024-02-27",
+      "jpName": "「アイス・ブレイジャー」",
       "type": "Y",
       "moduleId": "uniequip_002_sntlla"
     },
@@ -700,7 +787,8 @@
       "charId": "char_4052_surfer",
       "seq": 1,
       "name": "The Delicacy",
-      "date": "2025-09-17",
+      "date": "2025-09-16",
+      "jpName": "ごちそう",
       "type": "X",
       "moduleId": "uniequip_002_surfer"
     },
@@ -710,6 +798,7 @@
       "seq": 1,
       "name": "On the Field",
       "date": "2024-07-31",
+      "jpName": "田野にて",
       "type": "X",
       "moduleId": "uniequip_002_grabds"
     },
@@ -719,6 +808,7 @@
       "seq": 1,
       "name": "'Price of Freedom'",
       "date": "2024-07-31",
+      "jpName": "「自由の代償」",
       "type": "Y",
       "moduleId": "uniequip_002_f12yin"
     },
@@ -728,6 +818,7 @@
       "seq": 2,
       "name": "'In the Dead of Night'",
       "date": "2025-11-13",
+      "jpName": "「誰もが寝静まった夜」",
       "type": "X",
       "moduleId": "uniequip_003_f12yin"
     },
@@ -737,6 +828,7 @@
       "seq": 1,
       "name": "'Reach the Top'",
       "date": "2023-01-13",
+      "jpName": "「頂上への到達」",
       "type": "X",
       "moduleId": "uniequip_002_slchan"
     },
@@ -746,6 +838,7 @@
       "seq": 1,
       "name": "Walk The World",
       "date": "2023-05-23",
+      "jpName": "身は雲泥に向かふ",
       "type": "Y",
       "moduleId": "uniequip_002_saga"
     },
@@ -754,7 +847,8 @@
       "charId": "char_362_saga",
       "seq": 2,
       "name": "Where to Find the Burdenbeast?",
-      "date": "2024-03-20",
+      "date": "2024-03-19",
+      "jpName": "何処にか駄獣を尋ねん",
       "type": "X",
       "moduleId": "uniequip_003_saga"
     },
@@ -764,6 +858,7 @@
       "seq": 1,
       "name": "'You Night, Be Fleeting'",
       "date": "2024-07-31",
+      "jpName": "「豈に夜の長きに苦しまんや」",
       "type": "X",
       "moduleId": "uniequip_002_zuole"
     },
@@ -772,7 +867,8 @@
       "charId": "char_4121_zuole",
       "seq": 2,
       "name": "'Who is he?'",
-      "date": "2025-07-18",
+      "date": "2025-07-17",
+      "jpName": "持燭人の記録",
       "type": "Y",
       "moduleId": "uniequip_003_zuole"
     },
@@ -781,7 +877,8 @@
       "charId": "char_254_vodfox",
       "seq": 1,
       "name": "Fabric Apples",
-      "date": "2023-11-08",
+      "date": "2023-11-07",
+      "jpName": "布製のリンゴ",
       "type": "X",
       "moduleId": "uniequip_002_vodfox"
     },
@@ -790,7 +887,8 @@
       "charId": "char_356_broca",
       "seq": 1,
       "name": "'Buddies'",
-      "date": "2024-01-17",
+      "date": "2024-01-16",
+      "jpName": "「兄弟」",
       "type": "X",
       "moduleId": "uniequip_002_broca"
     },
@@ -799,7 +897,8 @@
       "charId": "char_485_pallas",
       "seq": 1,
       "name": "'Ούρος'",
-      "date": "2021-08-04",
+      "date": "2021-08-03",
+      "jpName": "「故郷の山岩」",
       "type": "X",
       "moduleId": "uniequip_002_pallas"
     },
@@ -809,6 +908,7 @@
       "seq": 2,
       "name": "'Light of Heria'",
       "date": "2023-03-14",
+      "jpName": "「ヘリアの輝き」",
       "type": "Y",
       "moduleId": "uniequip_003_pallas"
     },
@@ -817,7 +917,8 @@
       "charId": "char_2014_nian",
       "seq": 1,
       "name": "The Array of Chaos",
-      "date": "2023-04-01",
+      "date": "2023-03-31",
+      "jpName": "混沌の隊列",
       "type": "X",
       "moduleId": "uniequip_002_nian"
     },
@@ -827,6 +928,7 @@
       "seq": 2,
       "name": "'Don't Disturb'",
       "date": "2023-10-24",
+      "jpName": "「扉叩くことなかれ」",
       "type": "Y",
       "moduleId": "uniequip_003_nian"
     },
@@ -835,7 +937,8 @@
       "charId": "char_143_ghost",
       "seq": 1,
       "name": "Dim Candlelight",
-      "date": "2024-01-17",
+      "date": "2024-01-16",
+      "jpName": "幽々たる蝋燭の灯り",
       "type": "X",
       "moduleId": "uniequip_002_ghost"
     },
@@ -844,7 +947,8 @@
       "charId": "char_472_pasngr",
       "seq": 1,
       "name": "Electromagnetic Regulator",
-      "date": "2021-11-02",
+      "date": "2021-11-01",
+      "jpName": "電磁調節器",
       "type": "X",
       "moduleId": "uniequip_002_pasngr"
     },
@@ -854,6 +958,7 @@
       "seq": 2,
       "name": "Gold of Crowns",
       "date": "2022-12-27",
+      "jpName": "王権の金貨",
       "type": "Y",
       "moduleId": "uniequip_003_pasngr"
     },
@@ -863,6 +968,7 @@
       "seq": 3,
       "name": "Passenger's Specialized Badge",
       "date": "2026-07-16",
+      "jpName": "パッセンジャーの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_pasngr"
     },
@@ -872,6 +978,7 @@
       "seq": 1,
       "name": "A Three-Sided Coin",
       "date": "2025-08-28",
+      "jpName": "第三の選択",
       "type": "X",
       "moduleId": "uniequip_002_thorn2"
     },
@@ -881,6 +988,7 @@
       "seq": 1,
       "name": "'Vinyl Record' Box",
       "date": "2022-11-03",
+      "jpName": "「レコード」収納箱",
       "type": "X",
       "moduleId": "uniequip_002_ghost2"
     },
@@ -890,6 +998,7 @@
       "seq": 2,
       "name": "The Beauty in the Incomplete",
       "date": "2023-01-13",
+      "jpName": "至らずの美しさ",
       "type": "Y",
       "moduleId": "uniequip_003_ghost2"
     },
@@ -899,6 +1008,7 @@
       "seq": 3,
       "name": "Specter the Unchained's Specialized Badge",
       "date": "2026-10-14",
+      "jpName": "帰溟スペクターの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_ghost2"
     },
@@ -908,6 +1018,7 @@
       "seq": 1,
       "name": "Unfinished Record",
       "date": "2025-12-11",
+      "jpName": "未完成の録武簿",
       "type": "X",
       "moduleId": "uniequip_002_reckpr"
     },
@@ -917,6 +1028,7 @@
       "seq": 1,
       "name": "Private Field Supply Package",
       "date": "2023-05-23",
+      "jpName": "外勤用プライベート補給パック",
       "type": "Y",
       "moduleId": "uniequip_002_texas"
     },
@@ -925,9 +1037,20 @@
       "charId": "char_4026_vulpis",
       "seq": 1,
       "name": "Patience, Mission, Vacation",
-      "date": "2025-04-25",
+      "date": "2025-04-24",
+      "jpName": "殺し屋にも休暇あり",
       "type": "X",
       "moduleId": "uniequip_002_vulpis"
+    },
+    {
+      "scCharName": "忍冬",
+      "charId": "char_4026_vulpis",
+      "seq": 2,
+      "name": "刀さす女",
+      "date": "2026-11-16",
+      "jpName": "刀さす女",
+      "type": "Y",
+      "moduleId": "uniequip_003_vulpis"
     },
     {
       "scCharName": "怒潮凛冬",
@@ -935,6 +1058,7 @@
       "seq": 1,
       "name": "Unissued Medal",
       "date": "2026-09-16",
+      "jpName": "遅れてきた勲章",
       "type": "X",
       "moduleId": "uniequip_002_headb2"
     },
@@ -943,7 +1067,8 @@
       "charId": "char_306_leizi",
       "seq": 1,
       "name": "'All the Thunderlight'",
-      "date": "2021-11-02",
+      "date": "2021-11-01",
+      "jpName": "「天地通明」",
       "type": "X",
       "moduleId": "uniequip_002_leizi"
     },
@@ -953,6 +1078,7 @@
       "seq": 1,
       "name": "'Soul Resonance'",
       "date": "2022-09-16",
+      "jpName": "「魂の共鳴」",
       "type": "X",
       "moduleId": "uniequip_002_sesa"
     },
@@ -961,7 +1087,8 @@
       "charId": "char_1027_greyy2",
       "seq": 1,
       "name": "Experimental ECU Prototype",
-      "date": "2023-11-08",
+      "date": "2023-11-07",
+      "jpName": "新型電子制御装置の試作品",
       "type": "X",
       "moduleId": "uniequip_002_greyy2"
     },
@@ -971,6 +1098,7 @@
       "seq": 1,
       "name": "'Marks of Time'",
       "date": "2026-03-19",
+      "jpName": "「時間が残した傷跡」",
       "type": "X",
       "moduleId": "uniequip_002_branch"
     },
@@ -979,7 +1107,8 @@
       "charId": "char_140_whitew",
       "seq": 1,
       "name": "'The Young Fang'",
-      "date": "2024-11-01",
+      "date": "2024-10-31",
+      "jpName": "「幼き狼の牙」",
       "type": "X",
       "moduleId": "uniequip_002_whitew"
     },
@@ -989,6 +1118,7 @@
       "seq": 1,
       "name": "'A Bright Idea Occurs'",
       "date": "2023-12-21",
+      "jpName": "「思い付き」",
       "type": "X",
       "moduleId": "uniequip_002_windft"
     },
@@ -998,6 +1128,7 @@
       "seq": 1,
       "name": "'Candy Box'",
       "date": "2023-05-23",
+      "jpName": "「キャンディーボックス」",
       "type": "X",
       "moduleId": "uniequip_002_siege"
     },
@@ -1007,6 +1138,7 @@
       "seq": 2,
       "name": "'Thy First Vow'",
       "date": "2023-09-07",
+      "jpName": "「誓い」",
       "type": "Y",
       "moduleId": "uniequip_003_siege"
     },
@@ -1016,6 +1148,7 @@
       "seq": 1,
       "name": "Ammadikshu",
       "date": "2024-02-27",
+      "jpName": "自然の容認",
       "type": "X",
       "moduleId": "uniequip_002_typhon"
     },
@@ -1025,6 +1158,7 @@
       "seq": 2,
       "name": "Shadow of the Icefield",
       "date": "2025-12-11",
+      "jpName": "氷原の影",
       "type": "Y",
       "moduleId": "uniequip_003_typhon"
     },
@@ -1034,6 +1168,7 @@
       "seq": 3,
       "name": "Typhon's Specialized Badge",
       "date": "2026-10-14",
+      "jpName": "ティフォンの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_typhon"
     },
@@ -1043,6 +1178,7 @@
       "seq": 1,
       "name": "'Breath of Twin Moons'",
       "date": "2026-06-22",
+      "jpName": "「双月の息遣い」",
       "type": "Y",
       "moduleId": "uniequip_002_flwr2"
     },
@@ -1051,7 +1187,8 @@
       "charId": "char_4065_judge",
       "seq": 1,
       "name": "The Thorny Road That Continues",
-      "date": "2024-05-01",
+      "date": "2024-04-30",
+      "jpName": "未来へと続く茨道",
       "type": "X",
       "moduleId": "uniequip_002_judge"
     },
@@ -1061,6 +1198,7 @@
       "seq": 2,
       "name": "'Innocent'",
       "date": "2024-12-03",
+      "jpName": "「無罪」",
       "type": "Y",
       "moduleId": "uniequip_003_judge"
     },
@@ -1070,6 +1208,7 @@
       "seq": 1,
       "name": "No Trace",
       "date": "2026-04-14",
+      "jpName": "跡を残さず",
       "type": "X",
       "moduleId": "uniequip_002_hsgma2"
     },
@@ -1078,7 +1217,8 @@
       "charId": "char_294_ayer",
       "seq": 1,
       "name": "Portable Wildland Stimulants",
-      "date": "2024-11-01",
+      "date": "2024-10-31",
+      "jpName": "荒野用携帯気付け薬",
       "type": "X",
       "moduleId": "uniequip_002_ayer"
     },
@@ -1087,7 +1227,8 @@
       "charId": "char_263_skadi",
       "seq": 1,
       "name": "Moist Sword Bag",
-      "date": "2022-01-26",
+      "date": "2022-01-25",
+      "jpName": "湿ったソードバッグ",
       "type": "Y",
       "moduleId": "uniequip_002_skadi"
     },
@@ -1097,6 +1238,7 @@
       "seq": 2,
       "name": "No Ending to This Dream",
       "date": "2022-12-27",
+      "jpName": "在りし日の夢の名残",
       "type": "X",
       "moduleId": "uniequip_003_skadi"
     },
@@ -1106,6 +1248,7 @@
       "seq": 1,
       "name": "Convenience Kit for New Friends",
       "date": "2025-10-14",
+      "jpName": "聖都歓迎キット",
       "type": "X",
       "moduleId": "uniequip_002_angel2"
     },
@@ -1115,6 +1258,7 @@
       "seq": 1,
       "name": "Siege Equipment Training Device",
       "date": "2023-07-13",
+      "jpName": "訓練用攻城兵器",
       "type": "X",
       "moduleId": "uniequip_002_poca"
     },
@@ -1124,6 +1268,7 @@
       "seq": 2,
       "name": "'Сердце'",
       "date": "2026-06-22",
+      "jpName": "「心」",
       "type": "Y",
       "moduleId": "uniequip_003_poca"
     },
@@ -1133,6 +1278,7 @@
       "seq": 1,
       "name": "'Colorful Life'",
       "date": "2026-05-21",
+      "jpName": "「多彩な人生」",
       "type": "X",
       "moduleId": "uniequip_002_peper"
     },
@@ -1142,6 +1288,7 @@
       "seq": 1,
       "name": "Unpredictable Star Chart",
       "date": "2025-06-05",
+      "jpName": "未知の星図",
       "type": "Y",
       "moduleId": "uniequip_002_astesi"
     },
@@ -1150,7 +1297,8 @@
       "charId": "char_136_hsguma",
       "seq": 1,
       "name": "Gifts From Friends",
-      "date": "2023-04-01",
+      "date": "2023-03-31",
+      "jpName": "友人たちからのプレゼント",
       "type": "Y",
       "moduleId": "uniequip_002_hsguma"
     },
@@ -1160,6 +1308,7 @@
       "seq": 2,
       "name": "Amulet",
       "date": "2023-05-23",
+      "jpName": "お守り",
       "type": "X",
       "moduleId": "uniequip_003_hsguma"
     },
@@ -1168,7 +1317,8 @@
       "charId": "char_497_ctable",
       "seq": 1,
       "name": "'The Voiceless'",
-      "date": "2025-09-17",
+      "date": "2025-09-16",
+      "jpName": "「声なき者」",
       "type": "Y",
       "moduleId": "uniequip_002_ctable"
     },
@@ -1178,6 +1328,7 @@
       "seq": 1,
       "name": "Tail-Care Suit",
       "date": "2022-10-19",
+      "jpName": "尻尾ケアセット",
       "type": "X",
       "moduleId": "uniequip_002_prove"
     },
@@ -1186,7 +1337,8 @@
       "charId": "char_343_tknogi",
       "seq": 1,
       "name": "Rouya Bimei",
-      "date": "2024-03-20",
+      "date": "2024-03-19",
+      "jpName": "朧夜の灯り",
       "type": "X",
       "moduleId": "uniequip_002_tknogi"
     },
@@ -1196,6 +1348,7 @@
       "seq": 1,
       "name": "Beast-Shaped Stone Container",
       "date": "2026-07-16",
+      "jpName": "獣形の碁笥",
       "type": "X",
       "moduleId": "uniequip_002_wang"
     },
@@ -1204,7 +1357,8 @@
       "charId": "char_4105_almond",
       "seq": 1,
       "name": "'Capstone Project'",
-      "date": "2024-03-20",
+      "date": "2024-03-19",
+      "jpName": "「卒業制作」",
       "type": "X",
       "moduleId": "uniequip_002_almond"
     },
@@ -1214,6 +1368,7 @@
       "seq": 1,
       "name": "Shield Photography Module",
       "date": "2022-11-03",
+      "jpName": "盾用撮影モジュール",
       "type": "X",
       "moduleId": "uniequip_002_aurora"
     },
@@ -1223,6 +1378,7 @@
       "seq": 1,
       "name": "Emergency Callbook",
       "date": "2024-02-27",
+      "jpName": "応急通信マニュアル",
       "type": "X",
       "moduleId": "uniequip_002_elysm"
     },
@@ -1232,6 +1388,7 @@
       "seq": 1,
       "name": "'Exquisite Heart'",
       "date": "2023-10-24",
+      "jpName": "「聡明怜悧」",
       "type": "X",
       "moduleId": "uniequip_002_lin"
     },
@@ -1240,7 +1397,8 @@
       "charId": "char_4080_lin",
       "seq": 2,
       "name": "The Compassionate and the Just",
-      "date": "2025-07-18",
+      "date": "2025-07-17",
+      "jpName": "「情と義」",
       "type": "Y",
       "moduleId": "uniequip_003_lin"
     },
@@ -1250,6 +1408,7 @@
       "seq": 1,
       "name": "Powered Exoskeleton",
       "date": "2022-10-19",
+      "jpName": "パワードスーツ",
       "type": "X",
       "moduleId": "uniequip_002_glacus"
     },
@@ -1258,7 +1417,8 @@
       "charId": "char_473_mberry",
       "seq": 1,
       "name": "Serenity Inside",
-      "date": "2025-01-17",
+      "date": "2025-01-16",
+      "jpName": "心を静めて",
       "type": "X",
       "moduleId": "uniequip_002_mberry"
     },
@@ -1267,7 +1427,8 @@
       "charId": "char_242_otter",
       "seq": 1,
       "name": "'Meeboo' Control Terminal XP",
-      "date": "2021-08-04",
+      "date": "2021-08-03",
+      "jpName": "ミーボコントロール端末XP",
       "type": "X",
       "moduleId": "uniequip_002_otter"
     },
@@ -1276,7 +1437,8 @@
       "charId": "char_293_thorns",
       "seq": 1,
       "name": "The Salt and the Sand",
-      "date": "2024-11-01",
+      "date": "2024-10-31",
+      "jpName": "「塩と砂」",
       "type": "X",
       "moduleId": "uniequip_002_thorns"
     },
@@ -1286,6 +1448,7 @@
       "seq": 2,
       "name": "Sand Erosion",
       "date": "2025-10-14",
+      "jpName": "砂の侵食",
       "type": "D",
       "moduleId": "uniequip_003_thorns"
     },
@@ -1295,6 +1458,7 @@
       "seq": 1,
       "name": "Zumama's Tool Box",
       "date": "2022-11-03",
+      "jpName": "ズゥママの工具箱",
       "type": "X",
       "moduleId": "uniequip_002_zumama"
     },
@@ -1303,7 +1467,8 @@
       "charId": "char_416_zumama",
       "seq": 2,
       "name": "'The Little Ugly Thing'",
-      "date": "2023-04-01",
+      "date": "2023-03-31",
+      "jpName": "「リトルアグリー」",
       "type": "Y",
       "moduleId": "uniequip_003_zumama"
     },
@@ -1312,7 +1477,8 @@
       "charId": "char_416_zumama",
       "seq": 3,
       "name": "Eunectes's Specialized Badge",
-      "date": "2025-07-18",
+      "date": "2025-07-17",
+      "jpName": "ユーネクテスの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_zumama"
     },
@@ -1321,7 +1487,8 @@
       "charId": "char_243_waaifu",
       "seq": 1,
       "name": "The Classic of Hung Mei Wing Chun",
-      "date": "2021-11-02",
+      "date": "2021-11-01",
+      "jpName": "紅眉詠春拳譜",
       "type": "X",
       "moduleId": "uniequip_002_waaifu"
     },
@@ -1331,6 +1498,7 @@
       "seq": 1,
       "name": "Unclaimed Legacy",
       "date": "2025-11-13",
+      "jpName": "手つかずの遺産",
       "type": "X",
       "moduleId": "uniequip_002_necras"
     },
@@ -1340,6 +1508,7 @@
       "seq": 1,
       "name": "Entreaty of the Herald",
       "date": "2023-01-13",
+      "jpName": "使者の盟約",
       "type": "X",
       "moduleId": "uniequip_002_mizuki"
     },
@@ -1349,6 +1518,7 @@
       "seq": 2,
       "name": "Caerulorum Semina",
       "date": "2023-07-13",
+      "jpName": "紺碧の種",
       "type": "Y",
       "moduleId": "uniequip_003_mizuki"
     },
@@ -1358,6 +1528,7 @@
       "seq": 3,
       "name": "Mizuki's Specialized Badge",
       "date": "2025-10-14",
+      "jpName": "ミヅキの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_mizuki"
     },
@@ -1366,7 +1537,8 @@
       "charId": "char_487_bobb",
       "seq": 1,
       "name": "Second-hand Textbook for Social Work",
-      "date": "2025-04-25",
+      "date": "2025-04-24",
+      "jpName": "中古のソーシャルワーク教科書",
       "type": "X",
       "moduleId": "uniequip_002_bobb"
     },
@@ -1375,7 +1547,8 @@
       "charId": "char_311_mudrok",
       "seq": 1,
       "name": "Spreading Roots of Soil and Stone",
-      "date": "2024-05-01",
+      "date": "2024-04-30",
+      "jpName": "土石の根",
       "type": "X",
       "moduleId": "uniequip_002_mudrok"
     },
@@ -1384,7 +1557,8 @@
       "charId": "char_311_mudrok",
       "seq": 2,
       "name": "Wish of the Fertile Earth",
-      "date": "2025-09-17",
+      "date": "2025-09-16",
+      "jpName": "沃土の望み",
       "type": "Y",
       "moduleId": "uniequip_003_mudrok"
     },
@@ -1394,6 +1568,7 @@
       "seq": 1,
       "name": "Engineering Recorder",
       "date": "2023-10-24",
+      "jpName": "工事レコーダー",
       "type": "X",
       "moduleId": "uniequip_002_cement"
     },
@@ -1403,6 +1578,7 @@
       "seq": 1,
       "name": "Unnamed Drone",
       "date": "2024-06-21",
+      "jpName": "名付けされていないドローン",
       "type": "X",
       "moduleId": "uniequip_002_rockr"
     },
@@ -1412,6 +1588,7 @@
       "seq": 1,
       "name": "An Exuvia of Her Past",
       "date": "2025-04-08",
+      "jpName": "彼女の残滓",
       "type": "X",
       "moduleId": "uniequip_002_skadi2"
     },
@@ -1421,6 +1598,7 @@
       "seq": 2,
       "name": "New Generation",
       "date": "2026-09-16",
+      "jpName": "新世代",
       "type": "Y",
       "moduleId": "uniequip_003_skadi2"
     },
@@ -1430,6 +1608,7 @@
       "seq": 1,
       "name": "Multifunctional Mapping Instruments (Early Access)",
       "date": "2024-12-03",
+      "jpName": "多機能型測量機・改良版",
       "type": "X",
       "moduleId": "uniequip_002_haini"
     },
@@ -1438,7 +1617,8 @@
       "charId": "char_1034_jesca2",
       "seq": 1,
       "name": "This Hero of Mine",
-      "date": "2024-09-06",
+      "date": "2024-09-05",
+      "jpName": "「わたしのヒーロー」",
       "type": "X",
       "moduleId": "uniequip_002_jesca2"
     },
@@ -1448,6 +1628,7 @@
       "seq": 2,
       "name": "Unweathered",
       "date": "2026-08-13",
+      "jpName": "風化せぬもの",
       "type": "Y",
       "moduleId": "uniequip_003_jesca2"
     },
@@ -1456,7 +1637,8 @@
       "charId": "char_4109_baslin",
       "seq": 1,
       "name": "Bestowed Trinket",
-      "date": "2024-05-01",
+      "date": "2024-04-30",
+      "jpName": "下賜されたおもちゃ",
       "type": "Y",
       "moduleId": "uniequip_002_baslin"
     },
@@ -1466,6 +1648,7 @@
       "seq": 1,
       "name": "Beware of the Edges",
       "date": "2025-02-07",
+      "jpName": "秘められた鋭さ",
       "type": "Y",
       "moduleId": "uniequip_002_mitm"
     },
@@ -1475,6 +1658,7 @@
       "seq": 1,
       "name": "A Warmy Gift",
       "date": "2026-01-16",
+      "jpName": "餞別の味",
       "type": "X",
       "moduleId": "uniequip_002_warmy"
     },
@@ -1484,6 +1668,7 @@
       "seq": 1,
       "name": "Custom Bionic Seadragon",
       "date": "2023-09-07",
+      "jpName": "改良型シードラゴン",
       "type": "X",
       "moduleId": "uniequip_002_weedy"
     },
@@ -1493,6 +1678,7 @@
       "seq": 2,
       "name": "New Bionic Prototype",
       "date": "2024-06-21",
+      "jpName": "新型バイオ装置プロトタイプ",
       "type": "Y",
       "moduleId": "uniequip_003_weedy"
     },
@@ -1502,6 +1688,7 @@
       "seq": 1,
       "name": "'Industrious Wings'",
       "date": "2024-06-21",
+      "jpName": "「努力の翼」",
       "type": "X",
       "moduleId": "uniequip_002_gdglow"
     },
@@ -1511,6 +1698,7 @@
       "seq": 2,
       "name": "Dream Must Come True",
       "date": "2025-12-11",
+      "jpName": "いつか叶う夢",
       "type": "Y",
       "moduleId": "uniequip_003_gdglow"
     },
@@ -1520,6 +1708,7 @@
       "seq": 1,
       "name": "Crystal Corsage",
       "date": "2024-06-21",
+      "jpName": "結晶のブローチ",
       "type": "X",
       "moduleId": "uniequip_002_hbisc2"
     },
@@ -1529,6 +1718,7 @@
       "seq": 1,
       "name": "'Footprints Growing'",
       "date": "2024-04-16",
+      "jpName": "「成長の足跡」",
       "type": "X",
       "moduleId": "uniequip_002_firwhl"
     },
@@ -1538,6 +1728,7 @@
       "seq": 1,
       "name": "Reflection of a Mother's Love",
       "date": "2023-03-14",
+      "jpName": "母の愛の倒景",
       "type": "Y",
       "moduleId": "uniequip_002_swllow"
     },
@@ -1547,6 +1738,7 @@
       "seq": 1,
       "name": "Outdoor Essential Kit",
       "date": "2024-04-16",
+      "jpName": "外出必需品セット",
       "type": "X",
       "moduleId": "uniequip_002_ashlok"
     },
@@ -1555,7 +1747,8 @@
       "charId": "char_206_gnosis",
       "seq": 1,
       "name": "'Vow'",
-      "date": "2023-11-08",
+      "date": "2023-11-07",
+      "jpName": "「誓言」",
       "type": "X",
       "moduleId": "uniequip_002_gnosis"
     },
@@ -1565,6 +1758,7 @@
       "seq": 2,
       "name": "Project One Model",
       "date": "2025-08-28",
+      "jpName": "第一号プロジェクトモデル",
       "type": "Y",
       "moduleId": "uniequip_003_gnosis"
     },
@@ -1574,6 +1768,7 @@
       "seq": 3,
       "name": "Gnosis's Specialized Badge",
       "date": "2026-04-14",
+      "jpName": "ノーシスの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_gnosis"
     },
@@ -1582,7 +1777,8 @@
       "charId": "char_194_leto",
       "seq": 1,
       "name": "The Old Clothes",
-      "date": "2024-11-01",
+      "date": "2024-10-31",
+      "jpName": "古い衣服",
       "type": "Y",
       "moduleId": "uniequip_002_leto"
     },
@@ -1592,6 +1788,7 @@
       "seq": 1,
       "name": "The Fervent Longing",
       "date": "2026-01-16",
+      "jpName": "熱い期待",
       "type": "X",
       "moduleId": "uniequip_002_blaze2"
     },
@@ -1601,6 +1798,7 @@
       "seq": 1,
       "name": "The Origins of Pinus Sylvestris",
       "date": "2023-05-23",
+      "jpName": "レッドパインの原点",
       "type": "Y",
       "moduleId": "uniequip_002_flamtl"
     },
@@ -1610,6 +1808,7 @@
       "seq": 2,
       "name": "Their Future",
       "date": "2023-12-21",
+      "jpName": "彼女たちの未来",
       "type": "X",
       "moduleId": "uniequip_003_flamtl"
     },
@@ -1619,6 +1818,7 @@
       "seq": 1,
       "name": "'A Floral Garland to the Red Dragon'",
       "date": "2024-06-21",
+      "jpName": "「赤き龍に贈る冠」",
       "type": "X",
       "moduleId": "uniequip_002_reed2"
     },
@@ -1627,7 +1827,8 @@
       "charId": "char_017_huang",
       "seq": 1,
       "name": "Overloaded Weapons, Overheated Heart",
-      "date": "2024-01-17",
+      "date": "2024-01-16",
+      "jpName": "熱く燃える心臓と武器",
       "type": "X",
       "moduleId": "uniequip_002_huang"
     },
@@ -1637,6 +1838,7 @@
       "seq": 2,
       "name": "'I'll be right back'",
       "date": "2026-02-10",
+      "jpName": "「すぐに戻るから」",
       "type": "Y",
       "moduleId": "uniequip_003_huang"
     },
@@ -1646,6 +1848,7 @@
       "seq": 1,
       "name": "Arrow Adjustment Box",
       "date": "2023-07-13",
+      "jpName": "弩矢の調整箱",
       "type": "X",
       "moduleId": "uniequip_002_toddi"
     },
@@ -1655,6 +1858,7 @@
       "seq": 1,
       "name": "Meaning of Flowers",
       "date": "2024-07-31",
+      "jpName": "花が意味するもの",
       "type": "Y",
       "moduleId": "uniequip_002_flint"
     },
@@ -1664,6 +1868,7 @@
       "seq": 1,
       "name": "Castle Pop-Up Book",
       "date": "2022-12-27",
+      "jpName": "夢のお城の飛び出す絵本",
       "type": "X",
       "moduleId": "uniequip_002_iris"
     },
@@ -1673,6 +1878,7 @@
       "seq": 1,
       "name": "Official Coupon Stamp of the BBQ House",
       "date": "2025-11-13",
+      "jpName": "バーベキューハウス割引スタンプ",
       "type": "Y",
       "moduleId": "uniequip_002_tecno"
     },
@@ -1682,6 +1888,7 @@
       "seq": 1,
       "name": "Tail-Protection Training Tool",
       "date": "2023-01-13",
+      "jpName": "訓練用尻尾保護セット",
       "type": "X",
       "moduleId": "uniequip_002_mantic"
     },
@@ -1691,6 +1898,7 @@
       "seq": 1,
       "name": "'Man in Scabbard'",
       "date": "2025-10-14",
+      "jpName": "「鞘に納められた人」",
       "type": "X",
       "moduleId": "uniequip_002_mlynar"
     },
@@ -1699,7 +1907,8 @@
       "charId": "char_4006_melnte",
       "seq": 1,
       "name": "Fragrance Earrings",
-      "date": "2023-11-08",
+      "date": "2023-11-07",
+      "jpName": "フレグランスイヤリング",
       "type": "Y",
       "moduleId": "uniequip_002_melnte"
     },
@@ -1708,7 +1917,8 @@
       "charId": "char_1033_swire2",
       "seq": 1,
       "name": "'Be Resplendent and Outstanding'",
-      "date": "2024-01-17",
+      "date": "2024-01-16",
+      "jpName": "「輝かしきメダル」",
       "type": "X",
       "moduleId": "uniequip_002_swire2"
     },
@@ -1718,6 +1928,7 @@
       "seq": 2,
       "name": "Director Swire's Lungmen Food Guide",
       "date": "2025-02-07",
+      "jpName": "スワイヤーの龍門グルメガイド",
       "type": "Y",
       "moduleId": "uniequip_003_swire2"
     },
@@ -1727,6 +1938,7 @@
       "seq": 3,
       "name": "Swire the Elegant Wit's Specialized Badge",
       "date": "2026-01-16",
+      "jpName": "琳琅スワイヤーの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_swire2"
     },
@@ -1736,6 +1948,7 @@
       "seq": 1,
       "name": "Pastoral",
       "date": "2024-02-27",
+      "jpName": "牧童の歌",
       "type": "X",
       "moduleId": "uniequip_002_sleach"
     },
@@ -1745,6 +1958,7 @@
       "seq": 2,
       "name": "'Auld Lang Syne'",
       "date": "2025-08-28",
+      "jpName": "「友情讃歌」",
       "type": "Y",
       "moduleId": "uniequip_003_sleach"
     },
@@ -1754,6 +1968,7 @@
       "seq": 1,
       "name": "Echo of Craftsman's Guild",
       "date": "2022-12-27",
+      "jpName": "職人団の槌音",
       "type": "Y",
       "moduleId": "uniequip_002_blemsh"
     },
@@ -1763,6 +1978,7 @@
       "seq": 2,
       "name": "'Knight Primus'",
       "date": "2023-12-21",
+      "jpName": "「首席騎士」",
       "type": "X",
       "moduleId": "uniequip_003_blemsh"
     },
@@ -1772,6 +1988,7 @@
       "seq": 1,
       "name": "Solo Travel Kit",
       "date": "2023-03-14",
+      "jpName": "一人旅セット",
       "type": "X",
       "moduleId": "uniequip_002_platnm"
     },
@@ -1781,6 +1998,7 @@
       "seq": 1,
       "name": "FMC-Crawler",
       "date": "2023-12-21",
+      "jpName": "鉄鉗号・クローラー",
       "type": "X",
       "moduleId": "uniequip_002_ironmn"
     },
@@ -1790,6 +2008,7 @@
       "seq": 2,
       "name": "Highbury Imprint",
       "date": "2025-04-08",
+      "jpName": "ハイベリー・インプリント",
       "type": "Y",
       "moduleId": "uniequip_003_ironmn"
     },
@@ -1798,7 +2017,8 @@
       "charId": "char_128_plosis",
       "seq": 1,
       "name": "Medic Environment Analyze System",
-      "date": "2021-09-18",
+      "date": "2021-09-17",
+      "jpName": "医療環境分析装置",
       "type": "X",
       "moduleId": "uniequip_002_plosis"
     },
@@ -1807,7 +2027,8 @@
       "charId": "char_1026_gvial2",
       "seq": 1,
       "name": "The Binding of Gavial",
-      "date": "2024-01-17",
+      "date": "2024-01-16",
+      "jpName": "ガヴィルの受難",
       "type": "X",
       "moduleId": "uniequip_002_gvial2"
     },
@@ -1817,6 +2038,7 @@
       "seq": 2,
       "name": "Sanding and Polishing",
       "date": "2025-12-11",
+      "jpName": "研いで磨いて",
       "type": "Y",
       "moduleId": "uniequip_003_gvial2"
     },
@@ -1826,6 +2048,7 @@
       "seq": 1,
       "name": "Reading Notes",
       "date": "2022-10-19",
+      "jpName": "読書メモ",
       "type": "Y",
       "moduleId": "uniequip_002_glassb"
     },
@@ -1835,6 +2058,7 @@
       "seq": 1,
       "name": "Central Nerve Detection Module",
       "date": "2026-03-19",
+      "jpName": "中枢神経探知モジュール",
       "type": "X",
       "moduleId": "uniequip_002_mantra"
     },
@@ -1844,6 +2068,7 @@
       "seq": 1,
       "name": "'Asbestos vs. Two-headed Gloompincer'",
       "date": "2026-04-14",
+      "jpName": "『アスベストスVS双頭鉗獣』",
       "type": "X",
       "moduleId": "uniequip_002_asbest"
     },
@@ -1853,6 +2078,7 @@
       "seq": 1,
       "name": "'Unison'",
       "date": "2025-04-08",
+      "jpName": "「ユニゾン」",
       "type": "X",
       "moduleId": "uniequip_002_sora"
     },
@@ -1862,6 +2088,7 @@
       "seq": 1,
       "name": "'Seeds of Tomorrow'",
       "date": "2023-03-14",
+      "jpName": "「明日の種」",
       "type": "Y",
       "moduleId": "uniequip_002_archet"
     },
@@ -1871,6 +2098,7 @@
       "seq": 2,
       "name": "Yesterday Once More",
       "date": "2023-07-13",
+      "jpName": "過ぎた日々の再訪",
       "type": "X",
       "moduleId": "uniequip_003_archet"
     },
@@ -1880,6 +2108,7 @@
       "seq": 3,
       "name": "Archetto's Specialized Badge",
       "date": "2025-10-14",
+      "jpName": "アルケットの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_archet"
     },
@@ -1889,6 +2118,7 @@
       "seq": 1,
       "name": "Drone Spraying Kit",
       "date": "2023-12-21",
+      "jpName": "ドローン塗装キット",
       "type": "X",
       "moduleId": "uniequip_002_spuria"
     },
@@ -1898,6 +2128,7 @@
       "seq": 1,
       "name": "A Quaint First-Aid Kit",
       "date": "2022-11-03",
+      "jpName": "使い込まれた救急箱",
       "type": "X",
       "moduleId": "uniequip_002_whispr"
     },
@@ -1906,7 +2137,8 @@
       "charId": "char_144_red",
       "seq": 1,
       "name": "Mystery Prop Pack",
-      "date": "2021-11-02",
+      "date": "2021-11-01",
+      "jpName": "謎多き戦術バッグ",
       "type": "Y",
       "moduleId": "uniequip_002_red"
     },
@@ -1915,7 +2147,8 @@
       "charId": "char_1016_agoat2",
       "seq": 1,
       "name": "Sounds I Want to Retain",
-      "date": "2025-01-17",
+      "date": "2025-01-16",
+      "jpName": "残したい音声",
       "type": "X",
       "moduleId": "uniequip_002_agoat2"
     },
@@ -1925,6 +2158,7 @@
       "seq": 2,
       "name": "Life I Want to Retain",
       "date": "2026-08-13",
+      "jpName": "残したい生命",
       "type": "Y",
       "moduleId": "uniequip_003_agoat2"
     },
@@ -1934,6 +2168,7 @@
       "seq": 1,
       "name": "We Will Survive 3 Online",
       "date": "2023-01-13",
+      "jpName": "「ウィー・ウィル・サバイブ3　ONLINE」",
       "type": "X",
       "moduleId": "uniequip_002_kirara"
     },
@@ -1942,7 +2177,8 @@
       "charId": "char_1035_wisdel",
       "seq": 1,
       "name": "'Ancestor Launcher'",
-      "date": "2024-11-01",
+      "date": "2024-10-31",
+      "jpName": "「ご先祖ランチャー」",
       "type": "X",
       "moduleId": "uniequip_002_wisdel"
     },
@@ -1952,6 +2188,7 @@
       "seq": 1,
       "name": "The Adventure of the Lioness",
       "date": "2025-06-05",
+      "jpName": "アドベンチャー・オブ・ライオネス",
       "type": "X",
       "moduleId": "uniequip_002_siege2"
     },
@@ -1961,6 +2198,7 @@
       "seq": 2,
       "name": "'Speed and Bag'",
       "date": "2026-04-14",
+      "jpName": "秩序聖「球」",
       "type": "Y",
       "moduleId": "uniequip_003_siege2"
     },
@@ -1970,6 +2208,7 @@
       "seq": 1,
       "name": "Blueberry & Dark Chocolate",
       "date": "2023-05-23",
+      "jpName": "ブルーベリーとビターチョコ",
       "type": "Y",
       "moduleId": "uniequip_002_texas2"
     },
@@ -1979,6 +2218,7 @@
       "seq": 2,
       "name": "'New Car and New Life'",
       "date": "2026-10-14",
+      "jpName": "「新車と新生活」",
       "type": "X",
       "moduleId": "uniequip_003_texas2"
     },
@@ -1988,6 +2228,7 @@
       "seq": 1,
       "name": "Gifts from Columbia",
       "date": "2026-06-22",
+      "jpName": "遠方からの贈り物",
       "type": "X",
       "moduleId": "uniequip_002_titi"
     },
@@ -1997,6 +2238,7 @@
       "seq": 1,
       "name": "Dresser Flowing Shape",
       "date": "2024-10-10",
+      "jpName": "身繕い用水影",
       "type": "X",
       "moduleId": "uniequip_002_mlyss"
     },
@@ -2006,6 +2248,7 @@
       "seq": 2,
       "name": "Fallen Leaves of Four Seasons",
       "date": "2025-10-14",
+      "jpName": "落ち葉と四季",
       "type": "Y",
       "moduleId": "uniequip_003_mlyss"
     },
@@ -2015,6 +2258,7 @@
       "seq": 1,
       "name": "Aqua Blue Dawn",
       "date": "2023-12-21",
+      "jpName": "水色の夜明け",
       "type": "X",
       "moduleId": "uniequip_002_crow"
     },
@@ -2023,7 +2267,8 @@
       "charId": "char_1014_nearl2",
       "seq": 1,
       "name": "Blade of Blazing Sun",
-      "date": "2022-01-26",
+      "date": "2022-01-25",
+      "jpName": "ブレイジングブレイド",
       "type": "X",
       "moduleId": "uniequip_002_nearl2"
     },
@@ -2032,7 +2277,8 @@
       "charId": "char_1014_nearl2",
       "seq": 2,
       "name": "'A Knightly House'",
-      "date": "2024-05-01",
+      "date": "2024-04-30",
+      "jpName": "「騎士の一族」",
       "type": "Y",
       "moduleId": "uniequip_003_nearl2"
     },
@@ -2041,7 +2287,8 @@
       "charId": "char_322_lmlee",
       "seq": 1,
       "name": "'Wandering'",
-      "date": "2022-01-26",
+      "date": "2022-01-25",
+      "jpName": "「無問吉凶」",
       "type": "X",
       "moduleId": "uniequip_002_lmlee"
     },
@@ -2051,6 +2298,7 @@
       "seq": 2,
       "name": "'Distinguisher'",
       "date": "2024-06-21",
+      "jpName": "「ただ善悪を思う」",
       "type": "Y",
       "moduleId": "uniequip_003_lmlee"
     },
@@ -2060,6 +2308,7 @@
       "seq": 1,
       "name": "Exusiai's Surprise",
       "date": "2023-03-14",
+      "jpName": "エクシアの傑作",
       "type": "X",
       "moduleId": "uniequip_002_angel"
     },
@@ -2069,6 +2318,7 @@
       "seq": 2,
       "name": "Welcome to Penguin Logistics",
       "date": "2025-06-05",
+      "jpName": "ようこそ、ペンギン急便へ！",
       "type": "Y",
       "moduleId": "uniequip_003_angel"
     },
@@ -2078,6 +2328,7 @@
       "seq": 1,
       "name": "Liber Sacer",
       "date": "2022-11-03",
+      "jpName": "分厚い経典",
       "type": "Y",
       "moduleId": "uniequip_002_irene"
     },
@@ -2086,7 +2337,8 @@
       "charId": "char_4009_irene",
       "seq": 2,
       "name": "Inquisitor's Ration",
-      "date": "2025-03-11",
+      "date": "2025-03-10",
+      "jpName": "審問官のレーション",
       "type": "X",
       "moduleId": "uniequip_003_irene"
     },
@@ -2096,6 +2348,7 @@
       "seq": 3,
       "name": "Irene's Specialized Badge",
       "date": "2026-07-16",
+      "jpName": "アイリーニの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_irene"
     },
@@ -2104,7 +2357,8 @@
       "charId": "char_180_amgoat",
       "seq": 1,
       "name": "'Missed Sounds'",
-      "date": "2023-07-29",
+      "date": "2023-07-28",
+      "jpName": "「聞き逃した声」",
       "type": "X",
       "moduleId": "uniequip_002_amgoat"
     },
@@ -2114,6 +2368,7 @@
       "seq": 2,
       "name": "Pet Contest First Prize",
       "date": "2026-03-19",
+      "jpName": "ペットレース大会一位",
       "type": "Y",
       "moduleId": "uniequip_003_amgoat"
     },
@@ -2122,7 +2377,8 @@
       "charId": "char_106_franka",
       "seq": 1,
       "name": "Cutting-edge Thermite Unit",
-      "date": "2022-01-26",
+      "date": "2022-01-25",
+      "jpName": "刃先テルミットユニット",
       "type": "X",
       "moduleId": "uniequip_002_franka"
     },
@@ -2131,7 +2387,8 @@
       "charId": "char_261_sddrag",
       "seq": 1,
       "name": "Spear Clean Suit",
-      "date": "2021-12-22",
+      "date": "2021-12-21",
+      "jpName": "槍用クリーニングセット",
       "type": "Y",
       "moduleId": "uniequip_002_sddrag"
     },
@@ -2140,7 +2397,8 @@
       "charId": "char_1038_whitw2",
       "seq": 1,
       "name": "Hour of the Wolf",
-      "date": "2025-04-25",
+      "date": "2025-04-24",
+      "jpName": "狼の時間",
       "type": "X",
       "moduleId": "uniequip_002_whitw2"
     },
@@ -2150,6 +2408,7 @@
       "seq": 1,
       "name": "Home of 'Black Lock' and 'White Key'",
       "date": "2022-09-16",
+      "jpName": "錠と鍵の家",
       "type": "Y",
       "moduleId": "uniequip_002_mostma"
     },
@@ -2159,6 +2418,7 @@
       "seq": 2,
       "name": "Veteran Legatus' Customized Cloak",
       "date": "2025-02-07",
+      "jpName": "レガトゥス専用クローク",
       "type": "X",
       "moduleId": "uniequip_003_mostma"
     },
@@ -2168,6 +2428,7 @@
       "seq": 1,
       "name": "Dancing Moonlight",
       "date": "2024-12-03",
+      "jpName": "「月光と踊る」",
       "type": "X",
       "moduleId": "uniequip_002_ray"
     },
@@ -2177,6 +2438,7 @@
       "seq": 2,
       "name": "To Certify What?",
       "date": "2026-05-21",
+      "jpName": "何を証明する？",
       "type": "Y",
       "moduleId": "uniequip_003_ray"
     },
@@ -2186,6 +2448,7 @@
       "seq": 1,
       "name": "Inheritance and Development",
       "date": "2022-09-16",
+      "jpName": "伝承と開拓",
       "type": "X",
       "moduleId": "uniequip_002_lionhd"
     },
@@ -2195,6 +2458,7 @@
       "seq": 1,
       "name": "'Out-Law' Special Ammunition Surplus",
       "date": "2022-09-16",
+      "jpName": "「律外」特殊弾薬配給セット",
       "type": "Y",
       "moduleId": "uniequip_002_phenxi"
     },
@@ -2204,6 +2468,7 @@
       "seq": 2,
       "name": "A Long Journey",
       "date": "2024-04-16",
+      "jpName": "長い旅路",
       "type": "X",
       "moduleId": "uniequip_003_phenxi"
     },
@@ -2213,6 +2478,7 @@
       "seq": 1,
       "name": "Standard Color Chart",
       "date": "2023-03-14",
+      "jpName": "標準カラーチャート",
       "type": "Y",
       "moduleId": "uniequip_002_bluep"
     },
@@ -2222,6 +2488,7 @@
       "seq": 1,
       "name": "'Magazine and Stained Glass'",
       "date": "2025-10-14",
+      "jpName": "「弾倉とステンドグラス」",
       "type": "Y",
       "moduleId": "uniequip_002_lemuen"
     },
@@ -2231,6 +2498,7 @@
       "seq": 1,
       "name": "The Unforeseeable",
       "date": "2025-06-05",
+      "jpName": "目の届かないところ",
       "type": "D",
       "moduleId": "uniequip_002_vvana"
     },
@@ -2240,6 +2508,7 @@
       "seq": 2,
       "name": "'Final Line'",
       "date": "2026-06-22",
+      "jpName": "「最後の一行」",
       "type": "Y",
       "moduleId": "uniequip_003_vvana"
     },
@@ -2249,6 +2518,7 @@
       "seq": 1,
       "name": "Unerasable",
       "date": "2023-09-07",
+      "jpName": "消し去れぬもの",
       "type": "X",
       "moduleId": "uniequip_002_serum"
     },
@@ -2258,6 +2528,7 @@
       "seq": 1,
       "name": "'Beeswax's Blessing'",
       "date": "2023-10-24",
+      "jpName": "「司祭の祝福」",
       "type": "X",
       "moduleId": "uniequip_002_beewax"
     },
@@ -2266,7 +2537,8 @@
       "charId": "char_4140_lasher",
       "seq": 1,
       "name": "Traces From the Past",
-      "date": "2025-01-17",
+      "date": "2025-01-16",
+      "jpName": "過去の痕跡",
       "type": "X",
       "moduleId": "uniequip_002_lasher"
     },
@@ -2275,7 +2547,8 @@
       "charId": "char_4155_talr",
       "seq": 1,
       "name": "'The Big Shot'",
-      "date": "2025-04-25",
+      "date": "2025-04-24",
+      "jpName": "「大物」",
       "type": "X",
       "moduleId": "uniequip_002_talr"
     },
@@ -2285,6 +2558,7 @@
       "seq": 1,
       "name": "'The Rinsing'",
       "date": "2026-10-14",
+      "jpName": "「洗浄」",
       "type": "X",
       "moduleId": "uniequip_002_tanya"
     },
@@ -2293,7 +2567,8 @@
       "charId": "char_308_swire",
       "seq": 1,
       "name": "Self-defense Lipstick",
-      "date": "2021-08-04",
+      "date": "2021-08-03",
+      "jpName": "防犯ルージュ",
       "type": "X",
       "moduleId": "uniequip_002_swire"
     },
@@ -2302,7 +2577,8 @@
       "charId": "char_4173_nowell",
       "seq": 1,
       "name": "To Grandpa",
-      "date": "2025-07-18",
+      "date": "2025-07-17",
+      "jpName": "祖父へ",
       "type": "Y",
       "moduleId": "uniequip_002_nowell"
     },
@@ -2312,6 +2588,7 @@
       "seq": 1,
       "name": "The Instrument",
       "date": "2026-08-13",
+      "jpName": "実用的な道具",
       "type": "Y",
       "moduleId": "uniequip_002_demetr"
     },
@@ -2321,6 +2598,7 @@
       "seq": 1,
       "name": "Homemade Jack",
       "date": "2023-05-23",
+      "jpName": "手作りのジャッキ",
       "type": "Y",
       "moduleId": "uniequip_002_chiave"
     },
@@ -2330,6 +2608,7 @@
       "seq": 1,
       "name": "Samurai Armor",
       "date": "2023-07-13",
+      "jpName": "武将の甲冑",
       "type": "X",
       "moduleId": "uniequip_002_akafyu"
     },
@@ -2339,6 +2618,7 @@
       "seq": 1,
       "name": "Remnant Pages of Memory",
       "date": "2026-07-16",
+      "jpName": "記憶の残頁",
       "type": "X",
       "moduleId": "uniequip_002_chen3"
     },
@@ -2347,7 +2627,8 @@
       "charId": "char_4088_hodrer",
       "seq": 1,
       "name": "A New Life",
-      "date": "2025-03-11",
+      "date": "2025-03-10",
+      "jpName": "新たな生活",
       "type": "X",
       "moduleId": "uniequip_002_hodrer"
     },
@@ -2357,6 +2638,7 @@
       "seq": 2,
       "name": "The Handwriting",
       "date": "2026-06-22",
+      "jpName": "筆跡",
       "type": "Y",
       "moduleId": "uniequip_003_hodrer"
     },
@@ -2366,6 +2648,7 @@
       "seq": 1,
       "name": "Zouhou, a Sheath for Contempt",
       "date": "2023-07-13",
+      "jpName": "蔵鋒",
       "type": "X",
       "moduleId": "uniequip_002_helage"
     },
@@ -2375,6 +2658,7 @@
       "seq": 2,
       "name": "'Горячий снег'",
       "date": "2024-02-27",
+      "jpName": "「熱い雪」",
       "type": "Y",
       "moduleId": "uniequip_003_helage"
     },
@@ -2384,6 +2668,7 @@
       "seq": 1,
       "name": "Emergency Self-Defense Procedures",
       "date": "2023-05-23",
+      "jpName": "緊急防衛プログラム",
       "type": "Y",
       "moduleId": "uniequip_002_silent"
     },
@@ -2392,7 +2677,8 @@
       "charId": "char_430_fartth",
       "seq": 1,
       "name": "First-show Support Set",
-      "date": "2021-10-16",
+      "date": "2021-10-15",
+      "jpName": "デビュー戦サポートセット",
       "type": "X",
       "moduleId": "uniequip_002_fartth"
     },
@@ -2402,6 +2688,7 @@
       "seq": 2,
       "name": "Fan Letters",
       "date": "2023-01-13",
+      "jpName": "ファンレター",
       "type": "Y",
       "moduleId": "uniequip_003_fartth"
     },
@@ -2410,7 +2697,8 @@
       "charId": "char_391_rosmon",
       "seq": 1,
       "name": "'Notes'",
-      "date": "2023-11-08",
+      "date": "2023-11-07",
+      "jpName": "「メモ」",
       "type": "X",
       "moduleId": "uniequip_002_rosmon"
     },
@@ -2419,7 +2707,8 @@
       "charId": "char_391_rosmon",
       "seq": 2,
       "name": "Rosmontis's Specialized Badge",
-      "date": "2025-04-25",
+      "date": "2025-04-24",
+      "jpName": "ロスモンティスの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_003_rosmon"
     },
@@ -2429,6 +2718,7 @@
       "seq": 1,
       "name": "Executor's Satchel",
       "date": "2025-02-07",
+      "jpName": "執行人のバッグ",
       "type": "X",
       "moduleId": "uniequip_002_excu"
     },
@@ -2437,7 +2727,8 @@
       "charId": "char_4133_logos",
       "seq": 1,
       "name": "A Pen Collection from the Convallis",
-      "date": "2024-11-01",
+      "date": "2024-10-31",
+      "jpName": "河谷より来たる筆入れ",
       "type": "D",
       "moduleId": "uniequip_002_logos"
     },
@@ -2446,7 +2737,8 @@
       "charId": "char_4133_logos",
       "seq": 2,
       "name": "Semantics Paradigm Encyclopedia",
-      "date": "2025-09-17",
+      "date": "2025-09-16",
+      "jpName": "『語義規範百科事典』",
       "type": "Y",
       "moduleId": "uniequip_003_logos"
     },
@@ -2456,6 +2748,7 @@
       "seq": 1,
       "name": "The Belated Memorial",
       "date": "2026-01-16",
+      "jpName": "少し色褪せた記念日",
       "type": "Y",
       "moduleId": "uniequip_002_haruka"
     },
@@ -2465,6 +2758,7 @@
       "seq": 1,
       "name": "Heart of Tragodia",
       "date": "2025-11-13",
+      "jpName": "トラゴーディアの心",
       "type": "X",
       "moduleId": "uniequip_002_phatm2"
     },
@@ -2474,6 +2768,7 @@
       "seq": 1,
       "name": "'When to Wake Up'",
       "date": "2024-07-31",
+      "jpName": "「自晦及明」",
       "type": "X",
       "moduleId": "uniequip_002_chyue"
     },
@@ -2482,7 +2777,8 @@
       "charId": "char_2024_chyue",
       "seq": 2,
       "name": "Shuo",
-      "date": "2025-07-18",
+      "date": "2025-07-17",
+      "jpName": "「朔」",
       "type": "Y",
       "moduleId": "uniequip_003_chyue"
     },
@@ -2492,6 +2788,7 @@
       "seq": 1,
       "name": "Mineral Display Cabinet",
       "date": "2025-08-28",
+      "jpName": "鉱石のショーケース",
       "type": "Y",
       "moduleId": "uniequip_002_wulfen"
     },
@@ -2501,6 +2798,7 @@
       "seq": 1,
       "name": "Pocket Omamori",
       "date": "2022-10-19",
+      "jpName": "懐中の御守り",
       "type": "X",
       "moduleId": "uniequip_002_lisa"
     },
@@ -2510,6 +2808,7 @@
       "seq": 2,
       "name": "Children of Terra",
       "date": "2024-06-21",
+      "jpName": "子供たち",
       "type": "Y",
       "moduleId": "uniequip_003_lisa"
     },
@@ -2518,7 +2817,8 @@
       "charId": "char_4083_chimes",
       "seq": 1,
       "name": "To My Successor",
-      "date": "2025-03-11",
+      "date": "2025-03-10",
+      "jpName": "後任の方へ",
       "type": "X",
       "moduleId": "uniequip_002_chimes"
     },
@@ -2527,7 +2827,8 @@
       "charId": "char_172_svrash",
       "seq": 1,
       "name": "Snow Realm Fowlcare Kit",
-      "date": "2024-11-01",
+      "date": "2024-10-31",
+      "jpName": "雪境羽獣お手入れセット",
       "type": "X",
       "moduleId": "uniequip_002_svrash"
     },
@@ -2537,6 +2838,7 @@
       "seq": 1,
       "name": "'Footnotes of the Past'",
       "date": "2024-06-21",
+      "jpName": "「過去の注釈」",
       "type": "X",
       "moduleId": "uniequip_002_blkkgt"
     },
@@ -2546,6 +2848,7 @@
       "seq": 2,
       "name": "New Contract",
       "date": "2026-10-14",
+      "jpName": "新たな契約",
       "type": "Y",
       "moduleId": "uniequip_003_blkkgt"
     },
@@ -2555,6 +2858,7 @@
       "seq": 1,
       "name": "Withered Scabbard",
       "date": "2023-05-23",
+      "jpName": "枯れた鞘",
       "type": "Y",
       "moduleId": "uniequip_002_shining"
     },
@@ -2564,6 +2868,7 @@
       "seq": 2,
       "name": "'Followers'",
       "date": "2023-09-07",
+      "jpName": "「使徒」",
       "type": "X",
       "moduleId": "uniequip_003_shining"
     },
@@ -2573,6 +2878,7 @@
       "seq": 1,
       "name": "Mixed-Fruit Medical Caddy",
       "date": "2023-12-21",
+      "jpName": "フルーツ味の救急箱",
       "type": "X",
       "moduleId": "uniequip_002_haak"
     },
@@ -2582,6 +2888,7 @@
       "seq": 2,
       "name": "Remnant of the Malpractice",
       "date": "2026-08-13",
+      "jpName": "毒医の残章",
       "type": "Y",
       "moduleId": "uniequip_003_haak"
     },
@@ -2590,7 +2897,8 @@
       "charId": "char_4178_alanna",
       "seq": 1,
       "name": "'Carry-On Bumper'",
-      "date": "2025-09-17",
+      "date": "2025-09-16",
+      "jpName": "「携帯用バンパー」",
       "type": "X",
       "moduleId": "uniequip_002_alanna"
     },
@@ -2600,6 +2908,7 @@
       "seq": 1,
       "name": "'Hidden Blade'",
       "date": "2024-10-10",
+      "jpName": "「無形、無情」",
       "type": "X",
       "moduleId": "uniequip_002_ascln"
     },
@@ -2609,6 +2918,7 @@
       "seq": 2,
       "name": "'Eyes of Ascalon'",
       "date": "2025-11-13",
+      "jpName": "「アスカロンの瞳」",
       "type": "Y",
       "moduleId": "uniequip_003_ascln"
     },
@@ -2618,6 +2928,7 @@
       "seq": 1,
       "name": "Lemon-flavored Childhood",
       "date": "2024-10-10",
+      "jpName": "レモンの薫る子供時代",
       "type": "X",
       "moduleId": "uniequip_002_aroma"
     },
@@ -2626,7 +2937,8 @@
       "charId": "char_010_chen",
       "seq": 1,
       "name": "Rhodes Island Standard Combat Sword",
-      "date": "2021-12-22",
+      "date": "2021-12-21",
+      "jpName": "ロドス制式刀剣",
       "type": "X",
       "moduleId": "uniequip_002_chen"
     },
@@ -2635,7 +2947,8 @@
       "charId": "char_010_chen",
       "seq": 2,
       "name": "Good Old School Days",
-      "date": "2024-03-20",
+      "date": "2024-03-19",
+      "jpName": "過ぎ去った日々",
       "type": "Y",
       "moduleId": "uniequip_003_chen"
     },
@@ -2645,6 +2958,7 @@
       "seq": 1,
       "name": "Tag of Nameless",
       "date": "2022-09-16",
+      "jpName": "名無しの認識票",
       "type": "Y",
       "moduleId": "uniequip_002_meteo"
     },
@@ -2653,7 +2967,8 @@
       "charId": "char_4010_etlchi",
       "seq": 1,
       "name": "A Ferry that Withers",
-      "date": "2025-08-08",
+      "date": "2025-08-07",
+      "jpName": "ひとときで朽ちる船",
       "type": "X",
       "moduleId": "uniequip_002_etlchi"
     },
@@ -2663,6 +2978,7 @@
       "seq": 2,
       "name": "A Collection of Rosy Tales",
       "date": "2026-06-22",
+      "jpName": "薔薇色の逸話集",
       "type": "Y",
       "moduleId": "uniequip_003_etlchi"
     },
@@ -2672,6 +2988,7 @@
       "seq": 1,
       "name": "Hunts of the Past",
       "date": "2026-04-14",
+      "jpName": "いつかの狩猟",
       "type": "X",
       "moduleId": "uniequip_002_snhunt"
     },
@@ -2680,7 +2997,8 @@
       "charId": "char_107_liskam",
       "seq": 1,
       "name": "Stunner's Storage",
-      "date": "2024-09-06",
+      "date": "2024-09-05",
+      "jpName": "スタニングストレージ",
       "type": "X",
       "moduleId": "uniequip_002_liskam"
     },
@@ -2689,7 +3007,8 @@
       "charId": "char_4027_heyak",
       "seq": 1,
       "name": "'Bibliotheca'",
-      "date": "2023-11-08",
+      "date": "2023-11-07",
+      "jpName": "「図書館」",
       "type": "X",
       "moduleId": "uniequip_002_heyak"
     },
@@ -2699,6 +3018,7 @@
       "seq": 2,
       "name": "Time Gallery of K'uk'ulkan",
       "date": "2024-10-10",
+      "jpName": "ククルカンの時間博物館",
       "type": "Y",
       "moduleId": "uniequip_003_heyak"
     },
@@ -2708,6 +3028,7 @@
       "seq": 3,
       "name": "Ho'olheyak's Specialized Badge",
       "date": "2026-04-14",
+      "jpName": "ホルハイヤの特別限定記章",
       "type": "A",
       "moduleId": "uniequip_004_heyak"
     },
@@ -2716,7 +3037,8 @@
       "charId": "char_488_buildr",
       "seq": 1,
       "name": "The Morning Star of the Homeseeker",
-      "date": "2024-01-17",
+      "date": "2024-01-16",
+      "jpName": "故郷を示す明星",
       "type": "X",
       "moduleId": "uniequip_002_buildr"
     },
@@ -2726,6 +3048,7 @@
       "seq": 1,
       "name": "An Old Thing",
       "date": "2022-11-03",
+      "jpName": "お古",
       "type": "X",
       "moduleId": "uniequip_002_kazema"
     },
@@ -2734,7 +3057,8 @@
       "charId": "char_222_bpipe",
       "seq": 1,
       "name": "Piledriver Spear Magazine",
-      "date": "2021-12-22",
+      "date": "2021-12-21",
+      "jpName": "破城矛マガジン",
       "type": "X",
       "moduleId": "uniequip_002_bpipe"
     },
@@ -2743,7 +3067,8 @@
       "charId": "char_222_bpipe",
       "seq": 2,
       "name": "Stick and Sack",
-      "date": "2024-05-01",
+      "date": "2024-04-30",
+      "jpName": "「棒と袋」",
       "type": "Y",
       "moduleId": "uniequip_003_bpipe"
     },
@@ -2753,6 +3078,7 @@
       "seq": 1,
       "name": "Shangshu-Style Homemade Chili Sauce",
       "date": "2023-09-07",
+      "jpName": "尚蜀風手作りラー油",
       "type": "Y",
       "moduleId": "uniequip_002_panda"
     },
@@ -2762,6 +3088,7 @@
       "seq": 1,
       "name": "Typewriter Ribbon",
       "date": "2023-01-13",
+      "jpName": "インクリボン",
       "type": "Y",
       "moduleId": "uniequip_002_bgsnow"
     },
@@ -2771,6 +3098,7 @@
       "seq": 2,
       "name": "чувство ритуала",
       "date": "2025-08-28",
+      "jpName": "ささやかなこだわり",
       "type": "X",
       "moduleId": "uniequip_003_bgsnow"
     },
@@ -2779,7 +3107,8 @@
       "charId": "char_248_mgllan",
       "seq": 1,
       "name": "Drone Control Module.P",
-      "date": "2021-08-04",
+      "date": "2021-08-03",
+      "jpName": "ドローン操作専門モジュール",
       "type": "X",
       "moduleId": "uniequip_002_mgllan"
     },
@@ -2789,6 +3118,7 @@
       "seq": 2,
       "name": "Instructional Soaring Dragon Drone",
       "date": "2023-03-14",
+      "jpName": "教育用ドローン・DDF",
       "type": "Y",
       "moduleId": "uniequip_003_mgllan"
     },
@@ -2798,6 +3128,7 @@
       "seq": 1,
       "name": "On Architecture of Time",
       "date": "2024-07-31",
+      "jpName": "「欽天司時」",
       "type": "X",
       "moduleId": "uniequip_002_shu"
     },
@@ -2807,6 +3138,7 @@
       "seq": 1,
       "name": "Customized Crossbow Accessory Suit",
       "date": "2022-10-19",
+      "jpName": "特注クロスボウ部品セット",
       "type": "X",
       "moduleId": "uniequip_002_shwaz"
     },
@@ -2816,6 +3148,7 @@
       "seq": 2,
       "name": "Old Razor",
       "date": "2023-05-23",
+      "jpName": "古い剃刀",
       "type": "Y",
       "moduleId": "uniequip_003_shwaz"
     },
@@ -2825,6 +3158,7 @@
       "seq": 1,
       "name": "Originium Dice Case",
       "date": "2022-12-27",
+      "jpName": "源石ダイス収納箱",
       "type": "X",
       "moduleId": "uniequip_002_ebnhlz"
     },
@@ -2833,7 +3167,8 @@
       "charId": "char_4046_ebnhlz",
       "seq": 2,
       "name": "'Theory Expositor'",
-      "date": "2023-04-01",
+      "date": "2023-03-31",
+      "jpName": "「楽理解釈者」",
       "type": "Y",
       "moduleId": "uniequip_003_ebnhlz"
     },
@@ -2843,6 +3178,7 @@
       "seq": 3,
       "name": "Lineage of Decay",
       "date": "2024-04-16",
+      "jpName": "朽ちた伝承",
       "type": "D",
       "moduleId": "uniequip_004_ebnhlz"
     }

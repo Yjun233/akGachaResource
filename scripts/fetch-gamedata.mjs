@@ -78,7 +78,15 @@ const GAMEDATA_SOURCE = 'https://github.com/ArknightsAssets/ArknightsGamedata';
 /* ---------------- 参数 ---------------- */
 const argv = process.argv.slice(2);
 const has = (f) => argv.includes(f);
+/**
+ * 取参数值，**两种写法都认**：`--only extras` 与 `--only=extras`。
+ * ⚠️ 2026-11-16 补：原来只认空格写法，而 **CI 里写的是 `--only=extras`**
+ *    → `valOf` 一直返回 null → `ONLY` 退成 'all'，**周六那条实际一直在跑中坚 + extras**。
+ *    文档与命令示例里两种写法都出现过，所以必须都支持。
+ */
 const valOf = (f) => {
+  const eq = argv.find((a) => a.startsWith(`${f}=`));
+  if (eq) return eq.slice(f.length + 1);
   const i = argv.indexOf(f);
   return i >= 0 ? argv[i + 1] : null;
 };
@@ -150,7 +158,8 @@ function report(server, version, mid, rawScraped) {
 
   console.log(`\n${'─'.repeat(70)}`);
   console.log(
-    `${server}（${SERVER_LABEL[server] || server}）  data_version：${version}`
+    `${server}（${SERVER_LABEL[server] || server}）  内容源 ${contentDir}/ ｜ data_version：${version}`
+    + (nameDir ? `（英文名取自 ${nameDir}/）` : '')
   );
   console.log(`官方 ${official.length} 条（中坚 ${mid.classic.length} / 甄选 ${mid.clafes.length}）｜抓取 ${scraped.length} 条`);
 
@@ -331,12 +340,19 @@ async function main() {
   let cnUeCache = null;
   for (const server of SERVERS) {
     const dir = SERVER_DIR[server];
+    /* ⚠️ **国际服的内容改读日服目录**（2026-11-16 用户要求）：
+       日服比国际服早 10~16 小时上线，而 `en/` 那份解包要等国际服客户端更新才推，
+       于是永远慢半天（2026-11-16 那次就是 en 表还没更新、jp 已经全了）。
+       现在：`en` 的内容（卡池 / 模组 / 皮肤 / 密录）一律从 `jp/` 抽，
+       **`en/` 只留作英文名来源**（`nameSource`）；日期与名字口径见 `gamedata-extras.mjs`。 */
+    const contentDir = server === 'en' ? SERVER_DIR.jp : dir;
+    const nameDir = server === 'en' ? dir : null;
     const file = path.join(DATA, `banners_cla_${server}.json`);
     /* ⚠️ 版本号用**整段文本**（trim 过），不要只取第一行 —— 三服 `data_version.txt` 长这样：
          cn: `Stream://torappu-data/v077/rel77.0` / `Change:123576 on 2026/09/17` / `VersionControl:77.6.0`
          en: `Stream:` / `Change:` / `VersionControl:51.10.0`   ← 首行是空的！
        所以能区分版本的是「整段」（en/tw 靠 `VersionControl`）。 */
-    const version = await readDataVersion(dir, { local: LOCAL });
+    const version = await readDataVersion(contentDir, { local: LOCAL });
     /** 版本号是多行的（cn 三行、en/tw 首行还是空的），打日志时压成一行 */
     const verShort = version.replace(/\s+/g, ' ').trim();
 
@@ -377,7 +393,7 @@ async function main() {
     /* ---------------- 抽取 ---------------- */
     let mid = null;
     if (DO_MID) {
-      const gacha = await loadTable(dir, 'gacha_table.json', { local: LOCAL });
+      const gacha = await loadTable(contentDir, 'gacha_table.json', { local: LOCAL });
       mid = extractMid(gacha, await nameOf(), { releaseOf });
       if (DUMP) {
         console.log(`\n--- ${server} 抽出的前 2 条 ---`);
@@ -388,22 +404,30 @@ async function main() {
     let extras = null;
     if (DO_EXTRAS) {
       const names = await nameOf();
-      const ue = await loadTable(dir, 'uniequip_table.json', { local: LOCAL });
+      const ue = await loadTable(contentDir, 'uniequip_table.json', { local: LOCAL });
       /* 模组的 `type`（解包 `typeName2`）**统一按国服表取** —— 2026-11-15 实测三服同一
          `uniEquipId` 的取值 0 处不同。但 `date` / `name` / `seq` 仍用**本服**表：
          三服推出日不同（474 条全不同），且 en / tw 比国服少 31 个模组。
          `cnUeCache` 在 server 循环外，en → tc 只多读一次。 */
       if (!cnUeCache) cnUeCache = dir === 'cn' ? ue : await loadTable('cn', 'uniequip_table.json', { local: LOCAL });
-      const hb = await loadTable(dir, 'handbook_info_table.json', { local: LOCAL });
+      const hb = await loadTable(contentDir, 'handbook_info_table.json', { local: LOCAL });
+      /* 英文名源（只有 en 有）：内容来自日服表，`name` 仍要英文 → 按 id / charId 回查 en 表 */
+      const ns = nameDir
+        ? {
+          ue: await loadTable(nameDir, 'uniequip_table.json', { local: LOCAL }),
+          hb: await loadTable(nameDir, 'handbook_info_table.json', { local: LOCAL }),
+          sk: await loadTable(nameDir, 'skin_table.json', { local: LOCAL }),
+        }
+        : null;
       extras = {
-        modules: extractModules(ue, names, OP_INDEX.names, { typeSource: cnUeCache }),
-        memoirs: extractMemoirs(hb, names, OP_INDEX.names, OP_INDEX.rarity),
+        modules: extractModules(ue, names, OP_INDEX.names, { typeSource: cnUeCache, nameSource: ns?.ue ?? null }),
+        memoirs: extractMemoirs(hb, names, OP_INDEX.names, OP_INDEX.rarity, { nameSource: ns?.hb ?? null }),
       };
       /* ⚠️ **国服皮肤不在这条线上** —— 它由 `fetch-skins.mjs` 从 PRTS 抓（那里有真实的复刻 /
          下架窗口）。官方只有「首发上架日」这一个点，所以只给 en/tw 出（窗口按 `WINDOW_DAYS` 天兜底）。 */
       if (server !== 'sc') {
-        const sk = await loadTable(dir, 'skin_table.json', { local: LOCAL });
-        extras.skins = extractSkins(sk, names, OP_INDEX.names);
+        const sk = await loadTable(contentDir, 'skin_table.json', { local: LOCAL });
+        extras.skins = extractSkins(sk, names, OP_INDEX.names, { nameSource: ns?.sk ?? null });
       }
     }
 

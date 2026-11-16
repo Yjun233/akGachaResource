@@ -54,6 +54,9 @@ const DRY = process.argv.includes('--dry');
       · `GAMEDATA_BASE=https://cdn.jsdelivr.net/gh/ArknightsAssets/ArknightsGamedata@master`
    走 jsDelivr 的坑见 `lib/gamedata.mjs` 文件头。CI 里 raw 直连正常，不用管。 */
 const GAMEDATA_LOCAL = (() => {
+  /* `--local <副本>` 与 `--local=<副本>` 两种写法都认（2026-11-16 与 fetch-gamedata 对齐） */
+  const eq = process.argv.find((a) => a.startsWith('--local='));
+  if (eq) return eq.slice('--local='.length) || null;
   const i = process.argv.indexOf('--local');
   return i > 0 && process.argv[i + 1] ? process.argv[i + 1] : null;
 })();
