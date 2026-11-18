@@ -22,11 +22,11 @@
  *                          数据来自官方解包 `char_meta_table.json` 的 `spCharGroups`，
  *                          口径见 lib/gamedata.mjs。
  *                          网络拿不到官方表时**沿用旧文件里的 alter**，不会让脚本失败。
- *                          另有 `group` / `subGroup` = **阵营**，来自官方解包 `character_table.json`：
- *                          `group` = `nationId`（国家/地区，如 `lungmen`）、
- *                          `subGroup` = `groupId` **或** `teamId`（组织/小队，如 `penguin`；
- *                          ⚠️ 两者**互斥**，取 `??` 不拼接）。都是**原始内部 id**、**三服一致**。
- *                          同样「拿不到就沿用旧值」。
+ *                          另有 `power` = **阵营数组**（2026-11-18 重构，取代原来的
+ *                          `group` / `subGroup`）：`[{ nationId, groupId }, …]`，
+ *                          来自官方解包 `character_table.json` 的 `mainPower`（在前）+ `subPower`；
+ *                          解包的 `teamId` 有值时并入 `groupId`（⚠️ 两者**互斥**，取 `??` 不拼接）。
+ *                          都是**原始内部 id**、**三服一致**。同样「拿不到就沿用旧值」。
  *                          另有 `actLine` = **该干员的实装活动剧情线**（「为了明日 / 方舟 /
  *                          岁岁今朝 / 夏日律动 …」，拿不到为 `null`）。
  *                          ⚠️ **纯解包推导**（`lib/op-activity.mjs`），不碰 PRTS；
@@ -77,7 +77,9 @@ import { pinyin } from 'pinyin-pro';
 import { metaStable, orderMeta } from './lib/meta.mjs';
 import { buildNameIndex, countNameGroups, createNameMatcher, nameGroupOf } from './lib/banner-names.mjs';
 import { resortSeriesBanners, sortUpOperators } from './lib/banner-ops.mjs';
-import { buildAlterMap, loadCharInfo, loadNames, loadSpCharGroups, professionLabel } from './lib/gamedata.mjs';
+import {
+  buildAlterMap, buildPower, loadCharInfo, loadNames, loadSpCharGroups, professionLabel,
+} from './lib/gamedata.mjs';
 import { loadActivityTables, resolveOperatorActivities, canRerunOf, rerunKindOf } from './lib/op-activity.mjs';
 import { fetchWikiOperatorMap } from './lib/wiki-gg.mjs';
 import { PROXY } from './lib/http.mjs';
@@ -837,12 +839,13 @@ async function main() {
       enClassicDate: prev.enClassicDate ?? null,  // 国际服进入中坚寻访的日期（同上）
       tcClassicDate: prev.tcClassicDate ?? null,  // 繁中服进入中坚寻访的日期（同上）
       alter: [],                                  // 该干员的**异格** charId 数组（下面统一填）
-      /* 阵营（官方解包 `character_table.json`）—— `group` = `nationId`（国家/地区）、
-         `subGroup` = `groupId` **或** `teamId`（组织/小队，**两者互斥**，实测 0 例同时有）。
+      /* 阵营（官方解包 `character_table.json`）—— **`power` 数组**（2026-11-18 重构，
+         取代原来的 `group` / `subGroup` 两个字段）：
+         `[{ nationId, groupId }, …]`，`mainPower` 在前、`subPower` 依次；
+         解包的 `teamId` 有值时**并入 `groupId`**（两者互斥，实测 0 例同时有）。
          都是**原始内部 id**（`lungmen` / `penguin` …），不是本地化名。取值**三服一致** → 只读 cn。
-         下面统一填；拿不到表时沿用旧值。 */
-      group: prev.group ?? null,
-      subGroup: prev.subGroup ?? null,
+         口径见 `lib/gamedata.mjs` 的 `buildPower()`；下面统一填，拿不到表时沿用旧值。 */
+      power: prev.power ?? [],
       /* 职业（官方解包 `character_table.json` 的 `profession`，2026-11-01 加）——
          存**中文**（`先锋` / `近卫` / …），取值三服一致 → 只读 cn。
          认不出的原始代号原样保留（见 lib/gamedata.mjs 的 professionLabel）。 */
@@ -885,13 +888,13 @@ async function main() {
   console.log(`· 异格：${alterMap.size} 位干员有非空 alter（共 ${alterN} 个 charId）`
     + (alterOk ? '' : '（沿用旧值）'));
 
-  /* ---- 阵营（group / subGroup）+ 国服 appellation（一次读 cn 表拿全）----
-     来自官方解包 `character_table.json` 的 `nationId` / `groupId|teamId`（口径见 loadCharInfo）。
+  /* ---- 阵营（`power` 数组）+ 国服 appellation（一次读 cn 表拿全）----
+     来自官方解包 `character_table.json` 的 `mainPower` / `subPower`（口径见 `buildPower()`）。
      ⚠️ 与上面 alter 同一个策略：**拿不到表就沿用旧值**，绝不让脚本失败。
      ⚠️ 这份 cn 表 **21MB**，是本脚本目前读的**最大**一张表（比 char_meta 大一个量级）——
         它是**无条件**读的（不像 `actLine` / `rerunKind` 那样挂在 `--with-activities` 下），
         因为阵营是**干员身份属性**、跟活动无关，且新干员可能在**周四**就入库。
-     ⚠️ 取的是 `groupId || teamId` —— 实测两者**互斥**（0 例同时有值），**不要拼起来**。
+     ⚠️ 每项的 `groupId` 取 `groupId || teamId` —— 实测两者**互斥**（0 例同时有值），**不要拼起来**。
      ⭐ 2026-10-12 起同一次读表还顺手收下 `appellation`（= 官方拉丁字母代号，如 `Exusiai`）——
         en / jp 名字的**兜底**用它（见下）。 */
   let affMap = new Map();
@@ -899,15 +902,16 @@ async function main() {
   try {
     for (const [id, v] of await loadCharInfo('cn', { local: GAMEDATA_LOCAL })) {
       affMap.set(id, {
-        nationId: v.nationId, groupId: v.groupId, teamId: v.teamId, profession: v.profession,
+        power: buildPower(v), profession: v.profession,
       });
       if (v.appellation) cnApp.set(id, v.appellation);
     }
   } catch (err) {
-    console.warn(`⚠ 阵营取不到（${err.message}）—— 沿用旧 operators.json 里的 group / subGroup`);
+    console.warn(`⚠ 阵营取不到（${err.message}）—— 沿用旧 operators.json 里的 power`);
   }
-  let affNation = 0;
-  let affSub = 0;
+  let affPower = 0;      // 有非空 power 的人数
+  let affItems = 0;      // power 项总数（含 sub）
+  let affMulti = 0;      // power 长度 > 1 的人数
   let affFromPrev = 0;
   let profN = 0;
   const profCount = {};
@@ -915,23 +919,22 @@ async function main() {
     const a = affMap.get(charId);
     const pv = prevOperators[charId];
     if (a) {
-      op.group = a.nationId;
-      op.subGroup = a.groupId || a.teamId;
+      op.power = a.power;
       op.profession = professionLabel(a.profession);
     } else {
-      op.group = pv?.group ?? null;
-      op.subGroup = pv?.subGroup ?? null;
+      op.power = pv?.power ?? [];
       op.profession = pv?.profession ?? null;
-      if (pv && ('group' in pv)) affFromPrev += 1;
+      if (pv && ('power' in pv)) affFromPrev += 1;
     }
-    if (op.group) affNation += 1;
-    if (op.subGroup) affSub += 1;
+    if (op.power.length) affPower += 1;
+    if (op.power.length > 1) affMulti += 1;
+    affItems += op.power.length;
     if (op.profession) {
       profN += 1;
       profCount[op.profession] = (profCount[op.profession] || 0) + 1;
     }
   }
-  console.log(`· 阵营：${affNation} 位有 group（国家/地区）、${affSub} 位有 subGroup（组织/小队）`
+  console.log(`· 阵营：${affPower} 位有 power（共 ${affItems} 项，其中 ${affMulti} 位不止一项）`
     + (affMap.size ? '' : `（表没读到，${affFromPrev} 位沿用旧值）`));
   const profDetail = Object.entries(profCount)
     .sort((x, y) => y[1] - x[1])

@@ -101,16 +101,18 @@ export async function loadNames(dir, { local = null } = {}) {
 }
 
 /**
- * charId → `{ name, appellation, nationId, groupId, teamId }`（**一次读表**拿全）。
+ * charId → `{ name, appellation, nationId, groupId, teamId, mainPower, subPower, profession }`
+ * （**一次读表**拿全）。
  *
  * 为什么要有它：`loadNames()` 与 `loadAffiliations()` 各读一遍 `character_table.json`，
  * 而这张表 **21MB** —— 一处要用到「本地化名 + appellation + 阵营」时读三次太浪费。
  * `fetch-data.mjs` 就是这种情形（`scName` 用 cn.name、`appellation` 当 en/jp 名的兜底、
- * 阵营用 nationId/groupId/teamId）→ 用这个函数 **cn 表只读一次**。
+ * 阵营用 mainPower/subPower）→ 用这个函数 **cn 表只读一次**。
  *
  * @param {string} dir 目录名（cn / en / jp / tw）
  * @returns {Promise<Map<string, {name:string|null, appellation:string|null,
- *   nationId:string|null, groupId:string|null, teamId:string|null}>>}
+ *   nationId:string|null, groupId:string|null, teamId:string|null,
+ *   mainPower:object|null, subPower:object[]|null, profession:string|null}>>}
  */
 /**
  * 解包 `character_table.json` 的 **`profession`** → 中文职业名（写进 `operators.json` 的 `profession`，
@@ -148,6 +150,10 @@ export async function loadCharInfo(dir, { local = null } = {}) {
       nationId: v.nationId || null,
       groupId: v.groupId || null,
       teamId: v.teamId || null,
+      /* 阵营的新口径（2026-11-18 重构）—— 见 `buildPower()`；这两项原样带出，
+         由调用方决定怎么合并（顶层那三个字段只是 mainPower 的投影，实际用不到）。 */
+      mainPower: v.mainPower || null,
+      subPower: Array.isArray(v.subPower) ? v.subPower : null,
       profession: v.profession || null,
     });
   }
@@ -155,19 +161,51 @@ export async function loadCharInfo(dir, { local = null } = {}) {
 }
 
 /**
- * charId → **阵营**（写进 `operators.json` 的 `group` / `subGroup`，2026-10-07 加）。
+ * 解包 `character_table.json` 的一项 → `operators.json` 的 **`power`（阵营数组）**。
  *
- * 来源 = `character_table.json` 的三个字段（**原始内部 id**，不是本地化名）：
- *   · `nationId` → `group`（**国家 / 地区**，如 `lungmen` 龙门 / `rhodes` 罗德岛 / `kazimierz` 卡西米尔）
- *   · `groupId` **或** `teamId` → `subGroup`（**组织 / 小队**，如 `penguin` 企鹅物流 / `lgd` 龙门近卫局）
+ * 口径（2026-11-18 用户定，取代原先把阵营拆成 `group` / `subGroup` 两个字段的做法）：
+ *   · **数组** = `[mainPower, ...subPower]` —— `mainPower` 是对象、`subPower` 本来就是数组，
+ *     把 `mainPower` 放到**最前面**（用户原话：「把 mainPower 的值塞到数组最前面就行」）；
+ *   · 每项统一成 **`{ nationId, groupId }`** 两个键：
+ *     - `nationId` = **国家 / 地区**（`lungmen` 龙门 / `rhodes` 罗德岛 / `kazimierz` 卡西米尔）；
+ *     - `groupId` = **组织 / 小队**；⚠️ **不再单独保留 `teamId`** —— 解包的 `teamId` 有值时
+ *       **并入 `groupId`**（`groupId ?? teamId`）。两者实测**互斥**（全表 0 例同时有值），
+ *       且两个命名空间不重叠（teamId 集合 ∩ groupId 集合 = ∅），所以并进去不会有歧义；
+ *   · **丢掉两个字段都空的项**（解包里 `mainPower` 恒存在，低星/召唤物那种三项全空）；
+ *     全空时给**空数组 `[]`**（不是 `null`）；
+ *   · **不排序、不去重、不补全** —— 数组顺序 = 解包顺序（main 在前、sub 依次），
+ *     `nationId` 相同的项也可能共存（实测 5 位干员的数组里 nationId 重复，但没有完全相同的两项）。
  *
- * ⚠️ 实测口径（2026-10-07，cn 表 1375 条 / 本项目 230 位在册干员）：
- *   · **`groupId` 与 `teamId` 互斥** —— 全表 0 例同时有值（用户也是这么说的）。
- *     取 `groupId ?? teamId` 即可，**不要**拼起来。
- *   · **三服取值完全一致**（cn / en / tw 同名 charId 的三个字段逐位相同）→ **读 cn 一份就够**，
- *     不像名字那样要分服。（en / tw 表里没有的新干员，是「该服还没上」而不是值不同。）
- *   · **覆盖率不是 100%**：230 位里 `nationId` 有 **223**（7 位为 `null`）、
- *     `groupId|teamId` 有 **74**（156 位为 `null`）—— 空值是**正常**的，别当成抓漏。
+ * ⚠️ **三服取值完全一致**（cn / en / tw 同名 charId 的 mainPower/subPower 逐位相同）→
+ *    **只读 cn 一张表**即可（en / tw 表里没有的新干员是「该服还没上」，不是值不同）。
+ * ⚠️ 实测（2026-11-18，cn 表 1437 条 / 本项目在册 235 位）：
+ *    数组长度 1 / 2 / 3 的分别 **179 / 50 / 6** 位，`subPower` 共 62 项，
+ *    其中 **16 项**的 `groupId` 实际来自 `teamId`（如 `action4` / `sees` / `reserve1`）。
+ *    在册 235 位**没有一位**是 `[]`。
+ */
+const powerItem = (p) => ({
+  nationId: p?.nationId || null,
+  groupId: p?.groupId || p?.teamId || null,
+});
+
+/**
+ * @param {object} v `character_table.json` 的条目（或任何带 `mainPower` / `subPower` 的对象）
+ * @returns {{nationId: string|null, groupId: string|null}[]} 可能是 `[]`
+ */
+export function buildPower(v) {
+  const items = [v?.mainPower, ...(v?.subPower || [])]
+    .filter(Boolean)
+    .map(powerItem)
+    .filter((p) => p.nationId || p.groupId);
+  return items;
+}
+
+/**
+ * charId → **阵营原始三项**（`nationId` / `groupId` / `teamId`）。
+ *
+ * ⚠️ 2026-11-18 起落盘口径已改成 `power` 数组（见 `buildPower()`）—— 这里只保留
+ *    「想拿原始三项」的通用读取口，**别再往 `operators.json` 写 `group` / `subGroup`**。
+ *    （目前没有调用方；`fetch-data.mjs` 走 `loadCharInfo()` 一次读表拿全。）
  *
  * @returns {Promise<Map<string, {nationId:string|null, groupId:string|null, teamId:string|null}>>}
  */
