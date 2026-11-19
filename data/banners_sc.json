@@ -15146,5 +15146,49 @@
         "isShop": false
       }
     ]
+  },
+  "20261119_double_0198": {
+    "scName": "常驻标准寻访198",
+    "enName": null,
+    "type": "double",
+    "startDate": "2026-11-19",
+    "endDate": "2026-12-03",
+    "upOperators": [
+      {
+        "scCharName": "娜仁图亚",
+        "charId": "char_4138_narant",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "霍尔海雅",
+        "charId": "char_4027_heyak",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "裁度",
+        "charId": "char_4155_talr",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "小满",
+        "charId": "char_4122_grabds",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "乌啾",
+        "charId": "char_4224_turdus",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }

@@ -13804,5 +13804,49 @@
         "isShop": false
       }
     ]
+  },
+  "20261120_double_0180": {
+    "scName": "常驻标准寻访180",
+    "enName": null,
+    "type": "double",
+    "startDate": "2026-11-20",
+    "endDate": "2026-12-04",
+    "upOperators": [
+      {
+        "scCharName": "白铁",
+        "charId": "char_4072_ironmn",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "仇白",
+        "charId": "char_4082_qiubai",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "衡沙",
+        "charId": "char_4140_lasher",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "铎铃",
+        "charId": "char_4083_chimes",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "玫拉",
+        "charId": "char_4006_melnte",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }

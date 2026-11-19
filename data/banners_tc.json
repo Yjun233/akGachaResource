@@ -13276,5 +13276,49 @@
         "isShop": false
       }
     ]
+  },
+  "20261117_double_0168": {
+    "scName": "常驻标准寻访168",
+    "enName": null,
+    "type": "double",
+    "startDate": "2026-11-17",
+    "endDate": "2026-12-01",
+    "upOperators": [
+      {
+        "scCharName": "仇白",
+        "charId": "char_4082_qiubai",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "琳琅诗怀雅",
+        "charId": "char_1033_swire2",
+        "rarity": 6,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "和弦",
+        "charId": "char_297_hamoni",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": true
+      },
+      {
+        "scCharName": "阿兰娜",
+        "charId": "char_4178_alanna",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      },
+      {
+        "scCharName": "录武官",
+        "charId": "char_4196_reckpr",
+        "rarity": 5,
+        "isLimited": false,
+        "isShop": false
+      }
+    ]
   }
 }
