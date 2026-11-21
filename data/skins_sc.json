@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16",
+  "generatedAt": "2026-11-21",
   "source": "https://prts.wiki",
   "skins": [
     {
@@ -8770,7 +8770,15 @@
       "obtainRaw": "集成战略",
       "firstPrice": null,
       "firstPriceUnit": null,
-      "onShelf": [],
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-12-01",
+          "end": "2026-12-15",
+          "note": "沉沦者的黑流树海里程碑奖励",
+          "longTime": true
+        }
+      ],
       "dynamic": false,
       "warnings": []
     },
