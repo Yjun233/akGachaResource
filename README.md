@@ -15,7 +15,7 @@
 ## 直接用这些数据
 
 ```bash
-# 干员表（标准寻访、中坚寻访和限定寻访会出现的5★/6★干员，以 charId 为键）
+# 干员表（**参与过寻访 UP** 的 5★/6★ 干员，以 charId 为键；**不是**全量五六星名册）
 #   各服共用一份，用 scReleaseDate / enReleaseDate / tcReleaseDate 区分实装日
 https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/operators.json
 
@@ -32,7 +32,8 @@ https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/banners_cla_tc.jso
 https://cdn.jsdelivr.net/gh/Yjun233/akGachaResource@main/data/metadata.json
 
 # 干员皮肤 / 密录 / 模组（按服务器分文件；时间是 YYYY-MM-DD）
-#   · 皮肤：**国服**来自 PRTS（含**复刻 / 下架窗口**，是该字段的唯一来源）；
+#   · 皮肤：**国服**主要来自 PRTS（含**复刻 / 下架窗口**）；少数组合包特典皮肤的窗口
+#     用官方解包商店表补（PRTS 与 skin_table 里都没有它们的时间）；
 #     en / tc 来自官方解包 —— 官方只有「首发上架日」，所以窗口按「首发日 + 14 天」兜底
 #   · 密录 / 模组：三个服都来自官方解包
 #   · 都只收 operators.json 里那些「参与过寻访 UP 的干员」

@@ -5,9 +5,12 @@
  *   ① **中坚系列**：常驻中坚寻访（`CLASSIC` / `CLASSIC_DOUBLE`）+ 中坚甄选（`FESCLASSIC`）。
  *      其余卡池类型官方**没有干员名单**（单六寻访 35 条全无、常驻标准 233 条仅 10 条有文案…），
  *      仍由 PRTS / wiki.gg / 金山 那几个脚本负责 —— 见预研文档 §3。
- *   ② **extras**：模组 / 密录 / 皮肤，只收 `operators.json` 里那 230 位（= 参与过寻访 UP 的干员）。
+ *   ② **extras**：模组 / 密录 / 皮肤，只收 `operators.json` 里的干员（= 参与过寻访 UP 的那些，
+ *      数量随数据增长，别写死）。
  *      ⚠️ **国服皮肤不走这条线** —— 它由 `fetch-skins.mjs` 从 PRTS 抓（那里有真实的复刻 / 下架窗口）。
  *      官方只有「首发上架日」这一个点，所以只给 en / tw 出，窗口按 `WINDOW_DAYS` 天兜底。
+ *      （组合包特典皮肤是例外：PRTS 也没有它们的窗口 → `fetch-skins.mjs` 会去读解包的
+ *        商店表 `shop_client_table.json` 补，见那边的 `COMBO_SKIN_MAP`。）
  *
  * 输出：
  *   data/banners_cla_<server>.json   常驻中坚寻访 + 中坚甄选（**单独一个文件**，不与
