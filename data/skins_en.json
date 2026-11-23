@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16",
+  "generatedAt": "2026-11-23",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "skins": [
     {
@@ -406,7 +406,7 @@
       "scCharName": "刺玫",
       "charId": "char_494_vendla",
       "skinIndex": 1,
-      "name": "謎抱く薔薇",
+      "name": "The Enigma of Roses",
       "jpName": "謎抱く薔薇",
       "onShelf": [
         {
@@ -1398,7 +1398,7 @@
       "scCharName": "忍冬",
       "charId": "char_4026_vulpis",
       "skinIndex": 1,
-      "name": "焦点の外に",
+      "name": "Out of Focus",
       "jpName": "焦点の外に",
       "onShelf": [
         {
@@ -1469,6 +1469,22 @@
           "kind": "首发",
           "start": "2026-03-19",
           "end": "2026-04-02",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "scCharName": "折桠",
+      "charId": "char_4207_branch",
+      "skinIndex": 1,
+      "name": "摘芳霧",
+      "jpName": "摘芳霧",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-11-23",
+          "end": "2026-12-07",
           "note": "",
           "longTime": false
         }

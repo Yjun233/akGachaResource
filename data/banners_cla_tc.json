@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-04",
-  "dataVersion": "Stream:\nChange:\nVersionControl:52.0.0",
+  "generatedAt": "2026-11-23",
+  "dataVersion": "Stream:\nChange:\nVersionControl:52.4.0",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "banners": {
     "20240222_classic_0001": {
@@ -2465,6 +2465,50 @@
         }
       ],
       "scName": "常驻中坚寻访56",
+      "enName": null
+    },
+    "20261126_classic_0057": {
+      "type": "classic",
+      "startDate": "2026-11-26",
+      "endDate": "2026-12-10",
+      "upOperators": [
+        {
+          "scCharName": "水月",
+          "charId": "char_437_mizuki",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "scCharName": "灵知",
+          "charId": "char_206_gnosis",
+          "rarity": 6,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "卡夫卡",
+          "charId": "char_214_kafka",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": true
+        },
+        {
+          "scCharName": "絮雨",
+          "charId": "char_436_whispr",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        },
+        {
+          "scCharName": "灰毫",
+          "charId": "char_431_ashlok",
+          "rarity": 5,
+          "isLimited": false,
+          "isShop": false
+        }
+      ],
+      "scName": "常驻中坚寻访57",
       "enName": null
     },
     "20240404_clafes_0001": {

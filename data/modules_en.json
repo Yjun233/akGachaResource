@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16",
+  "generatedAt": "2026-11-23",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "modules": [
     {
@@ -696,7 +696,7 @@
       "scCharName": "娜仁图亚",
       "charId": "char_4138_narant",
       "seq": 2,
-      "name": "「我らがボスへ」",
+      "name": "'To Our Boss'",
       "date": "2026-11-16",
       "jpName": "「我らがボスへ」",
       "type": "Y",
@@ -1046,7 +1046,7 @@
       "scCharName": "忍冬",
       "charId": "char_4026_vulpis",
       "seq": 2,
-      "name": "刀さす女",
+      "name": "Dancing with the Sword",
       "date": "2026-11-16",
       "jpName": "刀さす女",
       "type": "Y",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16",
+  "generatedAt": "2026-11-23",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "memoirs": [
     {
@@ -2515,7 +2515,7 @@
       "batches": [
         {
           "batch": 1,
-          "name": "頂上からの景色",
+          "name": "Peakview",
           "date": "2026-11-16",
           "jpName": "頂上からの景色"
         }

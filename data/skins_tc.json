@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02",
+  "generatedAt": "2026-11-23",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "skins": [
     {
@@ -918,6 +918,21 @@
       ]
     },
     {
+      "scCharName": "娜仁图亚",
+      "charId": "char_4138_narant",
+      "skinIndex": 2,
+      "name": "率直誠實之人",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-11-23",
+          "end": "2026-12-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
       "scCharName": "子月",
       "charId": "char_4014_lunacu",
       "skinIndex": 1,
@@ -1743,6 +1758,21 @@
       ]
     },
     {
+      "scCharName": "林",
+      "charId": "char_4080_lin",
+      "skinIndex": 3,
+      "name": "求知的魔法",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-11-23",
+          "end": "2026-12-07",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
       "scCharName": "格劳克斯",
       "charId": "char_326_glacus",
       "skinIndex": 1,
@@ -2472,6 +2502,21 @@
           "kind": "首发",
           "start": "2022-07-20",
           "end": "2022-08-03",
+          "note": "",
+          "longTime": false
+        }
+      ]
+    },
+    {
+      "scCharName": "瑕光",
+      "charId": "char_423_blemsh",
+      "skinIndex": 2,
+      "name": "善良堅強之心",
+      "onShelf": [
+        {
+          "kind": "首发",
+          "start": "2026-11-23",
+          "end": "2026-12-07",
           "note": "",
           "longTime": false
         }
