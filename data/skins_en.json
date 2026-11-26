@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23",
+  "generatedAt": "2026-11-26",
   "source": "https://github.com/ArknightsAssets/ArknightsGamedata",
   "skins": [
     {
@@ -1478,7 +1478,7 @@
       "scCharName": "折桠",
       "charId": "char_4207_branch",
       "skinIndex": 1,
-      "name": "摘芳霧",
+      "name": "Scent of the Mist",
       "jpName": "摘芳霧",
       "onShelf": [
         {
